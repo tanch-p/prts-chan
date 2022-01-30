@@ -1,0 +1,13 @@
+{
+    "name": "1-7",
+    "isCC":false,
+    "isRogue":false,
+    "enemies":[
+        {"id":"B2", "count":23},
+        {"id":"17", "count":4},
+        {"id":"01", "count":7},
+        {"id":"19", "count":4},
+        {"id":"A9", "count":1},
+        {"id":"21", "count":2}
+    ]
+}
