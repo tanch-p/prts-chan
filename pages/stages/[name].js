@@ -2,14 +2,14 @@ import Layout from "../../components/layout";
 import { getAllStageIds, getStageData } from "../../lib/stages";
 import Head from "next/head";
 
-// export async function getStaticProps({ params }) {
-// 	const postData = await getStageData(params.name);
-// 	return {
-// 		props: {
-// 			postData,
-// 		},
-// 	};
-// }
+export async function getStaticProps({ params }) {
+	const stageData = await getStageData(params.name);
+	return {
+		props: {
+			stageData,
+		},
+	};
+}
 
 export async function getStaticPaths() {
 	const paths = getAllStageIds();
@@ -19,19 +19,13 @@ export async function getStaticPaths() {
 	};
 }
 
-export default function Post({ postData }) {
+export default function Post({ stageData }) {
 	return (
 		<Layout>
 			<Head>
-				<title>{postData.title}</title>
+				<title>{stageData.name}</title>
 			</Head>
-			{postData.title}
-			<br />
-			{postData.id}
-			<br />
-			{postData.date}
-			<br />
-			<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+			{stageData.name}
 		</Layout>
 	);
 }

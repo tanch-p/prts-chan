@@ -1,30 +1,30 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+// import utilStyles from "../styles/utils.module.css";
 
 // import { getSortedPostsData } from "../lib/posts";
-import { getStageData } from "../lib/stages";
+import { getSortedStagesData } from "../lib/stages";
 
 export async function getStaticProps() {
-	const allStageData = getStageData();
+	const allStagesData = getSortedStagesData();
 	return {
 		props: {
-			allStageData,
+			allStagesData,
 		},
 	};
 
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allStagesData }) {
 	return (
 		<Layout home>
 			<Head>
 				<title>{siteTitle}</title>
 			</Head>
-			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-				<h2 className={utilStyles.headingLg}>Blog</h2>
-				<ul className={utilStyles.list}>
-					{/* {allPostsData.map(({ id, date, title }) => (
+			<section className={`${""} ${""}`}>
+				<h2 className="">Blog</h2>
+				<ul className="">
+					{/* {allPostsData.map(({ id, da	te, title }) => (
 						<li className={utilStyles.listItem} key={id}>
 							{title}
 							<br />
@@ -33,8 +33,8 @@ export default function Home({ allPostsData }) {
 							{date}
 						</li>
 					))} */}
-					{allStageData.map(({ name}) => (
-						<li className={utilStyles.listItem} key={name}>
+					{allStagesData.map(({ name}) => (
+						<li className="" key={name}>
 							{name}
 						</li>
 					))}
