@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import { getAllStageIds, getStageData } from "../../lib/stages";
 import Head from "next/head";
+import Image from 'next/image'
 
 export async function getStaticProps({ params }) {
 	const stageData = await getStageData(params.name);
@@ -19,7 +20,7 @@ export async function getStaticPaths() {
 	};
 }
 
-export default function Post({ stageData }) {
+export default function Stage({ stageData }) {
 	return (
 		<Layout>
 			<Head>
