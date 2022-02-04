@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import { getAllStageIds, getStageData } from "../../lib/stages";
 import Head from "next/head";
 import Image from "next/image";
+import EnemySimple from "../../components/EnemySimple";
 
 export async function getStaticProps({ params }) {
   const stageData = await getStageData(params.name);
@@ -37,6 +38,7 @@ export default function Stage({ stageData }) {
 		height="600px"
 		width="1062px"
       ></Image>
+      <EnemySimple stageData={stageData} />
     </Layout>
   );
 }

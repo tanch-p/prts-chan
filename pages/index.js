@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-
 import { getSortedStagesData } from "../lib/stages";
 
 export async function getStaticProps() {
@@ -21,9 +19,9 @@ export default function Home({ allStagesData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Stages</h2>
-        <ul className={utilStyles.list}>
+      <section className="">
+        <h2 className="" >Stages</h2>
+        <ul className="" >
           {/* {allPostsData.map(({ id, da	te, title }) => (
 						<li className={utilStyles.listItem} key={id}>
 							{title}
@@ -34,7 +32,7 @@ export default function Home({ allStagesData }) {
 						</li>
 					))} */}
           {allStagesData.map(({ name }) => (
-            <li className={utilStyles.listItem} key={name}>
+            <li className="" key={name}>
               <Link href={`/stages/${name}`}>
                 <a>{name}</a>
               </Link>
