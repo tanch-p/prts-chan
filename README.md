@@ -1,6 +1,6 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Arknights enemy viewer for roguelike - IN PROGRESS (≧∇≦)ﾉ
 
-Changes in enemy IDs
+Resolved conflicts in enemy IDs:
 
 - Reunion
   

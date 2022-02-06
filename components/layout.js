@@ -1,14 +1,22 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { Drawer } from "./Drawer";
 import { Navbar } from "./Navbar";
+import useWindowDimensions from "./WindowDimensions";
 
 const name = "Your Name";
 export const siteTitle = "PRTS-chan";
 
 export default function Layout({ children, home }) {
+  const [open, setOpen] = useState(false);
+  const { height, width } = useWindowDimensions();
+  let device = "";
+  width > 1024 ? (device = "desktop") : (device = "mobile");
+
   return (
-    <div className="">
+    <div className={`flex flex-wrap`}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,10 +33,12 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <Navbar />
       </Head>
-      <header className="">
+      <Drawer open={open} setOpen={setOpen} device={device} />
+      <header
+        className={`${open && device === "desktop" ? "translate-x-64"  : ""} ease-in-out transition-all duration-300`}
+      >
+        <Navbar open={open} setOpen={setOpen} />
         {home ? (
           <>
             <Image
@@ -63,7 +73,11 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main
+        className={`${open && device === "desktop" ? "translate-x-64" : ""} ease-in-out transition-all duration-300`}
+      >
+        {children}
+      </main>
       {!home && (
         <div className="">
           <Link href="/">
