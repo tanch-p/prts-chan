@@ -1,4 +1,4 @@
-export const Drawer = ({ open, setOpen, device }) => {
+const Drawer = ({ open, setOpen, device }) => {
   const sidebarItems = ["Stages", "Calculations", "Settings"];
   return (
     <>
@@ -24,3 +24,5 @@ export const Drawer = ({ open, setOpen, device }) => {
     </>
   );
 };
+
+export default Drawer;

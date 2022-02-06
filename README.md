@@ -1,16 +1,34 @@
-Arknights enemy viewer for roguelike - IN PROGRESS (≧∇≦)ﾉ
+### Arknights enemy viewer for roguelike - IN PROGRESS (≧∇≦)ﾉ
 
-Resolved conflicts in enemy IDs:
+- To-do:
+
+  - Header
+
+    1. more buttons
+    2. banner
+
+  - Home
+
+    1. intro page
+
+  - Stages page
+
+  1.  cc buttons?
+  2.  detailed view
+  3.  map stats
+  4.  tidy up simple view
+
+#### Resolved conflicts in enemy IDs:
 
 - Reunion
-  
+
   - A-7 (Shielded Senior Caster)
   - T-1 (Technical Scout)
 
 - Heart of Surging Flame
-  
+
   - P-01 - P-10
 
 - Main Story 9
-  
+
   - CPS-MDR

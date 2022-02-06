@@ -1,7 +1,9 @@
-export const Navbar = ({open,setOpen}) => {
+import Link from "next/link";
+
+export const Navbar = ({ open, setOpen }) => {
   return (
     <>
-      <nav className="flex fixed w-full items-center justify-between px-6 h-16  text-gray-700 border-b border-gray-200 z-10">
+      <nav className="flex w-full items-center justify-between px-6 h-16  text-gray-700 border-b border-gray-200 z-10">
         <div className="flex items-center">
           <button
             aria-label="Open Menu"
@@ -23,7 +25,9 @@ export const Navbar = ({open,setOpen}) => {
               />
             </svg>
           </button>
-          Header
+          <Link href={`/`}>
+            <a>Home</a>
+          </Link>
         </div>
       </nav>
     </>
