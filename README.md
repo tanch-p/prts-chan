@@ -6,6 +6,8 @@
 
     1. more buttons
     2. banner
+    3. fix layout transition on the right side when drawer sliding in out
+    4. language options not being clickable when drawer is open
 
   - Home
 

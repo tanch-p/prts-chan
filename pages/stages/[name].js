@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 }
 
 export default function Stage({ stageData }) {
-	console.log(stageData);
+	// console.log(stageData);
 
 
 

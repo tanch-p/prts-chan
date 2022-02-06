@@ -8,11 +8,17 @@ const name = "Your Name";
 export const siteTitle = "PRTS-chan";
 
 export default function Layout({ children, home }) {
-  const {openContext, device} = useContext(AppContext);
-  const [open,setOpen] = openContext;
+  const { openContext, device } = useContext(AppContext);
+  const [open, setOpen] = openContext;
 
   return (
-    <div className={`flex flex-wrap`}>
+    <div
+      className={`flex flex-wrap ease-in-out duration-300 transition-[left]  motion-reduce:transition-none ${
+        open && device === "desktop"
+          ? "translate-x-64 w-[calc(100%-16rem)]"
+          : ""
+      }`}
+    >
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -31,19 +37,11 @@ export default function Layout({ children, home }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <header
-        className={`w-full ${
-          open && device === "desktop" ? "translate-x-64" : ""
-        } ease-in-out transition-all duration-300`}
+        className="w-full transition-none"
       >
         <Navbar open={open} setOpen={setOpen} />
       </header>
-      <main
-        className={`${
-          open && device === "desktop" ? "translate-x-64" : ""
-        } ease-in-out transition-all duration-300`}
-      >
-        {children}
-      </main>
+      <main className="mx-auto ">{children}</main>
     </div>
   );
 }
