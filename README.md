@@ -6,6 +6,11 @@
 
     1. more buttons
     2. banner
+    3. search function
+
+  - Drawer
+    - About
+    - Credits
 
   - Home
 
