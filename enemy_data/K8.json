@@ -1,0 +1,32 @@
+{
+    "id": "K8",
+    "name_en": "Independent Knight Shielder",
+    "name_jp": "盾持ち独立騎士",
+    "name_cn": "持盾独立骑士",
+    "atk_type_jp": "物理",
+    "hp": "8000",
+    "atk": "700",
+    "def": "1000",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

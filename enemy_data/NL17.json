@@ -1,0 +1,32 @@
+{
+    "id": "NL17",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "烛骑士薇薇安娜",
+    "atk_type_jp": "術",
+    "hp": "8500",
+    "atk": "450",
+    "def": "350",
+    "mdef": "60",
+    "aspd%": "100",
+    "aspd": "3.2",
+    "range": "2.2",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

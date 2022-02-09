@@ -1,0 +1,32 @@
+{
+    "id": "SP1",
+    "name_en": "Guerrilla Shieldguard Leader",
+    "name_jp": "遊撃隊盾兵隊長",
+    "name_cn": "游击队盾卫组长",
+    "atk_type_jp": "物理",
+    "hp": "25000",
+    "atk": "800",
+    "def": "1500",
+    "mdef": "60",
+    "aspd%": "100",
+    "aspd": "3.8",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

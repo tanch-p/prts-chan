@@ -1,0 +1,35 @@
+{
+    "id": "P6",
+    "name_en": "Possessed Heavy Defender Leader",
+    "name_jp": "寄生重装隊長",
+    "name_cn": "宿主重装组长",
+    "atk_type_jp": "物理",
+    "hp": "16000",
+    "atk": "800",
+    "def": "1000",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "2.6",
+    "range": "0",
+    "HP回復速度": "250",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.75",
+    "type_jp": [
+        "近距離",
+        "寄生"
+    ],
+    "type_en": [
+        "Melee",
+        "Possessed"
+    ],
+    "type_cn": [
+        "近战",
+        "寄生"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

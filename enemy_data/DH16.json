@@ -1,0 +1,30 @@
+{
+    "id": "DH16",
+    "name_en": "Competition Transport Vessel",
+    "name_jp": "大会輸送艇",
+    "name_cn": "大奖赛运输艇",
+    "atk_type_jp": "攻撃しない",
+    "hp": "2000",
+    "atk": "100",
+    "def": "100",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "1",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "有",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.65",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "special": ""
+}

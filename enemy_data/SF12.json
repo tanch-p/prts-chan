@@ -1,0 +1,32 @@
+{
+    "id": "SF12",
+    "name_en": "Indefatigable 'Blindey'",
+    "name_jp": "不休の「メカクシ」",
+    "name_cn": "不歇的“遮目”",
+    "atk_type_jp": "物理",
+    "hp": "18000",
+    "atk": "1000",
+    "def": "750",
+    "mdef": "25",
+    "aspd%": "100",
+    "aspd": "3.5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.3",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

@@ -1,0 +1,32 @@
+{
+    "id": "AN1",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "磨砻",
+    "atk_type_jp": "物理",
+    "hp": "2000",
+    "atk": "310",
+    "def": "0",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "1.5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "0",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.5",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

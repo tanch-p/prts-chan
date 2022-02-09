@@ -1,0 +1,30 @@
+{
+    "id": "C20",
+    "name_en": "Deadly Caster Prisoner",
+    "name_jp": "重罪術師囚人",
+    "name_cn": "危险术师囚犯",
+    "atk_type_jp": "攻撃しない",
+    "hp": "11000",
+    "atk": "340",
+    "def": "200",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "3.5",
+    "range": "3",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.5",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "special": ""
+}

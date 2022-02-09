@@ -1,0 +1,32 @@
+{
+    "id": "U17",
+    "name_en": "Talulah, the Fighter",
+    "name_jp": "闘士タルラ",
+    "name_cn": "斗士塔露拉",
+    "atk_type_jp": "術",
+    "hp": "15000",
+    "atk": "600",
+    "def": "350",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "5",
+    "range": "1.5",
+    "HP回復速度": "0",
+    "weight": "6",
+    "スタン耐性": "無",
+    "眠り耐性": "有",
+    "凍結耐性": "",
+    "ms": "0.45",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

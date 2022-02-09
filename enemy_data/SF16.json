@@ -1,0 +1,32 @@
+{
+    "id": "SF16",
+    "name_en": "Unbridled 'Fury'",
+    "name_jp": "奔放な「シンイ」",
+    "name_cn": "无羁的“盛怒”",
+    "atk_type_jp": "物理",
+    "hp": "16000",
+    "atk": "1500",
+    "def": "900",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

@@ -1,0 +1,32 @@
+{
+    "id": "T10",
+    "name_en": "Tiacauh Annihilator",
+    "name_jp": "ティアカウ破壊王",
+    "name_cn": "提亚卡乌破坏王",
+    "atk_type_jp": "物理",
+    "hp": "9500",
+    "atk": "750",
+    "def": "700",
+    "mdef": "10",
+    "aspd%": "100",
+    "aspd": "5",
+    "range": "1.3",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

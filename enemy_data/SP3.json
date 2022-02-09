@@ -1,0 +1,32 @@
+{
+    "id": "SP3",
+    "name_en": "Guerrilla Mortar Leader",
+    "name_jp": "遊撃隊砲兵隊長",
+    "name_cn": "游击队迫击炮兵组长",
+    "atk_type_jp": "物理",
+    "hp": "6500",
+    "atk": "590",
+    "def": "550",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "4.8",
+    "range": "15",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.6",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

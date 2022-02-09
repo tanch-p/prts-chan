@@ -1,0 +1,32 @@
+{
+    "id": "SI6",
+    "name_en": "Guerrilla Sniper Leader",
+    "name_jp": "遊撃隊狙撃隊長",
+    "name_cn": "游击队狙击手组长",
+    "atk_type_jp": "物理",
+    "hp": "4000",
+    "atk": "390",
+    "def": "300",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "2.7",
+    "range": "2.2",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.9",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

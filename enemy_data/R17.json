@@ -1,0 +1,32 @@
+{
+    "id": "R17",
+    "name_en": "Holographic Mirage MK2",
+    "name_jp": "戦術ホログラムMK2",
+    "name_cn": "全息幻影MK2",
+    "atk_type_jp": "物理",
+    "hp": "4000",
+    "atk": "350",
+    "def": "0",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "2",
+    "range": "1.5",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.3",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

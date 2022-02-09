@@ -1,0 +1,32 @@
+{
+    "id": "IL12",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "冰原术师队长",
+    "atk_type_jp": "術",
+    "hp": "8000",
+    "atk": "320",
+    "def": "200",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "4",
+    "range": "2.2",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "攻撃しない"
+    ],
+    "type_en": [
+        "Does not attack"
+    ],
+    "type_cn": [
+        "不攻击"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

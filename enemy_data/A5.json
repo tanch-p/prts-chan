@@ -1,0 +1,32 @@
+{
+    "id": "A5",
+    "name_en": "Senior Caster",
+    "name_jp": "上級術師",
+    "name_cn": "高阶术师",
+    "atk_type_jp": "術",
+    "hp": "7000",
+    "atk": "240",
+    "def": "120",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "3.8",
+    "range": "2.2",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

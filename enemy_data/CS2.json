@@ -1,0 +1,32 @@
+{
+    "id": "CS2",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "绯红歌伶",
+    "atk_type_jp": "物理",
+    "hp": "12000",
+    "atk": "500",
+    "def": "300",
+    "mdef": "60",
+    "aspd%": "100",
+    "aspd": "4",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

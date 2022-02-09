@@ -1,0 +1,35 @@
+{
+    "id": "FSK",
+    "name_en": "Forsaken One'",
+    "name_jp": "「見棄てし者」",
+    "name_cn": "“遗弃者”",
+    "atk_type_jp": "物理",
+    "hp": "50000",
+    "atk": "500",
+    "def": "300",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.6",
+    "type_jp": [
+        "近距離",
+        "ボス"
+    ],
+    "type_en": [
+        "Melee",
+        "Boss"
+    ],
+    "type_cn": [
+        "近战",
+        "领袖"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

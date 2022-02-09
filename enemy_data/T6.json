@@ -1,0 +1,32 @@
+{
+    "id": "T6",
+    "name_en": "Tiacauh Ripper",
+    "name_jp": "ティアカウ猛攻隊長",
+    "name_cn": "提亚卡乌撕裂者",
+    "atk_type_jp": "物理",
+    "hp": "7500",
+    "atk": "350",
+    "def": "460",
+    "mdef": "10",
+    "aspd%": "100",
+    "aspd": "0.9",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

@@ -1,0 +1,32 @@
+{
+    "id": "25",
+    "name_en": "Bladed Fighter",
+    "name_jp": "拳刃兵",
+    "name_cn": "拳刃武士",
+    "atk_type_jp": "物理",
+    "hp": "4000",
+    "atk": "450",
+    "def": "300",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "1.5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

@@ -1,0 +1,32 @@
+{
+    "id": "SF15",
+    "name_en": "Fury'",
+    "name_jp": "「シンイ」",
+    "name_cn": "“盛怒”",
+    "atk_type_jp": "物理",
+    "hp": "16000",
+    "atk": "1100",
+    "def": "750",
+    "mdef": "25",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

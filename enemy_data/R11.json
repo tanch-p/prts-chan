@@ -1,0 +1,32 @@
+{
+    "id": "R11",
+    "name_en": "Redmark' Elite Eradicator",
+    "name_jp": "「レッドラベル」根絶尖兵",
+    "name_cn": "“红标”精英根除者",
+    "atk_type_jp": "物理",
+    "hp": "7000",
+    "atk": "2000",
+    "def": "300",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.9",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

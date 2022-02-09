@@ -1,0 +1,32 @@
+{
+    "id": "31",
+    "name_en": "Armed Militant",
+    "name_jp": "武装戦闘員",
+    "name_cn": "武装人员",
+    "atk_type_jp": "物理",
+    "hp": "12000",
+    "atk": "1050",
+    "def": "700",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "3.5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.65",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

@@ -1,0 +1,35 @@
+{
+    "id": "SUI",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "岁相",
+    "atk_type_jp": "物理",
+    "hp": "55000",
+    "atk": "1400",
+    "def": "550",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "2.5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "9",
+    "スタン耐性": "有",
+    "眠り耐性": "有",
+    "凍結耐性": "",
+    "ms": "1",
+    "type_jp": [
+        "遠距離",
+        "ボス"
+    ],
+    "type_en": [
+        "Ranged",
+        "Boss"
+    ],
+    "type_cn": [
+        "远程",
+        "领袖"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

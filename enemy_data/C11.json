@@ -1,0 +1,32 @@
+{
+    "id": "C11",
+    "name_en": "Ordinary Prisoner",
+    "name_jp": "一般囚人",
+    "name_cn": "普通囚犯",
+    "atk_type_jp": "物理",
+    "hp": "5500",
+    "atk": "280",
+    "def": "60",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "2",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.1",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

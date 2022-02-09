@@ -1,0 +1,32 @@
+{
+    "id": "36",
+    "name_en": "Defense Crusher",
+    "name_jp": "クラッシャー",
+    "name_cn": "粉碎攻坚手",
+    "atk_type_jp": "物理",
+    "hp": "10000",
+    "atk": "1000",
+    "def": "1000",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "3.5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.5",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

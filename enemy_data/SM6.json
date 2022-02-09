@@ -1,0 +1,35 @@
+{
+    "id": "SM6",
+    "name_en": "Nourished Spitter",
+    "name_jp": "富栄養化したスピッター",
+    "name_cn": "富营养的喷吐者",
+    "atk_type_jp": "物理",
+    "hp": "5000",
+    "atk": "320",
+    "def": "200",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.75",
+    "type_jp": [
+        "遠距離",
+        "海の怪物"
+    ],
+    "type_en": [
+        "Ranged",
+        "Sea Monster"
+    ],
+    "type_cn": [
+        "远程",
+        "海怪"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

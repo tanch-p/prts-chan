@@ -1,0 +1,35 @@
+{
+    "id": "S6",
+    "name_en": "Sarkaz Caster Leader",
+    "name_jp": "サルカズ術師隊長*1",
+    "name_cn": "萨卡兹术师组长",
+    "atk_type_jp": "術",
+    "hp": "18000",
+    "atk": "700",
+    "def": "200",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "4",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "遠距離",
+        "サルカズ"
+    ],
+    "type_en": [
+        "Ranged",
+        "Sarkaz"
+    ],
+    "type_cn": [
+        "远程",
+        "萨卡兹"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

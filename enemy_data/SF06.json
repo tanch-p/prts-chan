@@ -1,0 +1,32 @@
+{
+    "id": "SF06",
+    "name_en": "Flanking 'Stabby'",
+    "name_jp": "迂遠な「カマクビ」",
+    "name_cn": "迂回的“匕现”",
+    "atk_type_jp": "物理",
+    "hp": "6000",
+    "atk": "400",
+    "def": "280",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "0",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.75",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

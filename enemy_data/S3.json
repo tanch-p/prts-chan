@@ -1,0 +1,35 @@
+{
+    "id": "S3",
+    "name_en": "Sarkaz Crossbowman",
+    "name_jp": "サルカズ狙撃兵",
+    "name_cn": "萨卡兹狙击手",
+    "atk_type_jp": "物理",
+    "hp": "6000",
+    "atk": "450",
+    "def": "200",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "2.2",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "遠距離",
+        "サルカズ"
+    ],
+    "type_en": [
+        "Ranged",
+        "Sarkaz"
+    ],
+    "type_cn": [
+        "远程",
+        "萨卡兹"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

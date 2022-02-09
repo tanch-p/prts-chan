@@ -1,0 +1,35 @@
+{
+    "id": "U15",
+    "name_en": "Emperor's Blade'",
+    "name_jp": "「皇帝の利刃」",
+    "name_cn": "“皇帝的利刃”",
+    "atk_type_jp": "物理",
+    "hp": "50000",
+    "atk": "0",
+    "def": "3000",
+    "mdef": "90",
+    "aspd%": "100",
+    "aspd": "0",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "5",
+    "スタン耐性": "無",
+    "眠り耐性": "有",
+    "凍結耐性": "",
+    "ms": "0.4",
+    "type_jp": [
+        "近・遠距離",
+        "ボス"
+    ],
+    "type_en": [
+        "Melee/Ranged",
+        "Boss"
+    ],
+    "type_cn": [
+        "近战・远程",
+        "领袖"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

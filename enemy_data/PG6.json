@@ -1,0 +1,30 @@
+{
+    "id": "PG6",
+    "name_en": "Legendary War Phantom",
+    "name_jp": "伝説のウォーゴースト",
+    "name_cn": "传奇战争幽灵",
+    "atk_type_jp": "近・物理",
+    "hp": "4800",
+    "atk": "750",
+    "def": "50",
+    "mdef": "40",
+    "aspd%": "100",
+    "aspd": "2.6",
+    "range": "4",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.9",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "special": ""
+}

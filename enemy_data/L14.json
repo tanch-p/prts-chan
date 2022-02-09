@@ -1,0 +1,34 @@
+{
+    "id": "L14",
+    "name_en": "Hexed Colossus",
+    "name_jp": "巫術の巨像",
+    "name_cn": "巫术巨像",
+    "atk_type_jp": "物理",
+    "hp": "150000",
+    "atk": "3600",
+    "def": "800",
+    "mdef": "40",
+    "aspd%": "100",
+    "aspd": "7",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "5",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.4",
+    "type_jp": [
+        "近距離",
+        "法术造物"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战",
+        "法术造物"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

@@ -1,0 +1,312 @@
+[
+  {
+    "category": "champion",
+    "target": "T11",
+    "options": [
+      {
+        "rank": 1,
+        "img": "cchmpn_1",
+        "effect": [{ "hp": 40 }, { "atk": 15 }, { "mdef": 20 }],
+        "tooltip_en": []
+      },
+      {
+        "rank": 2,
+        "img": "cchmpn_amod_2",
+        "effect": [{ "hp": 60 }, { "atk": 30 }, { "mdef": 40 }, { "aspd": 75 }],
+        "tooltip_en": []
+      },
+      {
+        "rank": 3,
+        "img": "cchmpn_amod_3",
+        "effect": [
+          { "hp": 90 },
+          { "atk": 50 },
+          { "mdef": 60 },
+          { "aspd": 150 },
+          { "special": "Stealth" }
+        ],
+        "tooltip_en": []
+      }
+    ]
+  },
+  {
+    "category": "champion",
+    "target": "T11",
+    "options": [
+      { "rank": 1 },
+      {
+        "rank": 2,
+        "img": "cchmpn_bmod_2",
+        "effect": [
+          { "hp": 80 },
+          { "atk": 30 },
+          { "mdef": 40 },
+          { "special": "def drop 40%" }
+        ],
+        "tooltip_en": []
+      },
+      {
+        "rank": 3,
+        "img": "cchmpn_bmod_3",
+        "effect": [
+          { "hp": 130 },
+          { "atk": 50 },
+          { "mdef": 60 },
+          { "special": "def drop 0%" }
+        ],
+        "tooltip_en": []
+      }
+    ]
+  },
+  {
+    "category": "ripper",
+    "target": "T5",
+    "options": [
+      {
+        "rank": 1,
+        "img": "ccripr_1",
+        "effect": [{ "hp": 40 }, { "aspd": 30 }, { "ms": 40 }, { "weight": 1 }],
+        "tooltip_en": []
+      },
+      {
+        "rank": 2,
+        "img": "ccripr_2",
+        "effect": [
+          { "hp": 90 },
+          { "aspd": 70 },
+          { "ms": 100 },
+          { "weight": 1 },
+          { "special": "def lower x2" }
+        ],
+        "tooltip_en": []
+      },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "shaman",
+    "target": "T7",
+    "options": [
+      {
+        "rank": 1,
+        "img": "ccwitch_1",
+        "effect": [{ "hp": 30 }, { "atk": 30 }, { "def": 50 }],
+        "tooltip_en": []
+      },
+      {
+        "rank": 2,
+        "img": "ccwitch_2",
+        "effect": [
+          { "hp": 70 },
+          { "atk": 70 },
+          { "def": 100 },
+          { "range": 60 }
+        ],
+        "tooltip_en": []
+      },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "enemy_attack",
+    "target": "ALL",
+    "options": [
+      {
+        "rank": 1,
+        "img": "enemy_atk_1",
+        "effect": [{ "atk": 15 }],
+        "tooltip_en": []
+      },
+      {
+        "rank": 2,
+        "img": "enemy_atk_2",
+        "effect": [{ "atk": 40 }],
+        "tooltip_en": []
+      },
+      {
+        "rank": 3,
+        "img": "enemy_atk_3",
+        "effect": [{ "atk": 80 }],
+        "tooltip_en": []
+      }
+    ]
+  },
+  {
+    "category": "enemy_hp",
+    "target": "ALL",
+    "options": [
+      {
+        "rank": 1,
+        "img": "enemy_hp_1",
+        "effect": [{ "hp": 20 }],
+        "tooltip_en": []
+      },
+      {
+        "rank": 2,
+        "img": "enemy_hp_2",
+        "effect": [{ "hp": 60 }],
+        "tooltip_en": []
+      },
+      {
+        "rank": 3,
+        "img": "enemy_hp_3",
+        "effect": [{ "hp": 110 }],
+        "tooltip_en": []
+      }
+    ]
+  },
+  {
+    "category": "char_aspd",
+    "target": "-",
+    "options": [
+      { "rank": 1, "img": "char_aspd_1", "effect": [], "tooltip_en": [] },
+      { "rank": 2, "img": "char_aspd_2", "effect": [], "tooltip_en": [] },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "char_hp",
+    "target": "-",
+    "options": [
+      { "rank": 1, "img": "char_hp_1", "effect": [], "tooltip_en": [] },
+      { "rank": 2, "img": "char_hp_2", "effect": [], "tooltip_en": [] },
+      { "rank": 3, "img": "char_hp_3", "effect": [], "tooltip_en": [] }
+    ]
+  },
+  {
+    "category": "operator_cost",
+    "target": "-",
+    "options": [
+      {
+        "rank": 1,
+        "img": "cost_guardspecial_1",
+        "effect": [],
+        "tooltip_en": []
+      },
+      {
+        "rank": 2,
+        "img": "cost_guardspecial_2",
+        "effect": [],
+        "tooltip_en": []
+      },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "operator_cost",
+    "target": "-",
+    "options": [
+      {
+        "rank": 1,
+        "img": "cost_castersupporter_1",
+        "effect": [],
+        "tooltip_en": []
+      },
+      {
+        "rank": 2,
+        "img": "cost_castersupporter_2",
+        "effect": [],
+        "tooltip_en": []
+      },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "global_cost_recovery",
+    "target": "-",
+    "options": [
+      {
+        "rank": 1,
+        "img": "global_cost_recovery_1",
+        "effect": [],
+        "tooltip_en": []
+      },
+      {
+        "rank": 2,
+        "img": "global_cost_recovery_2",
+        "effect": [],
+        "tooltip_en": []
+      },
+      {
+        "rank": 3,
+        "img": "global_cost_recovery_3",
+        "effect": [],
+        "tooltip_en": []
+      }
+    ]
+  },
+  {
+    "category": "squad",
+    "target": "-",
+    "options": [
+      { "rank": 1, "img": "squad_1", "effect": [], "tooltip_en": [] },
+      { "rank": 2, "img": "squad_2", "effect": [], "tooltip_en": [] },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "squad",
+    "target": "-",
+    "options": [
+      { "rank": 1, "img": "pcharnum_1", "effect": [], "tooltip_en": [] },
+      { "rank": 2, "img": "pcharnum_2", "effect": [], "tooltip_en": [] },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "storm_direction",
+    "target": "-",
+    "options": [
+      { "rank": 1, "img": "storm_direction_1", "effect": [], "tooltip_en": [] },
+      { "rank": 2, "img": "storm_direction_2", "effect": [], "tooltip_en": [] },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "lifepoint",
+    "target": "-",
+    "options": [
+      { "rank": 1, "img": "lifepoint_1", "effect": [], "tooltip_en": [] }
+    ]
+  },
+  {
+    "category": "storm_damage",
+    "target": "-",
+    "options": [
+      { "rank": 2, "img": "storm_damage_2", "effect": [], "tooltip_en": [] },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "others_2",
+    "target": "-",
+    "options": [
+      { "rank": 1, "img": "char_atk_1", "effect": [], "tooltip_en": [] },
+      { "rank": 2 },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "others_3",
+    "target": "ALL",
+    "options": [
+      {
+        "rank": 1,
+        "img": "enemy_def_1",
+        "effect": [{ "fixed-def": "200" }],
+        "tooltip_en": []
+      },
+      { "rank": 2 },
+      { "rank": 3 }
+    ]
+  },
+  {
+    "category": "others_4",
+    "target": "-",
+    "options": [
+      { "rank": 1, "img": "storm_speed_1", "effect": [], "tooltip_en": [] },
+      { "rank": 2 },
+      { "rank": 3 }
+    ]
+  }
+]

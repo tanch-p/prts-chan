@@ -1,0 +1,33 @@
+{
+    "id": "MP",
+    "name_en": "Mephisto",
+    "name_jp": "Mephisto",
+    "name_cn": "梅菲斯特",
+    "atk_type_jp": "治療",
+    "hp": "28000",
+    "atk": "500",
+    "def": "200",
+    "mdef": "60",
+    "aspd%": "100",
+    "aspd": "6",
+    "range": "20",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.5",
+    "type_jp": [
+        "攻撃しない",
+        "ボス"
+    ],
+    "type_en": [
+        "Does not attack",
+        "Boss"
+    ],
+    "type_cn": [
+        "不攻击",
+        "领袖"
+    ],
+    "special": ""
+}

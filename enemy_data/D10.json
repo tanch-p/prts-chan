@@ -1,0 +1,38 @@
+{
+    "id": "D10",
+    "name_en": "Oneiros",
+    "name_jp": "ヒョウバクバチ",
+    "name_cn": "虚幻",
+    "atk_type_jp": "術",
+    "hp": "4000",
+    "atk": "500",
+    "def": "180",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "1",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "0",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.6",
+    "type_jp": [
+        "近距離",
+        "飛行",
+        "ドローン"
+    ],
+    "type_en": [
+        "Melee",
+        "Flying",
+        "Drone"
+    ],
+    "type_cn": [
+        "近战",
+        "飞行",
+        "无人机"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

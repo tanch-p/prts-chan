@@ -1,0 +1,32 @@
+{
+    "id": "09",
+    "name_en": "Heavy Defender Leader",
+    "name_jp": "重装隊長",
+    "name_cn": "重装防御组长",
+    "atk_type_jp": "物理",
+    "hp": "10000",
+    "atk": "600",
+    "def": "1000",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "2.6",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.75",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

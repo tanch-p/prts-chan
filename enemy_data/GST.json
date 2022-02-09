@@ -1,0 +1,35 @@
+{
+    "id": "GST",
+    "name_en": "Gravestone'",
+    "name_jp": "「墓碑」",
+    "name_cn": "“墓碑”",
+    "atk_type_jp": "物理",
+    "hp": "60000",
+    "atk": "2000",
+    "def": "330",
+    "mdef": "55",
+    "aspd%": "100",
+    "aspd": "3.5",
+    "range": "2.2",
+    "HP回復速度": "0",
+    "weight": "6",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.5",
+    "type_jp": [
+        "近・遠距離",
+        "ボス"
+    ],
+    "type_en": [
+        "Melee/Ranged",
+        "Boss"
+    ],
+    "type_cn": [
+        "近战・远程",
+        "领袖"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

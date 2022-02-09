@@ -1,0 +1,34 @@
+{
+    "id": "L13",
+    "name_en": "Mudrock Colossus",
+    "name_jp": "マドロックの巨像",
+    "name_cn": "泥岩巨像",
+    "atk_type_jp": "物理",
+    "hp": "100000",
+    "atk": "3000",
+    "def": "700",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "7",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "5",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.4",
+    "type_jp": [
+        "近距離",
+        "法术造物"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战",
+        "法术造物"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

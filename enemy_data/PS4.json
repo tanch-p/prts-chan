@@ -1,0 +1,36 @@
+{
+    "id": "PS4",
+    "name_en": "Anvil Model-B",
+    "name_jp": "鉄砧タイプB",
+    "name_cn": "铁砧B型",
+    "atk_type_jp": "攻撃しない",
+    "hp": "8000",
+    "atk": "0",
+    "def": "80",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "1",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "0",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1",
+    "type_jp": [
+        "攻撃しない",
+        "飛行",
+        "ドローン"
+    ],
+    "type_en": [
+        "Does not attack",
+        "Flying",
+        "Drone"
+    ],
+    "type_cn": [
+        "不攻击",
+        "飞行",
+        "无人机"
+    ],
+    "special": ""
+}

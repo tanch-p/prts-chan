@@ -1,0 +1,35 @@
+{
+    "id": "11",
+    "name_en": "Big Bob",
+    "name_jp": "Big Bob",
+    "name_cn": "大鲍勃",
+    "atk_type_jp": "物理",
+    "hp": "22000",
+    "atk": "1900",
+    "def": "800",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "6",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.5",
+    "type_jp": [
+        "近距離",
+        "ボス"
+    ],
+    "type_en": [
+        "Melee",
+        "Boss"
+    ],
+    "type_cn": [
+        "近战",
+        "领袖"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

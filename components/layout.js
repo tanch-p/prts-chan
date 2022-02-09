@@ -41,7 +41,7 @@ export default function Layout({ children, home }) {
       >
         <Navbar open={open} setOpen={setOpen} />
       </header>
-      <main className="mx-auto ">{children}</main>
+      <main className="mx-auto flex flex-wrap flex-col items-center">{children}</main>
     </div>
   );
 }

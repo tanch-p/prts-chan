@@ -1,0 +1,32 @@
+{
+    "id": "DH9",
+    "name_en": "Caster Speedboat",
+    "name_jp": "造波術師搭乗ボート",
+    "name_cn": "术师快艇",
+    "atk_type_jp": "術",
+    "hp": "12000",
+    "atk": "300",
+    "def": "200",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "3.5",
+    "range": "3",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.1",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

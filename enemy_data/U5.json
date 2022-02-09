@@ -1,0 +1,32 @@
+{
+    "id": "U5",
+    "name_en": "Ursus Assault Crossbowman",
+    "name_jp": "ウルサス強襲射撃兵",
+    "name_cn": "乌萨斯突袭弩手",
+    "atk_type_jp": "物理",
+    "hp": "4000",
+    "atk": "350",
+    "def": "200",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "2.3",
+    "range": "2.4",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

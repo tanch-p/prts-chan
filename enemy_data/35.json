@@ -1,0 +1,32 @@
+{
+    "id": "35",
+    "name_en": "Breaker Leader",
+    "name_jp": "切り込み隊長",
+    "name_cn": "破阵者组长",
+    "atk_type_jp": "物理",
+    "hp": "5000",
+    "atk": "500",
+    "def": "80",
+    "mdef": "25",
+    "aspd%": "100",
+    "aspd": "1.4",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.9",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

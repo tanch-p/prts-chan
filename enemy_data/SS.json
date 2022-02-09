@@ -1,0 +1,33 @@
+{
+    "id": "SS",
+    "name_en": "Skullshatterer",
+    "name_jp": "SkullShredder",
+    "name_cn": "碎骨",
+    "atk_type_jp": "近・物理",
+    "hp": "10500",
+    "atk": "1000",
+    "def": "150",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "2.6",
+    "HP回復速度": "0",
+    "weight": "5",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.6",
+    "type_jp": [
+        "近・遠距離",
+        "ボス"
+    ],
+    "type_en": [
+        "Melee/Ranged",
+        "Boss"
+    ],
+    "type_cn": [
+        "近战・远程",
+        "领袖"
+    ],
+    "special": ""
+}

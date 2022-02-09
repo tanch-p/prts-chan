@@ -1,0 +1,38 @@
+{
+    "id": "DK2",
+    "name_en": "Withered Knight",
+    "name_jp": "凋零騎士",
+    "name_cn": "凋零骑士",
+    "atk_type_jp": "術",
+    "hp": "40000",
+    "atk": "500",
+    "def": "600",
+    "mdef": "70",
+    "aspd%": "100",
+    "aspd": "4",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "6",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.65",
+    "type_jp": [
+        "近距離",
+        "ボス",
+        "サルカズ"
+    ],
+    "type_en": [
+        "Melee",
+        "Boss",
+        "Sarkaz"
+    ],
+    "type_cn": [
+        "近战",
+        "领袖",
+        "萨卡兹"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

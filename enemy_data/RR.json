@@ -1,0 +1,30 @@
+{
+    "id": "RR",
+    "name_en": "Automatic Maintenance Drone",
+    "name_jp": "自動メンテナンス機",
+    "name_cn": "自动维护机器",
+    "atk_type_jp": "攻撃しない",
+    "hp": "6000",
+    "atk": "0",
+    "def": "0",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "0",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.6",
+    "type_jp": [
+        "攻撃しない"
+    ],
+    "type_en": [
+        "Does not attack"
+    ],
+    "type_cn": [
+        "不攻击"
+    ],
+    "special": ""
+}

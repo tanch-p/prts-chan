@@ -1,0 +1,35 @@
+{
+    "id": "R7",
+    "name_en": "Mutant Giant Rock Spider α",
+    "name_jp": "変異オオイワグモα",
+    "name_cn": "变异巨岩蛛α",
+    "atk_type_jp": "物理",
+    "hp": "20000",
+    "atk": "800",
+    "def": "300",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "2",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "遠距離",
+        "感染生物"
+    ],
+    "type_en": [
+        "Ranged",
+        "Infected Creature"
+    ],
+    "type_cn": [
+        "远程",
+        "感染生物"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

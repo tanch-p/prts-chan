@@ -1,0 +1,35 @@
+{
+    "id": "P7",
+    "name_en": "Enraged Possessed Soldier",
+    "name_jp": "狂化寄生兵",
+    "name_cn": "狂暴宿主士兵",
+    "atk_type_jp": "物理",
+    "hp": "20000",
+    "atk": "1000",
+    "def": "200",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "1.3",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.2",
+    "type_jp": [
+        "近距離",
+        "寄生"
+    ],
+    "type_en": [
+        "Melee",
+        "Possessed"
+    ],
+    "type_cn": [
+        "近战",
+        "寄生"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

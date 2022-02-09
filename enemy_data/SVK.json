@@ -1,0 +1,38 @@
+{
+    "id": "SVK",
+    "name_en": "Sal Viento Bishop Quintus",
+    "name_jp": "「潮風の司教」クイントゥス",
+    "name_cn": "盐风主教昆图斯",
+    "atk_type_jp": "物理",
+    "hp": "100000",
+    "atk": "380",
+    "def": "500",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "3.5",
+    "range": "99",
+    "HP回復速度": "0",
+    "weight": "99",
+    "スタン耐性": "有",
+    "眠り耐性": "有",
+    "凍結耐性": "",
+    "ms": "1",
+    "type_jp": [
+        "遠距離",
+        "ボス",
+        "海の怪物"
+    ],
+    "type_en": [
+        "Ranged",
+        "Boss",
+        "Sea Monster"
+    ],
+    "type_cn": [
+        "远程",
+        "领袖",
+        "海怪"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

@@ -1,0 +1,38 @@
+{
+    "id": "D5",
+    "name_en": "Bombtail",
+    "name_jp": "バクダンバチ",
+    "name_cn": "暴鸰",
+    "atk_type_jp": "物理",
+    "hp": "4000",
+    "atk": "800",
+    "def": "150",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "5",
+    "range": "2",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.6",
+    "type_jp": [
+        "近距離",
+        "飛行",
+        "ドローン"
+    ],
+    "type_en": [
+        "Melee",
+        "Flying",
+        "Drone"
+    ],
+    "type_cn": [
+        "近战",
+        "飞行",
+        "无人机"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

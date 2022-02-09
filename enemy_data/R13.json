@@ -1,0 +1,32 @@
+{
+    "id": "R13",
+    "name_en": "Redmark' Elite Infiltrator",
+    "name_jp": "「レッドラベル」浸透尖兵",
+    "name_cn": "“红标”精英渗透者",
+    "atk_type_jp": "物理",
+    "hp": "8000",
+    "atk": "500",
+    "def": "500",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "2",
+    "range": "1.5",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.3",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

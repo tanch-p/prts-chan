@@ -2,7 +2,9 @@ import Layout from "../../components/layout";
 import { getAllStageIds, getStageData } from "../../lib/stages";
 import Head from "next/head";
 import Image from "next/image";
+import Map from "../../components/Map";
 import EnemySimple from "../../components/EnemySimple";
+import CC_buttons from "../../components/CC_buttons";
 
 export async function getStaticProps({ params }) {
   const stageData = await getStageData(params.name);
@@ -22,22 +24,20 @@ export async function getStaticPaths() {
 }
 
 export default function Stage({ stageData }) {
-	// console.log(stageData);
+  // console.log(stageData);
 
-
-
-
-	return (
+  return (
     <Layout>
       <Head>
-        <title>{stageData.name}</title>
+        <title>{stageData.mapConfig.name}</title>
       </Head>
-      <Image
-        src={`/images/maps/${stageData.name}.jpg`}
-        alt={stageData.name}
-		height="600px"
-		width="1062px"
-      ></Image>
+      <header className="w-full">
+        <h2>{stageData.mapConfig.name}</h2>
+      </header>
+
+      <Map mapConfig={stageData.mapConfig} />
+      {stageData.mapConfig.isCC ? <CC_buttons mapConfig={stageData.mapConfig} /> : null}
+
       <EnemySimple stageData={stageData} />
     </Layout>
   );

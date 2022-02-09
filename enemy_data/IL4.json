@@ -1,0 +1,32 @@
+{
+    "id": "IL4",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "坚冰AS.T",
+    "atk_type_jp": "物理",
+    "hp": "7000",
+    "atk": "350",
+    "def": "150",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "2",
+    "HP回復速度": "0",
+    "weight": "0",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

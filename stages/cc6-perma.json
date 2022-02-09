@@ -1,0 +1,17 @@
+{
+    "name": "cc6-perma",
+    "name_jp":"狂嚎沙原",
+    "name_cn":"狂嚎沙原",
+    "img": "狂嚎沙原",
+    "isCC":true,
+    "isRogue":false,
+    "enemies":[
+        {"id":"T1", "count":23},
+        {"id":"T5", "count":4},
+        {"id":"T7", "count":7},
+        {"id":"T11", "count":4},
+        {"id":"R10", "count":1},
+        {"id":"R12", "count":2},
+        {"id":"R16", "count":""}
+    ]
+}

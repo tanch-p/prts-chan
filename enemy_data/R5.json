@@ -1,0 +1,35 @@
+{
+    "id": "R5",
+    "name_en": "Mutant Rock Spider α",
+    "name_jp": "変異イワグモα",
+    "name_cn": "变异岩蛛α",
+    "atk_type_jp": "物理",
+    "hp": "3500",
+    "atk": "410",
+    "def": "200",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "1.5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.1",
+    "type_jp": [
+        "近距離",
+        "感染生物"
+    ],
+    "type_en": [
+        "Melee",
+        "Infected Creature"
+    ],
+    "type_cn": [
+        "近战",
+        "感染生物"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

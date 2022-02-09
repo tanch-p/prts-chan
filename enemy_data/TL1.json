@@ -1,0 +1,35 @@
+{
+    "id": "TL1",
+    "name_en": "Mercenary Sarkaz Fighter",
+    "name_jp": "サルカズ傭兵",
+    "name_cn": "雇佣军萨卡兹战士",
+    "atk_type_jp": "物理・術",
+    "hp": "8000",
+    "atk": "480",
+    "def": "400",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "2.5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.85",
+    "type_jp": [
+        "遠距離",
+        "サルカズ"
+    ],
+    "type_en": [
+        "Ranged",
+        "Sarkaz"
+    ],
+    "type_cn": [
+        "远程",
+        "萨卡兹"
+    ],
+    "atk_type_en": "phys/spell",
+    "atk_type_cn": "物理・法",
+    "special": ""
+}

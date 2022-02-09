@@ -1,0 +1,38 @@
+{
+    "id": "SC",
+    "name_en": "Sarkaz Centurion",
+    "name_jp": "サルカズケントゥリオ",
+    "name_cn": "萨卡兹百夫长",
+    "atk_type_jp": "術",
+    "hp": "15000",
+    "atk": "700",
+    "def": "250",
+    "mdef": "35",
+    "aspd%": "100",
+    "aspd": "5",
+    "range": "2.35",
+    "HP回復速度": "0",
+    "weight": "5",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.78",
+    "type_jp": [
+        "遠距離",
+        "ボス",
+        "サルカズ"
+    ],
+    "type_en": [
+        "Ranged",
+        "Boss",
+        "Sarkaz"
+    ],
+    "type_cn": [
+        "远程",
+        "领袖",
+        "萨卡兹"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

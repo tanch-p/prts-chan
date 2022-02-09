@@ -1,0 +1,32 @@
+{
+    "id": "AN14",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "心涛",
+    "atk_type_jp": "物理",
+    "hp": "7600",
+    "atk": "500",
+    "def": "500",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "2.2",
+    "range": "2",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

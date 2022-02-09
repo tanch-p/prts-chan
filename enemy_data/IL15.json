@@ -1,0 +1,32 @@
+{
+    "id": "IL15",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "山雪鬼",
+    "atk_type_jp": "物理",
+    "hp": "15000",
+    "atk": "600",
+    "def": "600",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "3.7",
+    "range": "1.5",
+    "HP回復速度": "0",
+    "weight": "5",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.9",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

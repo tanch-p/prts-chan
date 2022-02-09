@@ -1,0 +1,36 @@
+{
+    "id": "TY2",
+    "name_en": "Luxury Sponsor Drone",
+    "name_jp": "豪華協賛ドローン",
+    "name_cn": "豪华赞助无人机",
+    "atk_type_jp": "攻撃しない",
+    "hp": "10000",
+    "atk": "0",
+    "def": "300",
+    "mdef": "40",
+    "aspd%": "100",
+    "aspd": "1",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.5",
+    "type_jp": [
+        "遠距離",
+        "飛行",
+        "ドローン"
+    ],
+    "type_en": [
+        "Ranged",
+        "Flying",
+        "Drone"
+    ],
+    "type_cn": [
+        "远程",
+        "飞行",
+        "无人机"
+    ],
+    "special": ""
+}

@@ -1,0 +1,33 @@
+{
+    "id": "BU",
+    "name_en": "The Big Ugly Thing'",
+    "name_jp": "「ビッグアグリー」",
+    "name_cn": "“巨大的丑东西”",
+    "atk_type_jp": "近・物理",
+    "hp": "40000",
+    "atk": "500",
+    "def": "1000",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "4",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "6",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.6",
+    "type_jp": [
+        "攻撃しない",
+        "ボス"
+    ],
+    "type_en": [
+        "Does not attack",
+        "Boss"
+    ],
+    "type_cn": [
+        "不攻击",
+        "领袖"
+    ],
+    "special": ""
+}

@@ -7,6 +7,7 @@
     1. more buttons
     2. banner
     3. search function
+    4. themes
 
   - Drawer
     - About
@@ -22,6 +23,12 @@
   2.  detailed view
   3.  map stats
   4.  tidy up simple view
+
+  - Enemy
+  
+    1. change atk to array of objects
+    2. account for special stats
+    3. add remarks 
 
 #### Resolved conflicts in enemy IDs:
 

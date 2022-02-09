@@ -1,0 +1,31 @@
+{
+    "id": "U14",
+    "name_en": "Elite Imperial Striker",
+    "name_jp": "帝国歴戦先鋒",
+    "name_cn": "帝国前锋百战精锐",
+    "atk_type_jp": "近・物理",
+    "hp": "15000",
+    "atk": "1200",
+    "def": "800",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "4.5",
+    "range": "1.5",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "遠距離",
+        "精鋭"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "special": ""
+}

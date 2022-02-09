@@ -1,0 +1,35 @@
+{
+    "id": "RSH",
+    "name_en": "Rusthammer Warrior",
+    "name_jp": "錆鎚の戦士",
+    "name_cn": "锈锤战士",
+    "atk_type_jp": "物理・術",
+    "hp": "40000",
+    "atk": "1200",
+    "def": "550",
+    "mdef": "40",
+    "aspd%": "100",
+    "aspd": "5",
+    "range": "20",
+    "HP回復速度": "0",
+    "weight": "5",
+    "スタン耐性": "無",
+    "眠り耐性": "有",
+    "凍結耐性": "",
+    "ms": "0.4",
+    "type_jp": [
+        "遠距離",
+        "ボス"
+    ],
+    "type_en": [
+        "Ranged",
+        "Boss"
+    ],
+    "type_cn": [
+        "远程",
+        "领袖"
+    ],
+    "atk_type_en": "phys/spell",
+    "atk_type_cn": "物理・法",
+    "special": ""
+}

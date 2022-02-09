@@ -1,0 +1,32 @@
+{
+    "id": "04",
+    "name_en": "Dual Swordsman",
+    "name_jp": "双剣士",
+    "name_cn": "双持剑士",
+    "atk_type_jp": "物理",
+    "hp": "2000",
+    "atk": "350",
+    "def": "100",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "1.2",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.1",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

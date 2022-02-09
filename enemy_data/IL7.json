@@ -1,0 +1,32 @@
+{
+    "id": "IL7",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "冰原猎人",
+    "atk_type_jp": "物理",
+    "hp": "3500",
+    "atk": "350",
+    "def": "100",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "3.5",
+    "range": "15",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.1",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

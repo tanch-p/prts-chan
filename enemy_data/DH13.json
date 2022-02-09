@@ -1,0 +1,30 @@
+{
+    "id": "DH13",
+    "name_en": "Unmanned Explosive Boat",
+    "name_jp": "無人爆弾ボート",
+    "name_cn": "无人爆破艇",
+    "atk_type_jp": "攻撃しない",
+    "hp": "8000",
+    "atk": "300",
+    "def": "300",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "1",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.2",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "special": ""
+}

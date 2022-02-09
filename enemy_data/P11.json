@@ -1,0 +1,35 @@
+{
+    "id": "P11",
+    "name_en": "Sarkaz Centurion Host",
+    "name_jp": "サルカズ寄生ケントゥリオ",
+    "name_cn": "萨卡兹宿主百夫长",
+    "atk_type_jp": "術",
+    "hp": "10000",
+    "atk": "600",
+    "def": "200",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "5",
+    "range": "1.6",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "遠距離",
+        "寄生"
+    ],
+    "type_en": [
+        "Ranged",
+        "Possessed"
+    ],
+    "type_cn": [
+        "远程",
+        "寄生"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

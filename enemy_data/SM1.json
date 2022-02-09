@@ -1,0 +1,35 @@
+{
+    "id": "SM1",
+    "name_en": "Shell Sea Runner",
+    "name_jp": "殻海のランナー",
+    "name_cn": "壳海狂奔者",
+    "atk_type_jp": "物理",
+    "hp": "3000",
+    "atk": "280",
+    "def": "0",
+    "mdef": "20",
+    "aspd%": "100",
+    "aspd": "1.3",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "0",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.9",
+    "type_jp": [
+        "近距離",
+        "海の怪物"
+    ],
+    "type_en": [
+        "Melee",
+        "Sea Monster"
+    ],
+    "type_cn": [
+        "近战",
+        "海怪"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

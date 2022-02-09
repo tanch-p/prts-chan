@@ -1,0 +1,32 @@
+{
+    "id": "18",
+    "name_en": "Rioter Leader",
+    "name_jp": "凶悪暴徒",
+    "name_cn": "暴乱分子",
+    "atk_type_jp": "物理",
+    "hp": "2650",
+    "atk": "350",
+    "def": "85",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "2",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "0",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.1",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

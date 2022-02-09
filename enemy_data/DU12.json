@@ -1,0 +1,32 @@
+{
+    "id": "DU12",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "深池重甲卫士队长",
+    "atk_type_jp": "物理",
+    "hp": "9000",
+    "atk": "900",
+    "def": "1100",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "4",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

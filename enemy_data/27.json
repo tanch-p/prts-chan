@@ -1,0 +1,32 @@
+{
+    "id": "27",
+    "name_en": "Logger",
+    "name_jp": "伐採者",
+    "name_cn": "伐木机",
+    "atk_type_jp": "物理",
+    "hp": "8000",
+    "atk": "750",
+    "def": "80",
+    "mdef": "30",
+    "aspd%": "100",
+    "aspd": "3.3",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.75",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

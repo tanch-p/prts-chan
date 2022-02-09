@@ -7,6 +7,12 @@ export const Navbar = ({ open, setOpen }) => {
   const [language, setLanguage] = languageContext;
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const languageOptions = [
+    { name: "简体中文", code: "cn" },
+    { name: "English", code: "en" },
+    { name: "日本語", code: "jp" },
+  ];
+
   return (
     <>
       <nav className="flex w-full items-center justify-between px-6 h-16  text-gray-700 border-b border-gray-200 z-10">
@@ -40,24 +46,24 @@ export const Navbar = ({ open, setOpen }) => {
           <div>
             <button
               type="button"
-              class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+              className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
               id="menu-button"
-              onClick={() => setMenuOpen(true)}
+              onClick={() => setMenuOpen(!menuOpen)}
             >
-              Language: <span>{" "}</span>
+              Language: {" "}<span> </span>
               <span className="font-bold">{` ${language.toUpperCase()}`}</span>
               {/* <!-- Heroicon name: solid/chevron-down --> */}
               <svg
-                class="-mr-1 ml-2 h-5 w-5"
+                className="-mr-1 ml-2 h-5 w-5"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 aria-hidden="true"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
             </button>
@@ -73,50 +79,28 @@ export const Navbar = ({ open, setOpen }) => {
       To: "transform opacity-0 scale-95" */}
           {menuOpen ? (
             <div
-              className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-29"
+              className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-30"
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="menu-button"
               tabindex="-1"
             >
-              <div className="py-1 w-full">
+              <div className="py-1 w-full z-30">
                 {/* <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" --> */}
-                <button
-                  class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 w-full text-left"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-0"
-                  onClick={() => {
-                    setLanguage("cn");
-                    setMenuOpen(false);
-                  }}
-                >
-                  简体中文
-                </button>
-                <button
-                  className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 w-full text-left"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-1"
-                  onClick={() => {
-                    setLanguage("en");
-                    setMenuOpen(false);
-                  }}
-                >
-                  English
-                </button>
-                <button
-                  className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 w-full text-left"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-2"
-                  onClick={() => {
-                    setLanguage("jp");
-                    setMenuOpen(false);
-                  }}
-                >
-                  日本語
-                </button>
+                {languageOptions.map(({ name, code }) => (
+                  <button
+                    className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 w-full text-left"
+                    role="menuitem"
+                    tabIndex="-1"
+                    id="menu-item-0"
+                    onClick={() => {
+                      setLanguage(code);
+                      setMenuOpen(false);
+                    }}
+                  >
+                    {name}
+                  </button>
+                ))}
               </div>
             </div>
           ) : null}

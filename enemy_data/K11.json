@@ -1,0 +1,32 @@
+{
+    "id": "K11",
+    "name_en": "Bloodboil Knightclub Elite",
+    "name_jp": "ブラッドボイル精鋭騎士",
+    "name_cn": "沸血骑士团精锐",
+    "atk_type_jp": "物理",
+    "hp": "13000",
+    "atk": "650",
+    "def": "800",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "2.3",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.7",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

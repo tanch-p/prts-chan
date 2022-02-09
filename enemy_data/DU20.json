@@ -1,0 +1,32 @@
+{
+    "id": "DU20",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "深池伙友影刃精英",
+    "atk_type_jp": "術",
+    "hp": "15000",
+    "atk": "580",
+    "def": "550",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "2.1",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

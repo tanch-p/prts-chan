@@ -1,0 +1,32 @@
+{
+    "id": "DH12",
+    "name_en": "Dockworker Leader Motorboat",
+    "name_jp": "水兵長搭乗クルーザー",
+    "name_cn": "水手长重艇",
+    "atk_type_jp": "物理",
+    "hp": "20000",
+    "atk": "1400",
+    "def": "1200",
+    "mdef": "0",
+    "aspd%": "100",
+    "aspd": "5",
+    "range": "0",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.2",
+    "type_jp": [
+        "攻撃しない"
+    ],
+    "type_en": [
+        "Does not attack"
+    ],
+    "type_cn": [
+        "不攻击"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}

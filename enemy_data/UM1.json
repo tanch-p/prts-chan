@@ -1,0 +1,38 @@
+{
+    "id": "UM1",
+    "name_en": "Pompeii'",
+    "name_jp": "Pompeii",
+    "name_cn": "庞贝",
+    "atk_type_jp": "術",
+    "hp": "40000",
+    "atk": "230",
+    "def": "220",
+    "mdef": "70",
+    "aspd%": "100",
+    "aspd": "3.5",
+    "range": "3.5",
+    "HP回復速度": "0",
+    "weight": "4",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.65",
+    "type_jp": [
+        "遠距離",
+        "ボス",
+        "感染生物"
+    ],
+    "type_en": [
+        "Ranged",
+        "Boss",
+        "Infected Creature"
+    ],
+    "type_cn": [
+        "远程",
+        "领袖",
+        "感染生物"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

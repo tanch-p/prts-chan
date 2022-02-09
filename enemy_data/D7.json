@@ -1,0 +1,38 @@
+{
+    "id": "D7",
+    "name_en": "Arts Master A1",
+    "name_jp": "アーツバードA1",
+    "name_cn": "法术大师A1",
+    "atk_type_jp": "術",
+    "hp": "2700",
+    "atk": "220",
+    "def": "100",
+    "mdef": "65",
+    "aspd%": "100",
+    "aspd": "2.15",
+    "range": "1.8",
+    "HP回復速度": "0",
+    "weight": "1",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "1.5",
+    "type_jp": [
+        "遠距離",
+        "飛行",
+        "ドローン"
+    ],
+    "type_en": [
+        "Ranged",
+        "Flying",
+        "Drone"
+    ],
+    "type_cn": [
+        "远程",
+        "飞行",
+        "无人机"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

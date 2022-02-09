@@ -1,0 +1,32 @@
+{
+    "id": "SF14",
+    "name_en": "Complicated 'Envy'",
+    "name_jp": "複雑な「ソネミ」",
+    "name_cn": "复杂的“妒”",
+    "atk_type_jp": "術",
+    "hp": "15000",
+    "atk": "700",
+    "def": "220",
+    "mdef": "50",
+    "aspd%": "100",
+    "aspd": "4",
+    "range": "2.5",
+    "HP回復速度": "0",
+    "weight": "3",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "遠距離"
+    ],
+    "type_en": [
+        "Ranged"
+    ],
+    "type_cn": [
+        "远程"
+    ],
+    "atk_type_en": "spell",
+    "atk_type_cn": "法术",
+    "special": ""
+}

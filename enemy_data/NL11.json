@@ -1,0 +1,32 @@
+{
+    "id": "NL11",
+    "name_en": "",
+    "name_jp": "",
+    "name_cn": "青金，莫妮克",
+    "atk_type_jp": "物理",
+    "hp": "9000",
+    "atk": "600",
+    "def": "200",
+    "mdef": "40",
+    "aspd%": "100",
+    "aspd": "3",
+    "range": "10",
+    "HP回復速度": "0",
+    "weight": "2",
+    "スタン耐性": "無",
+    "眠り耐性": "無",
+    "凍結耐性": "",
+    "ms": "0.8",
+    "type_jp": [
+        "近距離"
+    ],
+    "type_en": [
+        "Melee"
+    ],
+    "type_cn": [
+        "近战"
+    ],
+    "atk_type_en": "physical",
+    "atk_type_cn": "物理",
+    "special": ""
+}
