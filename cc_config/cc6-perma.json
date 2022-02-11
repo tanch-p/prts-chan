@@ -6,26 +6,38 @@
       {
         "rank": 1,
         "img": "cchmpn_1",
-        "effect": [{ "hp": 40 }, { "atk": 15 }, { "mdef": 20 }],
-        "tooltip_en": []
+        "effect": { "hp": "%40", "atk": "%15", "mdef": 20 },
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「ティアカウ勇士」の最大HP+40%、攻撃力+15%、術耐性+20"
+        }
       },
       {
         "rank": 2,
         "img": "cchmpn_amod_2",
-        "effect": [{ "hp": 60 }, { "atk": 30 }, { "mdef": 40 }, { "aspd": 75 }],
-        "tooltip_en": []
+        "effect": { "hp": "%60", "atk": "%30", "mdef": 40, "aspd": "%75" },
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「ティアカウ勇士」の最大HP+60%、攻撃力+30%、攻撃速度+75、術耐性+40"
+        }
       },
       {
         "rank": 3,
         "img": "cchmpn_amod_3",
-        "effect": [
-          { "hp": 90 },
-          { "atk": 50 },
-          { "mdef": 60 },
-          { "aspd": 150 },
-          { "special": "Stealth" }
-        ],
-        "tooltip_en": []
+        "effect": {
+          "hp": "%90",
+          "atk": "%50",
+          "mdef": 60,
+          "aspd": "%150",
+          "special": "Stealth"
+        },
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「ティアカウ勇士」の最大HP+90%、攻撃力+50%、攻撃速度+150、術耐性+60、さらにステルスを獲得"
+        }
       }
     ]
   },
@@ -37,24 +49,32 @@
       {
         "rank": 2,
         "img": "cchmpn_bmod_2",
-        "effect": [
-          { "hp": 80 },
-          { "atk": 30 },
-          { "mdef": 40 },
-          { "special": "def drop 40%" }
-        ],
-        "tooltip_en": []
+        "effect": {
+          "hp": "%80",
+          "atk": "%30",
+          "mdef": 40,
+          "special": "def drop 40%"
+        },
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「ティアカウ勇士」の最大HP+80%、攻撃力+30%、術耐性+40、ブロックされた時に防御力が40%減少"
+        }
       },
       {
         "rank": 3,
         "img": "cchmpn_bmod_3",
-        "effect": [
-          { "hp": 130 },
-          { "atk": 50 },
-          { "mdef": 60 },
-          { "special": "def drop 0%" }
-        ],
-        "tooltip_en": []
+        "effect": {
+          "hp": "%130",
+          "atk": "%50",
+          "mdef": 60,
+          "special": "def drop 0%"
+        },
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「ティアカウ勇士」の最大HP+130%、攻撃力+50%、術耐性+60、ブロックされても防御力が減少しない"
+        }
       }
     ]
   },
@@ -65,20 +85,28 @@
       {
         "rank": 1,
         "img": "ccripr_1",
-        "effect": [{ "hp": 40 }, { "aspd": 30 }, { "ms": 40 }, { "weight": 1 }],
-        "tooltip_en": []
+        "effect": { "hp": "%40", "aspd": "%30", "ms": "%40", "weight": 1 },
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「ティアカウ猛攻兵」の最大HP+40%、攻撃速度+30、移動速度+50%、重量ランク+1"
+        }
       },
       {
         "rank": 2,
         "img": "ccripr_2",
-        "effect": [
-          { "hp": 90 },
-          { "aspd": 70 },
-          { "ms": 100 },
-          { "weight": 1 },
-          { "special": "def lower x2" }
-        ],
-        "tooltip_en": []
+        "effect": {
+          "hp": "%90",
+          "aspd": "%70",
+          "ms": "%100",
+          "weight": 1,
+          "special": "def lower x2"
+        },
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「ティアカウ猛攻兵」の最大HP+90%、攻撃速度+70、移動速度+100%、重量ランク+1 攻撃対象の防御力減少効果が1倍に上昇"
+        }
       },
       { "rank": 3 }
     ]
@@ -90,19 +118,22 @@
       {
         "rank": 1,
         "img": "ccwitch_1",
-        "effect": [{ "hp": 30 }, { "atk": 30 }, { "def": 50 }],
-        "tooltip_en": []
+        "effect": { "hp": "%30", "atk": "%30", "def": "%50" },
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「ティアカウ呪術師」の最大HP+30%、攻撃力+30%、防御力+50%"
+        }
       },
       {
         "rank": 2,
         "img": "ccwitch_2",
-        "effect": [
-          { "hp": 70 },
-          { "atk": 70 },
-          { "def": 100 },
-          { "range": 60 }
-        ],
-        "tooltip_en": []
+        "effect": { "hp": "%70", "atk": "%70", "def": "%100", "range": "%60" },
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「ティアカウ呪術師」の最大HP+70%、攻撃力+70%、防御力+100%、攻撃範囲+60%"
+        }
       },
       { "rank": 3 }
     ]
@@ -114,20 +145,20 @@
       {
         "rank": 1,
         "img": "enemy_atk_1",
-        "effect": [{ "atk": 15 }],
-        "tooltip_en": []
+        "effect": { "atk": "%15" },
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての敵の攻撃力+15%" }
       },
       {
         "rank": 2,
         "img": "enemy_atk_2",
-        "effect": [{ "atk": 40 }],
-        "tooltip_en": []
+        "effect": { "atk": "%40" },
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての敵の攻撃力+40%" }
       },
       {
         "rank": 3,
         "img": "enemy_atk_3",
-        "effect": [{ "atk": 80 }],
-        "tooltip_en": []
+        "effect": { "atk": "%80" },
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての敵の攻撃力+80%" }
       }
     ]
   },
@@ -138,20 +169,20 @@
       {
         "rank": 1,
         "img": "enemy_hp_1",
-        "effect": [{ "hp": 20 }],
-        "tooltip_en": []
+        "effect": { "hp": "%20" },
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての敵の最大HP+20%" }
       },
       {
         "rank": 2,
         "img": "enemy_hp_2",
-        "effect": [{ "hp": 60 }],
-        "tooltip_en": []
+        "effect": { "hp": "%60" },
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての敵の最大HP+60%" }
       },
       {
         "rank": 3,
         "img": "enemy_hp_3",
-        "effect": [{ "hp": 110 }],
-        "tooltip_en": []
+        "effect": { "hp": "%110" },
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての敵の最大HP+110%" }
       }
     ]
   },
@@ -159,8 +190,18 @@
     "category": "char_aspd",
     "target": "-",
     "options": [
-      { "rank": 1, "img": "char_aspd_1", "effect": [], "tooltip_en": [] },
-      { "rank": 2, "img": "char_aspd_2", "effect": [], "tooltip_en": [] },
+      {
+        "rank": 1,
+        "img": "char_aspd_1",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての味方の攻撃速度-20" }
+      },
+      {
+        "rank": 2,
+        "img": "char_aspd_2",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての味方の攻撃速度-40" }
+      },
       { "rank": 3 }
     ]
   },
@@ -168,9 +209,24 @@
     "category": "char_hp",
     "target": "-",
     "options": [
-      { "rank": 1, "img": "char_hp_1", "effect": [], "tooltip_en": [] },
-      { "rank": 2, "img": "char_hp_2", "effect": [], "tooltip_en": [] },
-      { "rank": 3, "img": "char_hp_3", "effect": [], "tooltip_en": [] }
+      {
+        "rank": 1,
+        "img": "char_hp_1",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての味方の最大HP-15%" }
+      },
+      {
+        "rank": 2,
+        "img": "char_hp_2",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての味方の最大HP-30%" }
+      },
+      {
+        "rank": 3,
+        "img": "char_hp_3",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての味方の最大HP-50%" }
+      }
     ]
   },
   {
@@ -181,13 +237,17 @@
         "rank": 1,
         "img": "cost_guardspecial_1",
         "effect": [],
-        "tooltip_en": []
+        "tooltip": { "en": "en", "cn": "", "jp": "前衛・特殊の配置コストが2倍" }
       },
       {
         "rank": 2,
         "img": "cost_guardspecial_2",
         "effect": [],
-        "tooltip_en": []
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "前衛・特殊の配置コストが3倍、再配置時間が+50%"
+        }
       },
       { "rank": 3 }
     ]
@@ -200,13 +260,17 @@
         "rank": 1,
         "img": "cost_castersupporter_1",
         "effect": [],
-        "tooltip_en": []
+        "tooltip": { "en": "en", "cn": "", "jp": "術師・補助の配置コストが2倍" }
       },
       {
         "rank": 2,
         "img": "cost_castersupporter_2",
         "effect": [],
-        "tooltip_en": []
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "術師・補助の配置コストが3倍、再配置時間が+50%"
+        }
       },
       { "rank": 3 }
     ]
@@ -219,19 +283,19 @@
         "rank": 1,
         "img": "global_cost_recovery_1",
         "effect": [],
-        "tooltip_en": []
+        "tooltip": { "en": "en", "cn": "", "jp": "コストの自然回復速度-25%" }
       },
       {
         "rank": 2,
         "img": "global_cost_recovery_2",
         "effect": [],
-        "tooltip_en": []
+        "tooltip": { "en": "en", "cn": "", "jp": "コストの自然回復速度-50%" }
       },
       {
         "rank": 3,
         "img": "global_cost_recovery_3",
         "effect": [],
-        "tooltip_en": []
+        "tooltip": { "en": "en", "cn": "", "jp": "コストの自然回復速度-75%" }
       }
     ]
   },
@@ -239,8 +303,18 @@
     "category": "squad",
     "target": "-",
     "options": [
-      { "rank": 1, "img": "squad_1", "effect": [], "tooltip_en": [] },
-      { "rank": 2, "img": "squad_2", "effect": [], "tooltip_en": [] },
+      {
+        "rank": 1,
+        "img": "squad_1",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "編成可能数が最大10人に" }
+      },
+      {
+        "rank": 2,
+        "img": "squad_2",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "編成可能数が最大7人に" }
+      },
       { "rank": 3 }
     ]
   },
@@ -248,8 +322,18 @@
     "category": "squad",
     "target": "-",
     "options": [
-      { "rank": 1, "img": "pcharnum_1", "effect": [], "tooltip_en": [] },
-      { "rank": 2, "img": "pcharnum_2", "effect": [], "tooltip_en": [] },
+      {
+        "rank": 1,
+        "img": "pcharnum_1",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "同時配置可能数が7人に" }
+      },
+      {
+        "rank": 2,
+        "img": "pcharnum_2",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "同時配置可能数が5人に" }
+      },
       { "rank": 3 }
     ]
   },
@@ -257,8 +341,26 @@
     "category": "storm_direction",
     "target": "-",
     "options": [
-      { "rank": 1, "img": "storm_direction_1", "effect": [], "tooltip_en": [] },
-      { "rank": 2, "img": "storm_direction_2", "effect": [], "tooltip_en": [] },
+      {
+        "rank": 1,
+        "img": "storm_direction_1",
+        "effect": [],
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「砂嵐」が左方向に吹くようになる"
+        }
+      },
+      {
+        "rank": 2,
+        "img": "storm_direction_2",
+        "effect": [],
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「砂嵐」が下方向に吹くようになる"
+        }
+      },
       { "rank": 3 }
     ]
   },
@@ -266,14 +368,28 @@
     "category": "lifepoint",
     "target": "-",
     "options": [
-      { "rank": 1, "img": "lifepoint_1", "effect": [], "tooltip_en": [] }
+      {
+        "rank": 1,
+        "img": "lifepoint_1",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "防衛ラインの最大耐久値が1に" }
+      }
     ]
   },
   {
     "category": "storm_damage",
     "target": "-",
     "options": [
-      { "rank": 2, "img": "storm_damage_2", "effect": [], "tooltip_en": [] },
+      {
+        "rank": 2,
+        "img": "storm_damage_2",
+        "effect": [],
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「砂嵐」により受けるダメージが20%上昇"
+        }
+      },
       { "rank": 3 }
     ]
   },
@@ -281,7 +397,12 @@
     "category": "others_2",
     "target": "-",
     "options": [
-      { "rank": 1, "img": "char_atk_1", "effect": [], "tooltip_en": [] },
+      {
+        "rank": 1,
+        "img": "char_atk_1",
+        "effect": [],
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての味方の攻撃力-20%" }
+      },
       { "rank": 2 },
       { "rank": 3 }
     ]
@@ -293,8 +414,8 @@
       {
         "rank": 1,
         "img": "enemy_def_1",
-        "effect": [{ "fixed-def": "200" }],
-        "tooltip_en": []
+        "effect": { "fixed-def": 200 },
+        "tooltip": { "en": "en", "cn": "", "jp": "全ての敵の防御力+200" }
       },
       { "rank": 2 },
       { "rank": 3 }
@@ -304,7 +425,16 @@
     "category": "others_4",
     "target": "-",
     "options": [
-      { "rank": 1, "img": "storm_speed_1", "effect": [], "tooltip_en": [] },
+      {
+        "rank": 1,
+        "img": "storm_speed_1",
+        "effect": [],
+        "tooltip": {
+          "en": "en",
+          "cn": "",
+          "jp": "「砂嵐」で敵の移動速度が減少しなくなる"
+        }
+      },
       { "rank": 2 },
       { "rank": 3 }
     ]

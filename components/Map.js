@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Map({ mapConfig }) {
   // console.log(mapConfig)
   //base 1062 x 600
-  console.log(mapConfig);
+  // console.log(mapConfig);
 
   const width = Math.floor((1062 * 3) / 5);
   const height = Math.floor((600 * 3) / 5);

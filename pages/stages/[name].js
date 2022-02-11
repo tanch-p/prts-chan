@@ -5,6 +5,7 @@ import Image from "next/image";
 import Map from "../../components/Map";
 import EnemySimple from "../../components/EnemySimple";
 import CC_buttons from "../../components/CC_buttons";
+import { useState } from "react";
 
 export async function getStaticProps({ params }) {
   const stageData = await getStageData(params.name);
@@ -26,6 +27,8 @@ export async function getStaticPaths() {
 export default function Stage({ stageData }) {
   // console.log(stageData);
 
+  const [multiplier, setMultiplier] = useState({})
+
   return (
     <Layout>
       <Head>
@@ -36,9 +39,9 @@ export default function Stage({ stageData }) {
       </header>
 
       <Map mapConfig={stageData.mapConfig} />
-      {stageData.mapConfig.isCC ? <CC_buttons mapConfig={stageData.mapConfig} /> : null}
+      {stageData.mapConfig.isCC ? <CC_buttons mapConfig={stageData.mapConfig} multiplier={multiplier} setMultiplier={setMultiplier}/> : null}
 
-      <EnemySimple stageData={stageData} />
+      <EnemySimple stageData={stageData} multiplier={multiplier} />
     </Layout>
   );
 }

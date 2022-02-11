@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function EnemySimple({ stageData }) {
+export default function EnemySimple({ stageData, multiplier }) {
+  console.log(multiplier);
   // console.log(stageData);
-
   //return table of enemy data
   const tableHeaders = [
     "enemy",
@@ -59,16 +59,21 @@ export default function EnemySimple({ stageData }) {
                             width="75px"
                             className=""
                           />
-                        ) : ele === "count" ? (
-                          count
                         ) : ele === "remarks" ? (
                           enemy.special
                         ) : ele === "atk_type" ? (
                           enemy.atk_type_en
                         ) : ele === "type" ? (
-                          enemy["type_en"].map((type)=> <p>{type}</p>)
-                        ) :(
-                          enemy[ele]
+                          enemy["type_en"].map((type) => <p>{type}</p>)
+                        ) : ele === "weight" || ele ==="mdef" ? (
+                          +enemy[ele] + (multiplier?.[id]?.[ele] ??
+                          0) + multiplier?.["ALL"]?.[ele]
+                        ) : ele === "aspd" ? (
+                          (enemy[ele] / ((multiplier?.[id]?.[ele] ??
+                          1) + multiplier?.["ALL"]?.[ele]-1)).toFixed(2)
+                        ) :Math.ceil(
+                          enemy[ele] * (multiplier?.[id]?.[ele] ??
+                          1) * multiplier?.["ALL"]?.[ele] + (multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
                         )}
                       </td>
                     );
