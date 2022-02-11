@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }) {
   let langPack = require(`../components/lang/${language}.json`);
   useEffect(() => {
     device === "desktop" ? setOpen(true) : setOpen(false);
+    setLanguage(localStorage.getItem("language") ?? "en")
   }, []);
 
   const [languagePack, setlanguagePack] = useState(langPack);
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }) {
     langPack = require(`../components/lang/${language}.json`);
     setlanguagePack(langPack);
     console.log("langpack", langPack);
+    localStorage.setItem("language",language);
   }, [language]);
 
   return (

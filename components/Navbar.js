@@ -83,7 +83,7 @@ export const Navbar = ({ open, setOpen }) => {
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="menu-button"
-              tabindex="-1"
+              tabIndex="-1"
             >
               <div className="py-1 w-full z-30">
                 {/* <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" --> */}
