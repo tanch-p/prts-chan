@@ -1,37 +1,16 @@
-### Arknights enemy viewer for roguelike - IN PROGRESS (≧∇≦)ﾉ
+### Arknights enemy viewer for roguelike - WORK IN PROGRESS (≧∇≦)ﾉ
 
-- To-do:
+#### Purpose:
+To provide a fast and simple view for enemy stats __with__ modifiers, either for CC or IS.
 
-  - Header
+#### Contact:
+if you have any comments or feedback, please kindly drop an email to prts-chan@gmail.com
 
-    1. more buttons
-    2. banner
-    3. search function
-    4. themes
 
-  - Drawer
-    - About
-    - Credits
 
-  - Home
 
-    1. intro page
-
-  - Stages page
-
-  1.  cc buttons?
-  2.  detailed view
-  3.  map stats
-  4.  tidy up simple view
-
-  - Enemy
-  
-    1. change atk to array of objects
-    2. account for special stats
-    3. add remarks 
 
 #### Resolved conflicts in enemy IDs:
-
 - Reunion
 
   - A-7 (Shielded Senior Caster)
@@ -43,4 +22,4 @@
 
 - Main Story 9
 
-  - CPS-MDR
+  - CPS -> CPS-MDR
