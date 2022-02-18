@@ -7,7 +7,6 @@ export default function EnemySimple({ stageData, multiplier }) {
   const tableHeaders = [
     "enemy",
     "type",
-    "atk_type",
     "hp",
     "atk",
     "aspd",
@@ -37,11 +36,11 @@ export default function EnemySimple({ stageData, multiplier }) {
           </tr>
         </thead>
         <tbody>
-          {stageData.mapConfig.enemies.map(({ id, count }, index) => {
+          {stageData.mapConfig.enemies.map(({ id, count, stats }, index) => {
             //get enemydata file
             //map through enemydata
             let enemy = require(`../enemy_data/${id}.json`);
-            // console.log(enemy);
+            // console.log(enemy["stats"][stats]);
             return (
               <>
                 <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
@@ -59,21 +58,29 @@ export default function EnemySimple({ stageData, multiplier }) {
                             width="75px"
                             className=""
                           />
-                        ) : ele === "remarks" ? (
-                          enemy.special
-                        ) : ele === "atk_type" ? (
-                          enemy.atk_type_en
                         ) : ele === "type" ? (
-                          enemy["type_en"].map((type) => <p>{type}</p>)
-                        ) : ele === "weight" || ele ==="mdef" ? (
-                          +enemy[ele] + (multiplier?.[id]?.[ele] ??
-                          0) + multiplier?.["ALL"]?.[ele]
+                          enemy["type"]["jp"].map((type) => <p>{type}</p>)
+                        ) : ele === "weight" || ele === "mdef" ? (
+                          +enemy["stats"][stats][ele] +
+                          (multiplier?.[id]?.[ele] ?? 0) +
+                          (multiplier?.["ALL"]?.[ele] ?? 0)
                         ) : ele === "aspd" ? (
-                          (enemy[ele] / ((multiplier?.[id]?.[ele] ??
-                          1) + multiplier?.["ALL"]?.[ele]-1)).toFixed(2)
-                        ) :Math.ceil(
-                          enemy[ele] * (multiplier?.[id]?.[ele] ??
-                          1) * multiplier?.["ALL"]?.[ele] + (multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
+                          (
+                            enemy["stats"][stats][ele] /
+                            ((multiplier?.[id]?.[ele] ?? 1) +
+                              multiplier?.["ALL"]?.[ele] -
+                              1)
+                          ).toFixed(2)
+                        ) : ele === "remarks" ? (
+                          // enemy.special
+                          ""
+                        ): (
+                          Math.ceil(
+                            enemy["stats"][stats][ele] *
+                              (multiplier?.[id]?.[ele] ?? 1) *
+                              multiplier?.["ALL"]?.[ele] +
+                              (multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
+                          )
                         )}
                       </td>
                     );

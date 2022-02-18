@@ -1,38 +1,76 @@
 {
-    "id": "W",
-    "name_en": "W",
-    "name_jp": "W",
-    "name_cn": "W",
-    "atk_type_jp": "物理",
-    "hp": "10000",
-    "atk": "470",
-    "def": "100",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "2.5",
-    "HP回復速度": "0",
-    "weight": "5",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.2",
-    "type_jp": [
-        "遠距離",
-        "ボス",
-        "サルカズ"
-    ],
-    "type_en": [
-        "Ranged",
-        "Boss",
-        "Sarkaz"
-    ],
-    "type_cn": [
-        "远程",
-        "领袖",
-        "萨卡兹"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+  "id": "W",
+  "name": { "en": "W", "cn": "W", "jp": "W" },
+  "atk_type_jp": "物理",
+  "stats": {
+    "level0": {
+      "hp": "10000",
+      "atk": "470",
+      "def": "100",
+      "mdef": "50",
+      "aspd%": "100",
+      "aspd": "4",
+      "range": "2.5",
+      "HP回復速度": "0",
+      "weight": "5",
+      "ms": "1.2",
+      "attacks": [
+        {
+          "type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+          "multiplier": 1,
+          "fixed-inc": 0
+        },
+        {
+          "type": { "en": "C4", "jp": "爆弾", "cn": "C4" },
+          "multiplier": 1.8,
+          "fixed-inc": 0
+        }
+      ]
+    },
+    "Fungimist": {
+      "hp": "18000",
+      "atk": "630",
+      "def": "200",
+      "mdef": "50",
+      "aspd%": "100",
+      "aspd": "4",
+      "range": "2.5",
+      "HP回復速度": "0",
+      "weight": "5",
+      "ms": "1.2"
+    },
+    "第6区跡": {
+      "hp": "21000",
+      "atk": "650",
+      "def": "200",
+      "mdef": "50",
+      "aspd%": "100",
+      "aspd": "4",
+      "range": "2.7",
+      "HP回復速度": "0",
+      "weight": "5",
+      "ms": "1.2",
+      "attacks": [
+        {
+          "type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+          "multiplier": 1,
+          "fixed-inc": 0
+        },
+        {
+          "type": { "en": "C4", "jp": "爆弾", "cn": "C4" },
+          "multiplier": 2.2,
+          "fixed-inc": 0
+        }
+      ]
+    }
+  },
+  "スタン耐性": "無",
+  "眠り耐性": "無",
+  "凍結耐性": "",
+  "type": {
+    "jp": ["遠距離", "ボス", "サルカズ"],
+    "en": ["Ranged", "Boss", "Sarkaz"],
+    "cn": ["远程", "领袖", "萨卡兹"]
+  },
+  "special": []
 }
