@@ -19,7 +19,7 @@ export default function EnemySimple({ stageData, multiplier, ccMods }) {
 
   const textAlign = (ele) => {
     return ele === "type" || ele === "atk" || ele === "remarks" || ele === "def"
-      ? "text-left"
+      ? "text-left px-[5.5px]"
       : "text-center";
   };
 
@@ -29,6 +29,38 @@ export default function EnemySimple({ stageData, multiplier, ccMods }) {
     } else {
       if (param === "atk") {
         return enemy.special[param].map((skill) => {
+          if (stageData.mapConfig.isCC) {
+            if (ccMods.hasOwnProperty(enemy.id)) {
+              if (ccMods[enemy.id].hasOwnProperty(skill.name)) {
+                if (enemy["stats"][stats].hasOwnProperty(skill.name)) {
+                  return (
+                    <p>
+                      <span>
+                        {(
+                          base_stat *
+                            enemy["stats"][stats][skill.name].multiplier +
+                          enemy["stats"][stats][skill.name].fixedInc
+                        ).toFixed(0)}
+                      </span>
+                      {` (${skill.type["jp"]})`}
+                    </p>
+                  );
+                } else {
+                  return (
+                    <p>
+                      <span>
+                        {(
+                          base_stat * skill.multiplier +
+                          skill.fixedInc
+                        ).toFixed(0)}
+                      </span>
+                      {` (${skill.type["jp"]})`}
+                    </p>
+                  );
+                }
+              }
+            }
+          }
           if (enemy["stats"][stats].hasOwnProperty(skill.name)) {
             return (
               <p>
@@ -43,14 +75,44 @@ export default function EnemySimple({ stageData, multiplier, ccMods }) {
             );
           } else {
             return (
-              <p><span>{(base_stat * skill.multiplier + skill.fixedInc).toFixed(
-                0
-              )}</span>{` (${skill.type["jp"]})`}</p>
+              <p>
+                <span>
+                  {(base_stat * skill.multiplier + skill.fixedInc).toFixed(0)}
+                </span>
+                {` (${skill.type["jp"]})`}
+              </p>
             );
           }
         });
       } else {
         return enemy.special[param].map((skill) => {
+          if (stageData.mapConfig.isCC) {
+            if (ccMods.hasOwnProperty(enemy.id)) {
+              if (ccMods[enemy.id].hasOwnProperty(skill.name)) {
+                if (enemy["stats"][stats].hasOwnProperty(skill.name)) {
+                  return (
+                    <p>{`${(
+                      <span>
+                        {(
+                          base_stat *
+                            enemy["stats"][stats][skill.name].multiplier +
+                          enemy["stats"][stats][skill.name].fixedInc
+                        ).toFixed(0)}
+                      </span>
+                    )} (${skill.type["jp"]})`}</p>
+                  );
+                } else {
+                  return (
+                    <p className="text-rose-600">{`${(
+                      base_stat * ccMods[enemy.id][skill.name].multiplier +
+                      ccMods[enemy.id][skill.name].fixedInc
+                    ).toFixed(0)} (${skill.type["jp"]})`}</p>
+                  );
+                }
+              }
+            }
+          }
+
           if (enemy["stats"][stats].hasOwnProperty(skill.name)) {
             return (
               <p>{`${(
@@ -159,7 +221,7 @@ export default function EnemySimple({ stageData, multiplier, ccMods }) {
                         ) : (
                           [
                             <p>
-                              {Math.ceil(
+                              {Math.round(
                                 enemy["stats"][stats][ele] *
                                   (multiplier?.["ALL"]?.[ele] ?? 1) *
                                   (multiplier?.[id]?.[ele] ?? 1) +
