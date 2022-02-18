@@ -93,6 +93,7 @@ export const Navbar = ({ open, setOpen }) => {
                     role="menuitem"
                     tabIndex="-1"
                     id="menu-item-0"
+                    key={name}
                     onClick={() => {
                       setLanguage(code);
                       setMenuOpen(false);

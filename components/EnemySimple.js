@@ -62,25 +62,25 @@ export default function EnemySimple({ stageData, multiplier }) {
                           enemy["type"]["jp"].map((type) => <p>{type}</p>)
                         ) : ele === "weight" || ele === "mdef" ? (
                           +enemy["stats"][stats][ele] +
-                          (multiplier?.[id]?.[ele] ?? 0) +
-                          (multiplier?.["ALL"]?.[ele] ?? 0)
+                          (multiplier?.["ALL"]?.[ele] ?? 0) +
+													(multiplier?.[id]?.[ele] ?? 0)
                         ) : ele === "aspd" ? (
                           (
                             enemy["stats"][stats][ele] /
-                            ((multiplier?.[id]?.[ele] ?? 1) +
-                              multiplier?.["ALL"]?.[ele] -
-                              1)
+                            ( (multiplier?.["ALL"]?.[ele] ?? 1 )+
+														(multiplier?.[id]?.[ele] ?? 1) -1
+													)
                           ).toFixed(2)
                         ) : ele === "remarks" ? (
                           // enemy.special
                           ""
                         ): (
                           Math.ceil(
-                            enemy["stats"][stats][ele] *
-                              (multiplier?.[id]?.[ele] ?? 1) *
-                              multiplier?.["ALL"]?.[ele] +
-                              (multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
-                          )
+														enemy["stats"][stats][ele] *
+															(multiplier?.["ALL"]?.[ele] ?? 1) *
+															(multiplier?.[id]?.[ele] ?? 1) +
+															(multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
+													)
                         )}
                       </td>
                     );

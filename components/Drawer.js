@@ -3,7 +3,7 @@ const Drawer = ({ open, setOpen, device }) => {
   return (
     <>
       <aside
-        className={`transform top-0 left-0 w-64 border-x-slate-400 bg-white fixed h-screen overflow-auto ease-in-out transition-all duration-200 z-30
+        className={`transform top-0 left-0 w-64 border border-slate-400 bg-white fixed h-screen overflow-auto ease-in-out transition-all duration-200 z-30
     ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
         {sidebarItems.map((ele, index) => (
