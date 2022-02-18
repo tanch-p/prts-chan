@@ -31,7 +31,11 @@
           "atk": "%50",
           "mdef": 60,
           "aspd": "%150",
-          "special": "Stealth"
+          "special": {
+            "others": {
+              "tooltip": { "en": "stealth", "jp": "ステルス", "cn": "" }
+            }
+          }
         },
         "tooltip": {
           "en": "en",
@@ -53,7 +57,22 @@
           "hp": "%80",
           "atk": "%30",
           "mdef": 40,
-          "special": "def drop 40%"
+          "special": {
+            "duel": {
+              "multiplier": 0.6,
+              "fixedInc": 0,
+              "tooltip": {
+                "en": "",
+                "jp": [
+                  "ブロックされている時、",
+                  "ブロック相手以外からダメージを受けない",
+                  "自分の防御力を40%下げる",
+                  "相手の防御力を70%下げる"
+                ],
+                "cn": ""
+              }
+            }
+          }
         },
         "tooltip": {
           "en": "en",
@@ -68,7 +87,22 @@
           "hp": "%130",
           "atk": "%50",
           "mdef": 60,
-          "special": "def drop 0%"
+          "special": {
+            "duel": {
+              "multiplier": 1,
+              "fixedInc": 0,
+              "tooltip": {
+                "en": "",
+                "jp": [
+                  "ブロックされている時、",
+                  "ブロック相手以外からダメージを受けない",
+                  "自分の防御力は下げない",
+                  "相手の防御力を70%下げる"
+                ],
+                "cn": ""
+              }
+            }
+          }
         },
         "tooltip": {
           "en": "en",
@@ -100,7 +134,18 @@
           "aspd": "%70",
           "ms": "%100",
           "weight": 1,
-          "special": "def lower x2"
+          "special": {
+            "defdown": {
+              "tooltip": {
+                "en": "",
+                "jp": [
+                  "攻撃1回につき相手のDEF20低下",
+                  "(蓄積する、撤退まで永続)"
+                ],
+                "cn": ""
+              }
+            }
+          }
         },
         "tooltip": {
           "en": "en",
@@ -128,7 +173,17 @@
       {
         "rank": 2,
         "img": "ccwitch_2",
-        "effect": { "hp": "%70", "atk": "%70", "def": "%100", "range": "%60" },
+        "effect": {
+          "hp": "%70",
+          "atk": "%70",
+          "def": "%100",
+          "range": "%60",
+          "special": {
+            "others": {
+              "tooltip": { "en": "stealth", "jp": ["攻撃範囲+60%"], "cn": "" }
+            }
+          }
+        },
         "tooltip": {
           "en": "en",
           "cn": "",

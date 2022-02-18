@@ -1,32 +1,44 @@
 {
-    "id": "T5",
-    "name_en": "Tiacauh Fanatic",
-    "name_jp": "ティアカウ猛攻兵",
-    "name_cn": "提亚卡乌好战者",
-    "atk_type_jp": "物理",
-    "hp": "5500",
-    "atk": "320",
-    "def": "380",
-    "mdef": "10",
-    "aspd%": "100",
-    "aspd": "1",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+  "id": "T5",
+  "name": {
+    "en": "Tiacauh Fanatic",
+    "jp": "ティアカウ猛攻兵",
+    "cn": "提亚卡乌好战者"
+  },
+  "stats": {
+    "level0": {
+      "hp": "5500",
+      "atk": "320",
+      "def": "380",
+      "mdef": "10",
+      "aspd%": "100",
+      "aspd": "1",
+      "range": "0",
+      "HP回復速度": "0",
+      "weight": "2",
+      "ms": "0.8"
+    }
+  },
+  "normal_attack": {
+    "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+    "hits": 1
+  },
+  "スタン耐性": "無",
+  "眠り耐性": "無",
+  "凍結耐性": "無",
+  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
+  "special": {
+    "debuff": [
+      {
+        "name": "defdown",
+        "multiplier": 1,
+        "value": -20,
+        "tooltip": {
+          "en": [],
+          "jp": ["攻撃1回につき相手のDEF10低下", "(蓄積する、撤退まで永続)"],
+          "cn": []
+        }
+      }
+    ]
+  }
 }

@@ -1,32 +1,45 @@
 {
-    "id": "T1",
-    "name_en": "Tiacauh Warrior",
-    "name_jp": "ティアカウ戦士",
-    "name_cn": "提亚卡乌战士",
-    "atk_type_jp": "物理",
-    "hp": "2600",
-    "atk": "290",
-    "def": "60",
-    "mdef": "10",
-    "aspd%": "100",
-    "aspd": "1.8",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+  "id": "T1",
+  "name": {
+    "en": "Tiacauh Warrior",
+    "jp": "ティアカウ戦士",
+    "cn": "提亚卡乌战士"
+  },
+  "stats": {
+    "level0": {
+      "hp": "2600",
+      "atk": "290",
+      "def": "60",
+      "mdef": "10",
+      "aspd%": "100",
+      "aspd": "1.8",
+      "range": "0",
+      "HP回復速度": "0",
+      "weight": "1",
+      "ms": "0.8"
+    }
+  },
+  "normal_attack": {
+    "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+    "hits": 1
+  },
+  "スタン耐性": "無",
+  "眠り耐性": "無",
+  "凍結耐性": "無",
+  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
+  "special": {
+    "def": [
+      {
+        "name": "def_up",
+        "type": { "en": "when blocked", "jp": "ブロック中", "cn": "被阻挡时" },
+        "multiplier": 1,
+        "fixedInc": 130,
+        "tooltip": {
+          "en": [],
+          "jp": ["ブロックされている時防御力+130"],
+          "cn": []
+        }
+      }
+    ]
+  }
 }

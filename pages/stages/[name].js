@@ -27,7 +27,9 @@ export async function getStaticPaths() {
 export default function Stage({ stageData }) {
   // console.log(stageData);
 
-  const [multiplier, setMultiplier] = useState({})
+  const [multiplier, setMultiplier] = useState({});
+  const [ccMods, setCcMods] = useState({});
+  
 
   return (
     <Layout>
@@ -39,9 +41,9 @@ export default function Stage({ stageData }) {
       </header>
 
       <Map mapConfig={stageData.mapConfig} />
-      {stageData.mapConfig.isCC ? <CC_buttons mapConfig={stageData.mapConfig} multiplier={multiplier} setMultiplier={setMultiplier}/> : null}
+      {stageData.mapConfig.isCC ? <CC_buttons mapConfig={stageData.mapConfig} setMultiplier={setMultiplier} setCcMods={setCcMods}/> : null}
 
-      <EnemySimple stageData={stageData} multiplier={multiplier} />
+      <EnemySimple stageData={stageData} multiplier={multiplier} ccMods={ccMods} />
     </Layout>
   );
 }

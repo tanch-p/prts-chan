@@ -1,7 +1,8 @@
 import Image from "next/image";
+import { getRemarks } from "./getStats";
 
-export default function EnemySimple({ stageData, multiplier }) {
-  console.log(multiplier);
+export default function EnemySimple({ stageData, multiplier, ccMods }) {
+  console.log(ccMods);
   // console.log(stageData);
   //return table of enemy data
   const tableHeaders = [
@@ -15,6 +16,63 @@ export default function EnemySimple({ stageData, multiplier }) {
     "weight",
     "remarks",
   ];
+
+  const textAlign = (ele) => {
+    return ele === "type" || ele === "atk" || ele === "remarks" || ele === "def"
+      ? "text-left"
+      : "text-center";
+  };
+
+  const parseSpecial = (enemy, param, stats, base_stat) => {
+    if (!enemy.special.hasOwnProperty(param)) {
+      return [];
+    } else {
+      if (param === "atk") {
+        return enemy.special[param].map((skill) => {
+          if (enemy["stats"][stats].hasOwnProperty(skill.name)) {
+            return (
+              <p>
+                <span>
+                  {(
+                    base_stat * enemy["stats"][stats][skill.name].multiplier +
+                    enemy["stats"][stats][skill.name].fixedInc
+                  ).toFixed(0)}
+                </span>
+                {` (${skill.type["jp"]})`}
+              </p>
+            );
+          } else {
+            return (
+              <p><span>{(base_stat * skill.multiplier + skill.fixedInc).toFixed(
+                0
+              )}</span>{` (${skill.type["jp"]})`}</p>
+            );
+          }
+        });
+      } else {
+        return enemy.special[param].map((skill) => {
+          if (enemy["stats"][stats].hasOwnProperty(skill.name)) {
+            return (
+              <p>{`${(
+                <span>
+                  {(
+                    base_stat * enemy["stats"][stats][skill.name].multiplier +
+                    enemy["stats"][stats][skill.name].fixedInc
+                  ).toFixed(0)}
+                </span>
+              )} (${skill.type["jp"]})`}</p>
+            );
+          } else {
+            return (
+              <p>{`${(base_stat * skill.multiplier + skill.fixedInc).toFixed(
+                0
+              )} (${skill.type["jp"]})`}</p>
+            );
+          }
+        });
+      }
+    }
+  };
 
   return (
     <>
@@ -47,7 +105,9 @@ export default function EnemySimple({ stageData, multiplier }) {
                   {tableHeaders.map((ele) => {
                     return (
                       <td
-                        className="border border-gray-400 py-0 mx-2 min-w-[50px] max-w-[300px] text-center max-h-[75px]"
+                        className={`border border-gray-400 py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
+                          ele
+                        )}  max-h-[75px]`}
                         key={enemy.name + ele}
                       >
                         {ele === "enemy" ? (
@@ -60,27 +120,63 @@ export default function EnemySimple({ stageData, multiplier }) {
                           />
                         ) : ele === "type" ? (
                           enemy["type"]["jp"].map((type) => <p>{type}</p>)
+                        ) : ele === "atk" ? (
+                          [
+                            <p>{`${
+                              enemy["stats"][stats][ele] *
+                                (multiplier?.["ALL"]?.[ele] ?? 1) *
+                                (multiplier?.[id]?.[ele] ?? 1) +
+                              (multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
+                            } ${
+                              enemy.normal_attack.hits !== 1
+                                ? `x ${enemy.normal_attack.hits}`
+                                : ""
+                            } (${enemy.normal_attack.type[`${"jp"}`]})`}</p>,
+                          ].concat(
+                            parseSpecial(
+                              enemy,
+                              ele,
+                              stats,
+                              enemy["stats"][stats][ele] *
+                                (multiplier?.["ALL"]?.[ele] ?? 1) *
+                                (multiplier?.[id]?.[ele] ?? 1) +
+                                (multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
+                            )
+                          )
                         ) : ele === "weight" || ele === "mdef" ? (
                           +enemy["stats"][stats][ele] +
                           (multiplier?.["ALL"]?.[ele] ?? 0) +
-													(multiplier?.[id]?.[ele] ?? 0)
+                          (multiplier?.[id]?.[ele] ?? 0)
                         ) : ele === "aspd" ? (
                           (
                             enemy["stats"][stats][ele] /
-                            ( (multiplier?.["ALL"]?.[ele] ?? 1 )+
-														(multiplier?.[id]?.[ele] ?? 1) -1
-													)
+                            ((multiplier?.["ALL"]?.[ele] ?? 1) +
+                              (multiplier?.[id]?.[ele] ?? 1) -
+                              1)
                           ).toFixed(2)
                         ) : ele === "remarks" ? (
-                          // enemy.special
-                          ""
-                        ): (
-                          Math.ceil(
-														enemy["stats"][stats][ele] *
-															(multiplier?.["ALL"]?.[ele] ?? 1) *
-															(multiplier?.[id]?.[ele] ?? 1) +
-															(multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
-													)
+                          getRemarks(enemy, stageData.mapConfig.isCC, ccMods)
+                        ) : (
+                          [
+                            <p>
+                              {Math.ceil(
+                                enemy["stats"][stats][ele] *
+                                  (multiplier?.["ALL"]?.[ele] ?? 1) *
+                                  (multiplier?.[id]?.[ele] ?? 1) +
+                                  (multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
+                              )}
+                            </p>,
+                          ].concat(
+                            parseSpecial(
+                              enemy,
+                              ele,
+                              stats,
+                              enemy["stats"][stats][ele] *
+                                (multiplier?.["ALL"]?.[ele] ?? 1) *
+                                (multiplier?.[id]?.[ele] ?? 1) +
+                                (multiplier?.["ALL"]?.[`fixed-${ele}`] ?? 0)
+                            )
+                          )
                         )}
                       </td>
                     );

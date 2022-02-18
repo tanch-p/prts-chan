@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState, useEffect, useContext } from "react";
 import AppContext from "./AppContext";
 
-export default function CC_buttons({ setMultiplier }) {
+export default function CC_buttons({ setMultiplier ,setCcMods}) {
   const { languageContext, device } = useContext(AppContext);
   const [language] = languageContext;
 
@@ -113,6 +113,7 @@ export default function CC_buttons({ setMultiplier }) {
     const multiplier = {
       ALL: { hp: 1, atk: 1, def: 1, mdef: 0, aspd: 1, ms: 1, weight: 0 },
     };
+    const other_mods = {};
     for (const category of selected) {
       if (category.selected) {
         if (!multiplier[category.target]) {
@@ -134,10 +135,13 @@ export default function CC_buttons({ setMultiplier }) {
             } else {
               multiplier[category.target][effect] = category.effect[effect];
             }
+          }else{
+            other_mods[category.target] = category.effect[effect];
           }
         }
       }
     }
+    setCcMods(other_mods);
     setMultiplier(multiplier);
     setTotalRisk(selected.reduce((prev,curr) => prev+(curr.rank??0),0));
   }, [selected]);

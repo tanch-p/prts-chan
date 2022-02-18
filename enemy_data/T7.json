@@ -1,32 +1,60 @@
 {
-    "id": "T7",
-    "name_en": "Tiacauh Ritualist",
-    "name_jp": "ティアカウ呪術師",
-    "name_cn": "提亚卡乌巫术师",
-    "atk_type_jp": "術",
-    "hp": "6000",
-    "atk": "250",
-    "def": "200",
-    "mdef": "70",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "2.5",
-    "HP回復速度": "0",
-    "weight": "3",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "遠距離"
+  "id": "T7",
+  "name": {
+    "en": "Tiacauh Ritualist",
+    "jp": "ティアカウ呪術師",
+    "cn": "提亚卡乌巫术师"
+  },
+  "stats": {
+    "level0": {
+      "hp": "6000",
+      "atk": "250",
+      "def": "200",
+      "mdef": "70",
+      "aspd%": "100",
+      "aspd": "4",
+      "range": "2.5",
+      "HP回復速度": "0",
+      "weight": "3",
+      "ms": "0.8"
+    }
+  },
+  "normal_attack": {
+    "type": { "en": "ranged/arts", "jp": "遠・術", "cn": "远・法术" },
+    "hits": 1
+  },
+  "スタン耐性": "無",
+  "眠り耐性": "無",
+  "凍結耐性": "",
+  "type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] },
+  "special": {
+    "atk": [
+      {
+        "name": "staffstrike",
+        "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+        "multiplier": 4,
+        "hits": 1,
+        "fixedInc": 0,
+        "tooltip": {
+          "en": [],
+          "jp": [
+          ],
+          "cn": []
+        }
+      }
     ],
-    "type_en": [
-        "Ranged"
-    ],
-    "type_cn": [
-        "远程"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+    "def": [
+      {
+        "name": "def_up",
+        "type": { "en": "when blocked", "jp": "ブロック中", "cn": "被阻挡时" },
+        "multiplier": 1,
+        "fixedInc": 200,
+        "tooltip": {
+          "en": [],
+          "jp": ["ブロックされている時防御力+200"],
+          "cn": []
+        }
+      }
+    ]
+  }
 }

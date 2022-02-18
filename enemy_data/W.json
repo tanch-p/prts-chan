@@ -1,7 +1,6 @@
 {
   "id": "W",
   "name": { "en": "W", "cn": "W", "jp": "W" },
-  "atk_type_jp": "物理",
   "stats": {
     "level0": {
       "hp": "10000",
@@ -13,19 +12,7 @@
       "range": "2.5",
       "HP回復速度": "0",
       "weight": "5",
-      "ms": "1.2",
-      "attacks": [
-        {
-          "type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
-          "multiplier": 1,
-          "fixed-inc": 0
-        },
-        {
-          "type": { "en": "C4", "jp": "爆弾", "cn": "C4" },
-          "multiplier": 1.8,
-          "fixed-inc": 0
-        }
-      ]
+      "ms": "1.2"
     },
     "Fungimist": {
       "hp": "18000",
@@ -50,27 +37,39 @@
       "HP回復速度": "0",
       "weight": "5",
       "ms": "1.2",
-      "attacks": [
-        {
-          "type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
-          "multiplier": 1,
-          "fixed-inc": 0
-        },
-        {
-          "type": { "en": "C4", "jp": "爆弾", "cn": "C4" },
-          "multiplier": 2.2,
-          "fixed-inc": 0
-        }
-      ]
+      "bomb": { "multiplier": 2.2, "fixedInc": 0 }
     }
+  },
+  "normal_attack": {
+    "type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+    "hits": 1
   },
   "スタン耐性": "無",
   "眠り耐性": "無",
   "凍結耐性": "",
   "type": {
-    "jp": ["遠距離", "ボス", "サルカズ"],
-    "en": ["Ranged", "Boss", "Sarkaz"],
-    "cn": ["远程", "领袖", "萨卡兹"]
+    "jp": ["遠距離", "サルカズ", "ボス"],
+    "en": ["Ranged", "Sarkaz", "Boss"],
+    "cn": ["远程", "萨卡兹", "领袖"]
   },
-  "special": []
+  "special": {
+    "atk": [
+      {
+        "name": "bomb",
+        "type": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
+        "multiplier": 1.8,
+        "hits": 1,
+        "fixedInc": 0,
+        "tooltip": {
+          "en": [],
+          "jp": [
+            "一定時間ごとに攻撃範囲内の敵ユニット2体に爆弾を設置します",
+            "(爆弾：単体に物理ダメージ)",
+            "HP50%以下：爆弾2体ｰ>3体、即時爆弾を設置します"
+          ],
+          "cn": []
+        }
+      }
+    ]
+  }
 }
