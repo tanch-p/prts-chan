@@ -3,8 +3,8 @@
   "name_jp": "狂嚎沙原",
   "name_cn": "狂嚎沙原",
   "img": "狂嚎沙原",
-  "isCC": true,
-  "isRogue": false,
+  "config":"cc6-perma",
+  "ccType": "perma",
   "enemies": [
     { "id": "T1", "count": 23, "stats": "level0" },
     { "id": "T5", "count": 4, "stats": "level0" },

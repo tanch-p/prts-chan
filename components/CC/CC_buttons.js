@@ -1,13 +1,18 @@
-import Image from "next/image";
 import { useState, useEffect, useContext } from "react";
-import AppContext from "./AppContext";
+import AppContext from "../AppContext";
+import Daily_buttons from "./Daily_buttons";
+import Perma_buttons from "./Perma_buttons";
+import Selected_options from "./Selected_options";
 
-export default function CC_buttons({ setMultiplier ,setCcMods}) {
+export default function CC_buttons({
+  mapConfig,
+  setMultiplier,
+  setSpecialMods,
+}) {
   const { languageContext, device } = useContext(AppContext);
   const [language] = languageContext;
 
-  const rank = [1, 2, 3];
-  let ccConfig = require("../cc_config/cc6-perma.json");
+  let ccConfig = require(`../../cc_config/${mapConfig.config}.json`);
   const [selected, setSelected] = useState([{}]);
   const [totalRisk, setTotalRisk] = useState(0);
 
@@ -98,17 +103,6 @@ export default function CC_buttons({ setMultiplier ,setCcMods}) {
     }
   };
 
-  const getRankColor = (rank) => {
-    switch (rank) {
-      case 1:
-        return "bg-gray-500";
-      case 2:
-        return "bg-gray-800";
-      case 3:
-        return "bg-red-800";
-    }
-  };
-
   useEffect(() => {
     const multiplier = {
       ALL: { hp: 1, atk: 1, def: 1, mdef: 0, aspd: 1, ms: 1, weight: 0 },
@@ -135,86 +129,39 @@ export default function CC_buttons({ setMultiplier ,setCcMods}) {
             } else {
               multiplier[category.target][effect] = category.effect[effect];
             }
-          }else{
+          } else {
             other_mods[category.target] = category.effect[effect];
           }
         }
       }
     }
-    setCcMods(other_mods);
+    setSpecialMods(other_mods);
     setMultiplier(multiplier);
-    setTotalRisk(selected.reduce((prev,curr) => prev+(curr.rank??0),0));
+    setTotalRisk(selected.reduce((prev, curr) => prev + (curr.rank ?? 0), 0));
   }, [selected]);
-
-
-
-
-
-
 
   return (
     <>
-      <div className="flex flex-wrap flex-col w-full h-[175px] max-w-[900px] overflow-x-scroll">
-        {rank.map((num) => (
-          <div
-            className="border min-w-[50px] max-w-[60px] min-h-[50px] flex items-center"
-            key={`rank${num}`}
-          >
-            <Image
-              src={`/images/cc_buttons/rank${num}.png`}
-              alt={`rank${num}`}
-              width="65px"
-              height="29px"
-              className="overflow-hidden"
-            />
-          </div>
-        ))}
-        {ccConfig.map((category) =>
-          category[`options`].map((option) => (
-            <div
-              className={`border w-[50px] h-[50px] ${getRankColor(
-                option.rank
-              )}`}
-            >
-              {Object.keys(option).includes("img") ? (
-                <button
-                  onClick={() =>
-                    handleClick(
-                      category.category,
-                      option.img,
-                      option.tooltip[language],
-                      category.target,
-                      option.effect,
-                      option.rank
-                    )
-                  }
-                >
-                  <Image
-                    src={`/images/cc_buttons/${option.img}.png`}
-                    alt={`${option.tooltip_en}`}
-                    width="50px"
-                    height="50px"
-                    className={`${toggleOptionColor(
-                      category.category,
-                      option.img
-                    )}`}
-                  />{" "}
-                </button>
-              ) : null}
-            </div>
-          ))
-        )}
-      </div>
-      <div className="flex flex-wrap flex-col border border-gray-800 w-full h-[300px] max-w-[900px]">
-        {selected.map((option) => (
-          <p className="max-w-[400px]">{option.tooltip}</p>
-        ))}
-      </div>
+      {mapConfig.ccType === "perma" ? (
+        <Perma_buttons
+          ccConfig={ccConfig}
+          handleClick={handleClick}
+          toggleOptionColor={toggleOptionColor}
+          language={language}
+        />
+      ) : (
+        <Daily_buttons
+          ccConfig={ccConfig}
+          handleClick={handleClick}
+          toggleOptionColor={toggleOptionColor}
+          language={language}
+        />
+      )}
+      <Selected_options selected={selected} />
       <div className="flex flex-wrap border border-gray-800 w-full h-[50px] max-w-[900px]">
         <span>Clear</span>
         <span>Total Risk: {totalRisk}</span>
       </div>
-
     </>
   );
 }

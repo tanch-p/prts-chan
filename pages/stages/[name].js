@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Map from "../../components/Map";
 import EnemySimple from "../../components/EnemySimple";
-import CC_buttons from "../../components/CC_buttons";
+import CC_buttons from "../../components/CC/CC_buttons";
 import { useState } from "react";
 
 export async function getStaticProps({ params }) {
@@ -26,24 +26,24 @@ export async function getStaticPaths() {
 
 export default function Stage({ stageData }) {
   // console.log(stageData);
-
+  const {mapConfig} = stageData;
   const [multiplier, setMultiplier] = useState({});
-  const [ccMods, setCcMods] = useState({});
+  const [specialMods, setSpecialMods] = useState({});
   
 
   return (
     <Layout>
       <Head>
-        <title>{stageData.mapConfig.name}</title>
+        <title>{mapConfig.name}</title>
       </Head>
       <header className="w-full">
-        <h2>{stageData.mapConfig.name}</h2>
+        <h2>{mapConfig.name}</h2>
       </header>
 
-      <Map mapConfig={stageData.mapConfig} />
-      {stageData.mapConfig.isCC ? <CC_buttons mapConfig={stageData.mapConfig} setMultiplier={setMultiplier} setCcMods={setCcMods}/> : null}
+      <Map mapConfig={mapConfig} />
+      {mapConfig.hasOwnProperty("ccType") ? <CC_buttons mapConfig={mapConfig} setMultiplier={setMultiplier} setSpecialMods={setSpecialMods}/> : null}
 
-      <EnemySimple stageData={stageData} multiplier={multiplier} ccMods={ccMods} />
+      <EnemySimple mapConfig={mapConfig} multiplier={multiplier} specialMods={specialMods} />
     </Layout>
   );
 }

@@ -1,8 +1,8 @@
 {
   "name": "第6区跡",
   "img": "第6区跡",
-  "isCC": false,
-  "isRogue": false,
+  "config":"CC6_第6区跡",
+  "ccType": "daily",
   "enemies": [{ "id": "W", "count": 1, "stats": "第6区跡" }],
   "temp": [
     { "id": "29", "count": 1, "stats": "level0" },
