@@ -103,6 +103,17 @@ export default function CC_buttons({
     }
   };
 
+  const getRankColor = (rank) => {
+    switch (rank) {
+      case 1:
+        return "bg-gray-500";
+      case 2:
+        return "bg-gray-800";
+      case 3:
+        return "bg-red-800";
+    }
+  };
+
   useEffect(() => {
     const multiplier = {
       ALL: { hp: 1, atk: 1, def: 1, mdef: 0, aspd: 1, ms: 1, weight: 0 },
@@ -147,6 +158,7 @@ export default function CC_buttons({
           ccConfig={ccConfig}
           handleClick={handleClick}
           toggleOptionColor={toggleOptionColor}
+          getRankColor={getRankColor}
           language={language}
         />
       ) : (
@@ -154,6 +166,7 @@ export default function CC_buttons({
           ccConfig={ccConfig}
           handleClick={handleClick}
           toggleOptionColor={toggleOptionColor}
+          getRankColor={getRankColor}
           language={language}
         />
       )}

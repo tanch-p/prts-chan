@@ -46,11 +46,6 @@ export default function Home({ allStagesData }) {
           ))}
         </ul>
       </section>
-      <div className="flex flex-wrap flex-row">
-        <div className="w-0 h-0 border-x-transparent border-x-[10px] border-solid border-t-[15px] border-t-red-600 z-50 "></div>
-        <div className="w-0 h-0 border-x-transparent border-x-[10px] border-solid border-b-[15px] border-b-red-600 z-50 "></div>
-        <div className="w-0 h-0 border-x-transparent border-x-[10px] border-solid border-t-[15px] border-t-red-600 z-50 "></div>
-      </div>
     </Layout>
   );
 }

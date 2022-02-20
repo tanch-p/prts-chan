@@ -1,45 +1,36 @@
 import Image from "next/image";
-import { useEffect } from "react";
+import Risk_triangle from "./Risk_triangle";
 
 export default function Perma_buttons({
   ccConfig,
   handleClick,
   language,
   toggleOptionColor,
+  getRankColor,
 }) {
   const rank = [1, 2, 3];
 
-  const getRankColor = (rank) => {
-    switch (rank) {
-      case 1:
-        return "bg-gray-500";
-      case 2:
-        return "bg-gray-800";
-      case 3:
-        return "bg-red-800";
-    }
-  };
   return (
     <>
-      <div className="flex flex-wrap flex-col w-full h-[175px] max-w-[900px] overflow-x-scroll">
-        {rank.map((num) => (
-          <div
-            className="border min-w-[50px] max-w-[60px] min-h-[50px] flex items-center"
-            key={`rank${num}`}
-          >
-            <Image
-              src={`/images/cc_buttons/rank${num}.png`}
-              alt={`rank${num}`}
-              width="65px"
-              height="29px"
-              className="overflow-hidden"
-            />
-          </div>
-        ))}
+      <div className="flex flex-wrap flex-col w-full h-[215px] max-w-[900px] overflow-x-scroll">
+        <div className="bg-[#545753] ">
+          {rank.map((num) => (
+            <div
+              className="border min-w-[50px] max-w-[100px] h-[65px] flex items-center "
+              key={`rank${num}`}
+            >
+              <div className="leading-[10px] mx-[4px]">
+                <p className="text-[10px] text-gray-200 mb-1">Contigency <br/> Level</p>
+                <Risk_triangle risk={num} />
+              </div>
+              <span className="text-white text-[50px] mr-[2px]">{num}</span>
+            </div>
+          ))}
+        </div>
         {ccConfig.map((category) =>
           category[`options`].map((option) => (
             <div
-              className={`border w-[50px] h-[50px] ${getRankColor(
+              className={`border w-[65px] h-[65px] p-[1px] ${getRankColor(
                 option.rank
               )}`}
             >
@@ -60,8 +51,8 @@ export default function Perma_buttons({
                   <Image
                     src={`/images/cc_buttons/${option.img}.png`}
                     alt={`${option.tooltip_en}`}
-                    width="50px"
-                    height="50px"
+                    width="75px"
+                    height="75px"
                     className={`${toggleOptionColor(
                       category.category,
                       option.img

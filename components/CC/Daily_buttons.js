@@ -1,7 +1,13 @@
 import Image from "next/image";
-import { useEffect } from "react";
+import Risk_triangle from "./Risk_triangle";
 
-export default function Daily_buttons({ ccConfig, handleClick, language,toggleOptionColor }) {
+export default function Daily_buttons({
+  ccConfig,
+  handleClick,
+  language,
+  toggleOptionColor,
+  getRankColor
+}) {
   const rank = [1, 2, 3];
 
   return (
@@ -9,17 +15,13 @@ export default function Daily_buttons({ ccConfig, handleClick, language,toggleOp
       <div className="flex flex-wrap flex-row w-full h-[350px] max-w-[900px] overflow-x-scroll">
         {rank.map((num) => (
           <div
-            className="border max-w-[250px] min-h-[30px] mx-4"
+            className="border max-w-[250px] min-h-[30px] mx-4 bg-gray-600"
             key={`rank${num}`}
           >
-            Risk:{" "}
-            <Image
-              src={`/images/cc_buttons/rank${num}.png`}
-              alt={`rank${num}`}
-              width="65px"
-              height="29px"
-              className="overflow-hidden"
-            />
+            <div className="rounded flex flex-wrap flex-row h-[24px]">
+              <p className={`text-white ${getRankColor(num)} rounded-l px-1`}>危機等級</p>
+              <Risk_triangle risk={num} type={"daily"}/>
+            </div>
             <div className="flex flex-wrap flex-col">
               {ccConfig.map((category) =>
                 category[`options`].map((option) => {
