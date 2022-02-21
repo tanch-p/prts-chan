@@ -1,5 +1,12 @@
 const Drawer = ({ open, setOpen, device }) => {
-  const sidebarItems = ["Stages", "Calculations", "Settings"];
+  const sidebarItems = [
+    "Stages",
+    "Calculations",
+    "Weight Physics",
+    "Credits",
+    "Contact Us",
+    "Settings",
+  ];
   return (
     <>
       <aside
@@ -7,7 +14,10 @@ const Drawer = ({ open, setOpen, device }) => {
     ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
         {sidebarItems.map((ele, index) => (
-          <a className="flex items-center font-bold pt-5 pr-8 bg-white hover:bg-gray-300" key={ele}>
+          <a
+            className="flex items-center font-bold pt-5 pr-8 bg-white hover:bg-gray-300"
+            key={ele}
+          >
             {ele}
           </a>
         ))}

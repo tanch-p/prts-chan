@@ -9,7 +9,7 @@
         "img": "第6区跡/enemy_melee_1",
         "effect": { "hp": "%40", "def": "%25", "mdef": 15 },
         "tooltip": {
-          "en": "en",
+          "en": "Melee enemies Max HP +40%, DEF +25%, RES +15",
           "cn": "",
           "jp": "敵近距離戦闘員の最大HP+40%、防御力+25%、術耐性+15"
         }
@@ -25,7 +25,7 @@
         "name":{"jp":"制限：過負荷","en":"","cn":""},
         "img": "第6区跡/char_cost_healersupport_1",
         "effect": {},
-        "tooltip": { "en": "en", "cn": "", "jp": "医療・補助の配置コストが3倍" }
+        "tooltip": { "en": "DP cost of Supporters and Medics is tripled", "cn": "", "jp": "医療・補助の配置コストが3倍" }
       }
     ]
   },
@@ -38,7 +38,7 @@
         "name":{"jp":"増幅：装甲I","en":"","cn":""},
         "img": "第6区跡/enemy_def_1",
         "effect": { "def": "%50" },
-        "tooltip": { "en": "en", "cn": "", "jp": "全ての敵の防御力+50%" }
+        "tooltip": { "en": "Enemy DEF +50%", "cn": "", "jp": "全ての敵の防御力+50%" }
       }
     ]
   },
@@ -51,7 +51,7 @@
         "name":{"jp":"制限：火力減衰II","en":"","cn":""},
         "img": "第6区跡/char_atk_2",
         "effect": {},
-        "tooltip": { "en": "en", "cn": "", "jp": "全ての味方の攻撃力-40%" }
+        "tooltip": { "en": "Ally ATK -40%", "cn": "", "jp": "全ての味方の攻撃力-40%" }
       }
     ]
   },
@@ -65,7 +65,7 @@
         "img": "第6区跡/char_cost_ranged_2",
         "effect": {},
         "tooltip": {
-          "en": "en",
+          "en": "Deployment Cost of Ranged units is tripled.",
           "cn": "",
           "jp": "遠距離ユニットの配置コストが3倍"
         }
@@ -81,7 +81,7 @@
         "name":{"jp":"増幅：ラッシュ","en":"","cn":""},
         "img": "第6区跡/enemy_aspd_2",
         "effect": { "aspd": "%50" },
-        "tooltip": { "en": "en", "cn": "", "jp": "全ての敵の攻撃速度+50" }
+        "tooltip": { "en": "Enemy ASPD +50", "cn": "", "jp": "全ての敵の攻撃速度+50" }
       }
     ]
   },
@@ -110,7 +110,7 @@
           }
         },
         "tooltip": {
-          "en": "en",
+          "en": "[W] Max HP +120%, ATK +75%, DEF +100%, RES +20, Skill damage +33%, ability cool down greatly shortened (-67%)",
           "cn": "",
           "jp": "「W」のHP+120%、攻撃力+75%、防御力+100%、固有能力のダメージ量が33%上昇しクールタイムが67%短縮"
         }
@@ -133,7 +133,7 @@
           }
         ,
         "tooltip": {
-          "en": "en",
+          "en": "Ranged enemy attack range +70%, ATK +30%, ASPD +30",
           "cn": "",
           "jp": "敵遠距離戦闘員の攻撃範囲+75%、攻撃力+30%、攻撃速度+30"
         }

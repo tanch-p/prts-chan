@@ -24,6 +24,7 @@
 3.  detailed view
 4.  map stats
 5.  tidy up simple view
+6.  Parse Range to show squares and circles
 
 - Enemy
 

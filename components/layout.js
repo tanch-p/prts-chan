@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState, useEffect, useContext } from "react";
 import { Navbar } from "./Navbar";
 import AppContext from "./AppContext";
+import { Footer } from "./Footer";
 
 const name = "Your Name";
 export const siteTitle = "PRTS-chan";
@@ -42,6 +43,7 @@ export default function Layout({ children, home }) {
         <Navbar open={open} setOpen={setOpen} />
       </header>
       <main className="mx-auto flex flex-wrap flex-col items-center">{children}</main>
+      <Footer />
     </div>
   );
 }

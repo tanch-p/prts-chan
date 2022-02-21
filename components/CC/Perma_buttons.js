@@ -59,7 +59,7 @@ export default function Perma_buttons({
                 >
                   <Image
                     src={`/images/cc_buttons/${option.img}.png`}
-                    alt={`${option.tooltip_en}`}
+                    alt={`${option.img}`}
                     width="65px"
                     height="65px"
                     className={`${toggleOptionColor(

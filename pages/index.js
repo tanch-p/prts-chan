@@ -19,33 +19,33 @@ export async function getStaticProps() {
 export default function Home({ allStagesData }) {
   const { langPack } = useContext(AppContext);
 
-  const triangle = () => {};
-
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Image
-        src="/images/profile.jpg"
-        className="inline-block"
-        height={144}
-        width={144}
-        alt={""}
-      />
-      <section className="">
-        <h2 className="">{langPack?.index?.stages}</h2>
-        <ul className="">
-          {allStagesData.map(({ name }) => (
-            <li className="" key={name}>
-              <Link href={`/stages/${name}`}>
-                <a>{name}</a>
-              </Link>
-              <br />
-            </li>
-          ))}
-        </ul>
-      </section>
+      <div id="home-container" className="min-h-[100vh]">
+        <Image
+          src="/images/profile.jpg"
+          className="inline-block"
+          height={144}
+          width={144}
+          alt={""}
+        />
+        <section className="">
+          <h2 className="">{langPack?.index?.stages}</h2>
+          <ul className="">
+            {allStagesData.map(({ name }) => (
+              <li className="" key={name}>
+                <Link href={`/stages/${name}`}>
+                  <a>{name}</a>
+                </Link>
+                <br />
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
     </Layout>
   );
 }
