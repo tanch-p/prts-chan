@@ -200,7 +200,7 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
                             alt={enemy.name["jp"]}
                             height="75px"
                             width="75px"
-                            className=""
+                            className="select-none"
                           />
                         ) : stat === "type" ? (
                           enemy["type"]["jp"].map((type) => <p>{type}</p>)
