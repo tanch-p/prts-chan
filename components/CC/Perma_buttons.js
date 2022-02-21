@@ -7,16 +7,18 @@ export default function Perma_buttons({
   language,
   toggleOptionColor,
   getRankColor,
+  showGrid,
+  toggleRankColor
 }) {
   const rank = [1, 2, 3];
 
   return (
     <>
-      <div className="flex flex-wrap flex-col w-full h-[215px] max-w-[900px] overflow-x-scroll">
-        <div className="bg-[#545753] ">
+      <div className="flex flex-wrap flex-col w-full h-[215px] max-w-[900px] overflow-x-scroll select-none relative">
+        <div className="bg-[#545753] sticky left-0 z-10 border-x border-gray-700">
           {rank.map((num) => (
             <div
-              className="border min-w-[50px] max-w-[100px] h-[65px] flex items-center "
+              className="  min-w-[50px] max-w-[100px] h-[65px] flex items-center "
               key={`rank${num}`}
             >
               <div className="leading-[10px] mx-[4px]">
@@ -30,9 +32,9 @@ export default function Perma_buttons({
         {ccConfig.map((category) =>
           category[`options`].map((option) => (
             <div
-              className={`border w-[65px] h-[65px] p-[1px] ${getRankColor(
+              className={`${showGrid ? "border-[1px]" : ""} border-collapse w-[65px] h-[65px] p-[1.5px] ${toggleRankColor ? getRankColor(
                 option.rank
-              )}`}
+              ) : "bg-[#90928f]"}`}
             >
               {Object.keys(option).includes("img") ? (
                 <button

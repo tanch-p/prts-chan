@@ -1,7 +1,5 @@
 export default function Risk_triangle({ risk ,type }) {
   const getTriangle = () => {
-    const x = 8;
-    const y = 12;
     switch (risk) {
       case 1:
         return (

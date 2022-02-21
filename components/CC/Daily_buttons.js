@@ -12,7 +12,7 @@ export default function Daily_buttons({
 
   return (
     <>
-      <div className="flex flex-wrap flex-row w-full h-[350px] max-w-[900px] overflow-x-scroll">
+      <div className="flex flex-wrap flex-row w-full h-[350px] max-w-[900px] overflow-x-scroll select-none">
         {rank.map((num) => (
           <div
             className="border max-w-[250px] min-h-[30px] mx-4 bg-gray-600"

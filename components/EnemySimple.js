@@ -26,6 +26,12 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
       : "text-center";
   };
 
+  const getMinWidth = (stat) => {
+    return stat === "type" || stat === "atk" || stat === "def"
+      ? "min-w-min"
+      : "";
+  };
+
   const calculate = (enemy, stats, stat) => {
     switch (stat) {
       case "aspd":
@@ -54,10 +60,7 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
         ) {
           totalMultiplier += multiplier?.Ranged?.aspd - 1;
         }
-        return (
-          enemy["stats"][stats][stat] /
-          totalMultiplier
-        ).toFixed(2);
+        return (enemy["stats"][stats][stat] / totalMultiplier).toFixed(2);
 
       default:
         return Math.round(
@@ -188,7 +191,7 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
                       <td
                         className={`border border-gray-400 py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
                           stat
-                        )}  max-h-[75px]`}
+                        )} ${getMinWidth(stat)}  max-h-[75px] text-[1vw]`}
                         key={enemy.name + stat}
                       >
                         {stat === "enemy" ? (
