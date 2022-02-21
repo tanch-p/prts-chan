@@ -48,7 +48,7 @@ export default function Daily_buttons({
                       >
                         <Image
                           src={`/images/cc_buttons/${option.img}.png`}
-                          alt={`${option.tooltip_en}`}
+                          alt={`${option.name[language]}`}
                           width="50px"
                           height="50px"
                           className={` ${
