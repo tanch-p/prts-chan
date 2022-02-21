@@ -153,6 +153,22 @@ export default function CC_buttons({
     setTotalRisk(selected.reduce((prev, curr) => prev + (curr.rank ?? 0), 0));
   }, [selected]);
 
+  const resetSelected = () => {
+    setSelected(
+      selected.map((item) => {
+        return {
+          category: item.category,
+          selected: false,
+          option: "",
+          target: "",
+          tooltip: "",
+          effect: [],
+          rank: 0,
+        };
+      })
+    );
+  };
+
   return (
     <>
       {mapConfig.ccType === "perma" ? (
@@ -199,7 +215,7 @@ export default function CC_buttons({
       <div className="flex flex-wrap border border-gray-800 w-full h-[50px] max-w-[900px] py-2 select-none place-items-center bg-[#292929]">
         <div
           className="flex flex-wrap bg-white border rounded border-gray-800 mx-1 px-1 h-[80%] cursor-pointer active:bg-gray-400"
-          onClick={() => {}}
+          onClick={resetSelected}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
