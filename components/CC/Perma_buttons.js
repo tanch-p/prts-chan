@@ -11,14 +11,15 @@ export default function Perma_buttons({
   toggleRankColor,
 }) {
   const rank = [1, 2, 3];
-  const size = 65;
   return (
     <>
-      <div className={`flex flex-wrap flex-col w-full h-[214px] max-w-[900px] overflow-x-scroll overflow-y-hidden select-none relative`}>
+      <div
+        className={`flex flex-wrap flex-col w-full h-[214px] max-w-[900px] overflow-x-scroll overflow-y-hidden select-none relative`}
+      >
         <div className="bg-[#545753] sticky left-0 z-10 border-x border-gray-700">
           {rank.map((num) => (
             <div
-              className={`  min-w-[50px] max-w-[100px] ${`h-[${size}px]`} flex items-center `}
+              className={`  min-w-[50px] max-w-[100px] h-[65px] flex items-center `}
               key={`rank${num}`}
             >
               <div className="leading-[10px] mx-[4px]">
@@ -36,7 +37,7 @@ export default function Perma_buttons({
             <div
               className={`${
                 showGrid ? "border-[1px]" : ""
-              } border-collapse ${`w-[${size}px]`} ${`h-[${size}px]`} p-[1.5px] ${
+              } border-collapse w-[65px] h-[65px] p-[1.5px] ${
                 option?.img !== undefined ? "active:brightness-75" : ""
               }  ${
                 toggleRankColor ? getRankColor(option.rank) : "bg-[#90928f]"
@@ -59,8 +60,8 @@ export default function Perma_buttons({
                   <Image
                     src={`/images/cc_buttons/${option.img}.png`}
                     alt={`${option.tooltip_en}`}
-                    width={`${size}px`}
-                    height={`${size}px`}
+                    width="65px"
+                    height="65px"
                     className={`${toggleOptionColor(
                       category.category,
                       option.img
