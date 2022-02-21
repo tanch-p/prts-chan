@@ -1,32 +1,28 @@
 {
-    "id": "A2",
-    "name_en": "Crossbowman Leader",
-    "name_jp": "射撃隊長",
-    "name_cn": "弩手组长",
-    "atk_type_jp": "物理",
-    "hp": "1900",
-    "atk": "310",
-    "def": "150",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "2.4",
-    "range": "1.9",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.9",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+  "id": "A2",
+  "name": { "en": "Crossbowman Leader", "jp": "射撃隊長", "cn": "弩手组长" },
+  "stats": {
+    "level0": {
+      "hp": "1900",
+      "atk": "310",
+      "def": "150",
+      "mdef": "0",
+      "aspd%": "100",
+      "aspd": "2.4",
+      "range": "1.9",
+      "HP回復速度": "0",
+      "weight": "1",
+      "ms": "0.9"
+    }
+  },
+  "normal_attack": {
+    "type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+    "hits": 1
+  },
+  "スタン耐性": "無",
+  "眠り耐性": "無",
+  "凍結耐性": "",
+
+  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
+  "special": {}
 }

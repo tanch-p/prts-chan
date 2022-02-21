@@ -131,6 +131,7 @@ export default function CC_buttons({
             mdef: 0,
             aspd: 1,
             ms: 1,
+            range:1,
             weight: 0,
           };
         }

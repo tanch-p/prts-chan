@@ -7,10 +7,12 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
   //return table of enemy data
   const tableHeaders = [
     "enemy",
+    "count",
     "type",
     "hp",
     "atk",
     "aspd",
+    "range",
     "def",
     "mdef",
     "weight",
@@ -33,9 +35,9 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
   };
 
   const calculate = (enemy, stats, stat) => {
+    const totalMultiplier = 1;
     switch (stat) {
       case "aspd":
-        const totalMultiplier = 1;
         if (
           multiplier?.["ALL"]?.aspd !== undefined &&
           multiplier?.["ALL"]?.aspd > 1
@@ -60,10 +62,34 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
         ) {
           totalMultiplier += multiplier?.Ranged?.aspd - 1;
         }
-        return (enemy["stats"][stats][stat] / totalMultiplier).toFixed(2);
+        return (
+          Math.ceil((enemy["stats"][stats][stat] / totalMultiplier) * 100) / 100
+        );
+      case "mdef":
+      case "weight":
+        const fixedIncValue = 0;
+        if (
+          enemy.type.en.includes("Melee") &&
+          multiplier.hasOwnProperty("Melee")
+        ) {
+          fixedIncValue += multiplier.Melee[stat];
+        }
+        if (
+          enemy.type.en.includes("Ranged") &&
+          multiplier.hasOwnProperty("Ranged")
+        ) {
+          fixedIncValue += multiplier.Ranged[stat];
+        }
+        console.log(fixedIncValue);
+        return (
+          +enemy["stats"][stats][stat] +
+          (multiplier?.["ALL"]?.[stat] ?? 0) +
+          (multiplier?.[enemy.id]?.[stat] ?? 0) +
+          fixedIncValue
+        );
 
       default:
-        return Math.round(
+        return (
           enemy["stats"][stats][stat] *
             (multiplier?.["ALL"]?.[stat] ?? 1) *
             (multiplier?.[enemy.id]?.[stat] ?? 1) *
@@ -72,7 +98,7 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
               : enemy.type.en.includes("Ranged")
               ? multiplier?.Ranged?.[stat] ?? 1
               : 1) +
-            (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0)
+          (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0)
         );
     }
   };
@@ -87,7 +113,7 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
             if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
               return (
                 <p>
-                  <span className="text-rose-600">
+                  <span className="text-rose-600 font-semibold">
                     {(
                       base_stat * specialMods[enemy.id][skill.name].multiplier +
                       specialMods[enemy.id][skill.name].fixedInc
@@ -127,10 +153,15 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
           if (specialMods.hasOwnProperty(enemy.id)) {
             if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
               return (
-                <p className="text-rose-600">{`${(
-                  base_stat * specialMods[enemy.id][skill.name].multiplier +
-                  specialMods[enemy.id][skill.name].fixedInc
-                ).toFixed(0)} (${skill.type["jp"]})`}</p>
+                <p>
+                  <span className="text-rose-600 font-semibold">
+                    {`${(
+                      base_stat * specialMods[enemy.id][skill.name].multiplier +
+                      specialMods[enemy.id][skill.name].fixedInc
+                    ).toFixed(0)}`}{" "}
+                  </span>{" "}
+                  {`(${skill.type["jp"]})`}
+                </p>
               );
             }
           }
@@ -202,11 +233,13 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
                             width="75px"
                             className="select-none"
                           />
+                        ) : stat === "count" ? (
+                          <p>{count}</p>
                         ) : stat === "type" ? (
                           enemy["type"]["jp"].map((type) => <p>{type}</p>)
                         ) : stat === "atk" ? (
                           [
-                            <p>{`${calculate(enemy, stats, stat)} ${
+                            <p>{`${Math.floor(calculate(enemy, stats, stat))} ${
                               enemy.normal_attack.hits !== 1
                                 ? `x ${enemy.normal_attack.hits}`
                                 : ""
@@ -220,32 +253,29 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
                             )
                           )
                         ) : stat === "weight" || stat === "mdef" ? (
-                          +enemy["stats"][stats][stat] +
-                          (multiplier?.["ALL"]?.[stat] ?? 0) +
-                          (multiplier?.[id]?.[stat] ?? 0)
+                          calculate(enemy, stats, stat)
                         ) : stat === "aspd" ? (
                           calculate(enemy, stats, stat)
                         ) : stat === "remarks" ? (
                           getRemarks(enemy, specialMods)
+                        ) : stat === "range" ? (
+                          enemy["stats"][stats]["range"] === "0" ? (
+                            "0"
+                          ) : (
+                            (
+                              Math.floor(calculate(enemy, stats, stat) * 100) /
+                              100
+                            ).toFixed(2)
+                          )
                         ) : (
                           [
-                            <p>
-                              {Math.round(
-                                enemy["stats"][stats][stat] *
-                                  (multiplier?.["ALL"]?.[stat] ?? 1) *
-                                  (multiplier?.[id]?.[stat] ?? 1) +
-                                  (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0)
-                              )}
-                            </p>,
+                            <p>{Math.floor(calculate(enemy, stats, stat))}</p>,
                           ].concat(
                             parseSpecial(
                               enemy,
                               stat,
                               stats,
-                              enemy["stats"][stats][stat] *
-                                (multiplier?.["ALL"]?.[stat] ?? 1) *
-                                (multiplier?.[id]?.[stat] ?? 1) +
-                                (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0)
+                              calculate(enemy, stats, stat)
                             )
                           )
                         )}

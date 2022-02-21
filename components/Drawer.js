@@ -4,7 +4,7 @@ const Drawer = ({ open, setOpen, device }) => {
     "Calculations",
     "Weight Physics",
     "Credits",
-    "Contact Us",
+    "Contact",
     "Settings",
   ];
   return (
@@ -15,7 +15,7 @@ const Drawer = ({ open, setOpen, device }) => {
       >
         {sidebarItems.map((ele, index) => (
           <a
-            className="flex items-center font-bold pt-5 pr-8 bg-white hover:bg-gray-300"
+            className="flex items-center font-bold pt-5 pr-8 bg-white hover:bg-gray-300 hover:cursor-not-allowed"
             key={ele}
           >
             {ele}
