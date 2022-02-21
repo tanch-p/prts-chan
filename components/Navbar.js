@@ -42,7 +42,7 @@ export const Navbar = ({ open, setOpen }) => {
           </Link>
         </div>
 
-        <div class="relative inline-block text-left">
+        <div className="relative inline-block text-left">
           <div>
             <button
               type="button"
