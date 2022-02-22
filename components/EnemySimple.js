@@ -1,11 +1,18 @@
 import Image from "next/image";
 import { getRemarks } from "./getStats";
+import { useState, useEffect } from "react";
 
-export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
-  console.log("spMods",specialMods);
-  console.log("mul",multiplier);
-  //return table of enemy data
-  const tableHeaders = [
+export default function EnemySimple({
+  mapConfig,
+  multiplier,
+  specialMods,
+  language,
+  device,
+  fontThemes,
+}) {
+  const [showCount, setShowCount] = useState(true);
+  const [showAttributes, setShowAttributes] = useState(true);
+  const [tableHeaders, setTableHeaders] = useState([
     "enemy",
     "count",
     "type",
@@ -17,7 +24,10 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
     "mdef",
     "weight",
     "remarks",
-  ];
+  ]);
+
+  console.log("spMods", specialMods);
+  console.log("mul", multiplier);
 
   const textAlign = (stat) => {
     return stat === "type" ||
@@ -188,9 +198,31 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
     }
   };
 
+  useEffect(() => {
+    const countIndex = tableHeaders.indexOf("count");
+    showCount
+      ? countIndex === -1
+        ? setTableHeaders([
+            ...tableHeaders.slice(0, 1),
+            "count",
+            ...tableHeaders.slice(1),
+          ])
+        : null
+      : setTableHeaders(tableHeaders.filter((ele) => ele !== "count"));
+  }, [showCount]);
+
   return (
     <>
-      <table className="border border-gray-400 border-solid mx-auto">
+      <button
+        onClick={() => {
+          setShowCount(!showCount);
+        }}
+      >
+        {showCount ? "Hide Enemy Count" : "Show Enemy Count"}
+      </button>
+      <table
+        className={`border border-gray-400 border-solid mx-auto ${fontThemes[language]}`}
+      >
         <thead>
           <tr>
             {tableHeaders.map((ele) => (

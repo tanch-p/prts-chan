@@ -26,7 +26,7 @@
     "options": [
       {
         "rank": 1,
-        "name": { "jp": "増幅：体力I", "en": "", "cn": "" },
+        "name": { "jp": "増幅：体力I", "en": "Enemy HP 1", "cn": "" },
         "img": "放棄された土地/75px-Enemy_hp_1",
         "effect": { "hp": "%30" },
         "tooltip": {

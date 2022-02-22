@@ -6,45 +6,37 @@ import useWindowDimensions from "../components/WindowDimensions";
 import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
-  const [open, setOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [language, setLanguage] = useState("en");
   const { height, width } = useWindowDimensions();
   let device = "";
   width > 800 ? (device = "desktop") : (device = "mobile");
-  let langPack = require(`../components/lang/${language}.json`);
 
   const router = useRouter();
   const { pathname, asPath, query, locale } = router;
-  console.log("system detected locale is", locale);
+  // console.log("system detected locale is", locale);
 
   useEffect(() => {
-    device === "desktop" ? setOpen(true) : setOpen(false);
     setLanguage(localStorage.getItem("language") ?? locale);
   }, []);
 
-  const [languagePack, setlanguagePack] = useState(langPack);
-
   useEffect(() => {
-    langPack = require(`../components/lang/${language}.json`);
-    setlanguagePack(langPack);
-    console.log("langpack", langPack);
     localStorage.setItem("language", language);
-    router.push({ pathname, query }, asPath, { locale: language })
+    router.push({ pathname, query }, asPath, { locale: language });
   }, [language]);
 
   return (
     <>
       <AppContext.Provider
         value={{
-          openContext: [open, setOpen],
+          openContext: [drawerOpen, setDrawerOpen],
           languageContext: [language, setLanguage],
-          langPack: languagePack,
           device: device,
         }}
       >
         <Component {...pageProps} />
       </AppContext.Provider>
-      <Drawer open={open} setOpen={setOpen} device={device} />
+      <Drawer drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen} device={device} />
     </>
   );
 }

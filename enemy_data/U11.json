@@ -21,9 +21,9 @@
   },
   "normal_attack": {
     "type": {
-      "en": "Ranged/Phys/AOE",
-      "jp": "遠・物理・範囲",
-      "cn": "远・物理・范围"
+      "en": "Ranged/Phys",
+      "jp": "遠・物理",
+      "cn": "远・物理"
     },
     "hits": 1
   },
@@ -31,9 +31,18 @@
   "眠り耐性": "無",
   "凍結耐性": "無",
   "type": {
-    "jp": ["遠距離", "飛行", "ドローン"],
-    "en": ["Ranged", "Flying", "Drone"],
-    "cn": ["远程", "飞行", "无人机"]
+    "jp": ["暗殺対象外","飛行", "ドローン"],
+    "en": ["Flying", "Drone"],
+    "cn": ["非暗杀目标","飞行", "无人机"]
   },
-  "special": {}
+  "special": {
+    "others": [
+      {
+        "tooltip": {
+          "simple": { "en": ["AOE - 8sq around target"], "jp": ["範囲攻撃→目標周囲8マス"], "cn": [] },
+          "detailed": { "en": [], "jp": [], "cn": [] }
+        }
+      }
+    ]
+  }
 }

@@ -33,9 +33,9 @@
   },
   "normal_attack": {
     "type": {
-      "en": "Ranged/Arts/AOE",
-      "jp": "遠・術・範囲",
-      "cn": "远・法术・范围"
+      "en": "Ranged/Arts",
+      "jp": "遠・術",
+      "cn": "远・法术"
     },
     "hits": 1
   },
@@ -44,5 +44,14 @@
   "凍結耐性": "",
 
   "type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] },
-  "special": {}
+  "special": {
+    "others": [
+      {
+        "tooltip": {
+          "simple": { "en": ["AOE - 4sq around target"], "jp": ["範囲攻撃→目標周囲4マス"], "cn": [] },
+          "detailed": { "en": [], "jp": [], "cn": [] }
+        }
+      }
+    ]
+  }
 }

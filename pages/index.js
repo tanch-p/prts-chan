@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from 'next/router'
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedStagesData } from "../lib/stages";
 import { useContext, useEffect } from "react";
@@ -18,14 +17,16 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allStagesData }) {
-  const { langPack } = useContext(AppContext);
+  const {languageContext} = useContext(AppContext)
+  const [language] = languageContext
+  const langPack = require(`../components/lang/${language}.json`)
 
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div id="home-container" className="min-h-[100vh]">
+      <div id="home-container" className="min-h-[100vh] font-jp">
         <Image
           src="/images/profile.jpg"
           className="inline-block"

@@ -1,4 +1,4 @@
-const Drawer = ({ open, setOpen, device }) => {
+const Drawer = ({ drawerOpen, setDrawerOpen, device }) => {
   const sidebarItems = [
     "Stages",
     "Calculations",
@@ -11,7 +11,7 @@ const Drawer = ({ open, setOpen, device }) => {
     <>
       <aside
         className={`transform top-0 left-0 w-64 border border-slate-400 bg-white fixed h-screen overflow-auto ease-in-out transition-all duration-200 z-30
-    ${open ? "translate-x-0" : "-translate-x-full"}`}
+    ${drawerOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         {sidebarItems.map((ele, index) => (
           <a
@@ -26,9 +26,9 @@ const Drawer = ({ open, setOpen, device }) => {
         <div
           id="nav_overlay"
           className={`top-0 left-0 fixed w-screen h-screen bg-gray-500 backdrop-blur-2 transition-opacity duration-30 ${
-            open ? "visible opacity-100" : "opacity-0 invisible"
+            drawerOpen ? "visible opacity-100" : "opacity-0 invisible"
           }`}
-          onClick={() => setOpen(false)}
+          onClick={() => setDrawerOpen(false)}
         ></div>
       ) : null}
     </>

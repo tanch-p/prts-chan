@@ -8,10 +8,9 @@ export default function CC_buttons({
   mapConfig,
   setMultiplier,
   setSpecialMods,
+  language,
+  device,
 }) {
-  const { languageContext, device } = useContext(AppContext);
-  const [language] = languageContext;
-
   let ccConfig = require(`../../cc_config/${mapConfig.config}.json`);
   const [selected, setSelected] = useState([{}]);
   const [totalRisk, setTotalRisk] = useState(0);
@@ -131,7 +130,7 @@ export default function CC_buttons({
             mdef: 0,
             aspd: 1,
             ms: 1,
-            range:1,
+            range: 1,
             weight: 0,
           };
         }
@@ -172,7 +171,10 @@ export default function CC_buttons({
 
   return (
     <>
-      <div id="CC-container" className={`${mapConfig.ccType === "perma" ? "w-full" : "min-w-min"}`}>
+      <div
+        id="CC-container"
+        className={`${mapConfig.ccType === "perma" ? "w-full" : "min-w-min"}`}
+      >
         {mapConfig.ccType === "perma" ? (
           <div className="w-full flex flex-wrap place-content-end mb-1">
             <button

@@ -1,21 +1,21 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect, useContext } from "react";
-import { Navbar } from "./Navbar";
+import { Navbar } from "./layouts/Navbar";
 import AppContext from "./AppContext";
-import { Footer } from "./Footer";
+import { Footer } from "./layouts/Footer";
 
 const name = "Your Name";
 export const siteTitle = "PRTS-chan";
 
 export default function Layout({ children, home }) {
   const { openContext, device } = useContext(AppContext);
-  const [open, setOpen] = openContext;
+  const [drawerOpen, setDrawerOpen] = openContext;
 
   return (
     <div
       className={`flex flex-wrap ease-in-out duration-300 transition-[left]  motion-reduce:transition-none ${
-        open && device === "desktop"
+        drawerOpen && device === "desktop"
           ? "translate-x-64 w-[calc(100%-16rem)]"
           : ""
       }`}
@@ -40,7 +40,7 @@ export default function Layout({ children, home }) {
       <header
         className="w-full transition-none"
       >
-        <Navbar open={open} setOpen={setOpen} />
+        <Navbar open={drawerOpen} setOpen={setDrawerOpen} />
       </header>
       <main className="mx-auto flex flex-wrap flex-col items-center">{children}</main>
       <Footer />
