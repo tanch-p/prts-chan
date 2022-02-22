@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import AppContext from "./AppContext";
 import { useState, useContext } from "react";
 
@@ -6,9 +7,11 @@ export const Navbar = ({ open, setOpen }) => {
   const { languageContext } = useContext(AppContext);
   const [language, setLanguage] = languageContext;
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+  const { pathname, asPath, query } = router;
 
   const languageOptions = [
-    { name: "简体中文", code: "cn" },
+    // { name: "简体中文", code: "cn" },
     { name: "English", code: "en" },
     { name: "日本語", code: "jp" },
   ];
@@ -50,7 +53,7 @@ export const Navbar = ({ open, setOpen }) => {
               id="menu-button"
               onClick={() => setMenuOpen(!menuOpen)}
             >
-              Language: {" "}<span> </span>
+              Language: <span> </span>
               <span className="font-bold">{` ${language.toUpperCase()}`}</span>
               {/* <!-- Heroicon name: solid/chevron-down --> */}
               <svg
@@ -88,19 +91,22 @@ export const Navbar = ({ open, setOpen }) => {
               <div className="py-1 w-full z-30">
                 {/* <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" --> */}
                 {languageOptions.map(({ name, code }) => (
-                  <button
+                  <a
                     className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 w-full text-left"
                     role="menuitem"
                     tabIndex="-1"
                     id="menu-item-0"
                     key={name}
                     onClick={() => {
-                      setLanguage(code);
-                      setMenuOpen(false);
+                      setMenuOpen(!menuOpen);
+                      setLanguage(code)
+                      router.push({ pathname, query }, asPath, {
+                        locale: code,
+                      });
                     }}
                   >
                     {name}
-                  </button>
+                  </a>
                 ))}
               </div>
             </div>

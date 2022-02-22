@@ -1,39 +1,39 @@
 {
-    "id": "U11",
-    "name_en": "Imperial Artillery Targeteer",
-    "name_jp": "帝国砲撃誘導機",
-    "name_cn": "帝国炮火先兆者",
-    "atk_type_jp": "物理",
-    "hp": "13000",
-    "atk": "1000",
-    "def": "800",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "5",
-    "range": "2",
-    "HP回復速度": "0",
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.5",
-    "type_jp": [
-        "遠距離",
-        "飛行",
-        "精鋭",
-        "ドローン"
-    ],
-    "type_en": [
-        "Ranged",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "远程",
-        "飞行",
-        "无人机"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+  "id": "U11",
+  "name": {
+    "en": "Imperial Artillery Targeteer",
+    "jp": "帝国砲撃誘導機",
+    "cn": "帝国炮火先兆者"
+  },
+  "stats": {
+    "level0": {
+      "hp": "13000",
+      "atk": "1000",
+      "def": "800",
+      "mdef": "50",
+      "aspd%": "100",
+      "aspd": "5",
+      "range": "2",
+      "HP回復速度": "0",
+      "weight": "4",
+      "ms": "0.5"
+    }
+  },
+  "normal_attack": {
+    "type": {
+      "en": "Ranged/Phys/AOE",
+      "jp": "遠・物理・範囲",
+      "cn": "远・物理・范围"
+    },
+    "hits": 1
+  },
+  "スタン耐性": "無",
+  "眠り耐性": "無",
+  "凍結耐性": "無",
+  "type": {
+    "jp": ["遠距離", "飛行", "ドローン"],
+    "en": ["Ranged", "Flying", "Drone"],
+    "cn": ["远程", "飞行", "无人机"]
+  },
+  "special": {}
 }

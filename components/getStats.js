@@ -2,7 +2,7 @@ export const getRemarks = (enemy, specialMods, lang = "jp", type="simple") => {
   const parseHighlight = (text) => {
     const regexp = /\$/g;
     const array = [...text.matchAll(regexp)];
-    console.log(array);
+    // console.log(array);
     return array[0].index === 0 ? (
       <p>
         <span className="text-rose-600 font-semibold">

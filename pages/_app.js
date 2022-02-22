@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import AppContext from "../components/AppContext";
 import Drawer from "../components/Drawer";
 import useWindowDimensions from "../components/WindowDimensions";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
@@ -11,9 +12,14 @@ export default function App({ Component, pageProps }) {
   let device = "";
   width > 800 ? (device = "desktop") : (device = "mobile");
   let langPack = require(`../components/lang/${language}.json`);
+
+  const router = useRouter();
+  const { pathname, asPath, query, locale } = router;
+  console.log("system detected locale is", locale);
+
   useEffect(() => {
     device === "desktop" ? setOpen(true) : setOpen(false);
-    setLanguage(localStorage.getItem("language") ?? "en")
+    setLanguage(localStorage.getItem("language") ?? locale);
   }, []);
 
   const [languagePack, setlanguagePack] = useState(langPack);
@@ -22,7 +28,8 @@ export default function App({ Component, pageProps }) {
     langPack = require(`../components/lang/${language}.json`);
     setlanguagePack(langPack);
     console.log("langpack", langPack);
-    localStorage.setItem("language",language);
+    localStorage.setItem("language", language);
+    router.push({ pathname, query }, asPath, { locale: language })
   }, [language]);
 
   return (

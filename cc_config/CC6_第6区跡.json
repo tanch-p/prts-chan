@@ -5,7 +5,7 @@
     "options": [
       {
         "rank": 1,
-        "name":{"jp":"増幅：高級装甲I","en":"","cn":""},
+        "name":{"jp":"増幅：高級装甲I","en":"Enemy Melee I","cn":""},
         "img": "第6区跡/enemy_melee_1",
         "effect": { "hp": "%40", "def": "%25", "mdef": 15 },
         "tooltip": {
@@ -22,7 +22,7 @@
     "options": [
       {
         "rank": 1,
-        "name":{"jp":"制限：過負荷","en":"","cn":""},
+        "name":{"jp":"制限：過負荷","en":"Support Medic 1","cn":""},
         "img": "第6区跡/char_cost_healersupport_1",
         "effect": {},
         "tooltip": { "en": "DP cost of Supporters and Medics is tripled", "cn": "", "jp": "医療・補助の配置コストが3倍" }
@@ -35,7 +35,7 @@
     "options": [
       {
         "rank": 1,
-        "name":{"jp":"増幅：装甲I","en":"","cn":""},
+        "name":{"jp":"増幅：装甲I","en":"Enemy Def 1","cn":""},
         "img": "第6区跡/enemy_def_1",
         "effect": { "def": "%50" },
         "tooltip": { "en": "Enemy DEF +50%", "cn": "", "jp": "全ての敵の防御力+50%" }
@@ -48,7 +48,7 @@
     "options": [
       {
         "rank": 2,
-        "name":{"jp":"制限：火力減衰II","en":"","cn":""},
+        "name":{"jp":"制限：火力減衰II","en":"Reduced Ally ATK 2","cn":""},
         "img": "第6区跡/char_atk_2",
         "effect": {},
         "tooltip": { "en": "Ally ATK -40%", "cn": "", "jp": "全ての味方の攻撃力-40%" }
@@ -61,7 +61,7 @@
     "options": [
       {
         "rank": 2,
-        "name":{"jp":"環境：強制転移","en":"","cn":""},
+        "name":{"jp":"環境：強制転移","en":"Ranged DP Triple","cn":""},
         "img": "第6区跡/char_cost_ranged_2",
         "effect": {},
         "tooltip": {
@@ -78,7 +78,7 @@
     "options": [
       {
         "rank": 2,
-        "name":{"jp":"増幅：ラッシュ","en":"","cn":""},
+        "name":{"jp":"増幅：ラッシュ","en":"Enemy ASPD 2","cn":""},
         "img": "第6区跡/enemy_aspd_2",
         "effect": { "aspd": "%50" },
         "tooltip": { "en": "Enemy ASPD +50", "cn": "", "jp": "全ての敵の攻撃速度+50" }
@@ -91,7 +91,7 @@
     "options": [
       {
         "rank": 3,
-        "name":{"jp":"強敵：無限起爆III","en":"","cn":""},
+        "name":{"jp":"強敵：無限起爆III","en":"W: ∞ Explosions 3","cn":""},
         "img": "第6区跡/w_3",
         "effect": {
           "hp": "%120",
@@ -102,9 +102,9 @@
               "multiplier": 2.9333333333,
               "fixedInc": 0,
               "tooltip": { "en": [], "jp": [
-                "一定時間ごとに攻撃範囲内の敵ユニット2体に爆弾を設置します",
-                "(爆弾：単体に293%ダメージ)",
-                "HP50%以下：爆弾2体ｰ>3体、即時爆弾を設置します"
+                "スキル→敵ユニット2体に爆弾設置する",
+                "(爆弾：単体に293%物理ダメージ)",
+                "HP50%以下：爆弾2体ｰ>3体、即時爆弾設置する"
               ], "cn": [] }
             }
           }
@@ -123,7 +123,7 @@
     "options": [
       {
         "rank": 3,
-        "name":{"jp":"増幅：精密照準III","en":"","cn":""},
+        "name":{"jp":"増幅：精密照準III","en":"Enemy Ranged 3","cn":""},
         "img": "第6区跡/enemy_ranged_3",
         "effect": 
           {

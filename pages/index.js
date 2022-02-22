@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/router'
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedStagesData } from "../lib/stages";
 import { useContext, useEffect } from "react";

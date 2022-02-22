@@ -18,6 +18,10 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const paths = getAllStageIds();
+  const locales = ["en", "jp"];
+  for (const locale of locales) {
+    paths.forEach((ele) => (ele.locale = locale));
+  }
   return {
     paths,
     fallback: false,
@@ -26,10 +30,9 @@ export async function getStaticPaths() {
 
 export default function Stage({ stageData }) {
   // console.log(stageData);
-  const {mapConfig} = stageData;
+  const { mapConfig } = stageData;
   const [multiplier, setMultiplier] = useState({});
   const [specialMods, setSpecialMods] = useState({});
-  
 
   return (
     <Layout>
@@ -41,9 +44,19 @@ export default function Stage({ stageData }) {
       </header>
 
       <Map mapConfig={mapConfig} />
-      {mapConfig.hasOwnProperty("ccType") ? <CC_buttons mapConfig={mapConfig} setMultiplier={setMultiplier} setSpecialMods={setSpecialMods}/> : null}
+      {mapConfig.hasOwnProperty("ccType") ? (
+        <CC_buttons
+          mapConfig={mapConfig}
+          setMultiplier={setMultiplier}
+          setSpecialMods={setSpecialMods}
+        />
+      ) : null}
 
-      <EnemySimple mapConfig={mapConfig} multiplier={multiplier} specialMods={specialMods} />
+      <EnemySimple
+        mapConfig={mapConfig}
+        multiplier={multiplier}
+        specialMods={specialMods}
+      />
     </Layout>
   );
 }

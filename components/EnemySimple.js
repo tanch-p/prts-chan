@@ -2,8 +2,8 @@ import Image from "next/image";
 import { getRemarks } from "./getStats";
 
 export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
-  console.log(specialMods);
-  console.log(multiplier);
+  console.log("spMods",specialMods);
+  console.log("mul",multiplier);
   //return table of enemy data
   const tableHeaders = [
     "enemy",
@@ -80,7 +80,6 @@ export default function EnemySimple({ mapConfig, multiplier, specialMods }) {
         ) {
           fixedIncValue += multiplier.Ranged[stat];
         }
-        console.log(fixedIncValue);
         return (
           +enemy["stats"][stats][stat] +
           (multiplier?.["ALL"]?.[stat] ?? 0) +

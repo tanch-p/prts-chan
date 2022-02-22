@@ -25,6 +25,7 @@
 4.  map stats
 5.  tidy up simple view
 6.  Parse Range to show squares and circles
+7.  show/hide count
 
 - Enemy
 

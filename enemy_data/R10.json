@@ -36,21 +36,35 @@
         "hits": 1,
         "fixedInc": 0,
         "tooltip": {
-          "en": [],
-          "jp": [],
-          "cn": []
+          "simple": {
+            "en": [],
+            "jp": [],
+            "cn": []
+          },
+          "detailed": {
+            "en": [],
+            "jp": [],
+            "cn": []
+          }
         }
       }
     ],
     "others": [
       {
         "tooltip": {
-          "en": [],
-          "jp": [
-            "ステルス",
-            "砂嵐にさらされているユニットに射程無限の遠距離攻撃"
-          ],
-          "cn": []
+          "simple": {
+            "en": ["Stealth", "Targets only units in sandstorm"],
+            "jp": [
+              "ステルス",
+              "砂嵐にさらされているユニットに射程無限の遠距離攻撃"
+            ],
+            "cn": []
+          },
+          "detailed": {
+            "en": [],
+            "jp": [],
+            "cn": []
+          }
         }
       }
     ]

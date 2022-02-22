@@ -1,0 +1,14 @@
+{
+  "name": "放棄された土地",
+  "img": "放棄された土地",
+  "config": "CC6_放棄された土地_1",
+  "ccType": "daily",
+  "enemies": [
+    { "id": "U11", "count": 1, "stats": "level0" },
+    { "id": "SP0", "count": 2, "stats": "level0" },
+    { "id": "SI7", "count": 2, "stats": "level0" },
+    { "id": "SI5", "count": 4, "stats": "level0" },
+    { "id": "SI3", "count": 10, "stats": "level0" },
+    { "id": "D2", "count": 26, "stats": "level0" }
+  ]
+}
