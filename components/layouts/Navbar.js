@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import AppContext from "../AppContext";
 import { useState, useContext } from "react";
 
@@ -7,8 +6,6 @@ export const Navbar = ({ open, setOpen }) => {
   const { languageContext } = useContext(AppContext);
   const [language, setLanguage] = languageContext;
   const [menuOpen, setMenuOpen] = useState(false);
-  const router = useRouter();
-  const { pathname, asPath, query } = router;
 
   const languageOptions = [
     // { name: "简体中文", code: "cn" },
@@ -99,10 +96,7 @@ export const Navbar = ({ open, setOpen }) => {
                     key={name}
                     onClick={() => {
                       setMenuOpen(!menuOpen);
-                      setLanguage(code)
-                      router.push({ pathname, query }, asPath, {
-                        locale: code,
-                      });
+                      setLanguage(code);
                     }}
                   >
                     {name}

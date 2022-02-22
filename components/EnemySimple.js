@@ -221,7 +221,7 @@ export default function EnemySimple({
         {showCount ? "Hide Enemy Count" : "Show Enemy Count"}
       </button>
       <table
-        className={`border border-gray-400 border-solid mx-auto ${fontThemes[language]}`}
+        className={`border border-gray-400 border-solid mx-auto ${fontThemes[language]} font-light`}
       >
         <thead>
           <tr>

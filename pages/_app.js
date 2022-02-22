@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import AppContext from "../components/AppContext";
 import Drawer from "../components/Drawer";
 import useWindowDimensions from "../components/WindowDimensions";
-import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -12,17 +11,15 @@ export default function App({ Component, pageProps }) {
   let device = "";
   width > 800 ? (device = "desktop") : (device = "mobile");
 
-  const router = useRouter();
-  const { pathname, asPath, query, locale } = router;
-  // console.log("system detected locale is", locale);
-
   useEffect(() => {
-    setLanguage(localStorage.getItem("language") ?? locale);
+    let lang = navigator.language;
+    console.log("browser language is", lang);
+    lang = lang.match(/'jp|JP'/i) ? "jp" : "en";
+    setLanguage(localStorage.getItem("language") ?? lang);
   }, []);
 
   useEffect(() => {
     localStorage.setItem("language", language);
-    router.push({ pathname, query }, asPath, { locale: language });
   }, [language]);
 
   return (
@@ -36,7 +33,11 @@ export default function App({ Component, pageProps }) {
       >
         <Component {...pageProps} />
       </AppContext.Provider>
-      <Drawer drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen} device={device} />
+      <Drawer
+        drawerOpen={drawerOpen}
+        setDrawerOpen={setDrawerOpen}
+        device={device}
+      />
     </>
   );
 }

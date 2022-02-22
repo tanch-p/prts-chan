@@ -18,15 +18,15 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const allStages = getAllStageIds();
-  const locales = ["en", "jp"];
-  const paths = [];
-  for (const locale of locales) {
-    allStages.forEach((ele) => {
-      ele.locale = locale;
-      paths.push(JSON.parse(JSON.stringify(ele)));
-    });
-  }
+  const paths = getAllStageIds();
+  // const locales = ["en", "jp"];
+  // const paths = [];
+  // for (const locale of locales) {
+  //   allStages.forEach((ele) => {
+  //     ele.locale = locale;
+  //     paths.push(JSON.parse(JSON.stringify(ele)));
+  //   });
+  // }
 
   // console.log(paths);
   return {
@@ -43,8 +43,8 @@ export default function Stage({ stageData }) {
   const { mapConfig } = stageData;
   const [multiplier, setMultiplier] = useState({});
   const [specialMods, setSpecialMods] = useState({});
-  
-  const fontThemes = {"en":"font-sans","jp":"font-jp font-light"}
+
+  const fontThemes = { en: "font-sans", jp: "font-jp" };
 
   return (
     <Layout>
@@ -55,7 +55,12 @@ export default function Stage({ stageData }) {
         <h2>{mapConfig.name}</h2>
       </header>
 
-      <Map mapConfig={mapConfig} language={language} device={device} fontThemes={fontThemes}/>
+      <Map
+        mapConfig={mapConfig}
+        language={language}
+        device={device}
+        fontThemes={fontThemes}
+      />
       {mapConfig.hasOwnProperty("ccType") ? (
         <CC_buttons
           mapConfig={mapConfig}
