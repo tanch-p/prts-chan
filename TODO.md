@@ -1,5 +1,11 @@
 ## To-dos:
 
+### Priorities
+ - index page
+ - separate mobs in enemy simple
+ - detailed view
+
+
 - Header
 
   1. more buttons

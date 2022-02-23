@@ -27,7 +27,7 @@ const getTooltipMultiplier = (
   console.log(originalMultiplier);
   return tooltip.replace(
     "#mult",
-    `${Math.round((originalMultiplier - 1 + specialMultiplier) * 100)}`
+    `${Math.round((originalMultiplier + specialMultiplier) * 100)/100}`
   );
 };
 
