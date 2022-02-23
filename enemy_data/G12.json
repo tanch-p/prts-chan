@@ -1,9 +1,18 @@
 {
     "id": "G12",
+    "name":{"en":"Faust","jp":"Faust","cn":"浮士德"},
     "name_en": "Elite Sicilian",
     "name_jp": "凶悪シシリアン",
     "name_cn": "精锐西西里人",
     "atk_type_jp": "物理",
+    "stats":{
+        "level0":{
+
+        },
+        "廃工場":{
+
+        }
+    },
     "hp": "3800",
     "atk": "350",
     "def": "160",

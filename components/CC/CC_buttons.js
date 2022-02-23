@@ -31,14 +31,14 @@ export default function CC_buttons({
           selected: false,
           option: "",
           tooltip: "",
-          target: "",
+          targets: [],
           effect: [],
         };
       })
     );
   }, []);
 
-  const handleClick = (category, name, tooltip, target, effect, rank) => {
+  const handleClick = (category, name, tooltip, targets, effect, rank) => {
     //   console.log("name",name)
     //   console.log("category", category)
     //   console.log(selected)
@@ -56,7 +56,7 @@ export default function CC_buttons({
                 category: item.category,
                 selected: false,
                 option: "",
-                target: "",
+                targets: [],
                 tooltip: "",
                 effect: [],
                 rank: 0,
@@ -79,7 +79,7 @@ export default function CC_buttons({
             selected: true,
             option: name,
             tooltip: tooltip,
-            target: target,
+            targets: targets,
             effect: effect,
             rank: rank,
           };
@@ -122,28 +122,30 @@ export default function CC_buttons({
     const other_mods = {};
     for (const category of selected) {
       if (category.selected) {
-        if (!multiplier[category.target]) {
-          multiplier[category.target] = {
-            hp: 1,
-            atk: 1,
-            def: 1,
-            mdef: 0,
-            aspd: 1,
-            ms: 1,
-            range: 1,
-            weight: 0,
-          };
-        }
-        for (const effect in category.effect) {
-          if (effect !== "special") {
-            if (category.effect[effect][0] === "%") {
-              multiplier[category.target][effect] +=
-                parseInt(category.effect[effect].slice(1)) / 100;
+        for (const target of category.targets) {
+          if (!multiplier[target]) {
+            multiplier[target] = {
+              hp: 1,
+              atk: 1,
+              def: 1,
+              mdef: 0,
+              aspd: 1,
+              ms: 1,
+              range: 1,
+              weight: 0,
+            };
+          }
+          for (const effect in category.effect) {
+            if (effect !== "special") {
+              if (category.effect[effect][0] === "%") {
+                multiplier[target][effect] +=
+                  parseInt(category.effect[effect].slice(1)) / 100;
+              } else {
+                multiplier[target][effect] = category.effect[effect];
+              }
             } else {
-              multiplier[category.target][effect] = category.effect[effect];
+              other_mods[target] = category.effect[effect];
             }
-          } else {
-            other_mods[category.target] = category.effect[effect];
           }
         }
       }

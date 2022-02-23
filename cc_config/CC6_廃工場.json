@@ -1,0 +1,192 @@
+[
+  {
+    "category": "char_atk",
+    "targets": [],
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "制限：火力減衰I",
+          "en": "Reduced Ally ATK 1",
+          "cn": ""
+        },
+        "img": "廃工場/75px-Char_atk_1",
+        "effect": {},
+        "tooltip": {
+          "en": "All allies’ ATK -15%",
+          "cn": "",
+          "jp": "全ての味方の攻撃力-15%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "cost_recovery",
+    "targets": [],
+    "options": [
+      {
+        "rank": 1,
+        "name": { "jp": "指令：孤軍奮闘I", "en": "DP Down 1", "cn": "" },
+        "img": "廃工場/75px-Global_costrecovery_1",
+        "effect": {},
+        "tooltip": {
+          "en": "DP Regeneration reduced by -25%",
+          "cn": "",
+          "jp": "コストの自然回復速度-25%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "lifepoint_1",
+    "targets": [],
+    "options": [
+      {
+        "rank": 1,
+        "name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
+        "img": "廃工場/75px-Global_lifepoint_1",
+        "effect": {},
+        "tooltip": {
+          "en": "No enemies escape (Level HP set to 1)",
+          "cn": "",
+          "jp": "防衛ラインの最大耐久値が1に"
+        }
+      }
+    ]
+  },
+
+  {
+    "category": "enemy_atk",
+    "targets": ["ALL"],
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "増幅：火力II",
+          "en": "Increase Enemy ATK 2",
+          "cn": ""
+        },
+        "img": "廃工場/75px-Enemy_atk_2",
+        "effect": {},
+        "tooltip": {
+          "en": "All enemies ATK +35%",
+          "cn": "",
+          "jp": "全ての敵の攻撃力+35%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "squad",
+    "targets": [],
+    "options": [
+      {
+        "rank": 2,
+        "name": { "jp": "環境：小規模戦II", "en": "Deploy Limit 2", "cn": "" },
+        "img": "廃工場/75px-Global_pcharnum_2",
+        "effect": {},
+        "tooltip": {
+          "en": "Deploy Limit reduced to 7",
+          "cn": "",
+          "jp": "同時配置可能数が7人に"
+        }
+      }
+    ]
+  },
+  {
+    "category": "avenger",
+    "targets": ["14", "15"],
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "特化：怨刃攻勢II",
+          "en": "Avenger Rage Strength 2",
+          "cn": ""
+        },
+        "img": "廃工場/75px-Enemy_reveng_atkmod_2",
+        "effect": {
+          "hp": "%80",
+          "def": "%90",
+          "atk": "%25",
+          "weight": 1,
+          "special": {
+            "avenger": {
+              "multiplier": 1.5,
+              "fixedInc": 0,
+              "tooltip": {
+                "en": [],
+                "jp": [],
+                "cn": ""
+              }
+            }
+          }
+        },
+        "tooltip": {
+          "en": "[Avenger] and [Hateful Avenger] Max HP +80%, DEF +90%, ATK +25%, weight level +1, when talent triggers deal another additional +50% damage",
+          "cn": "",
+          "jp": "「リベンジャー」系の最大HP+80%、防御力+90%、攻撃力+25%、重量ランク+1、能力上昇時に攻撃力がさらに+50%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "char_hp",
+    "targets": [],
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "制限：体力減衰III",
+          "en": "Reduced Operator HP 3",
+          "cn": ""
+        },
+        "img": "廃工場/75px-Char_hp_3",
+        "effect": {},
+        "tooltip": {
+          "en": "All allies Max HP -50%",
+          "cn": "",
+          "jp": "全ての味方の最大HP-50%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "faust",
+    "targets": ["FA"],
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "強敵：蛇眼一瞥III",
+          "en": "Faust 'Soak This' 3",
+          "cn": ""
+        },
+        "img": "廃工場/75px-Enemy_faust_atkmod_3",
+        "effect": {
+          "hp": "%110",
+          "def": "%110",
+          "atk": "%60",
+          "weight": 1,
+          "special": {
+            "purple_arrow": {
+              "multiplier": 3.8,
+              "fixedInc": 0,
+              "cd":0.75,
+              "tooltip": {
+                "en": [],
+                "jp": [],
+                "cn": ""
+              }
+            }
+          }
+        },
+        "tooltip": {
+          "en": "[Faust] ATK +60%, Max HP +110%, DEF +110%, purple arrow damage increases to 380% and cooldown reduced by 25% ",
+          "cn": "",
+          "jp": "「ファウスト」の攻撃力+60%、最大HP+110%、防御力+110%、特殊攻撃の威力が380%に上昇し、攻撃間隔が25%短縮"
+        }
+      }
+    ]
+  }
+]

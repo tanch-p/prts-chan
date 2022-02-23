@@ -1,7 +1,7 @@
 [
   {
     "category": "enemy_melee",
-    "target": "Melee",
+    "targets": ["Melee"],
     "options": [
       {
         "rank": 1,
@@ -18,7 +18,7 @@
   },
   {
     "category": "operator_cost",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -31,7 +31,7 @@
   },
   {
     "category": "enemy_def_1",
-    "target": "ALL",
+    "targets": ["ALL"],
     "options": [
       {
         "rank": 1,
@@ -44,7 +44,7 @@
   },
   {
     "category": "others_2",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 2,
@@ -57,7 +57,7 @@
   },
   {
     "category": "operator_cost",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 2,
@@ -74,7 +74,7 @@
   },
   {
     "category": "enemy_aspd",
-    "target": "ALL",
+    "targets": ["ALL"],
     "options": [
       {
         "rank": 2,
@@ -87,7 +87,7 @@
   },
   {
     "category": "W",
-    "target": "W",
+    "targets": ["W"],
     "options": [
       {
         "rank": 3,
@@ -119,7 +119,7 @@
   },
   {
     "category": "enemy_ranged",
-    "target": "Ranged",
+    "targets": ["Ranged"],
     "options": [
       {
         "rank": 3,

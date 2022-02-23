@@ -1,7 +1,7 @@
 [
   {
     "category": "champion",
-    "target": "T11",
+    "targets": ["T11"],
     "options": [
       {
         "rank": 1,
@@ -47,7 +47,7 @@
   },
   {
     "category": "champion",
-    "target": "T11",
+    "targets": ["T11"],
     "options": [
       { "rank": 1 },
       {
@@ -114,7 +114,7 @@
   },
   {
     "category": "ripper",
-    "target": "T5",
+    "targets": ["T5"],
     "options": [
       {
         "rank": 1,
@@ -158,7 +158,7 @@
   },
   {
     "category": "shaman",
-    "target": "T7",
+    "targets": ["T7"],
     "options": [
       {
         "rank": 1,
@@ -190,7 +190,7 @@
   },
   {
     "category": "enemy_attack",
-    "target": "ALL",
+    "targets": ["ALL"],
     "options": [
       {
         "rank": 1,
@@ -214,7 +214,7 @@
   },
   {
     "category": "enemy_hp",
-    "target": "ALL",
+    "targets": ["ALL"],
     "options": [
       {
         "rank": 1,
@@ -238,7 +238,7 @@
   },
   {
     "category": "char_aspd",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -257,7 +257,7 @@
   },
   {
     "category": "char_hp",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -281,7 +281,7 @@
   },
   {
     "category": "operator_cost",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -304,7 +304,7 @@
   },
   {
     "category": "operator_cost",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -327,7 +327,7 @@
   },
   {
     "category": "global_cost_recovery",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -351,7 +351,7 @@
   },
   {
     "category": "squad",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -370,7 +370,7 @@
   },
   {
     "category": "squad",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -389,7 +389,7 @@
   },
   {
     "category": "storm_direction",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -416,7 +416,7 @@
   },
   {
     "category": "lifepoint",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -428,7 +428,7 @@
   },
   {
     "category": "storm_damage",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 2,
@@ -445,7 +445,7 @@
   },
   {
     "category": "others_2",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -459,7 +459,7 @@
   },
   {
     "category": "others_3",
-    "target": "ALL",
+    "targets": ["ALL"],
     "options": [
       {
         "rank": 1,
@@ -473,7 +473,7 @@
   },
   {
     "category": "others_4",
-    "target": "-",
+    "targets": [],
     "options": [
       {
         "rank": 1,

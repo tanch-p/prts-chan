@@ -51,7 +51,7 @@ export default function Perma_buttons({
                       category.category,
                       option.img,
                       option.tooltip[language],
-                      category.target,
+                      category.targets,
                       option.effect,
                       option.rank
                     )

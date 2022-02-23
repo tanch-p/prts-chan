@@ -1,5 +1,14 @@
 {
     "id": "P-09",
+    "name":{"en":"Faust","jp":"Faust","cn":"浮士德"},
+    "stats":{
+        "level0":{
+
+        },
+        "廃工場":{
+
+        }
+    },
     "name_en": "Heavy Defender Type-N",
     "name_jp": "重装兵N型",
     "name_cn": "重装防御者-N型",

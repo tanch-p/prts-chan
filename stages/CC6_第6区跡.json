@@ -1,0 +1,19 @@
+{
+  "name": "第6区跡",
+  "img": "第6区跡",
+  "config": "CC6_第6区跡",
+  "ccType": "daily",
+  "enemies": [
+    { "id": "W", "count": 1, "stats": "第6区跡" },
+    { "id": "31", "count": 2, "stats": "level0" },
+    { "id": "29", "count": 2, "stats": "level0" },
+    { "id": "AL1", "count": 8, "stats": "第6区跡" },
+    { "id": "A6", "count": 1, "stats": "第6区跡" },
+    { "id": "23", "count": 8, "stats": "第6区跡" },
+    { "id": "24", "count": 4, "stats": "第6区跡" },
+    { "id": "25", "count": 8, "stats": "第6区跡" },
+    { "id": "18", "count": 22, "stats": "level0" },
+    { "id": "A2", "count": 8, "stats": "level0" }
+  ],
+  "temp": []
+}

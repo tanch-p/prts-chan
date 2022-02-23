@@ -1,5 +1,14 @@
 {
     "id": "14",
+    "name":{"en":"Faust","jp":"Faust","cn":"浮士德"},
+    "stats":{
+        "level0":{
+
+        },
+        "廃工場":{
+
+        }
+    },
     "name_en": "Avenger",
     "name_jp": "リベンジャー",
     "name_cn": "寻仇者",

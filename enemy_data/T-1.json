@@ -1,9 +1,14 @@
 {
     "id": "T-1",
-    "name_en": "Technical Scout",
-    "name_jp": "技術偵察兵",
-    "name_cn": "技术侦察兵",
-    "atk_type_jp": "物理",
+    "name":{"en":"Technical Scout","jp":"技術偵察兵","cn":"技术侦察兵"},
+    "stats":{
+        "level0":{
+
+        },
+        "廃工場":{
+
+        }
+    },
     "hp": "7000",
     "atk": "270",
     "def": "100",

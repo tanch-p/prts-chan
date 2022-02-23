@@ -40,7 +40,7 @@ export default function Daily_buttons({
                             category.category,
                             option.img,
                             option.tooltip[language],
-                            category.target,
+                            category.targets,
                             option.effect,
                             option.rank
                           )

@@ -1,5 +1,14 @@
 {
     "id": "15",
+    "name":{"en":"Faust","jp":"Faust","cn":"浮士德"},
+    "stats":{
+        "level0":{
+
+        },
+        "廃工場":{
+
+        }
+    },
     "name_en": "Hateful Avenger",
     "name_jp": "ヴェンデッタ",
     "name_cn": "复仇者",

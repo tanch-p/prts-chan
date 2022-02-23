@@ -1,9 +1,18 @@
 {
     "id": "G13",
+    "name":{"en":"Faust","jp":"Faust","cn":"浮士德"},
     "name_en": "Brawler",
     "name_jp": "拳闘士崩れ",
     "name_cn": "打手",
     "atk_type_jp": "物理",
+    "stats":{
+        "level0":{
+
+        },
+        "廃工場":{
+
+        }
+    },
     "hp": "3200",
     "atk": "290",
     "def": "250",
