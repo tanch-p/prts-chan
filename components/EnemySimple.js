@@ -124,7 +124,7 @@ export default function EnemySimple({
                 <p>
                   <span className="text-rose-600 font-semibold">
                     {(
-                      base_stat * specialMods[enemy.id][skill.name].multiplier +
+                      base_stat * (specialMods[enemy.id][skill.name].multiplier + skill.multiplier) +
                       specialMods[enemy.id][skill.name].fixedInc
                     ).toFixed(0)}
                   </span>
@@ -165,7 +165,7 @@ export default function EnemySimple({
                 <p>
                   <span className="text-rose-600 font-semibold">
                     {`${(
-                      base_stat * specialMods[enemy.id][skill.name].multiplier +
+                      base_stat * (specialMods[enemy.id][skill.name].multiplier + skill.multiplier) +
                       specialMods[enemy.id][skill.name].fixedInc
                     ).toFixed(0)}`}{" "}
                   </span>{" "}
@@ -288,7 +288,7 @@ export default function EnemySimple({
                         ) : stat === "aspd" ? (
                           calculate(enemy, stats, stat)
                         ) : stat === "remarks" ? (
-                          getRemarks(enemy, specialMods)
+                          getRemarks(enemy, specialMods, stats, language, "simple")
                         ) : stat === "range" ? (
                           enemy["stats"][stats]["range"] === "0" ? (
                             "0"

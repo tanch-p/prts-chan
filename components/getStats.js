@@ -1,25 +1,43 @@
-export const getRemarks = (enemy, specialMods, lang = "jp", type="simple") => {
-  const parseHighlight = (text) => {
-    const regexp = /\$/g;
-    const array = [...text.matchAll(regexp)];
-    // console.log(array);
-    return array[0].index === 0 ? (
-      <p>
-        <span className="text-rose-600 font-semibold">
-          {text.slice(array[0].index + 1, array[1].index)}
-        </span>
-      </p>
-    ) : (
-      <p>
-        {text.slice(0, array[0].index)}
-        <span className="text-rose-600 font-semibold">
-          {text.slice(array[0].index + 1, array[1].index)}
-        </span>
-        {text.slice(array[1].index + 1)}
-      </p>
+const parseHighlight = (text, enemy) => {
+  const regexp = /\$/g;
+  const array = [...text.matchAll(regexp)];
+  // console.log(array);
+  const returnArr = [];
+  let lastSliceIndex = 0;
+  for (let i = 0; i < array.length; i += 2) {
+    returnArr.push(<span>{text.slice(lastSliceIndex, array[i].index)}</span>);
+    returnArr.push(
+      <span className="text-rose-600 font-semibold">
+        {text.slice(array[i].index + 1, array[i + 1].index)}
+      </span>
     );
-  };
+    i + 2 >= array.length
+      ? returnArr.push(<span>{text.slice(array[i + 1].index + 1)}</span>)
+      : (lastSliceIndex = array[i + 1].index + 1);
+  }
+  console.log("returnArr", returnArr);
+  return <p>{returnArr}</p>;
+};
 
+const getTooltipMultiplier = (
+  tooltip,
+  originalMultiplier,
+  specialMultiplier
+) => {
+  console.log(originalMultiplier);
+  return tooltip.replace(
+    "#mult",
+    `${Math.round((originalMultiplier - 1 + specialMultiplier) * 100)}`
+  );
+};
+
+export const getRemarks = (
+  enemy,
+  specialMods,
+  stats,
+  lang = "jp",
+  type = "simple"
+) => {
   let remarksArr = [];
   if (specialMods.hasOwnProperty(enemy.id)) {
     if (specialMods[enemy.id].hasOwnProperty("others")) {
@@ -30,22 +48,37 @@ export const getRemarks = (enemy, specialMods, lang = "jp", type="simple") => {
     Object.keys(enemy.special).forEach((key) => {
       enemy.special[key].forEach((skill) => {
         if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
-          remarksArr = remarksArr.concat(
-            specialMods[enemy.id][skill.name].tooltip[lang]
-          );
+          specialMods[enemy.id][skill.name].tooltip[lang].forEach((ele) => {
+            if (ele.includes("#mult")) {
+              remarksArr.push(
+                getTooltipMultiplier(
+                  ele,
+                  skill.multiplier,
+                  specialMods[enemy.id][skill.name].multiplier
+                )
+              );
+            } else {
+              remarksArr.push(ele);
+            }
+          });
         } else {
           remarksArr = remarksArr.concat(skill.tooltip[type][lang]);
         }
       });
     });
+    // console.log(remarksArr);
     return remarksArr.map((line) => {
-      return line.includes("$") ? parseHighlight(line) : <p>{line}</p>;
+      return line.includes("$") ? parseHighlight(line, enemy) : <p>{line}</p>;
     });
   }
 
   return Object.keys(enemy.special).map((key) => {
-    return enemy.special[key].map((skill) =>
-      skill.tooltip[type][lang].map((line) => <p>{line}</p>)
-    );
+    return enemy.special[key].map((skill) => {
+      return enemy["stats"][stats][skill.name] !== undefined
+        ? enemy["stats"][stats][skill.name].tooltip[type][lang].map((line) => (
+            <p>{line}</p>
+          ))
+        : skill.tooltip[type][lang].map((line) => <p>{line}</p>);
+    });
   });
 };

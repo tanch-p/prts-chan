@@ -59,7 +59,7 @@
           "mdef": 40,
           "special": {
             "duel": {
-              "multiplier": 0.6,
+              "multiplier": 0.3,
               "fixedInc": 0,
               "tooltip": {
                 "en": [],
@@ -89,7 +89,7 @@
           "mdef": 60,
           "special": {
             "duel": {
-              "multiplier": 1,
+              "multiplier": 0.7,
               "fixedInc": 0,
               "tooltip": {
                 "en": "",

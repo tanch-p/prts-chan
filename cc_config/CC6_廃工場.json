@@ -112,11 +112,11 @@
           "weight": 1,
           "special": {
             "avenger": {
-              "multiplier": 1.5,
+              "multiplier": 0.5,
               "fixedInc": 0,
               "tooltip": {
                 "en": [],
-                "jp": [],
+                "jp": ["HP50%以下→攻撃力+$#mult%$"],
                 "cn": ""
               }
             }
@@ -167,15 +167,14 @@
           "hp": "%110",
           "def": "%110",
           "atk": "%60",
-          "weight": 1,
           "special": {
             "purple_arrow": {
-              "multiplier": 3.8,
+              "multiplier": 1.8,
               "fixedInc": 0,
               "cd":0.75,
               "tooltip": {
                 "en": [],
-                "jp": [],
+                "jp": ["スキル(強撃)→$4回$攻撃後次の攻撃時、攻撃力が$380%$まで上昇"],
                 "cn": ""
               }
             }
