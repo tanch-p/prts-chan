@@ -36,7 +36,9 @@ export const getRemarks = (
   specialMods,
   stats,
   language = "jp",
-  type = "simple"
+  type = "simple",
+  format,
+  row
 ) => {
   let remarksArr = [];
   if (specialMods.hasOwnProperty(enemy.id)) {
@@ -45,44 +47,63 @@ export const getRemarks = (
         specialMods[enemy.id].others.tooltip[language]
       );
     }
-    Object.keys(enemy.special).forEach((key) => {
-      enemy.special[key].forEach((skill) => {
-        if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
-          specialMods[enemy.id][skill.name].tooltip[language].forEach((ele) => {
-            if (ele.includes("#mult")) {
-              remarksArr.push(
-                getTooltipMultiplier(
-                  ele,
-                  skill.multiplier,
-                  specialMods[enemy.id][skill.name].multiplier
-                )
-              );
-            } else {
-              remarksArr.push(ele);
-            }
-          });
-        } else {
-          remarksArr = remarksArr.concat(
-            enemy["stats"][stats][skill.name] !== undefined
-              ? enemy["stats"][stats][skill.name].tooltip[type][language]
-              : skill.tooltip[type][language]
-          );
-        }
+    if (format === "prisoner") {
+      if (row === 0) {
+      } else {
+      }
+    } else {
+      Object.keys(enemy.special).forEach((key) => {
+        enemy.special[key].forEach((skill) => {
+          if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
+            specialMods[enemy.id][skill.name].tooltip[language].forEach(
+              (ele) => {
+                if (ele.includes("#mult")) {
+                  remarksArr.push(
+                    getTooltipMultiplier(
+                      ele,
+                      skill.multiplier,
+                      specialMods[enemy.id][skill.name].multiplier
+                    )
+                  );
+                } else {
+                  remarksArr.push(ele);
+                }
+              }
+            );
+          } else {
+            remarksArr = remarksArr.concat(
+              enemy["stats"][stats][skill.name] !== undefined
+                ? enemy["stats"][stats][skill.name].tooltip[type][language]
+                : skill.tooltip[type][language]
+            );
+          }
+        });
       });
-    });
+    }
     // console.log(remarksArr);
     return remarksArr.map((line) => {
       return line.includes("$") ? parseHighlight(line, enemy) : <p>{line}</p>;
     });
   }
-
-  return Object.keys(enemy.special).map((key) => {
-    return enemy.special[key].map((skill) => {
-      return enemy["stats"][stats][skill.name] !== undefined
-        ? enemy["stats"][stats][skill.name].tooltip[type][language].map(
-            (line) => <p>{line}</p>
-          )
-        : skill.tooltip[type][language].map((line) => <p>{line}</p>);
+  if (format === "prisoner") {
+    if (row === 0) {
+      return enemy.imprisoned.special.map((skill) => {
+        return skill.tooltip[type][language].map((line) => <p>{line}</p>);
+      });
+    } else {
+      return enemy.release.special.map((skill) => {
+        return skill.tooltip[type][language].map((line) => <p>{line}</p>);
+      });
+    }
+  } else {
+    return Object.keys(enemy.special).map((key) => {
+      return enemy.special[key].map((skill) => {
+        return enemy["stats"][stats][skill.name] !== undefined
+          ? enemy["stats"][stats][skill.name].tooltip[type][language].map(
+              (line) => <p>{line}</p>
+            )
+          : skill.tooltip[type][language].map((line) => <p>{line}</p>);
+      });
     });
-  });
+  }
 };

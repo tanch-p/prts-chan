@@ -16,7 +16,7 @@ export default function EnemySimple({
       en: "count",
       jp: "数",
       cn: "数量",
-      show: device === "mobile" ? false : true,
+      show: true,
     },
     { en: "type", jp: "属性", cn: "属性", show: true },
     { en: "hp", jp: "HP", cn: "生命值", show: true },
@@ -51,8 +51,8 @@ export default function EnemySimple({
       : "";
   };
 
-  const calculate = (enemy, stats, stat) => {
-    const totalMultiplier = 1;
+  const calculate = (enemy, stats, stat, row) => {
+    let totalMultiplier = 1;
     switch (stat) {
       case "aspd":
         if (
@@ -79,12 +79,22 @@ export default function EnemySimple({
         ) {
           totalMultiplier += multiplier?.Ranged?.aspd - 1;
         }
+        if (enemy.format === "prisoner" && row === 0) {
+          return (
+            Math.ceil(
+              (enemy["stats"][stats].aspd / totalMultiplier) *
+                (1 - enemy.imprisoned.aspd) *
+                100
+            ) / 100
+          );
+        }
         return (
           Math.ceil((enemy["stats"][stats][stat] / totalMultiplier) * 100) / 100
         );
+
       case "mdef":
       case "weight":
-        const fixedIncValue = 0;
+        let fixedIncValue = 0;
         if (
           enemy.type.en.includes("Melee") &&
           multiplier.hasOwnProperty("Melee")
@@ -97,6 +107,9 @@ export default function EnemySimple({
         ) {
           fixedIncValue += multiplier.Ranged[stat];
         }
+        if (enemy.format === "powerup" && row !== 0) {
+          fixedIncValue += enemy.powerup[stat] ?? 0;
+        }
         return (
           +enemy["stats"][stats][stat] +
           (multiplier?.["ALL"]?.[stat] ?? 0) +
@@ -105,7 +118,7 @@ export default function EnemySimple({
         );
 
       default:
-        return (
+        const moddedStats =
           enemy["stats"][stats][stat] *
             (multiplier?.["ALL"]?.[stat] ?? 1) *
             (multiplier?.[enemy.id]?.[stat] ?? 1) *
@@ -114,8 +127,21 @@ export default function EnemySimple({
               : enemy.type.en.includes("Ranged")
               ? multiplier?.Ranged?.[stat] ?? 1
               : 1) +
-          (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0)
-        );
+          (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0);
+        if (enemy.format === "prisoner") {
+          if (row === 0) {
+            return (
+              moddedStats * (enemy.imprisoned[stat] ?? 1) +
+              (enemy.imprisoned[`fixed-${stat}`] ?? 0)
+            );
+          } else {
+            return (
+              moddedStats * (enemy.release[stat] ?? 1) +
+              (enemy.release[`fixed-${stat}`] ?? 0)
+            );
+          }
+        }
+        return moddedStats;
     }
   };
 
@@ -208,7 +234,20 @@ export default function EnemySimple({
       }
     }
   };
-
+  const applyModifiers = (enemy, stats, stat, row) => {
+    const numericStats = [
+      "hp",
+      "atk",
+      "aspd",
+      "range",
+      "def",
+      "mdef",
+      "weight",
+    ];
+    if (numericStats.includes(stat)) {
+      return calculate(enemy, stats, stat, row);
+    }
+  };
   const toggleTableHeader = (header) => {
     setTableHeaders(
       tableHeaders.map((ele) => {
@@ -220,45 +259,71 @@ export default function EnemySimple({
     );
   };
 
-  const getRowSpan = (rowNum, stat, format) => {
-    const powerupOddRows = ["enemy", "count", "type", "hp", "weight"];
-    const multiformOddRows = ["enemy", "count", "type", "weight"];
+  const getRowSpan = (
+    format,
+    stat,
+    powerupArr,
+    multiformArr,
+    numRowstoRender
+  ) => {
     switch (format) {
       case "powerup":
-
+      case "prisoner":
+        return powerupArr.includes(stat) ? numRowstoRender : 1;
       case "multiform":
-
+        return multiformArr.includes(stat) ? numRowstoRender : 1;
       default:
         return 1;
     }
   };
 
-  const renderRow = (format) => {
+  const renderRow = (enemy, count, stats, index, format) => {
+    const powerupOddRows = ["enemy", "count", "type", "hp", "weight", "range"];
+    const multiformOddRows = ["enemy", "count", "type", "weight"];
     const numRowstoRender =
-      format === "powerup"
+      format === "powerup" || format === "prisoner"
         ? 2
         : format === "multiform"
         ? enemy["stats"][stats].length
         : 1;
     const returnArr = [];
     for (let i = 0; i < numRowstoRender; i++) {
+      const arrayToMap =
+        i === 0
+          ? tableHeaders
+          : tableHeaders.filter((ele) =>
+              format === "powerup" || format === "prisoner"
+                ? !powerupOddRows.includes(ele.en)
+                : !multiformOddRows.includes(ele.en)
+            );
       returnArr.push(
         <>
           <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
-            {tableHeaders.map((ele) => {
+            {arrayToMap.map((ele) => {
               const stat = ele.en;
+              const statValue = applyModifiers(enemy, stats, stat, i);
               if (ele.show) {
                 return (
                   <td
-                    className={`border border-gray-400 py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
+                    className={`border border-gray-400 my-auto py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
                       stat
                     )} ${getMinWidth(stat)}  max-h-[75px] text-[1vw]`}
                     key={enemy.name + stat}
-                    rowSpan={`1`}
+                    rowSpan={
+                      i !== 0
+                        ? 1
+                        : getRowSpan(
+                            enemy.format,
+                            stat,
+                            powerupOddRows,
+                            multiformOddRows,
+                            numRowstoRender
+                          )
+                    }
                   >
                     {stat === "enemy" ? (
                       <Image
-                        src={`/enemy_icons/${id}.png`}
+                        src={`/enemy_icons/${enemy.id}.png`}
                         alt={enemy.name["jp"]}
                         height="75px"
                         width="75px"
@@ -270,11 +335,20 @@ export default function EnemySimple({
                       enemy["type"]["jp"].map((type) => <p>{type}</p>)
                     ) : stat === "atk" ? (
                       [
-                        <p>{`${Math.floor(calculate(enemy, stats, stat))} ${
-                          enemy.normal_attack.hits !== 1
-                            ? `x ${enemy.normal_attack.hits}`
+                        <p>{`${Math.floor(statValue)} (${(format ===
+                          "prisoner" && i === 1
+                          ? enemy.release.normal_attack.hits !== 1
+                            ? `x ${enemy.release.normal_attack.hits}`
                             : ""
-                        } (${enemy.normal_attack.type[`${"jp"}`]})`}</p>,
+                          : enemy.normal_attack.hits !== 1
+                          ? `x ${enemy.normal_attack.hits}`
+                          : ""
+                        ).concat(
+                          " ",
+                          format === "prisoner" && i === 1
+                            ? enemy.release.normal_attack.type[`${"jp"}`]
+                            : enemy.normal_attack.type[`${"jp"}`]
+                        )})`}</p>,
                       ].concat(
                         parseSpecial(
                           enemy,
@@ -283,30 +357,27 @@ export default function EnemySimple({
                           calculate(enemy, stats, stat)
                         )
                       )
-                    ) : stat === "weight" || stat === "mdef" ? (
-                      calculate(enemy, stats, stat)
-                    ) : stat === "aspd" ? (
-                      calculate(enemy, stats, stat)
                     ) : stat === "remarks" ? (
-                      getRemarks(enemy, specialMods, stats, language, "simple")
+                      getRemarks(
+                        enemy,
+                        specialMods,
+                        stats,
+                        language,
+                        "simple",
+                        format,
+                        i
+                      )
                     ) : stat === "range" ? (
                       enemy["stats"][stats]["range"] === "0" ? (
                         "0"
                       ) : (
-                        (
-                          Math.floor(calculate(enemy, stats, stat) * 100) / 100
-                        ).toFixed(2)
+                        (Math.floor(statValue * 100) / 100).toFixed(2)
                       )
+                    ) : stat === "weight" || stat === "aspd" ? (
+                      <p>{statValue}</p>
                     ) : (
-                      [
-                        <p>{Math.round(calculate(enemy, stats, stat))}</p>,
-                      ].concat(
-                        parseSpecial(
-                          enemy,
-                          stat,
-                          stats,
-                          calculate(enemy, stats, stat)
-                        )
+                      [<p>{Math.floor(statValue)}</p>].concat(
+                        parseSpecial(enemy, stat, stats, statValue)
                       )
                     )}
                   </td>
@@ -320,7 +391,6 @@ export default function EnemySimple({
     return returnArr;
   };
 
-  
   //! Render Table
   const renderEnemyStats = () => {
     return mapConfig.enemies.map(({ id, count, stats }, index) => {
@@ -328,93 +398,7 @@ export default function EnemySimple({
       //map through enemydata
       let enemy = require(`../enemy_data/${id}.json`);
       // console.log(enemy["stats"][stats]);
-      if (enemy.hasOwnProperty("format")) {
-        if (format === "powerup") {
-        } else {
-        }
-      } else {
-        return (
-          <>
-            <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
-              {tableHeaders.map((ele) => {
-                const stat = ele.en;
-                if (ele.show) {
-                  return (
-                    <td
-                      className={`border border-gray-400 py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
-                        stat
-                      )} ${getMinWidth(stat)}  max-h-[75px] text-[1vw]`}
-                      key={enemy.name + stat}
-                      rowSpan={`1`}
-                    >
-                      {stat === "enemy" ? (
-                        <Image
-                          src={`/enemy_icons/${id}.png`}
-                          alt={enemy.name["jp"]}
-                          height="75px"
-                          width="75px"
-                          className="select-none"
-                        />
-                      ) : stat === "count" ? (
-                        <p>{count}</p>
-                      ) : stat === "type" ? (
-                        enemy["type"]["jp"].map((type) => <p>{type}</p>)
-                      ) : stat === "atk" ? (
-                        [
-                          <p>{`${Math.floor(calculate(enemy, stats, stat))} ${
-                            enemy.normal_attack.hits !== 1
-                              ? `x ${enemy.normal_attack.hits}`
-                              : ""
-                          } (${enemy.normal_attack.type[`${"jp"}`]})`}</p>,
-                        ].concat(
-                          parseSpecial(
-                            enemy,
-                            stat,
-                            stats,
-                            calculate(enemy, stats, stat)
-                          )
-                        )
-                      ) : stat === "weight" || stat === "mdef" ? (
-                        calculate(enemy, stats, stat)
-                      ) : stat === "aspd" ? (
-                        calculate(enemy, stats, stat)
-                      ) : stat === "remarks" ? (
-                        getRemarks(
-                          enemy,
-                          specialMods,
-                          stats,
-                          language,
-                          "simple"
-                        )
-                      ) : stat === "range" ? (
-                        enemy["stats"][stats]["range"] === "0" ? (
-                          "0"
-                        ) : (
-                          (
-                            Math.floor(calculate(enemy, stats, stat) * 100) /
-                            100
-                          ).toFixed(2)
-                        )
-                      ) : (
-                        [
-                          <p>{Math.round(calculate(enemy, stats, stat))}</p>,
-                        ].concat(
-                          parseSpecial(
-                            enemy,
-                            stat,
-                            stats,
-                            calculate(enemy, stats, stat)
-                          )
-                        )
-                      )}
-                    </td>
-                  );
-                }
-              })}
-            </tr>
-          </>
-        );
-      }
+      return renderRow(enemy, count, stats, index, enemy.format);
     });
   };
 
