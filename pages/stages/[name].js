@@ -47,7 +47,7 @@ export default function Stage({ stageData }) {
   const fontThemes = { en: "font-sans", jp: "font-jp" };
 
   return (
-    <Layout>
+    <Layout banner={"test"}>
       <Head>
         <title>{mapConfig.name}</title>
       </Head>

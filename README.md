@@ -19,7 +19,3 @@ if you have any comments or feedback, please kindly drop an email to prtschan@gm
 - Heart of Surging Flame
 
   - P-01 - P-10
-
-- Main Story 9
-
-  - CPS -> CPS-MDR

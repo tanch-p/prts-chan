@@ -1,15 +1,15 @@
 {
-  "id": "C11",
+  "id": "K1",
   "name": {
-    "en": "Ordinary Prisoner",
-    "jp": "一般囚人",
-    "cn": "普通囚犯"
+    "en": "Nameless Independent Knight",
+    "jp": "無名の独立騎士",
+    "cn": "无名独立骑士"
   },
   "stats": {
     "level0": {
-      "hp": "5500",
+      "hp": "2800",
       "atk": "280",
-      "def": "60",
+      "def": "150",
       "mdef": "0",
       "aspd%": "100",
       "aspd": "2",
@@ -19,9 +19,8 @@
       "ms": "1.1"
     }
   },
-
   "normal_attack": {
-    "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+    "type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
     "hits": 1
   },
   "スタン耐性": "無",

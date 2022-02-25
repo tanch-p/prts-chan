@@ -48,12 +48,8 @@ export default function Perma_buttons({
                   type="button"
                   onClick={() =>
                     handleClick(
-                      category.category,
-                      option.img,
-                      option.tooltip[language],
-                      category.targets,
-                      option.effect,
-                      option.rank
+                      category,
+                      option
                     )
                   }
                 >

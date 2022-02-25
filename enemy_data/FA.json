@@ -72,27 +72,6 @@
     "cn": ["远程", "领袖"]
   },
   "special": {
-    "atk": [
-      {
-        "name": "purple_arrow",
-        "type": { "en": "Skill/Phys", "jp": "強撃・物理", "cn": "" },
-        "multiplier": 2,
-        "hits": 1,
-        "fixedInc": 0,
-        "tooltip": {
-          "simple": {
-            "en": [],
-            "jp": ["スキル(強撃)→17秒毎に次の攻撃時、攻撃力が200%まで上昇"],
-            "cn": []
-          },
-          "detailed": {
-            "en": [],
-            "jp": ["17秒毎に次の攻撃時、攻撃力が200%まで上昇"],
-            "cn": []
-          }
-        }
-      }
-    ],
     "others": [
       {
         "name": "ballista",
@@ -120,6 +99,27 @@
           "detailed": {
             "en": [],
             "jp": ["登場から150秒は無敵"],
+            "cn": []
+          }
+        }
+      }
+    ],
+    "atk": [
+      {
+        "name": "purple_arrow",
+        "type": { "en": "Skill/Phys", "jp": "強撃・物理", "cn": "" },
+        "multiplier": 2,
+        "hits": 1,
+        "fixedInc": 0,
+        "tooltip": {
+          "simple": {
+            "en": [],
+            "jp": ["スキル(強撃)→17秒毎に次の攻撃時、攻撃力が200%まで上昇"],
+            "cn": []
+          },
+          "detailed": {
+            "en": [],
+            "jp": ["17秒毎に次の攻撃時、攻撃力が200%まで上昇"],
             "cn": []
           }
         }

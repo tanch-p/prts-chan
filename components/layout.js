@@ -8,10 +8,10 @@ import { Footer } from "./layouts/Footer";
 const name = "Your Name";
 export const siteTitle = "PRTS-chan";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, banner }) {
   const { openContext, device } = useContext(AppContext);
   const [drawerOpen, setDrawerOpen] = openContext;
-
+  // console.log(banner)
   return (
     <div
       className={`flex flex-wrap ease-in-out duration-300 transition-[left]  motion-reduce:transition-none ${

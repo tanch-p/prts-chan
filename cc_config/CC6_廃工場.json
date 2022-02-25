@@ -1,7 +1,6 @@
 [
   {
     "category": "char_atk",
-    "targets": [],
     "options": [
       {
         "rank": 1,
@@ -11,7 +10,7 @@
           "cn": ""
         },
         "img": "廃工場/75px-Char_atk_1",
-        "effect": {},
+        "effects": [],
         "tooltip": {
           "en": "All allies’ ATK -15%",
           "cn": "",
@@ -22,13 +21,12 @@
   },
   {
     "category": "cost_recovery",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "name": { "jp": "指令：孤軍奮闘I", "en": "DP Down 1", "cn": "" },
         "img": "廃工場/75px-Global_costrecovery_1",
-        "effect": {},
+        "effects": [],
         "tooltip": {
           "en": "DP Regeneration reduced by -25%",
           "cn": "",
@@ -39,13 +37,12 @@
   },
   {
     "category": "lifepoint_1",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
         "img": "廃工場/75px-Global_lifepoint_1",
-        "effect": {},
+        "effects": [],
         "tooltip": {
           "en": "No enemies escape (Level HP set to 1)",
           "cn": "",
@@ -57,7 +54,6 @@
 
   {
     "category": "enemy_atk",
-    "targets": ["ALL"],
     "options": [
       {
         "rank": 2,
@@ -67,7 +63,7 @@
           "cn": ""
         },
         "img": "廃工場/75px-Enemy_atk_2",
-        "effect": {},
+        "effects": [{ "targets": ["ALL"], "mods": { "atk": "%35" } }],
         "tooltip": {
           "en": "All enemies ATK +35%",
           "cn": "",
@@ -78,13 +74,12 @@
   },
   {
     "category": "squad",
-    "targets": [],
     "options": [
       {
         "rank": 2,
         "name": { "jp": "環境：小規模戦II", "en": "Deploy Limit 2", "cn": "" },
         "img": "廃工場/75px-Global_pcharnum_2",
-        "effect": {},
+        "effects": [],
         "tooltip": {
           "en": "Deploy Limit reduced to 7",
           "cn": "",
@@ -95,7 +90,6 @@
   },
   {
     "category": "avenger",
-    "targets": ["14", "15"],
     "options": [
       {
         "rank": 2,
@@ -105,23 +99,28 @@
           "cn": ""
         },
         "img": "廃工場/75px-Enemy_reveng_atkmod_2",
-        "effect": {
-          "hp": "%80",
-          "def": "%90",
-          "atk": "%25",
-          "weight": 1,
-          "special": {
-            "avenger": {
-              "multiplier": 0.5,
-              "fixedInc": 0,
-              "tooltip": {
-                "en": [],
-                "jp": ["HP50%以下→攻撃力$#mult倍$"],
-                "cn": ""
+        "effects": [
+          {
+            "targets": ["14", "15"],
+            "mods": {
+              "hp": "%80",
+              "def": "%90",
+              "atk": "%25",
+              "weight": 1,
+              "special": {
+                "avenger": {
+                  "multiplier": 0.5,
+                  "fixedInc": 0,
+                  "tooltip": {
+                    "en": [],
+                    "jp": ["HP50%以下→攻撃力$#mult倍$"],
+                    "cn": ""
+                  }
+                }
               }
             }
           }
-        },
+        ],
         "tooltip": {
           "en": "[Avenger] and [Hateful Avenger] Max HP +80%, DEF +90%, ATK +25%, weight level +1, when talent triggers deal another additional +50% damage",
           "cn": "",
@@ -132,7 +131,6 @@
   },
   {
     "category": "char_hp",
-    "targets": [],
     "options": [
       {
         "rank": 3,
@@ -142,7 +140,7 @@
           "cn": ""
         },
         "img": "廃工場/75px-Char_hp_3",
-        "effect": {},
+        "effects": [],
         "tooltip": {
           "en": "All allies Max HP -50%",
           "cn": "",
@@ -153,7 +151,6 @@
   },
   {
     "category": "faust",
-    "targets": ["FA"],
     "options": [
       {
         "rank": 3,
@@ -163,23 +160,30 @@
           "cn": ""
         },
         "img": "廃工場/75px-Enemy_faust_atkmod_3",
-        "effect": {
-          "hp": "%110",
-          "def": "%110",
-          "atk": "%60",
-          "special": {
-            "purple_arrow": {
-              "multiplier": 1.8,
-              "fixedInc": 0,
-              "cd":0.75,
-              "tooltip": {
-                "en": [],
-                "jp": ["スキル(強撃)→$4回$攻撃後次の攻撃時、攻撃力が$380%$まで上昇"],
-                "cn": ""
+        "effects": [
+          {
+            "targets": ["FA"],
+            "mods": {
+              "hp": "%110",
+              "def": "%110",
+              "atk": "%60",
+              "special": {
+                "purple_arrow": {
+                  "multiplier": 1.8,
+                  "fixedInc": 0,
+                  "cd": 0.75,
+                  "tooltip": {
+                    "en": [],
+                    "jp": [
+                      "スキル(強撃)→$4回$攻撃後次の攻撃時、攻撃力が$380%$まで上昇"
+                    ],
+                    "cn": ""
+                  }
+                }
               }
             }
           }
-        },
+        ],
         "tooltip": {
           "en": "[Faust] ATK +60%, Max HP +110%, DEF +110%, purple arrow damage increases to 380% and cooldown reduced by 25% ",
           "cn": "",

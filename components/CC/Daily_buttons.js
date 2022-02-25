@@ -35,16 +35,7 @@ export default function Daily_buttons({
                           option.img,
                           "daily"
                         )} bg-neutral-100 cursor-pointer`}
-                        onClick={() =>
-                          handleClick(
-                            category.category,
-                            option.img,
-                            option.tooltip[language],
-                            category.targets,
-                            option.effect,
-                            option.rank
-                          )
-                        }
+                        onClick={() => handleClick(category, option)}
                       >
                         <Image
                           src={`/images/cc_buttons/${option.img}.png`}

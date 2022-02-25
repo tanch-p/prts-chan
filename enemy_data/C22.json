@@ -1,32 +1,51 @@
 {
-    "id": "C22",
-    "name_en": "Infamous Recidivist",
-    "name_jp": "伝説の凶悪犯",
-    "name_cn": "传奇重犯",
-    "atk_type_jp": "物理",
-    "hp": "25000",
-    "atk": "1000",
-    "def": "500",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "5",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+  "id": "C22",
+  "name": {
+    "en": "Infamous Recidivist",
+    "jp": "伝説の凶悪犯",
+    "cn": "传奇重犯"
+  },
+  "format": "powerup",
+  "stats": {
+    "level0": {
+      "hp": "25000",
+      "atk": "1000",
+      "def": "500",
+      "mdef": "0",
+      "aspd%": "100",
+      "aspd": "3",
+      "range": "0",
+      "HP回復速度": "0",
+      "weight": "5",
+      "ms": "0.8"
+    }
+  },
+  "normal_attack": {
+    "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+    "hits": 1
+  },
+  "スタン耐性": "無",
+  "眠り耐性": "無",
+  "凍結耐性": "無",
+  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
+  "powerup": { "aspd": "%50", "fixed-def": -300, "atk": "%50" },
+  "special": {
+    "others": [
+      {
+        "name": "prisoner_release",
+        "tooltip": {
+          "simple": {
+            "en": [],
+            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+            "cn": []
+          },
+          "detailed": {
+            "en": [],
+            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+            "cn": []
+          }
+        }
+      }
+    ]
+  }
 }

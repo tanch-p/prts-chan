@@ -15,7 +15,7 @@ const parseHighlight = (text, enemy) => {
       ? returnArr.push(<span>{text.slice(array[i + 1].index + 1)}</span>)
       : (lastSliceIndex = array[i + 1].index + 1);
   }
-  console.log("returnArr", returnArr);
+  // console.log("returnArr", returnArr);
   return <p>{returnArr}</p>;
 };
 
@@ -27,7 +27,7 @@ const getTooltipMultiplier = (
   console.log(originalMultiplier);
   return tooltip.replace(
     "#mult",
-    `${Math.round((originalMultiplier + specialMultiplier) * 100)/100}`
+    `${Math.round((originalMultiplier + specialMultiplier) * 100) / 100}`
   );
 };
 
@@ -35,20 +35,20 @@ export const getRemarks = (
   enemy,
   specialMods,
   stats,
-  lang = "jp",
+  language = "jp",
   type = "simple"
 ) => {
   let remarksArr = [];
   if (specialMods.hasOwnProperty(enemy.id)) {
     if (specialMods[enemy.id].hasOwnProperty("others")) {
       remarksArr = remarksArr.concat(
-        specialMods[enemy.id].others.tooltip[lang]
+        specialMods[enemy.id].others.tooltip[language]
       );
     }
     Object.keys(enemy.special).forEach((key) => {
       enemy.special[key].forEach((skill) => {
         if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
-          specialMods[enemy.id][skill.name].tooltip[lang].forEach((ele) => {
+          specialMods[enemy.id][skill.name].tooltip[language].forEach((ele) => {
             if (ele.includes("#mult")) {
               remarksArr.push(
                 getTooltipMultiplier(
@@ -62,7 +62,11 @@ export const getRemarks = (
             }
           });
         } else {
-          remarksArr = remarksArr.concat(skill.tooltip[type][lang]);
+          remarksArr = remarksArr.concat(
+            enemy["stats"][stats][skill.name] !== undefined
+              ? enemy["stats"][stats][skill.name].tooltip[type][language]
+              : skill.tooltip[type][language]
+          );
         }
       });
     });
@@ -75,10 +79,10 @@ export const getRemarks = (
   return Object.keys(enemy.special).map((key) => {
     return enemy.special[key].map((skill) => {
       return enemy["stats"][stats][skill.name] !== undefined
-        ? enemy["stats"][stats][skill.name].tooltip[type][lang].map((line) => (
-            <p>{line}</p>
-          ))
-        : skill.tooltip[type][lang].map((line) => <p>{line}</p>);
+        ? enemy["stats"][stats][skill.name].tooltip[type][language].map(
+            (line) => <p>{line}</p>
+          )
+        : skill.tooltip[type][language].map((line) => <p>{line}</p>);
     });
   });
 };

@@ -1,12 +1,16 @@
 [
   {
     "category": "champion",
-    "targets": ["T11"],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/cchmpn_1",
-        "effect": { "hp": "%40", "atk": "%15", "mdef": 20 },
+        "effects": [
+          {
+            "targets": ["T11"],
+            "mods": { "hp": "%40", "atk": "%15", "mdef": 20 }
+          }
+        ],
         "tooltip": {
           "en": "[Tiacauh Brave] Max HP +40%, ATK +15%, RES +20",
           "cn": "",
@@ -16,7 +20,12 @@
       {
         "rank": 2,
         "img": "狂嚎沙原/cchmpn_amod_2",
-        "effect": { "hp": "%60", "atk": "%30", "mdef": 40, "aspd": "%75" },
+        "effects": [
+          {
+            "targets": ["T11"],
+            "mods": { "hp": "%60", "atk": "%30", "mdef": 40, "aspd": "%75" }
+          }
+        ],
         "tooltip": {
           "en": "[Tiacauh Brave] Max HP +60%, ATK +30%, ASPD +75, RES +40",
           "cn": "",
@@ -26,17 +35,22 @@
       {
         "rank": 3,
         "img": "狂嚎沙原/cchmpn_amod_3",
-        "effect": {
-          "hp": "%90",
-          "atk": "%50",
-          "mdef": 60,
-          "aspd": "%150",
-          "special": {
-            "others": {
-              "tooltip": { "en": "$Stealth$", "jp": "$ステルス$", "cn": "" }
+        "effects": [
+          {
+            "targets": ["T11"],
+            "mods": {
+              "hp": "%90",
+              "atk": "%50",
+              "mdef": 60,
+              "aspd": "%150",
+              "special": {
+                "others": {
+                  "tooltip": { "en": "$Stealth$", "jp": "$ステルス$", "cn": "" }
+                }
+              }
             }
           }
-        },
+        ],
         "tooltip": {
           "en": "[Tiacauh Brave] Max HP +90%, ATK +50%, ASPD +150, RES +60, gains Stealth",
           "cn": "",
@@ -47,33 +61,37 @@
   },
   {
     "category": "champion",
-    "targets": ["T11"],
     "options": [
       { "rank": 1 },
       {
         "rank": 2,
         "img": "狂嚎沙原/cchmpn_bmod_2",
-        "effect": {
-          "hp": "%80",
-          "atk": "%30",
-          "mdef": 40,
-          "special": {
-            "duel": {
-              "multiplier": 0.3,
-              "fixedInc": 0,
-              "tooltip": {
-                "en": [],
-                "jp": [
-                  "ブロックされている時、",
-                  "ブロック相手以外からダメージを受けない",
-                  "$自分の防御力を40%下げる$",
-                  "相手の防御力を70%下げる"
-                ],
-                "cn": ""
+        "effects": [
+          {
+            "targets": ["T11"],
+            "mods": {
+              "hp": "%80",
+              "atk": "%30",
+              "mdef": 40,
+              "special": {
+                "duel": {
+                  "multiplier": 0.3,
+                  "fixedInc": 0,
+                  "tooltip": {
+                    "en": [],
+                    "jp": [
+                      "ブロックされている時、",
+                      "ブロック相手以外からダメージを受けない",
+                      "$自分の防御力を40%下げる$",
+                      "相手の防御力を70%下げる"
+                    ],
+                    "cn": ""
+                  }
+                }
               }
             }
           }
-        },
+        ],
         "tooltip": {
           "en": "[Tiacauh Brave] Max HP +80%, ATK +30%, RES +40, when blocked self DEF only drops 40%",
           "cn": "",
@@ -83,27 +101,32 @@
       {
         "rank": 3,
         "img": "狂嚎沙原/cchmpn_bmod_3",
-        "effect": {
-          "hp": "%130",
-          "atk": "%50",
-          "mdef": 60,
-          "special": {
-            "duel": {
-              "multiplier": 0.7,
-              "fixedInc": 0,
-              "tooltip": {
-                "en": "",
-                "jp": [
-                  "ブロックされている時、",
-                  "ブロック相手以外からダメージを受けない",
-                  "$自分の防御力は下げない$",
-                  "相手の防御力を70%下げる"
-                ],
-                "cn": ""
+        "effects": [
+          {
+            "targets": ["T11"],
+            "mods": {
+              "hp": "%130",
+              "atk": "%50",
+              "mdef": 60,
+              "special": {
+                "duel": {
+                  "multiplier": 0.7,
+                  "fixedInc": 0,
+                  "tooltip": {
+                    "en": "",
+                    "jp": [
+                      "ブロックされている時、",
+                      "ブロック相手以外からダメージを受けない",
+                      "$自分の防御力は下げない$",
+                      "相手の防御力を70%下げる"
+                    ],
+                    "cn": ""
+                  }
+                }
               }
             }
           }
-        },
+        ],
         "tooltip": {
           "en": "[Tiacauh Brave] Max HP +130%, ATK +50%, RES +60, no longer lowers own DEF when blocked",
           "cn": "",
@@ -114,12 +137,16 @@
   },
   {
     "category": "ripper",
-    "targets": ["T5"],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/ccripr_1",
-        "effect": { "hp": "%40", "aspd": "%30", "ms": "%40", "weight": 1 },
+        "effects": [
+          {
+            "targets": ["T5"],
+            "mods": { "hp": "%40", "aspd": "%30", "ms": "%40", "weight": 1 }
+          }
+        ],
         "tooltip": {
           "en": "[Tiacauh Fanatic] Max HP+40%, ASPD +30, movement speed +50%, weight level +1",
           "cn": "",
@@ -129,26 +156,31 @@
       {
         "rank": 2,
         "img": "狂嚎沙原/ccripr_2",
-        "effect": {
-          "hp": "%90",
-          "aspd": "%70",
-          "ms": "%100",
-          "weight": 1,
-          "special": {
-            "defdown": {
-              "tooltip": {
-                "en": "",
-                "jp": [
-                  "攻撃1回につき相手の$DEF20$低下",
-                  "(蓄積する、撤退まで永続)"
-                ],
-                "cn": ""
+        "effects": [
+          {
+            "targets": ["T5"],
+            "mods": {
+              "hp": "%90",
+              "aspd": "%70",
+              "ms": "%100",
+              "weight": 1,
+              "special": {
+                "defdown": {
+                  "tooltip": {
+                    "en": "",
+                    "jp": [
+                      "攻撃1回につき相手の$DEF20$低下",
+                      "(蓄積する、撤退まで永続)"
+                    ],
+                    "cn": ""
+                  }
+                }
               }
             }
           }
-        },
+        ],
         "tooltip": {
-          "en": "[Tiacauh Fanatic] Max HP+90%, ASPD +70, movement speed +100%, weight level +1, DEF lowering effect +100%",
+          "en": "[Tiacauh Fanatic] Max HP+90%, ASPD +70, movement speed +100%, weight level +1, DEF lowering effects +100%",
           "cn": "",
           "jp": "「ティアカウ猛攻兵」の最大HP+90%、攻撃速度+70、移動速度+100%、重量ランク+1 攻撃対象の防御力減少効果が1倍に上昇"
         }
@@ -158,12 +190,16 @@
   },
   {
     "category": "shaman",
-    "targets": ["T7"],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/ccwitch_1",
-        "effect": { "hp": "%30", "atk": "%30", "def": "%50" },
+        "effects": [
+          {
+            "targets": ["T7"],
+            "mods": { "hp": "%30", "atk": "%30", "def": "%50" }
+          }
+        ],
         "tooltip": {
           "en": "[Tiacauh Ritualist] Max HP +30%, ATK +30%, DEF +50%",
           "cn": "",
@@ -173,12 +209,12 @@
       {
         "rank": 2,
         "img": "狂嚎沙原/ccwitch_2",
-        "effect": {
-          "hp": "%70",
-          "atk": "%70",
-          "def": "%100",
-          "range": "%60"
-        },
+        "effects": [
+          {
+            "targets": ["T7"],
+            "mods": { "hp": "%70", "atk": "%70", "def": "%100", "range": "%60" }
+          }
+        ],
         "tooltip": {
           "en": "[Tiacauh Ritualist] Max HP +70%, ATK +70%, DEF +100%, attack range +60%",
           "cn": "",
@@ -190,109 +226,152 @@
   },
   {
     "category": "enemy_attack",
-    "targets": ["ALL"],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/enemy_atk_1",
-        "effect": { "atk": "%15" },
-        "tooltip": { "en": "All enemies ATK +15%", "cn": "", "jp": "全ての敵の攻撃力+15%" }
+        "effects": [{ "targets": ["ALL"], "mods": { "atk": "%15" } }],
+        "tooltip": {
+          "en": "All enemies ATK +15%",
+          "cn": "",
+          "jp": "全ての敵の攻撃力+15%"
+        }
       },
       {
         "rank": 2,
         "img": "狂嚎沙原/enemy_atk_2",
-        "effect": { "atk": "%40" },
-        "tooltip": { "en": "All enemies ATK +40%", "cn": "", "jp": "全ての敵の攻撃力+40%" }
+        "effects": [{ "targets": ["ALL"], "mods": { "atk": "%40" } }],
+        "tooltip": {
+          "en": "All enemies ATK +40%",
+          "cn": "",
+          "jp": "全ての敵の攻撃力+40%"
+        }
       },
       {
         "rank": 3,
         "img": "狂嚎沙原/enemy_atk_3",
-        "effect": { "atk": "%80" },
-        "tooltip": { "en": "All enemies ATK +80%", "cn": "", "jp": "全ての敵の攻撃力+80%" }
+        "effects": [{ "targets": ["ALL"], "mods": { "atk": "%80" } }],
+        "tooltip": {
+          "en": "All enemies ATK +80%",
+          "cn": "",
+          "jp": "全ての敵の攻撃力+80%"
+        }
       }
     ]
   },
   {
     "category": "enemy_hp",
-    "targets": ["ALL"],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/enemy_hp_1",
-        "effect": { "hp": "%20" },
-        "tooltip": { "en": "Enemies Max HP +20%", "cn": "", "jp": "全ての敵の最大HP+20%" }
+        "effects": [{ "targets": ["ALL"], "mods": { "hp": "%20" } }],
+        "tooltip": {
+          "en": "Enemies Max HP +20%",
+          "cn": "",
+          "jp": "全ての敵の最大HP+20%"
+        }
       },
       {
         "rank": 2,
         "img": "狂嚎沙原/enemy_hp_2",
-        "effect": { "hp": "%60" },
-        "tooltip": { "en": "Enemies Max HP +60%", "cn": "", "jp": "全ての敵の最大HP+60%" }
+        "effects": [{ "targets": ["ALL"], "mods": { "hp": "%60" } }],
+        "tooltip": {
+          "en": "Enemies Max HP +60%",
+          "cn": "",
+          "jp": "全ての敵の最大HP+60%"
+        }
       },
       {
         "rank": 3,
         "img": "狂嚎沙原/enemy_hp_3",
-        "effect": { "hp": "%110" },
-        "tooltip": { "en": "Enemies Max HP +110%", "cn": "", "jp": "全ての敵の最大HP+110%" }
+        "effects": [{ "targets": ["ALL"], "mods": { "hp": "%110" } }],
+        "tooltip": {
+          "en": "Enemies Max HP +110%",
+          "cn": "",
+          "jp": "全ての敵の最大HP+110%"
+        }
       }
     ]
   },
   {
     "category": "char_aspd",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/char_aspd_1",
-        "effect": [],
-        "tooltip": { "en": "Ally ASPD -20", "cn": "", "jp": "全ての味方の攻撃速度-20" }
+        "effects": [],
+        "tooltip": {
+          "en": "Ally ASPD -20",
+          "cn": "",
+          "jp": "全ての味方の攻撃速度-20"
+        }
       },
       {
         "rank": 2,
         "img": "狂嚎沙原/char_aspd_2",
-        "effect": [],
-        "tooltip": { "en": "Ally ASPD -40", "cn": "", "jp": "全ての味方の攻撃速度-40" }
+        "effects": [],
+        "tooltip": {
+          "en": "Ally ASPD -40",
+          "cn": "",
+          "jp": "全ての味方の攻撃速度-40"
+        }
       },
       { "rank": 3 }
     ]
   },
   {
     "category": "char_hp",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/char_hp_1",
-        "effect": [],
-        "tooltip": { "en": "All allies’ Max HP -15%", "cn": "", "jp": "全ての味方の最大HP-15%" }
+        "effects": [],
+        "tooltip": {
+          "en": "All allies’ Max HP -15%",
+          "cn": "",
+          "jp": "全ての味方の最大HP-15%"
+        }
       },
       {
         "rank": 2,
         "img": "狂嚎沙原/char_hp_2",
-        "effect": [],
-        "tooltip": { "en": "All allies’ Max HP -30%", "cn": "", "jp": "全ての味方の最大HP-30%" }
+        "effects": [],
+        "tooltip": {
+          "en": "All allies’ Max HP -30%",
+          "cn": "",
+          "jp": "全ての味方の最大HP-30%"
+        }
       },
       {
         "rank": 3,
         "img": "狂嚎沙原/char_hp_3",
-        "effect": [],
-        "tooltip": { "en": "All allies’ Max HP -50%", "cn": "", "jp": "全ての味方の最大HP-50%" }
+        "effects": [],
+        "tooltip": {
+          "en": "All allies’ Max HP -50%",
+          "cn": "",
+          "jp": "全ての味方の最大HP-50%"
+        }
       }
     ]
   },
   {
     "category": "operator_cost",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/cost_guardspecial_1",
-        "effect": [],
-        "tooltip": { "en": "Guard and Specialist DP cost doubled", "cn": "", "jp": "前衛・特殊の配置コストが2倍" }
+        "effects": [],
+        "tooltip": {
+          "en": "Guard and Specialist DP cost doubled",
+          "cn": "",
+          "jp": "前衛・特殊の配置コストが2倍"
+        }
       },
       {
         "rank": 2,
         "img": "狂嚎沙原/cost_guardspecial_2",
-        "effect": [],
+        "effects": [],
         "tooltip": {
           "en": "DP Costs of Guards and Specialists is tripled, and the redeployment time extended by 50%.",
           "cn": "",
@@ -304,18 +383,21 @@
   },
   {
     "category": "operator_cost",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/cost_castersupporter_1",
-        "effect": [],
-        "tooltip": { "en": "Supporter and Caster DP Cost doubled", "cn": "", "jp": "術師・補助の配置コストが2倍" }
+        "effects": [],
+        "tooltip": {
+          "en": "Supporter and Caster DP Cost doubled",
+          "cn": "",
+          "jp": "術師・補助の配置コストが2倍"
+        }
       },
       {
         "rank": 2,
         "img": "狂嚎沙原/cost_castersupporter_2",
-        "effect": [],
+        "effects": [],
         "tooltip": {
           "en": "Supporter and Caster DP Cost tripled, and the redeployment time extended by 50%.",
           "cn": "",
@@ -327,74 +409,98 @@
   },
   {
     "category": "global_cost_recovery",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/global_cost_recovery_1",
-        "effect": [],
-        "tooltip": { "en": "DP Regeneration reduced by -25%", "cn": "", "jp": "コストの自然回復速度-25%" }
+        "effects": [],
+        "tooltip": {
+          "en": "DP Regeneration reduced by -25%",
+          "cn": "",
+          "jp": "コストの自然回復速度-25%"
+        }
       },
       {
         "rank": 2,
         "img": "狂嚎沙原/global_cost_recovery_2",
-        "effect": [],
-        "tooltip": { "en": "DP Regeneration reduced by -50%", "cn": "", "jp": "コストの自然回復速度-50%" }
+        "effects": [],
+        "tooltip": {
+          "en": "DP Regeneration reduced by -50%",
+          "cn": "",
+          "jp": "コストの自然回復速度-50%"
+        }
       },
       {
         "rank": 3,
         "img": "狂嚎沙原/global_cost_recovery_3",
-        "effect": [],
-        "tooltip": { "en": "DP Regeneration reduced by -75%", "cn": "", "jp": "コストの自然回復速度-75%" }
+        "effects": [],
+        "tooltip": {
+          "en": "DP Regeneration reduced by -75%",
+          "cn": "",
+          "jp": "コストの自然回復速度-75%"
+        }
       }
     ]
   },
   {
     "category": "squad",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/squad_1",
-        "effect": [],
-        "tooltip": { "en": "Maximum 10 operators in squad", "cn": "", "jp": "編成可能数が最大10人に" }
+        "effects": [],
+        "tooltip": {
+          "en": "Maximum 10 operators in squad",
+          "cn": "",
+          "jp": "編成可能数が最大10人に"
+        }
       },
       {
         "rank": 2,
         "img": "狂嚎沙原/squad_2",
-        "effect": [],
-        "tooltip": { "en": "Maximum 7 operators in squad", "cn": "", "jp": "編成可能数が最大7人に" }
+        "effects": [],
+        "tooltip": {
+          "en": "Maximum 7 operators in squad",
+          "cn": "",
+          "jp": "編成可能数が最大7人に"
+        }
       },
       { "rank": 3 }
     ]
   },
   {
     "category": "squad",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/pcharnum_1",
-        "effect": [],
-        "tooltip": { "en": "Deploy Limit reduced to 7", "cn": "", "jp": "同時配置可能数が7人に" }
+        "effects": [],
+        "tooltip": {
+          "en": "Deploy Limit reduced to 7",
+          "cn": "",
+          "jp": "同時配置可能数が7人に"
+        }
       },
       {
         "rank": 2,
         "img": "狂嚎沙原/pcharnum_2",
-        "effect": [],
-        "tooltip": { "en": "Deploy Limit reduced to 5", "cn": "", "jp": "同時配置可能数が5人に" }
+        "effects": [],
+        "tooltip": {
+          "en": "Deploy Limit reduced to 5",
+          "cn": "",
+          "jp": "同時配置可能数が5人に"
+        }
       },
       { "rank": 3 }
     ]
   },
   {
     "category": "storm_direction",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/storm_direction_1",
-        "effect": [],
+        "effects": [],
         "tooltip": {
           "en": "Sandstorm will switch to blowing from right to left",
           "cn": "",
@@ -404,7 +510,7 @@
       {
         "rank": 2,
         "img": "狂嚎沙原/storm_direction_2",
-        "effect": [],
+        "effects": [],
         "tooltip": {
           "en": "Sandstorm will switch to blowing from top to bottom",
           "cn": "",
@@ -416,26 +522,28 @@
   },
   {
     "category": "lifepoint",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/lifepoint_1",
-        "effect": [],
-        "tooltip": { "en": "No enemies escape (Level HP set to 1)", "cn": "", "jp": "防衛ラインの最大耐久値が1に" }
+        "effects": [],
+        "tooltip": {
+          "en": "No enemies escape (Level HP set to 1)",
+          "cn": "",
+          "jp": "防衛ラインの最大耐久値が1に"
+        }
       }
     ]
   },
   {
     "category": "storm_damage",
-    "targets": [],
     "options": [
       {
         "rank": 2,
         "img": "狂嚎沙原/storm_damage_2",
-        "effect": [],
+        "effects": [],
         "tooltip": {
-          "en": "Sandstom’s HP loss effect +20%",
+          "en": "Sandstom’s HP loss effects +20%",
           "cn": "",
           "jp": "「砂嵐」により受けるダメージが20%上昇"
         }
@@ -445,13 +553,16 @@
   },
   {
     "category": "others_2",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/char_atk_1",
-        "effect": [],
-        "tooltip": { "en": "Allies ATK -20%", "cn": "", "jp": "全ての味方の攻撃力-20%" }
+        "effects": [],
+        "tooltip": {
+          "en": "Allies ATK -20%",
+          "cn": "",
+          "jp": "全ての味方の攻撃力-20%"
+        }
       },
       { "rank": 2 },
       { "rank": 3 }
@@ -459,13 +570,16 @@
   },
   {
     "category": "others_3",
-    "targets": ["ALL"],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/enemy_def_1",
-        "effect": { "fixed-def": 200 },
-        "tooltip": { "en": "Enemy DEF +200", "cn": "", "jp": "全ての敵の防御力+200" }
+        "effects": [{ "targets": ["ALL"], "mods": { "fixed-def": 200 } }],
+        "tooltip": {
+          "en": "Enemy DEF +200",
+          "cn": "",
+          "jp": "全ての敵の防御力+200"
+        }
       },
       { "rank": 2 },
       { "rank": 3 }
@@ -473,12 +587,11 @@
   },
   {
     "category": "others_4",
-    "targets": [],
     "options": [
       {
         "rank": 1,
         "img": "狂嚎沙原/storm_speed_1",
-        "effect": [],
+        "effects": [],
         "tooltip": {
           "en": "Sandstorm no longer reduces enemy movement speed.",
           "cn": "",

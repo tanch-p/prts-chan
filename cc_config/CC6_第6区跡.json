@@ -1,13 +1,17 @@
 [
   {
     "category": "enemy_melee",
-    "targets": ["Melee"],
     "options": [
       {
         "rank": 1,
-        "name":{"jp":"増幅：高級装甲I","en":"Enemy Melee I","cn":""},
+        "name": { "jp": "増幅：高級装甲I", "en": "Enemy Melee I", "cn": "" },
         "img": "第6区跡/enemy_melee_1",
-        "effect": { "hp": "%40", "def": "%25", "mdef": 15 },
+        "effects": [
+          {
+            "targets": ["Melee"],
+            "mods": { "hp": "%40", "def": "%25", "mdef": 15 }
+          }
+        ],
         "tooltip": {
           "en": "Melee enemies Max HP +40%, DEF +25%, RES +15",
           "cn": "",
@@ -18,52 +22,65 @@
   },
   {
     "category": "operator_cost",
-    "targets": [],
     "options": [
       {
         "rank": 1,
-        "name":{"jp":"制限：過負荷","en":"Support Medic 1","cn":""},
+        "name": { "jp": "制限：過負荷", "en": "Support Medic 1", "cn": "" },
         "img": "第6区跡/char_cost_healersupport_1",
-        "effect": {},
-        "tooltip": { "en": "DP cost of Supporters and Medics is tripled", "cn": "", "jp": "医療・補助の配置コストが3倍" }
+        "effects": [],
+        "tooltip": {
+          "en": "DP cost of Supporters and Medics is tripled",
+          "cn": "",
+          "jp": "医療・補助の配置コストが3倍"
+        }
       }
     ]
   },
   {
     "category": "enemy_def_1",
-    "targets": ["ALL"],
+
     "options": [
       {
         "rank": 1,
-        "name":{"jp":"増幅：装甲I","en":"Enemy Def 1","cn":""},
+        "name": { "jp": "増幅：装甲I", "en": "Enemy Def 1", "cn": "" },
         "img": "第6区跡/enemy_def_1",
-        "effect": { "def": "%50" },
-        "tooltip": { "en": "Enemy DEF +50%", "cn": "", "jp": "全ての敵の防御力+50%" }
+        "effects": [{ "targets": ["ALL"], "mods": { "def": "%50" } }],
+        "tooltip": {
+          "en": "Enemy DEF +50%",
+          "cn": "",
+          "jp": "全ての敵の防御力+50%"
+        }
       }
     ]
   },
   {
-    "category": "others_2",
-    "targets": [],
+    "category": "char_atk",
     "options": [
       {
         "rank": 2,
-        "name":{"jp":"制限：火力減衰II","en":"Reduced Ally ATK 2","cn":""},
+        "name": {
+          "jp": "制限：火力減衰II",
+          "en": "Reduced Ally ATK 2",
+          "cn": ""
+        },
         "img": "第6区跡/char_atk_2",
-        "effect": {},
-        "tooltip": { "en": "Ally ATK -40%", "cn": "", "jp": "全ての味方の攻撃力-40%" }
+        "effects": [],
+        "tooltip": {
+          "en": "Ally ATK -40%",
+          "cn": "",
+          "jp": "全ての味方の攻撃力-40%"
+        }
       }
     ]
   },
   {
     "category": "operator_cost",
-    "targets": [],
     "options": [
       {
         "rank": 2,
-        "name":{"jp":"環境：強制転移","en":"Ranged DP Triple","cn":""},
+        "name": { "jp": "環境：強制転移", "en": "Ranged DP Triple", "cn": "" },
         "img": "第6区跡/char_cost_ranged_2",
-        "effect": {},
+        "effects": [],
         "tooltip": {
           "en": "Deployment Cost of Ranged units is tripled.",
           "cn": "",
@@ -74,41 +91,57 @@
   },
   {
     "category": "enemy_aspd",
-    "targets": ["ALL"],
+
     "options": [
       {
         "rank": 2,
-        "name":{"jp":"増幅：ラッシュ","en":"Enemy ASPD 2","cn":""},
+        "name": { "jp": "増幅：ラッシュ", "en": "Enemy ASPD 2", "cn": "" },
         "img": "第6区跡/enemy_aspd_2",
-        "effect": { "aspd": "%50" },
-        "tooltip": { "en": "Enemy ASPD +50", "cn": "", "jp": "全ての敵の攻撃速度+50" }
+        "effects": [{ "targets": ["ALL"], "mods": { "aspd": "%50" } }],
+        "tooltip": {
+          "en": "Enemy ASPD +50",
+          "cn": "",
+          "jp": "全ての敵の攻撃速度+50"
+        }
       }
     ]
   },
   {
     "category": "W",
-    "targets": ["W"],
     "options": [
       {
         "rank": 3,
-        "name":{"jp":"強敵：無限起爆III","en":"W: ∞ Explosions 3","cn":""},
+        "name": {
+          "jp": "強敵：無限起爆III",
+          "en": "W: ∞ Explosions 3",
+          "cn": ""
+        },
         "img": "第6区跡/w_3",
-        "effect": {
-          "hp": "%120",
-          "atk": "%75",
-          "def": "%100",
-          "special": {
-            "bomb": {
-              "multiplier": 2.9333333333,
-              "fixedInc": 0,
-              "tooltip": { "en": [], "jp": [
-                "スキル→敵ユニット2体に爆弾設置する",
-                "(爆弾：単体に293%物理ダメージ)",
-                "HP50%以下：爆弾2体ｰ>3体、即時爆弾設置する"
-              ], "cn": [] }
+        "effects": [
+          {
+            "targets": ["W"],
+            "mods": {
+              "hp": "%120",
+              "atk": "%75",
+              "def": "%100",
+              "special": {
+                "bomb": {
+                  "multiplier": 2.9333333333,
+                  "fixedInc": 0,
+                  "tooltip": {
+                    "en": [],
+                    "jp": [
+                      "スキル→敵ユニット2体に爆弾設置する",
+                      "(爆弾：単体に293%物理ダメージ)",
+                      "HP50%以下：爆弾2体ｰ>3体、即時爆弾設置する"
+                    ],
+                    "cn": []
+                  }
+                }
+              }
             }
           }
-        },
+        ],
         "tooltip": {
           "en": "[W] Max HP +120%, ATK +75%, DEF +100%, RES +20, Skill damage +33%, ability cool down greatly shortened (-67%)",
           "cn": "",
@@ -119,19 +152,21 @@
   },
   {
     "category": "enemy_ranged",
-    "targets": ["Ranged"],
     "options": [
       {
         "rank": 3,
-        "name":{"jp":"増幅：精密照準III","en":"Enemy Ranged 3","cn":""},
+        "name": { "jp": "増幅：精密照準III", "en": "Enemy Ranged 3", "cn": "" },
         "img": "第6区跡/enemy_ranged_3",
-        "effect": 
+        "effects": [
           {
-            "atk": "%30",
-            "aspd": "%30",
-            "range": "%75"
+            "targets": ["Ranged"],
+            "mods": {
+              "atk": "%30",
+              "aspd": "%30",
+              "range": "%75"
+            }
           }
-        ,
+        ],
         "tooltip": {
           "en": "Ranged enemy attack range +70%, ATK +30%, ASPD +30",
           "cn": "",

@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from "react";
-import AppContext from "../AppContext";
 import Daily_buttons from "./Daily_buttons";
 import Perma_buttons from "./Perma_buttons";
 import Selected_options from "./Selected_options";
@@ -38,17 +37,17 @@ export default function CC_buttons({
     );
   }, []);
 
-  const handleClick = (category, name, tooltip, targets, effect, rank) => {
+  const handleClick = (category, option) => {
     //   console.log("name",name)
     //   console.log("category", category)
     //   console.log(selected)
     const categoryIndex = -1;
     for (let i = 0; i < selected.length; i++) {
       //check if button has been selected before
-      if (selected[i].category === category) {
+      if (selected[i].category === category.category) {
         categoryIndex = i;
       }
-      if (selected[i].option === name) {
+      if (selected[i].option === option.img) {
         setSelected(
           selected.map((item, index) => {
             if (index === i) {
@@ -56,9 +55,8 @@ export default function CC_buttons({
                 category: item.category,
                 selected: false,
                 option: "",
-                targets: [],
                 tooltip: "",
-                effect: [],
+                effects: [],
                 rank: 0,
               };
             } else {
@@ -77,11 +75,10 @@ export default function CC_buttons({
           return {
             category: item.category,
             selected: true,
-            option: name,
-            tooltip: tooltip,
-            targets: targets,
-            effect: effect,
-            rank: rank,
+            option: option.img,
+            tooltip: option.tooltip[language],
+            effects: option.effects,
+            rank: option.rank,
           };
         } else {
           return item;
@@ -122,29 +119,31 @@ export default function CC_buttons({
     const other_mods = {};
     for (const category of selected) {
       if (category.selected) {
-        for (const target of category.targets) {
-          if (!multiplier[target]) {
-            multiplier[target] = {
-              hp: 1,
-              atk: 1,
-              def: 1,
-              mdef: 0,
-              aspd: 1,
-              ms: 1,
-              range: 1,
-              weight: 0,
-            };
-          }
-          for (const effect in category.effect) {
-            if (effect !== "special") {
-              if (category.effect[effect][0] === "%") {
-                multiplier[target][effect] +=
-                  parseInt(category.effect[effect].slice(1)) / 100;
+        for (const effect of category.effects) {
+          for (const target of effect.targets) {
+            if (!multiplier[target]) {
+              multiplier[target] = {
+                hp: 1,
+                atk: 1,
+                def: 1,
+                mdef: 0,
+                aspd: 1,
+                ms: 1,
+                range: 1,
+                weight: 0,
+              };
+            }
+            for (const key in effect.mods) {
+              if (key !== "special") {
+                if (effect.mods[key][0] === "%") {
+                  multiplier[target][key] +=
+                    parseInt(effect.mods[key].slice(1)) / 100;
+                } else {
+                  multiplier[target][key] = effect.mods[key];
+                }
               } else {
-                multiplier[target][effect] = category.effect[effect];
+                other_mods[target] = effect.mods[key];
               }
-            } else {
-              other_mods[target] = category.effect[effect];
             }
           }
         }

@@ -22,16 +22,15 @@
 
   1. intro page
   2. links to each CC page
+  3. Test navigator language with diff IP/browser language
 
 - Stages page
 
 1.  cc tooltips
-2.  make changed tooltips red
 3.  detailed view
 4.  map stats
 5.  tidy up simple view
 6.  Parse Range to show squares and circles
-7.  show/hide count
 
 - Enemy
 

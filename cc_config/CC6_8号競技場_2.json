@@ -1,0 +1,163 @@
+[
+  {
+    "category": "enemy_hp",
+    "targets": [],
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "増幅：体力I",
+          "en": "Double DP Cost Caster and Specialist",
+          "cn": ""
+        },
+        "img": "8号競技場/75px-Enemy_hp_1",
+        "effect": {},
+        "tooltip": {
+          "en": "Guard and Caster DP cost doubled",
+          "cn": "",
+          "jp": "全ての敵の最大HP+30%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "squad",
+    "targets": [],
+    "options": [
+      {
+        "rank": 1,
+        "name": { "jp": "指令：少数精鋭I", "en": "None Escape", "cn": "" },
+        "img": "75px-Global_squadnum_1",
+        "effect": {},
+        "tooltip": {
+          "en": "No enemies escape (Level HP set to 1)",
+          "cn": "",
+          "jp": "編成可能数が最大10人に"
+        }
+      }
+    ]
+  },
+  {
+    "category": "crab",
+    "targets": ["K5"],
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "特化：鉗獣育成",
+          "en": "Reduced Operator HP 1",
+          "cn": ""
+        },
+        "img": "8号競技場/75px-Enemy_scorpn_1",
+        "effect": {},
+        "tooltip": {
+          "en": "All allies max HP -15%",
+          "cn": "",
+          "jp": "全ての＜訓練用鉗獣＞の防御力+40%、術耐性+40"
+        }
+      }
+    ]
+  },
+
+
+  {
+    "category": "enemy_atk",
+    "targets": ["ALL"],
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "増幅：火力II",
+          "en": "Prisoner 2",
+          "cn": ""
+        },
+        "img": "8号競技場/75px-Enemy_atk_2",
+        "effect": { "aspd": "%60" },
+        "tooltip": {
+          "en": "Prisoner DEF in imprisoned state increased to 800, and ASPD bonus to enemies +60",
+          "cn": "",
+          "jp": "全ての敵の攻撃力+35%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "char_atk",
+    "targets": ["ALL"],
+    "options": [
+      {
+        "rank": 2,
+        "name": { "jp": "制限：火力減衰II", "en": "Enemy HP 2", "cn": "" },
+        "img": "8号競技場/75px-Char_atk_2",
+        "effect": { "hp": "%70" },
+        "tooltip": {
+          "en": "Enemies Max HP +70%",
+          "cn": "",
+          "jp": "全ての味方の攻撃力-25%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "grids",
+    "targets": [],
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "環境：全館工事",
+          "en": "DP Down 2",
+          "cn": ""
+        },
+        "img": "8号競技場/75px-Global_forbidloc_2",
+        "tooltip": {
+          "en": "DP Regeneration reduced by 50%",
+          "cn": "",
+          "jp": "マップ上の11つのマスが配置不可に"
+        }
+      }
+    ]
+  },
+  {
+    "category": "left_hand",
+    "targets": [],
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "特化：鋭兜騎士III",
+          "en": "Reduced Operator HP 3",
+          "cn": ""
+        },
+        "img": "8号競技場/75px-Enemy_lfkght_3",
+        "effect": {},
+        "tooltip": {
+          "en": "All allies Max HP -50%",
+          "cn": "",
+          "jp": "全ての＜ブレードヘルム見習い騎士＞のHP+80%、攻撃力+60%、スキルのクールタイムが-60%、右側からさらに「ブレードヘルム見習い騎士」が1体出現する。"
+        }
+      }
+    ]
+  },
+  {
+    "category": "char_defmres",
+    "targets": ["ALL"],
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "制限：防御分解III",
+          "en": "Stealth 3",
+          "cn": ""
+        },
+        "img": "8号競技場/75px-Char_defmagicresistance_3",
+        "effect": {"hp":"%100"},
+        "tooltip": {
+          "en": "拳闘士囚人」「凶悪犯」「伝説の凶悪犯」gains stealth",
+          "cn": "",
+          "jp": "全ての味方の防御力-70%、術耐性-30"
+        }
+      }
+    ]
+  }
+]

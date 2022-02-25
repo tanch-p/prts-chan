@@ -10,32 +10,39 @@ export default function EnemySimple({
   device,
   fontThemes,
 }) {
-  const [showCount, setShowCount] = useState(true);
-  const [showAttributes, setShowAttributes] = useState(true);
   const [tableHeaders, setTableHeaders] = useState([
-    "enemy",
-    "count",
-    "type",
-    "hp",
-    "atk",
-    "aspd",
-    "range",
-    "def",
-    "mdef",
-    "weight",
-    "remarks",
+    { en: "enemy", jp: "敵", cn: "敌人", show: true },
+    {
+      en: "count",
+      jp: "数",
+      cn: "数量",
+      show: device === "mobile" ? false : true,
+    },
+    { en: "type", jp: "属性", cn: "属性", show: true },
+    { en: "hp", jp: "HP", cn: "生命值", show: true },
+    { en: "atk", jp: "攻撃力", cn: "攻击力", show: true },
+    { en: "aspd", jp: "攻撃速度", cn: "攻击间隔", show: true },
+    { en: "range", jp: "攻撃範囲", cn: "攻击范围", show: true },
+    { en: "def", jp: "防御力", cn: "防御力", show: true },
+    { en: "mdef", jp: "術耐性", cn: "法术抗性", show: true },
+    { en: "weight", jp: "重量", cn: "重量", show: true },
+    { en: "remarks", jp: "備考", cn: "特殊", show: true },
   ]);
 
   console.log("spMods", specialMods);
   console.log("mul", multiplier);
 
   const textAlign = (stat) => {
-    return stat === "type" ||
-      stat === "atk" ||
-      stat === "remarks" ||
-      stat === "def"
-      ? "text-left px-[5.5px]"
-      : "text-center";
+    switch (stat) {
+      case "type":
+      case "atk":
+      case "remarks":
+      case "def":
+        return "text-left px-[5.5px]";
+
+      default:
+        return "text-center";
+    }
   };
 
   const getMinWidth = (stat) => {
@@ -124,7 +131,9 @@ export default function EnemySimple({
                 <p>
                   <span className="text-rose-600 font-semibold">
                     {(
-                      base_stat * (specialMods[enemy.id][skill.name].multiplier + skill.multiplier) +
+                      base_stat *
+                        (specialMods[enemy.id][skill.name].multiplier +
+                          skill.multiplier) +
                       specialMods[enemy.id][skill.name].fixedInc
                     ).toFixed(0)}
                   </span>
@@ -165,7 +174,9 @@ export default function EnemySimple({
                 <p>
                   <span className="text-rose-600 font-semibold">
                     {`${(
-                      base_stat * (specialMods[enemy.id][skill.name].multiplier + skill.multiplier) +
+                      base_stat *
+                        (specialMods[enemy.id][skill.name].multiplier +
+                          skill.multiplier) +
                       specialMods[enemy.id][skill.name].fixedInc
                     ).toFixed(0)}`}{" "}
                   </span>{" "}
@@ -198,126 +209,242 @@ export default function EnemySimple({
     }
   };
 
-  useEffect(() => {
-    const countIndex = tableHeaders.indexOf("count");
-    showCount
-      ? countIndex === -1
-        ? setTableHeaders([
-            ...tableHeaders.slice(0, 1),
-            "count",
-            ...tableHeaders.slice(1),
-          ])
-        : null
-      : setTableHeaders(tableHeaders.filter((ele) => ele !== "count"));
-  }, [showCount]);
+  const toggleTableHeader = (header) => {
+    setTableHeaders(
+      tableHeaders.map((ele) => {
+        if (ele.en === header) {
+          ele.show = !ele.show;
+        }
+        return ele;
+      })
+    );
+  };
+
+  const getRowSpan = (rowNum, stat, format) => {
+    const powerupOddRows = ["enemy", "count", "type", "hp", "weight"];
+    const multiformOddRows = ["enemy", "count", "type", "weight"];
+    switch (format) {
+      case "powerup":
+
+      case "multiform":
+
+      default:
+        return 1;
+    }
+  };
+
+  const renderRow = (format) => {
+    const numRowstoRender =
+      format === "powerup"
+        ? 2
+        : format === "multiform"
+        ? enemy["stats"][stats].length
+        : 1;
+    const returnArr = [];
+    for (let i = 0; i < numRowstoRender; i++) {
+      returnArr.push(
+        <>
+          <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
+            {tableHeaders.map((ele) => {
+              const stat = ele.en;
+              if (ele.show) {
+                return (
+                  <td
+                    className={`border border-gray-400 py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
+                      stat
+                    )} ${getMinWidth(stat)}  max-h-[75px] text-[1vw]`}
+                    key={enemy.name + stat}
+                    rowSpan={`1`}
+                  >
+                    {stat === "enemy" ? (
+                      <Image
+                        src={`/enemy_icons/${id}.png`}
+                        alt={enemy.name["jp"]}
+                        height="75px"
+                        width="75px"
+                        className="select-none"
+                      />
+                    ) : stat === "count" ? (
+                      <p>{count}</p>
+                    ) : stat === "type" ? (
+                      enemy["type"]["jp"].map((type) => <p>{type}</p>)
+                    ) : stat === "atk" ? (
+                      [
+                        <p>{`${Math.floor(calculate(enemy, stats, stat))} ${
+                          enemy.normal_attack.hits !== 1
+                            ? `x ${enemy.normal_attack.hits}`
+                            : ""
+                        } (${enemy.normal_attack.type[`${"jp"}`]})`}</p>,
+                      ].concat(
+                        parseSpecial(
+                          enemy,
+                          stat,
+                          stats,
+                          calculate(enemy, stats, stat)
+                        )
+                      )
+                    ) : stat === "weight" || stat === "mdef" ? (
+                      calculate(enemy, stats, stat)
+                    ) : stat === "aspd" ? (
+                      calculate(enemy, stats, stat)
+                    ) : stat === "remarks" ? (
+                      getRemarks(enemy, specialMods, stats, language, "simple")
+                    ) : stat === "range" ? (
+                      enemy["stats"][stats]["range"] === "0" ? (
+                        "0"
+                      ) : (
+                        (
+                          Math.floor(calculate(enemy, stats, stat) * 100) / 100
+                        ).toFixed(2)
+                      )
+                    ) : (
+                      [
+                        <p>{Math.round(calculate(enemy, stats, stat))}</p>,
+                      ].concat(
+                        parseSpecial(
+                          enemy,
+                          stat,
+                          stats,
+                          calculate(enemy, stats, stat)
+                        )
+                      )
+                    )}
+                  </td>
+                );
+              }
+            })}
+          </tr>
+        </>
+      );
+    }
+    return returnArr;
+  };
+
+  
+  //! Render Table
+  const renderEnemyStats = () => {
+    return mapConfig.enemies.map(({ id, count, stats }, index) => {
+      //get enemydata file
+      //map through enemydata
+      let enemy = require(`../enemy_data/${id}.json`);
+      // console.log(enemy["stats"][stats]);
+      if (enemy.hasOwnProperty("format")) {
+        if (format === "powerup") {
+        } else {
+        }
+      } else {
+        return (
+          <>
+            <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
+              {tableHeaders.map((ele) => {
+                const stat = ele.en;
+                if (ele.show) {
+                  return (
+                    <td
+                      className={`border border-gray-400 py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
+                        stat
+                      )} ${getMinWidth(stat)}  max-h-[75px] text-[1vw]`}
+                      key={enemy.name + stat}
+                      rowSpan={`1`}
+                    >
+                      {stat === "enemy" ? (
+                        <Image
+                          src={`/enemy_icons/${id}.png`}
+                          alt={enemy.name["jp"]}
+                          height="75px"
+                          width="75px"
+                          className="select-none"
+                        />
+                      ) : stat === "count" ? (
+                        <p>{count}</p>
+                      ) : stat === "type" ? (
+                        enemy["type"]["jp"].map((type) => <p>{type}</p>)
+                      ) : stat === "atk" ? (
+                        [
+                          <p>{`${Math.floor(calculate(enemy, stats, stat))} ${
+                            enemy.normal_attack.hits !== 1
+                              ? `x ${enemy.normal_attack.hits}`
+                              : ""
+                          } (${enemy.normal_attack.type[`${"jp"}`]})`}</p>,
+                        ].concat(
+                          parseSpecial(
+                            enemy,
+                            stat,
+                            stats,
+                            calculate(enemy, stats, stat)
+                          )
+                        )
+                      ) : stat === "weight" || stat === "mdef" ? (
+                        calculate(enemy, stats, stat)
+                      ) : stat === "aspd" ? (
+                        calculate(enemy, stats, stat)
+                      ) : stat === "remarks" ? (
+                        getRemarks(
+                          enemy,
+                          specialMods,
+                          stats,
+                          language,
+                          "simple"
+                        )
+                      ) : stat === "range" ? (
+                        enemy["stats"][stats]["range"] === "0" ? (
+                          "0"
+                        ) : (
+                          (
+                            Math.floor(calculate(enemy, stats, stat) * 100) /
+                            100
+                          ).toFixed(2)
+                        )
+                      ) : (
+                        [
+                          <p>{Math.round(calculate(enemy, stats, stat))}</p>,
+                        ].concat(
+                          parseSpecial(
+                            enemy,
+                            stat,
+                            stats,
+                            calculate(enemy, stats, stat)
+                          )
+                        )
+                      )}
+                    </td>
+                  );
+                }
+              })}
+            </tr>
+          </>
+        );
+      }
+    });
+  };
 
   return (
     <>
       <button
         onClick={() => {
-          setShowCount(!showCount);
+          toggleTableHeader("count");
         }}
       >
-        {showCount ? "Hide Enemy Count" : "Show Enemy Count"}
+        {tableHeaders[1].show ? "Hide Enemy Count" : "Show Enemy Count"}
       </button>
       <table
         className={`border border-gray-400 border-solid mx-auto ${fontThemes[language]} font-light`}
       >
         <thead>
           <tr>
-            {tableHeaders.map((ele) => (
-              <th
-                className="border border-gray-400 border-solid py-0.5 px-1.5 min-w-[50px]"
-                key={ele}
-              >
-                {ele === "aspd"
-                  ? ele + "/s"
-                  : ele === "atk_type"
-                  ? "atk type"
-                  : ele}
-              </th>
-            ))}
+            {tableHeaders.map((ele) =>
+              ele.show ? (
+                <th
+                  className={`border border-gray-400 border-solid py-0.5 px-1.5 lg:min-w-[50px]`}
+                  key={ele.en}
+                >
+                  {ele.en === "aspd" ? ele[language] + "/s" : ele[language]}
+                </th>
+              ) : null
+            )}
           </tr>
         </thead>
-        <tbody>
-          {mapConfig.enemies.map(({ id, count, stats }, index) => {
-            //get enemydata file
-            //map through enemydata
-            let enemy = require(`../enemy_data/${id}.json`);
-            // console.log(enemy["stats"][stats]);
-            return (
-              <>
-                <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
-                  {tableHeaders.map((stat) => {
-                    return (
-                      <td
-                        className={`border border-gray-400 py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
-                          stat
-                        )} ${getMinWidth(stat)}  max-h-[75px] text-[1vw]`}
-                        key={enemy.name + stat}
-                      >
-                        {stat === "enemy" ? (
-                          <Image
-                            src={`/enemy_icons/${id}.png`}
-                            alt={enemy.name["jp"]}
-                            height="75px"
-                            width="75px"
-                            className="select-none"
-                          />
-                        ) : stat === "count" ? (
-                          <p>{count}</p>
-                        ) : stat === "type" ? (
-                          enemy["type"]["jp"].map((type) => <p>{type}</p>)
-                        ) : stat === "atk" ? (
-                          [
-                            <p>{`${Math.floor(calculate(enemy, stats, stat))} ${
-                              enemy.normal_attack.hits !== 1
-                                ? `x ${enemy.normal_attack.hits}`
-                                : ""
-                            } (${enemy.normal_attack.type[`${"jp"}`]})`}</p>,
-                          ].concat(
-                            parseSpecial(
-                              enemy,
-                              stat,
-                              stats,
-                              calculate(enemy, stats, stat)
-                            )
-                          )
-                        ) : stat === "weight" || stat === "mdef" ? (
-                          calculate(enemy, stats, stat)
-                        ) : stat === "aspd" ? (
-                          calculate(enemy, stats, stat)
-                        ) : stat === "remarks" ? (
-                          getRemarks(enemy, specialMods, stats, language, "simple")
-                        ) : stat === "range" ? (
-                          enemy["stats"][stats]["range"] === "0" ? (
-                            "0"
-                          ) : (
-                            (
-                              Math.floor(calculate(enemy, stats, stat) * 100) /
-                              100
-                            ).toFixed(2)
-                          )
-                        ) : (
-                          [
-                            <p>{Math.floor(calculate(enemy, stats, stat))}</p>,
-                          ].concat(
-                            parseSpecial(
-                              enemy,
-                              stat,
-                              stats,
-                              calculate(enemy, stats, stat)
-                            )
-                          )
-                        )}
-                      </td>
-                    );
-                  })}
-                </tr>
-              </>
-            );
-          })}
-        </tbody>
+        <tbody>{renderEnemyStats()}</tbody>
       </table>
     </>
   );
