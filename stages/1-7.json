@@ -1,8 +1,9 @@
 {
   "name": "1-7",
   "img": "1-7",
-  "enemies": [{ "id": "01", "count": 7, "stats": "level0" }],
+  "enemies": [],
   "temp": [
+    { "id": "01", "count": 7, "stats": "level0" },
     { "id": "B2", "count": 23, "stats": "level0" },
     { "id": "17", "count": 4, "stats": "level0" },
     { "id": "19", "count": 4, "stats": "level0" },
