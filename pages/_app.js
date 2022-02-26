@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     let lang = navigator.language;
     console.log("browser language is", lang);
-    lang = lang.match(/'jp|JP'/i) ? "jp" : "en";
+    lang = lang.match(/'jp|ja'/i) ? "jp" : "en";
     setLanguage(localStorage.getItem("language") ?? lang);
   }, []);
 

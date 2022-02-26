@@ -148,6 +148,7 @@ export default function EnemySimple({
 	const parseSpecial = (enemy, stat, stats, base_stat) => {
 		const returnSpecArr = [];
 		let specialModded = false;
+
 		return enemy["stats"][stats].special.map((skill) => {
 			let statValue = 0;
 			if (skill.type === stat) {
@@ -199,7 +200,7 @@ export default function EnemySimple({
 			return calculate(enemy, stats, stat, row);
 		}
 	};
-  
+
 	const toggleTableHeader = (header) => {
 		setTableHeaders(
 			tableHeaders.map((ele) => {
@@ -316,7 +317,6 @@ export default function EnemySimple({
 												stats,
 												language,
 												"simple",
-												format,
 												i
 											)
 										) : stat === "range" ? (
@@ -350,7 +350,7 @@ export default function EnemySimple({
 			//map through enemydata
 			let enemy = require(`../enemy_data/${id}.json`);
 			// console.log(enemy["stats"][stats]);
-			return renderRow(enemy, count, stats, index, enemy.format);
+			return renderRow(enemy, count, stats, index,enemy.format);
 		});
 	};
 

@@ -1,32 +1,72 @@
 {
-    "id": "C13",
-    "name": {
-        "en": "Infamous Recidivist",
-        "jp": "伝説の凶悪犯",
-        "cn": "传奇重犯"
-      },
-    "name_en": "Sniper Prisoner",
-    "name_jp": "射手囚人",
-    "name_cn": "射手囚犯",
-    "atk_type_jp": "物理",
-    "hp": "5500",
-    "atk": "220",
-    "def": "80",
-    "mdef": "30",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "2",
-    "HP回復速度": "0",
-    "weight": "1",
+	"id": "C13",
+	"name": {
+		"en": "Sniper Prisoner",
+		"jp": "射手囚人",
+		"cn": "射手囚犯"
+	},
+	"format": "prisoner",
+	"stats": {
+		"level0": {
+			"hp": "5500",
+			"atk": "220",
+			"def": "80",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.9",
+			"special": []
+		}
+	},
 
-    "ms": "0.9",
-    "normal_attack": {
-        "type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
-        "hits": 1
-      },
-      "スタン耐性": "無",
-      "眠り耐性": "無",
-      "凍結耐性": "無",
-      "type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] },
-      "special": {}
+	"normal_attack": {
+		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] },
+	"imprisoned": {
+		"aspd": -0.5,
+		"fixed-def": 0,
+		"special": [
+			{
+				"name": "self_release",
+				"tooltip": {
+					"simple": {
+						"en": [],
+						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"cn": []
+					},
+					"detailed": {
+						"en": [],
+						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"cn": []
+					}
+				}
+			}
+		]
+	},
+	"release": {
+		"atk": 1.5,
+		"normal_attack": {
+			"type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
+			"hits": 1
+		},
+		"special": [
+			{
+				"tooltip": {
+					"simple": {
+						"en": [],
+						"jp": ["解放状態"],
+						"cn": []
+					}
+				}
+			}
+		]
+	}
 }

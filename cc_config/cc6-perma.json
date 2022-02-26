@@ -45,7 +45,7 @@
               "aspd": "%150",
               "special": {
                 "extra": {
-                  "tooltip": { "en": "$Stealth$", "jp": "$ステルス$", "cn": "" }
+                  "tooltip": { "en": ["$Stealth$"], "jp": ["$ステルス$"], "cn": "" }
                 }
               }
             }

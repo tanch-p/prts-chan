@@ -37,21 +37,48 @@ export const getRemarks = (
 	stats,
 	language = "jp",
 	type = "simple",
-	format,
 	row
 ) => {
+	// console.log(enemy.id)
 	let remarksArr = [];
+	const format = enemy.format;
 	if (specialMods.hasOwnProperty(enemy.id)) {
-		if (specialMods[enemy.id].hasOwnProperty("extra")) {
-			remarksArr = remarksArr.concat(
-				specialMods[enemy.id].extra.tooltip[language]
-			);
-		}
 		if (format === "prisoner") {
 			if (row === 0) {
+				enemy.imprisoned.special.forEach((skill) => {
+					if (specialMods[enemy.id].imprisoned.hasOwnProperty(skill.name)) {
+						specialMods[enemy.id].imprisoned[skill.name].tooltip[type][
+							language
+						].forEach((line) => remarksArr.push(line))
+					} else {
+						return skill.tooltip[type][language].forEach((line) =>
+							remarksArr.push(line)
+						);
+					}
+				});
+				if (specialMods[enemy.id].imprisoned.hasOwnProperty("extra")) {
+					remarksArr = remarksArr.concat(
+						specialMods[enemy.id].imprisoned.extra.tooltip[language]
+					);
+				}
 			} else {
+				enemy.release.special.forEach((skill) => {
+					skill.tooltip[type][language].forEach((line) =>
+						remarksArr.push(line)
+					);
+				});
+				if (specialMods[enemy.id].release.hasOwnProperty("extra")) {
+					remarksArr = remarksArr.concat(
+						specialMods[enemy.id].release.extra.tooltip[language]
+					);
+				}
 			}
 		} else {
+			if (specialMods[enemy.id].hasOwnProperty("extra")) {
+				remarksArr = remarksArr.concat(
+					specialMods[enemy.id].extra.tooltip[language]
+				);
+			}
 			enemy["stats"][stats].special.forEach((skill) => {
 				if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
 					specialMods[enemy.id][skill.name].tooltip[language].forEach((ele) => {
@@ -76,7 +103,7 @@ export const getRemarks = (
 				}
 			});
 		}
-		// console.log(remarksArr);
+		// console.log(remarksArr, enemy.id);
 		return remarksArr.map((line) => {
 			return line.includes("$") ? parseHighlight(line, enemy) : <p>{line}</p>;
 		});

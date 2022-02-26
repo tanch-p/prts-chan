@@ -5,14 +5,12 @@
 	"ccType": "daily",
 	"enemies": [
 		{ "id": "C22", "count": 1, "stats": "level0" },
-    { "id": "C21", "count": 2, "stats": "level0" },
-		{ "id": "C19", "count": 2, "stats": "level0" }
+		{ "id": "C21", "count": 1, "stats": "level0" },
+		{ "id": "C19", "count": 3, "stats": "level0" },
+		{ "id": "C17", "count": 3, "stats": "level0" },
+		{ "id": "C15", "count": 6, "stats": "level0" },
+		{ "id": "C13", "count": 5, "stats": "level0" },
+		{ "id": "C11", "count": 15, "stats": "level0" }
 	],
-	"temp": [
-
-		{ "id": "C17", "count": 8, "stats": "level0" },
-		{ "id": "C15", "count": 1, "stats": "level0" },
-		{ "id": "C13", "count": 8, "stats": "level0" },
-		{ "id": "C11", "count": 4, "stats": "level0" }
-	]
+	"temp": []
 }

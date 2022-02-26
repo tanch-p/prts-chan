@@ -5,6 +5,7 @@
 		"jp": "術師囚人",
 		"cn": "术师囚犯"
 	},
+	"format": "prisoner",
 	"stats": {
 		"level0": {
 			"hp": "9000",
@@ -16,11 +17,12 @@
 			"range": "3",
 			"HP回復速度": "0",
 			"weight": "3",
-			"ms": "0.5"
+			"ms": "0.5",
+			"special": []
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
+		"type": { "en": "Does not attack", "jp": "攻撃しない", "cn": "不攻击" },
 		"hits": 1
 	},
 	"スタン耐性": "無",
@@ -28,19 +30,36 @@
 	"凍結耐性": "無",
 	"type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] },
 	"imprisoned": {
+		"aspd": -0.5,
 		"fixed-def": 300,
 		"special": [
 			{
-				"name": "self_release",
+				"name": "caster_release",
 				"tooltip": {
 					"simple": {
 						"en": [],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"jp": ["禁固状態中→攻撃しない"],
 						"cn": []
 					},
 					"detailed": {
 						"en": [],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"jp": ["禁固状態中→攻撃しない"],
+						"cn": []
+					}
+				}
+			},
+			{
+				"name": "prison_arts",
+				"type": "buff",
+				"tooltip": {
+					"simple": {
+						"en": [],
+						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+						"cn": []
+					},
+					"detailed": {
+						"en": [],
+						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
 						"cn": []
 					}
 				}
@@ -49,42 +68,23 @@
 	},
 	"release": {
 		"atk": 1.5,
+		"normal_attack": {
+			"type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
+			"hits": 1
+		},
 		"special": [
 			{
 				"tooltip": {
 					"simple": {
 						"en": [],
-						"jp": ["解放状態、2体同時攻撃"],
+						"jp": ["解放状態","2体同時攻撃"],
 						"cn": []
 					}
 				}
-			}
-		]
-	},
-	"special": {
-    "imprisoned":[{
-      "name":"imprisoned_caster",
-      "tooltip":{
-        "simple": {
-          "en": [],
-          "jp": ["禁固状態中→攻撃しない"],
-          "cn": []
-        }
-      }
-    }],
-    "release":[{
-      "name":"imprisoned_caster",
-      "tooltip":{
-        "simple": {
-          "en": [],
-          "jp": ["禁固状態中→攻撃しない"],
-          "cn": []
-        }
-      }
-    }],
-		"buff": [
+			},
 			{
 				"name": "prison_arts",
+				"type": "buff",
 				"tooltip": {
 					"simple": {
 						"en": [],
