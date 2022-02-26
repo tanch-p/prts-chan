@@ -1,46 +1,47 @@
 {
-  "id": "SI5",
-  "name": {
-    "en": "Guerrilla Sniper",
-    "jp": "遊撃隊狙撃手",
-    "cn": "游击队狙击手"
-  },
-  "stats": {
-    "level0": {
-      "hp": "3000",
-      "atk": "340",
-      "def": "300",
-      "mdef": "20",
-      "aspd%": "100",
-      "aspd": "2.5",
-      "range": "2.2",
-      "HP回復速度": "0",
-      "weight": "1",
-      "ms": "0.9"
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": {
-    "jp": ["遠距離"],
-    "en": ["Ranged"],
-    "cn": ["远程"]
-  },
-  "special": {
-    "others": [{
-      "tooltip": {
-        "simple": {
-          "en": ["Special Buff→Targets 2 units"],
-          "jp": ["特殊強化→2体攻撃"],
-          "cn": []
-        },
-        "detailed": { "en": [], "jp": [], "cn": [] }
-      }
-    }]
-  }
+	"id": "SI5",
+	"name": {
+		"en": "Guerrilla Sniper",
+		"jp": "遊撃隊狙撃手",
+		"cn": "游击队狙击手"
+	},
+	"stats": {
+		"level0": {
+			"hp": "3000",
+			"atk": "340",
+			"def": "300",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "2.5",
+			"range": "2.2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.9",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Special Buff→Targets 2 units"],
+							"jp": ["特殊強化→2体攻撃"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": {
+		"jp": ["遠距離"],
+		"en": ["Ranged"],
+		"cn": ["远程"]
+	}
 }

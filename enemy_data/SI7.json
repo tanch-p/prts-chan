@@ -1,50 +1,49 @@
 {
-  "id": "SI7",
-  "name": {
-    "en": "Guerrilla Herald",
-    "jp": "遊撃隊伝令兵",
-    "cn": "游击队传令兵"
-  },
-  "stats": {
-    "level0": {
-      "hp": "7000",
-      "atk": "300",
-      "def": "120",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "2.7",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "1",
-      "ms": "1"
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
-  "special": {
-    "others": [
-      {
-        "tooltip": {
-          "simple": {
-            "en": [
-              "Buff→Inc all enemies atk10% def100 per Herald",
-              "Activates special abilities of Guerilla Squad"
-            ],
-            "jp": [
-              "バフ→ (1体毎に敵全体の攻撃力10%＆防御力100上昇)",
-              "遊撃隊に特殊強化"
-            ],
-            "cn": []
-          },
-          "detailed": { "en": [], "jp": [], "cn": [] }
+	"id": "SI7",
+	"name": {
+		"en": "Guerrilla Herald",
+		"jp": "遊撃隊伝令兵",
+		"cn": "游击队传令兵"
+	},
+	"stats": {
+		"level0": {
+			"hp": "7000",
+			"atk": "300",
+			"def": "120",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2.7",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "1",
+      "special": [
+        {
+          "type": "others",
+          "tooltip": {
+            "simple": {
+              "en": [
+                "Buff→Inc all enemies atk10% def100 per Herald",
+                "Activates special abilities of Guerilla Squad"
+              ],
+              "jp": [
+                "バフ→ (1体毎に敵全体の攻撃力10%＆防御力100上昇)",
+                "遊撃隊に特殊強化"
+              ],
+              "cn": []
+            },
+            "detailed": { "en": [], "jp": [], "cn": [] }
+          }
         }
-      }
-    ]
-  }
+      ]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] }
 }

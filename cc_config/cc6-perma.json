@@ -44,7 +44,7 @@
               "mdef": 60,
               "aspd": "%150",
               "special": {
-                "others": {
+                "extra": {
                   "tooltip": { "en": "$Stealth$", "jp": "$ステルス$", "cn": "" }
                 }
               }

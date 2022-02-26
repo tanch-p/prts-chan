@@ -12,17 +12,17 @@
       "range": "1.9",
       "HP回復速度": "0",
       "weight": "1",
-      "ms": "0.9"
+      "ms": "0.9",
+      "special": []
     }
   },
   "normal_attack": {
-    "type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+    "type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
     "hits": 1
   },
   "スタン耐性": "無",
   "眠り耐性": "無",
   "凍結耐性": "",
 
-  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
-  "special": {}
+  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] }
 }

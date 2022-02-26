@@ -1,52 +1,51 @@
 {
-  "id": "T1",
-  "name": {
-    "en": "Tiacauh Warrior",
-    "jp": "ティアカウ戦士",
-    "cn": "提亚卡乌战士"
-  },
-  "stats": {
-    "level0": {
-      "hp": "2600",
-      "atk": "290",
-      "def": "60",
-      "mdef": "10",
-      "aspd%": "100",
-      "aspd": "1.8",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "1",
-      "ms": "0.8"
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
-  "special": {
-    "def": [
-      {
-        "name": "def_up",
-        "type": { "en": "when blocked", "jp": "ブロック中", "cn": "被阻挡时" },
-        "multiplier": 1,
-        "fixedInc": 130,
-        "tooltip": {
-          "simple": {
-            "en": ["Blocked→DEF+130"],
-            "jp": ["ブロック→防御力+130"],
-            "cn": []
-          },
-          "detailed": {
-            "en": [],
-            "jp": ["ブロックされている時防御力+130"],
-            "cn": []
-          }
-        }
-      }
-    ]
-  }
+	"id": "T1",
+	"name": {
+		"en": "Tiacauh Warrior",
+		"jp": "ティアカウ戦士",
+		"cn": "提亚卡乌战士"
+	},
+	"stats": {
+		"level0": {
+			"hp": "2600",
+			"atk": "290",
+			"def": "60",
+			"mdef": "10",
+			"aspd%": "100",
+			"aspd": "1.8",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.8",
+			"special": [
+				{
+					"name": "def_up",
+					"type": "def",
+					"suffix": { "en": "blocked", "jp": "ブロック中", "cn": "被阻挡时" },
+					"multiplier": 1,
+					"fixedInc": 130,
+					"tooltip": {
+						"simple": {
+							"en": ["Blocked→DEF+130"],
+							"jp": ["ブロック→防御力+130"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": ["ブロックされている時防御力+130"],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] }
 }

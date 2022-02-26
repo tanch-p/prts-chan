@@ -1,48 +1,51 @@
 {
-  "id": "U11",
-  "name": {
-    "en": "Imperial Artillery Targeteer",
-    "jp": "帝国砲撃誘導機",
-    "cn": "帝国炮火先兆者"
-  },
-  "stats": {
-    "level0": {
-      "hp": "13000",
-      "atk": "1000",
-      "def": "800",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "5",
-      "range": "2",
-      "HP回復速度": "0",
-      "weight": "4",
-      "ms": "0.5"
-    }
-  },
-  "normal_attack": {
-    "type": {
-      "en": "Ranged/Phys",
-      "jp": "遠・物理",
-      "cn": "远・物理"
-    },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": {
-    "jp": ["暗殺対象外","飛行", "ドローン"],
-    "en": ["Flying", "Drone"],
-    "cn": ["非暗杀目标","飞行", "无人机"]
-  },
-  "special": {
-    "others": [
-      {
-        "tooltip": {
-          "simple": { "en": ["AOE - 8sq around target"], "jp": ["範囲攻撃→目標周囲8マス"], "cn": [] },
-          "detailed": { "en": [], "jp": [], "cn": [] }
-        }
-      }
-    ]
-  }
+	"id": "U11",
+	"name": {
+		"en": "Imperial Artillery Targeteer",
+		"jp": "帝国砲撃誘導機",
+		"cn": "帝国炮火先兆者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "13000",
+			"atk": "1000",
+			"def": "800",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "4",
+			"ms": "0.5",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["AOE - 8sq around target"],
+							"jp": ["範囲攻撃→目標周囲8マス"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Ranged/Phys",
+			"jp": "遠・物理",
+			"cn": "远・物理"
+		},
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": {
+		"jp": ["暗殺対象外", "飛行", "ドローン"],
+		"en": ["Flying", "Drone"],
+		"cn": ["非暗杀目标", "飞行", "无人机"]
+	}
 }

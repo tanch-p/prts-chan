@@ -1,166 +1,166 @@
 [
-  {
-    "category": "shield_guard",
-    "options": [
-      {
-        "rank": 1,
-        "name": {
-          "jp": "特化：待ち伏せⅠ",
-          "en": "Target: Ambush 1",
-          "cn": ""
-        },
-        "img": "放棄された土地/Enemy_sotisd_1",
-        "effects": [{ "targets": ["SP0"], "mods": { "hp": "%30" } }],
-        "tooltip": {
-          "en": "Shield Guard Max HP +30%, and initial position and wait time are changed.",
-          "cn": "",
-          "jp": "「遊撃隊盾兵」の最大HP+30%、かつ「遊撃隊盾兵」一体の位置と待機時間変更"
-        }
-      }
-    ]
-  },
-  {
-    "category": "enemy_hp",
-    "options": [
-      {
-        "rank": 1,
-        "name": { "jp": "増幅：体力I", "en": "Enemy HP 1", "cn": "" },
-        "img": "放棄された土地/75px-Enemy_hp_1",
-        "effects": [{ "targets": ["ALL"], "mods": { "hp": "%30" } }],
-        "tooltip": {
-          "en": "Enemy Max HP +30%",
-          "cn": "",
-          "jp": "全ての敵の最大HP+30%"
-        }
-      }
-    ]
-  },
-  {
-    "category": "lifepoint_1",
-    "options": [
-      {
-        "rank": 1,
-        "name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
-        "img": "放棄された土地/75px-Global_lifepoint_1",
-        "effects": [],
-        "tooltip": {
-          "en": "No enemies escape (Level HP set to 1)",
-          "cn": "",
-          "jp": "防衛ラインの最大耐久値が1に"
-        }
-      }
-    ]
-  },
+	{
+		"category": "shield_guard",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "特化：待ち伏せⅠ",
+					"en": "Target: Ambush 1",
+					"cn": ""
+				},
+				"img": "放棄された土地/Enemy_sotisd_1",
+				"effects": [{ "targets": ["SP0"], "mods": { "hp": "%30" } }],
+				"tooltip": {
+					"en": "Shield Guard Max HP +30%, and initial position and wait time are changed.",
+					"cn": "",
+					"jp": "「遊撃隊盾兵」の最大HP+30%、かつ「遊撃隊盾兵」一体の位置と待機時間変更"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 1,
+				"name": { "jp": "増幅：体力I", "en": "Enemy HP 1", "cn": "" },
+				"img": "放棄された土地/75px-Enemy_hp_1",
+				"effects": [{ "targets": ["ALL"], "mods": { "hp": "%30" } }],
+				"tooltip": {
+					"en": "Enemy Max HP +30%",
+					"cn": "",
+					"jp": "全ての敵の最大HP+30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint_1",
+		"options": [
+			{
+				"rank": 1,
+				"name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
+				"img": "放棄された土地/75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"cn": "",
+					"jp": "防衛ラインの最大耐久値が1に"
+				}
+			}
+		]
+	},
 
-  {
-    "category": "char_attack",
-    "options": [
-      {
-        "rank": 2,
-        "name": {
-          "jp": "制限：火力減衰II",
-          "en": "Reduced Ally ATK 2",
-          "cn": ""
-        },
-        "img": "放棄された土地/75px-Char_atk_2",
-        "effects": [],
-        "tooltip": {
-          "en": "Ally ATK -30%",
-          "cn": "",
-          "jp": "全ての味方の攻撃力-30%"
-        }
-      }
-    ]
-  },
-  {
-    "category": "squad",
-    "options": [
-      {
-        "rank": 2,
-        "name": {
-          "jp": "指令：少数精鋭II",
-          "en": "Max Squad Size 2",
-          "cn": ""
-        },
-        "img": "放棄された土地/75px-Global_squadnum_2",
-        "effects": [],
-        "tooltip": {
-          "en": "Maximum 8 operators in squad",
-          "cn": "",
-          "jp": "編成可能数が最大8人に"
-        }
-      }
-    ]
-  },
-  {
-    "category": "grids",
-    "options": [
-      {
-        "rank": 2,
-        "name": {
-          "jp": "環境：峻険地形II",
-          "en": "Forbidden Grids 2",
-          "cn": ""
-        },
-        "img": "放棄された土地/Global_forbidloc_amod_2",
-        "effects": [],
-        "tooltip": {
-          "en": "8 grids forbid deployment",
-          "cn": "",
-          "jp": "マップ上の8つのマスが配置不可"
-        }
-      }
-    ]
-  },
-  {
-    "category": "imperial_arti",
-    "options": [
-      {
-        "rank": 3,
-        "name": { "jp": "特化：砲撃 3", "en": "Arti 3", "cn": "" },
-        "img": "放棄された土地/Enemy_emppnt_3",
-        "effects": [
-          {
-            "targets": ["U11"],
-            "mods": {
-              "hp": "%100",
-              "atk": "%60"
-            }
-          }
-        ],
-        "tooltip": {
-          "en": "[Imperial Artillery Harbinger] appears early, Max HP +100%, ATK +60%",
-          "cn": "",
-          "jp": "「帝国砲撃誘導機」は早めに出現、HP+100%、攻撃力+60%、"
-        }
-      }
-    ]
-  },
-  {
-    "category": "enemy_atk",
-    "options": [
-      {
-        "rank": 3,
-        "name": {
-          "jp": "増幅：火力III",
-          "en": "Increase Enemy ATK 3",
-          "cn": ""
-        },
-        "img": "放棄された土地/75px-Enemy_atk_3",
-        "effects": [
-          {
-            "targets": ["ALL"],
-            "mods": {
-              "atk": "%65"
-            }
-          }
-        ],
-        "tooltip": {
-          "en": "All enemies ATK +65%",
-          "cn": "",
-          "jp": "全ての敵の攻撃力+65%"
-        }
-      }
-    ]
-  }
+	{
+		"category": "char_attack",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "制限：火力減衰II",
+					"en": "Reduced Ally ATK 2",
+					"cn": ""
+				},
+				"img": "放棄された土地/75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally ATK -30%",
+					"cn": "",
+					"jp": "全ての味方の攻撃力-30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "指令：少数精鋭II",
+					"en": "Max Squad Size 2",
+					"cn": ""
+				},
+				"img": "放棄された土地/75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 8 operators in squad",
+					"cn": "",
+					"jp": "編成可能数が最大8人に"
+				}
+			}
+		]
+	},
+	{
+		"category": "grids",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "環境：峻険地形II",
+					"en": "Forbidden Grids 2",
+					"cn": ""
+				},
+				"img": "放棄された土地/Global_forbidloc_amod_2",
+				"effects": [],
+				"tooltip": {
+					"en": "8 grids forbid deployment",
+					"cn": "",
+					"jp": "マップ上の8つのマスが配置不可"
+				}
+			}
+		]
+	},
+	{
+		"category": "imperial_arti",
+		"options": [
+			{
+				"rank": 3,
+				"name": { "jp": "特化：砲撃 3", "en": "Arti 3", "cn": "" },
+				"img": "放棄された土地/Enemy_emppnt_3",
+				"effects": [
+					{
+						"targets": ["U11"],
+						"mods": {
+							"hp": "%100",
+							"atk": "%60"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Imperial Artillery Harbinger] appears early, Max HP +100%, ATK +60%",
+					"cn": "",
+					"jp": "「帝国砲撃誘導機」は早めに出現、HP+100%、攻撃力+60%、"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "増幅：火力III",
+					"en": "Increase Enemy ATK 3",
+					"cn": ""
+				},
+				"img": "放棄された土地/75px-Enemy_atk_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%65"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +65%",
+					"cn": "",
+					"jp": "全ての敵の攻撃力+65%"
+				}
+			}
+		]
+	}
 ]

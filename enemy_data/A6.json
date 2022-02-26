@@ -1,57 +1,73 @@
 {
-  "id": "A6",
-  "name": {
-    "en": "Senior Caster Leader",
-    "jp": "上級術師隊長",
-    "cn": "高阶术师组长"
-  },
-  "stats": {
-    "level0": {
-      "hp": "13500",
-      "atk": "380",
-      "def": "160",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "3.8",
-      "range": "2.2",
-      "HP回復速度": "0",
-      "weight": "1",
-      "ms": "0.7"
-    },
-    "第6区跡": {
-      "hp": "15000",
-      "atk": "380",
-      "def": "160",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "3.8",
-      "range": "2.2",
-      "HP回復速度": "0",
-      "weight": "1",
-      "ms": "0.7"
-    }
-  },
-  "normal_attack": {
-    "type": {
-      "en": "Ranged/Arts",
-      "jp": "遠・術",
-      "cn": "远・法术"
-    },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "",
+	"id": "A6",
+	"name": {
+		"en": "Senior Caster Leader",
+		"jp": "上級術師隊長",
+		"cn": "高阶术师组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "13500",
+			"atk": "380",
+			"def": "160",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "3.8",
+			"range": "2.2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.7",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["AOE - 4sq around target"],
+							"jp": ["範囲攻撃→目標周囲4マス"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		},
+		"第6区跡": {
+			"hp": "15000",
+			"atk": "380",
+			"def": "160",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "3.8",
+			"range": "2.2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.7",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["AOE - 4sq around target"],
+							"jp": ["範囲攻撃→目標周囲4マス"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Ranged/Arts",
+			"jp": "遠・術",
+			"cn": "远・法术"
+		},
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
 
-  "type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] },
-  "special": {
-    "others": [
-      {
-        "tooltip": {
-          "simple": { "en": ["AOE - 4sq around target"], "jp": ["範囲攻撃→目標周囲4マス"], "cn": [] },
-          "detailed": { "en": [], "jp": [], "cn": [] }
-        }
-      }
-    ]
-  }
+	"type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] }
 }

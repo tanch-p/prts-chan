@@ -18,7 +18,7 @@ export default function Map({ mapConfig }) {
         className=""
       ></Image>
       <div className="w-full">
-      <h2>Map stats</h2>
+      {/* <h2>Map stats</h2> */}
       </div>
     </>
   );

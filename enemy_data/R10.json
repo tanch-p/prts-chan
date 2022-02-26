@@ -1,72 +1,70 @@
 {
-  "id": "R10",
-  "name": {
-    "en": "Redmark' Eradicator",
-    "jp": "「レッドラベル」根絶者",
-    "cn": "“红标”根除者"
-  },
-  "stats": {
-    "level0": {
-      "hp": "5000",
-      "atk": "1200",
-      "def": "300",
-      "mdef": "30",
-      "aspd%": "100",
-      "aspd": "5",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "1",
-      "ms": "0.9"
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] },
-  "special": {
-    "atk": [
-      {
-        "name": "knife",
-        "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
-        "multiplier": 0.3,
-        "hits": 1,
-        "fixedInc": 0,
-        "tooltip": {
-          "simple": {
-            "en": [],
-            "jp": [],
-            "cn": []
-          },
-          "detailed": {
-            "en": [],
-            "jp": [],
-            "cn": []
-          }
-        }
-      }
-    ],
-    "others": [
-      {
-        "tooltip": {
-          "simple": {
-            "en": ["Stealth", "Targets only units in sandstorm"],
-            "jp": [
-              "ステルス",
-              "砂嵐にさらされているユニットに射程無限の遠距離攻撃"
-            ],
-            "cn": []
-          },
-          "detailed": {
-            "en": [],
-            "jp": [],
-            "cn": []
-          }
-        }
-      }
-    ]
-  }
+	"id": "R10",
+	"name": {
+		"en": "Redmark' Eradicator",
+		"jp": "「レッドラベル」根絶者",
+		"cn": "“红标”根除者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "5000",
+			"atk": "1200",
+			"def": "300",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.9",
+			"special": [
+				{
+					"name": "knife",
+					"type": "atk",
+					"suffix": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+					"multiplier": 0.3,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				},
+				{
+					"tooltip": {
+						"type": "others",
+						"simple": {
+							"en": ["Stealth", "Targets only units in sandstorm"],
+							"jp": [
+								"ステルス",
+								"砂嵐にさらされているユニットに射程無限の遠距離攻撃"
+							],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] }
 }

@@ -1,61 +1,82 @@
 {
-  "id": "14",
-  "name": { "en": "Avenger", "jp": "リベンジャー", "cn": "寻仇者" },
-  "stats": {
-    "level0": {
-      "hp": "5000",
-      "atk": "300",
-      "def": "200",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "2.3",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "2",
-      "ms": "0.65"
-    },
-    "廃工場": {
-      "hp": "7000",
-      "atk": "470",
-      "def": "200",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "3",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "2",
-      "ms": "0.65"
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
-  "special": {
-    "atk": [
-      {
-        "name": "avenger",
-        "type": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
-        "multiplier": 2,
-        "hits": 1,
-        "fixedInc": 0,
-        "tooltip": {
-          "simple": {
-            "en": [],
-            "jp": ["HP50%以下→攻撃力2倍"],
-            "cn": []
-          },
-          "detailed": {
-            "en": [],
-            "jp": ["HPが50%以下になると、攻撃力+100%"],
-            "cn": []
-          }
-        }
-      }
-    ]
-  }
+	"id": "14",
+	"name": { "en": "Avenger", "jp": "リベンジャー", "cn": "寻仇者" },
+	"stats": {
+		"level0": {
+			"hp": "5000",
+			"atk": "300",
+			"def": "200",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2.3",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.65",
+			"special": [
+				{
+					"name": "avenger",
+					"type": "atk",
+					"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
+					"multiplier": 2,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [],
+							"jp": ["HP50%以下→攻撃力2倍"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": ["HPが50%以下になると、攻撃力+100%"],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"廃工場": {
+			"hp": "7000",
+			"atk": "470",
+			"def": "200",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.65",
+			"special": [
+				{
+					"name": "avenger",
+					"type": "atk",
+					"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
+					"multiplier": 2,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [],
+							"jp": ["HP50%以下→攻撃力2倍"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": ["HPが50%以下になると、攻撃力+100%"],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] }
 }

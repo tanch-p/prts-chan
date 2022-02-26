@@ -1,87 +1,103 @@
 {
-  "id": "C19",
-  "name": {
-    "en": "Caster Prisoner",
-    "jp": "術師囚人",
-    "cn": "术师囚犯"
-  },
-  "stats": {
-    "level0": {
-      "hp": "9000",
-      "atk": "300",
-      "def": "100",
-      "mdef": "0",
-      "aspd%": "100",
-      "aspd": "3.5",
-      "range": "3",
-      "HP回復速度": "0",
-      "weight": "3",
-      "ms": "0.5"
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Does not attack", "jp": "攻撃しない", "cn": "不攻击" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] },
-  "imprisoned": {
-    "fixed-def": 300,
-    "special": [
-      {
-        "name": "self_release",
-        "tooltip": {
-          "simple": {
-            "en": [],
-            "jp": ["禁固状態、攻撃4回→解放状態となる"],
-            "cn": []
-          },
-          "detailed": {
-            "en": [],
-            "jp": ["禁固状態、攻撃4回→解放状態となる"],
-            "cn": []
-          }
+	"id": "C19",
+	"name": {
+		"en": "Caster Prisoner",
+		"jp": "術師囚人",
+		"cn": "术师囚犯"
+	},
+	"stats": {
+		"level0": {
+			"hp": "9000",
+			"atk": "300",
+			"def": "100",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "3",
+			"HP回復速度": "0",
+			"weight": "3",
+			"ms": "0.5"
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] },
+	"imprisoned": {
+		"fixed-def": 300,
+		"special": [
+			{
+				"name": "self_release",
+				"tooltip": {
+					"simple": {
+						"en": [],
+						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"cn": []
+					},
+					"detailed": {
+						"en": [],
+						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"cn": []
+					}
+				}
+			}
+		]
+	},
+	"release": {
+		"atk": 1.5,
+		"special": [
+			{
+				"tooltip": {
+					"simple": {
+						"en": [],
+						"jp": ["解放状態、2体同時攻撃"],
+						"cn": []
+					}
+				}
+			}
+		]
+	},
+	"special": {
+    "imprisoned":[{
+      "name":"imprisoned_caster",
+      "tooltip":{
+        "simple": {
+          "en": [],
+          "jp": ["禁固状態中→攻撃しない"],
+          "cn": []
         }
       }
-    ]
-  },
-  "release": {
-    "atk": 1.5,
-    "normal_attack": {
-      "type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
-      "hits": 1
-    },
-    "special": [
-      {
-        "tooltip": {
-          "simple": {
-            "en": [],
-            "jp": ["解放状態、2体同時攻撃"],
-            "cn": []
-          }
+    }],
+    "release":[{
+      "name":"imprisoned_caster",
+      "tooltip":{
+        "simple": {
+          "en": [],
+          "jp": ["禁固状態中→攻撃しない"],
+          "cn": []
         }
       }
-    ]
-  },
-  "special": {
-    "others": [
-      {
-        "name": "prison_arts",
-        "tooltip": {
-          "simple": {
-            "en": [],
-            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-            "cn": []
-          },
-          "detailed": {
-            "en": [],
-            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-            "cn": []
-          }
-        }
-      }
-    ]
-  }
+    }],
+		"buff": [
+			{
+				"name": "prison_arts",
+				"tooltip": {
+					"simple": {
+						"en": [],
+						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+						"cn": []
+					},
+					"detailed": {
+						"en": [],
+						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+						"cn": []
+					}
+				}
+			}
+		]
+	}
 }

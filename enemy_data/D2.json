@@ -1,35 +1,35 @@
 {
-  "id": "D2",
-  "name": {
-    "en": "Monster Mk II",
-    "jp": "怪鳥Mk2",
-    "cn": "妖怪MKII"
-  },
-  "stats": {
-    "level0": {
-      "hp": "1550",
-      "atk": "220",
-      "def": "50",
-      "mdef": "0",
-      "aspd%": "100",
-      "aspd": "2",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "0",
-      "ms": "0.9"
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": {
-    "jp": ["遠距離", "飛行", "ドローン"],
-    "en": ["Ranged", "Flying", "Drone"],
-    "cn": ["远程", "飞行", "无人机"]
-  },
-  "special": {}
+	"id": "D2",
+	"name": {
+		"en": "Monster Mk II",
+		"jp": "怪鳥Mk2",
+		"cn": "妖怪MKII"
+	},
+	"stats": {
+		"level0": {
+			"hp": "1550",
+			"atk": "220",
+			"def": "50",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "0.9",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": {
+		"jp": ["遠距離", "飛行", "ドローン"],
+		"en": ["Ranged", "Flying", "Drone"],
+		"cn": ["远程", "飞行", "无人机"]
+	}
 }
