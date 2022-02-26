@@ -80,6 +80,15 @@ export default function EnemySimple({
 					totalMultiplier += multiplier?.Ranged?.aspd - 1;
 				}
 				if (enemy.format === "prisoner" && row === 0) {
+					if (specialMods[enemy.id]?.imprisoned?.hasOwnProperty("aspd")) {
+						return (
+							Math.ceil(
+								(enemy["stats"][stats].aspd / totalMultiplier) *
+									(1 - specialMods[enemy.id].imprisoned.aspd) *
+									100
+							) / 100
+						);
+					}
 					return (
 						Math.ceil(
 							(enemy["stats"][stats].aspd / totalMultiplier) *
@@ -130,11 +139,26 @@ export default function EnemySimple({
 					(multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0);
 				if (enemy.format === "prisoner") {
 					if (row === 0) {
+						if (
+							specialMods[enemy.id]?.imprisoned?.hasOwnProperty(stat) ||
+							specialMods[enemy.id]?.imprisoned?.hasOwnProperty(`fixed-${stat}`)
+						) {
+							return (
+								moddedStats * (specialMods[enemy.id].imprisoned[stat] ?? 1) +
+								(specialMods[enemy.id].imprisoned[`fixed-${stat}`] ?? 0)
+							);
+						}
 						return (
 							moddedStats * (enemy.imprisoned[stat] ?? 1) +
 							(enemy.imprisoned[`fixed-${stat}`] ?? 0)
 						);
 					} else {
+						if (specialMods[enemy.id]?.hasOwnProperty("release")) {
+							return (
+								moddedStats * (specialMods[enemy.id].release[stat] ?? 1) +
+								(specialMods[enemy.id].release[`fixed-${stat}`] ?? 0)
+							);
+						}
 						return (
 							moddedStats * (enemy.release[stat] ?? 1) +
 							(enemy.release[`fixed-${stat}`] ?? 0)
@@ -350,7 +374,7 @@ export default function EnemySimple({
 			//map through enemydata
 			let enemy = require(`../enemy_data/${id}.json`);
 			// console.log(enemy["stats"][stats]);
-			return renderRow(enemy, count, stats, index,enemy.format);
+			return renderRow(enemy, count, stats, index, enemy.format);
 		});
 	};
 

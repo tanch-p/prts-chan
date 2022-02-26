@@ -156,7 +156,7 @@
 				"img": "閉鎖監獄/75px-Enemy_prison_2",
 				"effects": [
 					{
-						"targets": ["C22"],
+						"targets": ["C22", "C21", "C19", "C17", "C15", "C13", "C11"],
 						"mods": {
 							"special": {
 								"imprisoned": {

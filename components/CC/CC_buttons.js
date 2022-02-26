@@ -124,7 +124,7 @@ export default function CC_buttons({
 					setOtherMods(other_mods[key], obj[key]);
 				}
 			} else {
-				other_mods[key] = obj[key];
+				other_mods.tooltip = obj.tooltip;
 			}
 		}
 	};
@@ -163,7 +163,6 @@ export default function CC_buttons({
 									other_mods[target] = {};
 								}
 								setOtherMods(other_mods[target], effect.mods.special);
-								console.log("other mods outside", other_mods);
 							}
 						}
 					}

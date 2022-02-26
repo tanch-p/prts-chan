@@ -24,7 +24,7 @@ export const Footer = () => {
               ></path>
             </svg>
           </a>
-          <p className="place-self-center">PRTS-chan</p>
+          <p className="place-self-center font-bold text-lg">PRTS-chan v0.0.1</p>
         </div>
       </div>
     </footer>

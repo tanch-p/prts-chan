@@ -49,7 +49,7 @@ export const getRemarks = (
 					if (specialMods[enemy.id].imprisoned.hasOwnProperty(skill.name)) {
 						specialMods[enemy.id].imprisoned[skill.name].tooltip[type][
 							language
-						].forEach((line) => remarksArr.push(line))
+						].forEach((line) => remarksArr.push(line));
 					} else {
 						return skill.tooltip[type][language].forEach((line) =>
 							remarksArr.push(line)
@@ -63,9 +63,15 @@ export const getRemarks = (
 				}
 			} else {
 				enemy.release.special.forEach((skill) => {
-					skill.tooltip[type][language].forEach((line) =>
-						remarksArr.push(line)
-					);
+					if (specialMods[enemy.id].release.hasOwnProperty(skill.name)) {
+						specialMods[enemy.id].release[skill.name].tooltip[type][
+							language
+						].forEach((line) => remarksArr.push(line));
+					} else {
+						skill.tooltip[type][language].forEach((line) =>
+							remarksArr.push(line)
+						);
+					}
 				});
 				if (specialMods[enemy.id].release.hasOwnProperty("extra")) {
 					remarksArr = remarksArr.concat(
