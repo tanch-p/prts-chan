@@ -205,7 +205,7 @@ export default function CC_buttons({
 								showGrid ? "bg-gray-400" : "border-gray-400"
 							}`}
 						>
-							Toggle Grids
+							{language==="jp" ? "グリッド表示" :"Toggle Grids"}
 						</button>
 						<button
 							onClick={() => setToggleRankColor(!toggleRankColor)}
@@ -213,7 +213,7 @@ export default function CC_buttons({
 								toggleRankColor ? "bg-gray-400" : "border-gray-400"
 							}`}
 						>
-							Toggle Color
+							{language==="jp" ? "ランク色表示" :"Toggle Color"}
 						</button>
 					</div>
 				) : null}

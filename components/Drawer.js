@@ -1,11 +1,11 @@
 const Drawer = ({ drawerOpen, setDrawerOpen, device }) => {
+  const toDos =["Stages",
+  "Calculations",
+  "Weight Physics",
+  "Credits",
+  "Settings",]
   const sidebarItems = [
-    "Stages",
-    "Calculations",
-    "Weight Physics",
-    "Credits",
-    "Contact",
-    "Settings",
+    "About"
   ];
   return (
     <>
@@ -25,8 +25,8 @@ const Drawer = ({ drawerOpen, setDrawerOpen, device }) => {
       {device === "mobile" ? (
         <div
           id="nav_overlay"
-          className={`top-0 left-0 fixed w-screen h-screen bg-gray-500 backdrop-blur-2 transition-opacity duration-30 ${
-            drawerOpen ? "visible opacity-100" : "opacity-0 invisible"
+          className={`top-0 left-0 fixed w-screen h-screen bg-gray-500 backdrop-blur-2 transition-opacity duration-30 z-20${
+            drawerOpen ? "visible opacity-80" : "opacity-0 invisible"
           }`}
           onClick={() => setDrawerOpen(false)}
         ></div>

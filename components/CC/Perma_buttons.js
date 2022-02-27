@@ -16,7 +16,7 @@ export default function Perma_buttons({
       <div
         className={`flex flex-wrap flex-col w-full h-[214px] max-w-[900px] overflow-x-scroll overflow-y-hidden select-none relative`}
       >
-        <div className="bg-[#545753] sticky left-0 z-10 border-x border-gray-700">
+        <div className="bg-[#545753] lg:sticky left-0 z-10 border-x border-gray-700">
           {rank.map((num) => (
             <div
               className={`  min-w-[50px] max-w-[100px] h-[65px] flex items-center `}

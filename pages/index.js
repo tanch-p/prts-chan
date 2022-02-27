@@ -22,7 +22,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allStagesData }) {
-  const { languageContext } = useContext(AppContext);
+  const { languageContext, device } = useContext(AppContext);
   const [language] = languageContext;
   const langPack = require(`../components/lang/${language}.json`);
   const firstCCDate = dayjs("3/1");
@@ -81,15 +81,15 @@ export default function Home({ allStagesData }) {
   for (let i = 0; i < dailyStages.length; i++) {
     dailyCCArr.push(
       <>
-        <div className="flex flex-wrap flex-col">
-          <td className="border border-collapse border-gray-400 h-[30px] w-[80px] text-base">
-            {`3/${i+1}`}
-          </td>
+        <div className="flex flex-wrap flex-col w-[25%] md:w-min">
+          <div className="border border-collapse border-gray-400 h-[25px] w-full md:w-[80px] text-base">
+            {`3/${i + 1}`}
+          </div>
           {i > 5 ? (
             <div
               className={`border border-collapse border-gray-400 ${
                 language === "jp" ? "text-sm" : "text-xs"
-              }  h-[40px] w-[80px] `}
+              }  h-[40px] w-full md:w-[80px] `}
             >
               <p className="">{dailyStages[i]}</p>
             </div>
@@ -98,7 +98,7 @@ export default function Home({ allStagesData }) {
               <div
                 className={`border border-collapse border-gray-400 ${
                   language === "jp" ? "text-sm" : "text-xs"
-                } hover:cursor-pointer hover:bg-gray-300 h-[40px] w-[80px] underline text-blue-700`}
+                } hover:cursor-pointer hover:bg-gray-300 h-[40px] w-full md:w-[80px] underline text-blue-700`}
               >
                 <p className="">{dailyStages[i]}</p>
               </div>
@@ -124,9 +124,9 @@ export default function Home({ allStagesData }) {
           language === "jp" ? "font-jp" : "font-sans"
         }`}
       >
-        <div id="cc6" className="w-full lg:min-w-10 place-self-center">
+        <div id="cc6" className="w-full md:min-w-10 place-self-center">
           <table className="text-center align-middle">
-            <div className="relative w-[560px]">
+            <div className="relative w-[95vw] mx-auto md:w-[560px]">
               {language === "jp" ? (
                 <Image
                   src={CC6_banner_jp}
@@ -156,7 +156,7 @@ export default function Home({ allStagesData }) {
             </tr>
             <div>
               <div
-                className={`flex flex-wrap flex-row w-[560px] ${getTheme()}`}
+                className={`flex flex-wrap flex-row relative w-[95vw] md:w-[560px] ${getTheme()}`}
               >
                 {dailyCCArr}
               </div>

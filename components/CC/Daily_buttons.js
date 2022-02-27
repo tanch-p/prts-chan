@@ -12,10 +12,10 @@ export default function Daily_buttons({
 
   return (
     <>
-      <div className="flex flex-wrap flex-row w-full min-h-min max-w-[900px] select-none bg-neutral-300">
+      <div className="flex flex-wrap flex-row w-[120vw] md:min-h-min md:w-full md:max-w-[900px] select-none bg-neutral-300 overflow-x-scroll md:overflow-hidden">
         {rank.map((num) => (
           <div
-            className="border max-w-[250px] min-h-[30px] mx-2 mb-2 bg-[rgb(153,159,163)]"
+            className="border md:max-w-[250px] min-h-[30px] mx-2 mb-2 bg-[rgb(153,159,163)]"
             key={`rank${num}`}
           >
             <div className="rounded flex flex-wrap flex-row h-[24px] mb-1">
@@ -30,7 +30,7 @@ export default function Daily_buttons({
                   if (option.rank === num) {
                     return (
                       <div
-                        className={`flex flex-wrap flex-row place-items-center rounded  min-w-min h-[50px] mx-2 my-2 active:brightness-75  ${toggleOptionColor(
+                        className={`flex flex-wrap flex-row place-items-center rounded  md:min-w-min h-[50px] mx-2 my-2 active:brightness-75  ${toggleOptionColor(
                           category.category,
                           option.img,
                           "daily"
@@ -52,7 +52,7 @@ export default function Daily_buttons({
                               : ""
                           } `}
                         />
-                        <p className={` px-2 ${language==="en" ? "text-sm font-semibold lg:w-[150px]" : "font-medium lg:w-[145px]"}`}>
+                        <p className={` px-2 ${language==="en" ? "text-sm font-semibold md:w-[150px]" : "font-medium md:w-[145px]"}`}>
                           {option.name[language]}
                         </p>
                       </div>

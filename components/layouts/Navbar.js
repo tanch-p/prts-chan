@@ -3,7 +3,7 @@ import AppContext from "../AppContext";
 import { useState, useContext } from "react";
 import Image from "next/image";
 
-export const Navbar = ({ open, setOpen }) => {
+export const Navbar = ({ open, setOpen, device }) => {
   const { languageContext } = useContext(AppContext);
   const [language, setLanguage] = languageContext;
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,16 +17,18 @@ export const Navbar = ({ open, setOpen }) => {
   return (
     <>
       <nav
-        className={`flex bg-gray-200 w-full items-center justify-between px-6 h-16  text-gray-700 border-b border-gray-400 z-10 ${
+        className={`flex bg-gray-200 w-[100vw] items-center justify-between ${
+          device === "mobile" ? "" : "px-6"
+        }   h-16  text-gray-700 border-b border-gray-400 z-10 ${
           language === "jp" ? "font-jp" : "font-sans"
         }`}
       >
         <div className="flex items-center relative">
           <button
             aria-label="Open Menu"
-            className="mr-2 opacity-0"
+            className={`${device === "mobile" ? "mx-2 h-0 w-0" : " mr-2"} opacity-0`}
             onClick={() => setOpen(!open)}
-            disabled
+            disabled={true}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,20 +54,24 @@ export const Navbar = ({ open, setOpen }) => {
 						className="select-none"
 					/> */}
           <Link href={`/`}>
-            <a className="text-xl font-bold">PRTSちゃん</a>
+            <a className="text-xl font-bold min-w-min">PRTSちゃん</a>
           </Link>
-          <Link href={`/`}>
-            <a className="pl-2 mx-2 font-medium">Home</a>
-          </Link>
+          {device === "mobile" ? null : (
+            <>
+              <Link href={`/`}>
+                <a className="pl-2 mx-2 font-medium">Home</a>
+              </Link>
+            </>
+          )}
           <Link href={`/about`}>
             <a className="pl-2 font-medium">About</a>
           </Link>
         </div>
-        <div className="relative inline-block text-left">
+        <div className={`text-left mr-2 relative`}>
           <div>
             <button
               type="button"
-              className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
+              className={`inline-flex  w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none `}
               id="menu-button"
               onClick={() => {
                 setMenuOpen(!menuOpen);

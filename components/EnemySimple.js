@@ -325,7 +325,7 @@ export default function EnemySimple({
             );
       returnArr.push(
         <>
-          <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
+          <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""} relative`}>
             {arrayToMap.map((ele) => {
               const stat = ele.en;
               const statValue = applyModifiers(enemy, stats, stat, i);
@@ -334,7 +334,9 @@ export default function EnemySimple({
                   <td
                     className={`border border-gray-400 my-auto py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
                       stat
-                    )} ${getMinWidth(stat)}  h-[75px] lg:text-md`}
+                    )} ${getMinWidth(stat)} ${
+                      stat === "enemy" ? "sticky left-0 z-10" : ""
+                    } h-[75px] lg:text-md`}
                     key={enemy.name + stat}
                     rowSpan={
                       i !== 0
@@ -434,17 +436,19 @@ export default function EnemySimple({
           toggleTableHeader("count");
         }}
       >
-        {tableHeaders[1].show ? "Hide Enemy Count" : "Show Enemy Count"}
+        {tableHeaders[1].show ? `${language === "jp" ? "数を表示しない" :"Hide Enemy Count"}` : `${language === "jp" ? "数を表示する" :`Show Enemy Count`}`}
       </button>
       <table
-        className={`border border-gray-400 border-solid mx-auto ${fontThemes[language]} `}
+        className={`border border-gray-400 border-solid md:mx-auto w-[100vw] md:w-full ${fontThemes[language]}`}
       >
-        <thead>
-          <tr>
+        <thead className="relative">
+          <tr className="relative">
             {tableHeaders.map((ele) =>
               ele.show ? (
                 <th
-                  className={`border border-gray-400 border-solid py-0.5 px-1.5 lg:min-w-[50px]`}
+                  className={`border border-gray-400 border-solid py-0.5 px-1.5 md:min-w-[50px] ${
+                    ele.en === "enemy" ? "sticky left-0 z-10" : ""
+                  }`}
                   key={ele.en}
                 >
                   {ele.en === "aspd"
@@ -457,7 +461,7 @@ export default function EnemySimple({
             )}
           </tr>
         </thead>
-        <tbody>{renderEnemyStats()}</tbody>
+        <tbody className="relative">{renderEnemyStats()}</tbody>
       </table>
     </>
   );

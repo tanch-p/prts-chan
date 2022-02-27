@@ -40,7 +40,7 @@ export default function Layout({ children, banner }) {
       <header
         className="w-full transition-none"
       >
-        <Navbar open={drawerOpen} setOpen={setDrawerOpen} />
+        <Navbar open={drawerOpen} setOpen={setDrawerOpen} device={device}/>
       </header>
       <main className="mx-auto flex flex-wrap flex-col items-center">{children}</main>
       <Footer />
