@@ -29,7 +29,7 @@
 				"img": "第6区跡/char_cost_healersupport_1",
 				"effects": [],
 				"tooltip": {
-					"en": "DP cost of Supporters and Medics is tripled",
+					"en": "DP cost of Supporters and Medics tripled",
 					"cn": "",
 					"jp": "医療・補助の配置コストが3倍"
 				}
@@ -129,7 +129,10 @@
 									"multiplier": "%33",
 									"fixedInc": 0,
 									"tooltip": {
-										"en": [],
+										"en": [
+											"Skill→Plants bomb on 2 units, $CD7s$",
+											"HP50%↓:plants bomb on 3 units, uses skill immediately"
+										],
 										"jp": [
 											"スキル→敵ユニット2体に爆弾設置する、$CD7秒$",
 											"HP50%以下：爆弾2体ｰ>3体、即時スキル使用する"
