@@ -79,6 +79,10 @@ export const getRemarks = (
 					);
 				}
 			}
+		} else if (format === "powerup" && row !== 0) {
+			return enemy.powerup.special.map((skill) => {
+				return skill.tooltip[type][language].map((line) => <p>{line}</p>);
+			});
 		} else {
 			if (specialMods[enemy.id].hasOwnProperty("extra")) {
 				remarksArr = remarksArr.concat(
@@ -124,6 +128,10 @@ export const getRemarks = (
 				return skill.tooltip[type][language].map((line) => <p>{line}</p>);
 			});
 		}
+	} else if (format === "powerup" && row !== 0) {
+		return enemy.powerup.special.map((skill) => {
+			return skill.tooltip[type][language].map((line) => <p>{line}</p>);
+		});
 	} else {
 		return enemy["stats"][stats].special.map((skill) => {
 			return skill.tooltip[type][language].map((line) => <p>{line}</p>);

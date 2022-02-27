@@ -1,162 +1,200 @@
 [
-  {
-    "category": "operator_cost",
-    "targets": [],
-    "options": [
-      {
-        "rank": 1,
-        "name": {
-          "jp": "制限：過負荷",
-          "en": "Double DP Cost Guard and Caster",
-          "cn": ""
-        },
-        "img": "8号競技場/75px-Char_cost_casterdefender_1",
-        "effect": {},
-        "tooltip": {
-          "en": "Guard and Caster DP cost doubled",
-          "cn": "",
-          "jp": "重装・術師の配置コストが2倍"
-        }
-      }
-    ]
-  },
-  {
-    "category": "lifepoint_1",
-    "targets": [],
-    "options": [
-      {
-        "rank": 1,
-        "name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
-        "img": "8号競技場/75px-Global_lifepoint_1",
-        "effect": {},
-        "tooltip": {
-          "en": "No enemies escape (Level HP set to 1)",
-          "cn": "",
-          "jp": "防衛ラインの最大耐久値が1に"
-        }
-      }
-    ]
-  },
-  {
-    "category": "roar_knight_1",
-    "targets": ["K5"],
-    "options": [
-      {
-        "rank": 1,
-        "name": {
-          "jp": "特化：盔甲改良I",
-          "en": "Roarknight 1",
-          "cn": ""
-        },
-        "img": "8号競技場/75px-Enemy_plkght_1",
-        "effect": {},
-        "tooltip": {
-          "en": "[Roarknight Club Trainee] Shield Duration +100%",
-          "cn": "",
-          "jp": "＜ロアー見習い騎士＞のシールド継続時間100%延長"
-        }
-      }
-    ]
-  },
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：過負荷",
+					"en": "Double DP Cost Guard and Caster",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Char_cost_casterdefender_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Guard and Caster DP cost doubled",
+					"cn": "",
+					"jp": "重装・術師の配置コストが2倍"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint_1",
+		"options": [
+			{
+				"rank": 1,
+				"name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
+				"img": "8号競技場/75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"cn": "",
+					"jp": "防衛ラインの最大耐久値が1に"
+				}
+			}
+		]
+	},
+	{
+		"category": "roar_knight_1",
 
-  {
-    "category": "dk_mod",
-    "targets": ["DK1", "DK2"],
-    "options": [
-      {
-        "rank": 2,
-        "name": {
-          "jp": "強敵：連携訓練II",
-          "en": "Tag Team Knights 2",
-          "cn": ""
-        },
-        "img": "8号競技場/75px-Enemy_dekght_amod_2",
-        "effect": { "aspd": "%60" },
-        "tooltip": {
-          "en": "[Corrupted Knight] and [Withered Knight] Max HP +50%, ATK +25%, ASPD increased to 150 when enraged. [Corrupted Knight] DEF +50%, [Withered Knight] RES +15 and appears on field earlier",
-          "cn": "",
-          "jp": "＜腐敗騎士＞と＜凋零騎士＞のHP+50%、攻撃力+25%、狂暴状態中の攻撃速度上昇効果値が150になる。＜腐敗騎士＞の防御力+50%、＜凋零騎士＞が早めに出現、術耐性+15"
-        }
-      }
-    ]
-  },
-  {
-    "category": "enemy_hp",
-    "targets": ["ALL"],
-    "options": [
-      {
-        "rank": 2,
-        "name": { "jp": "制限：体力減衰II", "en": "Enemy HP 2", "cn": "" },
-        "img": "8号競技場/75px-Char_hp_2",
-        "effect": { "hp": "%70" },
-        "tooltip": {
-          "en": "Enemies Max HP +70%",
-          "cn": "",
-          "jp": "全ての味方の最大HP-35%"
-        }
-      }
-    ]
-  },
-  {
-    "category": "cost_regen",
-    "targets": [],
-    "options": [
-      {
-        "rank": 2,
-        "name": {
-          "jp": "指令：孤軍奮闘II",
-          "en": "DP Down 2",
-          "cn": ""
-        },
-        "img": "8号競技場/75px-Global_costrecovery_2",
-        "tooltip": {
-          "en": "DP Regeneration reduced by 50%",
-          "cn": "",
-          "jp": "コストの自然回復速度-50%"
-        }
-      }
-    ]
-  },
-  {
-    "category": "enemy_atk",
-    "targets": [],
-    "options": [
-      {
-        "rank": 3,
-        "name": {
-          "jp": "増幅：火力III",
-          "en": "Increase Enemy ATK 3",
-          "cn": ""
-        },
-        "img": "8号競技場/75px-Enemy_atk_3",
-        "effect": {},
-        "tooltip": {
-          "en": "All enemies ATK +65%",
-          "cn": "",
-          "jp": "全ての敵の攻撃力+65%"
-        }
-      }
-    ]
-  },
-  {
-    "category": "enemy_hp",
-    "targets": ["ALL"],
-    "options": [
-      {
-        "rank": 3,
-        "name": {
-          "jp": "増幅：体力III",
-          "en": "Enemy HP 3",
-          "cn": ""
-        },
-        "img": "8号競技場/75px-Enemy_hp_3",
-        "effect": { "hp": "%100" },
-        "tooltip": {
-          "en": "Enemies Max HP +100%",
-          "cn": "",
-          "jp": "全ての敵の最大HP+100%"
-        }
-      }
-    ]
-  }
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "特化：盔甲改良I",
+					"en": "Roarknight 1",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_plkght_1",
+				"effects": [
+					{
+						"targets": ["K5"],
+						"mods": {
+							"special": {
+								"barrier": {
+									"tooltip": {
+										"en": ["Barrier→for $60s$, Def+3000, Res+95"],
+										"jp": ["バリア→$60秒間$、防御力+3000、術耐性+95"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Roarknight Club Trainee] Shield Duration +100%",
+					"cn": "",
+					"jp": "＜ロアー見習い騎士＞のシールド継続時間100%延長"
+				}
+			}
+		]
+	},
+
+	{
+		"category": "dk_mod",
+
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "強敵：連携訓練II",
+					"en": "Tag Team Knights 2",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_dekght_amod_2",
+				"effects": [
+					{
+						"targets": ["DK1"],
+						"mods": {
+							"hp": "%50",
+							"atk": "%25",
+							"def": "%50",
+							"special": { "powerup": { "aspd": 2.5 } }
+						}
+					},
+					{
+						"targets": ["DK2"],
+						"mods": {
+							"hp": "%50",
+							"atk": "%25",
+							"mdef": 15,
+							"special": {
+								"powerup": { "aspd": 2.5 },
+								"extra": {
+									"tooltip": {
+										"en": ["$Appears same timing with Corrupted Knight$"],
+										"jp": ["$腐敗騎士と同じタイミングに登場する$"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Corrupted Knight] and [Withered Knight] Max HP +50%, ATK +25%, ASPD increased to 150 when enraged. [Corrupted Knight] DEF +50%, [Withered Knight] RES +15 and appears on field earlier",
+					"cn": "",
+					"jp": "＜腐敗騎士＞と＜凋零騎士＞のHP+50%、攻撃力+25%、狂暴状態中の攻撃速度上昇効果値が150になる。＜腐敗騎士＞の防御力+50%、＜凋零騎士＞が早めに出現、術耐性+15"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": { "jp": "制限：体力減衰II", "en": "Ally HP 2", "cn": "" },
+				"img": "8号競技場/75px-Char_hp_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Allies max HP -35%",
+					"cn": "",
+					"jp": "全ての味方の最大HP-35%"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "指令：孤軍奮闘II",
+					"en": "DP Down 2",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Global_costrecovery_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 50%",
+					"cn": "",
+					"jp": "コストの自然回復速度-50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "増幅：火力III",
+					"en": "Increase Enemy ATK 3",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_atk_3",
+				"effects": [{ "targets": ["ALL"], "mods": { "atk": "%65" } }],
+				"tooltip": {
+					"en": "All enemies ATK +65%",
+					"cn": "",
+					"jp": "全ての敵の攻撃力+65%"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "増幅：体力III",
+					"en": "Enemy HP 3",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_hp_3",
+				"effects": [{ "targets": ["ALL"], "mods": { "hp": "%100" } }],
+				"tooltip": {
+					"en": "Enemies Max HP +100%",
+					"cn": "",
+					"jp": "全ての敵の最大HP+100%"
+				}
+			}
+		]
+	}
 ]

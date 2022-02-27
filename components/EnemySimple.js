@@ -97,6 +97,13 @@ export default function EnemySimple({
 						) / 100
 					);
 				}
+				if (enemy.format === "powerup" && row === 1) {
+					if (specialMods[enemy.id]?.powerup?.hasOwnProperty("aspd")) {
+						totalMultiplier += specialMods[enemy.id]?.powerup.aspd - 1;
+					} else {
+						totalMultiplier += enemy.powerup.aspd - 1;
+					}
+				}
 				return (
 					Math.ceil((enemy["stats"][stats][stat] / totalMultiplier) * 100) / 100
 				);
@@ -116,8 +123,8 @@ export default function EnemySimple({
 				) {
 					fixedIncValue += multiplier.Ranged[stat];
 				}
-				if (enemy.format === "powerup" && row !== 0) {
-					fixedIncValue += enemy.powerup[stat] ?? 0;
+				if (enemy.format === "prisoner" && row !== 0) {
+					fixedIncValue += enemy.release?.[stat] ?? 0;
 				}
 				return (
 					+enemy["stats"][stats][stat] +
@@ -144,7 +151,10 @@ export default function EnemySimple({
 							specialMods[enemy.id]?.imprisoned?.hasOwnProperty(`fixed-${stat}`)
 						) {
 							return (
-								moddedStats * (specialMods[enemy.id].imprisoned[stat] ?? 1) +
+								moddedStats *
+									(specialMods[enemy.id].imprisoned[stat] ??
+										enemy.imprisoned[stat] ??
+										1) +
 								(specialMods[enemy.id].imprisoned[`fixed-${stat}`] ?? 0)
 							);
 						}
@@ -155,13 +165,32 @@ export default function EnemySimple({
 					} else {
 						if (specialMods[enemy.id]?.hasOwnProperty("release")) {
 							return (
-								moddedStats * (specialMods[enemy.id].release[stat] ?? 1) +
+								moddedStats *
+									(specialMods[enemy.id].release[stat] ??
+										enemy.release[stat] ??
+										1) +
 								(specialMods[enemy.id].release[`fixed-${stat}`] ?? 0)
 							);
 						}
 						return (
 							moddedStats * (enemy.release[stat] ?? 1) +
 							(enemy.release[`fixed-${stat}`] ?? 0)
+						);
+					}
+				} else if (enemy.format === "powerup") {
+					if (row === 1) {
+						if (specialMods[enemy.id]?.hasOwnProperty("powerup")) {
+							return (
+								moddedStats *
+									(specialMods[enemy.id].powerup[stat] ??
+										enemy.powerup[stat] ??
+										1) +
+								(specialMods[enemy.id].powerup[`fixed-${stat}`] ?? 0)
+							);
+						}
+						return (
+							moddedStats * (enemy.powerup[stat] ?? 1) +
+							(enemy.powerup[`fixed-${stat}`] ?? 0)
 						);
 					}
 				}
@@ -176,7 +205,7 @@ export default function EnemySimple({
 		return enemy["stats"][stats].special.map((skill) => {
 			let statValue = 0;
 			if (skill.type === stat) {
-				console.log(skill.multiplier, enemy.id);
+				// console.log(skill.multiplier, enemy.id);
 				if (
 					specialMods[enemy.id] &&
 					specialMods[enemy.id]?.hasOwnProperty(skill.name)
@@ -307,7 +336,7 @@ export default function EnemySimple({
 												className="select-none"
 											/>
 										) : stat === "count" ? (
-											<p>{count}</p>
+											<p>{count + (specialMods?.[enemy.id]?.count ?? 0)}</p>
 										) : stat === "type" ? (
 											enemy["type"]["jp"].map((type) => <p>{type}</p>)
 										) : stat === "atk" ? (
@@ -331,7 +360,7 @@ export default function EnemySimple({
 													enemy,
 													stat,
 													stats,
-													calculate(enemy, stats, stat)
+													calculate(enemy, stats, stat, i)
 												)
 											)
 										) : stat === "remarks" ? (
@@ -398,7 +427,11 @@ export default function EnemySimple({
 									className={`border border-gray-400 border-solid py-0.5 px-1.5 lg:min-w-[50px]`}
 									key={ele.en}
 								>
-									{ele.en === "aspd" ? ele[language] + "/s" : ele[language]}
+									{ele.en === "aspd"
+										? ele[language] + "/s"
+										: ele[language] === "mdef"
+										? "res"
+										: ele[language]}
 								</th>
 							) : null
 						)}

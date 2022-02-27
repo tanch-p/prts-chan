@@ -1,65 +1,82 @@
 {
-  "id": "K5",
-  "name": {
-    "en": "Roar Knightclub Trainee",
-    "jp": "ロアー見習い騎士",
-    "cn": "呼啸骑士团学徒"
-  },
-  "stats": {
-    "level0": {
-      "hp": "2800",
-      "atk": "300",
-      "def": "100",
-      "mdef": "100",
-      "aspd%": "100",
-      "aspd": "2.4",
-      "range": "2",
-      "HP回復速度": "0",
-      "weight": "1",
-      "ms": "0.9"
-    },
-    "8号競技場": {
-      "hp": "3300",
-      "atk": "300",
-      "def": "100",
-      "mdef": "100",
-      "aspd%": "100",
-      "aspd": "2.4",
-      "range": "2",
-      "HP回復速度": "0",
-      "weight": "1",
-      "ms": "0.9"
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Ranged/Phys", "jp": "遠・術", "cn": "远・法术" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": {
-    "jp": ["遠距離"],
-    "en": ["Ranged"],
-    "cn": ["远程"]
-  },
-  "special": {
-    "others": [
-      {
-        "name": "prisoner_release",
-        "tooltip": {
-          "simple": {
-            "en": [],
-            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-            "cn": []
-          },
-          "detailed": {
-            "en": [],
-            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-            "cn": []
-          }
-        }
-      }
-    ]
-  }
+	"id": "K5",
+	"name": {
+		"en": "Roar Knightclub Trainee",
+		"jp": "ロアー見習い騎士",
+		"cn": "呼啸骑士团学徒"
+	},
+	"stats": {
+		"level0": {
+			"hp": "2800",
+			"atk": "300",
+			"def": "100",
+			"mdef": "100",
+			"aspd%": "100",
+			"aspd": "2.4",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.9",
+			"special": [
+				{
+					"name": "barrier",
+					"type": "self-buff",
+					"tooltip": {
+						"simple": {
+							"en": ["Barrier→for 30s, Def+3000, Res+95"],
+							"jp": ["バリア→30秒間、防御力+3000、術耐性+95"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"8号競技場": {
+			"hp": "3300",
+			"atk": "300",
+			"def": "100",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2.4",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.9",
+			"special": [
+				{
+					"name": "barrier",
+					"type": "self-buff",
+					"tooltip": {
+						"simple": {
+							"en": ["Barrier→for 30s, Def+3000, Res+95"],
+							"jp": ["バリア→30秒間、防御力+3000、術耐性+95"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": {
+		"jp": ["遠距離"],
+		"en": ["Ranged"],
+		"cn": ["远程"]
+	}
 }

@@ -1,88 +1,143 @@
 {
-  "id": "DK1",
-  "name": {
-    "en": "Corrupted Knight",
-    "jp": "腐敗騎士",
-    "cn": "腐败骑士"
-  },
-  "stats": {
-    "level0": {
-      "hp": "40000",
-      "atk": "1200",
-      "def": "1200",
-      "mdef": "30",
-      "aspd%": "100",
-      "aspd": "4",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "6",
-      "ms": "0.65"
-    },
-    "8号競技場": {
-      "hp": "25000",
-      "atk": "1100",
-      "def": "1200",
-      "mdef": "30",
-      "aspd%": "100",
-      "aspd": "4",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "6",
-      "ms": "0.65"
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": { "jp": ["近距離", "ボス", "サルカズ"], "en": ["Melee", "Boss", "Sarkaz"], "cn": ["近战", "领袖", "萨卡兹"] },
-  "special": {
-    "atk":{
-        "name": "hammertime",
-        "type": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
-        "multiplier": 1.8,
-        "hits": 1,
-        "fixedInc": 0,
-        "tooltip": {
-          "simple": {
-            "en": [],
-            "jp": [
-              "スキル→敵ユニット2体に爆弾設置する",
-              "(爆弾：単体に180%物理ダメージ)",
-              "HP50%以下：爆弾2体ｰ>3体、即時爆弾設置する"
-            ],
-            "cn": []
-          },
-          "detailed": {
-            "en": [],
-            "jp": [
-              "一定時間ごとに攻撃範囲内の敵ユニット2体に爆弾を設置します",
-              "(爆弾：単体に180%物理ダメージ)",
-              "HP50%以下：爆弾2体ｰ>3体、即時爆弾を設置します"
-            ],
-            "cn": []
-          }
-        }
-    },
-  "others": [
-    {
-      "name": "prisoner_release",
-      "tooltip": {
-        "simple": {
-          "en": [],
-          "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-          "cn": []
-        },
-        "detailed": {
-          "en": [],
-          "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-          "cn": []
-        }
-      }
-    }
-  ]
-}
+	"id": "DK1",
+	"name": {
+		"en": "Corrupted Knight",
+		"jp": "腐敗騎士",
+		"cn": "腐败骑士"
+	},
+	"format": "powerup",
+	"stats": {
+		"level0": {
+			"hp": "40000",
+			"atk": "1200",
+			"def": "1200",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "6",
+			"ms": "0.65",
+			"special": [
+				{
+					"name": "splash",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Normal Atks do 100% splash surrounding 4 tiles"],
+							"jp": ["通常攻撃→攻撃対象の隣接4マスに100％ダメージ"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				},
+				{
+					"name": "hammertime",
+					"type": "atk",
+					"suffix": { "en": "Skill/Phys", "jp": "スキル・物理", "cn": "" },
+					"multiplier": 3,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": ["Skill→Every 22s unleashes charged attack"],
+							"jp": ["スキル→チャージ攻撃、CD22秒"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"8号競技場": {
+			"hp": "25000",
+			"atk": "1100",
+			"def": "1200",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "6",
+			"ms": "0.65",
+			"special": [
+				{
+					"name": "splash",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Normal Atks do 100% splash surrounding 4 tiles"],
+							"jp": ["通常攻撃→攻撃対象の隣接4マスに100％ダメージ"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				},
+				{
+					"name": "hammertime",
+					"type": "atk",
+					"suffix": { "en": "Skill/Phys", "jp": "スキル・物理", "cn": "" },
+					"multiplier": 3,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": ["Skill→Every 22s unleashes charged attack"],
+							"jp": ["スキル→チャージ攻撃、CD22秒"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": {
+		"jp": ["近距離", "サルカズ", "ボス"],
+		"en": ["Melee", "Sarkaz", "Boss"],
+		"cn": ["近战", "萨卡兹", "领袖"]
+	},
+	"powerup": {
+		"atk": 1.8,
+		"aspd": 2,
+		"ms": 1.5,
+		"normal_attack": {
+			"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+			"hits": 1
+		},
+		"special": [
+			{
+				"tooltip": {
+					"simple": {
+						"en": ["Rage mode","Move speed+150%"],
+						"jp": ["怒り状態","移動速度＋150％"],
+						"cn": []
+					}
+				}
+			}
+		]
+	}
 }
