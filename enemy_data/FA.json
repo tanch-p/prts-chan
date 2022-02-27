@@ -102,7 +102,7 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
+							"en": ["Invincible for 150s on appearance"],
 							"jp": ["登場から150秒無敵"],
 							"cn": []
 						},
@@ -123,13 +123,8 @@
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": ["スキル(強撃)→17秒毎に次の攻撃時、攻撃力が200%まで上昇"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": ["5回攻撃後次の攻撃時、攻撃力が200%まで上昇"],
+							"en": ["Skill→After every 5th attack, next attack's atk power increases to 200%"],
+							"jp": ["スキル(強撃)→5回攻撃後次の攻撃時、攻撃力が200%まで上昇"],
 							"cn": []
 						}
 					}

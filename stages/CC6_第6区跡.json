@@ -1,5 +1,5 @@
 {
-  "name": "第6区跡",
+  "name": { "en": "Area 6", "jp": "第6区跡" },
   "img": "第6区跡",
   "config": "CC6_第6区跡",
   "ccType": "daily",

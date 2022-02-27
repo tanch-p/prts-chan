@@ -1,5 +1,5 @@
 {
-  "name": "8号競技場",
+  "name": { "en": "Arena 8", "jp": "8号競技場", "cn": "" },
   "img": "8号競技場",
   "config": "CC6_8号競技場_1",
   "ccType": "daily",

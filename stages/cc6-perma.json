@@ -1,7 +1,5 @@
 {
-  "name": "cc6-perma",
-  "name_jp": "狂嚎沙原",
-  "name_cn": "狂嚎沙原",
+  "name": {"en":"Desert","jp":"狂風の砂原","cn":"狂嚎沙原"},
   "img": "狂嚎沙原",
   "config":"cc6-perma",
   "ccType": "perma",

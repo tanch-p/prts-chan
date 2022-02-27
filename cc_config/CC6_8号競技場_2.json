@@ -139,10 +139,10 @@
 								"count": 1,
 								"left_hand": {
 									"tooltip": {
-										"en": [],
+										"en": ["Skill→Applies -50% Atk debuff to operator with highest attack stat, $CD10s$"],
 										"jp": [
 											"スキル→最も攻撃力が高い味方の攻撃力を25秒50％減少する",
-											"CD:$10秒$"
+											"$CD:10秒$"
 										],
 										"cn": []
 									}

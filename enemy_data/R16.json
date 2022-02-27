@@ -22,7 +22,7 @@
 					"tooltip": {
 						"type": "others",
 						"simple": {
-							"en": [],
+							"en": ["Does not move","Under sandstorm, gains 40% phys/arts evasion"],
 							"jp": [
 								"移動しない",
 								"砂嵐にさらされている時、物理・術回避率+40%"

@@ -23,7 +23,7 @@
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": [],
+							"en": ["HP↓50%→Atk power x 2.8"],
 							"jp": ["HP50%以下→攻撃力2.8倍"],
 							"cn": []
 						},
@@ -57,7 +57,7 @@
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": [],
+							"en": ["HP↓50%→Atk power x 2.8"],
 							"jp": ["HP50%以下→攻撃力2.8倍"],
 							"cn": []
 						},

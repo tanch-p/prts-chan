@@ -52,7 +52,7 @@ export default function Daily_buttons({
                               : ""
                           } `}
                         />
-                        <p className={`font-semibold px-2`}>
+                        <p className={` px-2 ${language==="en" ? "text-sm font-semibold lg:w-[150px]" : "font-medium lg:w-[145px]"}`}>
                           {option.name[language]}
                         </p>
                       </div>

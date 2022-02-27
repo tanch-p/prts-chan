@@ -1,5 +1,5 @@
 {
-  "name": "8号競技場",
+  "name": { "en": "Arena 8", "jp": "8号競技場", "cn": "" },
   "img": "8号競技場",
   "config": "CC6_8号競技場_2",
   "ccType": "daily",
@@ -10,8 +10,8 @@
     { "id": "K8", "count": 3, "stats": "level0" },
     { "id": "K5", "count": 5, "stats": "8号競技場" },
     { "id": "K3", "count": 20, "stats": "8号競技場" },
-    { "id": "K1", "count": 22, "stats": "level0" }, 
+    { "id": "K1", "count": 22, "stats": "level0" },
     { "id": "P-05", "count": 3, "stats": "level0" }
   ],
-  "temp": [    ]
+  "temp": []
 }

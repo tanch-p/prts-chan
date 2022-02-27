@@ -1,7 +1,7 @@
 {
-  "name": "放棄された土地",
-  "img": "放棄された土地",
-  "config": "CC6_放棄された土地_1",
+  "name": { "en": "Abandoned Sector", "jp": "棄てられし区画", "cn": "遗弃地块" },
+  "img": "遗弃地块",
+  "config": "CC6_棄てられし区画_1",
   "ccType": "daily",
   "enemies": [
     { "id": "U11", "count": 1, "stats": "level0" },

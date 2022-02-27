@@ -1,71 +1,71 @@
 {
-	"id": "C15",
-	"name": {
-		"en": "Pugilist Prisoner",
-		"jp": "拳闘士囚人",
-		"cn": "拳手囚犯"
-	},
-	"format": "prisoner",
-	"stats": {
-		"level0": {
-			"hp": "8000",
-			"atk": "300",
-			"def": "300",
-			"mdef": "0",
-			"aspd%": "100",
-			"aspd": "1.2",
-			"range": "0",
-			"HP回復速度": "0",
-			"weight": "2",
-			"ms": "1.6",
-			"special": []
-		}
-	},
-	"normal_attack": {
-		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
-		"hits": 1
-	},
-	"スタン耐性": "無",
-	"眠り耐性": "無",
-	"凍結耐性": "無",
-	"type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
-	"imprisoned": {
-		"aspd": -0.5,
-		"fixed-def": 0,
-		"special": [
-			{
-				"name": "self_release",
-				"tooltip": {
-					"simple": {
-						"en": [],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					},
-					"detailed": {
-						"en": [],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					}
-				}
-			}
-		]
-	},
-	"release": {
-		"atk": 1.5,
-		"normal_attack": {
-			"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
-			"hits": 1
-		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": [],
-						"jp": ["解放状態", "攻撃は防御60％無視"],
-						"cn": []
-					}
-				}
-			}
-		]
-	}
+  "id": "C15",
+  "name": {
+    "en": "Pugilist Prisoner",
+    "jp": "拳闘士囚人",
+    "cn": "拳手囚犯"
+  },
+  "format": "prisoner",
+  "stats": {
+    "level0": {
+      "hp": "8000",
+      "atk": "300",
+      "def": "300",
+      "mdef": "0",
+      "aspd%": "100",
+      "aspd": "1.2",
+      "range": "0",
+      "HP回復速度": "0",
+      "weight": "2",
+      "ms": "1.6",
+      "special": []
+    }
+  },
+  "normal_attack": {
+    "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+    "hits": 1
+  },
+  "スタン耐性": "無",
+  "眠り耐性": "無",
+  "凍結耐性": "無",
+  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] },
+  "imprisoned": {
+    "aspd": -0.5,
+    "fixed-def": 0,
+    "special": [
+      {
+        "name": "self_release",
+        "tooltip": {
+          "simple": {
+            "en": ["Imprisoned state, gets released on 4th attack"],
+            "jp": ["禁固状態、攻撃4回→解放状態となる"],
+            "cn": []
+          },
+          "detailed": {
+            "en": ["Imprisoned state, gets released on 4th attack"],
+            "jp": ["禁固状態、攻撃4回→解放状態となる"],
+            "cn": []
+          }
+        }
+      }
+    ]
+  },
+  "release": {
+    "atk": 1.5,
+    "normal_attack": {
+      "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+      "hits": 1
+    },
+    "special": [
+      {
+        "tooltip": {
+          "simple": {
+            "en": ["Released State, attacks ignores 60% def"],
+            "jp": ["解放状態", "攻撃は防御60％無視"],
+            "cn": []
+          }
+        }
+      }
+    ]
+  }
 }

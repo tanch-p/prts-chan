@@ -22,10 +22,10 @@
 					"tooltip": {
 						"type": "others",
 						"simple": {
-							"en": [],
+							"en": ["Summons hologram when attacked","While hologram is on field:","Cannot be blocked, does not attack, lower target priority"],
 							"jp": [
 								"ダメージ受けるとホログラムを召喚",
-								"ホログラムがある間は攻撃せず、ブロック不可となり、狙われにくくなる",
+								"ホログラムがある間：","攻撃せず、ブロック不可となり、狙われにくくなる",
 								"砂嵐にさらされている時、物理・術回避率+40%"
 							],
 							"cn": []

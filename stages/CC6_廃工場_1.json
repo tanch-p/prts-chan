@@ -1,7 +1,7 @@
 {
-  "name": "廃工場",
+  "name": { "en": "Deserted Factory", "jp": "廃工場", "cn": "" },
   "img": "廃工場",
-  "config": "CC6_廃工場",
+  "config": "CC6_廃工場_1",
   "ccType": "daily",
   "enemies": [
     { "id": "FA", "count": 1, "stats": "廃工場" },

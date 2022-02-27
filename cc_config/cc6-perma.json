@@ -45,7 +45,11 @@
               "aspd": "%150",
               "special": {
                 "extra": {
-                  "tooltip": { "en": ["$Stealth$"], "jp": ["$ステルス$"], "cn": "" }
+                  "tooltip": {
+                    "en": ["$Stealth$"],
+                    "jp": ["$ステルス$"],
+                    "cn": ""
+                  }
                 }
               }
             }
@@ -78,7 +82,11 @@
                   "multiplier": 0.3,
                   "fixedInc": 0,
                   "tooltip": {
-                    "en": [],
+                    "en": [
+                      "When Blocked, only takes damage from blocking unit",
+                      "$Self's def drops by 40%$",
+                      "Unit's def drops by 70%"
+                    ],
                     "jp": [
                       "ブロックされている時、",
                       "ブロック相手以外からダメージを受けない",
@@ -113,14 +121,18 @@
                   "multiplier": 0.7,
                   "fixedInc": 0,
                   "tooltip": {
-                    "en": "",
+                    "en": [
+                      "When Blocked, only takes damage from blocking unit",
+                      "$Self's def does not drop$",
+                      "Unit's def drops by 70%"
+                    ],
                     "jp": [
                       "ブロックされている時、",
                       "ブロック相手以外からダメージを受けない",
                       "$自分の防御力は下げない$",
                       "相手の防御力を70%下げる"
                     ],
-                    "cn": ""
+                    "cn": []
                   }
                 }
               }
@@ -167,7 +179,9 @@
               "special": {
                 "defdown": {
                   "tooltip": {
-                    "en": "",
+                    "en": [
+                      "Every attack decreases operator's def by $20$, lasts indefinitely until operator retreats"
+                    ],
                     "jp": [
                       "攻撃1回につき相手の$DEF20$低下",
                       "(蓄積する、撤退まで永続)"

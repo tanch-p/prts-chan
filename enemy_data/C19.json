@@ -37,7 +37,7 @@
 				"name": "caster_release",
 				"tooltip": {
 					"simple": {
-						"en": [],
+						"en": ["Imprisoned state, does not attack"],
 						"jp": ["禁固状態中→攻撃しない"],
 						"cn": []
 					},
@@ -53,12 +53,12 @@
 				"type": "buff",
 				"tooltip": {
 					"simple": {
-						"en": [],
+						"en": ["Buff→All enemies on field gains +30% aspd (Does not stack)"],
 						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
 						"cn": []
 					},
 					"detailed": {
-						"en": [],
+						"en": ["Buff→All enemies on field gains +30% aspd (Does not stack)"],
 						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
 						"cn": []
 					}
@@ -76,7 +76,7 @@
 			{
 				"tooltip": {
 					"simple": {
-						"en": [],
+						"en": ["Released State, attacks 2 targets at once"],
 						"jp": ["解放状態","2体同時攻撃"],
 						"cn": []
 					}
@@ -87,12 +87,12 @@
 				"type": "buff",
 				"tooltip": {
 					"simple": {
-						"en": [],
+						"en": ["Buff→All enemies on field gains +30% aspd (Does not stack)"],
 						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
 						"cn": []
 					},
 					"detailed": {
-						"en": [],
+						"en": ["Buff→All enemies on field gains +30% aspd (Does not stack)"],
 						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
 						"cn": []
 					}

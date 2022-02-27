@@ -44,17 +44,13 @@ export default function Stage({ stageData }) {
   const [multiplier, setMultiplier] = useState({});
   const [specialMods, setSpecialMods] = useState({});
 
-  const fontThemes = { en: "font-sans", jp: "font-jp" };
+  const fontThemes = { en: "font-sans", jp: "font-jp font-light" };
 
   return (
     <Layout banner={"test"}>
       <Head>
-        <title>{mapConfig.name}</title>
+        <title>{mapConfig.name[language]}</title>
       </Head>
-      <header className="w-full">
-        <h2>{mapConfig.name}</h2>
-      </header>
-
       <Map
         mapConfig={mapConfig}
         language={language}

@@ -38,7 +38,7 @@ export default function Risk_triangle({ risk ,type }) {
   };
 
   return (
-    <div className={`flex flex-wrap flex-row bg-white place-content-center py-1 min-w-[45px] h-full ${type === "daily" ? "rounded-r" : "rounded"}`}>
+    <div className={`flex flex-wrap flex-row bg-white place-content-center py-1   ${type === "daily" ? "rounded-r h-full min-w-[45px]" : "rounded h-[20px] w-[50px]"}`}>
       {getTriangle()}
     </div>
   );

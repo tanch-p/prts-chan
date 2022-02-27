@@ -35,3 +35,19 @@
 - Enemy
 
   1. evaluate current schema if it will work with detailed view
+
+
+
+
+
+
+
+#### Resolved conflicts in enemy IDs:
+- Reunion
+
+  - A-7 (Shielded Senior Caster)
+  - T-1 (Technical Scout)
+
+- Heart of Surging Flame
+
+  - P-01 - P-10

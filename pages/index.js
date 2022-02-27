@@ -7,6 +7,10 @@ import { useContext, useEffect } from "react";
 import AppContext from "../components/AppContext";
 import dayjs from "dayjs";
 
+//images
+import CC6_banner_en from "../public/images/banners/CC6_banner_en.jpg";
+import CC6_banner_jp from "../public/images/banners/CC6_banner_jp.jpg";
+
 export async function getStaticProps() {
   const allStagesData = getSortedStagesData();
   // console.log("allStagesData", allStagesData);
@@ -21,52 +25,144 @@ export default function Home({ allStagesData }) {
   const { languageContext } = useContext(AppContext);
   const [language] = languageContext;
   const langPack = require(`../components/lang/${language}.json`);
-  const firstCCDate = dayjs("3/13");
-  firstCCDate.add(1, "day").format("M/DD");
-  const stagesList = [""];
+  const firstCCDate = dayjs("3/1");
+  const dailyStages =
+    language === "en"
+      ? [
+          "Area 6",
+          "Area 6",
+          "Abandoned Section",
+          "Deserted Factory",
+          "Locked-Down Prison",
+          "Arena 8",
+          "Windswept Highland",
+          "Abandoned Mine",
+          "Deserted Factory",
+          "Abandoned Section",
+          "Arena 8",
+          "Abandoned Mine",
+          "Windswept Highland",
+          "Locked-Down Prison",
+        ]
+      : [
+          "第6区跡",
+          "第6区跡",
+          "棄てられし区画",
+          "廃工場",
+          "閉鎖監獄",
+          "8号競技場",
+          "風蝕の高原",
+          "無秩序な鉱区",
+          "廃工場",
+          "棄てられし区画",
+          "8号競技場",
+          "無秩序な鉱区",
+          "風蝕の高原",
+          "閉鎖監獄",
+        ];
+  const dailyCCArr = [];
+  const links = [
+    "CC6_第6区跡",
+    "CC6_第6区跡",
+    "CC6_棄てられし区画_1",
+    "CC6_廃工場_1",
+    "CC6_閉鎖監獄_1",
+    "CC6_8号競技場_1",
+    "CC6_風蝕の高原_1",
+    "CC6_無秩序な鉱区_1",
+    "CC6_廃工場_2",
+    "CC6_棄てられし区画_2",
+    "CC6_8号競技場_2",
+    "CC6_無秩序な鉱区_2",
+    "CC6_風蝕の高原_2",
+    "CC6_閉鎖監獄_2",
+  ];
+
+  for (let i = 0; i < dailyStages.length; i++) {
+    dailyCCArr.push(
+      <>
+        <div className="flex flex-wrap flex-col">
+          <td className="border border-collapse border-gray-400 h-[30px] w-[80px] text-base">
+            {firstCCDate.add(i, "day").format("M/D")}
+          </td>
+          {i > 5 ? (
+            <div
+              className={`border border-collapse border-gray-400 ${
+                language === "jp" ? "text-sm" : "text-xs"
+              }  h-[40px] w-[80px] `}
+            >
+              <p className="">{dailyStages[i]}</p>
+            </div>
+          ) : (
+            <Link href={`/stages/${links[i]}`}>
+              <div
+                className={`border border-collapse border-gray-400 ${
+                  language === "jp" ? "text-sm" : "text-xs"
+                } hover:cursor-pointer hover:bg-gray-300 h-[40px] w-[80px] underline text-blue-700`}
+              >
+                <p className="">{dailyStages[i]}</p>
+              </div>
+            </Link>
+          )}
+        </div>
+      </>
+    );
+  }
+
+  const getTheme = () => {
+    return language === "en" ? "text-xs" : "";
+  };
 
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div id="home-container" className="min-h-[100vh] font-jp">
-        {/* <Image
-          src="/images/profile.jpg"
-          className="inline-block"
-          height={144}
-          width={144}
-          alt={""}
-        /> */}
-
-        <div id="cc6" className="w-[100vw] lg:min-w-10">
-          <div></div>
-          <div>Permanent Stage</div>
-          <div>
+      <div
+        id="home-container"
+        className={`flex min-h-[100vh] ${
+          language === "jp" ? "font-jp" : "font-sans"
+        }`}
+      >
+        <div id="cc6" className="w-full lg:min-w-10 place-self-center">
+          <table className="text-center align-middle">
+            <div className="relative w-[560px]">
+              {language === "jp" ? (
+                <Image
+                  src={CC6_banner_jp}
+                  className="inline-block"
+                  alt={"CC6"}
+                />
+              ) : (
+                <Image
+                  src={CC6_banner_en}
+                  className="inline-block"
+                  alt={"CC6"}
+                />
+              )}
+            </div>
+            <tr className="border border-collapse border-gray-400 py-1">
+              <th> {language === "jp" ? "常設ステージ" : "Permanent Stage"}</th>
+            </tr>
             <Link href={`/stages/cc6-perma`}>
-              <a className="underline text-blue-700">狂嚎沙原</a>
+              <div className="border border-collapse py-2 border-gray-400 text-base hover:cursor-pointer hover:bg-gray-300 underline text-blue-700">
+                {language === "jp" ? "狂風の砂原" : "Desert"}
+              </div>
             </Link>
-          </div>
-          <div>
-            <div>Daily Stages</div>
-            <div>Date</div>
-            <div>Stage</div>
-          </div>
+            <tr>
+              <th className="border border-collapse border-gray-400 py-1">
+                {language === "jp" ? "デイリーステージ" : "Daily Stages"}
+              </th>
+            </tr>
+            <div>
+              <div
+                className={`flex flex-wrap flex-row w-[560px] ${getTheme()}`}
+              >
+                {dailyCCArr}
+              </div>
+            </div>
+          </table>
         </div>
-        <div>Coming Soon</div>
-        <section className="">
-          <h2 className="">{langPack?.index?.stages}</h2>
-          <ul className="">
-            {allStagesData.map(({ name }) => (
-              <li className="" key={name}>
-                <Link href={`/stages/${name}`}>
-                  <a>{name}</a>
-                </Link>
-                <br />
-              </li>
-            ))}
-          </ul>
-        </section>
       </div>
     </Layout>
   );

@@ -9,6 +9,7 @@ export default function CC_buttons({
 	setSpecialMods,
 	language,
 	device,
+	fontThemes
 }) {
 	let ccConfig = require(`../../cc_config/${mapConfig.config}.json`);
 	const [selected, setSelected] = useState([{}]);
@@ -194,7 +195,7 @@ export default function CC_buttons({
 		<>
 			<div
 				id="CC-container"
-				className={`${mapConfig.ccType === "perma" ? "w-full" : "min-w-min"}`}
+				className={`${mapConfig.ccType === "perma" ? "w-[900px]" : "min-w-min"} ${fontThemes[language]}`}
 			>
 				{mapConfig.ccType === "perma" ? (
 					<div className="w-full flex flex-wrap place-content-end mb-1">
@@ -236,8 +237,8 @@ export default function CC_buttons({
 						language={language}
 					/>
 				)}
-				<Selected_options selected={selected} />
-				<div className="flex flex-wrap border border-gray-800 w-full h-[50px] max-w-[900px] py-2 select-none place-items-center bg-[#292929]">
+				<Selected_options selected={selected} ccType={mapConfig.ccType} />
+				<div className="flex flex-wrap border border-gray-800 w-full h-[50px] max-w-[900px] py-2 mb-2 select-none place-items-center bg-[#292929]">
 					<div
 						className="flex flex-wrap bg-white border rounded border-gray-800 mx-1 px-1 h-[80%] cursor-pointer active:bg-gray-400"
 						onClick={resetSelected}
@@ -256,7 +257,7 @@ export default function CC_buttons({
 								d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
 							/>
 						</svg>
-						<p className="font-semibold">クリア</p>
+						<p className="font-semibold">{language === "jp" ? "クリア" : "Clear"}</p>
 					</div>
 					<div className="flex flex-wrap flex-col px-2 h-[110%] border-r-2 border-r-black leading-[16px] text-white">
 						<div className="w-full">

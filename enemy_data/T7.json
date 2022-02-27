@@ -41,7 +41,7 @@
 				{
 					"name": "def_up",
 					"suffix": {
-						"en": "when blocked",
+						"en": "blocked",
 						"jp": "ブロック中",
 						"cn": "被阻挡时"
 					},

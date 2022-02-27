@@ -1,12 +1,13 @@
 export const Footer = () => {
   return (
     <footer className="text-center bg-[#555758] bottom-0 text-white w-full mt-4">
-      <div className="pt-6 pb-1">
+      <div className="pt-4">
         <div className="flex place-content-center mb-6">
           <a
-            // href=""
+            href="https://github.com/tanch-p/prts-chan"
             type="button"
             className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
+            target="_blank" rel="noopener noreferrer"
           >
             <svg
               aria-hidden="true"
@@ -24,7 +25,9 @@ export const Footer = () => {
               ></path>
             </svg>
           </a>
-          <p className="place-self-center font-bold text-lg">PRTS-chan v0.0.1</p>
+          <p className="place-self-center font-medium text-lg">
+            PRTS-chan v0.0.1
+          </p>
         </div>
       </div>
     </footer>

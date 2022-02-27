@@ -37,12 +37,12 @@
 				"name": "self_release",
 				"tooltip": {
 					"simple": {
-						"en": [],
+						"en": ["Imprisoned state, gets released on 4th attack"],
 						"jp": ["禁固状態、攻撃4回→解放状態となる"],
 						"cn": []
 					},
 					"detailed": {
-						"en": [],
+						"en": ["Imprisoned state, gets released on 4th attack"],
 						"jp": ["禁固状態、攻撃4回→解放状態となる"],
 						"cn": []
 					}
@@ -52,7 +52,7 @@
 				"name": "all_release",
 				"tooltip": {
 					"simple": {
-						"en": [],
+						"en": ["On release, releases all other prisoners on field as well"],
 						"jp": ["解放時フィールド上の敵全体解放状態にする"],
 						"cn": []
 					},
@@ -75,7 +75,7 @@
 			{
 				"tooltip": {
 					"simple": {
-						"en": [],
+						"en": ["Released State"],
 						"jp": ["解放状態"],
 						"cn": []
 					}

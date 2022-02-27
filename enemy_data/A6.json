@@ -47,8 +47,8 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["AOE - 4sq around target"],
-							"jp": ["範囲攻撃→目標周囲4マス"],
+							"en": ["Normal Atks do 100% splash to 4 tiles surrounding target"],
+							"jp": ["通常攻撃→攻撃対象の隣接4マスに100％のダメージ"],
 							"cn": []
 						},
 						"detailed": { "en": [], "jp": [], "cn": [] }
