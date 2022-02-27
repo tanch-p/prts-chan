@@ -83,7 +83,7 @@ export default function Home({ allStagesData }) {
       <>
         <div className="flex flex-wrap flex-col">
           <td className="border border-collapse border-gray-400 h-[30px] w-[80px] text-base">
-            {firstCCDate.add(i, "day").format("M/D")}
+            {`3/${i+1}`}
           </td>
           {i > 5 ? (
             <div
