@@ -104,7 +104,7 @@
 								"powerup": { "aspd": 2.5 },
 								"extra": {
 									"tooltip": {
-										"en": ["$Appears same timing with Corrupted Knight$"],
+										"en": ["$Appears same timing as Corrupted Knight$"],
 										"jp": ["$腐敗騎士と同じタイミングに登場する$"],
 										"cn": ""
 									}
