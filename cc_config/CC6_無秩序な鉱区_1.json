@@ -6,14 +6,9 @@
         "rank": 1,
         "name": { "jp": "環境：少数精鋭I", "en": "Max Squad Size 1", "cn": "" },
         "img": "無秩序な鉱区/75px-Global_pcharnum_1",
-        "effects": [
-          {
-            "targets": ["Melee"],
-            "mods": { "hp": "%40", "def": "%25", "mdef": 15 }
-          }
-        ],
+        "effects": [],
         "tooltip": {
-          "en": "Melee enemies Max HP +40%, DEF +25%, RES +15",
+          "en": "Maximum 10 operators in squad",
           "cn": "",
           "jp": "編成可能数が10人に"
         }
