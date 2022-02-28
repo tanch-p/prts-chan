@@ -195,10 +195,10 @@ export default function CC_buttons({
 		<>
 			<div
 				id="CC-container"
-				className={`${mapConfig.ccType === "perma" ? "w-[900px]" : "min-w-min"} ${fontThemes[language]}`}
+				className={`${mapConfig.ccType === "perma" ? "w-[100vw] md:w-[900px]" : "min-w-min"} ${fontThemes[language]}`}
 			>
 				{mapConfig.ccType === "perma" ? (
-					<div className="w-full flex flex-wrap place-content-end mb-1">
+					<div className="w-[100vw] md:w-full flex flex-wrap place-content-end mb-1">
 						<button
 							onClick={() => setShowGrid(!showGrid)}
 							className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg  ${
@@ -238,7 +238,7 @@ export default function CC_buttons({
 					/>
 				)}
 				<Selected_options selected={selected} ccType={mapConfig.ccType} />
-				<div className="flex flex-wrap border border-gray-800 w-full h-[50px] max-w-[900px] py-2 mb-2 select-none place-items-center bg-[#292929]">
+				<div className="flex flex-wrap border border-gray-800 w-[100vw] overflow-x-scroll md:overflow-x-auto md:w-full h-[50px] max-w-[900px] py-2 mb-2 select-none place-items-center bg-[#292929]">
 					<div
 						className="flex flex-wrap bg-white border rounded border-gray-800 mx-1 px-1 h-[80%] cursor-pointer active:bg-gray-400"
 						onClick={resetSelected}

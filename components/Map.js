@@ -20,7 +20,7 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
           height={height}
           className=""
         ></Image>
-        <div className="w-full">{/* <h2>Map stats</h2> */}</div>
+        <div className="w-[100vw] md:w-full">{/* <h2>Map stats</h2> */}</div>
       </div>
     </>
   );

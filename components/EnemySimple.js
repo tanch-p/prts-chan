@@ -29,8 +29,14 @@ export default function EnemySimple({
     { en: "remarks", jp: "備考", cn: "特殊", show: true },
   ]);
 
-  console.log("spMods", specialMods);
-  console.log("mul", multiplier);
+  useEffect(() => {
+    if (device === "mobile") {
+      toggleTableHeader("remarks");
+    }
+  }, []);
+
+  // console.log("spMods", specialMods);
+  // console.log("mul", multiplier);
 
   const textAlign = (stat) => {
     switch (stat) {
@@ -325,7 +331,7 @@ export default function EnemySimple({
             );
       returnArr.push(
         <>
-          <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""} relative`}>
+          <tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
             {arrayToMap.map((ele) => {
               const stat = ele.en;
               const statValue = applyModifiers(enemy, stats, stat, i);
@@ -334,9 +340,7 @@ export default function EnemySimple({
                   <td
                     className={`border border-gray-400 my-auto py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
                       stat
-                    )} ${getMinWidth(stat)} ${
-                      stat === "enemy" ? "sticky left-0 z-10" : ""
-                    } h-[75px] lg:text-md`}
+                    )} ${getMinWidth(stat)}  h-[75px] lg:text-md`}
                     key={enemy.name + stat}
                     rowSpan={
                       i !== 0
@@ -436,19 +440,19 @@ export default function EnemySimple({
           toggleTableHeader("count");
         }}
       >
-        {tableHeaders[1].show ? `${language === "jp" ? "数を表示しない" :"Hide Enemy Count"}` : `${language === "jp" ? "数を表示する" :`Show Enemy Count`}`}
+        {tableHeaders[1].show
+          ? `${language === "jp" ? "数を表示しない" : "Hide Enemy Count"}`
+          : `${language === "jp" ? "数を表示する" : `Show Enemy Count`}`}
       </button>
       <table
-        className={`border border-gray-400 border-solid md:mx-auto w-[100vw] md:w-full ${fontThemes[language]}`}
+        className={`border border-gray-400 border-solid w-[100vw] overflow-x-scroll md:overflow-x-auto md:mx-auto md:w-full ${fontThemes[language]}`}
       >
-        <thead className="relative">
-          <tr className="relative">
+        <thead className="">
+          <tr className="">
             {tableHeaders.map((ele) =>
               ele.show ? (
                 <th
-                  className={`border border-gray-400 border-solid py-0.5 px-1.5 md:min-w-[50px] ${
-                    ele.en === "enemy" ? "sticky left-0 z-10" : ""
-                  }`}
+                  className={`border border-gray-400 border-solid py-0.5 px-1.5 md:min-w-[50px] `}
                   key={ele.en}
                 >
                   {ele.en === "aspd"
@@ -461,7 +465,7 @@ export default function EnemySimple({
             )}
           </tr>
         </thead>
-        <tbody className="relative">{renderEnemyStats()}</tbody>
+        <tbody className="">{renderEnemyStats()}</tbody>
       </table>
     </>
   );

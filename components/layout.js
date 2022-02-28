@@ -38,7 +38,7 @@ export default function Layout({ children, banner }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <header
-        className="w-full transition-none"
+        className="w-[100vw]  md:w-full transition-none"
       >
         <Navbar open={drawerOpen} setOpen={setDrawerOpen} device={device}/>
       </header>
