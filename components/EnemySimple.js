@@ -46,9 +46,18 @@ export default function EnemySimple({
   };
 
   const getMinWidth = (stat) => {
-    return stat === "type" || stat === "atk" || stat === "def" || stat === "hp"
-      ? "min-w-[80px] md:min-w-min lg:px-2"
-      : stat ==="remarks" ? "min-w-[300px]" : "min-w-[50px]";
+    switch (stat) {
+      case "type":
+        return "min-w-[93px] md:min-w-min lg:px-2";
+      case "atk":
+      case "hp":
+      case "def":
+        return "min-w-[80px] md:min-w-min lg:px-2";
+      case "remarks":
+        return "min-w-[300px]";
+      default:
+        return "min-w-[50px]";
+    }
   };
 
   const calculate = (enemy, stats, stat, row) => {

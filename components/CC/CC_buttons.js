@@ -238,7 +238,7 @@ export default function CC_buttons({
 					/>
 				)}
 				<Selected_options selected={selected} ccType={mapConfig.ccType} />
-				<div className="flex flex-wrap border border-gray-800 w-[100vw] overflow-x-scroll md:overflow-hidden md:w-full h-[50px] max-w-[900px] py-2 mb-2 select-none place-items-center bg-[#292929]">
+				<div className="flex flex-wrap border border-gray-800 w-[100vw] overflow:hidden md:w-full h-[50px] max-w-[900px] py-2 mb-2 select-none place-items-center bg-[#292929]">
 					<div
 						className="flex flex-wrap bg-white border rounded border-gray-800 mx-1 px-1 h-[80%] cursor-pointer active:bg-gray-400"
 						onClick={resetSelected}
