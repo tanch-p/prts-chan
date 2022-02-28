@@ -56,7 +56,7 @@ export default function Daily_buttons({
                           <p
                             className={` px-2 ${
                               language === "en"
-                                ? "text-sm font-semibold w-[150px]"
+                                ? "text-sm font-semibold w-[152px]"
                                 : "font-medium w-[145px]"
                             }`}
                           >
