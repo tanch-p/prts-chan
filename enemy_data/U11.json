@@ -22,7 +22,9 @@
           "type": "others",
           "tooltip": {
             "simple": {
-              "en": ["Normal Atk does 100% splash damage to units 8sq around target"],
+              "en": [
+                "Normal Atk does 100% splash damage to units 8sq around target"
+              ],
               "jp": ["通常攻撃→目標＋周囲8マスに100％ダメージ"],
               "cn": []
             },
@@ -45,7 +47,7 @@
   "凍結耐性": "無",
   "type": {
     "jp": ["暗殺対象外", "飛行", "ドローン"],
-    "en": ["Flying", "Drone"],
+    "en": ["Not on Firewatch's List", "Flying", "Drone"],
     "cn": ["非暗杀目标", "飞行", "无人机"]
   }
 }
