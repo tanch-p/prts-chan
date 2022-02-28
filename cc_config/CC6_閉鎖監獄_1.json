@@ -104,7 +104,7 @@
           }
         ],
         "tooltip": {
-          "en": "Caster Prisoner DEF in imprisoned state increased to 800, and ASPD bonus to enemies +60",
+          "en": "Caster Prisoner imprisoned state DEF increased to +800, and ASPD buff to 60%",
           "cn": "",
           "jp": "「術師囚人」の禁固状態での追加防御力が800になり、マップ上の全ての敵の攻撃速度上昇量が60に増加"
         }
@@ -185,7 +185,7 @@
           }
         ],
         "tooltip": {
-          "en": "number of attacks to liberate prisoners reduced -2, ASPD reduction in imprisoned state reduced -25%, ATK +150% when liberated",
+          "en": "Number of attacks to liberate prisoners reduced by 2, ASPD reduction in imprisoned state reduced by 25%, when released attack further increases by 150%",
           "cn": "",
           "jp": "全ての囚人の禁固状態の解除に必要な攻撃回数-2、禁固状態の攻撃速度減少効果が-25に減少、解除後の攻撃力上昇効果+150%"
         }
