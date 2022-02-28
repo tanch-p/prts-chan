@@ -29,12 +29,6 @@ export default function EnemySimple({
     { en: "remarks", jp: "備考", cn: "特殊", show: true },
   ]);
 
-  useEffect(() => {
-    if (device === "mobile") {
-      toggleTableHeader("remarks");
-    }
-  }, []);
-
   // console.log("spMods", specialMods);
   // console.log("mul", multiplier);
 
@@ -53,8 +47,8 @@ export default function EnemySimple({
 
   const getMinWidth = (stat) => {
     return stat === "type" || stat === "atk" || stat === "def" || stat === "hp"
-      ? "min-w-min lg:px-2"
-      : "";
+      ? "min-w-[80px] md:min-w-min lg:px-2"
+      : stat ==="remarks" ? "min-w-[300px]" : "min-w-[50px]";
   };
 
   const calculate = (enemy, stats, stat, row) => {
@@ -338,7 +332,7 @@ export default function EnemySimple({
               if (ele.show) {
                 return (
                   <td
-                    className={`border border-gray-400 my-auto py-0 mx-2 min-w-[50px] max-w-[300px] ${textAlign(
+                    className={`border border-gray-400 my-auto py-0 mx-2 md:max-w-[300px] ${textAlign(
                       stat
                     )} ${getMinWidth(stat)}  h-[75px] lg:text-md`}
                     key={enemy.name + stat}
@@ -434,39 +428,44 @@ export default function EnemySimple({
 
   return (
     <>
-      <button
-        className={`text-xs font-semibold text-center py-1 px-2 my-1 border rounded-lg bg-gray-300`}
-        onClick={() => {
-          toggleTableHeader("count");
-        }}
-      >
-        {tableHeaders[1].show
-          ? `${language === "jp" ? "数を表示しない" : "Hide Enemy Count"}`
-          : `${language === "jp" ? "数を表示する" : `Show Enemy Count`}`}
-      </button>
-      <table
-        className={`border border-gray-400 border-solid w-[100vw] overflow-x-scroll md:overflow-x-auto md:mx-auto md:w-full ${fontThemes[language]}`}
-      >
-        <thead className="">
-          <tr className="">
-            {tableHeaders.map((ele) =>
-              ele.show ? (
-                <th
-                  className={`border border-gray-400 border-solid py-0.5 px-1.5 md:min-w-[50px] `}
-                  key={ele.en}
-                >
-                  {ele.en === "aspd"
-                    ? ele[language] + "/s"
-                    : ele[language] === "mdef"
-                    ? "res"
-                    : ele[language]}
-                </th>
-              ) : null
-            )}
-          </tr>
-        </thead>
-        <tbody className="">{renderEnemyStats()}</tbody>
-      </table>
+      {device !== "mobile" ? (
+        <button
+          className={`text-xs font-semibold text-center py-1 px-2 my-1 border rounded-lg bg-gray-300`}
+          onClick={() => {
+            toggleTableHeader("count");
+          }}
+        >
+          {tableHeaders[1].show
+            ? `${language === "jp" ? "数を表示しない" : "Hide Enemy Count"}`
+            : `${language === "jp" ? "数を表示する" : `Show Enemy Count`}`}
+        </button>
+      ) : null}
+
+      <div className="w-[100vw] md:w-full overflow-x-scroll md:overflow-x-auto">
+        <table
+          className={`border border-gray-400 border-solid w-[100vw] overflow-x-scroll md:overflow-x-auto md:mx-auto md:w-full ${fontThemes[language]}`}
+        >
+          <thead className="">
+            <tr className="">
+              {tableHeaders.map((ele) =>
+                ele.show ? (
+                  <th
+                    className={`border border-gray-400 border-solid py-0.5 px-1.5 md:min-w-[50px] `}
+                    key={ele.en}
+                  >
+                    {ele.en === "aspd"
+                      ? ele[language] + " /s"
+                      : ele[language] === "mdef"
+                      ? "res"
+                      : ele[language]}
+                  </th>
+                ) : null
+              )}
+            </tr>
+          </thead>
+          <tbody className="">{renderEnemyStats()}</tbody>
+        </table>
+      </div>
     </>
   );
 }

@@ -24,7 +24,7 @@
           "type": "others",
           "tooltip": {
             "simple": {
-              "en": ["Normal Atks do 100% splash surrounding 4 tiles"],
+              "en": ["Normal Atks do 100% splash to units 4 tiles surrounding target"],
               "jp": ["通常攻撃→攻撃対象の隣接4マスに100％のダメージ"],
               "cn": []
             },
@@ -74,7 +74,7 @@
           "type": "others",
           "tooltip": {
             "simple": {
-              "en": ["Normal Atks do 100% splash surrounding 4 tiles"],
+              "en": ["Normal Atks do 100% splash to units 4 tiles surrounding target"],
               "jp": ["通常攻撃→攻撃対象の隣接4マスに100％のダメージ"],
               "cn": []
             },

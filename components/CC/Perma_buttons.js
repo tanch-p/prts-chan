@@ -28,7 +28,7 @@ export default function Perma_buttons({
                 </p>
                 <Risk_triangle risk={num} />
               </div>
-              <span className="text-white text-[50px] mr-[2px]">{num}</span>
+              <span className="text-white text-[50px] mr-[2px] font-sans">{num}</span>
             </div>
           ))}
         </div>
