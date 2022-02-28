@@ -17,7 +17,7 @@ export const Navbar = ({ open, setOpen, device }) => {
   return (
     <>
       <nav
-        className={`flex bg-gray-200 w-[100vw] items-center justify-between ${
+        className={`flex bg-gray-200 w-[100vw] md:w-full items-center justify-between ${
           device === "mobile" ? "" : "px-6"
         }   h-16  text-gray-700 border-b border-gray-400 z-10 ${
           language === "jp" ? "font-jp" : "font-sans"
