@@ -1,5 +1,5 @@
 {
-  "name": { "en": "Abandoned Sector", "jp": "棄てられし区画", "cn": "遗弃地块" },
+  "name": { "en": "Abandoned Plot", "jp": "棄てられし区画", "cn": "遗弃地块" },
   "img": "遗弃地块",
   "config": "CC6_棄てられし区画_1",
   "ccType": "daily",
