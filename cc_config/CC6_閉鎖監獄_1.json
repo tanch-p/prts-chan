@@ -178,16 +178,16 @@
                   }
                 },
                 "release": {
-                  "atk": 3
+                  "atk": 2.5
                 }
               }
             }
           }
         ],
         "tooltip": {
-          "en": "Number of attacks to liberate prisoners reduced by 2, ASPD reduction in imprisoned state reduced by 25%, when released attack further increases by 150%",
+          "en": "Number of attacks to liberate prisoners reduced by 2, ASPD reduction in imprisoned state reduced by 25%, when released attack increases by 150%",
           "cn": "",
-          "jp": "全ての囚人の禁固状態の解除に必要な攻撃回数-2、禁固状態の攻撃速度減少効果が-25に減少、解除後の攻撃力上昇効果+150%"
+          "jp": "全ての囚人の禁固状態の解除に必要な攻撃回数-2、禁固状態の攻撃速度減少効果が-25に減少、解除後の攻撃力上昇効果は+150%になる"
         }
       }
     ]
@@ -205,7 +205,7 @@
         "img": "閉鎖監獄/75px-Enemy_invisible_3",
         "effects": [
           {
-            "targets": ["C22", "C21", "C17"],
+            "targets": ["C22", "C21", "C15"],
             "mods": {
               "special": {
                 "imprisoned": {
@@ -231,7 +231,7 @@
           }
         ],
         "tooltip": {
-          "en": "Infamous Recidivist, Recidivist, Strongman Prisoner gains stealth",
+          "en": "Infamous Recidivist, Recidivist, Pugilist Prisoner gains stealth",
           "cn": "",
           "jp": "「拳闘士囚人」「凶悪犯」「伝説の凶悪犯」がステルス状態を獲得"
         }

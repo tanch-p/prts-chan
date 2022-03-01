@@ -75,11 +75,11 @@
                 "lancer-accelerate": {
                   "tooltip": {
                     "en": [
-                      "Accelerates every 0.5s, inc ms by $75%$, does extra damage which scales with ms for 1 attack, after attacking ms stack resets"
+                      "Accelerates every 0.5s, inc ms by $150%$, does extra damage which scales with ms for 1 attack, after attacking ms stack resets"
                     ],
                     "jp": [
                       "0.5秒毎加速する",
-                      "加速→移動速度$75％$上昇、攻撃時一回追加ダメージを加える、攻撃後リセットする",
+                      "加速→移動速度+$150％$、攻撃時一回追加ダメージを加える、攻撃後リセットする",
                       "追加ダメージ（1ms:$1000$)"
                     ],
                     "cn": []
@@ -92,7 +92,7 @@
         "tooltip": {
           "en": "All Sarkaz Lancer MaxHP +80%, speed-based dash damage becomes 1000%, dash acceleration is now 1.5x",
           "cn": "",
-          "jp": "「サルカズ突撃兵」の最大HP+80%、突撃ダメージが1000%に上昇、加速度が1.5倍"
+          "jp": "「サルカズ突撃兵」の最大HP+80%、突撃ダメージが1000%に上昇、加速度が1.5倍になる"
         }
       }
     ]
