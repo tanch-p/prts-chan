@@ -146,7 +146,7 @@ export default function Home({ allStagesData }) {
             </tr>
             <Link href={`/stages/cc6-perma`}>
               <div className="border border-collapse py-2 border-gray-400 text-base hover:cursor-pointer hover:bg-gray-300 underline text-blue-700">
-                {language === "jp" ? "狂風の砂原" : "Desert"}
+                {language === "jp" ? "狂風の砂原" : "Howling Desert"}
               </div>
             </Link>
             <tr>
