@@ -163,14 +163,14 @@ export default function Home({ allStagesData }) {
             </div>
           </table>
         </div>
-        <div className="">
+        <div className="w-100vw ml-2 md:ml-0 md:w-[560px] mt-6">
           <ul>
             {language === "jp" ? (
-              <li className="mt-6 w-[560px]">
+              <li className="  ">
                 3/1更新→計算式に間違いがあったので修正、影響された敵は常設ステージの「ティアカウ呪術師」の防御力。
               </li>
             ) : (
-              <li className="mt-6 w-[560px]">
+              <li className="">
               3/1 Update: Fixed multiplier formula to correctly reflect CC options +def and %def priority, units affected: Tiacauh Ritualist
             </li>
             )}
