@@ -144,15 +144,15 @@ export default function EnemySimple({
 
       default:
         const moddedStats =
-          enemy["stats"][stats][stat] *
-            (multiplier?.["ALL"]?.[stat] ?? 1) *
-            (multiplier?.[enemy.id]?.[stat] ?? 1) *
-            (enemy.type.en.includes("Melee")
-              ? multiplier?.Melee?.[stat] ?? 1
-              : enemy.type.en.includes("Ranged")
-              ? multiplier?.Ranged?.[stat] ?? 1
-              : 1) +
-          (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0);
+          (+enemy["stats"][stats][stat] +
+            (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0)) *
+          (multiplier?.["ALL"]?.[stat] ?? 1) *
+          (multiplier?.[enemy.id]?.[stat] ?? 1) *
+          (enemy.type.en.includes("Melee")
+            ? multiplier?.Melee?.[stat] ?? 1
+            : enemy.type.en.includes("Ranged")
+            ? multiplier?.Ranged?.[stat] ?? 1
+            : 1);
         if (enemy.format === "prisoner") {
           if (row === 0) {
             if (

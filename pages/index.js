@@ -120,11 +120,11 @@ export default function Home({ allStagesData }) {
       </Head>
       <div
         id="home-container"
-        className={`flex min-h-[100vh] ${
+        className={`flex flex-col min-h-[100vh] place-content-center ${
           language === "jp" ? "font-jp" : "font-sans"
         }`}
       >
-        <div id="cc6" className="w-full md:min-w-10 place-self-center">
+        <div id="cc6" className="w-full md:min-w-10">
           <table className="text-center align-middle">
             <div className="relative w-[95vw] mx-auto md:w-[560px]">
               {language === "jp" ? (
@@ -162,6 +162,19 @@ export default function Home({ allStagesData }) {
               </div>
             </div>
           </table>
+        </div>
+        <div className="">
+          <ul>
+            {language === "jp" ? (
+              <li className="mt-6 w-[560px]">
+                3/1更新→計算式に間違いがあったので修正、影響された敵は常設ステージの「ティアカウ呪術師」の防御力。
+              </li>
+            ) : (
+              <li className="mt-6 w-[560px]">
+              3/1 Update: Fixed multiplier formula to correctly reflect CC options +def and %def priority, units affected: Tiacauh Ritualist
+            </li>
+            )}
+          </ul>
         </div>
       </div>
     </Layout>

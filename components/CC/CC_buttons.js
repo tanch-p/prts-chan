@@ -14,8 +14,7 @@ export default function CC_buttons({
 	let ccConfig = require(`../../cc_config/${mapConfig.config}.json`);
 	const [selected, setSelected] = useState([{}]);
 	const [totalRisk, setTotalRisk] = useState(0);
-	const [toggleRankColor, setToggleRankColor] = useState(false);
-	const [showGrid, setShowGrid] = useState(false);
+
 
 	useEffect(() => {
 		const categoryArr = [];
@@ -197,26 +196,7 @@ export default function CC_buttons({
 				id="CC-container"
 				className={`${mapConfig.ccType === "perma" ? "w-[100vw] md:w-[900px]" : "min-w-min"} ${fontThemes[language]}`}
 			>
-				{mapConfig.ccType === "perma" ? (
-					<div className="w-[100vw] md:w-full flex flex-wrap place-content-end mb-1">
-						<button
-							onClick={() => setShowGrid(!showGrid)}
-							className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg  ${
-								showGrid ? "bg-gray-400" : "border-gray-400"
-							}`}
-						>
-							{language==="jp" ? "グリッド表示" :"Toggle Grids"}
-						</button>
-						<button
-							onClick={() => setToggleRankColor(!toggleRankColor)}
-							className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg  ${
-								toggleRankColor ? "bg-gray-400" : "border-gray-400"
-							}`}
-						>
-							{language==="jp" ? "ランク色表示" :"Toggle Color"}
-						</button>
-					</div>
-				) : null}
+				
 
 				{mapConfig.ccType === "perma" ? (
 					<Perma_buttons
@@ -225,8 +205,6 @@ export default function CC_buttons({
 						toggleOptionColor={toggleOptionColor}
 						getRankColor={getRankColor}
 						language={language}
-						showGrid={showGrid}
-						toggleRankColor={toggleRankColor}
 					/>
 				) : (
 					<Daily_buttons

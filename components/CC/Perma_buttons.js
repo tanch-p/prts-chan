@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Risk_triangle from "./Risk_triangle";
+import { useState } from "react";
 
 export default function Perma_buttons({
   ccConfig,
@@ -7,14 +8,45 @@ export default function Perma_buttons({
   language,
   toggleOptionColor,
   getRankColor,
-  showGrid,
-  toggleRankColor,
 }) {
   const rank = [1, 2, 3];
+
+  const [toggleRankColor, setToggleRankColor] = useState(false);
+  const [showGrid, setShowGrid] = useState(false);
+  const [stickyTable, setStickyTable] = useState(false);
+
   return (
     <>
+      <div className="w-[100vw] md:w-full flex flex-wrap place-content-end mb-1">
+        <button
+          onClick={() => setStickyTable(!stickyTable)}
+          className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg  ${
+            stickyTable ? "bg-gray-400" : "border-gray-400"
+          }`}
+        >
+          {language === "jp" ? "テーブル固定" : "Anchor Table"}
+        </button>
+        <button
+          onClick={() => setShowGrid(!showGrid)}
+          className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg  ${
+            showGrid ? "bg-gray-400" : "border-gray-400"
+          }`}
+        >
+          {language === "jp" ? "グリッド表示" : "Toggle Grids"}
+        </button>
+        <button
+          onClick={() => setToggleRankColor(!toggleRankColor)}
+          className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg  ${
+            toggleRankColor ? "bg-gray-400" : "border-gray-400"
+          }`}
+        >
+          {language === "jp" ? "ランク色表示" : "Toggle Color"}
+        </button>
+      </div>
       <div
-        className={`flex flex-wrap flex-col w-[100vw] md:w-full h-[214px] md:max-w-[900px] overflow-x-scroll overflow-y-hidden select-none relative`}
+        className={`flex flex-wrap flex-col w-[100vw] md:w-full h-[214px] md:max-w-[900px] overflow-x-scroll overflow-y-hidden select-none relative ${
+          stickyTable ? "sticky top-0 z-10" : ""
+        }`}
       >
         <div className="bg-[#545753] lg:sticky left-0 z-10 border-x border-gray-700">
           {rank.map((num) => (
@@ -28,7 +60,9 @@ export default function Perma_buttons({
                 </p>
                 <Risk_triangle risk={num} />
               </div>
-              <span className="text-white text-[50px] mr-[2px] font-normal font-sans">{num}</span>
+              <span className="text-white text-[50px] mr-[2px] font-normal font-sans">
+                {num}
+              </span>
             </div>
           ))}
         </div>
@@ -46,12 +80,7 @@ export default function Perma_buttons({
               {Object.keys(option).includes("img") ? (
                 <button
                   type="button"
-                  onClick={() =>
-                    handleClick(
-                      category,
-                      option
-                    )
-                  }
+                  onClick={() => handleClick(category, option)}
                 >
                   <Image
                     src={`/images/cc_buttons/${option.img}.png`}
