@@ -124,6 +124,7 @@
 							"hp": "%120",
 							"atk": "%75",
 							"def": "%100",
+							"mdef": 20,
 							"special": {
 								"bomb": {
 									"multiplier": "%33",
@@ -145,9 +146,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[W] Max HP +120%, ATK +75%, DEF +100%, Skill damage increased by 33%, ability CD decreased by 67%",
+					"en": "[W] Max HP +120%, ATK +75%, DEF +100%, RES+20 Skill damage increased by 33%, ability CD decreased by 67%",
 					"cn": "",
-					"jp": "「W」のHP+120%、攻撃力+75%、防御力+100%、固有能力のダメージ量が33%上昇しクールタイムが67%短縮"
+					"jp": "「W」のHP+120%、攻撃力+75%、防御力+100%、術耐性+20、スキルの与ダメージ＋33%、クールタイムが67%短縮"
 				}
 			}
 		]
@@ -165,14 +166,14 @@
 						"mods": {
 							"atk": "%30",
 							"aspd": "%30",
-							"range": "%75"
+							"range": "%70"
 						}
 					}
 				],
 				"tooltip": {
-					"en": "Ranged enemy attack range +75%, ATK +30%, ASPD +30",
+					"en": "Ranged enemy attack range +70%, ATK +30%, ASPD +30",
 					"cn": "",
-					"jp": "敵遠距離戦闘員の攻撃範囲+75%、攻撃力+30%、攻撃速度+30"
+					"jp": "敵遠距離戦闘員の攻撃範囲+70%、攻撃力+30%、攻撃速度+30"
 				}
 			}
 		]
