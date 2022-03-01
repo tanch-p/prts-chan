@@ -78,7 +78,7 @@
 		"options": [
 			{
 				"rank": 2,
-				"name": { "jp": "環境：強制転移", "en": "Ranged DP Triple", "cn": "" },
+				"name": { "jp": "制限：過負荷", "en": "Ranged DP Triple", "cn": "" },
 				"img": "第6区跡/char_cost_ranged_2",
 				"effects": [],
 				"tooltip": {

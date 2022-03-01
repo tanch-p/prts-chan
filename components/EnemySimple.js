@@ -219,7 +219,6 @@ export default function EnemySimple({
           specialMods[enemy.id] &&
           specialMods[enemy.id]?.hasOwnProperty(skill.name)
         ) {
-          specialModded = true;
           const specialModMultiplier =
             specialMods[enemy.id][skill.name].multiplier;
           statValue =
@@ -228,6 +227,9 @@ export default function EnemySimple({
                 (skill.multiplier *
                   (1 + parseInt(specialModMultiplier.slice(1)) / 100))
               : base_stat * (skill.multiplier + specialModMultiplier);
+          if (statValue !== base_stat * skill.multiplier) {
+            specialModded = true;
+          }
         } else {
           statValue = base_stat * skill.multiplier;
         }
@@ -239,9 +241,12 @@ export default function EnemySimple({
                 specialModded ? "text-rose-600 font-semibold" : ""
               } `}
             >
-              {Math.ceil(statValue)}
+              {Math.round(statValue)}
             </span>
-            {` (${skill.suffix[language]})`}
+            {` (${
+              specialMods?.[enemy.id]?.[skill.name]?.suffix[language] ??
+              skill.suffix[language]
+            })`}
           </p>
         );
       }
@@ -372,7 +377,7 @@ export default function EnemySimple({
                     ) : stat === "atk" ? (
                       enemy.id !== "MR" ? (
                         [
-                          <p>{`${Math.ceil(statValue)} (${(format ===
+                          <p>{`${Math.round(statValue)} (${(format ===
                             "prisoner" && i === 1
                             ? enemy.release.normal_attack.hits !== 1
                               ? `x ${enemy.release.normal_attack.hits}`
@@ -385,7 +390,7 @@ export default function EnemySimple({
                               ? enemy.release.normal_attack.type[language]
                               : enemy.normal_attack.type[language]
                           )})`}</p>,
-                        ].concat(parseSpecial(enemy, stat, stats, Math.ceil(statValue)))
+                        ].concat(parseSpecial(enemy, stat, stats, statValue))
                       ) : (
                         getAtk(enemy, stats, statValue)
                       )
@@ -402,14 +407,14 @@ export default function EnemySimple({
                       enemy["stats"][stats]["range"] === "0" ? (
                         "0"
                       ) : (
-                        (Math.ceil(statValue * 100) / 100).toFixed(2)
+                        (Math.floor(statValue * 100) / 100).toFixed(2)
                       )
                     ) : stat === "weight" || stat === "aspd" ? (
                       [<p>{statValue}</p>].concat(
                         parseSpecial(enemy, stat, stats, statValue)
                       )
                     ) : (
-                      [<p>{Math.ceil(statValue)}</p>].concat(
+                      [<p>{Math.round(statValue)}</p>].concat(
                         parseSpecial(enemy, stat, stats, statValue)
                       )
                     )}
