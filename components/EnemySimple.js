@@ -239,7 +239,7 @@ export default function EnemySimple({
                 specialModded ? "text-rose-600 font-semibold" : ""
               } `}
             >
-              {Math.floor(statValue)}
+              {Math.ceil(statValue)}
             </span>
             {` (${skill.suffix[language]})`}
           </p>
@@ -300,7 +300,7 @@ export default function EnemySimple({
         for (let i = 1; i < 7; i++) {
           returnArr.push(
             <p>
-              {Math.round(base_stat * (1 + 0.6 * i))} ({i}
+              {Math.ceil(base_stat * (1 + 0.6 * i))} ({i}
               {suffix})
             </p>
           );
@@ -372,7 +372,7 @@ export default function EnemySimple({
                     ) : stat === "atk" ? (
                       enemy.id !== "MR" ? (
                         [
-                          <p>{`${Math.floor(statValue)} (${(format ===
+                          <p>{`${Math.ceil(statValue)} (${(format ===
                             "prisoner" && i === 1
                             ? enemy.release.normal_attack.hits !== 1
                               ? `x ${enemy.release.normal_attack.hits}`
@@ -385,7 +385,7 @@ export default function EnemySimple({
                               ? enemy.release.normal_attack.type[language]
                               : enemy.normal_attack.type[language]
                           )})`}</p>,
-                        ].concat(parseSpecial(enemy, stat, stats, statValue))
+                        ].concat(parseSpecial(enemy, stat, stats, Math.ceil(statValue)))
                       ) : (
                         getAtk(enemy, stats, statValue)
                       )
@@ -402,14 +402,14 @@ export default function EnemySimple({
                       enemy["stats"][stats]["range"] === "0" ? (
                         "0"
                       ) : (
-                        (Math.floor(statValue * 100) / 100).toFixed(2)
+                        (Math.ceil(statValue * 100) / 100).toFixed(2)
                       )
                     ) : stat === "weight" || stat === "aspd" ? (
                       [<p>{statValue}</p>].concat(
                         parseSpecial(enemy, stat, stats, statValue)
                       )
                     ) : (
-                      [<p>{Math.round(statValue)}</p>].concat(
+                      [<p>{Math.ceil(statValue)}</p>].concat(
                         parseSpecial(enemy, stat, stats, statValue)
                       )
                     )}
