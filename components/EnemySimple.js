@@ -244,7 +244,7 @@ export default function EnemySimple({
               {Math.round(statValue)}
             </span>
             {` (${
-              specialMods?.[enemy.id]?.[skill.name]?.suffix[language] ??
+              specialMods?.[enemy.id]?.[skill.name]?.suffix?.[language] ??
               skill.suffix[language]
             })`}
           </p>
