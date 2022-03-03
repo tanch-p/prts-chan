@@ -5,7 +5,7 @@
 			{
 				"rank": 1,
 				"name": {
-					"jp": "特化：待ち伏せⅠ",
+					"jp": "特化：庇護の盾Ⅰ",
 					"en": "Target: Ambush 1",
 					"cn": ""
 				},
@@ -98,7 +98,7 @@
 			{
 				"rank": 2,
 				"name": {
-					"jp": "環境：峻険地形II",
+					"jp": "環境：両側崩落",
 					"en": "Forbidden Grids 2",
 					"cn": ""
 				},
@@ -117,7 +117,7 @@
 		"options": [
 			{
 				"rank": 3,
-				"name": { "jp": "特化：砲撃 3", "en": "Arti 3", "cn": "" },
+				"name": { "jp": "特化：爆撃指令III", "en": "Arti 3", "cn": "" },
 				"img": "放棄された土地/Enemy_emppnt_3",
 				"effects": [
 					{

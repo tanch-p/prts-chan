@@ -173,7 +173,7 @@
 									"fixedInc": 0,
 									"cd": 0.75,
 									"tooltip": {
-										"en": ["Skill→After $20s$ ($4$ attacks' amount of time), next attack's atk power increases to $380%$"],
+										"en": ["Skill→Every $20s$ ($4$ attacks' amount of time), next attack's atk power increases to $380%$"],
 										"jp": [
 											"スキル(強撃)→$20秒$（$4回$攻撃分）後、次の攻撃時、攻撃力が$380%$まで上昇"
 										],

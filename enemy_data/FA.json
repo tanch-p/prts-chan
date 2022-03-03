@@ -124,7 +124,7 @@
           "tooltip": {
             "simple": {
               "en": [
-                "Skill→After 27s (5 attacks' amount of time), next attack's atk power increases to 200%"
+                "Skill→Every 27s (5 attacks' amount of time), next attack's atk power increases to 200%"
               ],
               "jp": [
                 "スキル(強撃)→27秒（5回攻撃分）後、次の攻撃時、攻撃力が200%まで上昇"
