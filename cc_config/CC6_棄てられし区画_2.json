@@ -1,0 +1,175 @@
+[
+  {
+    "category": "lifepoint_1",
+    "options": [
+      {
+        "rank": 1,
+        "name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
+        "img": "放棄された土地/75px-Global_lifepoint_1",
+        "effects": [],
+        "tooltip": {
+          "en": "No enemies escape (Level HP set to 1)",
+          "cn": "",
+          "jp": "防衛ラインの最大耐久値が1に"
+        }
+      }
+    ]
+  },
+  {
+    "category": "enemy_aspd",
+    "options": [
+      {
+        "rank": 1,
+        "name": { "jp": "増幅：ラッシュ", "en": "Enemy ASPD 1", "cn": "" },
+        "img": "放棄された土地/75px-Enemy_attackspeed_1",
+        "effects": [{ "targets": ["ALL"], "mods": { "aspd": "%25" } }],
+        "tooltip": {
+          "en": "Enemy ASPD +25%",
+          "cn": "",
+          "jp": "全ての敵の攻撃速度+25"
+        }
+      }
+    ]
+  },
+
+  {
+    "category": "enemy_def",
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "増幅：装甲I",
+          "en": "Enemy DEF 1",
+          "cn": ""
+        },
+        "img": "放棄された土地/75px-Enemy_def_1",
+        "effects": [{ "targets": ["ALL"], "mods": { "fixed-def": 200 } }],
+        "tooltip": {
+          "en": "Enemy DEF +200",
+          "cn": "",
+          "jp": "全ての敵の防御力+200"
+        }
+      }
+    ]
+  },
+  {
+    "category": "char_hp",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "制限：体力減衰II",
+          "en": "Reduced Ally HP 2",
+          "cn": ""
+        },
+        "img": "放棄された土地/75px-Char_hp_2",
+        "effects": [],
+        "tooltip": {
+          "en": "Ally HP -35%",
+          "cn": "",
+          "jp": "全ての味方の最大HP-35%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "cost_regen",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "指令：孤軍奮闘II",
+          "en": "DP Down 2",
+          "cn": ""
+        },
+        "img": "放棄された土地/75px-Global_costrecovery_2",
+        "effects": [],
+        "tooltip": {
+          "en": "DP Regeneration reduced by 50%",
+          "cn": "",
+          "jp": "コストの自然回復速度-50%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "grids",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "環境：中央崩落",
+          "en": "Center Obstruction",
+          "cn": ""
+        },
+        "img": "放棄された土地/Global_forbidloc_bmod_2",
+        "effects": [],
+        "tooltip": {
+          "en": "8 grids in the center forbid deployment",
+          "cn": "",
+          "jp": "マップ上の8つのマスが配置不可"
+        }
+      }
+    ]
+  },
+  {
+    "category": "shield_guard",
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "特化：庇護の盾 III",
+          "en": "Ambush Tactics III",
+          "cn": ""
+        },
+        "img": "放棄された土地/Enemy_sotisd_3",
+        "effects": [
+          {
+            "targets": ["SP0"],
+            "mods": {
+              "hp": "%50",
+              "mdef": 20,
+              "special": {
+                "count": 2
+              }
+            }
+          }
+        ],
+        "tooltip": {
+          "en": "All <Guerilla Shieldguard> have +50% Max HP, +20 Res. Additional two <Guerilla Shieldguard> appears on map.",
+          "cn": "",
+          "jp": "「遊撃隊盾兵」のHP+50%、術耐性+20、さらに2体の「遊撃隊盾兵」が出現"
+        }
+      }
+    ]
+  },
+  {
+    "category": "drone_monster",
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "特化：エンジン改良III",
+          "en": "Engine Reform III",
+          "cn": ""
+        },
+        "img": "放棄された土地/Enemy_yokai_3",
+        "effects": [
+          {
+            "targets": ["D2"],
+            "mods": {
+              "hp": "%100",
+              "atk": "%100",
+              "ms": "%100"
+            }
+          }
+        ],
+        "tooltip": {
+          "en": "[Monster Mk2]'s movespeed +100%, Max HP +100%, ATK +10%",
+          "cn": "",
+          "jp": "「怪鳥Mk2」の移動速度+100%、HP+100%、攻撃力+100%"
+        }
+      }
+    ]
+  }
+]

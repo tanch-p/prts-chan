@@ -15,6 +15,17 @@
       "ms": "1",
       "special": [
         {
+          "name": "stealth",
+          "type": "others",
+          "tooltip": {
+            "simple": {
+              "en": ["Stealth"],
+              "jp": ["ステルス"],
+              "cn": []
+            }
+          }
+        },
+        {
           "name": "anti-stealth",
           "type": "others",
           "tooltip": {
