@@ -1,0 +1,191 @@
+[
+  {
+    "category": "lifepoint_1",
+    "options": [
+      {
+        "rank": 1,
+        "name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
+        "img": "無秩序な鉱区/75px-Global_lifepoint_1",
+        "effects": [],
+        "tooltip": {
+          "en": "No enemies escape (Level HP set to 1)",
+          "cn": "",
+          "jp": "防衛ラインの最大耐久値が1に"
+        }
+      }
+    ]
+  },
+  {
+    "category": "enemy_ms",
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "増幅：機動力I",
+          "en": "Increased Enemy Movement Speed 1",
+          "cn": ""
+        },
+        "img": "無秩序な鉱区/75px-Enemy_movespeed_1",
+        "effects": [{ "targets": ["ALL"], "mods": { "ms": "%25" } }],
+        "tooltip": {
+          "en": "Enemies movement speed +25%",
+          "cn": "",
+          "jp": "全ての敵の移動速度+25%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "char_def",
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "制限：装甲減衰I",
+          "en": "Reduced Ally DEF 1",
+          "cn": ""
+        },
+        "img": "無秩序な鉱区/75px-Char_def_1",
+        "effects": [],
+        "tooltip": {
+          "en": "All allies’ DEF -30%",
+          "cn": "",
+          "jp": "全ての味方の防御力-30%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "enemy_atk",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "増幅：火力II",
+          "en": "Increase Enemy ATK 2",
+          "cn": ""
+        },
+        "img": "無秩序な鉱区/75px-Enemy_atk_2",
+        "effects": [{ "targets": ["ALL"], "mods": { "atk": "%40" } }],
+        "tooltip": {
+          "en": "All enemies ATK +40%",
+          "cn": "",
+          "jp": "全ての敵の攻撃力+40%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "cost_regen",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "指令：孤軍奮闘II",
+          "en": "DP Down 2",
+          "cn": ""
+        },
+        "img": "無秩序な鉱区/75px-Global_costrecovery_2",
+        "effects": [],
+        "tooltip": {
+          "en": "DP Regeneration reduced by 60%",
+          "cn": "",
+          "jp": "コストの自然回復速度-60%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "squad",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "環境：少数精鋭II",
+          "en": "Max Squad Size 2",
+          "cn": ""
+        },
+        "img": "無秩序な鉱区/75px-Global_pcharnum_2",
+        "effects": [],
+        "tooltip": {
+          "en": "Maximum 7 operators in squad",
+          "cn": "",
+          "jp": "編成可能数が7人に"
+        }
+      }
+    ]
+  },
+  {
+    "category": "MR_BB",
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "特化：鎧付加III",
+          "en": "BobRock 3",
+          "cn": ""
+        },
+        "img": "無秩序な鉱区/75px-Enemy_bigbomdrock_3",
+        "effects": [
+          {
+            "targets": ["MR"],
+            "mods": {
+              "hp": "%100",
+              "atk": "%90",
+              "mdef": 45,
+              "special": {
+                "mudrock_shield": {
+                  "tooltip": {
+                    "en": [
+                      "Skill→Every $10.5$s creates shield which absorbs up to $33000$ Arts damage",
+                      "Shield Active: Max HP+50%、ASPD+50%"
+                    ],
+                    "jp": [
+                      "スキル→$10.5秒$毎にシールドを張り、合計$33000$の術攻撃を吸収する",
+                      "シールド展開中：最大HP+50%、攻撃速度+50%"
+                    ],
+                    "cn": []
+                  }
+                }
+              }
+            }
+          },
+          {
+            "targets": ["11"],
+            "mods": {
+              "hp": "%100",
+              "atk": "%90",
+              "def": "%100",
+              "mdef": 45
+            }
+          }
+        ],
+        "tooltip": {
+          "en": "[Big Bob] and [Mudrock] ATK +90%, Max HP +100%, RES +45. [Big Bob] DEF +100%, [Mudrock] shield +100% and shield cooldown reduced to 70% of original value.",
+          "cn": "",
+          "jp": "「Big Bob」と「Mudrock」の攻撃力+90%、最大HP+100%、術耐性+45、「Big Bob」の防御力をさらに+100%、「Mudrock」のシールドの耐久値+100%、クールダウンが70％までに短縮"
+        }
+      }
+    ]
+  },
+  {
+    "category": "char_atk",
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "制限：火力減衰III",
+          "en": "Reduced Ally ATK 3",
+          "cn": ""
+        },
+        "img": "無秩序な鉱区/75px-Char_atk_3",
+        "effects": [],
+        "tooltip": {
+          "en": "All allies’ ATK -50%",
+          "cn": "",
+          "jp": "全ての味方の攻撃力-50%"
+        }
+      }
+    ]
+  }
+]

@@ -85,7 +85,7 @@ export default function Home({ allStagesData }) {
           <div className="border border-collapse border-gray-400 h-[25px] w-full md:w-[80px] text-base">
             {`3/${i + 1}`}
           </div>
-          {i > 9 ? (
+          {i > 11 ? (
             <div
               className={`border border-collapse border-gray-400 ${
                 language === "jp" ? "text-sm" : "text-xs"
