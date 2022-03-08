@@ -1,0 +1,169 @@
+[
+  {
+    "category": "enemy_def",
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "増幅：装甲I",
+          "en": "Increased Enemy DEF",
+          "cn": ""
+        },
+        "img": "風蝕の高原/75px-Enemy_def_1",
+        "effects": [{ "targets": ["ALL"], "mods": { "fixed-def": 150 } }],
+        "tooltip": {
+          "en": "Enemy DEF +150",
+          "cn": "",
+          "jp": "全ての敵の防御力+150"
+        }
+      }
+    ]
+  },
+  {
+    "category": "char_atk",
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "制限：無力化I",
+          "en": "Reduced Ally ATK and ASPD 1",
+          "cn": ""
+        },
+        "img": "風蝕の高原/75px-Char_atkatkspeed_1",
+        "effects": [],
+        "tooltip": {
+          "en": "All allies’ ATK -10%, ASPD -10",
+          "cn": "",
+          "jp": "全ての味方の攻撃力-10%、攻撃速度-10"
+        }
+      }
+    ]
+  },
+  {
+    "category": "lifepoint_1",
+    "options": [
+      {
+        "rank": 1,
+        "name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
+        "img": "風蝕の高原/75px-Global_lifepoint_1",
+        "effects": [],
+        "tooltip": {
+          "en": "No enemies escape (Level HP set to 1)",
+          "cn": "",
+          "jp": "防衛ラインの最大耐久値が1に"
+        }
+      }
+    ]
+  },
+  {
+    "category": "cost_regen",
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "指令：孤軍奮闘I",
+          "en": "DP Down 1",
+          "cn": ""
+        },
+        "img": "風蝕の高原/75px-Global_costrecovery_1",
+        "effects": [],
+        "tooltip": {
+          "en": "DP Regeneration reduced by 25%",
+          "cn": "",
+          "jp": "コストの自然回復速度-25%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "enemy_atk",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "増幅：火力II",
+          "en": "Increase Enemy ATK 2",
+          "cn": ""
+        },
+        "img": "風蝕の高原/75px-Enemy_atk_2",
+        "effects": [{ "targets": ["ALL"], "mods": { "atk": "%45" } }],
+        "tooltip": {
+          "en": "All enemies ATK +45%",
+          "cn": "",
+          "jp": "全ての敵の攻撃力+45%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "enemy_aspd",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "増幅：ラッシュII",
+          "en": "Increase Enemy ASPD 2",
+          "cn": ""
+        },
+        "img": "風蝕の高原/75px-Enemy_attackspeed_2",
+        "effects": [{ "targets": ["ALL"], "mods": { "aspd": "%50" } }],
+        "tooltip": {
+          "en": "All enemies ASPD +50%",
+          "cn": "",
+          "jp": "全ての敵の攻撃速度+50"
+        }
+      }
+    ]
+  },
+  {
+    "category": "sarkaz_sword",
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "特化：一日千秋III",
+          "en": "Sarkaz Swordsman 3",
+          "cn": ""
+        },
+        "img": "風蝕の高原/75px-Enemy_dmgswd_3",
+        "effects": [
+          {
+            "targets": ["S15"],
+            "mods": {
+              "def": "%80",
+              "hp": "%80",
+              "aspd": "%80",
+              "ms": "%50"
+            }
+          }
+        ],
+        "tooltip": {
+          "en": "All [Sarkaz Bladeweaver] Max HP +80%, ASPD +80, DEF +80%, movement speed +50%, idle state timer decreased to 60s",
+          "cn": "",
+          "jp": "「サルカズ魔剣士」の最大HP+80%、攻撃速度+80、防御力+80%、移動速度+50%、待機時間が60秒まで短縮"
+        }
+      }
+    ]
+  },
+
+  {
+    "category": "enemy_hp",
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "増幅：体力III",
+          "en": "Enemy HP 3",
+          "cn": ""
+        },
+        "img": "風蝕の高原/75px-Enemy_hp_3",
+        "effects": [{ "targets": ["ALL"], "mods": { "hp": "%120" } }],
+        "tooltip": {
+          "en": "Enemies Max HP +120%",
+          "cn": "",
+          "jp": "全ての敵の最大HP+120%"
+        }
+      }
+    ]
+  }
+]
