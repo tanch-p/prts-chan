@@ -1,0 +1,200 @@
+[
+  {
+    "category": "operator_cost",
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "特化：縦深攻撃",
+          "en": "Sniper and Guard 1",
+          "cn": ""
+        },
+        "img": "閉鎖監獄/75px-Char_cost_sniperguard_1",
+        "effects": [],
+        "tooltip": {
+          "en": "DP Cost of Snipers and Guards doubled",
+          "cn": "",
+          "jp": "狙撃・前衛の配置コストが2倍"
+        }
+      }
+    ]
+  },
+  {
+    "category": "enemy_res_1",
+    "options": [
+      {
+        "rank": 1,
+        "name": { "jp": "増幅：法術阻害", "en": "Enemy RES 1", "cn": "" },
+        "img": "閉鎖監獄/75px-Enemy_magicresistance_1",
+        "effects": [{ "targets": ["ALL"], "mods": { "mdef": 20 } }],
+        "tooltip": {
+          "en": "All enemies RES +20",
+          "cn": "",
+          "jp": "全ての敵の術耐性+20"
+        }
+      }
+    ]
+  },
+  {
+    "category": "enemy_ms",
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "増幅：機動力I",
+          "en": "Increased Enemy Movement Speed 1",
+          "cn": ""
+        },
+        "img": "閉鎖監獄/75px-Enemy_movespeed_1",
+        "effects": [{ "targets": ["ALL"], "mods": { "ms": "%50" } }],
+        "tooltip": {
+          "en": "Enemies movement speed +50%",
+          "cn": "",
+          "jp": "全ての敵の移動速度+50%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "char_def",
+    "options": [
+      {
+        "rank": 1,
+        "name": {
+          "jp": "制限：装甲減衰I",
+          "en": "Ally DEF 1",
+          "cn": ""
+        },
+        "img": "閉鎖監獄/75px-Char_def_1",
+        "effects": [],
+        "tooltip": {
+          "en": "Allies DEF -30%",
+          "cn": "",
+          "jp": "全ての味方の防御力-30%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "stealth_ops",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "特化：隠密行動I",
+          "en": "Stealth 1",
+          "cn": ""
+        },
+        "img": "閉鎖監獄/75px-Enemy_invisible_2",
+        "effects": [
+          {
+            "targets": ["C22", "C21"],
+            "mods": {
+              "special": {
+                "imprisoned": {
+                  "extra": {
+                    "tooltip": {
+                      "en": ["$Stealth$"],
+                      "jp": ["$ステルス$"],
+                      "cn": ""
+                    }
+                  }
+                },
+                "release": {
+                  "extra": {
+                    "tooltip": {
+                      "en": ["$Stealth$"],
+                      "jp": ["$ステルス$"],
+                      "cn": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "tooltip": {
+          "en": "Infamous Recidivist, Recidivist gains stealth",
+          "cn": "",
+          "jp": "「凶悪犯」「伝説の凶悪犯」がステルス状態を獲得"
+        }
+      }
+    ]
+  },
+  {
+    "category": "enemy_hp",
+    "options": [
+      {
+        "rank": 2,
+        "name": { "jp": "増幅：体力II", "en": "Enemy HP 2", "cn": "" },
+        "img": "閉鎖監獄/75px-Enemy_hp_2",
+        "effects": [{ "targets": ["ALL"], "mods": { "hp": "%70" } }],
+        "tooltip": {
+          "en": "Enemies Max HP +70%",
+          "cn": "",
+          "jp": "全ての敵の最大HP+70%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "operator_cost",
+    "options": [
+      {
+        "rank": 2,
+        "name": {
+          "jp": "特化：縦深攻撃",
+          "en": "Sniper and Guard 2",
+          "cn": ""
+        },
+        "img": "閉鎖監獄/75px-Char_cost_sniperguard_2",
+        "effects": [],
+        "tooltip": {
+          "en": "DP Cost of Snipers and Guards tripled and redeployment time +50%",
+          "cn": "",
+          "jp": "狙撃・前衛の配置コストが3倍、再配置時間+50%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "char_atk",
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "制限：火力減衰III",
+          "en": "Reduced Ally ATK 3",
+          "cn": ""
+        },
+        "img": "閉鎖監獄/75px-Char_atk_3",
+        "effects": [],
+        "tooltip": {
+          "en": "All allies’ ATK -50%",
+          "cn": "",
+          "jp": "全ての味方の攻撃力-50%"
+        }
+      }
+    ]
+  },
+  {
+    "category": "grids",
+    "options": [
+      {
+        "rank": 3,
+        "name": {
+          "jp": "環境：峻険地形III",
+          "en": "Forbidden Grids 3",
+          "cn": ""
+        },
+        "img": "風蝕の高原/75px-Global_forbidloc_3",
+        "effects": [],
+        "tooltip": {
+          "en": "14 grids forbid deployment",
+          "cn": "",
+          "jp": "マップ上の14つのマスが配置不可に"
+        }
+      }
+    ]
+  }
+]
