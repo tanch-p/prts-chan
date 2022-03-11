@@ -74,11 +74,11 @@
           "tooltip": {
             "simple": {
               "en": [
-                "Skill→Every 15s creates shield which absorbs up to 16500 Arts damage",
+                "Skill→Every 90s creates shield which absorbs up to 15000 Arts damage",
                 "Shield Active: Max HP+50%、ASPD+50%"
               ],
               "jp": [
-                "スキル→15秒毎にシールドを張り、合計16500の術攻撃を吸収する",
+                "スキル→90秒毎にシールドを張り、合計15000の術攻撃を吸収する",
                 "シールド展開中：最大HP+50%、攻撃速度+50%"
               ],
               "cn": []

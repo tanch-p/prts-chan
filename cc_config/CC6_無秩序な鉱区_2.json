@@ -137,11 +137,11 @@
                 "mudrock_shield": {
                   "tooltip": {
                     "en": [
-                      "Skill→Every $10.5$s creates shield which absorbs up to $33000$ Arts damage",
+                      "Skill→Every $63s$ creates shield which absorbs up to $30000$ Arts damage",
                       "Shield Active: Max HP+50%、ASPD+50%"
                     ],
                     "jp": [
-                      "スキル→$10.5秒$毎にシールドを張り、合計$33000$の術攻撃を吸収する",
+                      "スキル→$63秒$毎にシールドを張り、合計$30000$の術攻撃を吸収する",
                       "シールド展開中：最大HP+50%、攻撃速度+50%"
                     ],
                     "cn": []
