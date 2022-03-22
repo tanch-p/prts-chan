@@ -1,11 +1,11 @@
-import Layout from "../../components/layout";
-import { getAllStageIds, getStageData } from "../../lib/stages";
+import Layout from "../../../components/layout";
+import { getAllStageIds, getStageData } from "../../../lib/stages";
 import Head from "next/head";
-import Map from "../../components/Map";
-import EnemySimple from "../../components/EnemySimple";
-import CC_buttons from "../../components/CC/CC_buttons";
+import Map from "../../../components/Map";
+import EnemySimple from "../../../components/EnemySimple";
+import CC_buttons from "../../../components/CC/CC_buttons";
 import { useState } from "react";
-import AppContext from "../../components/AppContext";
+import AppContext from "../../../components/AppContext";
 import { useContext } from "react";
 
 export async function getStaticProps({ params }) {

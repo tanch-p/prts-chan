@@ -1,13 +1,13 @@
 {
-  "name": "1-7",
-  "img": "1-7",
-  "enemies": [],
-  "temp": [
-    { "id": "01", "count": 7, "stats": "level0" },
-    { "id": "B2", "count": 23, "stats": "level0" },
-    { "id": "17", "count": 4, "stats": "level0" },
-    { "id": "19", "count": 4, "stats": "level0" },
-    { "id": "A9", "count": 1, "stats": "level0" },
-    { "id": "21", "count": 2, "stats": "level0" }
-  ]
+	"name": "1-7",
+	"img": "1-7",
+	"enemies": [{ "id": "17", "count": 4, "stats": "level0" }],
+	"temp": [
+		{ "id": "01", "count": 7, "stats": "level0" },
+		{ "id": "B2", "count": 23, "stats": "level0" },
+
+		{ "id": "19", "count": 4, "stats": "level0" },
+		{ "id": "A9", "count": 1, "stats": "level0" },
+		{ "id": "21", "count": 2, "stats": "level0" }
+	]
 }

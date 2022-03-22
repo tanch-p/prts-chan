@@ -94,7 +94,7 @@ export default function Home({ allStagesData }) {
 							<p className="">{dailyStages[i]}</p>
 						</div>
 					) : (
-						<Link href={`/stages/${links[i]}`}>
+						<Link href={`/stages/cc/${links[i]}`}>
 							<div
 								className={`border border-collapse border-gray-400 ${
 									language === "jp" ? "text-sm" : "text-xs"
@@ -144,7 +144,7 @@ export default function Home({ allStagesData }) {
 						<tr className="border border-collapse border-gray-400 py-1">
 							<th> {language === "jp" ? "常設ステージ" : "Permanent Stage"}</th>
 						</tr>
-						<Link href={`/stages/cc6-perma`}>
+						<Link href={`/stages/cc/cc6-perma`}>
 							<div className="border border-collapse py-2 border-gray-400 text-base hover:cursor-pointer hover:bg-gray-300 underline text-blue-700">
 								{language === "jp" ? "狂風の砂原" : "Howling Desert"}
 							</div>

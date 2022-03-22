@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getRemarks } from "./getStats";
 import { useState, useEffect } from "react";
+import {parseType} from "./parseType"
 
 export default function EnemySimple({
   mapConfig,
@@ -77,13 +78,13 @@ export default function EnemySimple({
           totalMultiplier += multiplier?.[enemy.id]?.aspd - 1;
         }
         if (
-          enemy.type.en.includes("Melee") &&
+          enemy.type.includes("Melee") &&
           multiplier.hasOwnProperty("Melee")
         ) {
           totalMultiplier += multiplier?.Melee?.aspd - 1;
         }
         if (
-          enemy.type.en.includes("Ranged") &&
+          enemy.type.includes("Ranged") &&
           multiplier.hasOwnProperty("Ranged")
         ) {
           totalMultiplier += multiplier?.Ranged?.aspd - 1;
@@ -121,13 +122,13 @@ export default function EnemySimple({
       case "weight":
         let fixedIncValue = 0;
         if (
-          enemy.type.en.includes("Melee") &&
+          enemy.type.includes("Melee") &&
           multiplier.hasOwnProperty("Melee")
         ) {
           fixedIncValue += multiplier.Melee[stat];
         }
         if (
-          enemy.type.en.includes("Ranged") &&
+          enemy.type.includes("Ranged") &&
           multiplier.hasOwnProperty("Ranged")
         ) {
           fixedIncValue += multiplier.Ranged[stat];
@@ -148,9 +149,9 @@ export default function EnemySimple({
             (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0)) *
           (multiplier?.["ALL"]?.[stat] ?? 1) *
           (multiplier?.[enemy.id]?.[stat] ?? 1) *
-          (enemy.type.en.includes("Melee")
+          (enemy.type.includes("Melee")
             ? multiplier?.Melee?.[stat] ?? 1
-            : enemy.type.en.includes("Ranged")
+            : enemy.type.includes("Ranged")
             ? multiplier?.Ranged?.[stat] ?? 1
             : 1);
         if (enemy.format === "prisoner") {
@@ -373,7 +374,7 @@ export default function EnemySimple({
                     ) : stat === "count" ? (
                       <p>{count + (specialMods?.[enemy.id]?.count ?? 0)}</p>
                     ) : stat === "type" ? (
-                      enemy["type"][language].map((type) => <p>{type}</p>)
+                      parseType(enemy["type"],language)
                     ) : stat === "atk" ? (
                       enemy.id !== "MR" ? (
                         [

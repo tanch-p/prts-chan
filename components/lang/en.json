@@ -1,5 +1,30 @@
 {
     "index":{
-        "stages":"stages"
+        "stages":"ステージ"
+    },
+    "enemy_stats":{
+        "HP":"HP",
+        "atk":"atk",
+        "def":"def",
+        "mdef":"res",
+        "aspd":"aspd",
+        "range":"range",
+        "weight":"weight",
+        "type":"type",
+        "ms":"ms"
+    },
+    "type":{
+        "melee":"Melee",
+        "ranged":"Ranged",
+        "flying":"Flying",
+        "firewatch's_list":"On Firewatch's List",
+        "not_firewatch's_list":"Not on Firewatch's List",
+        "boss":"Boss",
+        "infected_creature":"Infected Creature",
+        "arts_creation":"Arts Creation",
+        "drone":"Drone",
+        "sarkaz":"Sarkaz",
+        "sea_monster":"Sea Monster",
+        "possessed":"Possessed"
     }
 }

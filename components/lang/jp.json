@@ -3,7 +3,6 @@
         "stages":"ステージ"
     },
     "enemy_stats":{
-        "atk_type":"攻撃方法",
         "HP":"HP",
         "atk":"攻撃力",
         "def":"防御力",
@@ -14,5 +13,19 @@
         "weight":"重量",
         "type":"属性",
         "ms":"移動速度"
+    },
+    "type":{
+        "melee":"近距離",
+        "ranged":"遠距離",
+        "flying":"飛行",
+        "firewatch's_list":"暗殺対象",
+        "not_firewatch's_list":"暗殺対象外",
+        "boss":"ボス",
+        "infected_creature":"感染生物",
+        "arts_creation":"アーツ造物",
+        "drone":"ドローン",
+        "sarkaz":"サルカズ",
+        "sea_monster":"海の怪物",
+        "possessed":"寄生"
     }
 }
