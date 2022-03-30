@@ -15,17 +15,17 @@
         "ms":"移動速度"
     },
     "type":{
-        "melee":"近距離",
-        "ranged":"遠距離",
-        "flying":"飛行",
-        "firewatch's_list":"暗殺対象",
-        "not_firewatch's_list":"暗殺対象外",
-        "boss":"ボス",
-        "infected_creature":"感染生物",
-        "arts_creation":"アーツ造物",
-        "drone":"ドローン",
-        "sarkaz":"サルカズ",
-        "sea_monster":"海の怪物",
-        "possessed":"寄生"
+        "melee":{"name":"近距離","ops":[]},
+        "ranged":{"name":"遠距離","ops":[]},
+        "flying":{"name":"飛行","ops":[]},
+        "firewatch's_list":{"name":"暗殺対象","ops":[]},
+        "not_firewatch's_list":{"name":"暗殺対象外","ops":[]},
+        "boss":{"name":"ボス","ops":[]},
+        "infected_creature":{"name":"感染生物","ops":[]},
+        "arts_creation":{"name":"アーツ造物","ops":[]},
+        "drone":{"name":"ドローン","ops":[]},
+        "sarkaz":{"name":"サルカズ","ops":[]},
+        "sea_monster":{"name":"海の怪物","ops":[]},
+        "possessed":{"name":"寄生","ops":[]}
     }
 }
