@@ -1,0 +1,13 @@
+{
+  "name": {"en":"Howling Desert","jp":"狂風の砂原","cn":"狂嚎沙原"},
+  "img": "狂嚎沙原",
+  "config":"cc6-perma",
+  "ccType": "perma",
+  "enemies": [
+    { "id": "DSK", "count": 24, "stats": "level0" },
+    { "id": "SF13", "count": 6, "stats": "level0" },
+    { "id": "SF11", "count": 3, "stats": "level0" },
+    { "id": "SF09", "count": 5, "stats": "level0" },
+    { "id": "SF03", "count": 2, "stats": "level0" }
+  ]
+}

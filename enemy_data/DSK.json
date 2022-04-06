@@ -1,35 +1,62 @@
 {
-    "id": "DSK",
-    "name_en": "Free'",
-    "name_jp": "「ジザイ」",
-    "name_cn": "“自在”",
-    "atk_type_jp": "術",
-    "hp": "30000",
-    "atk": "500",
-    "def": "750",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "2.5",
-    "HP回復速度": "0",
-    "weight": "10",
-    "スタン耐性": "有",
-    "眠り耐性": "有",
-    "凍結耐性": "",
-    "ms": "0.5",
-    "type_jp": [
-        "遠距離",
-        "ボス"
-    ],
-    "type_en": [
-        "Ranged",
-        "Boss"
-    ],
-    "type_cn": [
-        "远程",
-        "领袖"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "DSK",
+	"name": { "en": "'Free'", "jp": "「ジザイ」", "cn": "“自在”" },
+	"stats": {
+		"level0": {
+			"hp": "30000",
+			"atk": "500",
+			"def": "750",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.5",
+			"HP回復速度": "0",
+			"weight": "10",
+			"ms": "0.5",
+			"special": [
+				{
+					"name": "破桎而出",
+					"type": "atk",
+					"suffix": { "en": "Barrier", "jp": "桎梏打破", "cn": "破桎而出" },
+					"multiplier": 6,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Skill→",
+								""
+							],
+							"jp": [
+								"スキル→",
+								""
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"灰齐山麓": {
+			"hp": "25000",
+			"atk": "500",
+			"def": "650",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.5",
+			"HP回復速度": "0",
+			"weight": "10",
+			"ms": "0.5",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
+		"hits": 1
+	},
+	"スタン耐性": "有",
+	"眠り耐性": "有",
+	"凍結耐性": "有",
+	"type": ["Ranged", "Boss"]
 }
