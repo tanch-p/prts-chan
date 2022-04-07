@@ -26,5 +26,8 @@
     "sarkaz": { "name": "Sarkaz", "ops": [] },
     "sea_monster": { "name": "Sea Monster", "ops": [] },
     "possessed": { "name": "Possessed", "ops": [] }
+  },
+  "status":{
+    "stun":{}
   }
 }

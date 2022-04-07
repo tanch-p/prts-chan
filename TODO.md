@@ -3,7 +3,7 @@
 ### Priorities
  - index page
  - separate mobs in enemy simple
- - detailed view
+ - drawer
 
 
 - Header
