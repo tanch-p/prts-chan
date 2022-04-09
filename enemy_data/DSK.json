@@ -1,6 +1,7 @@
 {
 	"id": "DSK",
 	"name": { "en": "'Free'", "jp": "「ジザイ」", "cn": "“自在”" },
+	"format": "multiform",
 	"stats": {
 		"level0": {
 			"hp": "30000",
@@ -23,14 +24,8 @@
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": [
-								"Skill→",
-								""
-							],
-							"jp": [
-								"スキル→",
-								""
-							],
+							"en": ["Skill→", ""],
+							"jp": ["スキル→", ""],
 							"cn": []
 						}
 					}

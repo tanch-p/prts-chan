@@ -1,0 +1,43 @@
+{
+	"index": {
+		"stages": "ステージ"
+	},
+	"enemy_stats": {
+		"HP": "HP",
+		"atk": "攻撃力",
+		"def": "防御力",
+		"mdef": "術耐性",
+		"aspd": "攻撃間隔",
+		"range": "攻撃半径",
+		"hp_recv": "HP回復速度",
+		"weight": "重量",
+		"type": "属性",
+		"ms": "移動速度"
+	},
+	"type": {
+		"melee": { "name": "近距離", "ops": [] },
+		"ranged": {
+			"name": "遠距離",
+			"ops": [{ "攻撃力アップ：": ["「ファイヤーウォッチ」素質"] }],
+			"text": ""
+		},
+		"flying": { "name": "飛行", "ops": [], "text": "" },
+		"firewatch's_list": {
+			"name": "暗殺対象",
+			"ops": [],
+			"text": "遠距離攻撃しないが「ファイヤーウォッチ」の素質対象"
+		},
+		"not_firewatch's_list": {
+			"name": "暗殺対象外",
+			"ops": [],
+			"text": "「ファイヤーウォッチ」の素質対象外"
+		},
+		"boss": { "name": "ボス", "ops": [] },
+		"infected_creature": { "name": "感染生物", "ops": [], "text": "" },
+		"arts_creation": { "name": "アーツ造物", "ops": [] },
+		"drone": { "name": "ドローン", "ops": [], "text": "" },
+		"sarkaz": { "name": "サルカズ", "ops": [], "text": "" },
+		"sea_monster": { "name": "海の怪物", "ops": [] },
+		"possessed": { "name": "寄生", "ops": [], "text": "" }
+	}
+}
