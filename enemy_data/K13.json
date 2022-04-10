@@ -1,90 +1,88 @@
 {
-  "id": "K13",
-  "name": {
-    "en": "Bladehelm Knightclub Trainee",
-    "jp": "ブレードヘルム見習い騎士",
-    "cn": "锋盔骑士团学徒"
-  },
-  "stats": {
-    "level0": {
-      "hp": "10000",
-      "atk": "550",
-      "def": "700",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "2.5",
-      "range": "1.3",
-      "HP回復速度": "0",
-      "weight": "3",
-      "ms": "0.75",
-      "special": [
-        {
-          "name": "left_hand",
-          "type": "debuff",
-          "tooltip": {
-            "simple": {
-              "en": [
-                "Skill→Applies -50% Atk debuff to operator with highest attack stat, CD25s"
-              ],
-              "jp": [
-                "スキル→最も攻撃力が高い味方の攻撃力を25秒50％減少する",
-                "CD:25秒"
-              ],
-              "cn": []
-            },
-            "detailed": {
-              "en": [],
-              "jp": [],
-              "cn": []
-            }
-          }
-        }
-      ]
-    },
-    "8号競技場": {
-      "hp": "8000",
-      "atk": "450",
-      "def": "550",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "2.8",
-      "range": "1.3",
-      "HP回復速度": "0",
-      "weight": "3",
-      "ms": "0.75",
-      "special": [
-        {
-          "name": "left_hand",
-          "type": "debuff",
-          "tooltip": {
-            "simple": {
-              "en": ["Skill→Applies -50% Atk debuff to operator with highest attack stat, CD25s"],
-              "jp": [
-                "スキル→最も攻撃力が高い味方の攻撃力を25秒50％減少する",
-                "CD:25秒"
-              ],
-              "cn": []
-            },
-            "detailed": {
-              "en": [],
-              "jp": [],
-              "cn": []
-            }
-          }
-        }
-      ]
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": {
-    "jp": ["遠距離"],
-    "en": ["Ranged"],
-    "cn": ["远程"]
-  }
+	"id": "K13",
+	"name": {
+		"en": "Bladehelm Knightclub Trainee",
+		"jp": "ブレードヘルム見習い騎士",
+		"cn": "锋盔骑士团学徒"
+	},
+	"stats": {
+		"level0": {
+			"hp": "10000",
+			"atk": "550",
+			"def": "700",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2.5",
+			"range": "1.3",
+			"HP回復速度": "0",
+			"weight": "3",
+			"ms": "0.75",
+			"special": [
+				{
+					"name": "left_hand",
+					"type": "debuff",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Skill→Applies -50% Atk debuff to operator with highest attack stat, CD25s"
+							],
+							"jp": [
+								"スキル→最も攻撃力が高い味方の攻撃力を25秒50％減少する",
+								"CD:25秒"
+							],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"8号競技場": {
+			"hp": "8000",
+			"atk": "450",
+			"def": "550",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2.8",
+			"range": "1.3",
+			"HP回復速度": "0",
+			"weight": "3",
+			"ms": "0.75",
+			"special": [
+				{
+					"name": "left_hand",
+					"type": "debuff",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Skill→Applies -50% Atk debuff to operator with highest attack stat, CD25s"
+							],
+							"jp": [
+								"スキル→最も攻撃力が高い味方の攻撃力を25秒50％減少する",
+								"CD:25秒"
+							],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged"]
 }

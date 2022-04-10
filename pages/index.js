@@ -24,7 +24,7 @@ export async function getStaticProps() {
 export default function Home({ allStagesData }) {
 	const { languageContext, device } = useContext(AppContext);
 	const [language] = languageContext;
-	const langPack = require(`../components/lang/${language}.json`);
+	const langPack = require(`../lang/${language}.json`);
 	const firstCCDate = dayjs("3/1");
 	const dailyStages =
 		language === "en"

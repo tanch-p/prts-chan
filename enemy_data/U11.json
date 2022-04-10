@@ -45,9 +45,5 @@
   "スタン耐性": "無",
   "眠り耐性": "無",
   "凍結耐性": "無",
-  "type": {
-    "jp": ["暗殺対象外", "飛行", "ドローン"],
-    "en": ["Not on Firewatch's List", "Flying", "Drone"],
-    "cn": ["非暗杀目标", "飞行", "无人机"]
-  }
+  "type": ["not_firewatch's_list", "flying", "drone"]  
 }

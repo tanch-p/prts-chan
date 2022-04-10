@@ -14,18 +14,67 @@
 		"ms": "ms"
 	},
 	"type": {
-		"melee": { "name": "Melee", "ops": [], "text": "" },
-		"ranged": { "name": "Ranged", "ops": ["Firewatch: Talent"] },
-		"flying": { "name": "Flying", "ops": [] },
-		"firewatch's_list": { "name": "On Firewatch's List", "ops": [], "text": "Doesn't do ranged attacks but is target of Firewatch's Talent" },
-		"not_firewatch's_list": { "name": "Not on Firewatch's List", "ops": [], "text": "Not a target of Firewatch's Talent" },
+		"melee": { "name": "Melee", "ops": [] },
+		"ranged": {
+			"name": "Ranged",
+			"ops": [{ "Atk Up:": ["Firewatch Talent"] }],
+			"text": ""
+		},
+		"flying": {
+			"name": "Flying",
+			"ops": [
+				{ "Atk Up:": ["Meteor Talent", "Cutter S2"] },
+				{ "Target Priority:": ["Class: Marksman"] }
+			],
+			"text": ""
+		},
+		"drone": {
+			"name": "Drone",
+			"ops": [
+				{ "Atk Up:": ["Arene Talent", "Glaucus Talent S2"] },
+				{ "Target Priority:": ["Arene, Glaucus"] }
+			],
+			"text": ""
+		},
+		"firewatch's_list": {
+			"name": "On Firewatch's List",
+			"ops": [],
+			"text": "Doesn't do ranged attacks but is target of Firewatch's Talent"
+		},
+		"not_firewatch's_list": {
+			"name": "Not on Firewatch's List",
+			"ops": [],
+			"text": "Not a target of Firewatch's Talent"
+		},
 		"boss": { "name": "Boss", "ops": [] },
-		"infected_creature": { "name": "Infected Creature", "ops": [] },
+		"infected_creature": {
+			"name": "Infected Creature",
+			"ops": [
+				{ "Atk Up:": ["Jaye Talent"] },
+				{ "Silence:": ["Snowsant Skill"] }
+			],
+			"text": ""
+		},
 		"arts_creation": { "name": "Arts Creation", "ops": [] },
-		"drone": { "name": "Drone", "ops": [] },
-		"sarkaz": { "name": "Sarkaz", "ops": [] },
-		"sea_monster": { "name": "Sea Monster", "ops": [] },
-		"possessed": { "name": "Possessed", "ops": [] }
+
+		"sarkaz": {
+			"name": "Sarkaz",
+			"ops": [
+				{ "Atk Up:": ["Toddifons Talent"] },
+				{ "Reduce Dmg Taken:": ["Mudrock E2 Talent"] }
+			],
+			"text": ""
+		},
+		"sea_monster": {
+			"name": "Sea Monster",
+			"ops": [{ "Reduce Dmg Taken:": ["Gladiia Talent"] }],
+			"text": ""
+		},
+		"possessed": {
+			"name": "Possessed",
+			"ops": [],
+			"text": "Separate from Infected Creature"
+		}
 	},
 	"status": {
 		"stun": {}
