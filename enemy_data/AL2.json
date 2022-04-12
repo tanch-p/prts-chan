@@ -1,32 +1,49 @@
 {
-    "id": "AL2",
-    "name_en": "Spec Ops Caster Leader",
-    "name_jp": "特戦術師隊長",
-    "name_cn": "特战术师组长",
-    "atk_type_jp": "術",
-    "hp": "6000",
-    "atk": "450",
-    "def": "300",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "2.4",
-    "HP回復速度": "0",
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "攻撃しない"
-    ],
-    "type_en": [
-        "Does not attack"
-    ],
-    "type_cn": [
-        "不攻击"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "AL2",
+	"name": {
+		"en": "Spec Ops Caster Leader",
+		"jp": "特戦術師隊長",
+		"cn": "特战术师组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "6000",
+			"atk": "450",
+			"def": "300",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.4",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.8",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Normal attack targets 2 units"
+							],
+							"jp": ["2体同時攻撃"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Ranged/Arts",
+			"jp": "遠・術",
+			"cn": "远・法术"
+		},
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["ranged"]
 }

@@ -22,7 +22,7 @@ export default function TooltipComponent({
 								}
 								absolute left-[50%] -translate-x-[50%] w-[200px] max-w-[200px] text-left rounded-lg py-2 px-3 z-[300] opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity`}
 					>
-						<p className="">Effective Operators</p>
+						{/* <p className="">Effective Operators</p> */}
 						{langpack.type[type].ops.map((categoryObj) => {
 							return Object.keys(categoryObj).map((key) => {
 								return (

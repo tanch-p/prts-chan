@@ -1,32 +1,32 @@
 {
-    "id": "A10",
-    "name_en": "Firebomb Thrower",
-    "name_jp": "凶悪火炎瓶暴徒",
-    "name_cn": "燃烧瓶投掷者",
-    "atk_type_jp": "物理",
-    "hp": "2000",
-    "atk": "250",
-    "def": "85",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "2.2",
-    "range": "1.75",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "A10",
+	"name": {
+		"en": "Firebomb Thrower",
+		"jp": "凶悪火炎瓶暴徒",
+		"cn": "燃烧瓶投掷者"
+	},
+	"stats": {
+		"level0": {
+            "hp": "2000",
+            "atk": "250",
+            "def": "85",
+            "mdef": "0",
+            "aspd%": "100",
+            "aspd": "2.2",
+            "range": "1.75",
+            "HP回復速度": "0",
+            "weight": "0",
+			"ms": "1",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+
+	"type": ["ranged"]
 }

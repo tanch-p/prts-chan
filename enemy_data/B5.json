@@ -1,35 +1,32 @@
 {
-    "id": "B5",
-    "name_en": "Acid Originium Slug α ",
-    "name_jp": "アシッドムシ・α",
-    "name_cn": "酸液源石虫·α",
-    "atk_type_jp": "物理",
-    "hp": "2780",
-    "atk": "290",
-    "def": "0",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "3.3",
-    "range": "1.75",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1",
-    "type_jp": [
-        "遠距離",
-        "感染生物"
-    ],
-    "type_en": [
-        "Ranged",
-        "Infected Creature"
-    ],
-    "type_cn": [
-        "远程",
-        "感染生物"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "B5",
+	"name": {
+		"en": "Acid Originium Slug α",
+		"jp": "アシッドムシ・α",
+		"cn": "酸液源石虫·α"
+	},
+	"stats": {
+		"level0": {
+			"hp": "2780",
+			"atk": "290",
+			"def": "0",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "3.3",
+			"range": "1.75",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "1",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+
+	"type": ["ranged", "infected_creature"]
 }

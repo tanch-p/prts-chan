@@ -1,55 +1,55 @@
 {
-  "id": "T-1",
-  "name": { "en": "Technical Scout", "jp": "技術偵察兵", "cn": "技术侦察兵" },
-  "stats": {
-    "level0": {
-      "hp": "7000",
-      "atk": "270",
-      "def": "100",
-      "mdef": "20",
-      "aspd%": "100",
-      "aspd": "2.5",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "1",
-      "ms": "1",
-      "special": [
-        {
-          "name": "stealth",
-          "type": "others",
-          "tooltip": {
-            "simple": {
-              "en": ["Stealth"],
-              "jp": ["ステルス"],
-              "cn": []
-            }
-          }
-        },
-        {
-          "name": "anti-stealth",
-          "type": "others",
-          "tooltip": {
-            "simple": {
-              "en": ["Removes nearby operators' stealth"],
-              "jp": ["範囲内の味方のステルス効果を解除"],
-              "cn": []
-            },
-            "detailed": {
-              "en": ["Removes nearby operators' stealth"],
-              "jp": ["範囲内の味方ユニットのステルス効果を解除"],
-              "cn": []
-            }
-          }
-        }
-      ]
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": { "jp": ["近距離"], "en": ["Melee"], "cn": ["近战"] }
+	"id": "T-1",
+	"name": { "en": "Technical Scout", "jp": "技術偵察兵", "cn": "技术侦察兵" },
+	"stats": {
+		"level0": {
+			"hp": "7000",
+			"atk": "270",
+			"def": "100",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "2.5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "1",
+			"special": [
+				{
+					"name": "stealth",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Stealth"],
+							"jp": ["ステルス"],
+							"cn": []
+						}
+					}
+				},
+				{
+					"name": "anti-stealth",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Removes nearby operators' stealth"],
+							"jp": ["範囲内の味方のステルス効果を解除"],
+							"cn": []
+						},
+						"detailed": {
+							"en": ["Removes nearby operators' stealth"],
+							"jp": ["範囲内の味方ユニットのステルス効果を解除"],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }
