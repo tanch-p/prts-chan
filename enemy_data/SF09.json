@@ -1,32 +1,77 @@
 {
-    "id": "SF09",
-    "name_en": "Smarty'",
-    "name_jp": "「オニビ」",
-    "name_cn": "“得意”",
-    "atk_type_jp": "術",
-    "hp": "2460",
-    "atk": "120",
-    "def": "0",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "2",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.2",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "SF09",
+	"name": {
+		"en": "Smarty'",
+		"jp": "「オニビ」",
+		"cn": "“得意”"
+	},
+	"stats": {
+		"level0": {
+			"hp": "2460",
+			"atk": "120",
+			"def": "0",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "1.2",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Can only be blocked by units of same element"],
+							"jp": ["同じ属性の味方でのみブロックできる"],
+							"cn": [""]
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
+				{
+					"name": "self_explode",
+					"type": "atk",
+					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
+					"multiplier": 4,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": ["Explodes on death"],
+							"jp": ["同じ属性の味方でのみブロックできる"],
+							"cn": [""]
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
+				{
+					"name": "deyi_explode",
+					"type": "atk",
+					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
+					"multiplier": 15,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Explodes on contact with another Smarty of opposite element"
+							],
+							"jp": ["同じ属性の味方でのみブロックできる"],
+							"cn": [""]
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }
