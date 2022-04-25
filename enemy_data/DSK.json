@@ -29,6 +29,21 @@
 							"cn": []
 						}
 					}
+				},
+				{
+					"name": "纬地经天",
+					"type": "atk",
+					"suffix": { "en": "Barrier", "jp": "桎梏打破", "cn": "破桎而出" },
+					"multiplier": 6,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": ["Skill→", ""],
+							"jp": ["スキル→", ""],
+							"cn": []
+						}
+					}
 				}
 			]
 		},
@@ -53,5 +68,5 @@
 	"スタン耐性": "有",
 	"眠り耐性": "有",
 	"凍結耐性": "有",
-	"type": ["Ranged", "Boss"]
+	"type": ["ranged", "boss"]
 }

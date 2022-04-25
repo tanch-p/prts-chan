@@ -23,8 +23,8 @@
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": ["Explodes on death"],
-							"jp": ["同じ属性の味方でのみブロックできる"],
+							"en": [""],
+							"jp": [""],
 							"cn": [""]
 						},
 						"detailed": { "en": [], "jp": [], "cn": [] }

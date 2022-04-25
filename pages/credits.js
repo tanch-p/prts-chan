@@ -6,7 +6,7 @@ import { useContext } from "react";
 export default function Credits({ allStagesData }) {
   const { languageContext } = useContext(AppContext);
   const [language] = languageContext;
-  const langPack = require(`../components/lang/${language}.json`);
+  // const langPack = require(`../lang/${language}.json`);
 
   return (
     <Layout >
