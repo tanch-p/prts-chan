@@ -17,14 +17,14 @@
 				{
 					"name": "envy_beam",
 					"type": "atk",
-					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
+					"suffix": { "en": "Charged Atk/Arts", "jp": "溜め攻撃・術", "cn": "C4" },
 					"multiplier": 2,
 					"hits": 1,
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": [""],
-							"jp": [""],
+							"en": ["Charged Atk - after 5s does 200% Arts damage to single target, and inverts tile element target is on"],
+							"jp": ["溜め攻撃→5秒後単体に200%術ダメージ、目標所在の床属性を反転させる"],
 							"cn": [""]
 						},
 						"detailed": { "en": [], "jp": [], "cn": [] }

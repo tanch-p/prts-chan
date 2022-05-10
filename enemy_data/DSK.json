@@ -34,9 +34,11 @@
 					"name": "纬地经天",
 					"type": "atk",
 					"suffix": { "en": "Barrier", "jp": "桎梏打破", "cn": "破桎而出" },
-					"multiplier": 6,
+					"multiplier": 1,
 					"hits": 1,
 					"fixedInc": 0,
+					"start": 15,
+					"skill": 30,
 					"tooltip": {
 						"simple": {
 							"en": ["Skill→", ""],
@@ -58,9 +60,59 @@
 			"HP回復速度": "0",
 			"weight": "10",
 			"ms": "0.5",
-			"special": []
+			"special": [
+				{
+					"name": "破桎而出",
+					"type": "atk",
+					"suffix": { "en": "Barrier", "jp": "桎梏打破", "cn": "破桎而出" },
+					"multiplier": 6,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": ["Skill→", ""],
+							"jp": ["スキル→", ""],
+							"cn": []
+						}
+					}
+				}
+			]
 		}
 	},
+	"forms": [
+		{ "special": {} },
+		{
+			"atk": "%5",
+			"special": {
+				"rage_attack": {
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Normal Attack targets 2 units (or if only 1 unit within range, deals 2 hits)"
+							],
+							"jp": ["2体同時攻撃（射程内1体のみいるの場合は2回連続攻撃"],
+							"cn": []
+						}
+					}
+				},
+				"破桎而出": {
+					"type": "atk",
+					"suffix": { "en": "Barrier", "jp": "桎梏打破", "cn": "破桎而出" },
+					"multiplier": 8,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": ["Skill→", ""],
+							"jp": ["スキル→", "9000hp"],
+							"cn": []
+						}
+					}
+				}
+			}
+		}
+	],
 	"normal_attack": {
 		"type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
 		"hits": 1

@@ -32,14 +32,14 @@
 				{
 					"name": "self_explode",
 					"type": "atk",
-					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
+					"suffix": { "en": "💥on Kill/Arts", "jp": "撃破時・術", "cn": "C4" },
 					"multiplier": 4,
 					"hits": 1,
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": ["Explodes on death"],
-							"jp": ["同じ属性の味方でのみブロックできる"],
+							"en": ["Self-destructs when defeated"],
+							"jp": ["撃破時自爆する"],
 							"cn": [""]
 						},
 						"detailed": { "en": [], "jp": [], "cn": [] }
@@ -48,16 +48,33 @@
 				{
 					"name": "deyi_explode",
 					"type": "atk",
-					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
+					"suffix": { "en": "Explosion/Arts", "jp": "心中・術", "cn": "C4" },
 					"multiplier": 15,
 					"hits": 1,
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
 							"en": [
-								"Explodes on contact with another Smarty of opposite element"
+								"Big Explosion on contact with another Smarty of opposite element"
 							],
-							"jp": ["同じ属性の味方でのみブロックできる"],
+							"jp": ["反対属性の「オニビ」に接触すると爆発する（心中）"],
+							"cn": [""]
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Same Element Explosion dmg * 0.9",
+								"Opposite Element Explosion dmg * 1.1"
+							],
+							"jp": [
+								"同じ属性への爆発ダメージ*0.9",
+								"反対属性への爆発ダメージ*1.1"
+							],
 							"cn": [""]
 						},
 						"detailed": { "en": [], "jp": [], "cn": [] }
@@ -67,7 +84,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
+		"type": { "en": "Melee/Arts", "jp": "近・術", "cn": "近・法术" },
 		"hits": 1
 	},
 	"スタン耐性": "無",

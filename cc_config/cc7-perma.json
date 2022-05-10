@@ -211,9 +211,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Tiacauh Brave] Max HP +80%, ATK +30%, RES +40, when blocked self DEF only drops 40%",
+					"en": "",
 					"cn": "",
-					"jp": "「ティアカウ勇士」の最大HP+80%、攻撃力+30%、術耐性+40、ブロックされた時に防御力が40%減少"
+					"jp": ""
 				}
 			},
 			{
@@ -241,9 +241,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Tiacauh Brave] Max HP +130%, ATK +50%, RES +60, no longer lowers own DEF when blocked",
+					"en": "",
 					"cn": "",
-					"jp": "「ティアカウ勇士」の最大HP+130%、攻撃力+50%、術耐性+60、ブロックされても防御力が減少しない"
+					"jp": ""
 				}
 			}
 		]
