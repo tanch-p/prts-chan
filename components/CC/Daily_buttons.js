@@ -38,12 +38,11 @@ export default function Daily_buttons({
                           )} bg-neutral-100 cursor-pointer`}
                           onClick={() => handleClick(category, option)}
                         >
-                          <img
+                          <Image
                             src={`/images/cc_buttons/${option.img}.png`}
                             alt={`${option.name[language]}`}
                             width="50px"
                             height="50px"
-                            loading="lazy"
                             className={` ${
                               toggleOptionColor(
                                 category.category,
