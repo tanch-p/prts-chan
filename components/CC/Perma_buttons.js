@@ -82,11 +82,12 @@ export default function Perma_buttons({
                   type="button"
                   onClick={() => handleClick(category, option)}
                 >
-                  <Image
+                  <img
                     src={`/images/cc_buttons/${option.img}.png`}
                     alt={`${option.img}`}
                     width="65px"
                     height="65px"
+                    loading="lazy"
                     className={`${toggleOptionColor(
                       category.category,
                       option.img

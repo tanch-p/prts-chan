@@ -218,14 +218,22 @@ export default function EnemySimple({
 		}
 	};
 
-	const parseSpecial = (enemy, stat, stats, base_stat) => {
-		const returnSpecArr = []; 
+	const parseSpecial = (enemy, stat, stats, base_stat, row) => {
+		const returnSpecArr = [];
 		let specialModded = false;
-
+		let skillMultiplier =0 ;
 		return enemy["stats"][stats].special.map((skill) => {
 			let statValue = 0;
 			if (skill.type === stat) {
+				skillMultiplier = skill.multiplier;
 				// console.log(skill.multiplier, enemy.id);
+				if (enemy.format === "multiform") {
+					if (enemy.forms[row].special.hasOwnProperty(skill.name)) {
+						// console.log(row);
+						skillMultiplier = enemy.forms[row].special[skill.name].multiplier;
+					}
+				}
+
 				if (
 					specialMods[enemy.id] &&
 					specialMods[enemy.id]?.hasOwnProperty(skill.name)
@@ -235,14 +243,14 @@ export default function EnemySimple({
 					statValue =
 						specialModMultiplier[0] === "%"
 							? base_stat *
-							  (skill.multiplier *
+							  (skillMultiplier *
 									(1 + parseInt(specialModMultiplier.slice(1)) / 100))
-							: base_stat * (skill.multiplier + specialModMultiplier);
-					if (statValue !== base_stat * skill.multiplier) {
+							: base_stat * (skillMultiplier + specialModMultiplier);
+					if (statValue !== base_stat * skillMultiplier) {
 						specialModded = true;
 					}
 				} else {
-					statValue = base_stat * skill.multiplier;
+					statValue = base_stat * skillMultiplier;
 				}
 				statValue += skill.fixedInc;
 				return (
@@ -266,7 +274,7 @@ export default function EnemySimple({
 
 	const parseMultiformMods = (mods, stat, base_stat) => {
 		const mod = mods[stat];
-		console.log(mod);
+		// console.log(mod);
 		if (mod.includes("%")) {
 			base_stat *= 1 + parseInt(mod.slice(1)) / 100;
 		}
@@ -348,9 +356,9 @@ export default function EnemySimple({
 				? enemy["forms"].length
 				: 1;
 		const returnArr = [];
-		for (let i = 0; i < numRowstoRender; i++) {
+		for (let row = 0; row < numRowstoRender; row++) {
 			const arrayToMap =
-				i === 0
+				row === 0
 					? tableHeaders
 					: tableHeaders.filter((ele) =>
 							format === "powerup" || format === "prisoner"
@@ -362,7 +370,7 @@ export default function EnemySimple({
 					<tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
 						{arrayToMap.map((ele) => {
 							const stat = ele.en;
-							const statValue = applyModifiers(enemy, stats, stat, i);
+							const statValue = applyModifiers(enemy, stats, stat, row);
 							if (ele.show) {
 								return (
 									<td
@@ -371,7 +379,7 @@ export default function EnemySimple({
 										)} ${getMinWidth(stat)}  h-[75px] lg:text-md`}
 										key={enemy.name + stat}
 										rowSpan={
-											i !== 0
+											row !== 0
 												? 1
 												: getRowSpan(
 														enemy.format,
@@ -383,12 +391,13 @@ export default function EnemySimple({
 										}
 									>
 										{stat === "enemy" ? (
-											<Image
+											<img
 												src={`/enemy_icons/${enemy.id}.png`}
 												alt={enemy.name["jp"]}
 												height="75px"
 												width="75px"
 												className="select-none"
+												loading="lazy"
 											/>
 										) : stat === "count" ? (
 											<p>{count + (specialMods?.[enemy.id]?.count ?? 0)}</p>
@@ -398,7 +407,7 @@ export default function EnemySimple({
 											enemy.id !== "MR" ? (
 												[
 													<p>{`${Math.round(statValue)} (${(format ===
-														"prisoner" && i === 1
+														"prisoner" && row === 1
 														? enemy.release.normal_attack.hits !== 1
 															? `x ${enemy.release.normal_attack.hits}`
 															: ""
@@ -406,11 +415,13 @@ export default function EnemySimple({
 														? `x ${enemy.normal_attack.hits}`
 														: ""
 													).concat(
-														format === "prisoner" && i === 1
+														format === "prisoner" && row === 1
 															? enemy.release.normal_attack.type[language]
 															: enemy.normal_attack.type[language]
 													)})`}</p>,
-												].concat(parseSpecial(enemy, stat, stats, statValue))
+												].concat(
+													parseSpecial(enemy, stat, stats, statValue, row)
+												)
 											) : (
 												getAtk(enemy, stats, statValue)
 											)
@@ -421,7 +432,7 @@ export default function EnemySimple({
 												stats,
 												language,
 												"simple",
-												i
+												row
 											)
 										) : stat === "range" ? (
 											enemy["stats"][stats]["range"] === "0" ? (
@@ -431,11 +442,11 @@ export default function EnemySimple({
 											)
 										) : stat === "weight" || stat === "aspd" ? (
 											[<p>{statValue}</p>].concat(
-												parseSpecial(enemy, stat, stats, statValue)
+												parseSpecial(enemy, stat, stats, statValue, row)
 											)
 										) : (
 											[<p>{Math.round(statValue)}</p>].concat(
-												parseSpecial(enemy, stat, stats, statValue)
+												parseSpecial(enemy, stat, stats, statValue, row)
 											)
 										)}
 									</td>
