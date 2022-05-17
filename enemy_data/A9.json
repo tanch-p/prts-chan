@@ -1,32 +1,32 @@
 {
-    "id": "A9",
-    "name_en": "Cocktail Thrower",
-    "name_jp": "火炎瓶暴徒",
-    "name_cn": "鸡尾酒投掷者",
-    "atk_type_jp": "物理",
-    "hp": "1550",
-    "atk": "180",
-    "def": "50",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "2.7",
-    "range": "1.75",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "A9",
+	"name": {
+		"en": "Cocktail Thrower",
+		"jp": "火炎瓶暴徒",
+		"cn": "鸡尾酒投掷者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "1550",
+			"atk": "180",
+			"def": "50",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2.7",
+			"range": "1.75",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "1",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+
+	"type": ["ranged"]
 }

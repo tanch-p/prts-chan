@@ -1,32 +1,28 @@
 {
-    "id": "30",
-    "name_en": "Veteran Butcher",
-    "name_jp": "凶悪ブッチャー",
-    "name_cn": "屠宰老手",
-    "atk_type_jp": "物理",
-    "hp": "14000",
-    "atk": "950",
-    "def": "270",
-    "mdef": "30",
-    "aspd%": "100",
-    "aspd": "3.5",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "3",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.7",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "30",
+	"name": { "en": "Veteran Butcher", "jp": "凶悪ブッチャー", "cn": "屠宰老手" },
+	"stats": {
+		"level0": {
+            "hp": "14000",
+            "atk": "950",
+            "def": "270",
+            "mdef": "30",
+            "aspd%": "100",
+            "aspd": "3.5",
+            "range": "0",
+            "HP回復速度": "0",
+            "weight": "3",
+			"ms": "0.7",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+
+	"type": ["melee"]
 }

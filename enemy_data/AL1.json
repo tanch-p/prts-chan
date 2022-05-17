@@ -1,44 +1,44 @@
 {
-  "id": "AL1",
-  "name": { "en": "Spec Ops Caster", "jp": "特戦術師", "cn": "特战术师" },
-  "stats": {
-    "level0": {
-      "hp": "4000",
-      "atk": "400",
-      "def": "250",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "4",
-      "range": "2",
-      "HP回復速度": "0",
-      "weight": "2",
-      "ms": "0.8",
-      "special": []
-    },
-    "第6区跡": {
-      "hp": "4000",
-      "atk": "400",
-      "def": "200",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "4",
-      "range": "2",
-      "HP回復速度": "0",
-      "weight": "2",
-      "ms": "0.8",
-      "special": []
-    }
-  },
-  "normal_attack": {
-    "type": {
-      "en": "Ranged/Arts",
-      "jp": "遠・術",
-      "cn": "远・法术"
-    },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "",
-  "type": { "jp": ["遠距離"], "en": ["Ranged"], "cn": ["远程"] }
+	"id": "AL1",
+	"name": { "en": "Spec Ops Caster", "jp": "特戦術師", "cn": "特战术师" },
+	"stats": {
+		"level0": {
+			"hp": "4000",
+			"atk": "400",
+			"def": "250",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.8",
+			"special": []
+		},
+		"第6区跡": {
+			"hp": "4000",
+			"atk": "400",
+			"def": "200",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Ranged/Arts",
+			"jp": "遠・術",
+			"cn": "远・法术"
+		},
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["ranged"]
 }

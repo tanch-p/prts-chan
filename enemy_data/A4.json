@@ -1,32 +1,35 @@
 {
-    "id": "A4",
-    "name_en": "Caster Leader",
-    "name_jp": "術師隊長",
-    "name_cn": "术师组长",
-    "atk_type_jp": "術",
-    "hp": "2400",
-    "atk": "300",
-    "def": "80",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "2",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "遠距離"
-    ],
-    "type_en": [
-        "Ranged"
-    ],
-    "type_cn": [
-        "远程"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "A4",
+	"name": {
+		"en": "Caster Leader",
+		"jp": "術師隊長",
+		"cn": "术师组长"
+	},
+	"stats": {
+		"level0": {
+            "hp": "2400",
+            "atk": "300",
+            "def": "80",
+            "mdef": "50",
+            "aspd%": "100",
+            "aspd": "4",
+            "range": "2",
+            "HP回復速度": "0",
+            "weight": "1",
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Ranged/Arts",
+			"jp": "遠・術",
+			"cn": "远・法术"
+		},
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["ranged"]
 }

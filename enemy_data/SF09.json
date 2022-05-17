@@ -1,32 +1,94 @@
 {
-    "id": "SF09",
-    "name_en": "Smarty'",
-    "name_jp": "「オニビ」",
-    "name_cn": "“得意”",
-    "atk_type_jp": "術",
-    "hp": "2460",
-    "atk": "120",
-    "def": "0",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "2",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.2",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "SF09",
+	"name": {
+		"en": "Smarty'",
+		"jp": "「オニビ」",
+		"cn": "“得意”"
+	},
+	"stats": {
+		"level0": {
+			"hp": "2460",
+			"atk": "120",
+			"def": "0",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "1.2",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Can only be blocked by units of same element"],
+							"jp": ["同じ属性の味方でのみブロックできる"],
+							"cn": [""]
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
+				{
+					"name": "self_explode",
+					"type": "atk",
+					"suffix": { "en": "💥on Kill/Arts", "jp": "撃破時・術", "cn": "C4" },
+					"multiplier": 4,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": ["Self-destructs when defeated"],
+							"jp": ["撃破時自爆する"],
+							"cn": [""]
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
+				{
+					"name": "deyi_explode",
+					"type": "atk",
+					"suffix": { "en": "Explosion/Arts", "jp": "心中・術", "cn": "C4" },
+					"multiplier": 15,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Big Explosion on contact with another Smarty of opposite element"
+							],
+							"jp": ["反対属性の「オニビ」に接触すると爆発する（心中）"],
+							"cn": [""]
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Same Element Explosion dmg * 0.9",
+								"Opposite Element Explosion dmg * 1.1"
+							],
+							"jp": [
+								"同じ属性への爆発ダメージ*0.9",
+								"反対属性への爆発ダメージ*1.1"
+							],
+							"cn": [""]
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Melee/Arts", "jp": "近・術", "cn": "近・法术" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }

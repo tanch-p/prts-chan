@@ -1,32 +1,35 @@
 {
-    "id": "A3",
-    "name_en": "Caster",
-    "name_jp": "術師",
-    "name_cn": "术师",
-    "atk_type_jp": "術",
-    "hp": "1600",
-    "atk": "200",
-    "def": "50",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "1.8",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "A3",
+	"name": {
+		"en": "Caster",
+		"jp": "術師",
+		"cn": "术师"
+	},
+	"stats": {
+		"level0": {
+			"hp": "1600",
+			"atk": "200",
+			"def": "50",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "1.8",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Ranged/Arts",
+			"jp": "遠・術",
+			"cn": "远・法术"
+		},
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["ranged"]
 }

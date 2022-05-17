@@ -1,0 +1,13 @@
+{
+  "name": {"en":"灰齐山麓","jp":"灰齐山麓","cn":"灰齐山麓"},
+  "img": "灰齐山麓",
+  "config":"cc7-perma",
+  "ccType": "perma",
+  "enemies": [
+    { "id": "DSK", "count": 1, "stats": "灰齐山麓" },
+    { "id": "SF13", "count": 3, "stats": "level0" },
+    { "id": "SF11", "count": 5, "stats": "level0" },
+    { "id": "SF09", "count": 18, "stats": "level0" },
+    { "id": "SF03", "count": 9, "stats": "level0" }
+  ]
+}

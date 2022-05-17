@@ -1,94 +1,90 @@
 {
-  "id": "L11",
-  "name": {
-    "en": "Mudrock Zealot",
-    "jp": "マドロック隊実動部隊員",
-    "cn": "泥岩小队践行者"
-  },
-  "stats": {
-    "level0": {
-      "hp": "10000",
-      "atk": "900",
-      "def": "800",
-      "mdef": "30",
-      "aspd%": "100",
-      "aspd": "3.5",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "3",
-      "ms": "0.8",
-      "special": [
-        {
-          "name": "MR_squad_shield",
-          "type": "self-buff",
-          "tooltip": {
-            "simple": {
-              "en": [
-                "Appears with a shield which absorbs up to 6000 Arts damage",
-                "Shield Active: Max HP+50%、ASPD+50%"
-              ],
-              "jp": [
-                "登場時、合計6000の術攻撃を吸収するシールドを持つ",
-                "シールド存在中は最大HP+50%、攻撃速度+50%"
-              ],
-              "cn": []
-            },
-            "detailed": {
-              "en": [],
-              "jp": [],
-              "cn": []
-            }
-          }
-        }
-      ]
-    },
-    "無秩序な鉱区": {
-      "hp": "8000",
-      "atk": "800",
-      "def": "600",
-      "mdef": "30",
-      "aspd%": "100",
-      "aspd": "5",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "3",
-      "ms": "0.8",
-      "special": [
-        {
-          "name": "MR_squad_shield",
-          "type": "self-buff",
-          "tooltip": {
-            "simple": {
-              "en": [
-                "Appears with a shield which absorbs up to 6000 Arts damage",
-                "Shield Active: Max HP+50%、ASPD+50%"
-              ],
-              "jp": [
-                "登場時、合計6000の術攻撃を吸収するシールドを持つ",
-                "シールド存在中は最大HP+50%、攻撃速度+50%"
-              ],
-              "cn": []
-            },
-            "detailed": {
-              "en": [],
-              "jp": [],
-              "cn": []
-            }
-          }
-        }
-      ]
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "",
-  "type": {
-    "jp": ["遠距離", "サルカズ"],
-    "en": ["Ranged", "Sarkaz"],
-    "cn": ["远程", "萨卡兹"]
-  }
+	"id": "L11",
+	"name": {
+		"en": "Mudrock Zealot",
+		"jp": "マドロック隊実動部隊員",
+		"cn": "泥岩小队践行者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "10000",
+			"atk": "900",
+			"def": "800",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "3",
+			"ms": "0.8",
+			"special": [
+				{
+					"name": "MR_squad_shield",
+					"type": "self-buff",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Appears with a shield which absorbs up to 6000 Arts damage",
+								"Shield Active: Max HP+50%、ASPD+50%"
+							],
+							"jp": [
+								"登場時、合計6000の術攻撃を吸収するシールドを持つ",
+								"シールド存在中は最大HP+50%、攻撃速度+50%"
+							],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"無秩序な鉱区": {
+			"hp": "8000",
+			"atk": "800",
+			"def": "600",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "3",
+			"ms": "0.8",
+			"special": [
+				{
+					"name": "MR_squad_shield",
+					"type": "self-buff",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Appears with a shield which absorbs up to 6000 Arts damage",
+								"Shield Active: Max HP+50%、ASPD+50%"
+							],
+							"jp": [
+								"登場時、合計6000の術攻撃を吸収するシールドを持つ",
+								"シールド存在中は最大HP+50%、攻撃速度+50%"
+							],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["ranged", "sarkaz"]
 }

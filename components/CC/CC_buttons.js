@@ -1,7 +1,5 @@
-import { useState, useEffect, useContext } from "react";
-import Daily_buttons from "./Daily_buttons";
-import Perma_buttons from "./Perma_buttons";
-import Selected_options from "./Selected_options";
+
+
 
 export default function CC_buttons({
 	mapConfig,

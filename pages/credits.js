@@ -3,13 +3,13 @@ import Layout, { siteTitle } from "../components/layout";
 import AppContext from "../components/AppContext";
 import { useContext } from "react";
 
-export default function Home({ allStagesData }) {
+export default function Credits({ allStagesData }) {
   const { languageContext } = useContext(AppContext);
   const [language] = languageContext;
-  const langPack = require(`../components/lang/${language}.json`);
+  // const langPack = require(`../lang/${language}.json`);
 
   return (
-    <Layout home>
+    <Layout >
       <Head>
         <title>{siteTitle}</title>
       </Head>

@@ -8,8 +8,7 @@ import AppContext from "../components/AppContext";
 import dayjs from "dayjs";
 
 //images
-import CC6_banner_en from "../public/images/banners/CC6_banner_en.jpg";
-import CC6_banner_jp from "../public/images/banners/CC6_banner_jp.jpg";
+import cc7_banner from "../public/images/banners/cc7_banner.jpg";
 
 export async function getStaticProps() {
 	const allStagesData = getSortedStagesData();
@@ -24,7 +23,7 @@ export async function getStaticProps() {
 export default function Home({ allStagesData }) {
 	const { languageContext, device } = useContext(AppContext);
 	const [language] = languageContext;
-	const langPack = require(`../components/lang/${language}.json`);
+	const langPack = require(`../lang/${language}.json`);
 	const firstCCDate = dayjs("3/1");
 	const dailyStages =
 		language === "en"
@@ -78,36 +77,36 @@ export default function Home({ allStagesData }) {
 		"CC6_閉鎖監獄_2",
 	];
 
-	for (let i = 0; i < dailyStages.length; i++) {
-		dailyCCArr.push(
-			<>
-				<div className="flex flex-wrap flex-col w-[25%] md:w-min">
-					<div className="border border-collapse border-gray-400 h-[25px] w-full md:w-[80px] text-base">
-						{`3/${i + 1}`}
-					</div>
-					{i > 13 ? (
-						<div
-							className={`border border-collapse border-gray-400 ${
-								language === "jp" ? "text-sm" : "text-xs"
-							}  h-[40px] w-full md:w-[80px] `}
-						>
-							<p className="">{dailyStages[i]}</p>
-						</div>
-					) : (
-						<Link href={`/stages/${links[i]}`}>
-							<div
-								className={`border border-collapse border-gray-400 ${
-									language === "jp" ? "text-sm" : "text-xs"
-								} hover:cursor-pointer hover:bg-gray-300 h-[40px] w-full md:w-[80px] underline text-blue-700`}
-							>
-								<p className="">{dailyStages[i]}</p>
-							</div>
-						</Link>
-					)}
-				</div>
-			</>
-		);
-	}
+	// for (let i = 0; i < dailyStages.length; i++) {
+	// 	dailyCCArr.push(
+	// 		<>
+	// 			<div className="flex flex-wrap flex-col w-[25%] md:w-min">
+	// 				<div className="border border-collapse border-gray-400 h-[25px] w-full md:w-[80px] text-base">
+	// 					{`3/${i + 1}`}
+	// 				</div>
+	// 				{i > 13 ? (
+	// 					<div
+	// 						className={`border border-collapse border-gray-400 ${
+	// 							language === "jp" ? "text-sm" : "text-xs"
+	// 						}  h-[40px] w-full md:w-[80px] `}
+	// 					>
+	// 						<p className="">{dailyStages[i]}</p>
+	// 					</div>
+	// 				) : (
+	// 					<Link href={`/stages/cc/${links[i]}`}>
+	// 						<div
+	// 							className={`border border-collapse border-gray-400 ${
+	// 								language === "jp" ? "text-sm" : "text-xs"
+	// 							} hover:cursor-pointer hover:bg-gray-300 h-[40px] w-full md:w-[80px] underline text-blue-700`}
+	// 						>
+	// 							<p className="">{dailyStages[i]}</p>
+	// 						</div>
+	// 					</Link>
+	// 				)}
+	// 			</div>
+	// 		</>
+	// 	);
+	// }
 
 	const getTheme = () => {
 		return language === "en" ? "text-xs" : "";
@@ -127,26 +126,14 @@ export default function Home({ allStagesData }) {
 				<div id="cc6" className="w-full md:min-w-10">
 					<table className="text-center align-middle">
 						<div className="relative w-[95vw] mx-auto md:w-[560px]">
-							{language === "jp" ? (
-								<Image
-									src={CC6_banner_jp}
-									className="inline-block"
-									alt={"CC6"}
-								/>
-							) : (
-								<Image
-									src={CC6_banner_en}
-									className="inline-block"
-									alt={"CC6"}
-								/>
-							)}
+							<Image src={cc7_banner} className="inline-block" alt={"CC7"} />
 						</div>
 						<tr className="border border-collapse border-gray-400 py-1">
 							<th> {language === "jp" ? "常設ステージ" : "Permanent Stage"}</th>
 						</tr>
-						<Link href={`/stages/cc6-perma`}>
+						<Link href={`/stages/cc/cc7-perma`}>
 							<div className="border border-collapse py-2 border-gray-400 text-base hover:cursor-pointer hover:bg-gray-300 underline text-blue-700">
-								{language === "jp" ? "狂風の砂原" : "Howling Desert"}
+								{language === "jp" ? "灰齐山麓" : "Permanent Stage"}
 							</div>
 						</Link>
 						<tr>
@@ -163,20 +150,15 @@ export default function Home({ allStagesData }) {
 						</div>
 					</table>
 				</div>
-				<div className="w-100vw ml-2 md:ml-0 md:w-[560px] mt-6">
+				<div className="w-100vw ml-2 md:ml-0 md:w-[560px] mt-6 text-center">
 					<ul>
 						{language === "jp" ? (
 							<li className="  ">
-								皆さん危機契約お疲れさまでした！今のところこのサイトは特にアップデートはありませんが、９章の敵データはWikiruやPRTS
-								Wikiに載せてありますので、ぜひそちらのデータをご覧になってください。
+								工事中
 							</li>
 						) : (
 							<li className="">
-								Hope you found this site useful for CC6! If you are looking for
-								data for chapter 9, I believe the currently available tools
-								(PRTS Wiki & Aceship) will be sufficient. I will be working on
-								the layout/extra functions for CC7 and IS in the meantime. See
-								you in CC7!
+								Under Construction
 							</li>
 						)}
 					</ul>
