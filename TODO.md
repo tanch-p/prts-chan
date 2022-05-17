@@ -1,17 +1,17 @@
-## To-dos:
+## To-dos: last updated 18 May 2022
 
 ### Priorities
- - index page
- - separate mobs in enemy simple
- - drawer
-
+Get me a 
+ - detailed enemy format
+ - a hover over skill detailed tooltip so that my enemy simple won't be so bloated
+ - wheres my IS pageeeeeeeeee
+ - searchable enemy details page that is actually human readable and doesn't load everything at once
 
 - Header
 
   1. more buttons
-  2. banner
-  3. search function
-  4. themes
+  2. banner (esp for IS)
+  3. themes
 
 - Drawer
 
@@ -22,7 +22,6 @@
 
   1. intro page
   2. links to each CC page
-  3. Test navigator language with diff IP/browser language
 
 - Stages page
 
@@ -36,7 +35,8 @@
 
   1. evaluate current schema if it will work with detailed view
 
-
+- Language
+  - Do we want to use i18n?
 
 
 

@@ -24,10 +24,8 @@
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": ["Skill→", ""],
-							"jp": [
-								"スキル（破桎而出）→70秒毎に7500物理/術ダメージを吸収するシールドを生成、15秒以内にシールドが破られなかった場合、半径3.0以内の全ての味方に攻撃力の600%の術ダメージを与える"
-							],
+							"en": ["Uses 'Break the Chains' every 70s"],
+							"jp": ["70秒毎に「破桎而出」使用する"],
 							"cn": []
 						}
 					}
@@ -66,13 +64,17 @@
 				{
 					"name": "破桎而出",
 					"type": "atk",
-					"suffix": { "en": "Barrier", "jp": "桎梏打破", "cn": "破桎而出" },
+					"suffix": {
+						"en": "Barrier/Arts",
+						"jp": "桎梏打破",
+						"cn": "破桎而出"
+					},
 					"multiplier": 6,
 					"hits": 1,
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": ["Uses 'Break the Chains(' every 70s"],
+							"en": ["Uses 'Break the Chains' every 70s"],
 							"jp": ["70秒毎に「破桎而出」使用する"],
 							"cn": [
 								"スキル（破桎而出）→70秒毎に7500物理/術ダメージを吸収するシールドを生成、15秒以内にシールドが破られなかった場合、半径3.0以内の全ての味方に攻撃力の600%の術ダメージを与える"
@@ -118,7 +120,11 @@
 				},
 				"破桎而出": {
 					"type": "atk",
-					"suffix": { "en": "Barrier/Arts", "jp": "桎梏打破・術", "cn": "破桎而出・法术" },
+					"suffix": {
+						"en": "Barrier/Arts",
+						"jp": "桎梏打破・術",
+						"cn": "破桎而出・法术"
+					},
 					"multiplier": 8,
 					"hits": 1,
 					"fixedInc": 0,

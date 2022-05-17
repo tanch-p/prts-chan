@@ -145,7 +145,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Free] Max HP +30%, DEF +150%, RES +20, break the chains duration-30%, atk range +50%",
+					"en": "[Free] Max HP +30%, DEF +150%, RES +20, 'Break the Chains' has -30% cooldown and 50% larger explosion radius.",
 					"cn": "",
 					"jp": "「ジザイ」の最大HP+30%、防御力+150%、術耐性+20、【桎梏打破】の発動間隔が30%短縮、爆発範囲が50%拡大"
 				}
@@ -175,7 +175,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Free] Max HP +30%, DEF +150%, RES +20, break the chains duration-30%, atk range +50%",
+					"en": "[Free] Max HP +50%, DEF +250%, RES +30, 'Break the Chains' has -50% cooldown and 100% larger explosion radius.",
 					"cn": "",
 					"jp": "「ジザイ」の最大HP+50%、防御力+250%、術耐性+30、【桎梏打破】の発動間隔が50%短縮、爆発範囲が100%拡大"
 				}
@@ -211,7 +211,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "「ジザイ」の最大HP+90%、攻撃力+70%、術耐性+15、【緯地経天】を使用する",
+					"en": "[Free] Max HP +90%, ATK +70%, +15 RES, uses 'Weft And Warp'",
 					"cn": "",
 					"jp": "「ジザイ」の最大HP+90%、攻撃力+70%、術耐性+15、【緯地経天】を使用する"
 				}
@@ -242,7 +242,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "「ジザイ」の最大HP+200%、攻撃力+150%、術耐性+15、攻撃範囲+300%、【緯地経天】を展開し、発動間隔が60%短縮",
+					"en":" [Free] Max HP +200%, ATK +150%, +15 RES, Attack Range +300%, and uses 'Weft And Warp' with 60% shortened cooldown. ",
 					"cn": "",
 					"jp": "「ジザイ」の最大HP+200%、攻撃力+150%、術耐性+15、攻撃範囲+300%、【緯地経天】を展開し、発動間隔が60%短縮"
 				}
@@ -570,7 +570,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Envy] Max HP +90%, ATK +50%, beam charge time -70%",
+					"en": "[Envy] Max HP +90%, ATK +50%, charged attack cooldown decreased by 70%",
 					"cn": "",
 					"jp": "「ソネミ」の最大HP+90%、攻撃力+50%、チャージ攻撃の間隔が70%短縮"
 				}

@@ -150,20 +150,15 @@ export default function Home({ allStagesData }) {
 						</div>
 					</table>
 				</div>
-				<div className="w-100vw ml-2 md:ml-0 md:w-[560px] mt-6">
+				<div className="w-100vw ml-2 md:ml-0 md:w-[560px] mt-6 text-center">
 					<ul>
 						{language === "jp" ? (
 							<li className="  ">
-								皆さん危機契約お疲れさまでした！今のところこのサイトは特にアップデートはありませんが、９章の敵データはWikiruやPRTS
-								Wikiに載せてありますので、ぜひそちらのデータをご覧になってください。
+								工事中
 							</li>
 						) : (
 							<li className="">
-								Hope you found this site useful for CC6! If you are looking for
-								data for chapter 9, I believe the currently available tools
-								(PRTS Wiki & Aceship) will be sufficient. I will be working on
-								the layout/extra functions for CC7 and IS in the meantime. See
-								you in CC7!
+								Under Construction
 							</li>
 						)}
 					</ul>
