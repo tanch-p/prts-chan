@@ -79,3 +79,7 @@
 //     </Layout>
 //   );
 // }
+
+export default function IS_stage(){
+    return "COMING SOON TO A THEATRE NEAR YOU"
+}
