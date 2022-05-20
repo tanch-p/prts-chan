@@ -137,7 +137,9 @@
 									"tooltip": {
 										"en": ["Uses 'Break the Chains' every $49s$"],
 										"jp": ["$49秒$毎に「破桎而出」使用する"],
-										"cn": ["スキル（破桎而出）→$49秒$毎に9000物理/術ダメージを吸収するシールドを生成、15秒以内にシールドが破られなかった場合、半径3.0以内の全ての味方に攻撃力の800%の術ダメージを与える"]
+										"cn": [
+											"スキル（破桎而出）→$49秒$毎に9000物理/術ダメージを吸収するシールドを生成、15秒以内にシールドが破られなかった場合、半径3.0以内の全ての味方に攻撃力の800%の術ダメージを与える"
+										]
 									}
 								}
 							}
@@ -226,7 +228,7 @@
 							"hp": "%200",
 							"atk": "%150",
 							"mdef": 15,
-							"range":"%300",
+							"range": "%300",
 							"special": {
 								"纬地经天": {
 									"multiplier": 0,
@@ -242,7 +244,7 @@
 					}
 				],
 				"tooltip": {
-					"en":" [Free] Max HP +200%, ATK +150%, +15 RES, Attack Range +300%, and uses 'Weft And Warp' with 60% shortened cooldown. ",
+					"en": " [Free] Max HP +200%, ATK +150%, +15 RES, Attack Range +300%, and uses 'Weft And Warp' with 60% shortened cooldown. ",
 					"cn": "",
 					"jp": "「ジザイ」の最大HP+200%、攻撃力+150%、術耐性+15、攻撃範囲+300%、【緯地経天】を展開し、発動間隔が60%短縮"
 				}
@@ -566,7 +568,25 @@
 				"effects": [
 					{
 						"targets": ["SF13"],
-						"mods": { "hp": "%90", "atk": "%50", "special": {} }
+						"mods": {
+							"hp": "%90",
+							"atk": "%50",
+							"special": {
+								"envy_beam": {
+									"multiplier": 0,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": [
+											"Uses Charged Atk every $18s$ - after 5s does 200% Arts damage to single target, and inverts tile element target is on"
+										],
+										"jp": [
+											"$18秒$毎に溜め攻撃→5秒後単体に200%術ダメージ、目標所在の床属性を反転させる"
+										],
+										"cn": ""
+									}
+								}
+							}
+						}
 					}
 				],
 				"tooltip": {
@@ -601,7 +621,9 @@
 			{
 				"rank": 1,
 				"img": "灰齐山麓/75px-Enemy_def_1",
-				"effects": [{ "targets": ["ALL"], "mods": { "fixed-def": 100, "mdef":10 } }],
+				"effects": [
+					{ "targets": ["ALL"], "mods": { "fixed-def": 100, "mdef": 10 } }
+				],
 				"tooltip": {
 					"en": "Enemy DEF +100, RES +10",
 					"cn": "",
@@ -629,7 +651,7 @@
 			{ "rank": 3 }
 		]
 	},
-  {
+	{
 		"category": "grids",
 		"options": [
 			{
