@@ -57,7 +57,6 @@ export const Navbar = ({ open, setOpen, device }) => {
 						<a className="pl-2 font-medium">About</a>
 					</Link>
 				</div>
-				<div className="w-20">{artifactSVG}</div>
 				<div className={`text-left mr-2 relative`}>
 					<div>
 						<button
