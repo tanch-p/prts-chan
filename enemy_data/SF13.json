@@ -23,8 +23,8 @@
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": ["Charged Atk - after 5s does 200% Arts damage to single target, and inverts tile element target is on"],
-							"jp": ["溜め攻撃→5秒後単体に200%術ダメージ、目標所在の床属性を反転させる"],
+							"en": ["Uses Charged Atk every 60s - after 5s does 200% Arts damage to single target, and inverts tile element target is on"],
+							"jp": ["60秒毎に溜め攻撃→5秒後単体に200%術ダメージ、目標所在の床属性を反転させる"],
 							"cn": [""]
 						},
 						"detailed": { "en": [], "jp": [], "cn": [] }

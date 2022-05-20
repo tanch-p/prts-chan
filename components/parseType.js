@@ -6,7 +6,7 @@ export const parseType = (typeArr, language) => {
 		if (langpack.type[type].hasOwnProperty("text")) {
 			return (
 				<TooltipComponent
-					title={type}
+					title={langpack.type[type].name}
 					langpack={langpack}
 					type={type}
 					tooltipType="type"
@@ -14,6 +14,6 @@ export const parseType = (typeArr, language) => {
 				/>
 			);
 		}
-		return <p>{type}</p>;
+		return <p>{langpack.type[type].name}</p>;
 	});
 };

@@ -135,9 +135,9 @@ export const getRemarks = (
 	} else if (format === "multiform") {
 		return enemy["stats"][stats].special.map((skill) => {
 			if (enemy.forms[row].special.hasOwnProperty(skill.name)) {
-				return enemy.forms[row]
-					.special[skill.name]
-					.tooltip[type][language].map((line) => <p>{line}</p>);
+				return enemy.forms[row].special[skill.name].tooltip[type][language].map(
+					(line) => <p>{line}</p>
+				);
 			}
 			return skill.tooltip[type][language].map((line) => <p>{line}</p>);
 		});

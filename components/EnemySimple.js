@@ -221,7 +221,7 @@ export default function EnemySimple({
 	const parseSpecial = (enemy, stat, stats, base_stat, row) => {
 		const returnSpecArr = [];
 		let specialModded = false;
-		let skillMultiplier =0 ;
+		let skillMultiplier = 0;
 		return enemy["stats"][stats].special.map((skill) => {
 			let statValue = 0;
 			if (skill.type === stat) {
