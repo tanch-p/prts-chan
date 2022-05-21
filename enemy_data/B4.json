@@ -18,6 +18,19 @@
 			"weight": "0",
 			"ms": "1",
 			"special": []
+		},
+		"猩红孤钻": {
+			"hp": "2080",
+			"atk": "100",
+			"def": "80",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "1.8",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "1",
+			"special": []
 		}
 	},
 	"normal_attack": {

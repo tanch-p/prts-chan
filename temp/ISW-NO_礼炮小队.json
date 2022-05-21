@@ -1,0 +1,14 @@
+{
+	"name": "礼炮小队",
+	"img": "礼炮小队",
+	"buff":"敌方单位的攻击力提升至145%，生命值提升至160%",
+	"enemies": [
+		{ "id": "01", "stats": "level0" },
+		{ "id": "A7", "stats": "猩红孤钻" },
+		{ "id": "A8", "stats": "猩红孤钻" },
+        { "id": "B2", "stats": "level0" },
+		{ "id": "B6", "stats": "level0" },
+		{ "id": "DLD", "stats": "level0" },
+		{ "id": "GPN", "stats": "level0" }
+	]
+}

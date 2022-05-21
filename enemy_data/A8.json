@@ -28,6 +28,33 @@
 					}
 				}
 			]
+		},
+		"猩红孤钻": {
+			"hp": "4000",
+			"atk": "420",
+			"def": "150",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "4.5",
+			"range": "7",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.8",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Normal Atks do 100% splash to 8 tiles surrounding target"
+							],
+							"jp": ["通常攻撃→攻撃対象の隣接8マスに100％のダメージ"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

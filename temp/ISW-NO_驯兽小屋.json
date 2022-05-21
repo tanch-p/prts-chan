@@ -1,0 +1,14 @@
+{
+	"name": "驯兽小屋",
+	"img": "驯兽小屋",
+	"buff":"敌方单位的攻击力提升至140%，防御力提升至130%，生命值提升至170%",
+	"enemies": [
+		{ "id": "O1", "stats": "level0" },
+		{ "id": "SP6", "stats": "猩红孤钻" },
+		{ "id": "L3", "stats": "猩红孤钻" },
+        { "id": "SI1", "stats": "level0" },
+		{ "id": "29", "stats": "猩红孤钻" },
+		{ "id": "DLD", "stats": "level0" },
+		{ "id": "GPN", "stats": "level0" }
+	]
+}
