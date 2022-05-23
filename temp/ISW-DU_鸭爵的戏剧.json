@@ -1,0 +1,10 @@
+{
+	"name": "鸭爵的戏剧",
+	"img": "鸭爵的戏剧",
+	"enemies": [
+		{ "id": "DLD", "stats": "鸭爵的戏剧" },
+		{ "id": "D4", "stats": "level0" },
+		{ "id": "P-04", "stats": "level0" },
+		{ "id": "P-03", "stats": "level0" }
+	]
+}

@@ -14,7 +14,7 @@
 			"weight": "3",
 			"ms": "0.4",
 			"special": [
-                {
+				{
 					"type": "others",
 					"tooltip": {
 						"simple": {
@@ -35,7 +35,7 @@
 						}
 					}
 				},
-                {
+				{
 					"type": "others",
 					"tooltip": {
 						"simple": {
@@ -47,7 +47,7 @@
 				}
 			]
 		},
-        "level1": {
+		"level1": {
 			"hp": "35000",
 			"atk": "100",
 			"def": "300",
@@ -59,7 +59,7 @@
 			"weight": "3",
 			"ms": "0.4",
 			"special": [
-                {
+				{
 					"type": "others",
 					"tooltip": {
 						"simple": {
@@ -80,7 +80,7 @@
 						}
 					}
 				},
-                {
+				{
 					"type": "others",
 					"tooltip": {
 						"simple": {
@@ -92,7 +92,7 @@
 				}
 			]
 		},
-        "level2": {
+		"level2": {
 			"hp": "45000",
 			"atk": "100",
 			"def": "400",
@@ -104,7 +104,7 @@
 			"weight": "3",
 			"ms": "0.4",
 			"special": [
-                {
+				{
 					"type": "others",
 					"tooltip": {
 						"simple": {
@@ -125,12 +125,57 @@
 						}
 					}
 				},
-                {
+				{
 					"type": "others",
 					"tooltip": {
 						"simple": {
 							"en": ["Stealth"],
 							"jp": ["ステルス"],
+							"cn": ["※不会收集无主的财富"]
+						}
+					}
+				}
+			]
+		},
+		"鸭爵的戏剧": {
+			"hp": "9300",
+			"atk": "100",
+			"def": "330",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "1",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "3",
+			"ms": "0.4",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["无法被阻挡"],
+							"jp": ["无法被阻挡"],
+							"cn": ["无法被阻挡"]
+						}
+					}
+				},
+				{
+					"name": "duck_dash",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["自身被攻击后移动速度提升400%"],
+							"jp": ["自身被攻击后移动速度提升400%"],
+							"cn": ["自身被攻击后移动速度提升400%"]
+						}
+					}
+				},
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["※不会收集无主的财富"],
+							"jp": ["※不会收集无主的财富"],
 							"cn": ["※不会收集无主的财富"]
 						}
 					}

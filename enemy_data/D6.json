@@ -1,38 +1,44 @@
 {
-    "id": "D6",
-    "name_en": "Bombtail-G",
-    "name_jp": "バクダンバチG",
-    "name_cn": "暴鸰·G",
-    "atk_type_jp": "物理",
-    "hp": "6000",
-    "atk": "1500",
-    "def": "220",
-    "mdef": "30",
-    "aspd%": "100",
-    "aspd": "5",
-    "range": "2",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.6",
-    "type_jp": [
-        "近距離",
-        "飛行",
-        "ドローン"
-    ],
-    "type_en": [
-        "Melee",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "近战",
-        "飞行",
-        "无人机"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "D6",
+	"name": {
+		"en": "Bombtail-G",
+		"jp": "バクダンバチG",
+		"cn": "暴鸰·G"
+	},
+	"stats": {
+		"level0": {
+			"hp": "6000",
+			"atk": "1500",
+			"def": "220",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.6",
+			"special": []
+		},
+		"酒商运输队": {
+			"hp": "5000",
+			"atk": "1000",
+			"def": "100",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.6",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Bomb/Phys", "jp": "爆弾・物理", "cn": "炸弹・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "flying", "drone"]
 }

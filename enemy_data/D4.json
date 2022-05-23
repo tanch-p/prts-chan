@@ -1,36 +1,31 @@
 {
-    "id": "D4",
-    "name_en": "Defender-4",
-    "name_jp": "Mvc4",
-    "name_cn": "御4",
-    "atk_type_jp": "攻撃しない",
-    "hp": "4000",
-    "atk": "0",
-    "def": "150",
-    "mdef": "20",
-    "aspd%": "100",
-    "aspd": "2",
-    "range": "2.5",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "遠距離",
-        "飛行",
-        "ドローン"
-    ],
-    "type_en": [
-        "Ranged",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "远程",
-        "飞行",
-        "无人机"
-    ],
-    "special": ""
+	"id": "D4",
+	"name": { "en": "Defender-4", "jp": "Mvc4", "cn": "御4" },
+	"stats": {
+		"level0": {
+			"hp": "4000",
+			"atk": "0",
+			"def": "150",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "2.5",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Does not attack",
+			"jp": "攻撃しない",
+			"cn": "不攻击"
+		},
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["flying", "drone"]
 }

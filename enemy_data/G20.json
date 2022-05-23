@@ -1,32 +1,40 @@
 {
-    "id": "G20",
-    "name_en": "Desperate Fanatic",
-    "name_jp": "鬼凶漢",
-    "name_cn": "末路狂徒",
-    "atk_type_jp": "物理",
-    "hp": "13000",
-    "atk": "800",
-    "def": "600",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "5",
-    "range": "1.3",
-    "HP回復速度": "0",
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "G20",
+	"name": { "en": "Desperate Fanatic", "jp": "鬼凶漢", "cn": "末路狂徒" },
+	"stats": {
+		"level0": {
+			"hp": "13000",
+			"atk": "800",
+			"def": "600",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "1.3",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.8",
+			"special": []
+		},
+        "猩红孤钻": {
+			"hp": "13000",
+			"atk": "800",
+			"def": "300",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "1.3",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "遠・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged"]
 }

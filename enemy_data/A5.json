@@ -30,6 +30,56 @@
 					}
 				}
 			]
+		},
+		"落魄骑士": {
+			"hp": "6000",
+			"atk": "240",
+			"def": "120",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "3.8",
+			"range": "2.2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.7",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["AOE - 4sq around target"],
+							"jp": ["範囲攻撃→目標周囲4マス"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		},
+		"分赃不均": {
+			"hp": "7000",
+			"atk": "300",
+			"def": "120",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "3.8",
+			"range": "2.2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.7",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["AOE - 4sq around target"],
+							"jp": ["範囲攻撃→目標周囲4マス"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

@@ -1,35 +1,27 @@
 {
-    "id": "O2",
-    "name_en": "Hound Pro",
-    "name_jp": "上級猟犬",
-    "name_cn": "猎狗pro",
-    "atk_type_jp": "物理",
-    "hp": "1700",
-    "atk": "260",
-    "def": "0",
-    "mdef": "20",
-    "aspd%": "100",
-    "aspd": "1.4",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.9",
-    "type_jp": [
-        "近距離",
-        "感染生物"
-    ],
-    "type_en": [
-        "Melee",
-        "Infected Creature"
-    ],
-    "type_cn": [
-        "近战",
-        "感染生物"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "O2",
+	"name": { "en": "Hound Pro", "jp": "上級猟犬", "cn": "猎狗pro" },
+	"stats": {
+		"level0": {
+            "hp": "1700",
+            "atk": "260",
+            "def": "0",
+            "mdef": "20",
+            "aspd%": "100",
+            "aspd": "1.4",
+            "range": "0",
+            "HP回復速度": "0",
+            "weight": "0",
+			"ms": "1.9",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee","infected_creature"]
 }

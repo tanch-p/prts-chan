@@ -1,35 +1,44 @@
 {
-    "id": "S2",
-    "name_en": "Sarkaz Greatswordsman Leader",
-    "name_jp": "サルカズ大剣隊長",
-    "name_cn": "萨卡兹大剑组长",
-    "atk_type_jp": "物理",
-    "hp": "15000",
-    "atk": "750",
-    "def": "250",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "2",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.85",
-    "type_jp": [
-        "近距離",
-        "サルカズ"
-    ],
-    "type_en": [
-        "Melee",
-        "Sarkaz"
-    ],
-    "type_cn": [
-        "近战",
-        "萨卡兹"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "S2",
+	"name": {
+		"en": "Sarkaz Greatswordsman Leader",
+		"jp": "サルカズ大剣隊長",
+		"cn": "萨卡兹大剑组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "15000",
+			"atk": "750",
+			"def": "250",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.85",
+			"special": []
+		},
+        "猩红孤钻": {
+			"hp": "11000",
+			"atk": "600",
+			"def": "100",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.85",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "sarkaz"]
 }

@@ -1,32 +1,27 @@
 {
-    "id": "U2",
-    "name_en": "Elite Infected Patrol Captain",
-    "name_jp": "感染者上級監視官",
-    "name_cn": "感染者高级纠察官",
-    "atk_type_jp": "物理",
-    "hp": "4300",
-    "atk": "400",
-    "def": "150",
-    "mdef": "20",
-    "aspd%": "100",
-    "aspd": "2",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.1",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "U2",
+	"name": { "en": "Elite Infected Patrol Captain", "jp": "感染者上級監視官", "cn": "感染者高级纠察官" },
+	"stats": {
+		"level0": {
+            "hp": "4300",
+            "atk": "400",
+            "def": "150",
+            "mdef": "20",
+            "aspd%": "100",
+            "aspd": "2",
+            "range": "0",
+            "HP回復速度": "0",
+            "weight": "1",
+			"ms": "1.1",
+			"special": ["可使用远程武器攻击乌萨斯平民与斗士塔露拉"]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }

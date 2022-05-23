@@ -1,0 +1,14 @@
+{
+	"name": "巡逻队",
+	"img": "巡逻队",
+	"buff": "敌方单位的攻击力和防御力都提升至130%，生命值提升至160%,提亚卡乌勇士和寻仇者的攻击力提升至140% ",
+	"enemies": [
+		{ "id": "T11", "stats": "巡逻队" },
+		{ "id": "14", "stats": "level0" },
+		{ "id": "06", "stats": "level0" },
+		{ "id": "01", "stats": "巡逻队" },
+		{ "id": "O2", "stats": "level0" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	]
+}

@@ -31,6 +31,32 @@
 					}
 				}
 			]
+		},
+		"压轴登场": {
+			"hp": "3200",
+			"atk": "100",
+			"def": "120",
+			"mdef": "35",
+			"aspd%": "100",
+			"aspd": "1",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "1.2",
+			"special": [
+				{
+					"name": "no_block",
+					"type": "self_buff",
+					"tooltip": {
+						"simple": {
+							"en": ["Cannot be blocked"],
+							"jp": ["ブロック不可"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {
