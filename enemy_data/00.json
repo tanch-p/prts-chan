@@ -1,5 +1,5 @@
 {
-	"id": "01",
+	"id": "00",
 	"name": { "en": "Sample", "jp": "サンプル", "cn": "" },
 	"stats": {
 		"level0": {
@@ -18,6 +18,14 @@
 	},
 	"normal_attack": {
 		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"hits": 1
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Does not attack",
+			"jp": "攻撃しない",
+			"cn": "不攻击"
+		},
 		"hits": 1
 	},
 	"スタン耐性": "無",

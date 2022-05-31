@@ -1,115 +1,120 @@
 {
-  "id": "W",
-  "name": { "en": "W", "cn": "W", "jp": "W" },
-  "stats": {
-    "level0": {
-      "hp": "10000",
-      "atk": "470",
-      "def": "100",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "4",
-      "range": "2.5",
-      "HP回復速度": "0",
-      "weight": "5",
-      "ms": "1.2",
-      "special": [
-        {
-          "name": "bomb",
-          "type": "atk",
-          "suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
-          "multiplier": 1.8,
-          "hits": 1,
-          "fixedInc": 0,
-          "tooltip": {
-            "simple": {
-              "en": [
-                "Skill→Plants bomb on 2 units, CD21s",
-                "HP↓50%:plants bomb on 3 units, uses skill immediately"
-              ],
-              "jp": [
-                "スキル→敵ユニット2体に爆弾設置する",
-                "(爆弾：単体に180%物理ダメージ)",
-                "HP50%以下：爆弾2体ｰ>3体、即時爆弾設置する"
-              ],
-              "cn": []
-            },
-            "detailed": {
-              "en": [],
-              "jp": [
-                "一定時間ごとに攻撃範囲内の敵ユニット2体に爆弾を設置します",
-                "(爆弾：単体に180%物理ダメージ)",
-                "HP50%以下：爆弾2体ｰ>3体、即時爆弾を設置します"
-              ],
-              "cn": []
-            }
-          }
-        }
-      ]
-    },
-    "Fungimist": {
-      "hp": "18000",
-      "atk": "630",
-      "def": "200",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "4",
-      "range": "2.5",
-      "HP回復速度": "0",
-      "weight": "5",
-      "ms": "1.2"
-    },
-    "第6区跡": {
-      "hp": "21000",
-      "atk": "650",
-      "def": "200",
-      "mdef": "50",
-      "aspd%": "100",
-      "aspd": "4",
-      "range": "2.7",
-      "HP回復速度": "0",
-      "weight": "5",
-      "ms": "1.2",
-      "special": [
-        {
-          "name": "bomb",
-          "type": "atk",
-          "suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
-          "multiplier": 2.2,
-          "hits": 1,
-          "fixedInc": 0,
-          "tooltip": {
-            "simple": {
-              "en": [
-                "Skill→Plants bomb on 2 units, CD21s",
-                "HP↓50%:plants bomb on 3 units, uses skill immediately"
-              ],
-              "jp": [
-                "スキル→敵ユニット2体に爆弾設置する、CD21秒",
-                "HP50%以下：爆弾2体ｰ>3体、即時スキル使用する"
-              ],
-              "cn": []
-            },
-            "detailed": {
-              "en": [],
-              "jp": [
-                "一定時間ごとに攻撃範囲内の敵ユニット2体に爆弾を設置します",
-                "(爆弾：単体に180%物理ダメージ)",
-                "HP50%以下：爆弾2体ｰ>3体、即時爆弾を設置します"
-              ],
-              "cn": []
-            }
-          }
-        }
-      ]
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "",
-  "type": ["ranged", "sarkaz", "boss"]
+	"id": "W",
+	"name": { "en": "W", "cn": "W", "jp": "W" },
+	"stats": {
+		"level0": {
+			"hp": "10000",
+			"atk": "470",
+			"def": "100",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.5",
+			"HP回復速度": "0",
+			"weight": "5",
+			"ms": "1.2",
+			"special": [
+				{
+					"name": "bomb",
+					"type": "atk",
+					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
+					"multiplier": 1.8,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Skill→Plants bomb on 2 units, CD21s",
+								"HP↓50%:plants bomb on 3 units, uses skill immediately"
+							],
+							"jp": [
+								"スキル→敵ユニット2体に爆弾設置する",
+								"(爆弾：単体に180%物理ダメージ)",
+								"HP50%以下：爆弾2体ｰ>3体、即時爆弾設置する"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"第6区跡": {
+			"hp": "21000",
+			"atk": "650",
+			"def": "200",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.7",
+			"HP回復速度": "0",
+			"weight": "5",
+			"ms": "1.2",
+			"special": [
+				{
+					"name": "bomb",
+					"type": "atk",
+					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
+					"multiplier": 2.2,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Skill→Plants bomb on 2 units, CD21s",
+								"HP↓50%:plants bomb on 3 units, uses skill immediately"
+							],
+							"jp": [
+								"スキル→敵ユニット2体に爆弾設置する、CD21秒",
+								"HP50%以下：爆弾2体ｰ>3体、即時スキル使用する"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"似曾相识": {
+			"hp": "18000",
+			"atk": "530",
+			"def": "200",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.7",
+			"HP回復速度": "0",
+			"weight": "5",
+			"ms": "1.2",
+			"special": [
+				{
+					"name": "bomb",
+					"type": "atk",
+					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
+					"multiplier": 1.8,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Skill→Plants bomb on 2 units, CD21s",
+								"HP↓50%:plants bomb on 3 units, uses skill immediately"
+							],
+							"jp": [
+								"スキル→敵ユニット2体に爆弾設置する、CD21秒",
+								"HP50%以下：爆弾2体ｰ>3体、即時スキル使用する"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["ranged", "sarkaz", "boss"]
 }

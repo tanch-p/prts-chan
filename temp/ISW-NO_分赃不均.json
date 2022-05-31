@@ -1,0 +1,16 @@
+{
+	"name": "分赃不均",
+	"img": "分赃不均",
+	"buff": "敌方单位的攻击力提升至130%，防御力提升至120%，生命值提升至140%,高阶术师被替换为护盾高阶术师，特战术师被替换为特战术师组长",
+	"enemies": [
+		{ "id": "CS", "stats": "分赃不均" },
+		{ "id": "34", "stats": "level0" },
+		{ "id": "19", "stats": "level0" },
+		{ "id": "A5", "stats": "分赃不均" },
+		{ "id": "AL1", "stats": "level0" },
+		{ "id": "AL2", "stats": "分赃不均" },
+		{ "id": "A7", "stats": "level0" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	]
+}

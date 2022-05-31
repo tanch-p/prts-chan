@@ -32,6 +32,33 @@
 					}
 				}
 			]
+		},
+		"分赃不均": {
+			"hp": "6000",
+			"atk": "450",
+			"def": "250",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.4",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.8",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Normal attack targets 2 units"
+							],
+							"jp": ["2体同時攻撃"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

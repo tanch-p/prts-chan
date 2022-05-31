@@ -1,0 +1,13 @@
+{
+	"name": "与虫为伴",
+	"img": "与虫为伴",
+	"buff":"敌方单位的攻击力和防御力都提升至150%，生命值提升至190% ",
+	"enemies": [
+		{ "id": "B1", "stats": "level0" },
+		{ "id": "B2", "stats": "level0" },
+		{ "id": "B4", "stats": "猩红孤钻" },
+        { "id": "K5", "stats": "猩红孤钻" },
+		{ "id": "DLD", "stats": "level0" },
+		{ "id": "GPN", "stats": "level0" }
+	]
+}

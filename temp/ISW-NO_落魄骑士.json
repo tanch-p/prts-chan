@@ -1,0 +1,15 @@
+{
+	"name": "落魄骑士",
+	"img": "落魄骑士",
+	"buff": "敌方单位的攻击力和生命值都提升至130%，防御力提升至120%,沸血骑士团学徒和沸血骑士团精锐获得隐匿",
+	"enemies": [
+		{ "id": "K11", "stats": "落魄骑士" },
+		{ "id": "K10", "stats": "落魄骑士" },
+		{ "id": "A7", "stats": "level0" },
+		{ "id": "A5", "stats": "落魄骑士" },
+		{ "id": "K1", "stats": "level0" },
+		{ "id": "K3", "stats": "level0" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	]
+}

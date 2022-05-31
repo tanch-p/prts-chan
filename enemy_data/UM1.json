@@ -1,38 +1,78 @@
 {
-    "id": "UM1",
-    "name_en": "Pompeii'",
-    "name_jp": "Pompeii",
-    "name_cn": "庞贝",
-    "atk_type_jp": "術",
-    "hp": "40000",
-    "atk": "230",
-    "def": "220",
-    "mdef": "70",
-    "aspd%": "100",
-    "aspd": "3.5",
-    "range": "3.5",
-    "HP回復速度": "0",
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.65",
-    "type_jp": [
-        "遠距離",
-        "ボス",
-        "感染生物"
-    ],
-    "type_en": [
-        "Ranged",
-        "Boss",
-        "Infected Creature"
-    ],
-    "type_cn": [
-        "远程",
-        "领袖",
-        "感染生物"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "UM1",
+	"name": { "en": "Pompeii", "jp": "Pompeii", "cn": "庞贝" },
+	"stats": {
+		"level0": {
+			"hp": "40000",
+			"atk": "230",
+			"def": "220",
+			"mdef": "70",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "3.5",
+			"HP回復速度": "0",
+			"weight": "4",
+			"ms": "0.65",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": "HP↓50%→ASPD+40",
+							"jp": "HP↓50%→攻撃速度+40",
+							"cn": "HP↓50%→攻撃速度+40"
+						}
+					}
+				},
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": "Attacks 4 units at once",
+							"jp": "4体同時攻撃",
+							"cn": "同時攻撃4个单位",
+							"kr": "4대 공격"
+						}
+					}
+				},
+				{
+                    "name":"burn",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": "Attacks inflict Burn (20 Arts dmg every 0.33s) for 10s",
+							"jp": "攻撃で10秒火傷・術(20/0.33秒)付与される",
+							"cn": "攻击造成灼烧伤害(20法伤/0.33秒)，持续10秒"
+						}
+					}
+				},
+				{
+					"name": "explosion",
+					"type": "atk",
+					"suffix": { "en": "💥/Arts", "jp": "💥・術", "cn": "💥・法术" },
+					"multiplier": 1,
+					"fixed-dmg": 1000,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"When blocked, creates an explosion around self every 10s"
+							],
+							"jp": ["ブロックされると10秒毎に自分中心に爆発"],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "ranged/arts", "jp": "遠・術", "cn": "远・法术" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "infected_creature", "boss"]
 }

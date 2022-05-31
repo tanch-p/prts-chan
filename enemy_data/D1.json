@@ -1,36 +1,47 @@
 {
-    "id": "D1",
-    "name_en": "Monster",
-    "name_jp": "怪鳥",
-    "name_cn": "妖怪",
-    "atk_type_jp": "攻撃しない",
-    "hp": "800",
-    "atk": "0",
-    "def": "50",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "2.3",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.9",
-    "type_jp": [
-        "遠距離",
-        "飛行",
-        "ドローン"
-    ],
-    "type_en": [
-        "Ranged",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "远程",
-        "飞行",
-        "无人机"
-    ],
-    "special": ""
+	"id": "D1",
+	"name": {
+		"en": "Monster",
+		"jp": "怪鳥",
+		"cn": "妖怪"
+	},
+	"stats": {
+		"level0": {
+			"hp": "800",
+			"atk": "0",
+			"def": "50",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2.3",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "0.9",
+			"special": []
+		},
+        "酒商运输队": {
+			"hp": "2500",
+			"atk": "0",
+			"def": "50",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2.3",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "0.9",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Does not attack",
+			"jp": "攻撃しない",
+			"cn": "不攻击"
+		}
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["flying", "drone"]
 }

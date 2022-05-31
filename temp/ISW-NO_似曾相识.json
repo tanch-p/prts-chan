@@ -1,0 +1,14 @@
+{
+	"name": "似曾相识",
+	"img": "似曾相识",
+	"buff": "敌方单位的防御力提升至110%，攻击力和生命值都提升至150% ",
+	"enemies": [
+		{ "id": "W", "stats": "似曾相识" },
+		{ "id": "S11", "stats": "level0" },
+		{ "id": "S7", "stats": "似曾相识" },
+		{ "id": "S15", "stats": "似曾相识" },
+		{ "id": "S16", "stats": "似曾相识" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	]
+}

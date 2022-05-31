@@ -1,32 +1,49 @@
 {
-    "id": "U7",
-    "name_en": "Ursus Armored Caster",
-    "name_jp": "ウルサス重装術師",
-    "name_cn": "乌萨斯着铠术师",
-    "atk_type_jp": "術",
-    "hp": "5000",
-    "atk": "340",
-    "def": "500",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "2.8",
-    "range": "2.2",
-    "HP回復速度": "0",
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.9",
-    "type_jp": [
-        "遠距離"
-    ],
-    "type_en": [
-        "Ranged"
-    ],
-    "type_cn": [
-        "远程"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "U7",
+	"name": {
+		"en": "Ursus Armored Caster",
+		"jp": "ウルサス重装術師",
+		"cn": "乌萨斯着铠术师"
+	},
+	"stats": {
+		"level0": {
+			"hp": "5000",
+			"atk": "340",
+			"def": "500",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2.8",
+			"range": "2.2",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.9",
+			"special": []
+		},
+		"正义": {
+			"hp": "5000",
+			"atk": "340",
+			"def": "400",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2.8",
+			"range": "2.2",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.9",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": {
+			"en": "Ranged/Arts",
+			"jp": "遠・術",
+			"cn": "远・法术"
+		},
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+
+	"type": ["ranged"]
 }

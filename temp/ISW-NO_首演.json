@@ -1,0 +1,14 @@
+{
+	"name": "首演",
+	"img": "首演",
+	"buff": "敌方单位的攻击力和生命值都提升至115%,绯红歌伶的防御力提升至150% ",
+	"enemies": [
+		{ "id": "O1", "stats": "level0" },
+		{ "id": "25", "stats": "level0" },
+		{ "id": "21", "stats": "level0" },
+		{ "id": "CS1", "stats": "level0" },
+		{ "id": "CS2", "stats": "level0" },
+		{ "id": "DLD", "stats": "level0" },
+		{ "id": "GPN", "stats": "level0" }
+	]
+}

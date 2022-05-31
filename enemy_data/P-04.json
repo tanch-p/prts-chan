@@ -1,32 +1,27 @@
 {
-    "id": "P-04",
-    "name_en": "Sniper Leader",
-    "name_jp": "狙撃歩兵隊長",
-    "name_cn": "狙击步兵组长",
-    "atk_type_jp": "物理",
-    "hp": "4000",
-    "atk": "200",
-    "def": "150",
-    "mdef": "10",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "4",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "遠距離"
-    ],
-    "type_en": [
-        "Ranged"
-    ],
-    "type_cn": [
-        "远程"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "P-04",
+	"name": { "en": "Sniper Leader", "jp": "狙撃歩兵隊長", "cn": "狙击步兵组长" },
+	"stats": {
+		"level0": {
+			"hp": "4000",
+			"atk": "200",
+			"def": "150",
+			"mdef": "10",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "4",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "遠・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged"]
 }
