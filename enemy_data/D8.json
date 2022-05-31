@@ -1,38 +1,44 @@
 {
-    "id": "D8",
-    "name_en": "Arts Master A2",
-    "name_jp": "アーツバードA2",
-    "name_cn": "法术大师A2",
-    "atk_type_jp": "術",
-    "hp": "6000",
-    "atk": "600",
-    "def": "140",
-    "mdef": "65",
-    "aspd%": "100",
-    "aspd": "3.5",
-    "range": "3",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "近距離",
-        "飛行",
-        "ドローン"
-    ],
-    "type_en": [
-        "Melee",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "近战",
-        "飞行",
-        "无人机"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "D8",
+	"name": {
+		"en": "Arts Master A2",
+		"jp": "アーツバードA2",
+		"cn": "法术大师A2"
+	},
+	"stats": {
+		"level0": {
+            "hp": "6000",
+            "atk": "600",
+            "def": "140",
+            "mdef": "65",
+            "aspd%": "100",
+            "aspd": "3.5",
+            "range": "3",
+            "HP回復速度": "0",
+            "weight": "1",
+            "ms": "0.8",
+			"special": []
+		},
+		"步步紧逼": {
+            "hp": "6000",
+            "atk": "600",
+            "def": "140",
+            "mdef": "65",
+            "aspd%": "100",
+            "aspd": "3.5",
+            "range": "3",
+            "HP回復速度": "0",
+            "weight": "1",
+            "ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "ranged/arts", "jp": "遠・術", "cn": "远・法术" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged","flying","drone"]
 }

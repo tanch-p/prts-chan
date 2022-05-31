@@ -1,0 +1,253 @@
+[
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：体力減衰I",
+					"en": "Reduced Operator HP 1",
+					"cn": "源石环境：侵蚀I"
+				},
+				"img": "75px-Char_hp_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -15%",
+					"jp": "全ての味方の最大HP-15%",
+					"cn": "所有我方单位的生命值上限降低15%"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "指令：背水の陣",
+					"en": "None Escape",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "rock_obstacle",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "環境：障害物排除",
+					"en": "Rocks Removed",
+					"cn": ""
+				},
+				"img": "無秩序な鉱区/75px-Trap_change_1",
+				"effects": [],
+				"tooltip": {
+					"en": "4 Rocks on map are removed",
+					"jp": "マップ上の「礫岩」が4つ減少",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "MR_BB",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：鎧付加II",
+					"en": "BobRock 2",
+					"cn": ""
+				},
+				"img": "無秩序な鉱区/75px-Enemy_bigbomdrock_3",
+				"effects": [
+					{
+						"targets": ["MR"],
+						"mods": {
+							"hp": "%60",
+							"atk": "%60",
+							"mdef": 30,
+							"special": {
+								"mudrock_shield": {
+									"tooltip": {
+										"en": [
+											"Skill→Every 90s creates shield which absorbs up to $22500$ Arts damage",
+											"Shield Active: Max HP+50%、ASPD+50%"
+										],
+										"jp": [
+											"スキル→90秒毎にシールドを張り、合計$22500$の術攻撃を吸収する",
+											"シールド展開中：最大HP+50%、攻撃速度+50%"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					},
+					{
+						"targets": ["11"],
+						"mods": {
+							"hp": "%60",
+							"atk": "%60",
+							"def": "%50",
+							"mdef": 30
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Big Bob] and [Mudrock] ATK +90%, Max HP +100%, RES +45. [Big Bob] DEF +100%, [Mudrock] shield +100% and shield cooldown reduced to 70% of original value.",
+					"cn": "",
+					"jp": "「Big Bob」と「Mudrock」の攻撃力+90%、最大HP+100%、術耐性+45、「Big Bob」の防御力をさらに+100%、「Mudrock」のシールドの耐久値+100%、クールダウンが70％までに短縮"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy ATK 2",
+					"jp": "増幅：火力II",
+					"cn": "源石环境：刺激II"
+				},
+				"img": "75px-Enemy_atk_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%40"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +40%",
+					"jp": "全ての敵の攻撃力+40%",
+					"cn": "所有敌人的攻击力提升40%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_respawn",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "制限：効率低下II",
+					"en": "Reduced Operator Redeployment 2",
+					"cn": "目标：效率低下II"
+				},
+				"img": "75px-Char_respawntime_2.png",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally redeployment time increased by 150%",
+					"jp": "全ての味方の再配置時間+150%",
+					"cn": "所有我方单位的再部署时间延长150%"
+				}
+			}
+		]
+	},
+	{
+		"category": "MR_BB",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：鎧付加III",
+					"en": "BobRock 3",
+					"cn": ""
+				},
+				"img": "無秩序な鉱区/75px-Enemy_bigbomdrock_3",
+				"effects": [
+					{
+						"targets": ["MR"],
+						"mods": {
+							"hp": "%100",
+							"atk": "%90",
+							"mdef": 45,
+							"special": {
+								"mudrock_shield": {
+									"tooltip": {
+										"en": [
+											"Skill→Every $63s$ creates shield which absorbs up to $30000$ Arts damage",
+											"Shield Active: Max HP+50%、ASPD+50%"
+										],
+										"jp": [
+											"スキル→$63秒$毎にシールドを張り、合計$30000$の術攻撃を吸収する",
+											"シールド展開中：最大HP+50%、攻撃速度+50%"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					},
+					{
+						"targets": ["11"],
+						"mods": {
+							"hp": "%100",
+							"atk": "%90",
+							"def": "%100",
+							"mdef": 45
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Big Bob] and [Mudrock] ATK +90%, Max HP +100%, RES +45. [Big Bob] DEF +100%, [Mudrock] shield +100% and shield cooldown reduced to 70% of original value.",
+					"cn": "",
+					"jp": "「Big Bob」と「Mudrock」の攻撃力+90%、最大HP+100%、術耐性+45、「Big Bob」の防御力をさらに+100%、「Mudrock」のシールドの耐久値+100%、クールダウンが70％までに短縮"
+				}
+			}
+		]
+	},
+	{
+		"category": "MR_golem",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：巨像進撃III",
+					"en": "Slow Immune Empowered Colossi 3",
+					"cn": ""
+				},
+				"img": "無秩序な鉱区/75px-Enemy_mdgint_amod_3",
+				"effects": [
+					{
+						"targets": ["L13"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%90",
+							"mdef": 45,
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Bind/Slow Immune$"],
+										"jp": ["$足止め・バインド無効$"],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Mudrock Colossus Max HP +90%, ATK +90%, RES +45. becomes Immune to Bind & Slow Effects",
+					"cn": "",
+					"jp": "「マドロックの巨像」の最大HP+90%、攻撃力+90%、術耐性+45、足止め・バインド効果を受けなくなる"
+				}
+			}
+		]
+	}
+]

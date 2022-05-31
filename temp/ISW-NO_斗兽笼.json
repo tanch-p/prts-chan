@@ -1,0 +1,16 @@
+{
+	"name": "斗兽笼",
+	"img": "斗兽笼",
+	"buff": "敌方单位的攻击力提升至105%，生命值提升至130%,所有我方单位部署后流失70%最大生命值",
+	"enemies": [
+		{ "id": "O1", "stats": "斗兽笼" },
+		{ "id": "O2", "stats": "斗兽笼" },
+		{ "id": "O3", "stats": "斗兽笼" },
+		{ "id": "A7", "stats": "level0" },
+		{ "id": "A2", "stats": "level0" },
+		{ "id": "28", "stats": "斗兽笼" },
+		{ "id": "16", "stats": "level0" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	]
+}

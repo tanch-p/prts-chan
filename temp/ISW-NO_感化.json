@@ -1,0 +1,16 @@
+{
+	"name": "感化",
+	"img": "感化",
+	"buff": "敌方单位的攻击力和防御力都提升至110%，生命值提升至140%,拳手囚犯被替换为拳师囚犯",
+	"enemies": [
+		{ "id": "CS1", "stats": "level0" },
+		{ "id": "CS4", "stats": "level0" },
+		{ "id": "C11", "stats": "level0" },
+		{ "id": "C13", "stats": "level0" },
+		{ "id": "C15", "stats": "感化" },
+		{ "id": "C16", "stats": "感化" },
+		{ "id": "C17", "stats": "level0" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	]
+}

@@ -6,6 +6,7 @@ Get me a
  - a hover over skill detailed tooltip so that my enemy simple won't be so bloated
  - wheres my IS pageeeeeeeeee
  - searchable enemy details page that is actually human readable and doesn't load everything at once
+ - can I have a GUI for CC options
 
 - Header
 

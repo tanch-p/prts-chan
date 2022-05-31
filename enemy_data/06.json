@@ -14,6 +14,19 @@
 			"weight": "1",
 			"ms": "1",
 			"special": []
+		},
+		"从众效应": {
+			"hp": "2400",
+			"atk": "250",
+			"def": "400",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "1",
+			"special": []
 		}
 	},
 	"normal_attack": {
