@@ -26,10 +26,12 @@ export default function TooltipComponent({
 						{langpack.type[type].ops.map((categoryObj) => {
 							return Object.keys(categoryObj).map((key) => {
 								return (
-									<ul className="">
+									<ul className="" key={key}>
 										<span className="font-semibold">{key}</span>
 										{categoryObj[key].map((op) => (
-											<li className="">- {op}</li>
+											<li className="" key={op}>
+												- {op}
+											</li>
 										))}
 									</ul>
 								);

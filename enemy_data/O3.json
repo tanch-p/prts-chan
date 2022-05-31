@@ -38,30 +38,3 @@
 	"凍結耐性": "無",
 	"type": ["melee","infected_creature"]
 }
-{
-    "id": "",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "",
-    "atk_type_jp": "物理",
-    
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.9",
-    "type_jp": [
-        "近距離",
-        "感染生物"
-    ],
-    "type_en": [
-        "Melee",
-        "Infected Creature"
-    ],
-    "type_cn": [
-        "近战",
-        "感染生物"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
-}
