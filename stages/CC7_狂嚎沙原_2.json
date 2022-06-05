@@ -1,0 +1,15 @@
+{
+	"name": { "en": "Howling Desert", "jp": "狂風の砂原", "cn": "狂嚎沙原" },
+	"img": "狂嚎沙原",
+	"config": "CC7_狂嚎沙原_2",
+	"ccType": "daily",
+	"enemies": [
+		{ "id": "T1", "count": 24, "stats": "level0" },
+		{ "id": "T5", "count": 6, "stats": "level0" },
+		{ "id": "T7", "count": 3, "stats": "level0" },
+		{ "id": "T11", "count": 5, "stats": "level0" },
+		{ "id": "R10", "count": 2, "stats": "level0" },
+		{ "id": "R12", "count": 2, "stats": "level0" },
+		{ "id": "R16", "count": 0, "stats": "level0" }
+	]
+}

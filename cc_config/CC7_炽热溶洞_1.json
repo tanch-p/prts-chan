@@ -5,7 +5,7 @@
 			{
 				"rank": 1,
 				"name": { "jp": "増幅：体力I", "en": "Enemy HP 1", "cn": "" },
-				"img": "炽热溶洞/75px-Enemy_hp_1",
+				"img": "75px-Enemy_hp_1",
 				"effects": [{ "targets": ["ALL"], "mods": { "hp": "%30" } }],
 				"tooltip": {
 					"en": "Enemy Max HP +30%",
@@ -21,7 +21,7 @@
 			{
 				"rank": 1,
 				"name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
-				"img": "炽热溶洞/75px-Global_lifepoint_1",
+				"img": "75px-Global_lifepoint_1",
 				"effects": [],
 				"tooltip": {
 					"en": "No enemies escape (Level HP set to 1)",
@@ -37,7 +37,7 @@
 			{
 				"rank": 1,
 				"name": { "jp": "環境：溶岩I", "en": "Volcanic Intrusion 1", "cn": "" },
-				"img": "炽热溶洞/",
+				"img": "炽热溶洞/75px-Global_forbidloc_amod_1",
 				"effects": [],
 				"tooltip": {
 					"en": "1 tile forbids deployment and [Lava Fountain]'s damage is increased by 200",
@@ -93,7 +93,7 @@
 					"en": "Sniper and Guard 2",
 					"cn": ""
 				},
-				"img": "閉鎖監獄/75px-Char_cost_sniperguard_2",
+				"img": "75px-Char_cost_sniperguard_2",
 				"effects": [],
 				"tooltip": {
 					"en": "DP Cost of Snipers and Guards tripled and redeployment time increased by 50%",
@@ -113,7 +113,7 @@
 					"en": "Max Squad Size 2",
 					"cn": ""
 				},
-				"img": "無秩序な鉱区/75px-Global_pcharnum_2",
+				"img": "75px-Global_pcharnum_2",
 				"effects": [],
 				"tooltip": {
 					"en": "Maximum 7 operators in squad",
@@ -124,7 +124,7 @@
 		]
 	},
 	{
-		"category": "pompeii",
+		"category": "pompeii_a",
 		"options": [
 			{
 				"rank": 3,
@@ -141,6 +141,7 @@
 							"hp": "%120",
 							"special": {
 								"explosion": {
+									"type": "atk",
 									"fixed-dmg": 2000,
 									"tooltip": {
 										"en": [
@@ -163,7 +164,7 @@
 		]
 	},
 	{
-		"category": "pompeii",
+		"category": "pompeii_b",
 		"options": [
 			{
 				"rank": 3,

@@ -1,0 +1,187 @@
+[
+	{
+		"category": "crab",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "特化：鉗獣育成",
+					"en": "Pincerbeast 1",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_scorpn_1",
+				"effects": [
+					{ "targets": ["K3"], "mods": { "def": "%40", "mdef": 40 } }
+				],
+				"tooltip": {
+					"en": "[Training Pincerbeast] DEF +40%, RES +40",
+					"cn": "",
+					"jp": "全ての＜訓練用鉗獣＞の防御力+40%、術耐性+40"
+				}
+			}
+		]
+	},
+	{
+		"category": "roar_knight_1",
+
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "特化：盔甲改良I",
+					"en": "Roarknight 1",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_plkght_1",
+				"effects": [
+					{
+						"targets": ["K5"],
+						"mods": {
+							"special": {
+								"barrier": {
+									"tooltip": {
+										"en": ["Barrier→for $60s$, Def+3000, Res+95"],
+										"jp": ["バリア→$60秒間$、防御力+3000、術耐性+95"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Roarknight Club Trainee] Shield Duration +100%",
+					"cn": "",
+					"jp": "＜ロアー見習い騎士＞のシールド継続時間100%延長"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_aspd",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Enemy ASPD 1",
+					"jp": "増幅：ラッシュ",
+					"cn": ""
+				},
+				"img": "75px-Enemy_attackspeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"aspd": "%25"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy ASPD +25",
+					"jp": "全ての敵の攻撃速度+25",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -25%",
+					"jp": "全ての味方の攻撃力-25%",
+					"cn": "所有我方单位的攻击力降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "grids",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Forbidden Grids 2",
+					"jp": "環境：峻険地形II",
+					"cn": ""
+				},
+				"img": "75px-Global_forbidloc_2",
+				"effects": [],
+				"tooltip": {
+					"en": "11 tiles forbid deployment",
+					"jp": "マップ上の11つのマスが配置不可に",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "制限：過負荷",
+					"en": "Guard and Caster Forbidden",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Char_cost_casterdefender_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Guard and Caster cannot be deployed",
+					"cn": "",
+					"jp": "重装・術師の配置禁止"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_defres",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Reduced Ally DEF and RES 3",
+					"jp": "制限：防御分解III",
+					"cn": ""
+				},
+				"img": "75px-Char_defmagicresistance_3",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies' DEF-70% and RES -30",
+					"jp": "全ての味方の防御力-70%、術耐性-30",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Max Squad Size 3",
+					"jp": "環境：少数精鋭III",
+					"cn": "目标：隐秘行动III "
+				},
+				"img": "75px-Global_squadnum_3",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 6 operators in squad",
+					"jp": "編成可能数が6人に",
+					"cn": "最多可编入6名干员进入作战"
+				}
+			}
+		]
+	}
+]

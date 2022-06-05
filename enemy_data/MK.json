@@ -1,0 +1,33 @@
+{
+	"id": "MK",
+	"name": {
+		"en": "Rat King'",
+		"jp": "鼠王",
+		"cn": "“鼠王”"
+	},
+	"stats": {
+		"level0": [
+			{
+				"hp": "22000",
+				"atk": "470",
+				"def": "350",
+				"mdef": "30",
+				"aspd%": "100",
+				"aspd": "3.4",
+				"range": "2.5",
+				"HP回復速度": "0",
+				"weight": "5",
+				"ms": "0.6",
+				"special": {}
+			}
+		]
+	},
+	"normal_attack": {
+		"type": { "en": "melee/arts", "jp": "遠・術", "cn": "远・法术" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "boss"]
+}

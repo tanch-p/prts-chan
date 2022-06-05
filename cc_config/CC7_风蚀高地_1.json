@@ -1,0 +1,188 @@
+[
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Enemy ATK 1",
+					"jp": "増幅：火力I",
+					"cn": "源石环境：刺激I"
+				},
+				"img": "75px-Enemy_atk_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%25"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +25%",
+					"jp": "全ての敵の攻撃力+25%",
+					"cn": "所有敌人的攻击力提升25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：体力減衰I",
+					"en": "Reduced Operator HP 1",
+					"cn": "源石环境：侵蚀I"
+				},
+				"img": "75px-Char_hp_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -15%",
+					"jp": "全ての味方の最大HP-15%",
+					"cn": "所有我方单位的生命值上限降低15%"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "lancer",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：無惧突進II",
+					"en": "Empowered Sarkaz Lancer 2",
+					"cn": ""
+				},
+				"img": "風蝕の高原/75px-Enemy_dlancer_2",
+				"effects": [
+					{
+						"targets": ["S9"],
+						"mods": {
+							"hp": "%80",
+							"special": {
+								"lancer-accelerate": {
+									"tooltip": {
+										"en": [
+											"Accelerates every 0.5s, inc ms by $150%$, does extra damage which scales with ms for 1 attack, after attacking ms stack resets"
+										],
+										"jp": [
+											"0.5秒毎加速する",
+											"加速→移動速度+$150％$、攻撃時一回追加ダメージを加える、攻撃後リセットする",
+											"追加ダメージ（1ms:$1000$)"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All Sarkaz Lancer MaxHP +80%, speed-based dash damage becomes 1000%, dash acceleration is now 1.5x",
+					"cn": "",
+					"jp": "「サルカズ突撃兵」の最大HP+80%、突撃ダメージ倍率が1:1000%に上昇、加速度が1.5倍になる"
+				}
+			}
+		]
+	},
+	{
+		"category": "sarkaz_sword",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：一日千秋II",
+					"en": "Sarkaz Swordsman 2",
+					"cn": ""
+				},
+				"img": "風蝕の高原/75px-Enemy_dmgswd_2",
+				"effects": [
+					{
+						"targets": ["S15"],
+						"mods": {
+							"def": "%50",
+							"hp": "%50",
+							"aspd": "%50",
+							"ms": "%30"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All [Sarkaz Bladeweaver] Max HP +50%, ASPD +50, DEF +50%, movement speed +30%, idle state timer decreased to 100s",
+					"cn": "",
+					"jp": "「サルカズ魔剣士」の最大HP+50%、攻撃速度+50、防御力+50%、移動速度+30%、待機時間が100秒まで短縮"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy HP 2",
+					"jp": "増幅：体力II",
+					"cn": "源石环境：活性II"
+				},
+				"img": "75px-Enemy_hp_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%70"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +70%",
+					"jp": "全ての敵の最大HP+70%",
+					"cn": "所有敌人的生命值提升70%"
+				}
+			}
+		]
+	},
+	{
+		"category": "grids",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Forbidden Grids 3",
+					"jp": "環境：峻険地形III",
+					"cn": ""
+				},
+				"img": "75px-Global_forbidloc_3",
+				"effects": [],
+				"tooltip": {
+					"en": "14 grids forbid deployment",
+					"jp": "マップ上の14つのマスが配置不可に",
+					"cn": ""
+				}
+			}
+		]
+	}
+]

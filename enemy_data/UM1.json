@@ -10,17 +10,18 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "3.5",
-			"HP回復速度": "0",
+			"lifepoint": 1,
 			"weight": "4",
 			"ms": "0.65",
 			"special": [
 				{
+					"name": "aspd_inc",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": "HP↓50%→ASPD+40",
-							"jp": "HP↓50%→攻撃速度+40",
-							"cn": "HP↓50%→攻撃速度+40"
+							"en": ["HP↓50%→ASPD+40"],
+							"jp": ["HP↓50%→攻撃速度+40"],
+							"cn": ["HP↓50%→攻撃速度+40"]
 						}
 					}
 				},
@@ -28,21 +29,20 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": "Attacks 4 units at once",
-							"jp": "4体同時攻撃",
-							"cn": "同時攻撃4个单位",
-							"kr": "4대 공격"
+							"en": ["Attacks 4 units at once"],
+							"jp": ["4体同時攻撃"],
+							"cn": ["同時攻撃4个单位"]
 						}
 					}
 				},
 				{
-                    "name":"burn",
+					"name": "burn",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": "Attacks inflict Burn (20 Arts dmg every 0.33s) for 10s",
-							"jp": "攻撃で10秒火傷・術(20/0.33秒)付与される",
-							"cn": "攻击造成灼烧伤害(20法伤/0.33秒)，持续10秒"
+							"en": ["Attacks inflict Burn (20 Arts dmg every 0.33s) for 10s"],
+							"jp": ["攻撃で10秒火傷・術(20/0.33秒)付与される"],
+							"cn": ["攻击造成灼烧伤害(20法伤/0.33秒)，持续10秒"]
 						}
 					}
 				},

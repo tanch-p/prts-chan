@@ -93,7 +93,7 @@
 					"name": "hammertime",
 					"type": "atk",
 					"suffix": { "en": "Skill/Phys", "jp": "スキル・物理", "cn": "" },
-					"multiplier": 3,
+					"multiplier": 2.8,
 					"hits": 1,
 					"fixedInc": 0,
 					"tooltip": {

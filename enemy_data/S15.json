@@ -23,8 +23,8 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": [],
+							"en": ["Does not attack while on standby"],
+							"jp": ["待機中攻撃しない"],
 							"cn": []
 						}
 					}
@@ -48,16 +48,15 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": [],
+							"en": ["Does not attack while on standby"],
+							"jp": ["待機中攻撃しない"],
 							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
+						}
 					}
 				}
 			]
 		},
-    "似曾相识": {
+		"似曾相识": {
 			"hp": "8000",
 			"atk": "400",
 			"def": "200",
@@ -74,8 +73,8 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": [],
+							"en": ["Does not attack while on standby"],
+							"jp": ["待機中攻撃しない"],
 							"cn": []
 						}
 					}
