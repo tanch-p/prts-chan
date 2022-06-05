@@ -3,28 +3,41 @@
 	"name": { "en": "Rabid Hound Pro", "jp": "凶暴猟犬", "cn": "狂暴的猎狗pro" },
 	"stats": {
 		"level0": {
-            "hp": "3000",
-            "atk": "370",
-            "def": "0",
-            "mdef": "20",
-            "aspd%": "100",
-            "aspd": "1.4",
-            "range": "0",
-            "HP回復速度": "0",
-            "weight": "0",
+			"hp": "3000",
+			"atk": "370",
+			"def": "0",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "1.4",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
 			"ms": "1.9",
 			"special": []
 		},
 		"斗兽笼": {
-            "hp": "3700",
-            "atk": "370",
-            "def": "0",
-            "mdef": "20",
-            "aspd%": "100",
-            "aspd": "1.4",
-            "range": "0",
-            "HP回復速度": "0",
-            "weight": "0",
+			"hp": "3700",
+			"atk": "370",
+			"def": "0",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "1.4",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "1.9",
+			"special": []
+		},
+		"阴云笼罩": {
+			"hp": "5000",
+			"atk": "370",
+			"def": "0",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "1.4",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
 			"ms": "1.9",
 			"special": []
 		}
@@ -36,5 +49,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee","infected_creature"]
+	"type": ["melee", "infected_creature"]
 }

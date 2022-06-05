@@ -22,9 +22,7 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [
-								"Normal attack targets 2 units"
-							],
+							"en": ["Normal attack targets 2 units"],
 							"jp": ["2体同時攻撃"],
 							"cn": []
 						},
@@ -49,9 +47,32 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [
-								"Normal attack targets 2 units"
-							],
+							"en": ["Normal attack targets 2 units"],
+							"jp": ["2体同時攻撃"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		},
+		"阴云笼罩": {
+			"hp": "10000",
+			"atk": "450",
+			"def": "300",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.4",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.8",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Normal attack targets 2 units"],
 							"jp": ["2体同時攻撃"],
 							"cn": []
 						},

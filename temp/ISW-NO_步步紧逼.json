@@ -1,12 +1,13 @@
 {
 	"name": "步步紧逼",
 	"img": "步步紧逼",
-	"buff":"敌方单位的攻击力提升至120%，防御力提升至110%，生命值提升至130% ",
+	"buff": "敌方单位的攻击力提升至120%，防御力提升至110%，生命值提升至130% ",
+	"count": "36~37",
 	"enemies": [
 		{ "id": "07", "stats": "level0" },
 		{ "id": "36", "stats": "猩红孤钻" },
 		{ "id": "D8", "stats": "猩红孤钻" },
-        { "id": "35", "stats": "level0" },
+		{ "id": "35", "stats": "level0" },
 		{ "id": "24", "stats": "level0" },
 		{ "id": "DLD", "stats": "level0" },
 		{ "id": "GPN", "stats": "level0" }

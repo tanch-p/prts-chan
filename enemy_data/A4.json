@@ -18,6 +18,19 @@
             "weight": "1",
 			"ms": "0.8",
 			"special": []
+		},
+		"阴云笼罩": {
+            "hp": "4800",
+            "atk": "300",
+            "def": "150",
+            "mdef": "50",
+            "aspd%": "100",
+            "aspd": "4",
+            "range": "2",
+            "HP回復速度": "0",
+            "weight": "1",
+			"ms": "0.8",
+			"special": []
 		}
 	},
 	"normal_attack": {

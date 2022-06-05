@@ -1,0 +1,231 @@
+[
+	{
+		"category": "storm_direction",
+		"options": [
+			{
+				"name": {
+					"en": "Storm Direction",
+					"jp": "環境：東風",
+					"cn": "環境：東風"
+				},
+				"rank": 1,
+				"img": "狂嚎沙原/storm_direction_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Sandstorm will switch to blowing from right to left",
+					"cn": "",
+					"jp": "「砂嵐」が左方向に吹くようになる"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_def",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy DEF",
+					"jp": "増幅：装甲I",
+					"cn": "反装甲I"
+				},
+				"img": "75px-Enemy_def_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"fixed-def": 200
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy DEF +200",
+					"jp": "全ての敵の防御力+200",
+					"cn": "所有敌人的防御力提升200"
+				}
+			}
+		]
+	},
+	{
+		"category": "champion",
+		"options": [
+			{
+				"name": {
+					"en": "Champion b_mod",
+					"jp": "強敵：蛮勇無畏II",
+					"cn": ""
+				},
+				"rank": 2,
+				"img": "狂嚎沙原/cchmpn_bmod_2",
+				"effects": [
+					{
+						"targets": ["T11"],
+						"mods": {
+							"hp": "%80",
+							"atk": "%30",
+							"mdef": 40,
+							"special": {
+								"duel": {
+									"multiplier": 0.3,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": [
+											"When Blocked, only takes damage from blocking unit",
+											"$Self's def drops by 40%$",
+											"Unit's def drops by 70%"
+										],
+										"jp": [
+											"ブロックされている時、",
+											"ブロック相手以外からダメージを受けない",
+											"$自分の防御力を40%下げる$",
+											"相手の防御力を70%下げる"
+										],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Tiacauh Brave] Max HP +80%, ATK +30%, RES +40, when blocked self DEF only drops 40%",
+					"cn": "",
+					"jp": "「ティアカウ勇士」の最大HP+80%、攻撃力+30%、術耐性+40、ブロックされた時に防御力が40%減少"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy ATK 2",
+					"jp": "増幅：火力II",
+					"cn": "源石环境：刺激II"
+				},
+				"img": "75px-Enemy_atk_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%40"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +40%",
+					"jp": "全ての敵の攻撃力+40%",
+					"cn": "所有敌人的攻击力提升40%"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "DP Down 2",
+					"jp": "指令：孤軍奮闘II",
+					"cn": "目标：深度渗透II"
+				},
+				"img": "75px-Global_costrecovery_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 50%",
+					"jp": "コストの自然回復速度-50%",
+					"cn": "部署费用的自然回复速度降低50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "shaman",
+		"options": [
+			{
+				"name": {
+					"en": "Shaman mod_3",
+					"jp": "特化：密林呪法III",
+					"cn": ""
+				},
+				"rank": 3,
+				"img": "狂嚎沙原/75px-Enemy_ccwitch_3",
+				"effects": [
+					{
+						"targets": ["T7"],
+						"mods": {
+							"hp": "%70",
+							"atk": "%70",
+							"def": "%100",
+							"range": "%60",
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Stealth$"],
+										"jp": ["$ステルス$"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Tiacauh Ritualist] Max HP +120%, ATK +70%, DEF +100%, attack range +60%, gains Stealth",
+					"cn": "",
+					"jp": "「ティアカウ呪術師」の最大HP+120%、攻撃力+70%、防御力+100%、攻撃範囲+60%、さらにステルス状態を獲得"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Enemy HP 3",
+					"jp": "増幅：体力III",
+					"cn": "源石环境：活性III"
+				},
+				"img": "75px-Enemy_hp_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%110"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +110%",
+					"jp": "全ての敵の最大HP+110%",
+					"cn": "所有敌人的生命值提升110%"
+				}
+			}
+		]
+	}
+]

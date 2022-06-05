@@ -30,8 +30,8 @@ export default function EnemySimple({
 		{ en: "remarks", jp: "備考", cn: "特殊", show: true },
 	]);
 
-	// console.log("spMods", specialMods);
-	// console.log("mul", multiplier);
+	console.log("spMods", specialMods);
+	console.log("mul", multiplier);
 
 	const textAlign = (stat) => {
 		switch (stat) {
@@ -155,7 +155,9 @@ export default function EnemySimple({
 					}
 				}
 				const moddedStats =
-					(+base_stat + (multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0)) *
+					(+base_stat +
+						(multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0) +
+						(multiplier?.[enemy.id]?.[`fixed-${stat}`] ?? 0)) *
 					(multiplier?.["ALL"]?.[stat] ?? 1) *
 					(multiplier?.[enemy.id]?.[stat] ?? 1) *
 					(enemy.type.includes("Melee")
@@ -238,6 +240,17 @@ export default function EnemySimple({
 					specialMods[enemy.id] &&
 					specialMods[enemy.id]?.hasOwnProperty(skill.name)
 				) {
+					if (specialMods[enemy.id][skill.name].hasOwnProperty("fixed-dmg")) {
+						return (
+							<p>
+								<span className="text-rose-600 font-semibold">
+									{specialMods[enemy.id][skill.name]["fixed-dmg"]}
+								</span>
+
+								{` (${skill.suffix[language]})`}
+							</p>
+						);
+					}
 					const specialModMultiplier =
 						specialMods[enemy.id][skill.name].multiplier;
 					statValue =
@@ -250,6 +263,14 @@ export default function EnemySimple({
 						specialModded = true;
 					}
 				} else {
+					if (skill.hasOwnProperty("fixed-dmg")) {
+						return (
+							<p>
+								{skill["fixed-dmg"]}
+								{` (${skill.suffix[language]})`}
+							</p>
+						);
+					}
 					statValue = base_stat * skillMultiplier;
 				}
 				statValue += skill.fixedInc;

@@ -2,6 +2,14 @@
 	"index": {
 		"stages": "ステージ"
 	},
+	"炽热溶洞": "Molten Cavern",
+	"风蚀高地": "Windswept Highlands",
+	"闭锁监狱": "Locked Down Prison",
+	"遗弃地块": "Abandoned Plot",
+	"无序矿区": "Abandoned Mine",
+	"八号竞技场": "Arena 8",
+	"狂嚎沙原": "Howling Desert",
+
 	"enemy_stats": {
 		"HP": "HP",
 		"atk": "atk",

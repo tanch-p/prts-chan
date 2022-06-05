@@ -1,12 +1,14 @@
 ## To-dos: last updated 18 May 2022
 
 ### Priorities
-Get me a 
- - detailed enemy format
- - a hover over skill detailed tooltip so that my enemy simple won't be so bloated
- - wheres my IS pageeeeeeeeee
- - searchable enemy details page that is actually human readable and doesn't load everything at once
- - can I have a GUI for CC options
+
+Get me a
+
+- detailed enemy format
+- a hover over skill detailed tooltip so that my enemy simple won't be so bloated
+- wheres my IS pageeeeeeeeee
+- searchable enemy details page that is actually human readable and doesn't load everything at once
+- tooltip for simple attributes such as taunt
 
 - Header
 
@@ -27,10 +29,10 @@ Get me a
 - Stages page
 
 1.  cc tooltips
-3.  detailed view
-4.  map stats
-5.  tidy up simple view
-6.  Parse Range to show squares and circles
+2.  detailed view
+3.  map stats
+4.  tidy up simple view
+5.  Parse Range to show squares and circles
 
 - Enemy
 
@@ -39,11 +41,8 @@ Get me a
 - Language
   - Do we want to use i18n?
 
-
-
-
-
 #### Resolved conflicts in enemy IDs:
+
 - Reunion
 
   - A-7 (Shielded Senior Caster)

@@ -91,19 +91,31 @@ export const getRemarks = (
 			}
 			enemy["stats"][stats].special.forEach((skill) => {
 				if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
-					specialMods[enemy.id][skill.name].tooltip[language].forEach((ele) => {
-						if (ele.includes("#mult")) {
-							remarksArr.push(
-								getTooltipMultiplier(
-									ele,
-									skill.multiplier,
-									specialMods[enemy.id][skill.name].multiplier
-								)
-							);
-						} else {
-							remarksArr.push(ele);
-						}
-					});
+					if (
+						format === "multiform" &&
+						row !== 0 &&
+						specialMods[enemy.id][skill.name].hasOwnProperty("tooltip_2nd")
+					) {
+						remarksArr.push(
+							specialMods[enemy.id][skill.name].tooltip_2nd[language][0]
+						);
+					} else {
+						specialMods[enemy.id][skill.name].tooltip[language].forEach(
+							(ele) => {
+								if (ele.includes("#mult")) {
+									remarksArr.push(
+										getTooltipMultiplier(
+											ele,
+											skill.multiplier,
+											specialMods[enemy.id][skill.name].multiplier
+										)
+									);
+								} else {
+									remarksArr.push(ele);
+								}
+							}
+						);
+					}
 				} else {
 					remarksArr = remarksArr.concat(
 						enemy["stats"][stats][skill.name] !== undefined

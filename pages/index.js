@@ -24,89 +24,46 @@ export default function Home({ allStagesData }) {
 	const { languageContext, device } = useContext(AppContext);
 	const [language] = languageContext;
 	const langPack = require(`../lang/${language}.json`);
-	const firstCCDate = dayjs("3/1");
-	const dailyStages =
-		language === "en"
-			? [
-					"Area 6",
-					"Area 6",
-					"Abandoned Plot",
-					"Deserted Factory",
-					"Locked-Down Prison",
-					"Arena 8",
-					"Windswept Highland",
-					"Abandoned Mine",
-					"Deserted Factory",
-					"Abandoned Plot",
-					"Arena 8",
-					"Abandoned Mine",
-					"Windswept Highland",
-					"Locked-Down Prison",
-			  ]
-			: [
-					"第6区跡",
-					"第6区跡",
-					"棄てられし区画",
-					"廃工場",
-					"閉鎖監獄",
-					"8号競技場",
-					"風蝕の高原",
-					"無秩序な鉱区",
-					"廃工場",
-					"棄てられし区画",
-					"8号競技場",
-					"無秩序な鉱区",
-					"風蝕の高原",
-					"閉鎖監獄",
-			  ];
-	const dailyCCArr = [];
-	const links = [
-		"CC6_第6区跡",
-		"CC6_第6区跡",
-		"CC6_棄てられし区画_1",
-		"CC6_廃工場_1",
-		"CC6_閉鎖監獄_1",
-		"CC6_8号競技場_1",
-		"CC6_風蝕の高原_1",
-		"CC6_無秩序な鉱区_1",
-		"CC6_廃工場_2",
-		"CC6_棄てられし区画_2",
-		"CC6_8号競技場_2",
-		"CC6_無秩序な鉱区_2",
-		"CC6_風蝕の高原_2",
-		"CC6_閉鎖監獄_2",
+	const firstCCDate = dayjs("6/9");
+	const dailyStages = [
+		{ text: "炽热溶洞", link: "CC7_炽热溶洞_1" },
+		{ text: "炽热溶洞", link: "CC7_炽热溶洞_1" },
+		{ text: "风蚀高地", link: "CC7_风蚀高地_1" },
+		{ text: "闭锁监狱", link: "CC7_闭锁监狱_1" },
+		{ text: "遗弃地块", link: "CC7_遗弃地块_1" },
+		{ text: "无序矿区", link: "CC7_无序矿区_1" },
+		{ text: "八号竞技场", link: "CC7_八号竞技场_1" },
+		{ text: "狂嚎沙原", link: "CC7_狂嚎沙原_1" },
+		{ text: "风蚀高地", link: "CC7_风蚀高地_2" },
+		{ text: "狂嚎沙原", link: "CC7_狂嚎沙原_2" },
+		{ text: "遗弃地块", link: "CC7_遗弃地块_2" },
+		{ text: "八号竞技场", link: "CC7_八号竞技场_2" },
+		{ text: "无序矿区", link: "CC7_无序矿区_2" },
+		{ text: "炽热溶洞", link: "CC7_炽热溶洞_2" },
 	];
 
-	// for (let i = 0; i < dailyStages.length; i++) {
-	// 	dailyCCArr.push(
-	// 		<>
-	// 			<div className="flex flex-wrap flex-col w-[25%] md:w-min">
-	// 				<div className="border border-collapse border-gray-400 h-[25px] w-full md:w-[80px] text-base">
-	// 					{`3/${i + 1}`}
-	// 				</div>
-	// 				{i > 13 ? (
-	// 					<div
-	// 						className={`border border-collapse border-gray-400 ${
-	// 							language === "jp" ? "text-sm" : "text-xs"
-	// 						}  h-[40px] w-full md:w-[80px] `}
-	// 					>
-	// 						<p className="">{dailyStages[i]}</p>
-	// 					</div>
-	// 				) : (
-	// 					<Link href={`/stages/cc/${links[i]}`}>
-	// 						<div
-	// 							className={`border border-collapse border-gray-400 ${
-	// 								language === "jp" ? "text-sm" : "text-xs"
-	// 							} hover:cursor-pointer hover:bg-gray-300 h-[40px] w-full md:w-[80px] underline text-blue-700`}
-	// 						>
-	// 							<p className="">{dailyStages[i]}</p>
-	// 						</div>
-	// 					</Link>
-	// 				)}
-	// 			</div>
-	// 		</>
-	// 	);
-	// }
+	const dailyCCArr = [];
+
+	for (const [index, { text, link }] of dailyStages.entries()) {
+		dailyCCArr.push(
+			<>
+				<div className="flex flex-wrap flex-col w-[25%] md:w-min" key={link}>
+					<div className="border border-collapse border-gray-400 h-[25px] w-full md:w-[80px] text-base">
+						{`6/${index + 8 + 1}`}
+					</div>
+					<Link href={`/stages/cc/${link}`}>
+						<div
+							className={`border border-collapse border-gray-400 ${
+								language === "jp" ? "text-sm" : "text-xs"
+							} hover:cursor-pointer hover:bg-gray-300 h-[40px] w-full md:w-[80px] underline text-blue-700`}
+						>
+							<p>{langPack[text]}</p>
+						</div>
+					</Link>
+				</div>
+			</>
+		);
+	}
 
 	const getTheme = () => {
 		return language === "en" ? "text-xs" : "";
@@ -153,13 +110,9 @@ export default function Home({ allStagesData }) {
 				<div className="w-100vw ml-2 md:ml-0 md:w-[560px] mt-6 text-center">
 					<ul>
 						{language === "jp" ? (
-							<li className="  ">
-								工事中
-							</li>
+							<li className="  ">工事中</li>
 						) : (
-							<li className="">
-								Under Construction
-							</li>
+							<li className="">Under Construction</li>
 						)}
 					</ul>
 				</div>

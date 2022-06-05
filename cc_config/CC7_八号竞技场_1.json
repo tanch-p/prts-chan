@@ -1,0 +1,205 @@
+[
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：過負荷",
+					"en": "Double DP Cost Guard and Medic",
+					"cn": ""
+				},
+				"img": "75px-Char_cost_guardhealer_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Guard and Medic DP cost doubled",
+					"cn": "",
+					"jp": "前衛・医療の配置コストが2倍"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "redeploy",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：効率低下I",
+					"en": "Reduced Operator Redeployment 1",
+					"cn": "目标：效率低下I"
+				},
+				"img": "75px-Char_respawntime_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally redeployment time increased by 75%",
+					"jp": "全ての味方の再配置時間+75%",
+					"cn": "所有我方单位的再部署时间延长75%"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy HP 2",
+					"jp": "増幅：体力II",
+					"cn": "源石环境：活性II"
+				},
+				"img": "75px-Enemy_hp_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%70"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +70%",
+					"jp": "全ての敵の最大HP+70%",
+					"cn": "所有敌人的生命值提升70%"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "DP Down 2",
+					"jp": "指令：孤軍奮闘II",
+					"cn": "目标：深度渗透II"
+				},
+				"img": "75px-Global_costrecovery_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 50%",
+					"jp": "コストの自然回復速度-50%",
+					"cn": "部署费用的自然回复速度降低50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "制限：体力減衰II",
+					"en": "Reduced Operator HP 2",
+					"cn": "源石环境：侵蚀II"
+				},
+				"img": "75px-Char_hp_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -35%",
+					"jp": "全ての味方の最大HP-35%",
+					"cn": "所有我方单位的生命值上限降低35%"
+				}
+			}
+		]
+	},
+	{
+		"category": "dk_mod",
+
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：連携訓練III",
+					"en": "Tag Team Knights 3",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_dekght_amod_3",
+				"effects": [
+					{
+						"targets": ["DK1"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%30",
+							"def": "%100",
+							"special": { "powerup": { "aspd": 3 } }
+						}
+					},
+					{
+						"targets": ["DK2"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%30",
+							"mdef": 25,
+							"special": {
+								"powerup": { "aspd": 2.5 },
+								"extra": {
+									"tooltip": {
+										"en": ["$Appears same timing as Corrupted Knight$"],
+										"jp": ["$腐敗騎士と同じタイミングに登場する$"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Corrupted Knight] and [Withered Knight] Max HP +50%, ATK +25%, ASPD increased to 150 when enraged. [Corrupted Knight] DEF +50%, [Withered Knight] RES +15 and appears on field earlier",
+					"cn": "",
+					"jp": "＜腐敗騎士＞と＜凋零騎士＞のHP+50%、攻撃力+25%、狂暴状態中の攻撃速度上昇効果値が150になる。＜腐敗騎士＞の防御力+50%、＜凋零騎士＞が早めに出現、術耐性+15"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Enemy ATK 3",
+					"jp": "増幅：火力III",
+					"cn": "源石环境：刺激III"
+				},
+				"img": "75px-Enemy_atk_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%65"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +65%",
+					"jp": "全ての敵の攻撃力+65%",
+					"cn": "所有敌人的攻击力提升65%"
+				}
+			}
+		]
+	}
+]
