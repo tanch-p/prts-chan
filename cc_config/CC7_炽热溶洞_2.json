@@ -145,17 +145,14 @@
 					{
 						"targets": ["UM1"],
 						"mods": {
-							"hp": "%120",
-							"aspd": "%400",
+							"hp": "%60",
 							"special": {
 								"aspd_inc": {
 									"type": "others",
 									"tooltip": {
-										"simple": {
-											"en": ["HP↓50%→ASPD+??"],
-											"jp": ["HP↓50%→攻撃速度+??"],
-											"cn": ["HP↓50%→攻撃速度+??"]
-										}
+										"en": ["HP↓50%→$ASPD+400?$ (0.7/s)"],
+										"jp": ["HP↓50%→攻撃速度+$400?$ (0.7/s)"],
+										"cn": ["HP↓50%→攻撃速度+$400?$"]
 									}
 								}
 							}
@@ -186,16 +183,14 @@
 						"targets": ["UM1"],
 						"mods": {
 							"atk": "%20",
-							"range": "%280",
+							"range": "%190",
 							"special": {
 								"extra": {
 									"type": "others",
 									"tooltip": {
-										"simple": {
-											"en": ["$Stealth$", "$Immune to Slow,Bind,Stun$"],
-											"jp": ["$ステルス$", "$足止め・バインド・スタン無効$"],
-											"cn": [""]
-										}
+										"en": ["$Stealth$", "$Immune to Slow,Bind,Stun$"],
+										"jp": ["$ステルス$", "$足止め・バインド・スタン無効$"],
+										"cn": [""]
 									}
 								}
 							}
@@ -203,7 +198,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "Pompeii ATK +20%, Range+??, and becomes immune to Slow, Bind and Stun, gains Stealth",
+					"en": "Pompeii ATK +20%, Range greatly increases, and becomes immune to Slow, Bind and Stun, gains Stealth",
 					"jp": "「Pompeii」の攻撃力+20%、攻撃範囲が拡大、足止め・バインド・スタンへの耐性を持ち、ステルスを獲得する",
 					"cn": ""
 				}

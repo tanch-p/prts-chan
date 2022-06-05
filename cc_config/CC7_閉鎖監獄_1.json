@@ -90,7 +90,7 @@
 					"en": "Release 2",
 					"cn": ""
 				},
-				"img": "閉鎖監獄/75px-Enemy_prison_1",
+				"img": "閉鎖監獄/75px-Enemy_prison_2",
 				"effects": [
 					{
 						"targets": ["C22", "C21", "C19", "C17", "C15", "C13", "C11"],
@@ -181,7 +181,7 @@
 					"en": "Triple DP Cost Caster and Specialist",
 					"cn": ""
 				},
-				"img": "閉鎖監獄/75px-Char_cost_casterspecial_2",
+				"img": "75px-Char_cost_casterspecial_2",
 				"effects": [],
 				"tooltip": {
 					"en": "DP Cost of Casters and Specialists tripled and redeployment time +50%",

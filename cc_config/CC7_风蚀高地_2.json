@@ -86,11 +86,9 @@
 							"special": {
 								"extra": {
 									"tooltip": {
-										"simple": {
-											"en": "Attacks ignore 40% RES",
-											"jp": "攻撃が術耐性を40%無視する",
-											"cn": ""
-										}
+										"en": "$Attacks ignore 40 RES$",
+										"jp": "$攻撃が術耐性を40無視する$",
+										"cn": ""
 									}
 								}
 							}

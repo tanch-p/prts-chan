@@ -44,6 +44,11 @@
 		"options": [
 			{
 				"rank": 1,
+				"name": {
+					"en": "Sandstorm Resistance",
+					"jp": "環境：砂嵐耐性",
+					"cn": ""
+				},
 				"img": "狂嚎沙原/storm_speed_1",
 				"effects": [],
 				"tooltip": {
@@ -79,6 +84,11 @@
 		"options": [
 			{
 				"rank": 2,
+				"name": {
+					"en": "Caster Supporter Cost",
+					"jp": "制限：技術研鑽",
+					"cn": ""
+				},
 				"img": "狂嚎沙原/cost_castersupporter_2",
 				"effects": [],
 				"tooltip": {
@@ -114,6 +124,11 @@
 		"options": [
 			{
 				"rank": 3,
+				"name": {
+					"en": "Ripper mod_3",
+					"jp": "特化：猛攻無尽III",
+					"cn": ""
+				},
 				"img": "狂嚎沙原/ccripr_2",
 				"effects": [
 					{

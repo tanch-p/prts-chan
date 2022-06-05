@@ -130,11 +130,11 @@
 			{
 				"rank": 2,
 				"name": {
-					"jp": "制限：過負荷",
+					"jp": "指令：待機命令",
 					"en": "Guard and Caster Forbidden",
 					"cn": ""
 				},
-				"img": "8号競技場/75px-Char_cost_casterdefender_2",
+				"img": "75px-Char_exclude_casterdefender_2",
 				"effects": [],
 				"tooltip": {
 					"en": "Guard and Caster cannot be deployed",

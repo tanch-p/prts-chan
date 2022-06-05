@@ -124,7 +124,7 @@ export default function Stage({ stageData }) {
 		);
 	};
 
-	const toggleOptionColor = (category, name, type = "perma") => {
+	const toggleOptionColor = (category, name, type = "perma",ele) => {
 		for (const item of selected) {
 			if (item.category === category) {
 				if (item.option === name) {
@@ -132,6 +132,7 @@ export default function Stage({ stageData }) {
 				} else if (item.selected) {
 					return `bg-rose-600 ${type === "daily" ? "text-white" : ""}`;
 				} else {
+					if(ele === "text") return "bg-neutral-100"
 					return "";
 				}
 			}
@@ -340,21 +341,23 @@ export default function Stage({ stageData }) {
 						</div>
 					</div>
 				</>
-			) : (
-				<Daily_buttons
-					ccConfig={ccConfig}
-					handleClick={handleClick}
-					toggleOptionColor={toggleOptionColor}
-					getRankColor={getRankColor}
-					language={language}
-				/>
-			)}
+			) : null}
 			<div
 				id="CC-container"
 				className={`${
 					mapConfig.ccType === "perma" ? "w-[100vw] md:w-[900px]" : "min-w-min"
 				} ${fontThemes[language]}`}
 			>
+				{mapConfig.ccType === "daily" ? (
+					<Daily_buttons
+						ccConfig={ccConfig}
+						handleClick={handleClick}
+						toggleOptionColor={toggleOptionColor}
+						getRankColor={getRankColor}
+						language={language}
+					/>
+				) : null}
+
 				<Selected_options selected={selected} ccType={mapConfig.ccType} />
 				<div className="flex flex-wrap border border-gray-800 w-[100vw] overflow:hidden md:w-full h-[50px] max-w-[900px] py-2 mb-2 select-none place-items-center bg-[#292929]">
 					<div

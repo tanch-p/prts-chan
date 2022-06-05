@@ -3,6 +3,11 @@
 		"category": "storm_direction",
 		"options": [
 			{
+				"name": {
+					"en": "Storm Direction",
+					"jp": "環境：東風",
+					"cn": "環境：東風"
+				},
 				"rank": 1,
 				"img": "狂嚎沙原/storm_direction_1",
 				"effects": [],
@@ -65,6 +70,11 @@
 		"category": "champion",
 		"options": [
 			{
+				"name": {
+					"en": "Champion b_mod",
+					"jp": "強敵：蛮勇無畏II",
+					"cn": ""
+				},
 				"rank": 2,
 				"img": "狂嚎沙原/cchmpn_bmod_2",
 				"effects": [
@@ -156,6 +166,11 @@
 		"category": "shaman",
 		"options": [
 			{
+				"name": {
+					"en": "Shaman mod_3",
+					"jp": "特化：密林呪法III",
+					"cn": ""
+				},
 				"rank": 3,
 				"img": "狂嚎沙原/75px-Enemy_ccwitch_3",
 				"effects": [

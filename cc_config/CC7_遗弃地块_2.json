@@ -24,6 +24,11 @@
 		"options": [
 			{
 				"rank": 1,
+				"name": {
+					"jp": "制限：過負荷",
+					"en": "Guard Defender Cost",
+					"cn": ""
+				},
 				"img": "75px-Char_cost_guarddefender_1",
 				"effects": [],
 				"tooltip": {

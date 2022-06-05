@@ -35,9 +35,9 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": "Targets 2 units at once",
-							"jp": "2体まで攻撃する",
-							"cn": "最多同时攻击2个目标"
+							"en": ["Targets 2 units at once"],
+							"jp": ["2体まで攻撃する"],
+							"cn": ["最多同时攻击2个目标"]
 						}
 					}
 				},

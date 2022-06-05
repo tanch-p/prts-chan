@@ -49,7 +49,7 @@
 					"en": "Reduced Operator Redeployment 1",
 					"cn": "目标：效率低下I"
 				},
-				"img": "75px-Char_respawntime_1.png",
+				"img": "75px-Char_respawntime_1",
 				"effects": [],
 				"tooltip": {
 					"en": "Ally redeployment time increased by 75%",

@@ -66,9 +66,11 @@
 							"special": {
 								"burn": {
 									"tooltip": {
-										"en": "Attacks inflict Burn ($25$ Arts dmg every 0.33s) for $30s$",
-										"jp": "攻撃で$30秒$火傷・術($25$/0.33秒)付与される",
-										"cn": "攻击造成灼烧伤害($25法伤$/0.33秒)，持续$30秒$"
+										"en": [
+											"Attacks inflict Burn ($25$ Arts dmg every 0.33s) for $30s$"
+										],
+										"jp": ["攻撃で$30秒$火傷・術($25$/0.33秒)付与される"],
+										"cn": ["攻击造成灼烧伤害($25法伤$/0.33秒)，持续$30秒$"]
 									}
 								}
 							}

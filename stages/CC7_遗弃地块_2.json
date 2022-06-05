@@ -1,7 +1,7 @@
 {
   "name": { "en": "Abandoned Plot", "jp": "棄てられし区画", "cn": "遗弃地块" },
   "img": "遗弃地块",
-  "config": "CC7_棄てられし区画_2",
+  "config": "CC7_遗弃地块_2",
   "ccType": "daily",
   "enemies": [
     { "id": "U11", "count": 1, "stats": "level0" },

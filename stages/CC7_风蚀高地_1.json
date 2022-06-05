@@ -1,7 +1,7 @@
 {
   "name": { "en": "Windswept Highland", "jp": "風蝕の高原" },
   "img": "风蚀高地",
-  "config": "CC7_風蝕の高原_1",
+  "config": "CC7_风蚀高地_1",
   "ccType": "daily",
   "enemies": [
     { "id": "S13", "count": 5, "stats": "風蝕の高原" },
