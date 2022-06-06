@@ -8,6 +8,7 @@ export const parseType = (typeArr, language) => {
 				<TooltipComponent
 					title={langpack.type[type].name}
 					langpack={langpack}
+					language={language}
 					type={type}
 					tooltipType="type"
 					theme="light"

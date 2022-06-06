@@ -25,7 +25,7 @@
 		"melee": { "name": "Melee", "ops": [] },
 		"ranged": {
 			"name": "Ranged",
-			"ops": [{ "Atk Up:": ["Firewatch Talent"] }],
+			"ops": [{ "Atk Up:": ["Firewatch"] }],
 			"text": ""
 		},
 		"flying": {
@@ -39,7 +39,7 @@
 		"drone": {
 			"name": "Drone",
 			"ops": [
-				{ "Atk Up:": ["Arene Talent", "Glaucus Talent S2"] },
+				{ "Atk Up:": ["Arene", "Glaucus"] },
 				{ "Target Priority:": ["Arene, Glaucus"] }
 			],
 			"text": ""
@@ -54,13 +54,14 @@
 			"ops": [],
 			"text": "Not a target of Firewatch's Talent"
 		},
+		"elite": {
+			"name": "Elite",
+			"ops": []
+		},
 		"boss": { "name": "Boss", "ops": [] },
 		"infected_creature": {
 			"name": "Infected Creature",
-			"ops": [
-				{ "Atk Up:": ["Jaye Talent"] },
-				{ "Silence:": ["Snowsant Skill"] }
-			],
+			"ops": [{ "Atk Up:": ["Jaye"] }, { "Silence:": ["Snowsant Skill"] }],
 			"text": ""
 		},
 		"arts_creation": { "name": "Arts Creation", "ops": [] },
@@ -68,20 +69,20 @@
 		"sarkaz": {
 			"name": "Sarkaz",
 			"ops": [
-				{ "Atk Up:": ["Toddifons Talent"] },
-				{ "Reduce Dmg Taken:": ["Mudrock E2 Talent"] }
+				{ "Atk Up:": ["Toddifons"] },
+				{ "Reduce Dmg Taken:": ["Mudrock E2"] }
 			],
 			"text": ""
 		},
 		"sea_monster": {
 			"name": "Sea Monster",
-			"ops": [{ "Reduce Dmg Taken:": ["Gladiia Talent"] }],
+			"ops": [{ "Reduce Dmg Taken:": ["Gladiia"] }],
 			"text": ""
 		},
 		"possessed": {
 			"name": "Possessed",
 			"ops": [],
-			"text": "Separate from Infected Creature"
+			"text": "Different from Infected Creature"
 		}
 	},
 	"status": {

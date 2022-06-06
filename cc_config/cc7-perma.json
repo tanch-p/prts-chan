@@ -143,7 +143,7 @@
 											"スキル（破桎而出）→$49秒$毎に9000物理/術ダメージを吸収するシールドを生成、15秒以内にシールドが破られなかった場合、半径3.0以内の全ての味方に攻撃力の800%の術ダメージを与える"
 										]
 									},
-									"tooltip_2nd": {
+									"tooltip2": {
 										"en": [
 											"'Break the Chains(Rage)' - Initial SP: 30, SP Cost: $49$"
 										],
@@ -182,7 +182,7 @@
 										"jp": ["「破桎而出」初期SP：30、必要SP：$35$"],
 										"cn": ""
 									},
-									"tooltip_2nd": {
+									"tooltip2": {
 										"en": [
 											"'Break the Chains(Rage)' - Initial SP: 40, SP Cost: $35$"
 										],
@@ -224,6 +224,11 @@
 										"en": ["Uses $'Weft and Warp'$ every 30s"],
 										"jp": ["30秒毎に$「緯地経天」$使用する"],
 										"cn": ""
+									},
+									"tooltip2": {
+										"en": ["Uses $'Weft and Warp'$ every 30s"],
+										"jp": ["30秒毎に$「緯地経天」$使用する"],
+										"cn": ""
 									}
 								}
 							}
@@ -252,6 +257,11 @@
 									"multiplier": 0,
 									"fixedInc": 0,
 									"tooltip": {
+										"en": ["Uses $'Weft and Warp'$ every $15s$"],
+										"jp": ["$15秒$毎に$「緯地経天」$使用する"],
+										"cn": []
+									},
+									"tooltip2": {
 										"en": ["Uses $'Weft and Warp'$ every $15s$"],
 										"jp": ["$15秒$毎に$「緯地経天」$使用する"],
 										"cn": []

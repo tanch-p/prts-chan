@@ -124,7 +124,7 @@ export default function Stage({ stageData }) {
 		);
 	};
 
-	const toggleOptionColor = (category, name, type = "perma",ele) => {
+	const toggleOptionColor = (category, name, type = "perma", ele) => {
 		for (const item of selected) {
 			if (item.category === category) {
 				if (item.option === name) {
@@ -132,7 +132,7 @@ export default function Stage({ stageData }) {
 				} else if (item.selected) {
 					return `bg-rose-600 ${type === "daily" ? "text-white" : ""}`;
 				} else {
-					if(ele === "text") return "bg-neutral-100"
+					if (ele === "text") return "bg-neutral-100";
 					return "";
 				}
 			}
@@ -152,7 +152,7 @@ export default function Stage({ stageData }) {
 
 	const setOtherMods = (other_mods, obj) => {
 		for (const key of Object.keys(obj)) {
-			if (key !== "tooltip") {
+			if (!key.includes("tooltip")) {
 				if (typeof obj[key] !== "object") {
 					other_mods[key] = obj[key];
 				} else {
@@ -162,7 +162,7 @@ export default function Stage({ stageData }) {
 					setOtherMods(other_mods[key], obj[key]);
 				}
 			} else {
-				other_mods.tooltip = obj.tooltip;
+				other_mods[key] = obj[key];
 			}
 		}
 	};

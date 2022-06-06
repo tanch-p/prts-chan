@@ -105,8 +105,19 @@
 		{ "special": {} },
 		{
 			"atk": "%5",
-			"special": {
-				"rage_attack": {
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["2nd Form"],
+							"jp": ["第2形態"],
+							"cn": []
+						}
+					}
+				},
+				{
+					"name": "rage_attack",
 					"type": "others",
 					"tooltip": {
 						"simple": {
@@ -118,7 +129,9 @@
 						}
 					}
 				},
-				"破桎而出": {
+
+				{
+					"name": "破桎而出",
 					"type": "atk",
 					"suffix": {
 						"en": "Barrier/Arts",
@@ -137,8 +150,19 @@
 							]
 						}
 					}
+				},
+				{
+					"name": "纬地经天",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
 				}
-			}
+			]
 		}
 	],
 	"normal_attack": {
