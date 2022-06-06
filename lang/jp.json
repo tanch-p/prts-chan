@@ -54,6 +54,10 @@
 			"ops": [],
 			"text": "「ファイヤーウォッチ」の素質対象外"
 		},
+		"elite": {
+			"name": "エリート",
+			"ops": []
+		},
 		"boss": { "name": "ボス", "ops": [] },
 		"infected_creature": {
 			"name": "感染生物",

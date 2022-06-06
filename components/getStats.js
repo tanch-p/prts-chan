@@ -89,17 +89,23 @@ export const getRemarks = (
 					specialMods[enemy.id].extra.tooltip[language]
 				);
 			}
-			enemy["stats"][stats].special.forEach((skill) => {
-				if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
-					if (
-						format === "multiform" &&
-						row !== 0 &&
-						specialMods[enemy.id][skill.name].hasOwnProperty("tooltip_2nd")
-					) {
+			if (format === "multiform" && row !== 0) {
+				enemy.forms[row].special.forEach((skill) => {
+					if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
 						remarksArr.push(
-							specialMods[enemy.id][skill.name].tooltip_2nd[language][0]
+							...specialMods[enemy.id][skill.name].tooltip2[language].map(
+								(line) => line
+							)
 						);
 					} else {
+						remarksArr.push(
+							...skill.tooltip[type][language].map((line) => line)
+						);
+					}
+				});
+			} else {
+				enemy["stats"][stats].special.forEach((skill) => {
+					if (specialMods[enemy.id].hasOwnProperty(skill.name)) {
 						specialMods[enemy.id][skill.name].tooltip[language].forEach(
 							(ele) => {
 								if (ele.includes("#mult")) {
@@ -115,15 +121,15 @@ export const getRemarks = (
 								}
 							}
 						);
+					} else {
+						remarksArr = remarksArr.concat(
+							enemy["stats"][stats][skill.name] !== undefined
+								? enemy["stats"][stats][skill.name].tooltip[type][language]
+								: skill.tooltip[type][language]
+						);
 					}
-				} else {
-					remarksArr = remarksArr.concat(
-						enemy["stats"][stats][skill.name] !== undefined
-							? enemy["stats"][stats][skill.name].tooltip[type][language]
-							: skill.tooltip[type][language]
-					);
-				}
-			});
+				});
+			}
 		}
 		// console.log(remarksArr, enemy.id);
 		return remarksArr.map((line) => {
@@ -144,13 +150,8 @@ export const getRemarks = (
 		return enemy.powerup.special.map((skill) => {
 			return skill.tooltip[type][language].map((line) => <p>{line}</p>);
 		});
-	} else if (format === "multiform") {
-		return enemy["stats"][stats].special.map((skill) => {
-			if (enemy.forms[row].special.hasOwnProperty(skill.name)) {
-				return enemy.forms[row].special[skill.name].tooltip[type][language].map(
-					(line) => <p>{line}</p>
-				);
-			}
+	} else if (format === "multiform" && row !== 0) {
+		return enemy.forms[row].special.map((skill) => {
 			return skill.tooltip[type][language].map((line) => <p>{line}</p>);
 		});
 	} else {

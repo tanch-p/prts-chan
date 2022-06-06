@@ -2,6 +2,7 @@ export default function TooltipComponent({
 	title,
 	type,
 	langpack,
+	language,
 	theme,
 	tooltipType,
 }) {
@@ -11,16 +12,17 @@ export default function TooltipComponent({
 	};
 	if (tooltipType === "type") {
 		return (
-			<>
-				<div className="group cursor-pointer relative">
+			<div className="group cursor-pointer relative w-min ">
+				<div className="overflow-visible ">
 					<div
 						className={`${position.top}
+						${language === "jp" ? "text-sm w-[230px]" : "text-sm w-[160px]"}
 								${
 									theme === "light"
 										? "bg-gray-300 border border-black text-black"
 										: "bg-gray-700 text-white"
 								}
-								absolute left-[50%] -translate-x-[50%] w-[250px] max-w-[250px] text-left rounded-lg py-2 px-3 z-[300] opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity`}
+								absolute left-[50%] -translate-x-[50%] text-left rounded-lg py-2 px-3 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity`}
 					>
 						{/* <p className="">Effective Operators</p> */}
 						{langpack.type[type].ops.map((categoryObj) => {
@@ -37,6 +39,7 @@ export default function TooltipComponent({
 								);
 							});
 						})}
+						{langpack.type[type].text}
 						<div
 							className={`inner-triangle w-0 h-0 absolute top-full left-[50%] -translate-x-[50%] border-x-transparent border-x-[7px] border-t-[8px] z-10 ${
 								theme === "light" ? "border-gray-300 " : "border-gray-700"
@@ -44,9 +47,11 @@ export default function TooltipComponent({
 						></div>
 						<div className="outer-triangle w-0 h-0 absolute  top-full  left-[50%] -translate-x-[50%] border-x-transparent border-x-[8px] border-t-[9px] border-black"></div>
 					</div>
-					<p className="underline underline-offset-1">{title}</p>
 				</div>
-			</>
+				<p className="underline underline-offset-1 whitespace-nowrap">
+					{title}
+				</p>
+			</div>
 		);
 	}
 	return <></>;

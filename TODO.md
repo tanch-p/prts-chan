@@ -34,6 +34,10 @@ Get me a
 4.  tidy up simple view
 5.  Parse Range to show squares and circles
 
+- Type Tooltip
+
+  - will be covered because it is in a component???
+
 - Enemy
 
   1. evaluate current schema if it will work with detailed view
