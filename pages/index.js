@@ -69,6 +69,18 @@ export default function Home({ allStagesData }) {
 		return language === "en" ? "text-xs" : "";
 	};
 
+	const linesOfText = {
+		jp: [
+			"頑張ってくださいドクター！",
+			"不具合を見つかった場合は私のディスコード",
+			"（IDはAboutページに）まで連絡お願いします",
+		],
+		en: [
+			"All the best for CC#7 Doctor!",
+			"If you find any bugs, please kindly report to my discord (ID in about page)",
+		],
+	};
+
 	return (
 		<Layout>
 			<Head>
@@ -90,7 +102,7 @@ export default function Home({ allStagesData }) {
 						</tr>
 						<Link href={`/stages/cc/cc7-perma`}>
 							<div className="border border-collapse py-2 border-gray-400 text-base hover:cursor-pointer hover:bg-gray-300 underline text-blue-700">
-								{language === "jp" ? "灰齐山麓" : "Permanent Stage"}
+								{language === "jp" ? "灰斉山麓" : "Permanent Stage"}
 							</div>
 						</Link>
 						<tr>
@@ -109,11 +121,9 @@ export default function Home({ allStagesData }) {
 				</div>
 				<div className="w-100vw ml-2 md:ml-0 md:w-[560px] mt-6 text-center">
 					<ul>
-						{language === "jp" ? (
-							<li className="  ">工事中</li>
-						) : (
-							<li className="">Under Construction</li>
-						)}
+						{linesOfText[language].map((line) => (
+							<li key={line}>{line}</li>
+						))}
 					</ul>
 				</div>
 			</div>
