@@ -15,6 +15,6 @@ export const parseType = (typeArr, language) => {
 				/>
 			);
 		}
-		return <p>{langpack.type[type].name}</p>;
+		return <p className="whitespace-nowrap">{langpack.type[type].name}</p>;
 	});
 };
