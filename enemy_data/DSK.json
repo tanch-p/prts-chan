@@ -102,7 +102,7 @@
 		}
 	},
 	"forms": [
-		{ "special": {} },
+		{ "special": [] },
 		{
 			"atk": "%5",
 			"special": [

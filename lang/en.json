@@ -21,6 +21,12 @@
 		"type": "type",
 		"ms": "ms"
 	},
+	"phys": "phys",
+	"arts": "arts",
+	"true": "true",
+	"melee": "melee",
+	"ranged": "melee",
+	"no_attack": "Does not attack",
 	"type": {
 		"melee": { "name": "Melee", "ops": [] },
 		"ranged": {

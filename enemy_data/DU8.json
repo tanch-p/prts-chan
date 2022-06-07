@@ -1,32 +1,42 @@
 {
-    "id": "DU8",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "深池暗影术师队长",
-    "atk_type_jp": "術",
-    "hp": "6500",
-    "atk": "460",
-    "def": "150",
-    "mdef": "20",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "2.5",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.1",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "DU8",
+	"name": {
+		"en": "Dublinn Shadowcaster Leader",
+		"jp": "ダブリン暗影術師隊長",
+		"cn": "深池暗影术师队长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "6500",
+			"atk": "460",
+			"def": "150",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "2.5",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "1.1",
+			"special": [
+				{
+					"type": "res",
+					"tooltip": {
+						"simple": {
+							"en": ["Refraction - RES+70 (can be silenced)"],
+							"jp": ["屈折→術耐性+70 (無効化可能)"],
+							"cn": ["折射：法术抗性增加70（可被沉默）"]
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "arts"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged"]
 }

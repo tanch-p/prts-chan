@@ -1,32 +1,42 @@
 {
-    "id": "DU10",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "深池方阵指挥官",
-    "atk_type_jp": "物理",
-    "hp": "6000",
-    "atk": "450",
-    "def": "400",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "2.5",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "DU10",
+	"name": {
+		"en": "Dublinn Phalanx Commander",
+		"jp": "ダブリン方陣指揮官",
+		"cn": "深池方阵指挥官"
+	},
+	"stats": {
+		"level0": {
+			"hp": "6000",
+			"atk": "450",
+			"def": "400",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2.5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "1",
+			"special": [
+				{
+					"type": "res",
+					"tooltip": {
+						"simple": {
+							"en": ["Refraction - RES+70 (can be silenced)"],
+							"jp": ["屈折→術耐性+70 (無効化可能)"],
+							"cn": ["折射：法术抗性增加70（可被沉默）"]
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }
