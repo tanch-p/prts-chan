@@ -94,5 +94,5 @@
 	"眠り耐性": "無",
 	"凍結耐性": "",
 
-	"type": ["ranged"]
+	"type": ["ranged","elite"]
 }
