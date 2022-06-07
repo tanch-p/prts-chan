@@ -516,7 +516,9 @@ export default function EnemySimple({
 							{tableHeaders.map((ele) =>
 								ele.show ? (
 									<th
-										className={`border border-gray-400 border-solid py-0.5 px-1.5 md:min-w-[50px] `}
+										className={`border border-gray-400 border-solid py-0.5 px-1.5 md:min-w-[50px] ${
+											language === "jp" ? "font-[500]" : ""
+										}`}
 										key={ele.en}
 									>
 										{ele.en === "aspd"
