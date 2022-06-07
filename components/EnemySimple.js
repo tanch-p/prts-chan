@@ -30,8 +30,8 @@ export default function EnemySimple({
 		{ en: "remarks", jp: "備考", cn: "特殊", show: true },
 	]);
 
-	console.log("spMods", specialMods);
-	console.log("mul", multiplier);
+	// console.log("spMods", specialMods);
+	// console.log("mul", multiplier);
 
 	const textAlign = (stat) => {
 		switch (stat) {
@@ -230,9 +230,12 @@ export default function EnemySimple({
 				skillMultiplier = skill.multiplier;
 				// console.log(skill.multiplier, enemy.id);
 				if (enemy.format === "multiform") {
-					if (enemy.forms[row].special.hasOwnProperty(skill.name)) {
-						// console.log(row);
-						skillMultiplier = enemy.forms[row].special[skill.name].multiplier;
+					const multi_skill_index = enemy.forms[row].special.findIndex(
+						(ele) => ele.name === skill.name
+					);
+					if (multi_skill_index !== -1) {
+						skillMultiplier =
+							enemy.forms[row].special[multi_skill_index].multiplier;
 					}
 				}
 

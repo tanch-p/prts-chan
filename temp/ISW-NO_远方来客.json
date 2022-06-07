@@ -1,0 +1,17 @@
+{
+	"name": "远方来客",
+	"img": "远方来客",
+	"buff": "敌方单位的攻击力、防御力和生命值都提升至125%,深池塑能术师被替换为深池塑能术师队长",
+	"count": "47~49",
+	"enemies": [
+		{ "id": "DU1", "stats": "level0" },
+		{ "id": "DU13", "stats": "level0" },
+		{ "id": "DU14", "stats": "level0" },
+		{ "id": "DU11", "stats": "远方来客" },
+		{ "id": "DU12", "stats": "远方来客" },
+		{ "id": "DU21", "stats": "远方来客" },
+		{ "id": "DU22", "stats": "远方来客" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	]
+}

@@ -25,29 +25,6 @@ export default function Perma_buttons({
 		threshold: 1,
 	};
 
-	useEffect(() => {
-		const observer = new IntersectionObserver((entries, observer) => {
-			console.log("intersection observer running");
-			if (!stickyTable) {
-				observer.disconnect();
-			}
-			entries.map((entry) => {
-        console.log(entry.boundingClientRect)
-				if (!entry.isIntersecting) {
-					setIsVisible(false);
-				} else {
-					// setIsVisible(true);
-				}
-			});
-		}, options);
-		if (stickyTable) {
-			observer.observe(tableRef.current);
-		}
-		return () => {
-			observer.disconnect();
-			setIsVisible(true);
-		};
-	}, [stickyTable]);
 
 	return (
 		<>

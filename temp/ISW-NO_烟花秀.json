@@ -6,8 +6,8 @@
 	"enemies": [
 		{ "id": "MK", "stats": "level0" },
 		{ "id": "D6", "stats": "烟花秀" },
-		{ "id": "PD5", "stats": "level0" },
-		{ "id": "PD6", "stats": "level0" },
+		{ "id": "PG5", "stats": "level0" },
+		{ "id": "PG6", "stats": "level0" },
 		{ "id": "B6", "stats": "level0" },
 		{ "id": "B7", "stats": "level0" },
 		{ "id": "DLD", "stats": "level1" },

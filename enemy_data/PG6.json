@@ -1,30 +1,52 @@
 {
-    "id": "PG6",
-    "name_en": "Legendary War Phantom",
-    "name_jp": "伝説のウォーゴースト",
-    "name_cn": "传奇战争幽灵",
-    "atk_type_jp": "近・物理",
-    "hp": "4800",
-    "atk": "750",
-    "def": "50",
-    "mdef": "40",
-    "aspd%": "100",
-    "aspd": "2.6",
-    "range": "4",
-    "HP回復速度": "0",
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.9",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "special": ""
+	"id": "PG6",
+	"name": {
+		"en": "Anti-Armor Infantry Leader",
+		"jp": "対装甲歩兵隊長",
+		"cn": "反装甲步兵组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "4800",
+			"atk": "750",
+			"def": "50",
+			"mdef": "40",
+			"aspd%": "100",
+			"aspd": "2.6",
+			"range": "4",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.9",
+			"special": [
+				{
+					"name": "RPG",
+					"type": "atk",
+					"suffix": { "en": "RPG/phys", "jp": "RPG・物理", "cn": "RPG・物理" },
+					"multiplier": 2,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"RPG → deals 100% splash dmg to target & surrounding 8 tiles, switches to Melee & ms+200% after firing"
+							],
+							"jp": [
+								"RPG → 目標と周囲8マスにダメージ",
+								"発射後は近接に切り替わって、移動速度+200%"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "ranged"]
 }
