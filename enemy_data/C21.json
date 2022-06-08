@@ -82,5 +82,5 @@
 			}
 		]
 	},
-	"type": ["melee"]
+	"type": ["melee","elite"]
 }

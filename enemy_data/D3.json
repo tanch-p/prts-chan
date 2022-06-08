@@ -1,38 +1,44 @@
 {
-    "id": "D3",
-    "name_en": "Raptor",
-    "name_jp": "飛龍",
-    "name_cn": "威龙",
-    "atk_type_jp": "物理",
-    "hp": "30000",
-    "atk": "660",
-    "def": "170",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "3.8",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.5",
-    "type_jp": [
-        "遠距離",
-        "飛行",
-        "ドローン"
-    ],
-    "type_en": [
-        "Ranged",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "远程",
-        "飞行",
-        "无人机"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "D3",
+	"name": {
+		"en": "Raptor",
+		"jp": "飛龍",
+		"cn": "威龙"
+	},
+	"stats": {
+		"level0": {
+			"hp": "30000",
+			"atk": "660",
+			"def": "170",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "3.8",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "0.5",
+			"special": []
+		},
+        "无人机起降库": {
+			"hp": "56000",
+			"atk": "780",
+			"def": "400",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "3.8",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "0.5",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "flying", "drone", "elite"]
 }

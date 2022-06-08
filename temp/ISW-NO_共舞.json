@@ -1,0 +1,13 @@
+{
+	"name": "共舞",
+	"img": "共舞",
+	"buff":"敌方单位的攻击力和生命值都提升至120%,绯红歌伶的防御力提升至200% ",
+	"count":"20-22",
+	"enemies": [
+		{ "id": "CS1", "stats": "level0" },
+		{ "id": "CS2", "stats": "level0" },
+		{ "id": "CS4", "stats": "level0" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	]
+}

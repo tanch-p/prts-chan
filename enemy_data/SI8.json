@@ -1,32 +1,49 @@
 {
-    "id": "SI8",
-    "name_en": "Guerrilla Herald Leader",
-    "name_jp": "遊撃隊伝令隊長",
-    "name_cn": "游击队传令兵组长",
-    "atk_type_jp": "物理",
-    "hp": "10000",
-    "atk": "360",
-    "def": "120",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "2.5",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "SI8",
+	"name": {
+		"en": "Guerrilla Herald Leader",
+		"jp": "遊撃隊伝令隊長",
+		"cn": "游击队传令兵组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "10000",
+			"atk": "360",
+			"def": "120",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2.5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "1",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Buff→Inc all enemies atk10% def100, stacks with other Heralds",
+								"Activates special abilities of Guerilla Squad"
+							],
+							"jp": [
+								"バフ→ 敵全体の攻撃力10%＆防御力100上昇（重複する）",
+								"遊撃隊に特殊強化"
+							],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }

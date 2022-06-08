@@ -7,38 +7,51 @@
 	},
 	"stats": {
 		"level0": {
-            "hp": "6000",
-            "atk": "600",
-            "def": "140",
-            "mdef": "65",
-            "aspd%": "100",
-            "aspd": "3.5",
-            "range": "3",
-            "HP回復速度": "0",
-            "weight": "1",
-            "ms": "0.8",
+			"hp": "6000",
+			"atk": "600",
+			"def": "140",
+			"mdef": "65",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "3",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.8",
 			"special": []
 		},
 		"步步紧逼": {
-            "hp": "6000",
-            "atk": "600",
-            "def": "140",
-            "mdef": "65",
-            "aspd%": "100",
-            "aspd": "3.5",
-            "range": "3",
-            "HP回復速度": "0",
-            "weight": "1",
-            "ms": "0.8",
+			"hp": "6000",
+			"atk": "600",
+			"def": "140",
+			"mdef": "65",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "3",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.8",
+			"special": []
+		},
+		"无人机起降库": {
+			"hp": "13000",
+			"atk": "600",
+			"def": "200",
+			"mdef": "65",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "3",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.8",
 			"special": []
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "ranged/arts", "jp": "遠・術", "cn": "远・法术" },
+		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["ranged","flying","drone"]
+	"type": ["ranged", "flying", "drone"]
 }
