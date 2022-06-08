@@ -1,0 +1,16 @@
+{
+	"name": "鲍勃酒品",
+	"img": "鲍勃酒品",
+	"buff": "敌方单位的攻击力和防御力都提升至110%，生命值提升至130%,打手被替换为精干打手",
+	"count": "50~54 ",
+	"enemies": [
+		{ "id": "G13", "stats": "鲍勃酒品" },
+		{ "id": "G14", "stats": "鲍勃酒品" },
+		{ "id": "SI8", "stats": "level0" },
+		{ "id": "D2", "stats": "level0" },
+		{ "id": "D4", "stats": "level0" },
+		{ "id": "D6", "stats": "level0" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	]
+}
