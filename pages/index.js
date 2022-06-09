@@ -102,7 +102,7 @@ export default function Home({ allStagesData }) {
 						</tr>
 						<Link href={`/stages/cc/cc7-perma`}>
 							<div className="border border-collapse py-2 border-gray-400 text-base hover:cursor-pointer hover:bg-gray-300 underline text-blue-700">
-								{language === "jp" ? "灰斉山麓" : "Permanent Stage"}
+								{language === "jp" ? "灰斉山麓" : "Foothill Hui-Ch'i"}
 							</div>
 						</Link>
 						<tr>
