@@ -29,7 +29,7 @@
 							"jp": [
 								"0.5秒毎加速する",
 								"加速→移動速度+50％、攻撃時一回追加ダメージを加える、攻撃後リセットする",
-								"追加ダメージ（1ms:600)"
+								"追加ダメージ（1ms:800)"
 							],
 							"cn": []
 						},
@@ -41,6 +41,38 @@
 		"永无尽头": {
 			"hp": "9000",
 			"atk": "500",
+			"def": "230",
+			"mdef": "40",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "3",
+			"ms": "0.3",
+			"special": [
+				{
+					"name": "lancer-accelerate",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Accelerates every 0.5s, inc ms by 50%, does extra damage which scales with ms for 1 attack, after attacking ms stack resets"
+							],
+							"jp": [
+								"0.5秒毎加速する",
+								"加速→移動速度+50％、攻撃時一回追加ダメージを加える、攻撃後リセットする",
+								"追加ダメージ（1ms:800)"
+							],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		},
+		"乌萨斯的渴求": {
+			"hp": "8000",
+			"atk": "550",
 			"def": "230",
 			"mdef": "40",
 			"aspd%": "100",
@@ -82,5 +114,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee", "sarkaz"]
+	"type": ["melee", "sarkaz","elite"]
 }

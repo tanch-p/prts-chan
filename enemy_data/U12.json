@@ -1,39 +1,72 @@
 {
-    "id": "U12",
-    "name_en": "Imperial Artillery Core Targeteer",
-    "name_jp": "帝国砲撃指揮機",
-    "name_cn": "帝国炮火中枢先兆者",
-    "atk_type_jp": "物理",
-    "hp": "16000",
-    "atk": "1200",
-    "def": "800",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "5",
-    "range": "2",
-    "HP回復速度": "0",
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.5",
-    "type_jp": [
-        "遠距離",
-        "飛行",
-        "精鋭",
-        "ドローン"
-    ],
-    "type_en": [
-        "Ranged",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "远程",
-        "飞行",
-        "无人机"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "U12",
+	"name": {
+		"en": "Imperial Artillery Core Targeteer",
+		"jp": "帝国砲撃指揮機",
+		"cn": "帝国炮火中枢先兆者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "16000",
+			"atk": "1200",
+			"def": "800",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "4",
+			"ms": "0.5",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Normal Atk does 100% splash damage to units 8sq around target"
+							],
+							"jp": ["通常攻撃→目標＋周囲8マスに100％ダメージ"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		},
+		"乌萨斯的渴求": {
+			"hp": "30000",
+			"atk": "1200",
+			"def": "1000",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "4",
+			"ms": "0.5",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Normal Atk does 100% splash damage to units 8sq around target"
+							],
+							"jp": ["通常攻撃→目標＋周囲8マスに100％ダメージ"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["not_firewatch_list", "flying", "drone", "elite"]
 }

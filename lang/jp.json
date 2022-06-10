@@ -51,12 +51,12 @@
 			],
 			"text": ""
 		},
-		"firewatch's_list": {
+		"firewatch_list": {
 			"name": "暗殺対象",
 			"ops": [],
 			"text": "遠距離攻撃しないが「ファイヤーウォッチ」の素質対象"
 		},
-		"not_firewatch's_list": {
+		"not_firewatch_list": {
 			"name": "暗殺対象外",
 			"ops": [],
 			"text": "「ファイヤーウォッチ」の素質対象外"

@@ -50,12 +50,12 @@
 			],
 			"text": ""
 		},
-		"firewatch's_list": {
+		"firewatch_list": {
 			"name": "On Firewatch's List",
 			"ops": [],
 			"text": "Doesn't do ranged attacks but is target of Firewatch's Talent"
 		},
-		"not_firewatch's_list": {
+		"not_firewatch_list": {
 			"name": "Not on Firewatch's List",
 			"ops": [],
 			"text": "Not a target of Firewatch's Talent"

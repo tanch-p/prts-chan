@@ -1,32 +1,31 @@
 {
-    "id": "U4",
-    "name_en": "Ursus Mangler Packmother",
-    "name_jp": "ウルサス女王裂獣",
-    "name_cn": "乌萨斯裂兽族母",
-    "atk_type_jp": "物理",
-    "hp": "4600",
-    "atk": "450",
-    "def": "100",
-    "mdef": "20",
-    "aspd%": "100",
-    "aspd": "1.5",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.7",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "U4",
+	"name": {
+		"en": "Ursus Mangler Packmother",
+		"jp": "ウルサス女王裂獣",
+		"cn": "乌萨斯裂兽族母"
+	},
+	"stats": {
+		"level0": {
+			"hp": "4600",
+			"atk": "450",
+			"def": "100",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "1.5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "1.7",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }

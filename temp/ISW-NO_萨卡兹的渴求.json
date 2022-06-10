@@ -1,0 +1,16 @@
+{
+	"name": "萨卡兹的渴求",
+	"img": "萨卡兹的渴求",
+	"buff": "敌方单位的攻击力提升至120%，生命值提升至140%,“小惊喜”的移动速度提升至300%",
+	"count": "55~56",
+	"enemies": [
+		{ "id": "S16", "stats": "萨卡兹的渴求" },
+		{ "id": "S11", "stats": "level0" },
+		{ "id": "39", "stats": "萨卡兹的渴求" },
+		{ "id": "S8", "stats": "萨卡兹的渴求" },
+		{ "id": "S14", "stats": "level0" },
+		{ "id": "CS4", "stats": "level0" },
+		{ "id": "DLD", "stats": "level2" },
+		{ "id": "GPN", "stats": "level2" }
+	]
+}
