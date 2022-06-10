@@ -1,27 +1,27 @@
 {
-	"id": "00",
-	"name": { "en": "Sample", "jp": "サンプル", "cn": "" },
+	"id": "Y6",
+	"name": {
+		"en": "Yeti Icecleaver",
+		"jp": "アイスピッカー",
+		"cn": "雪怪小队凿冰人"
+	},
 	"stats": {
 		"level0": {
-			"hp": "1650",
-			"atk": "200",
-			"def": "100",
-			"mdef": "0",
+			"hp": "16000",
+			"atk": "830",
+			"def": "500",
+			"mdef": "20",
 			"aspd%": "100",
-			"aspd": "2",
+			"aspd": "3",
 			"range": "0",
 			"HP回復速度": "0",
-			"weight": "1",
-			"ms": "1.1",
+			"weight": "3",
+			"ms": "0.7",
 			"special": []
 		}
 	},
 	"normal_attack": {
 		"atk_type": ["melee", "phys"],
-		"hits": 1
-	},
-	"normal_attack": {
-		"atk_type": ["no_attack"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

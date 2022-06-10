@@ -1,35 +1,31 @@
 {
-    "id": "S5",
-    "name_en": "Sarkaz Caster",
-    "name_jp": "サルカズ術師",
-    "name_cn": "萨卡兹术师",
-    "atk_type_jp": "術",
-    "hp": "12000",
-    "atk": "500",
-    "def": "200",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "2.5",
-    "HP回復速度": "0",
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "遠距離",
-        "サルカズ"
-    ],
-    "type_en": [
-        "Ranged",
-        "Sarkaz"
-    ],
-    "type_cn": [
-        "远程",
-        "萨卡兹"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "S5",
+	"name": {
+		"en": "Sarkaz Caster",
+		"jp": "サルカズ術師",
+		"cn": "萨卡兹术师"
+	},
+	"stats": {
+		"level0": {
+			"hp": "12000",
+			"atk": "500",
+			"def": "200",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.5",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "arts"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "sarkaz"]
 }

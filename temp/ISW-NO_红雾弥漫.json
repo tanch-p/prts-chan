@@ -1,19 +1,16 @@
 {
 	"name": "红雾弥漫",
 	"img": "红雾弥漫",
-	"buff": "敌方单位的攻击力提升至125%，防御力提升至120%，生命值提升至150%",
+	"buff": "敌方的攻击力提升至125%，防御力提升为110%，生命值提升为140%",
 	"debuff": "我方单位每0.5秒持续受到25真实伤害",
 	"count": "51~52",
 	"enemies": [
-		{ "id": "O3", "stats": "红雾弥漫" },
-		{ "id": "A8", "stats": "阴云笼罩" },
-		{ "id": "15", "stats": "阴云笼罩" },
-		{ "id": "A4", "stats": "阴云笼罩" },
-		{ "id": "AL1", "stats": "阴云笼罩" },
-		{ "id": "AL2", "stats": "阴云笼罩" },
-		{ "id": "B6", "stats": "level0" },
-		{ "id": "B7", "stats": "level0" },
-		{ "id": "DLD", "stats": "level1" },
-		{ "id": "GPN", "stats": "level1" }
+		{ "id": "34", "stats": "level0" },
+		{ "id": "35", "stats": "level0" },
+		{ "id": "A7", "stats": "红雾弥漫" },
+		{ "id": "SC", "stats": "红雾弥漫" },
+		{ "id": "PA2", "stats": "level0" },
+		{ "id": "DLD", "stats": "level2" },
+		{ "id": "GPN", "stats": "level2" }
 	]
 }

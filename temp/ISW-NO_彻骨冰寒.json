@@ -1,0 +1,16 @@
+{
+	"name": "彻骨冰寒",
+	"img": "彻骨冰寒",
+	"buff": "敌方单位的攻击力提升至115%，防御力提升至110%，生命值提升至125% ",
+	"count": "61~66",
+	"enemies": [
+		{ "id": "B9", "stats": "level0" },
+		{ "id": "O4", "stats": "level0" },
+		{ "id": "Y1", "stats": "level0" },
+		{ "id": "Y4", "stats": "彻骨冰寒" },
+		{ "id": "D10", "stats": "level0" },
+		{ "id": "Y6", "stats": "level0" },
+		{ "id": "DLD", "stats": "level2" },
+		{ "id": "GPN", "stats": "level2" }
+	]
+}
