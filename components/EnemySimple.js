@@ -137,11 +137,12 @@ export default function EnemySimple({
 				if (enemy.format === "prisoner" && row !== 0) {
 					fixedIncValue += enemy.release?.[stat] ?? 0;
 				}
-				return (
+				return Math.min(
+					100,
 					+base_stat +
-					(multiplier?.["ALL"]?.[stat] ?? 0) +
-					(multiplier?.[enemy.id]?.[stat] ?? 0) +
-					fixedIncValue
+						(multiplier?.["ALL"]?.[stat] ?? 0) +
+						(multiplier?.[enemy.id]?.[stat] ?? 0) +
+						fixedIncValue
 				);
 
 			default:
