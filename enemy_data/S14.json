@@ -1,35 +1,55 @@
 {
-    "id": "S14",
-    "name_en": "Sarkaz Worldcurser",
-    "name_jp": "サルカズ呪術隊長",
-    "name_cn": "萨卡兹恶咒者",
-    "atk_type_jp": "術",
-    "hp": "22000",
-    "atk": "850",
-    "def": "300",
-    "mdef": "50",
-    "aspd%": "100",
-    "aspd": "5",
-    "range": "3",
-    "HP回復速度": "0",
-    "weight": "3",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.4",
-    "type_jp": [
-        "遠距離",
-        "サルカズ"
-    ],
-    "type_en": [
-        "Ranged",
-        "Sarkaz"
-    ],
-    "type_cn": [
-        "远程",
-        "萨卡兹"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "S14",
+	"name": {
+		"en": "Sarkaz Worldcurser",
+		"jp": "サルカズ呪術隊長",
+		"cn": "萨卡兹恶咒者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "22000",
+			"atk": "850",
+			"def": "300",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "3",
+			"HP回復速度": "0",
+			"weight": "3",
+			"ms": "0.4",
+			"special": [
+				{
+					"name": "multi-target",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Normal Atks targets 2 units"],
+							"jp": ["通常攻撃→2体同時攻撃"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
+				{
+					"name": "standby",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Does not attack while on standby"],
+							"jp": ["待機中攻撃しない"],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "arts"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["ranged", "sarkaz", "elite"]
 }

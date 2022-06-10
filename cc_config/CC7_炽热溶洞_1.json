@@ -36,7 +36,11 @@
 		"options": [
 			{
 				"rank": 1,
-				"name": { "jp": "環境：溶岩I", "en": "Volcanic Intrusion 1", "cn": "" },
+				"name": {
+					"jp": "環境：溶岩地帯α",
+					"en": "Environment: Surging Lava α",
+					"cn": ""
+				},
 				"img": "炽热溶洞/75px-Global_forbidloc_amod_1",
 				"effects": [],
 				"tooltip": {
@@ -54,8 +58,8 @@
 			{
 				"rank": 2,
 				"name": {
-					"jp": "Pompeii 火傷",
-					"en": "Pompeii fire_2",
+					"jp": "強敵：粘性火焔II",
+					"en": "Pompeii: Viscous Flame II",
 					"cn": ""
 				},
 				"img": "炽热溶洞/75px-Enemy_lslime_fire_2",
@@ -131,8 +135,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"jp": "Pompeii aIII",
-					"en": "Pompeii aIII",
+					"jp": "強敵：溶岩爆裂III",
+					"en": "Pompeii: Internal Eruption III",
 					"cn": ""
 				},
 				"img": "炽热溶洞/75px-Enemy_lslime_a_amod_3",
@@ -171,8 +175,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"jp": "Pompeii bIII",
-					"en": "Pompeii bIII",
+					"jp": "強敵：溶岩外殻III",
+					"en": "Pompeii: Tough Constitution III",
 					"cn": ""
 				},
 				"img": "炽热溶洞/75px-Enemy_lslime_b_amod_3",

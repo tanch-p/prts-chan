@@ -44,7 +44,11 @@
 		"options": [
 			{
 				"rank": 1,
-				"name": { "jp": "環境：溶岩I", "en": "Volcanic Intrusion 1", "cn": "" },
+				"name": {
+					"jp": "環境：溶岩地帯β",
+					"en": "Environment: Surging Lava β",
+					"cn": ""
+				},
 				"img": "炽热溶洞/75px-Global_forbidloc_cmod_1",
 				"effects": [],
 				"tooltip": {

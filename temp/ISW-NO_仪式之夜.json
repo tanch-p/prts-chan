@@ -1,0 +1,16 @@
+{
+	"name": "仪式之夜",
+	"img": "仪式之夜",
+	"buff": "敌方单位的攻击力提升至120%，生命值提升至140%",
+	"count": "46~47",
+	"enemies": [
+		{ "id": "S7", "stats": "仪式之夜" },
+		{ "id": "S8", "stats": "level0" },
+		{ "id": "S1", "stats": "仪式之夜" },
+		{ "id": "S13", "stats": "level0" },
+		{ "id": "S15", "stats": "仪式之夜" },
+		{ "id": "S5", "stats": "level0" },
+		{ "id": "DLD", "stats": "level2" },
+		{ "id": "GPN", "stats": "level2" }
+	]
+}
