@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect, useContext } from "react";
 import { Navbar } from "./layouts/Navbar";
-import AppContext from "./AppContext";
+import AppContext from "../context/AppContext";
 import { Footer } from "./layouts/Footer";
 
 const name = "Your Name";

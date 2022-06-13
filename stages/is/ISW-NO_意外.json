@@ -1,0 +1,22 @@
+{
+	"name": { "en": "意外", "jp": "意外", "cn": "意外" },
+	"img": "ISW-NO_意外",
+	"hard_mods": {
+		"targets": ["ALL"],
+		"mods": {
+			"atk": "%160",
+			"def": "%120",
+			"hp": "%140"
+		}
+	},
+	"count": "44~45",
+	"enemies": [
+		{ "id": "02", "stats": "level0" },
+		{ "id": "B8", "stats": "level0" },
+		{ "id": "B1", "stats": "level0" },
+		{ "id": "A9", "stats": "level0" },
+		{ "id": "U5", "stats": "意外" },
+		{ "id": "DLD", "stats": "level0" },
+		{ "id": "GPN", "stats": "level0" }
+	]
+}

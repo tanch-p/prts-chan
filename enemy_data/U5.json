@@ -19,7 +19,7 @@
 			"ms": "1",
 			"special": []
 		},
-		"猩红孤钻": {
+		"意外": {
 			"hp": "2000",
 			"atk": "250",
 			"def": "200",
@@ -34,7 +34,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

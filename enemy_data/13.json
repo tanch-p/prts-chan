@@ -24,7 +24,7 @@
 					"tooltip": {
 						"simple": {
 							"en": ["Cannot be blocked"],
-							"jp": ["ブロック不可"],
+							"jp": ["ブロックされない"],
 							"cn": []
 						},
 						"detailed": { "en": [], "jp": [], "cn": [] }
@@ -50,7 +50,7 @@
 					"tooltip": {
 						"simple": {
 							"en": ["Cannot be blocked"],
-							"jp": ["ブロック不可"],
+							"jp": ["ブロックされない"],
 							"cn": []
 						},
 						"detailed": { "en": [], "jp": [], "cn": [] }
@@ -76,7 +76,7 @@
 					"tooltip": {
 						"simple": {
 							"en": ["Cannot be blocked"],
-							"jp": ["ブロック不可"],
+							"jp": ["ブロックされない"],
 							"cn": []
 						},
 						"detailed": { "en": [], "jp": [], "cn": [] }

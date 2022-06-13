@@ -5,7 +5,7 @@ import Image from "next/image";
 import Map from "../../../components/Map";
 import EnemySimple from "../../../components/EnemySimple";
 import { useState, useEffect, useContext } from "react";
-import AppContext from "../../../components/AppContext";
+import AppContext from "../../../context/AppContext";
 
 import Daily_buttons from "../../../components/CC/Daily_buttons";
 import Selected_options from "../../../components/CC/Selected_options";
@@ -21,7 +21,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-	const paths = getAllStageIds();
+	const paths = getAllStageIds("cc");
 	// const locales = ["en", "jp"];
 	// const paths = [];
 	// for (const locale of locales) {

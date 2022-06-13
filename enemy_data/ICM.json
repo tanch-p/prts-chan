@@ -1,35 +1,69 @@
 {
-    "id": "ICM",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "“霜牡”",
-    "atk_type_jp": "術",
-    "hp": "60000",
-    "atk": "1200",
-    "def": "300",
-    "mdef": "30",
-    "aspd%": "100",
-    "aspd": "6",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.6",
-    "type_jp": [
-        "近距離",
-        "ボス"
-    ],
-    "type_en": [
-        "Melee",
-        "Boss"
-    ],
-    "type_cn": [
-        "近战",
-        "领袖"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "ICM",
+	"name": {
+		"en": "“霜牡”",
+		"jp": "“霜牡”",
+		"cn": "“霜牡”"
+	},
+	"format": "powerup",
+	"stats": {
+		"level0": {
+			"hp": "60000",
+			"atk": "1200",
+			"def": "300",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "6",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "4",
+			"ms": "0.6",
+			"special": [
+				{
+					"name": "freeze_hit",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Attacks freeze enemy"],
+							"jp": ["通常攻撃"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "boss"],
+	"powerup": {
+		"atk": 1.8,
+		"aspd": 2,
+		"ms": 1.5,
+		"normal_attack": {
+			"atk_type": ["melee", "phys"],
+			"hits": 1
+		},
+		"special": [
+			{
+				"tooltip": {
+					"simple": {
+						"en": ["Rage mode", "Move speed+150%"],
+						"jp": ["強化状態", "移動速度＋150％"],
+						"cn": []
+					}
+				}
+			}
+		]
+	}
 }

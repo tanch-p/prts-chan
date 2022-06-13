@@ -1,6 +1,6 @@
 import "../styles/global.css";
 import { useState, useEffect } from "react";
-import AppContext from "../components/AppContext";
+import AppContext from "../context/AppContext";
 import Drawer from "../components/Drawer";
 import useWindowDimensions from "../components/WindowDimensions";
 

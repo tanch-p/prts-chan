@@ -32,6 +32,36 @@
 				}
 			]
 		},
+		"大盗当头": {
+			"hp": "8000",
+			"atk": "0",
+			"def": "300",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "2.5",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "0.8",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Buff→enemies within 2.5 tile range DEF+300, does not apply to self?, does not stack",
+								"Can be silenced"
+							],
+							"jp": [
+								"バフ→ 攻撃範囲内の敵の防御力300上昇（重複しない、自分に効果なし）",
+								"無力化可能"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
 		"无人机起降库": {
 			"hp": "11000",
 			"atk": "0",

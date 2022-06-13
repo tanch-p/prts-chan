@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getRemarks } from "./getStats";
 import { useState } from "react";
 import { parseType } from "./parseType";
+import { parseAtkType } from "../lib/get-stats";
 
 export default function EnemySimple({
 	mapConfig,
@@ -10,15 +11,10 @@ export default function EnemySimple({
 	language,
 	device,
 	fontThemes,
+	mode = "normal",
 }) {
 	const [tableHeaders, setTableHeaders] = useState([
 		{ en: "enemy", jp: "敵", cn: "敌人", show: true },
-		{
-			en: "count",
-			jp: "数",
-			cn: "数量",
-			show: true,
-		},
 		{ en: "type", jp: "属性", cn: "属性", show: true },
 		{ en: "hp", jp: "HP", cn: "生命值", show: true },
 		{ en: "atk", jp: "攻撃力", cn: "攻击力", show: true },
@@ -32,6 +28,8 @@ export default function EnemySimple({
 
 	// console.log("spMods", specialMods);
 	// console.log("mul", multiplier);
+
+	const langPack = require(`../lang/${language}.json`);
 
 	const textAlign = (stat) => {
 		switch (stat) {
@@ -442,7 +440,11 @@ export default function EnemySimple({
 													).concat(
 														format === "prisoner" && row === 1
 															? enemy.release.normal_attack.type[language]
-															: enemy.normal_attack.type[language]
+															: parseAtkType(
+																	enemy.normal_attack.atk_type,
+																	language,
+																	langPack
+															  )
 													)})`}</p>,
 												].concat(
 													parseSpecial(enemy, stat, stats, statValue, row)
@@ -498,19 +500,6 @@ export default function EnemySimple({
 
 	return (
 		<>
-			{device !== "mobile" ? (
-				<button
-					className={`text-xs font-semibold text-center py-1 px-2 my-1 border rounded-lg bg-gray-300`}
-					onClick={() => {
-						toggleTableHeader("count");
-					}}
-				>
-					{tableHeaders[1].show
-						? `${language === "jp" ? "数を表示しない" : "Hide Enemy Count"}`
-						: `${language === "jp" ? "数を表示する" : `Show Enemy Count`}`}
-				</button>
-			) : null}
-
 			<div className="w-[100vw] md:w-full overflow-x-scroll md:overflow-x-auto">
 				<table
 					className={`border border-gray-400 border-solid w-[100vw] overflow-x-scroll md:overflow-x-auto md:mx-auto md:w-full ${fontThemes[language]}`}

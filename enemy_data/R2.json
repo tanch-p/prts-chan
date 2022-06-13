@@ -1,35 +1,72 @@
 {
-    "id": "R2",
-    "name_en": "Mutant Sand Beast",
-    "name_jp": "変異サンドビースト",
-    "name_cn": "变异沙地兽",
-    "atk_type_jp": "物理",
-    "hp": "2700",
-    "atk": "320",
-    "def": "100",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "2.5",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.7",
-    "type_jp": [
-        "近距離",
-        "感染生物"
-    ],
-    "type_en": [
-        "Melee",
-        "Infected Creature"
-    ],
-    "type_cn": [
-        "近战",
-        "感染生物"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "R2",
+	"name": {
+		"en": "Mutant Sand Beast",
+		"jp": "変異サンドビースト",
+		"cn": "变异沙地兽"
+	},
+	"stats": {
+		"level0": {
+			"hp": "2700",
+			"atk": "320",
+			"def": "100",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2.5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "1.7",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"On death, this unit will spawn 2 Originiutant Excrescence.",
+								"Can be silenced."
+							],
+							"jp": ["死亡時、変異腫瘍を2体召喚する", "無効化可能"],
+							"cn": ["死亡后召唤2个畸变赘生物（可被沉默）"]
+						}
+					}
+				}
+			]
+		},
+		"这位乌萨斯人": {
+			"hp": "3000",
+			"atk": "400",
+			"def": "100",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2.5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "2",
+			"ms": "1.7",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"On death, this unit will spawn 2 Originiutant Excrescence.",
+								"Can be silenced."
+							],
+							"jp": ["死亡時、変異腫瘍を2体召喚する", "無効化可能"],
+							"cn": ["死亡后召唤2个畸变赘生物（可被沉默）"]
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "infected_creature"]
 }
