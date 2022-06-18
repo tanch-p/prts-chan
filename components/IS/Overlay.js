@@ -27,10 +27,21 @@ export default function Overlay({ open, setOpen }) {
 			<div
 				id="relic-container"
 				className="fixed inset-0 bg-ph-bg bg-opacity-90 overflow-y-scroll"
+				onClick={(e) => {
+					if (
+						e.target.localName !== "img" &&
+						e.target.localName !== "span" &&
+						!e.target.id.includes("relic") &&
+						!e.target.id.includes("reset")
+					) {
+						setOpen(false);
+					}
+				}}
 			>
 				<div className="max-w-7xl mx-auto py-36 ">
 					<div className="flex flex-col-reverse gap-y-12 w-full my-auto">
 						<div
+							id="reset"
 							className="place-self-center rounded-xl bg-neutral-700 px-16 py-2 hover:cursor-pointer hover:bg-neutral-600"
 							onClick={() => {
 								setSelectedHardRelic([]);
