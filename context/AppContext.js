@@ -3,8 +3,9 @@ import { createContext, useContext, useState } from "react";
 const AppContext = createContext();
 
 export function AppWrapper({ children }) {
-	const [selectedHardRelic, setSelectedHardRelic] = useState([{}]);
-	const [selectedNormalRelic, setSelectedNormalRelic] = useState([{}]);
+	const [selectedHardRelic, setSelectedHardRelic] = useState([]);
+	const [selectedNormalRelic, setSelectedNormalRelic] = useState([]);
+    const [hallucinations, setHallucinations] = useState([]);
 	const [language, setLanguage] = useState("en");
 	const [device, setDevice] = useState("desktop");
 
@@ -15,6 +16,8 @@ export function AppWrapper({ children }) {
 				setSelectedHardRelic,
                 selectedNormalRelic,
                 setSelectedNormalRelic,
+                hallucinations,
+                setHallucinations,
 				language,
 				setLanguage,
 				device,

@@ -8,12 +8,12 @@ import useWindowDimensions from "@/components/WindowDimensions";
 
 export const siteTitle = "PRTS-chan";
 
-export default function Layout({ children, theme }) {
+export default function Layout({ children, theme, floor = "" }) {
 	const { height, width } = useWindowDimensions();
 
 	const { language, setLanguage, device, setDevice } = useAppContext();
 
-	const phcs_styles = "bg-neutral-800 text-white";
+	const phcs_styles = "bg-neutral-800 text-white pt-24";
 
 	useEffect(() => {
 		width > 800 ? setDevice("desktop") : setDevice("mobile");
@@ -49,7 +49,7 @@ export default function Layout({ children, theme }) {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
 			<header className="w-[100vw]  md:w-full transition-none">
-				<Navbar device={device} />
+				<Navbar device={device} theme={theme} floor={floor} />
 			</header>
 			<main
 				className={`mx-auto flex flex-wrap flex-col items-center ${phcs_styles}`}

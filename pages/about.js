@@ -1,11 +1,9 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import AppContext from "../components/AppContext";
-import { useContext } from "react";
+import { useAppContext } from "context/AppContext";
 
 export default function About({ allStagesData }) {
-	const { languageContext } = useContext(AppContext);
-	const [language] = languageContext;
+	const { language, device } = useAppContext();
 	// const langPack = require(`../components/lang/${language}.json`);
 
 	return (

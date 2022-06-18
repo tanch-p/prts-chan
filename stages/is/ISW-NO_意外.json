@@ -1,6 +1,8 @@
 {
 	"name": { "en": "意外", "jp": "意外", "cn": "意外" },
 	"img": "ISW-NO_意外",
+	"theme": "phcs",
+	"floor": 1,
 	"hard_mods": [
 		{
 			"targets": ["ALL"],

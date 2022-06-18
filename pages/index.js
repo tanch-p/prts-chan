@@ -2,16 +2,14 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
-import { useContext, useEffect } from "react";
-import AppContext from "../context/AppContext";
+import { useAppContext } from "context/AppContext";
 import dayjs from "dayjs";
 
 //images
 import cc7_banner from "../public/images/banners/cc7_banner.jpg";
 
 export default function Home() {
-	const { languageContext, device } = useContext(AppContext);
-	const [language] = languageContext;
+	const { language, device } = useAppContext();
 	const langPack = require(`../lang/${language}.json`);
 	const firstCCDate = dayjs("6/9");
 	const dailyStages = [

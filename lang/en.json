@@ -26,7 +26,7 @@
 	"true": "true",
 	"melee": "melee",
 	"ranged": "melee",
-	"no_attack": "Does not attack",
+	"no_attack": "does not attack",
 	"type": {
 		"melee": { "name": "Melee", "ops": [] },
 		"ranged": {

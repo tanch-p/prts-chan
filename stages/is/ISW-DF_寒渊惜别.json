@@ -1,6 +1,7 @@
 {
 	"name": { "en": "寒渊惜别", "jp": "寒渊惜别", "cn": "寒渊惜别" },
 	"img": "ISW-DF_寒渊惜别",
+	"theme": "phcs",
 	"enemies": [
 		{ "id": "ICR", "stats": "level0" },
 		{ "id": "ICM", "stats": "level0" },

@@ -38,6 +38,7 @@ export default function Stage({ stageData }) {
 	// console.log(stageData);
 	const { language, device } = useAppContext();
 	const { mapConfig } = stageData;
+	const theme = mapConfig.hasOwnProperty("theme") ? mapConfig.theme : "";
 
 	const fontThemes = { en: "font-sans", jp: "font-jp font-light" };
 
@@ -71,7 +72,7 @@ export default function Stage({ stageData }) {
 	];
 
 	return (
-		<Layout banner={"phcs"}>
+		<Layout theme={theme} floor={mapConfig.floor}>
 			<Head>
 				<title>{mapConfig.name[language]}</title>
 			</Head>

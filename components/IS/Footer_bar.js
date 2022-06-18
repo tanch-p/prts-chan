@@ -19,11 +19,14 @@ export default function FooterBar() {
 	const [isOpen, setOpen] = useToggle(false);
 
 	return (
-		<div className="fixed bottom-0 left-0 h-full w-full">
+		<div className="fixed bottom-0 left-0 select-none">
 			<Overlay open={isOpen} setOpen={setOpen} />
 			<Disclosure
 				as="nav"
 				className="border-t-2 border-gray-600 bg-neutral-900 w-full mt-4 fixed bottom-0 py-2 z-[30]"
+				onClick={() => {
+					if (isOpen) setOpen(!isOpen);
+				}}
 			>
 				<>
 					<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">

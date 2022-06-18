@@ -3,8 +3,11 @@ import { useAppContext } from "context/AppContext";
 import { useState } from "react";
 import Image from "next/image";
 import { artifactSVG, downArrowSVG } from "../svg";
+import FloorTitle from "../IS/Floor_title";
 
-export const Navbar = ({ open, setOpen, device }) => {
+const IS_THEMES = ["phcs"];
+
+export const Navbar = ({ open, setOpen, device, theme, floor }) => {
 	const { language, setLanguage } = useAppContext();
 	const [menuOpen, setMenuOpen] = useState(false);
 
@@ -14,16 +17,23 @@ export const Navbar = ({ open, setOpen, device }) => {
 		{ name: "日本語", code: "jp" },
 	];
 
+	const getThemeStyles = (theme) => {
+		switch (theme) {
+			case "phcs":
+				return "bg-neutral-800 text-white fixed top-0 h-24";
+			default:
+				return "bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-white border-b border-gray-400 h-16";
+		}
+	};
+
 	return (
 		<>
 			<nav
-				className={` bg-gray-200 w-[100vw] md:w-full  ${
-					device === "mobile" ? "" : "px-6"
-				}   text-gray-700 border-b border-gray-400 z-10 ${
-					language === "jp" ? "font-jp" : "font-sans"
-				}`}
+				className={`  w-[100vw] md:w-full px-6 md:px-0 z-10   ${getThemeStyles(
+					theme
+				)}   ${language === "jp" ? "font-jp" : "font-sans"}`}
 			>
-				<div className="flex items-center justify-between max-w-7xl mx-auto  h-16 ">
+				<div className="flex items-center justify-between  max-w-7xl mx-auto">
 					<div className="flex items-center relative ">
 						<button
 							aria-label="Open Menu"
@@ -46,17 +56,13 @@ export const Navbar = ({ open, setOpen, device }) => {
 						<Link href={`/`}>
 							<a className="text-xl font-bold min-w-min">PRTSちゃん</a>
 						</Link>
-						{device === "mobile" ? null : (
-							<>
-								<Link href={`/`}>
-									<a className="pl-2 mx-2 font-medium">Home</a>
-								</Link>
-							</>
-						)}
 						<Link href={`/about`}>
 							<a className="pl-2 font-medium">About</a>
 						</Link>
 					</div>
+					{IS_THEMES.includes(theme) && (
+						<FloorTitle theme={theme} floor={floor} />
+					)}
 					<div className={`text-left mr-2 relative`}>
 						<div>
 							<button

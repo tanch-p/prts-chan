@@ -3,6 +3,7 @@ import { getRemarks } from "./getStats";
 import { useState, useEffect } from "react";
 import { parseType } from "./parseType";
 import { parseAtkType, setOtherMods } from "../lib/get-stats";
+import { useAppContext } from "context/AppContext";
 
 export default function EnemySimple({
 	mapConfig,
@@ -36,8 +37,11 @@ export default function EnemySimple({
 		},
 	});
 	const [specialMods, setSpecialMods] = useState({});
-	// console.log("spMods", specialMods);
-	// console.log("mul", multiplier);
+	console.log("spMods", specialMods);
+	console.log("mul", multiplier);
+
+	const { selectedHardRelic, selectedNormalRelic, hallucinations } =
+		useAppContext();
 
 	const langPack = require(`../lang/${language}.json`);
 
@@ -509,54 +513,86 @@ export default function EnemySimple({
 			return renderRow(enemy, count, stats, index, enemy.format);
 		});
 	};
-	const updateMultiplier = (effects) => {
-		const multiplierHolder = { ...multiplier };
-		const other_mods = {};
-		console.log("here");
-		effects.forEach((effect) => {
-			for (const target of effect.targets) {
-				if (!multiplierHolder[target]) {
-					multiplierHolder[target] = {
-						hp: 1,
-						atk: 1,
-						def: 1,
-						mdef: 0,
-						aspd: 1,
-						ms: 1,
-						range: 1,
-						weight: 0,
-					};
-				}
-				for (const key in effect.mods) {
-					if (key !== "special") {
-						if (effect.mods[key][0] === "%") {
-							multiplierHolder[target][key] +=
-								parseInt(effect.mods[key].slice(1)) / 100;
+	const updateMultiplier = () => {
+		const distill = (holder, effects) => {
+			effects.forEach((effect) => {
+				for (const target of effect.targets) {
+					if (!holder[target]) {
+						holder[target] = {
+							hp: 1,
+							atk: 1,
+							def: 1,
+							mdef: 0,
+							aspd: 1,
+							ms: 1,
+							range: 1,
+							weight: 0,
+						};
+					}
+					for (const key in effect.mods) {
+						if (key !== "special") {
+							if (effect.mods[key][0] === "%") {
+								holder[target][key] *=
+									parseInt(effect.mods[key].slice(1)) / 100;
+							} else {
+								holder[target][key] = effect.mods[key];
+							}
 						} else {
-							multiplierHolder[target][key] = effect.mods[key];
+							if (!other_mods[target]) {
+								other_mods[target] = {};
+							}
+							setOtherMods(other_mods[target], effect.mods.special);
 						}
-					} else {
-						if (!other_mods[target]) {
-							other_mods[target] = {};
-						}
-						setOtherMods(other_mods[target], effect.mods.special);
 					}
 				}
-			}
-		});
-		setSpecialMods(other_mods);
-		setMultiplier(multiplier);
-	};
-	useEffect(() => {
+			});
+		};
+
+		const multiplierHolder = {
+			ALL: {
+				hp: 1,
+				atk: 1,
+				def: 1,
+				mdef: 0,
+				aspd: 1,
+				ms: 1,
+				range: 1,
+				weight: 0,
+			},
+		};
+		const other_mods = {};
 		if (mode === "hard") {
 			const effects = mapConfig.hard_mods;
-			updateMultiplier(effects);
+			distill(multiplierHolder, effects);
 		}
-	}, []);
+		for (const hallu of hallucinations) {
+			distill(multiplierHolder, hallu.effects);
+		}
+		for (const relic of selectedHardRelic) {
+			distill(multiplierHolder, relic.effects);
+		}
+		for (const relic of selectedNormalRelic) {
+			distill(multiplierHolder, relic.effects);
+		}
+
+		setSpecialMods({ ...specialMods, ...other_mods });
+		setMultiplier(multiplierHolder);
+	};
+	useEffect(() => {
+		updateMultiplier();
+	}, [hallucinations, selectedHardRelic, selectedNormalRelic]);
 
 	return (
 		<>
 			<div className="w-[100vw] md:w-full overflow-x-scroll md:overflow-x-auto">
+				<div className="grid auto-cols-auto gap-x-2">
+					{Object.keys(multiplier.ALL).map((ele) => (
+						<span key={ele}>
+							{ele}
+							{multiplier.ALL[ele]}
+						</span>
+					))}
+				</div>
 				<table
 					className={`border border-gray-400 border-solid w-[100vw] overflow-x-scroll md:overflow-x-auto md:mx-auto md:w-full ${fontThemes[language]}`}
 				>
