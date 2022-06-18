@@ -2,7 +2,6 @@ import Image from "next/image";
 
 export default function Map({ mapConfig, language, device, fontThemes }) {
 	//base 1062 x 600
-	console.log(mapConfig);
 	const width =
 		device === "mobile" ? (1062 * 2) / 5 : Math.floor((1062 * 3) / 5);
 	const height =

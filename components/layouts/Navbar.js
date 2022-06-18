@@ -1,12 +1,11 @@
 import Link from "next/link";
-import AppContext from "../../context/AppContext";
-import { useState, useContext } from "react";
+import { useAppContext } from "context/AppContext";
+import { useState } from "react";
 import Image from "next/image";
 import { artifactSVG, downArrowSVG } from "../svg";
 
 export const Navbar = ({ open, setOpen, device }) => {
-	const { languageContext } = useContext(AppContext);
-	const [language, setLanguage] = languageContext;
+	const { language, setLanguage } = useAppContext();
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	const languageOptions = [

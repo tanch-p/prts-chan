@@ -1,12 +1,12 @@
-import Layout from "../../../components/layout";
-import { getAllStageIds, getStageData } from "../../../lib/stages";
+import Layout from "@/components/layout";
+import { getAllStageIds, getStageData } from "@/lib/stages";
 import Head from "next/head";
-import Map from "../../../components/Map";
-import EnemySimple from "../../../components/EnemySimple";
+import Map from "@/components/Map";
+import EnemySimple from "@/components/EnemySimple";
 import { useState } from "react";
-import AppContext from "../../../context/AppContext";
-import { useContext } from "react";
-import { TabComponent } from "../../../components/Tabs";
+import { useAppContext } from "context/AppContext";
+import { TabComponent } from "@/components/Tabs";
+import FooterBar from "@/components/IS/Footer_bar";
 
 export async function getStaticProps({ params }) {
 	const stageData = await getStageData(params.name, "is");
@@ -36,23 +36,8 @@ export async function getStaticPaths() {
 
 export default function Stage({ stageData }) {
 	// console.log(stageData);
-	const { languageContext, device } = useContext(AppContext);
-	const [language] = languageContext;
-	const [mode, setMode] = useState("normal");
+	const { language, device } = useAppContext();
 	const { mapConfig } = stageData;
-	const [multiplier, setMultiplier] = useState({
-		ALL: {
-			hp: 1,
-			atk: 1,
-			def: 1,
-			mdef: 0,
-			aspd: 1,
-			ms: 1,
-			range: 1,
-			weight: 0,
-		},
-	});
-	const [specialMods, setSpecialMods] = useState({});
 
 	const fontThemes = { en: "font-sans", jp: "font-jp font-light" };
 
@@ -63,8 +48,6 @@ export default function Stage({ stageData }) {
 			children: (
 				<EnemySimple
 					mapConfig={mapConfig}
-					multiplier={multiplier}
-					specialMods={specialMods}
 					mode="normal"
 					language={language}
 					device={device}
@@ -78,8 +61,6 @@ export default function Stage({ stageData }) {
 			children: (
 				<EnemySimple
 					mapConfig={mapConfig}
-					multiplier={multiplier}
-					specialMods={specialMods}
 					mode="hard"
 					language={language}
 					device={device}
@@ -90,7 +71,7 @@ export default function Stage({ stageData }) {
 	];
 
 	return (
-		<Layout banner={"test"}>
+		<Layout banner={"phcs"}>
 			<Head>
 				<title>{mapConfig.name[language]}</title>
 			</Head>
@@ -113,6 +94,7 @@ export default function Stage({ stageData }) {
 					fontThemes={fontThemes}
 				/>
 			)}
+			<FooterBar />
 		</Layout>
 	);
 }

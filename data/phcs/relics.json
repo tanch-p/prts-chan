@@ -1,0 +1,368 @@
+{
+	"atk": [
+		{
+			"name": {
+				"en": "开裂的束缚带",
+				"jp": "开裂的束缚带",
+				"cn": "开裂的束缚带"
+			},
+			"img": "开裂的束缚带",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"atk": "-%7"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -7% ATK.",
+				"jp": "",
+				"cn": "所有敌方单位的攻击力-7% "
+			}
+		},
+		{
+			"name": {
+				"en": "Abyssal Wyrdmask",
+				"jp": "",
+				"cn": "奇渊面具"
+			},
+			"img": "奇渊面具",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"atk": "-%12"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -12% ATK.",
+				"jp": "",
+				"cn": "所有敌方单位的攻击力-12% "
+			}
+		},
+		{
+			"name": {
+				"en": "Godmother’s Token",
+				"jp": "",
+				"cn": "教母的信物"
+			},
+			"img": "教母的信物",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"atk": "-%17"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -17% ATK.",
+				"jp": "",
+				"cn": "所有敌方单位的攻击力-17% "
+			}
+		}
+	],
+	"def": [
+		{
+			"name": {
+				"en": "残破合影",
+				"jp": "残破合影",
+				"cn": "残破合影"
+			},
+			"img": "残破合影",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"def": "-%12"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -12% DEF.",
+				"jp": "",
+				"cn": "所有敌方单位的防御力-12%"
+			}
+		},
+		{
+			"name": {
+				"en": "作者的喉舌",
+				"jp": "作者的喉舌",
+				"cn": "作者的喉舌"
+			},
+			"img": "作者的喉舌",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"def": "-%21"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -21% DEF.",
+				"jp": "",
+				"cn": "所有敌方单位的防御力-21%"
+			}
+		},
+		{
+			"name": {
+				"en": "Rosmontis’s Embrace",
+				"jp": "",
+				"cn": "迷迭香之拥"
+			},
+			"img": "迷迭香之拥",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"def": "-%30"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -30% DEF.",
+				"jp": "",
+				"cn": "所有敌方单位的防御力-30%"
+			}
+		}
+	],
+	"hp": [
+		{
+			"name": {
+				"en": "'The Whisperer in Darknight'",
+				"jp": "",
+				"cn": "“黑夜呢喃”"
+			},
+			"img": "黑夜呢喃",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"hp": "-%10"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -10% HP.",
+				"jp": "",
+				"cn": "所有敌方单位的生命-10%"
+			}
+		},
+		{
+			"name": {
+				"en": "镶金骨骰",
+				"jp": "镶金骨骰",
+				"cn": "镶金骨骰"
+			},
+			"img": "镶金骨骰",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"hp": "-%15"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -15% HP.",
+				"jp": "",
+				"cn": "所有敌方单位的生命-15%"
+			}
+		},
+		{
+			"name": {
+				"en": "'The Silence'",
+				"jp": "",
+				"cn": "《大静谧》"
+			},
+			"img": "大静谧",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"hp": "-%20"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -20% HP.",
+				"jp": "",
+				"cn": "所有敌方单位的生命-20%"
+			}
+		}
+	],
+	"others": [
+		{
+			"name": {
+				"en": "眼熟的雕像",
+				"jp": "眼熟的雕像",
+				"cn": "眼熟的雕像"
+			},
+			"img": "眼熟的雕像",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"aspd": "-%15"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -15 Attackspeed. ",
+				"jp": "",
+				"cn": "所有敌方单位的攻击速度-15"
+			}
+		}
+	],
+	"hard": [
+		{
+			"name": {
+				"en": "乌萨斯弯刀",
+				"jp": "乌萨斯弯刀",
+				"cn": "乌萨斯弯刀"
+			},
+			"img": "乌萨斯弯刀",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"atk": "%40",
+						"def": "%40",
+						"hp": "%40"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "",
+				"jp": "",
+				"cn": "所有敌方单位的攻击力、防御力、生命+40%"
+			}
+		},
+		{
+			"name": {
+				"en": "维多利亚王冠",
+				"jp": "维多利亚王冠",
+				"cn": "维多利亚王冠"
+			},
+			"img": "维多利亚王冠",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"atk": "%30",
+						"def": "%30",
+						"hp": "%30"
+					}
+				},
+				{
+					"targets": ["type:boss"],
+					"mods": {
+						"atk": "%15",
+						"def": "%15",
+						"hp": "%30"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "",
+				"jp": "",
+				"cn": "所有敌方单位的攻击力、防御力、生命+30%，且所有领袖单位还会攻击力、防御力+15%，生命+30% "
+			}
+		},
+		{
+			"name": {
+				"en": "莱塔尼亚权杖",
+				"jp": "莱塔尼亚权杖",
+				"cn": "莱塔尼亚权杖"
+			},
+			"img": "莱塔尼亚权杖",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"atk": "%30",
+						"def": "%30",
+						"hp": "%30"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "",
+				"jp": "",
+				"cn": "所有敌方单位的攻击力、防御力、生命+30%，且每进入一个新节点后，失去1目标生命（最多降至1）"
+			}
+		},
+		{
+			"name": {
+				"en": "高卢长袍",
+				"jp": "高卢长袍",
+				"cn": "高卢长袍"
+			},
+			"img": "高卢长袍",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"atk": "%25",
+						"def": "%25",
+						"hp": "%25"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "",
+				"jp": "",
+				"cn": "所有敌方单位的攻击力、防御力、生命+25%，且招募4星及以上干员时希望消耗+1"
+			}
+		},
+		{
+			"name": {
+				"en": "半洗孤钻",
+				"jp": "半洗孤钻",
+				"cn": "半洗孤钻"
+			},
+			"img": "半洗孤钻",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"atk": "%25",
+						"def": "%25",
+						"hp": "%25"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "",
+				"jp": "",
+				"cn": "所有敌方单位的攻击力、防御力、生命+25%，且战斗获得的指挥经验-50%"
+			}
+		},
+		{
+			"name": {
+				"en": "酒神的印记",
+				"jp": "酒神的印记",
+				"cn": "酒神的印记"
+			},
+			"img": "酒神的印记",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"atk": "%30",
+						"def": "%30",
+						"hp": "%30"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "",
+				"jp": "",
+				"cn": "所有敌方单位的攻击力、防御力、生命+30%，且可同时部署人数-2"
+			}
+		}
+	]
+}

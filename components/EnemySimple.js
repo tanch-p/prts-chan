@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { getRemarks } from "./getStats";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { parseType } from "./parseType";
-import { parseAtkType } from "../lib/get-stats";
+import { parseAtkType, setOtherMods } from "../lib/get-stats";
 
 export default function EnemySimple({
 	mapConfig,
-	multiplier,
-	specialMods,
 	language,
 	device,
 	fontThemes,
@@ -25,7 +23,19 @@ export default function EnemySimple({
 		{ en: "weight", jp: "重量", cn: "重量", show: true },
 		{ en: "remarks", jp: "備考", cn: "特殊", show: true },
 	]);
-
+	const [multiplier, setMultiplier] = useState({
+		ALL: {
+			hp: 1,
+			atk: 1,
+			def: 1,
+			mdef: 0,
+			aspd: 1,
+			ms: 1,
+			range: 1,
+			weight: 0,
+		},
+	});
+	const [specialMods, setSpecialMods] = useState({});
 	// console.log("spMods", specialMods);
 	// console.log("mul", multiplier);
 
@@ -390,7 +400,7 @@ export default function EnemySimple({
 					  );
 			returnArr.push(
 				<>
-					<tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
+					<tr className={`${index % 2 === 1 ? "bg-neutral-700" : ""}`}>
 						{arrayToMap.map((ele) => {
 							const stat = ele.en;
 							const statValue = applyModifiers(enemy, stats, stat, row);
@@ -489,7 +499,9 @@ export default function EnemySimple({
 
 	//! Render Table
 	const renderEnemyStats = () => {
-		return mapConfig.enemies.map(({ id, count, stats }, index) => {
+		const enemies =
+			mode === "hard" ? mapConfig.hard_enemies : mapConfig.enemies;
+		return enemies.map(({ id, count, stats }, index) => {
 			//get enemydata file
 			//map through enemydata
 			let enemy = require(`../enemy_data/${id}.json`);
@@ -497,6 +509,50 @@ export default function EnemySimple({
 			return renderRow(enemy, count, stats, index, enemy.format);
 		});
 	};
+	const updateMultiplier = (effects) => {
+		const multiplierHolder = { ...multiplier };
+		const other_mods = {};
+		console.log("here");
+		effects.forEach((effect) => {
+			for (const target of effect.targets) {
+				if (!multiplierHolder[target]) {
+					multiplierHolder[target] = {
+						hp: 1,
+						atk: 1,
+						def: 1,
+						mdef: 0,
+						aspd: 1,
+						ms: 1,
+						range: 1,
+						weight: 0,
+					};
+				}
+				for (const key in effect.mods) {
+					if (key !== "special") {
+						if (effect.mods[key][0] === "%") {
+							multiplierHolder[target][key] +=
+								parseInt(effect.mods[key].slice(1)) / 100;
+						} else {
+							multiplierHolder[target][key] = effect.mods[key];
+						}
+					} else {
+						if (!other_mods[target]) {
+							other_mods[target] = {};
+						}
+						setOtherMods(other_mods[target], effect.mods.special);
+					}
+				}
+			}
+		});
+		setSpecialMods(other_mods);
+		setMultiplier(multiplier);
+	};
+	useEffect(() => {
+		if (mode === "hard") {
+			const effects = mapConfig.hard_mods;
+			updateMultiplier(effects);
+		}
+	}, []);
 
 	return (
 		<>
