@@ -80,11 +80,11 @@
 		}
 	},
 	"normal_attack": {
-		"atk_type": ["melee", "phys"],
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee", "elite"]
+	"type": ["ranged", "elite"]
 }

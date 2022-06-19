@@ -3,7 +3,7 @@ import { getAllStageIds, getStageData } from "@/lib/stages";
 import Head from "next/head";
 import Map from "@/components/Map";
 import EnemySimple from "@/components/EnemySimple";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAppContext } from "context/AppContext";
 import { TabComponent } from "@/components/Tabs";
 import FooterBar from "@/components/IS/Footer_bar";
@@ -36,7 +36,7 @@ export async function getStaticPaths() {
 
 export default function Stage({ stageData }) {
 	// console.log(stageData);
-	const { language, device } = useAppContext();
+	const { language, floor, setFloor, device } = useAppContext();
 	const { mapConfig } = stageData;
 	const theme = mapConfig.hasOwnProperty("theme") ? mapConfig.theme : "";
 
@@ -71,6 +71,22 @@ export default function Stage({ stageData }) {
 		},
 	];
 
+	useEffect(() => {
+		const fetchData = () => {
+			let floorToSet = Math.min(...mapConfig.floors);
+			const storedFloor = parseInt(sessionStorage.getItem("floor"));
+			if (storedFloor) {
+				console.log("storedFloor", storedFloor);
+				if (mapConfig.floors.includes(storedFloor)) {
+					floorToSet = storedFloor;
+				}
+			}
+			setFloor(floorToSet);
+			sessionStorage.setItem("floor", floorToSet);
+		};
+		fetchData();
+	}, []);
+
 	return (
 		<Layout theme={theme} floor={mapConfig.floor}>
 			<Head>
@@ -86,14 +102,14 @@ export default function Stage({ stageData }) {
 			{mapConfig.hasOwnProperty("hard_mods") ? (
 				<TabComponent tabArr={tabArr} />
 			) : (
-				<EnemySimple
-					mapConfig={mapConfig}
-					multiplier={multiplier}
-					specialMods={specialMods}
-					language={language}
-					device={device}
-					fontThemes={fontThemes}
-				/>
+				<div>
+					<EnemySimple
+						mapConfig={mapConfig}
+						language={language}
+						device={device}
+						fontThemes={fontThemes}
+					/>
+				</div>
 			)}
 			<FooterBar />
 		</Layout>

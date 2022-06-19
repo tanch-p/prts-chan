@@ -108,11 +108,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": {
-			"en": "Melee/Arts",
-			"jp": "近・術",
-			"cn": "近・法术"
-		},
+		"atk_type":["melee","arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

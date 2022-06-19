@@ -3,7 +3,7 @@ import relics from "@/data/phcs/relics.json";
 import { useAppContext } from "context/AppContext";
 import { useState, useEffect } from "react";
 
-export default function Overlay({ open, setOpen }) {
+export default function Overlay({ open, setOpen, relicsArr, setRelicsArr }) {
 	const {
 		language,
 		selectedHardRelic,
@@ -12,11 +12,18 @@ export default function Overlay({ open, setOpen }) {
 		setSelectedNormalRelic,
 	} = useAppContext();
 
-	const [relicsArr, setRelicsArr] = useState([]);
 	useEffect(() => {
 		const element = document.getElementById("relic-container");
 		element.scrollTo(0, element.scrollHeight);
 	}, []);
+
+	useEffect(() => {
+		setRelicsArr([
+			...selectedHardRelic.map((relic) => relic.img),
+			...selectedNormalRelic.map((relic) => relic.img),
+		]);
+	}, [selectedHardRelic, selectedNormalRelic]);
+
 	return (
 		<div
 			className={`relative transition-opacity duration-[50ms] ease-in-out select-none ${

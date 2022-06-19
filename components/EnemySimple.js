@@ -37,8 +37,8 @@ export default function EnemySimple({
 		},
 	});
 	const [specialMods, setSpecialMods] = useState({});
-	console.log("spMods", specialMods);
-	console.log("mul", multiplier);
+	// console.log("spMods", specialMods);
+	// console.log("mul", multiplier);
 
 	const { selectedHardRelic, selectedNormalRelic, hallucinations } =
 		useAppContext();
@@ -504,7 +504,9 @@ export default function EnemySimple({
 	//! Render Table
 	const renderEnemyStats = () => {
 		const enemies =
-			mode === "hard" ? mapConfig.hard_enemies : mapConfig.enemies;
+			mode === "hard" && mapConfig.hasOwnProperty("hard_enemies")
+				? mapConfig.hard_enemies
+				: mapConfig.enemies;
 		return enemies.map(({ id, count, stats }, index) => {
 			//get enemydata file
 			//map through enemydata

@@ -7,7 +7,7 @@ import FloorTitle from "../IS/Floor_title";
 
 const IS_THEMES = ["phcs"];
 
-export const Navbar = ({ open, setOpen, device, theme, floor }) => {
+export const Navbar = ({ open, setOpen, device, theme }) => {
 	const { language, setLanguage } = useAppContext();
 	const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,21 +20,27 @@ export const Navbar = ({ open, setOpen, device, theme, floor }) => {
 	const getThemeStyles = (theme) => {
 		switch (theme) {
 			case "phcs":
-				return "bg-neutral-800 text-white fixed top-0 h-24";
+				return "bg-neutral-800 text-white fixed top-0";
 			default:
-				return "bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-white border-b border-gray-400 h-16";
+				return "bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-white border-b border-gray-400";
 		}
 	};
 
 	return (
 		<>
 			<nav
-				className={`  w-[100vw] md:w-full px-6 md:px-0 z-10   ${getThemeStyles(
+				className={`w-[100vw] md:w-full px-6 md:px-0 z-10 ${getThemeStyles(
 					theme
 				)}   ${language === "jp" ? "font-jp" : "font-sans"}`}
 			>
-				<div className="flex items-center justify-between  max-w-7xl mx-auto">
-					<div className="flex items-center relative ">
+				<div
+					className={`grid grid-cols-3 place-items-center max-w-7xl mx-auto h-16`}
+				>
+					<div
+						className={`flex items-center relative justify-self-start  ${
+							IS_THEMES.includes(theme) ? "self-start mt-[18px]" : ""
+						}`}
+					>
 						<button
 							aria-label="Open Menu"
 							className={`${
@@ -45,25 +51,26 @@ export const Navbar = ({ open, setOpen, device, theme, floor }) => {
 						>
 							{downArrowSVG}
 						</button>
-						{/* <Image
-						priority
-						src={prts_logo}
-						alt={"prts logo"}
-						width="52px"
-            height="63px"
-						className="select-none"
-					/> */}
+
 						<Link href={`/`}>
 							<a className="text-xl font-bold min-w-min">PRTSちゃん</a>
 						</Link>
-						<Link href={`/about`}>
-							<a className="pl-2 font-medium">About</a>
-						</Link>
+						{IS_THEMES.includes(theme) ? null : (
+							<Link href={`/about`}>
+								<a className="pl-2 font-medium">About</a>
+							</Link>
+						)}
 					</div>
-					{IS_THEMES.includes(theme) && (
-						<FloorTitle theme={theme} floor={floor} />
+					{IS_THEMES.includes(theme) ? (
+						<FloorTitle theme={theme} />
+					) : (
+						<div></div>
 					)}
-					<div className={`text-left mr-2 relative`}>
+					<div
+						className={`text-left relative justify-self-end mr-12 ${
+							IS_THEMES.includes(theme) ? "self-start mt-[13px]" : ""
+						}`}
+					>
 						<div>
 							<button
 								type="button"

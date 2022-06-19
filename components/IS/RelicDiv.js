@@ -6,7 +6,7 @@ export default function RelicDiv({ label, data, type, state, setState }) {
 			<p>{label}</p>
 			<div className={`grid grid-cols-[repeat(6,140px)] gap-x-[1px]`}>
 				{data.map((relic) => {
-					const selected = state.find((ele) => ele.key === relic.img);
+					const selected = state.find((ele) => ele.img === relic.img);
 					const someSelected = state.length > 0;
 					return (
 						<div
@@ -24,15 +24,11 @@ export default function RelicDiv({ label, data, type, state, setState }) {
 							onClick={() => {
 								if (type === "hard") {
 									if (selected) setState([]);
-									else setState([{ key: relic.img, effects: relic.effects }]);
+									else setState([relic]);
 								} else {
 									if (selected)
-										setState(state.filter((ele) => ele.key !== relic.img));
-									else
-										setState([
-											...state,
-											{ key: relic.img, effects: relic.effects },
-										]);
+										setState(state.filter((ele) => ele.img !== relic.img));
+									else setState([...state, relic]);
 								}
 							}}
 						>

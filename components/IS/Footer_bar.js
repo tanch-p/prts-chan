@@ -1,72 +1,71 @@
 import Image from "next/image";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
 import collectionIcon from "../../public/images/phcs/collection.png";
 import Overlay from "./Overlay";
 import useToggle from "../../hooks/useToggle";
-
-const navigation = [
-	{ name: "Dashboard", href: "#", current: true },
-	{ name: "Team", href: "#", current: false },
-	{ name: "Projects", href: "#", current: false },
-	{ name: "Calendar", href: "#", current: false },
-];
-
-function classNames(...classes) {
-	return classes.filter(Boolean).join(" ");
-}
+import { useState } from "react";
 
 export default function FooterBar() {
-	const [isOpen, setOpen] = useToggle(false);
-
+	const [relicOpen, setRelicOpen] = useToggle(false);
+	const [relicsArr, setRelicsArr] = useState([]);
 	return (
 		<div className="fixed bottom-0 left-0 select-none">
-			<Overlay open={isOpen} setOpen={setOpen} />
-			<Disclosure
+			<Overlay
+				open={relicOpen}
+				setOpen={setRelicOpen}
+				relicsArr={relicsArr}
+				setRelicsArr={setRelicsArr}
+			/>
+			<div
 				as="nav"
 				className="border-t-2 border-gray-600 bg-neutral-900 w-full mt-4 fixed bottom-0 py-2 z-[30]"
 				onClick={() => {
-					if (isOpen) setOpen(!isOpen);
+					if (relicOpen) setRelicOpen(!relicOpen);
 				}}
 			>
 				<>
 					<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 						<div className="relative flex items-center justify-between h-16">
-							<Image
-								src={collectionIcon}
-								width="64px"
-								height="56px"
-								className="hover:cursor-pointer"
-								unoptimized
-								onClick={() => {
-									setOpen(!isOpen);
-								}}
-							/>
-							<div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"></div>
+							<div className=" flex items-center py-[2px] bg-gradient-to-r from-neutral-600 via-neutral-900 to-neutral-900 relative">
+								<div className="bg-neutral-600 flex items-center px-1 py-[2px]">
+									<Image
+										src={collectionIcon}
+										width="64px"
+										height="56px"
+										className="hover:cursor-pointer "
+										unoptimized
+										onClick={() => {
+											setRelicOpen(!relicOpen);
+										}}
+									/>
+								</div>
+								<div className="bg-neutral-900 w-[280px] overflow-hidden h-14 gap-x-2 pl-1">
+									<div className="flex gap-x-2 items-center">
+										{relicsArr.map((img, index) =>
+											index < 5 ? (
+												<div
+													className="relative flex items-center"
+													key={`small-${img}`}
+												>
+													<div className="absolute rounded-full border-[3px] border-neutral-600  border-opacity-80 left-[50%] w-[44px] h-[44px] -translate-x-[50%]"></div>
+													<div className="flex items-center text-center">
+														<Image
+															src={`/images/phcs/${img}.png`}
+															width="54px"
+															height="54px"
+															layout="fixed"
+															alt="relic"
+														/>
+													</div>
+												</div>
+											) : null
+										)}
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-
-					<Disclosure.Panel className="sm:hidden">
-						<div className="px-2 pt-2 pb-3 space-y-1">
-							{navigation.map((item) => (
-								<Disclosure.Button
-									key={item.name}
-									as="a"
-									href={item.href}
-									className={classNames(
-										item.current
-											? "bg-gray-900 text-white"
-											: "text-gray-300 hover:bg-gray-700 hover:text-white",
-										"block px-3 py-2 rounded-md text-base font-medium"
-									)}
-									aria-current={item.current ? "page" : undefined}
-								>
-									{item.name}
-								</Disclosure.Button>
-							))}
-						</div>
-					</Disclosure.Panel>
 				</>
-			</Disclosure>
+			</div>
 		</div>
 	);
 }

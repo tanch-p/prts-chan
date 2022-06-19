@@ -36,15 +36,16 @@ const HallucationDiv = ({ text, selected, size }) => {
 };
 
 const Dropdown = ({ open, setOpen, state, setState }) => {
-	console.log(state);
 	return (
 		<>
 			<div
-				className={`absolute left-[50%] -translate-x-[50%] mt-2 w-[700px] pb-12 rounded-md shadow-lg select-none bg-[#1b1b1b] transition-opacity duration-200 ${
-					open ? "opacity-100 z-20" : "invisible opacity-0"
+				className={`absolute left-[50%] -translate-x-[50%] mt-2 w-[700px] pb-12 rounded-md shadow-lg select-none bg-[#1b1b1b] transition-[opacity_transform] ease-in duration-200 ${
+					open
+						? "opacity-100 z-20 translate-y-0"
+						: "invisible opacity-0 -translate-y-10"
 				}`}
 			>
-				<div className="mx-auto text-center">
+				<div className="mx-auto flex justify-center">
 					<Image src={hallu_banner} layout="fixed" unoptimized />
 				</div>
 				<div className="w-[70%] mx-auto">
@@ -91,13 +92,15 @@ const Dropdown = ({ open, setOpen, state, setState }) => {
 	);
 };
 
-export default function FloorTitle({ theme, floor }) {
-	const { hallucinations, setHallucinations } = useAppContext();
+export default function FloorTitle({ theme }) {
+	const { hallucinations, setHallucinations, floor, language } =
+		useAppContext();
+	const langPack = require("../../lang/" + language + ".json");
 	const [open, setOpen] = useState(false);
 
 	return (
 		<>
-			<div className="relative text-xl select-none">
+			<div className="relative text-xl select-none self-center place-self-center">
 				<div
 					className="flex flex-col hover:cursor-pointer"
 					onClick={() => {
@@ -105,11 +108,11 @@ export default function FloorTitle({ theme, floor }) {
 					}}
 				>
 					<div className="flex place-items-center gap-x-8">
-						<Image src={floorLeft} alt="floor-left" layout="fixed" />
+						<div className="border-y border-neutral-600 w-[104px]"></div>
 						<p className=" text-neutral-300">
 							{FLOOR_ROMAN_NUMERALS[floor - 1]}
 						</p>
-						<Image src={floorRight} alt="floor-right" layout="fixed" />
+						<div className="border-y border-neutral-600 w-[104px]"></div>
 					</div>
 					<div className="flex items-center justify-center gap-x-[18px] text-base">
 						{hallucinations.map((hallu) => {
@@ -122,7 +125,7 @@ export default function FloorTitle({ theme, floor }) {
 							);
 						})}
 					</div>
-					<p className="text-center">Level</p>
+					<p className="text-center">{langPack.phcs_levels[floor - 1]}</p>
 				</div>
 				<Dropdown
 					open={open}
