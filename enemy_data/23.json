@@ -29,10 +29,10 @@
         "special": []
       }
   },
-  "normal_attack": {
-    "type": { "en": "Melee/Arts", "jp": "近・術", "cn": "近・法术" },
-    "hits": 1
-  },
+	"normal_attack": {
+		"atk_type": ["melee", "arts"],
+		"hits": 1
+	},
   "スタン耐性": "無",
   "眠り耐性": "無",
   "凍結耐性": "無",

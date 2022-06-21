@@ -21,7 +21,7 @@
 		}
 	},
 	"normal_attack": {
-		"atk_type": ["melee", "phys"],
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

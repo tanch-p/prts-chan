@@ -86,11 +86,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": {
-			"en": "Does not attack",
-			"jp": "攻撃しない",
-			"cn": "不攻击"
-		},
+		"atk_type": ["no_attack"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

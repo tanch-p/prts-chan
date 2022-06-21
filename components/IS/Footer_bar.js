@@ -1,5 +1,6 @@
 import Image from "next/image";
-import collectionIcon from "../../public/images/phcs/collection.png";
+import relicIcon from "../../public/images/phcs/relic.png";
+import combat from "../../public/images/phcs/combat.png";
 import Overlay from "./Overlay";
 import useToggle from "../../hooks/useToggle";
 import { useState } from "react";
@@ -23,14 +24,14 @@ export default function FooterBar() {
 				}}
 			>
 				<>
-					<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+					<div className="max-w-7xl mx-auto px-2 md:px-4">
 						<div className="relative flex items-center justify-between h-16">
 							<div className=" flex items-center py-[2px] bg-gradient-to-r from-neutral-600 via-neutral-900 to-neutral-900 relative">
-								<div className="bg-neutral-600 flex items-center px-1 py-[2px]">
+								<div className="flex items-center px-[6px] py-1 relative">
+
 									<Image
-										src={collectionIcon}
-										width="64px"
-										height="56px"
+										src={relicIcon}
+										layout="intrinsic"
 										className="hover:cursor-pointer "
 										unoptimized
 										onClick={() => {
@@ -61,6 +62,9 @@ export default function FooterBar() {
 										)}
 									</div>
 								</div>
+							</div>
+							<div className="">
+								<Image src={combat} layout="intrinsic" />
 							</div>
 						</div>
 					</div>

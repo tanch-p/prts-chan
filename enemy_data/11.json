@@ -29,10 +29,10 @@
       "special": []
     }
   },
-  "normal_attack": {
-    "type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
-    "hits": 1
-  },
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
   "スタン耐性": "無",
   "眠り耐性": "無",
   "凍結耐性": "",

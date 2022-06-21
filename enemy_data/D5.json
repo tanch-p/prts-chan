@@ -21,7 +21,7 @@
 		}
 	},
 	"normal_attack": {
-		"atk_type": ["phys"],
+		"atk_type": ["bomb","phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

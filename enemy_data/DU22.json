@@ -56,7 +56,7 @@
 		}
 	},
 	"normal_attack": {
-		"atk_type": ["ranged", "arts"],
+		"atk_type": ["no_attack"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
