@@ -233,7 +233,7 @@
 							"special": {
 								"extra": {
 									"tooltip": {
-										"en": ["$Bind/Slow Immune$"],
+										"en": ["$Bind/Slow(Sluggish) Immune$"],
 										"jp": ["$足止め・バインド無効$"],
 										"cn": []
 									}
@@ -243,7 +243,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "Mudrock Colossus Max HP +90%, ATK +90%, RES +45. becomes Immune to Bind & Slow Effects",
+					"en": "Mudrock Colossus Max HP +90%, ATK +90%, RES +45. becomes Immune to Bind & Slow (Sluggish) Effects",
 					"cn": "",
 					"jp": "「マドロックの巨像」の最大HP+90%、攻撃力+90%、術耐性+45、足止め・バインド効果を受けなくなる"
 				}

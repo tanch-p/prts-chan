@@ -1,36 +1,44 @@
 {
-    "id": "D9",
-    "name_en": "Frost",
-    "name_jp": "コキュートス",
-    "name_cn": "寒霜",
-    "atk_type_jp": "攻撃しない",
-    "hp": "6500",
-    "atk": "100",
-    "def": "600",
-    "mdef": "30",
-    "aspd%": "100",
-    "aspd": "1",
-    "range": "2.5",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.9",
-    "type_jp": [
-        "近距離",
-        "飛行",
-        "ドローン"
-    ],
-    "type_en": [
-        "Melee",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "近战",
-        "飞行",
-        "无人机"
-    ],
-    "special": ""
+	"id": "D9",
+	"name": { "en": "Frost", "jp": "コキュートス", "cn": "寒霜" },
+	"stats": {
+		"level0": {
+            "hp": "6500",
+            "atk": "100",
+            "def": "600",
+            "mdef": "30",
+            "aspd%": "100",
+            "aspd": "1",
+            "range": "2.5",
+            "HP回復速度": "0",
+            "weight": "1",
+            "ms": "0.9",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Debuff→operators with ranged aspd down",
+								"Can be silenced"
+							],
+							"jp": [
+								"バフ→ 攻撃範囲内の",
+								"無力化可能"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["no_attack"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["flying", "drone"]
 }

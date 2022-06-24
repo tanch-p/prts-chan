@@ -30,7 +30,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

@@ -15,7 +15,7 @@
 			"ms": "0.8",
 			"special": []
 		},
-        "猩红孤钻": {
+		"邪异囚笼": {
 			"hp": "13000",
 			"atk": "800",
 			"def": "300",
@@ -30,11 +30,11 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "遠・物理" },
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["ranged"]
+	"type": ["ranged", "elite"]
 }

@@ -10,6 +10,15 @@
 	"八号竞技场": "Arena 8",
 	"狂嚎沙原": "Howling Desert",
 
+	"phcs_levels": [
+		"迷雾歧途",
+		"落阳庭院",
+		"故土残躯",
+		"噩梦之始",
+		"血月长廊",
+		"渴欲大厅"
+	],
+
 	"enemy_stats": {
 		"HP": "HP",
 		"atk": "atk",
@@ -25,8 +34,8 @@
 	"arts": "arts",
 	"true": "true",
 	"melee": "melee",
-	"ranged": "melee",
-	"no_attack": "Does not attack",
+	"ranged": "ranged",
+	"no_attack": "does not attack",
 	"type": {
 		"melee": { "name": "Melee", "ops": [] },
 		"ranged": {
@@ -37,7 +46,7 @@
 		"flying": {
 			"name": "Flying",
 			"ops": [
-				{ "Atk Up:": ["Meteor Talent", "Cutter S2"] },
+				{ "Atk Up:": ["Meteor", "Rangers", "Cutter S2"] },
 				{ "Target Priority:": ["Class: Marksman"] }
 			],
 			"text": ""
@@ -50,12 +59,12 @@
 			],
 			"text": ""
 		},
-		"firewatch's_list": {
+		"firewatch_list": {
 			"name": "On Firewatch's List",
 			"ops": [],
 			"text": "Doesn't do ranged attacks but is target of Firewatch's Talent"
 		},
-		"not_firewatch's_list": {
+		"not_firewatch_list": {
 			"name": "Not on Firewatch's List",
 			"ops": [],
 			"text": "Not a target of Firewatch's Talent"

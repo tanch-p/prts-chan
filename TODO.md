@@ -10,6 +10,15 @@ Get me a
 - searchable enemy details page that is actually human readable and doesn't load everything at once
 - tooltip for simple attributes such as taunt
 
+- IS
+
+  1. slide motion for hallucinations
+  2. small selected relics
+  3. test if normal collection is times multiplier
+  4. tooltips for hallu and relics
+  5. map stats
+  6. map tokens
+
 - Header
 
   1. more buttons

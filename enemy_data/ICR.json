@@ -1,35 +1,69 @@
 {
-    "id": "ICR",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "“雪牝”",
-    "atk_type_jp": "物理",
-    "hp": "40000",
-    "atk": "700",
-    "def": "300",
-    "mdef": "30",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "2.2",
-    "HP回復速度": "0",
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.6",
-    "type_jp": [
-        "遠距離",
-        "ボス"
-    ],
-    "type_en": [
-        "Ranged",
-        "Boss"
-    ],
-    "type_cn": [
-        "远程",
-        "领袖"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "ICR",
+	"name": {
+		"en": "“雪牝”",
+		"jp": "“雪牝”",
+		"cn": "“雪牝”"
+	},
+	"format": "powerup",
+	"stats": {
+		"level0": {
+			"hp": "40000",
+			"atk": "700",
+			"def": "300",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.2",
+			"HP回復速度": "0",
+			"weight": "4",
+			"ms": "0.6",
+			"special": [
+				{
+					"name": "freeze_hit",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Attacks freeze enemy"],
+							"jp": ["通常攻撃"],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "arts"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "boss"],
+	"powerup": {
+		"atk": 1.8,
+		"aspd": 2,
+		"ms": 1.5,
+		"normal_attack": {
+			"atk_type": ["ranged", "arts"],
+			"hits": 1
+		},
+		"special": [
+			{
+				"tooltip": {
+					"simple": {
+						"en": ["Rage mode", "Move speed+150%"],
+						"jp": ["強化状態", "移動速度＋150％"],
+						"cn": []
+					}
+				}
+			}
+		]
+	}
 }

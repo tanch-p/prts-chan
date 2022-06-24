@@ -1,11 +1,8 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import AppContext from "../components/AppContext";
-import { useContext } from "react";
 
 export default function Credits({ allStagesData }) {
-  const { languageContext } = useContext(AppContext);
-  const [language] = languageContext;
+
   // const langPack = require(`../lang/${language}.json`);
 
   return (

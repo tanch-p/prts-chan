@@ -45,8 +45,8 @@
 			{
 				"rank": 1,
 				"name": {
-					"jp": "環境：溶岩地帯β",
-					"en": "Environment: Surging Lava β",
+					"jp": "環境：溶岩地帯 γ",
+					"en": "Environment: Surging Lava γ",
 					"cn": ""
 				},
 				"img": "炽热溶洞/75px-Global_forbidloc_cmod_1",
@@ -66,7 +66,7 @@
 				"rank": 2,
 				"name": {
 					"en": "Ergate 2",
-					"jp": "シロアリ 2",
+					"jp": "特化：白蟻侵入II",
 					"cn": "目标：加速渗透II"
 				},
 				"img": "炽热溶洞/75px-Enemy_norgst_2",
@@ -140,8 +140,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"jp": "Pompeii a_b_III",
-					"en": "Pompeii a_b_III",
+					"jp": "強敵：噴火激化III",
+					"en": "Pompeii: Desperate Survival III",
 					"cn": ""
 				},
 				"img": "炽热溶洞/75px-Enemy_lslime_a_bmod_3",
@@ -177,8 +177,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"jp": "Pompeii b_bIII",
-					"en": "Pompeii b_bIII",
+					"jp": "強敵：火山同化III",
+					"en": "Pompeii: Unstoppable Force III",
 					"cn": ""
 				},
 				"img": "炽热溶洞/75px-Enemy_lslime_b_bmod_3",

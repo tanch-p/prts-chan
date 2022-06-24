@@ -83,11 +83,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": {
-			"en": "Ranged/Arts",
-			"jp": "遠・術",
-			"cn": "远・法术"
-		},
+		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

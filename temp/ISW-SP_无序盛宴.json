@@ -1,0 +1,10 @@
+{
+	"name": { "en": "无序盛宴", "jp": "无序盛宴", "cn": "无序盛宴" },
+	"img": "ISW-SP_无序盛宴",
+	"enemies": [
+		{ "id": "CS1", "stats": "level0" },
+		{ "id": "JAK", "stats": "level0" },
+		{ "id": "G19", "stats": "level0" },
+		{ "id": "G20", "stats": "level0" }
+	]
+}

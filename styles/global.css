@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
+
+@layer components {
+    .text-shadow {
+        text-shadow:1px 1px 5px #fff, 1px 1px 5px #ccc;
+    }
+  }
+
 @tailwind utilities;

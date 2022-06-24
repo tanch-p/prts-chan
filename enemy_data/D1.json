@@ -46,13 +46,10 @@
 			"special": []
 		}
 	},
-	"normal_attack": {
-		"type": {
-			"en": "Does not attack",
-			"jp": "攻撃しない",
-			"cn": "不攻击"
-		}
-	},
+		"normal_attack": {
+			"atk_type": ["no_attack"],
+			"hits": 1
+		},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",

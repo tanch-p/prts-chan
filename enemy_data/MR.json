@@ -118,5 +118,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee","firewatch's_list", "sarkaz", "boss"]
+	"type": ["melee","firewatch_list", "sarkaz", "boss"]
 }

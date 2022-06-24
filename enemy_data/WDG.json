@@ -1,0 +1,57 @@
+{
+	"id": "WDG",
+	"name": { "en": "Lost Colossus", "jp": "迷子の巨像", "cn": "迷路的巨像" },
+	"stats": {
+		"level0": {
+			"hp": "75000",
+			"atk": "1500",
+			"def": "600",
+			"mdef": "4.4",
+			"aspd%": "100",
+			"aspd": "4.4",
+			"range": "2.5",
+			"HP回復速度": "0",
+			"weight": "4",
+			"ms": "0.5",
+			"special": [
+				{
+					"name": "throw_rock",
+					"type": "atk",
+					"multiplier": 0.7,
+					"hits": 1,
+					"fixedInc": 0,
+					"start": 13,
+					"skill": 13,
+					"tooltip": {
+						"simple": {
+							"en": ["Skill→ stuns 25 sec, targets unstunned units first"],
+							"jp": ["スキル→", ""],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"开门请当心": {
+			"hp": "80000",
+			"atk": "1500",
+			"def": "600",
+			"mdef": "4.4",
+			"aspd%": "100",
+			"aspd": "4.4",
+			"range": "2.5",
+			"HP回復速度": "0",
+			"weight": "4",
+			"ms": "0.5",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "ranged", "boss"]
+}

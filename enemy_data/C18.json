@@ -1,32 +1,73 @@
 {
-    "id": "C18",
-    "name_en": "Herculean Prisoner",
-    "name_jp": "重罪巨漢囚人",
-    "name_cn": "巨汉囚犯",
-    "atk_type_jp": "物理",
-    "hp": "14000",
-    "atk": "700",
-    "def": "1000",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "3.3",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "3",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.8",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "C18",
+	"name": {
+		"en": "Herculean Prisoner",
+		"jp": "重罪巨漢囚人",
+		"cn": "巨汉囚犯"
+	},
+	"format": "prisoner",
+	"stats": {
+		"level0": {
+			"hp": "14000",
+			"atk": "700",
+			"def": "1000",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "3.3",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "3",
+			"ms": "0.8",
+			"special": []
+		}
+	},
+
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"imprisoned": {
+		"aspd": -0.5,
+		"fixed-def": 0,
+		"special": [
+			{
+				"name": "self_release",
+				"tooltip": {
+					"simple": {
+						"en": ["Imprisoned state, gets released on 4th attack"],
+						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"cn": []
+					},
+					"detailed": {
+						"en": ["Imprisoned state, gets released on 4th attack"],
+						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"cn": []
+					}
+				}
+			}
+		]
+	},
+	"release": {
+		"atk": 1.5,
+		"mdef": 40,
+		"normal_attack": {
+			"atk_type": ["melee", "phys"],
+			"hits": 1
+		},
+		"special": [
+			{
+				"tooltip": {
+					"simple": {
+						"en": ["Released State, recovers 150hp/s"],
+						"jp": ["解放状態", "毎秒HP150回復する"],
+						"cn": []
+					}
+				}
+			}
+		]
+	},
+	"type": ["melee", "elite"]
 }

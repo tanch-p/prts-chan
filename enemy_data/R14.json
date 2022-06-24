@@ -1,35 +1,45 @@
 {
-    "id": "R14",
-    "name_en": "Originiutant Excrescence",
-    "name_jp": "変異腫瘍",
-    "name_cn": "畸变赘生物",
-    "atk_type_jp": "物理",
-    "hp": "1000",
-    "atk": "150",
-    "def": "0",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "2",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.9",
-    "type_jp": [
-        "近距離",
-        "感染生物"
-    ],
-    "type_en": [
-        "Melee",
-        "Infected Creature"
-    ],
-    "type_cn": [
-        "近战",
-        "感染生物"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "R14",
+	"name": {
+		"en": "Originiutant Excrescence",
+		"jp": "変異腫瘍",
+		"cn": "畸变赘生物"
+	},
+	"stats": {
+		"level0": {
+			"hp": "1000",
+			"atk": "150",
+			"def": "0",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "0",
+			"ms": "1.9",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"On death, this unit will spawn 2 Originiutant Excrescence.",
+								"Can be silenced."
+							],
+							"jp": ["死亡時、変異腫瘍を2体召喚する", "無効化可能"],
+							"cn": ["死亡后召唤2个畸变赘生物（可被沉默）"]
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "infected_creature"]
 }

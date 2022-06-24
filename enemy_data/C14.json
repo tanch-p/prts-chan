@@ -1,32 +1,72 @@
 {
-    "id": "C14",
-    "name_en": "Elite Sniper Prisoner",
-    "name_jp": "重罪射手囚人",
-    "name_cn": "神射手囚犯",
-    "atk_type_jp": "物理",
-    "hp": "7000",
-    "atk": "320",
-    "def": "80",
-    "mdef": "30",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "2",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.9",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "C13",
+	"name": {
+		"en": "Elite Sniper Prisoner",
+		"jp": "重罪射手囚人",
+		"cn": "神射手囚犯"
+	},
+	"format": "prisoner",
+	"stats": {
+		"level0": {
+			"hp": "7000",
+			"atk": "320",
+			"def": "80",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "2",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "0.9",
+			"special": []
+		}
+	},
+
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged"],
+	"imprisoned": {
+		"aspd": -0.5,
+		"fixed-def": 0,
+		"special": [
+			{
+				"name": "self_release",
+				"tooltip": {
+					"simple": {
+						"en": ["Imprisoned state, gets released on 4th attack"],
+						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"cn": []
+					},
+					"detailed": {
+						"en": [],
+						"jp": ["禁固状態、攻撃4回→解放状態となる"],
+						"cn": []
+					}
+				}
+			}
+		]
+	},
+	"release": {
+		"atk": 1.5,
+		"normal_attack": {
+			"atk_type": ["ranged", "arts"],
+			"hits": 1
+		},
+		"special": [
+			{
+				"tooltip": {
+					"simple": {
+						"en": ["Released State"],
+						"jp": ["解放状態"],
+						"cn": []
+					}
+				}
+			}
+		]
+	}
 }

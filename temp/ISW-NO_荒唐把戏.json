@@ -1,0 +1,13 @@
+{
+	"name": { "en": "荒唐把戏", "jp": "荒唐把戏", "cn": "荒唐把戏" },
+	"img": "ISW-NO_荒唐把戏",
+	"buff": "敌方单位的攻击力和生命值都提升至120%,萨卡兹穿刺手组长获得隐匿",
+	"count": "48~49",
+	"enemies": [
+		{ "id": "S10", "stats": "level0" },
+		{ "id": "SI8", "stats": "level0" },
+		{ "id": "CS1", "stats": "level0" },
+		{ "id": "DLD", "stats": "level2" },
+		{ "id": "GPN", "stats": "level2" }
+	]
+}

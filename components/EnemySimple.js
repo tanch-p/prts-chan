@@ -1,24 +1,19 @@
 import Image from "next/image";
 import { getRemarks } from "./getStats";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { parseType } from "./parseType";
+import { parseAtkType, setOtherMods } from "../lib/get-stats";
+import { useAppContext } from "context/AppContext";
 
 export default function EnemySimple({
 	mapConfig,
-	multiplier,
-	specialMods,
 	language,
 	device,
 	fontThemes,
+	mode = "normal",
 }) {
 	const [tableHeaders, setTableHeaders] = useState([
 		{ en: "enemy", jp: "敵", cn: "敌人", show: true },
-		{
-			en: "count",
-			jp: "数",
-			cn: "数量",
-			show: true,
-		},
 		{ en: "type", jp: "属性", cn: "属性", show: true },
 		{ en: "hp", jp: "HP", cn: "生命值", show: true },
 		{ en: "atk", jp: "攻撃力", cn: "攻击力", show: true },
@@ -29,9 +24,26 @@ export default function EnemySimple({
 		{ en: "weight", jp: "重量", cn: "重量", show: true },
 		{ en: "remarks", jp: "備考", cn: "特殊", show: true },
 	]);
-
+	const [multiplier, setMultiplier] = useState({
+		ALL: {
+			hp: 1,
+			atk: 1,
+			def: 1,
+			mdef: 0,
+			aspd: 1,
+			ms: 1,
+			range: 1,
+			weight: 0,
+		},
+	});
+	const [specialMods, setSpecialMods] = useState({});
 	// console.log("spMods", specialMods);
 	// console.log("mul", multiplier);
+
+	const { selectedHardRelic, selectedNormalRelic, hallucinations } =
+		useAppContext();
+
+	const langPack = require(`../lang/${language}.json`);
 
 	const textAlign = (stat) => {
 		switch (stat) {
@@ -392,7 +404,7 @@ export default function EnemySimple({
 					  );
 			returnArr.push(
 				<>
-					<tr className={`${index % 2 === 1 ? "bg-neutral-100" : ""}`}>
+					<tr className={`${index % 2 === 1 ? "bg-neutral-700" : ""}`}>
 						{arrayToMap.map((ele) => {
 							const stat = ele.en;
 							const statValue = applyModifiers(enemy, stats, stat, row);
@@ -441,8 +453,16 @@ export default function EnemySimple({
 														: ""
 													).concat(
 														format === "prisoner" && row === 1
-															? enemy.release.normal_attack.type[language]
-															: enemy.normal_attack.type[language]
+															? parseAtkType(
+																	enemy.release.normal_attack.atk_type,
+																	language,
+																	langPack
+															  )
+															: parseAtkType(
+																	enemy.normal_attack.atk_type,
+																	language,
+																	langPack
+															  )
 													)})`}</p>,
 												].concat(
 													parseSpecial(enemy, stat, stats, statValue, row)
@@ -487,7 +507,11 @@ export default function EnemySimple({
 
 	//! Render Table
 	const renderEnemyStats = () => {
-		return mapConfig.enemies.map(({ id, count, stats }, index) => {
+		const enemies =
+			mode === "hard" && mapConfig.hasOwnProperty("hard_enemies")
+				? mapConfig.hard_enemies
+				: mapConfig.enemies;
+		return enemies.map(({ id, count, stats }, index) => {
 			//get enemydata file
 			//map through enemydata
 			let enemy = require(`../enemy_data/${id}.json`);
@@ -495,23 +519,86 @@ export default function EnemySimple({
 			return renderRow(enemy, count, stats, index, enemy.format);
 		});
 	};
+	const updateMultiplier = () => {
+		const distill = (holder, effects) => {
+			effects.forEach((effect) => {
+				for (const target of effect.targets) {
+					if (!holder[target]) {
+						holder[target] = {
+							hp: 1,
+							atk: 1,
+							def: 1,
+							mdef: 0,
+							aspd: 1,
+							ms: 1,
+							range: 1,
+							weight: 0,
+						};
+					}
+					for (const key in effect.mods) {
+						if (key !== "special") {
+							if (effect.mods[key][0] === "%") {
+								holder[target][key] *=
+									parseInt(effect.mods[key].slice(1)) / 100;
+							} else {
+								holder[target][key] = effect.mods[key];
+							}
+						} else {
+							if (!other_mods[target]) {
+								other_mods[target] = {};
+							}
+							setOtherMods(other_mods[target], effect.mods.special);
+						}
+					}
+				}
+			});
+		};
+
+		const multiplierHolder = {
+			ALL: {
+				hp: 1,
+				atk: 1,
+				def: 1,
+				mdef: 0,
+				aspd: 1,
+				ms: 1,
+				range: 1,
+				weight: 0,
+			},
+		};
+		const other_mods = {};
+		if (mode === "hard") {
+			const effects = mapConfig.hard_mods;
+			distill(multiplierHolder, effects);
+		}
+		for (const hallu of hallucinations) {
+			distill(multiplierHolder, hallu.effects);
+		}
+		for (const relic of selectedHardRelic) {
+			distill(multiplierHolder, relic.effects);
+		}
+		for (const relic of selectedNormalRelic) {
+			distill(multiplierHolder, relic.effects);
+		}
+
+		setSpecialMods({ ...specialMods, ...other_mods });
+		setMultiplier(multiplierHolder);
+	};
+	useEffect(() => {
+		updateMultiplier();
+	}, [hallucinations, selectedHardRelic, selectedNormalRelic]);
 
 	return (
 		<>
-			{device !== "mobile" ? (
-				<button
-					className={`text-xs font-semibold text-center py-1 px-2 my-1 border rounded-lg bg-gray-300`}
-					onClick={() => {
-						toggleTableHeader("count");
-					}}
-				>
-					{tableHeaders[1].show
-						? `${language === "jp" ? "数を表示しない" : "Hide Enemy Count"}`
-						: `${language === "jp" ? "数を表示する" : `Show Enemy Count`}`}
-				</button>
-			) : null}
-
 			<div className="w-[100vw] md:w-full overflow-x-scroll md:overflow-x-auto">
+				<div className="grid auto-cols-auto gap-x-2">
+					{Object.keys(multiplier.ALL).map((ele) => (
+						<span key={ele}>
+							{ele}
+							{multiplier.ALL[ele]}
+						</span>
+					))}
+				</div>
 				<table
 					className={`border border-gray-400 border-solid w-[100vw] overflow-x-scroll md:overflow-x-auto md:mx-auto md:w-full ${fontThemes[language]}`}
 				>

@@ -17,25 +17,56 @@
 			"HP回復速度": "0",
 			"weight": "1",
 			"ms": "1",
-      "special": [
-        {
-          "type": "others",
-          "tooltip": {
-            "simple": {
-              "en": [
-                "Buff→Inc all enemies atk10% def100, stacks with other Heralds",
-                "Activates special abilities of Guerilla Squad"
-              ],
-              "jp": [
-                "バフ→ 敵全体の攻撃力10%＆防御力100上昇（重複する）",
-                "遊撃隊に特殊強化"
-              ],
-              "cn": []
-            },
-            "detailed": { "en": [], "jp": [], "cn": [] }
-          }
-        }
-      ]
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Buff→Inc all enemies atk10% def100, stacks with other Heralds",
+								"Activates special abilities of Guerilla Squad"
+							],
+							"jp": [
+								"バフ→ 敵全体の攻撃力10%＆防御力100上昇（重複する）",
+								"遊撃隊に特殊強化"
+							],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		},
+		"高普尼克之拳": {
+			"hp": "5000",
+			"atk": "300",
+			"def": "120",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "2.7",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "1",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Buff→Inc all enemies atk10% def100, stacks with other Heralds",
+								"Activates special abilities of Guerilla Squad"
+							],
+							"jp": [
+								"バフ→ 敵全体の攻撃力10%＆防御力100上昇（重複する）",
+								"遊撃隊に特殊強化"
+							],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

@@ -1,32 +1,31 @@
 {
-    "id": "G15",
-    "name_en": "Marksman",
-    "name_jp": "射手",
-    "name_cn": "射手",
-    "atk_type_jp": "物理",
-    "hp": "3000",
-    "atk": "180",
-    "def": "150",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "1.7",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "G15",
+	"name": {
+		"en": "Marksman",
+		"jp": "射手",
+		"cn": "射手"
+	},
+	"stats": {
+		"level0": {
+			"hp": "3000",
+			"atk": "180",
+			"def": "150",
+			"mdef": "0",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "1.7",
+			"HP回復速度": "0",
+			"weight": "1",
+			"ms": "1",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged"]
 }
