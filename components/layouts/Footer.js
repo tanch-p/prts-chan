@@ -1,8 +1,8 @@
 export const Footer = () => {
 	return (
-		<footer className="text-center bg-[#555758] dark:bg-neutral-800 bottom-0 text-white w-full pt-4">
+		<footer className="text-center bg-[#555758] dark:bg-[#131313] bottom-0 text-white w-full pt-4">
 			<div className="pt-4">
-				<div className="flex place-content-center mb-6">
+				<div className="flex place-content-center pb-6">
 					<a
 						href="https://github.com/tanch-p/prts-chan"
 						type="button"
@@ -27,7 +27,7 @@ export const Footer = () => {
 						</svg>
 					</a>
 					<p className="place-self-center font-medium text-lg">
-						PRTS-chan v0.0.1
+						PRTS-chan v0.0.2
 					</p>
 				</div>
 			</div>

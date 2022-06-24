@@ -22,7 +22,7 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 			case "phcs":
 				return "bg-neutral-800 text-white fixed top-0";
 			default:
-				return "bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-white border-b border-gray-400";
+				return "bg-gray-200 text-gray-700 dark:bg-[#131313] dark:text-white border-b dark:border-none dark:shadow-lg border-gray-400";
 		}
 	};
 

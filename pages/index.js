@@ -3,15 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import { useAppContext } from "context/AppContext";
-import dayjs from "dayjs";
 
 //images
-import cc7_banner from "../public/images/banners/cc7_banner.jpg";
+import phcs_main_banner from "@/public/images/banners/phcs-main-banner.png";
 
 export default function Home() {
 	const { language, device } = useAppContext();
 	const langPack = require(`../lang/${language}.json`);
-	const firstCCDate = dayjs("6/9");
 	const dailyStages = [
 		{ text: "炽热溶洞", link: "CC7_炽热溶洞_1" },
 		{ text: "炽热溶洞", link: "CC7_炽热溶洞_1" },
@@ -57,14 +55,11 @@ export default function Home() {
 	};
 
 	const linesOfText = {
-		jp: [
-			"頑張ってくださいドクター！",
-			"不具合を見つかった場合は私のディスコード",
-			"（IDはAboutページに）まで連絡お願いします",
-		],
+		jp: ["CC7お疲れ様でした！", "統合戦略のページは鋭意開発中！"],
 		en: [
-			"All the best for CC#7 Doctor!",
-			"If you find any bugs, please kindly report to my discord (ID in about page)",
+			"Hope you found this site useful for CC#7!",
+			"See you back in July for the greatest treat of the year - ",
+			"Phantom & Crimson Solitaire",
 		],
 	};
 
@@ -75,36 +70,19 @@ export default function Home() {
 			</Head>
 			<div
 				id="home-container"
-				className={`flex flex-col min-h-[100vh] place-content-center ${
+				className={`flex flex-col min-h-[80vh] place-content-center ${
 					language === "jp" ? "font-jp" : "font-sans"
 				}`}
 			>
-				<div id="cc6" className="w-full md:min-w-10">
-					<table className="text-center align-middle">
-						<div className="relative w-[95vw] mx-auto md:w-[560px]">
-							<Image src={cc7_banner} className="inline-block" alt={"CC7"} />
-						</div>
-						<tr className="border border-collapse border-gray-400 py-1">
-							<th> {language === "jp" ? "常設ステージ" : "Permanent Stage"}</th>
-						</tr>
-						<Link href={`/stages/cc/cc7-perma`}>
-							<div className="border border-collapse py-2 border-gray-400 text-base hover:cursor-pointer hover:bg-gray-300 underline text-blue-700">
-								{language === "jp" ? "灰斉山麓" : "Foothill Hui-Ch'i"}
-							</div>
-						</Link>
-						<tr>
-							<th className="border border-collapse border-gray-400 py-1">
-								{language === "jp" ? "デイリーステージ" : "Daily Stages"}
-							</th>
-						</tr>
-						<div>
-							<div
-								className={`flex flex-wrap flex-row relative w-[95vw] md:w-[560px] ${getTheme()}`}
-							>
-								{dailyCCArr}
-							</div>
-						</div>
-					</table>
+				<div id="main content" className="w-full md:min-w-10">
+					<div className="relative shadow-2xl">
+						<Image
+							src={phcs_main_banner}
+							layout="responsive"
+							alt="phantom and crimson solitaire"
+							className="brightness-[.15] "
+						/>
+					</div>
 				</div>
 				<div className="w-100vw ml-2 md:ml-0 md:w-[560px] mt-6 text-center">
 					<ul>
