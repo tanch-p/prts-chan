@@ -453,7 +453,11 @@ export default function EnemySimple({
 														: ""
 													).concat(
 														format === "prisoner" && row === 1
-															? enemy.release.normal_attack.type[language]
+															? parseAtkType(
+																	enemy.release.normal_attack.atk_type,
+																	language,
+																	langPack
+															  )
 															: parseAtkType(
 																	enemy.normal_attack.atk_type,
 																	language,
