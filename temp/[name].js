@@ -1,15 +1,14 @@
-import Layout from "../../../components/layout";
-import { getAllStageIds, getStageData } from "../../../lib/stages";
+import Layout from "@/components/layout";
+import { getAllStageIds, getStageData } from "@/lib/stages";
 import Head from "next/head";
 import Image from "next/image";
-import Map from "../../../components/Map";
-import EnemySimple from "../../../components/EnemySimple";
+import Map from "@/components/Map";
+import EnemySimple from "../components/EnemySimple";
 import { useState, useEffect, useContext } from "react";
-import AppContext from "../../../context/AppContext";
 
-import Daily_buttons from "../../../components/CC/Daily_buttons";
-import Selected_options from "../../../components/CC/Selected_options";
-import Risk_triangle from "../../../components/CC/Risk_triangle";
+import Daily_buttons from "@/components/CC/Daily_buttons";
+import Selected_options from "@/components/CC/Selected_options";
+import Risk_triangle from "@/components/CC/Risk_triangle";
 
 export async function getStaticProps({ params }) {
 	const stageData = await getStageData(params.name);

@@ -1,5 +1,5 @@
 import Risk_triangle from "./Risk_triangle";
-import useToggle from "../../functions/useToggle";
+import useToggle from "hooks/useToggle";
 
 export default function Selected_options({ selected, ccType }) {
 	const [value, toggleValue] = useToggle(true);
