@@ -13,6 +13,7 @@
 			"HP回復速度": "0",
 			"weight": "2",
 			"ms": "1.2",
+			"lifepoint": 1,
 			"special": []
 		}
 	},

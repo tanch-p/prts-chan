@@ -3,16 +3,17 @@
 	"name": { "en": "Veteran Butcher", "jp": "凶悪ブッチャー", "cn": "屠宰老手" },
 	"stats": {
 		"level0": {
-            "hp": "14000",
-            "atk": "950",
-            "def": "270",
-            "mdef": "30",
-            "aspd%": "100",
-            "aspd": "3.5",
-            "range": "0",
-            "HP回復速度": "0",
-            "weight": "3",
+			"hp": "14000",
+			"atk": "950",
+			"def": "270",
+			"mdef": "30",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "3",
 			"ms": "0.7",
+			"lifepoint": 1,
 			"special": []
 		}
 	},

@@ -1,8 +1,10 @@
 {
-	"name": { "en": "意外", "jp": "意外", "cn": "意外" },
+	"name": { "en": "ISW-NO_意外", "jp": "ISW-NO_意外", "cn": "ISW-NO_意外" },
 	"img": "ISW-NO_意外",
 	"theme": "phcs",
-	"floors": [1],
+	"floors": [1,2],
+	"count": "44~45",
+	"sp_count": "45",
 	"hard_mods": [
 		{
 			"targets": ["ALL"],
@@ -14,7 +16,6 @@
 			"text": "敌方单位的攻击力提升至160%，防御力提升至120%，生命值提升至140%,空降兵被替换为乌萨斯突袭弩手"
 		}
 	],
-	"count": "44~45",
 	"enemies": [
 		{ "id": "02", "stats": "level0" },
 		{ "id": "B8", "stats": "level0" },

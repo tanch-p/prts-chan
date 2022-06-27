@@ -17,6 +17,7 @@
 			"HP回復速度": "0",
 			"weight": "0",
 			"ms": "0.9",
+			"lifepoint": 1,
 			"special": []
 		},
 		"酒商运输队": {
@@ -30,6 +31,7 @@
 			"HP回復速度": "0",
 			"weight": "0",
 			"ms": "0.9",
+			"lifepoint": 1,
 			"special": []
 		},
 		"无人机起降库": {
@@ -43,13 +45,14 @@
 			"HP回復速度": "0",
 			"weight": "0",
 			"ms": "0.9",
+			"lifepoint": 1,
 			"special": []
 		}
 	},
-		"normal_attack": {
-			"atk_type": ["no_attack"],
-			"hits": 1
-		},
+	"normal_attack": {
+		"atk_type": ["no_attack"],
+		"hits": 1
+	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",

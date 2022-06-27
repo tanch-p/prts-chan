@@ -3,6 +3,8 @@
 	"img": "ISW-NO_感化",
 	"theme": "phcs",
 	"floors": [3],
+	"count": "31~32",
+	"sp_count": "32",
 	"hard_mods": [
 		{
 			"targets": ["ALL"],
@@ -14,7 +16,6 @@
 			"text": "敌方单位的攻击力和防御力都提升至110%，生命值提升至140%,拳手囚犯被替换为拳师囚犯"
 		}
 	],
-	"count": "31~32",
 	"enemies": [
 		{ "id": "CS1", "stats": "level0" },
 		{ "id": "CS4", "stats": "level0" },

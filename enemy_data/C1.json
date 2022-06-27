@@ -1,18 +1,23 @@
 {
 	"id": "C1",
-	"name": { "en": "Invisible Crossbowman", "jp": "迷彩射撃兵", "cn": "隐形弩手" },
+	"name": {
+		"en": "Invisible Crossbowman",
+		"jp": "迷彩射撃兵",
+		"cn": "隐形弩手"
+	},
 	"stats": {
 		"level0": {
-            "hp": "1800",
-            "atk": "260",
-            "def": "100",
-            "mdef": "20",
-            "aspd%": "100",
-            "aspd": "2.7",
-            "range": "0",
-            "HP回復速度": "0",
-            "weight": "1",
+			"hp": "1800",
+			"atk": "260",
+			"def": "100",
+			"mdef": "20",
+			"aspd%": "100",
+			"aspd": "2.7",
+			"range": "0",
+			"HP回復速度": "0",
+			"weight": "1",
 			"ms": "0.9",
+			"lifepoint": 1,
 			"special": [
 				{
 					"name": "stealth",

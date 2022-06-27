@@ -13,6 +13,7 @@
 			"HP回復速度": "0",
 			"weight": "3",
 			"ms": "0.7",
+			"lifepoint": 1,
 			"special": []
 		},
 		"猩红孤钻": {
@@ -26,6 +27,7 @@
 			"HP回復速度": "0",
 			"weight": "3",
 			"ms": "0.7",
+			"lifepoint": 1,
 			"special": []
 		}
 	},

@@ -13,6 +13,7 @@
 			"HP回復速度": "0",
 			"weight": "1",
 			"ms": "1.1",
+			"lifepoint": 1,
 			"special": []
 		},
 		"开门请当心": {
@@ -26,6 +27,7 @@
 			"HP回復速度": "0",
 			"weight": "1",
 			"ms": "1.1",
+			"lifepoint": 1,
 			"special": []
 		},
 		"危机四伏": {
@@ -39,6 +41,7 @@
 			"HP回復速度": "0",
 			"weight": "1",
 			"ms": "1.1",
+			"lifepoint": 1,
 			"special": []
 		}
 	},

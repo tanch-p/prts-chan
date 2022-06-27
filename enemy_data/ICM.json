@@ -51,6 +51,7 @@
 		"aspd": 2,
 		"ms": 1.5,
 		"normal_attack": {
+			"state_name": "rage",
 			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},
@@ -58,8 +59,8 @@
 			{
 				"tooltip": {
 					"simple": {
-						"en": ["Rage mode", "Move speed+150%"],
-						"jp": ["強化状態", "移動速度＋150％"],
+						"en": [ "Move speed+150%"],
+						"jp": [ "移動速度＋150％"],
 						"cn": []
 					}
 				}

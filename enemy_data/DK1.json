@@ -113,7 +113,7 @@
 		}
 	},
 	"normal_attack": {
-		"atk_type": ["melee","phys"],
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
@@ -124,16 +124,17 @@
 		"atk": 1.8,
 		"aspd": 2,
 		"ms": 1.5,
+		"state_name": "rage",
 		"normal_attack": {
-			"atk_type": ["melee","phys"],
+			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},
 		"special": [
 			{
 				"tooltip": {
 					"simple": {
-						"en": ["Rage mode", "Move speed+150%"],
-						"jp": ["怒り状態", "移動速度＋150％"],
+						"en": ["Move speed+150%"],
+						"jp": ["移動速度＋150％"],
 						"cn": []
 					}
 				}

@@ -17,6 +17,7 @@
 			"HP回復速度": "0",
 			"weight": "0",
 			"ms": "1",
+			"lifepoint": 1,
 			"special": []
 		},
 		"酒商运输队": {
@@ -30,6 +31,7 @@
 			"HP回復速度": "0",
 			"weight": "0",
 			"ms": "1",
+			"lifepoint": 1,
 			"special": []
 		}
 	},

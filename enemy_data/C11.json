@@ -18,6 +18,7 @@
 			"HP回復速度": "0",
 			"weight": "1",
 			"ms": "1.1",
+			"lifepoint": 1,
 			"special": []
 		}
 	},
@@ -57,16 +58,6 @@
 			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Released State"],
-						"jp": ["解放状態"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": []
 	}
 }

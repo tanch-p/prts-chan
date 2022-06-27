@@ -2,6 +2,9 @@
 	"index": {
 		"stages": "ステージ"
 	},
+
+	"initial_cost": "Initial Cost",
+
 	"炽热溶洞": "Blazing Cavern",
 	"风蚀高地": "Windswept Highlands",
 	"闭锁监狱": "Locked Down Prison",
@@ -9,6 +12,10 @@
 	"无序矿区": "Abandoned Mine",
 	"八号竞技场": "Arena 8",
 	"狂嚎沙原": "Howling Desert",
+
+	"hp_50": "HP↓50%",
+	"rage": "Rage Mode",
+	"prisoner_release": "Released State",
 
 	"phcs_levels": [
 		"迷雾歧途",

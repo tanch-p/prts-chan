@@ -13,6 +13,7 @@
 			"HP回復速度": "0",
 			"weight": "4",
 			"ms": "0.5",
+			"lifepoint": 1,
 			"special": [
 				{
 					"name": "stun_attack",
@@ -43,6 +44,7 @@
 			"HP回復速度": "0",
 			"weight": "4",
 			"ms": "0.5",
+			"lifepoint": 1,
 			"special": [
 				{
 					"name": "stun_attack",
@@ -73,6 +75,7 @@
 			"HP回復速度": "0",
 			"weight": "4",
 			"ms": "0.5",
+			"lifepoint": 1,
 			"special": [
 				{
 					"name": "stun_attack",
@@ -100,5 +103,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "",
-	"type": ["melee","elite"]
+	"type": ["melee", "elite"]
 }

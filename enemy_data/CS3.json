@@ -13,6 +13,7 @@
 			"HP回復速度": "0",
 			"weight": "5",
 			"ms": "0.5",
+			"lifepoint": 2,
 			"special": [
 				{
 					"name": "four_block",
@@ -51,6 +52,7 @@
 			"HP回復速度": "0",
 			"weight": "5",
 			"ms": "0.5",
+			"lifepoint": 2,
 			"special": [
 				{
 					"name": "four_block",

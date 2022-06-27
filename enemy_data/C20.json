@@ -8,16 +8,17 @@
 	"format": "prisoner",
 	"stats": {
 		"level0": {
-            "hp": "11000",
-            "atk": "340",
-            "def": "200",
-            "mdef": "50",
-            "aspd%": "100",
-            "aspd": "3.5",
-            "range": "3",
-            "HP回復速度": "0",
-            "weight": "3",
+			"hp": "11000",
+			"atk": "340",
+			"def": "200",
+			"mdef": "50",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "3",
+			"HP回復速度": "0",
+			"weight": "3",
 			"ms": "0.5",
+			"lifepoint": 1,
 			"special": []
 		}
 	},
@@ -80,8 +81,8 @@
 			{
 				"tooltip": {
 					"simple": {
-						"en": ["Released State, attacks 2 targets at once"],
-						"jp": ["解放状態", "2体同時攻撃"],
+						"en": ["Attacks 2 targets at once"],
+						"jp": ["2体同時攻撃"],
 						"cn": []
 					}
 				}

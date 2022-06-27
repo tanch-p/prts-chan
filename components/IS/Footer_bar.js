@@ -1,6 +1,8 @@
 import Image from "next/image";
-import relicIcon from "../../public/images/phcs/relic.png";
-import combat from "../../public/images/phcs/combat.png";
+import relicIcon from "@/public/images/phcs/relic.png";
+import combat from "@/public/images/misc/combat.png";
+import boss from "@/public/images/misc/boss.png";
+import encount from "@/public/images/misc/encount.png";
 import Overlay from "./Overlay";
 import useToggle from "../../hooks/useToggle";
 import { useState } from "react";
@@ -28,7 +30,6 @@ export default function FooterBar() {
 						<div className="relative flex items-center justify-between h-16">
 							<div className=" flex items-center py-[2px] bg-gradient-to-r from-neutral-600 via-neutral-900 to-neutral-900 relative">
 								<div className="flex items-center px-[6px] py-1 relative">
-
 									<Image
 										src={relicIcon}
 										layout="intrinsic"
@@ -64,7 +65,24 @@ export default function FooterBar() {
 								</div>
 							</div>
 							<div className="">
-								<Image src={combat} layout="intrinsic" />
+								<Image
+									src={combat}
+									height="65px"
+									width="65px"
+									layout="intrinsic"
+								/>
+								<Image
+									src={boss}
+									height="65px"
+									width="65px"
+									layout="intrinsic"
+								/>
+								{/* <Image
+									src={encount}
+									height="65px"
+									width="65px"
+									layout="intrinsic"
+								/> */}
 							</div>
 						</div>
 					</div>

@@ -22,7 +22,7 @@ export default function TooltipComponent({
 										? "bg-gray-300 border border-black text-black"
 										: "bg-gray-700 text-white"
 								}
-								absolute left-[50%] -translate-x-[50%] text-left rounded-lg py-2 px-3 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity`}
+								absolute left-[50%] -translate-x-[50%] text-left rounded-lg py-2 px-3 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity `}
 					>
 						{/* <p className="">Effective Operators</p> */}
 						{langpack.type[type].ops.map((categoryObj) => {

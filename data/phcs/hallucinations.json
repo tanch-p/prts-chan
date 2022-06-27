@@ -34,17 +34,18 @@
 		"key": "生存",
 		"effects": [
 			{
-				"targets": ["ALL"],
+				"targets": ["not_phcs_boss"],
 				"mods": {
 					"atk": "%150",
 					"aspd": "%150",
 					"special": {
-						"extra": {
-							"name": "bleed",
+						"survival_mode": {
+							"true_dmg": 100,
+							"value": 100,
 							"tooltip": {
-								"en": ["$Receives 100 True Dmg/s$"],
-								"jp": ["$毎秒100確定ダメージを受ける$"],
-								"cn": []
+								"en": "$Survival$ - Receives #val True Dmg/s",
+								"jp": "$生存$→毎秒#val確定ダメージを受ける",
+								"cn": ""
 							}
 						}
 					}

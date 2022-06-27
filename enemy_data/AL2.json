@@ -17,6 +17,7 @@
 			"HP回復速度": "0",
 			"weight": "2",
 			"ms": "0.8",
+			"lifepoint": 1,
 			"special": [
 				{
 					"type": "others",
@@ -42,6 +43,7 @@
 			"HP回復速度": "0",
 			"weight": "2",
 			"ms": "0.8",
+			"lifepoint": 1,
 			"special": [
 				{
 					"type": "others",
@@ -67,6 +69,7 @@
 			"HP回復速度": "0",
 			"weight": "2",
 			"ms": "0.8",
+			"lifepoint": 1,
 			"special": [
 				{
 					"type": "others",
@@ -89,5 +92,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "",
-	"type": ["ranged","elite"]
+	"type": ["ranged", "elite"]
 }

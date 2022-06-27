@@ -13,7 +13,7 @@ export default function RelicDiv({ label, data, type, state, setState }) {
 							id={`relic-${relic.img}`}
 							key={relic.img}
 							className={`group hover:cursor-pointer w-[140px] shadow-[0_0px_0_2px_#131313]
-						${!selected ? "bg-[#303030] bg-opacity-80" : "bg-[#414141] bg-opacity-90"}
+						${!selected ? "bg-[#303030] bg-opacity-80" : "bg-[#414141] bg-opacity-30"}
 						${
 							type === "hard"
 								? !someSelected && !selected

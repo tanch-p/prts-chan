@@ -39,7 +39,6 @@ export default function Stage({ stageData }) {
 	const { language, floor, setFloor, device } = useAppContext();
 	const { mapConfig } = stageData;
 	const theme = mapConfig.hasOwnProperty("theme") ? mapConfig.theme : "";
-
 	const fontThemes = { en: "font-sans", jp: "font-jp font-light" };
 
 	const tabArr = [

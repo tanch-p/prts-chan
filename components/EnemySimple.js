@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import { getRemarks } from "./getStats";
+import { parseRemarks } from "@/lib/parseRemarks";
 import { useState, useEffect } from "react";
-import { parseType } from "./parseType";
-import { parseAtkType, setOtherMods } from "../lib/get-stats";
+import { parseType } from "../lib/parseType";
+import { parseAtkType, setOtherMods } from "../lib/parseStats";
 import { useAppContext } from "context/AppContext";
 
 export default function EnemySimple({
@@ -37,8 +38,8 @@ export default function EnemySimple({
 		},
 	});
 	const [specialMods, setSpecialMods] = useState({});
-	// console.log("spMods", specialMods);
-	// console.log("mul", multiplier);
+	console.log("spMods", specialMods);
+	console.log("mul", multiplier);
 
 	const { selectedHardRelic, selectedNormalRelic, hallucinations } =
 		useAppContext();
@@ -383,7 +384,7 @@ export default function EnemySimple({
 		return returnArr;
 	};
 
-	const renderRow = (enemy, count, stats, index, format) => {
+	const renderRow = (enemy, count, entry, index, format) => {
 		const powerupOddRows = ["enemy", "count", "type", "hp", "weight", "range"];
 		const multiformOddRows = ["enemy", "count", "type", "weight"];
 		const numRowstoRender =
@@ -407,7 +408,7 @@ export default function EnemySimple({
 					<tr className={`${index % 2 === 1 ? "bg-neutral-700" : ""}`}>
 						{arrayToMap.map((ele) => {
 							const stat = ele.en;
-							const statValue = applyModifiers(enemy, stats, stat, row);
+							const statValue = applyModifiers(enemy, entry, stat, row);
 							if (ele.show) {
 								return (
 									<td
@@ -465,33 +466,26 @@ export default function EnemySimple({
 															  )
 													)})`}</p>,
 												].concat(
-													parseSpecial(enemy, stat, stats, statValue, row)
+													parseSpecial(enemy, stat, entry, statValue, row)
 												)
 											) : (
-												getAtk(enemy, stats, statValue)
+												getAtk(enemy, entry, statValue)
 											)
 										) : stat === "remarks" ? (
-											getRemarks(
-												enemy,
-												specialMods,
-												stats,
-												language,
-												"simple",
-												row
-											)
+											parseRemarks(enemy, specialMods, entry, row, language)
 										) : stat === "range" ? (
-											enemy["stats"][stats]["range"] === "0" ? (
+											enemy["stats"][entry]["range"] === "0" ? (
 												"0"
 											) : (
 												(Math.floor(statValue * 100) / 100).toFixed(2)
 											)
 										) : stat === "weight" || stat === "aspd" ? (
 											[<p>{statValue}</p>].concat(
-												parseSpecial(enemy, stat, stats, statValue, row)
+												parseSpecial(enemy, stat, entry, statValue, row)
 											)
 										) : (
 											[<p>{Math.round(statValue)}</p>].concat(
-												parseSpecial(enemy, stat, stats, statValue, row)
+												parseSpecial(enemy, stat, entry, statValue, row)
 											)
 										)}
 									</td>
@@ -516,7 +510,7 @@ export default function EnemySimple({
 			//map through enemydata
 			let enemy = require(`../enemy_data/${id}.json`);
 			// console.log(enemy["stats"][stats]);
-			return renderRow(enemy, count, stats, index, enemy.format);
+			return renderRow(enemy, count, stats, index, enemy.format, language);
 		});
 	};
 	const updateMultiplier = () => {
@@ -588,9 +582,12 @@ export default function EnemySimple({
 		updateMultiplier();
 	}, [hallucinations, selectedHardRelic, selectedNormalRelic]);
 
+
+
+
 	return (
 		<>
-			<div className="w-[100vw] md:w-full overflow-x-scroll md:overflow-x-auto">
+			<div className="relative w-[100vw] md:w-full overflow-x-scroll md:overflow-x-auto">
 				<div className="grid auto-cols-auto gap-x-2">
 					{Object.keys(multiplier.ALL).map((ele) => (
 						<span key={ele}>

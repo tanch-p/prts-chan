@@ -17,6 +17,7 @@
 			"HP回復速度": "0",
 			"weight": "3",
 			"ms": "0.75",
+			"lifepoint": 1,
 			"special": []
 		},
 		"开门请当心": {
@@ -30,6 +31,7 @@
 			"HP回復速度": "0",
 			"weight": "3",
 			"ms": "0.75",
+			"lifepoint": 1,
 			"special": []
 		}
 	},

@@ -13,6 +13,7 @@
 			"HP回復速度": "0",
 			"weight": "2",
 			"ms": "0.8",
+			"lifepoint": 1,
 			"special": []
 		},
 		"第6区跡": {
@@ -26,6 +27,7 @@
 			"HP回復速度": "0",
 			"weight": "2",
 			"ms": "0.8",
+			"lifepoint": 1,
 			"special": []
 		},
 		"阴云笼罩": {
@@ -39,6 +41,7 @@
 			"HP回復速度": "0",
 			"weight": "2",
 			"ms": "0.8",
+			"lifepoint": 1,
 			"special": []
 		}
 	},
