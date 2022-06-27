@@ -1,4 +1,4 @@
-export const PHCS_BOSS = [
+export const PHCS_BOSSES = [
 	"ICR",
 	"ICM",
 	"MSC",

@@ -25,7 +25,7 @@ export default function EnemySimple({
 		{ en: "weight", jp: "重量", cn: "重量", show: true },
 		{ en: "remarks", jp: "備考", cn: "特殊", show: true },
 	]);
-	const [multiplier, setMultiplier] = useState({
+	const [multipliers, setMultipliers] = useState({
 		ALL: {
 			hp: 1,
 			atk: 1,
@@ -39,7 +39,7 @@ export default function EnemySimple({
 	});
 	const [specialMods, setSpecialMods] = useState({});
 	console.log("spMods", specialMods);
-	console.log("mul", multiplier);
+	console.log("mul", multipliers);
 
 	const { selectedHardRelic, selectedNormalRelic, hallucinations } =
 		useAppContext();
@@ -80,28 +80,28 @@ export default function EnemySimple({
 		switch (stat) {
 			case "aspd":
 				if (
-					multiplier?.["ALL"]?.aspd !== undefined &&
-					multiplier?.["ALL"]?.aspd > 1
+					multipliers?.["ALL"]?.aspd !== undefined &&
+					multipliers?.["ALL"]?.aspd > 1
 				) {
-					totalMultiplier += multiplier?.["ALL"]?.aspd - 1;
+					totalMultiplier += multipliers?.["ALL"]?.aspd - 1;
 				}
 				if (
-					multiplier?.[enemy.id]?.aspd !== undefined &&
-					multiplier?.[enemy.id]?.aspd > 1
+					multipliers?.[enemy.id]?.aspd !== undefined &&
+					multipliers?.[enemy.id]?.aspd > 1
 				) {
-					totalMultiplier += multiplier?.[enemy.id]?.aspd - 1;
+					totalMultiplier += multipliers?.[enemy.id]?.aspd - 1;
 				}
 				if (
 					enemy.type.includes("Melee") &&
-					multiplier.hasOwnProperty("Melee")
+					multipliers.hasOwnProperty("Melee")
 				) {
-					totalMultiplier += multiplier?.Melee?.aspd - 1;
+					totalMultiplier += multipliers?.Melee?.aspd - 1;
 				}
 				if (
 					enemy.type.includes("Ranged") &&
-					multiplier.hasOwnProperty("Ranged")
+					multipliers.hasOwnProperty("Ranged")
 				) {
-					totalMultiplier += multiplier?.Ranged?.aspd - 1;
+					totalMultiplier += multipliers?.Ranged?.aspd - 1;
 				}
 				if (enemy.format === "prisoner" && row === 0) {
 					if (specialMods[enemy.id]?.imprisoned?.hasOwnProperty("aspd")) {
@@ -137,15 +137,15 @@ export default function EnemySimple({
 				let fixedIncValue = 0;
 				if (
 					enemy.type.includes("Melee") &&
-					multiplier.hasOwnProperty("Melee")
+					multipliers.hasOwnProperty("Melee")
 				) {
-					fixedIncValue += multiplier.Melee[stat];
+					fixedIncValue += multipliers.Melee[stat];
 				}
 				if (
 					enemy.type.includes("Ranged") &&
-					multiplier.hasOwnProperty("Ranged")
+					multipliers.hasOwnProperty("Ranged")
 				) {
-					fixedIncValue += multiplier.Ranged[stat];
+					fixedIncValue += multipliers.Ranged[stat];
 				}
 				if (enemy.format === "prisoner" && row !== 0) {
 					fixedIncValue += enemy.release?.[stat] ?? 0;
@@ -153,8 +153,8 @@ export default function EnemySimple({
 				return Math.min(
 					100,
 					+base_stat +
-						(multiplier?.["ALL"]?.[stat] ?? 0) +
-						(multiplier?.[enemy.id]?.[stat] ?? 0) +
+						(multipliers?.["ALL"]?.[stat] ?? 0) +
+						(multipliers?.[enemy.id]?.[stat] ?? 0) +
 						fixedIncValue
 				);
 
@@ -170,14 +170,14 @@ export default function EnemySimple({
 				}
 				const moddedStats =
 					(+base_stat +
-						(multiplier?.["ALL"]?.[`fixed-${stat}`] ?? 0) +
-						(multiplier?.[enemy.id]?.[`fixed-${stat}`] ?? 0)) *
-					(multiplier?.["ALL"]?.[stat] ?? 1) *
-					(multiplier?.[enemy.id]?.[stat] ?? 1) *
+						(multipliers?.["ALL"]?.[`fixed-${stat}`] ?? 0) +
+						(multipliers?.[enemy.id]?.[`fixed-${stat}`] ?? 0)) *
+					(multipliers?.["ALL"]?.[stat] ?? 1) *
+					(multipliers?.[enemy.id]?.[stat] ?? 1) *
 					(enemy.type.includes("Melee")
-						? multiplier?.Melee?.[stat] ?? 1
+						? multipliers?.Melee?.[stat] ?? 1
 						: enemy.type.includes("Ranged")
-						? multiplier?.Ranged?.[stat] ?? 1
+						? multipliers?.Ranged?.[stat] ?? 1
 						: 1);
 				if (enemy.format === "prisoner") {
 					if (row === 0) {
@@ -576,7 +576,7 @@ export default function EnemySimple({
 		}
 
 		setSpecialMods({ ...specialMods, ...other_mods });
-		setMultiplier(multiplierHolder);
+		setMultipliers(multiplierHolder);
 	};
 	useEffect(() => {
 		updateMultiplier();
@@ -589,10 +589,10 @@ export default function EnemySimple({
 		<>
 			<div className="relative w-[100vw] md:w-full overflow-x-scroll md:overflow-x-auto">
 				<div className="grid auto-cols-auto gap-x-2">
-					{Object.keys(multiplier.ALL).map((ele) => (
+					{Object.keys(multipliers.ALL).map((ele) => (
 						<span key={ele}>
 							{ele}
-							{multiplier.ALL[ele]}
+							{multipliers.ALL[ele]}
 						</span>
 					))}
 				</div>
