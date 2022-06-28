@@ -14,8 +14,8 @@
 	"狂嚎沙原": "狂風の砂原",
 	"灰齐山麓": "灰斉山麓",
 
-	"hp_50":"HP50％以下",
-	"rage":"怒り状態",
+	"hp_50": "HP50％以下",
+	"rage": "怒り状態",
 	"prisoner_release": "解放状態",
 	"phcs_levels": [
 		"迷雾歧途",
@@ -27,16 +27,19 @@
 	],
 
 	"enemy_stats": {
+		"enemy": "敵",
 		"HP": "HP",
 		"atk": "攻撃力",
 		"def": "防御力",
-		"mdef": "術耐性",
+		"res": "術耐性",
 		"aspd": "攻撃間隔",
 		"range": "攻撃半径",
 		"hp_recv": "HP回復速度",
 		"weight": "重量",
 		"type": "属性",
-		"ms": "移動速度"
+		"ms": "移動速度",
+		"lifepoint": "耐久値",
+		"remarks": "備考"
 	},
 	"phys": "物理",
 	"arts": "術",

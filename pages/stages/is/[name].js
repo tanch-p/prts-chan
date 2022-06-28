@@ -101,12 +101,13 @@ export default function Stage({ stageData }) {
 			{mapConfig.hasOwnProperty("hard_mods") ? (
 				<TabComponent tabArr={tabArr} />
 			) : (
-				<div>
+				<div className="z-50">
 					<EnemySimple
 						mapConfig={mapConfig}
 						language={language}
 						device={device}
 						fontThemes={fontThemes}
+						style={{zIndex: '100'}} 
 					/>
 				</div>
 			)}

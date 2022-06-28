@@ -11,7 +11,7 @@
 			"hp": "11000",
 			"atk": "600",
 			"def": "700",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "3.3",
 			"range": "0",
@@ -53,7 +53,7 @@
 	},
 	"release": {
 		"atk": 1.5,
-		"mdef": 40,
+		"res": 40,
 		"normal_attack": {
 			"atk_type": ["melee", "phys"],
 			"hits": 1

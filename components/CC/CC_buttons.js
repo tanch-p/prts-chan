@@ -129,7 +129,7 @@ export default function CC_buttons({
 
 	useEffect(() => {
 		const multiplier = {
-			ALL: { hp: 1, atk: 1, def: 1, mdef: 0, aspd: 1, ms: 1, weight: 0 },
+			ALL: { hp: 1, atk: 1, def: 1, res: 0, aspd: 1, ms: 1, weight: 0 },
 		};
 		const other_mods = {};
 		for (const category of selected) {
@@ -141,7 +141,7 @@ export default function CC_buttons({
 								hp: 1,
 								atk: 1,
 								def: 1,
-								mdef: 0,
+								res: 0,
 								aspd: 1,
 								ms: 1,
 								range: 1,

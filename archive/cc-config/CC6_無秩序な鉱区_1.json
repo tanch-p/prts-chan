@@ -38,7 +38,7 @@
         "rank": 1,
         "name": { "jp": "増幅：法術阻害", "en": "Enemy RES 1", "cn": "" },
         "img": "無秩序な鉱区/75px-Enemy_magicresistance_1",
-        "effects": [{ "targets": ["ALL"], "mods": { "mdef": 25 } }],
+        "effects": [{ "targets": ["ALL"], "mods": { "res": 25 } }],
         "tooltip": {
           "en": "All enemies RES +25",
           "cn": "",
@@ -116,7 +116,7 @@
             "mods": {
               "hp": "%90",
               "atk": "%90",
-              "mdef": 45,
+              "res": 45,
               "special": {
                 "extra": {
                   "tooltip": {

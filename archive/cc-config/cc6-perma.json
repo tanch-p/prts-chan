@@ -8,7 +8,7 @@
 				"effects": [
 					{
 						"targets": ["T11"],
-						"mods": { "hp": "%40", "atk": "%15", "mdef": 20 }
+						"mods": { "hp": "%40", "atk": "%15", "res": 20 }
 					}
 				],
 				"tooltip": {
@@ -23,7 +23,7 @@
 				"effects": [
 					{
 						"targets": ["T11"],
-						"mods": { "hp": "%60", "atk": "%30", "mdef": 40, "aspd": "%75" }
+						"mods": { "hp": "%60", "atk": "%30", "res": 40, "aspd": "%75" }
 					}
 				],
 				"tooltip": {
@@ -41,7 +41,7 @@
 						"mods": {
 							"hp": "%90",
 							"atk": "%50",
-							"mdef": 60,
+							"res": 60,
 							"aspd": "%150",
 							"special": {
 								"extra": {
@@ -76,7 +76,7 @@
 						"mods": {
 							"hp": "%80",
 							"atk": "%30",
-							"mdef": 40,
+							"res": 40,
 							"special": {
 								"duel": {
 									"multiplier": 0.3,
@@ -115,7 +115,7 @@
 						"mods": {
 							"hp": "%130",
 							"atk": "%50",
-							"mdef": 60,
+							"res": 60,
 							"special": {
 								"duel": {
 									"multiplier": 0.7,

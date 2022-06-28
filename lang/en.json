@@ -27,15 +27,18 @@
 	],
 
 	"enemy_stats": {
+		"enemy":"enemy",
 		"HP": "HP",
 		"atk": "atk",
 		"def": "def",
-		"mdef": "res",
+		"res": "res",
 		"aspd": "aspd",
 		"range": "range",
 		"weight": "weight",
 		"type": "type",
-		"ms": "ms"
+		"ms": "ms",
+		"lifepoint":"life",
+		"remarks":"remarks"
 	},
 	"phys": "phys",
 	"arts": "arts",

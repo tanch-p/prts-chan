@@ -8,7 +8,7 @@
 				"effects": [
 					{
 						"targets": ["SF09"],
-						"mods": { "hp": "%70", "mdef": 30 }
+						"mods": { "hp": "%70", "res": 30 }
 					}
 				],
 				"tooltip": {
@@ -23,7 +23,7 @@
 				"effects": [
 					{
 						"targets": ["SF09"],
-						"mods": { "hp": "%220", "mdef": 50 }
+						"mods": { "hp": "%220", "res": 50 }
 					}
 				],
 				"tooltip": {
@@ -38,7 +38,7 @@
 				"effects": [
 					{
 						"targets": ["SF09"],
-						"mods": { "hp": "%300", "mdef": 50 }
+						"mods": { "hp": "%300", "res": 50 }
 					}
 				],
 				"tooltip": {
@@ -62,7 +62,7 @@
 						"mods": {
 							"hp": "%110",
 							"atk": "%50",
-							"mdef": 30
+							"res": 30
 						}
 					}
 				],
@@ -81,7 +81,7 @@
 						"mods": {
 							"hp": "%110",
 							"atk": "%110",
-							"mdef": 30,
+							"res": 30,
 							"special": {
 								"extra": {
 									"tooltip": {
@@ -111,7 +111,7 @@
 				"effects": [
 					{
 						"targets": ["DSK"],
-						"mods": { "hp": "%20", "atk": "%20", "def": "%60", "mdef": 15 }
+						"mods": { "hp": "%20", "atk": "%20", "def": "%60", "res": 15 }
 					}
 				],
 				"tooltip": {
@@ -129,7 +129,7 @@
 						"mods": {
 							"hp": "%30",
 							"def": "%150",
-							"mdef": 20,
+							"res": 20,
 							"special": {
 								"破桎而出": {
 									"multiplier": 0,
@@ -170,7 +170,7 @@
 						"mods": {
 							"hp": "%50",
 							"def": "%250",
-							"mdef": 30,
+							"res": 30,
 							"special": {
 								"破桎而出": {
 									"multiplier": 0,
@@ -215,7 +215,7 @@
 						"mods": {
 							"hp": "%90",
 							"atk": "%70",
-							"mdef": 15,
+							"res": 15,
 							"special": {
 								"纬地经天": {
 									"multiplier": 0,
@@ -250,7 +250,7 @@
 						"mods": {
 							"hp": "%200",
 							"atk": "%150",
-							"mdef": 15,
+							"res": 15,
 							"range": "%300",
 							"special": {
 								"纬地经天": {
@@ -650,7 +650,7 @@
 				"rank": 1,
 				"img": "灰齐山麓/75px-Enemy_def_1",
 				"effects": [
-					{ "targets": ["ALL"], "mods": { "fixed-def": 100, "mdef": 10 } }
+					{ "targets": ["ALL"], "mods": { "fixed-def": 100, "res": 10 } }
 				],
 				"tooltip": {
 					"en": "Enemy DEF +100, RES +10",

@@ -183,7 +183,7 @@
 				"effects": [
 					{
 						"targets": ["UM1"],
-						"mods": { "atk": "%60", "fixed-def": 1000, "mdef": 40 }
+						"mods": { "atk": "%60", "fixed-def": 1000, "res": 40 }
 					}
 				],
 				"tooltip": {

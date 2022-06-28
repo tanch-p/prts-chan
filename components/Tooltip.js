@@ -12,8 +12,8 @@ export default function TooltipComponent({
 	};
 	if (tooltipType === "type") {
 		return (
-			<div className="group cursor-pointer relative w-min ">
-				<div className="overflow-visible ">
+			<div className="group cursor-pointer relative w-min">
+				<div className="overflow-hidden">
 					<div
 						className={`${position.top}
 						${language === "jp" ? "text-sm w-[230px]" : "text-sm w-[160px]"}
@@ -22,7 +22,7 @@ export default function TooltipComponent({
 										? "bg-gray-300 border border-black text-black"
 										: "bg-gray-700 text-white"
 								}
-								absolute left-[50%] -translate-x-[50%] text-left rounded-lg py-2 px-3 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity `}
+								absolute left-[50%] -translate-x-[50%] text-left rounded-lg py-2 px-3 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity`}
 					>
 						{/* <p className="">Effective Operators</p> */}
 						{langpack.type[type].ops.map((categoryObj) => {

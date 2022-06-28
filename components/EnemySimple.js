@@ -3,8 +3,9 @@ import Image from "next/image";
 import { parseRemarks } from "@/lib/parseRemarks";
 import { useState, useEffect } from "react";
 import { parseType } from "../lib/parseType";
-import { parseAtkType, setOtherMods } from "../lib/parseStats";
+import { parseAtkType, setOtherMods, getModdedStats } from "../lib/parseStats";
 import { useAppContext } from "context/AppContext";
+import { v4 as uuidv4 } from "uuid";
 
 export default function EnemySimple({
 	mapConfig,
@@ -14,23 +15,25 @@ export default function EnemySimple({
 	mode = "normal",
 }) {
 	const [tableHeaders, setTableHeaders] = useState([
-		{ en: "enemy", jp: "敵", cn: "敌人", show: true },
-		{ en: "type", jp: "属性", cn: "属性", show: true },
-		{ en: "hp", jp: "HP", cn: "生命值", show: true },
-		{ en: "atk", jp: "攻撃力", cn: "攻击力", show: true },
-		{ en: "aspd", jp: "攻撃速度", cn: "攻击间隔", show: true },
-		{ en: "range", jp: "攻撃範囲", cn: "攻击范围", show: true },
-		{ en: "def", jp: "防御力", cn: "防御力", show: true },
-		{ en: "mdef", jp: "術耐性", cn: "法术抗性", show: true },
-		{ en: "weight", jp: "重量", cn: "重量", show: true },
-		{ en: "remarks", jp: "備考", cn: "特殊", show: true },
+		{ key: "enemy", show: true },
+		{ key: "type", show: true },
+		{ key: "hp", show: true },
+		{ key: "atk", show: true },
+		{ key: "aspd", show: true },
+		{ key: "range", show: true },
+		{ key: "def", show: true },
+		{ key: "res", show: true },
+		{ key: "weight", show: true },
+		{ key: "ms", show: true },
+		{ key: "lifepoint", show: true },
+		{ key: "remarks", show: true },
 	]);
 	const [multipliers, setMultipliers] = useState({
 		ALL: {
 			hp: 1,
 			atk: 1,
 			def: 1,
-			mdef: 0,
+			res: 0,
 			aspd: 1,
 			ms: 1,
 			range: 1,
@@ -132,7 +135,7 @@ export default function EnemySimple({
 				}
 				return Math.ceil((base_stat / totalMultiplier) * 100) / 100;
 
-			case "mdef":
+			case "res":
 			case "weight":
 				let fixedIncValue = 0;
 				if (
@@ -320,15 +323,7 @@ export default function EnemySimple({
 	};
 
 	const applyModifiers = (enemy, stats, stat, row) => {
-		const numericStats = [
-			"hp",
-			"atk",
-			"aspd",
-			"range",
-			"def",
-			"mdef",
-			"weight",
-		];
+		const numericStats = ["hp", "atk", "aspd", "range", "def", "res", "weight"];
 		if (numericStats.includes(stat)) {
 			return calculate(enemy, stats, stat, row);
 		}
@@ -398,18 +393,18 @@ export default function EnemySimple({
 			const arrayToMap =
 				row === 0
 					? tableHeaders
-					: tableHeaders.filter((ele) =>
+					: tableHeaders.filter(({ key }) =>
 							format === "powerup" || format === "prisoner"
-								? !powerupOddRows.includes(ele.en)
-								: !multiformOddRows.includes(ele.en)
+								? !powerupOddRows.includes(key)
+								: !multiformOddRows.includes(key)
 					  );
 			returnArr.push(
 				<>
 					<tr className={`${index % 2 === 1 ? "bg-neutral-700" : ""}`}>
-						{arrayToMap.map((ele) => {
-							const stat = ele.en;
+						{arrayToMap.map(({ key, show }) => {
+							const stat = key;
 							const statValue = applyModifiers(enemy, entry, stat, row);
-							if (ele.show) {
+							if (show) {
 								return (
 									<td
 										className={`border border-gray-400 my-auto py-0 mx-2 md:max-w-[300px] ${textAlign(
@@ -522,7 +517,7 @@ export default function EnemySimple({
 							hp: 1,
 							atk: 1,
 							def: 1,
-							mdef: 0,
+							res: 0,
 							aspd: 1,
 							ms: 1,
 							range: 1,
@@ -553,7 +548,7 @@ export default function EnemySimple({
 				hp: 1,
 				atk: 1,
 				def: 1,
-				mdef: 0,
+				res: 0,
 				aspd: 1,
 				ms: 1,
 				range: 1,
@@ -582,12 +577,18 @@ export default function EnemySimple({
 		updateMultiplier();
 	}, [hallucinations, selectedHardRelic, selectedNormalRelic]);
 
+	const enemies = {};
+	for (const { id, stats } of mapConfig.enemies) {
+		const enemy = require(`/enemy_data/${id}.json`);
+		enemies[enemy.id] = getModdedStats(enemy, stats, multipliers);
+	}
+	console.log(enemies);
 
-
+	const filteredTableHeaders = tableHeaders.filter((ele) => ele.show);
 
 	return (
 		<>
-			<div className="relative w-[100vw] md:w-full overflow-x-scroll md:overflow-x-auto">
+			<div className="w-[100vw] md:w-full z-[50]">
 				<div className="grid auto-cols-auto gap-x-2">
 					{Object.keys(multipliers.ALL).map((ele) => (
 						<span key={ele}>
@@ -596,24 +597,82 @@ export default function EnemySimple({
 						</span>
 					))}
 				</div>
+				<div>
+					<div>Filter</div>
+					<div></div>
+					<div className="">
+						<div id="table-wrapper">
+							<table>
+								<colgroup></colgroup>
+								<thead>
+									<tr>
+										{filteredTableHeaders.map(({ key }) => (
+											<th key={key}>
+												<span>{langPack.enemy_stats[key]}</span>
+											</th>
+										))}
+									</tr>
+								</thead>
+								<tbody>
+									{mapConfig.enemies.map(({ id, stats }) => {
+										const enemy = require(`/enemy_data/${id}.json`);
+										const moddedStats = getModdedStats(
+											enemy,
+											stats,
+											multipliers
+										);
+										return (
+											<tr key={id}>
+												{filteredTableHeaders.map(({ key }) => {
+													let returnContainer = "";
+													switch (key) {
+														case "enemy":
+															returnContainer = (
+																<img
+																	src={`/enemy_icons/${id}.png`}
+																	alt={enemy.name["jp"]}
+																	height="75px"
+																	width="75px"
+																	className="select-none"
+																	loading="lazy"
+																/>
+															);
+															break;
+														case "type":
+															returnContainer = parseType(enemy.type, language);
+															break;
+														default:
+															break;
+													}
+													return (
+														<td key={`${id}-${key}`}>
+															<div>{returnContainer}</div>
+														</td>
+													);
+												})}
+											</tr>
+										);
+									})}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
 				<table
 					className={`border border-gray-400 border-solid w-[100vw] overflow-x-scroll md:overflow-x-auto md:mx-auto md:w-full ${fontThemes[language]}`}
 				>
 					<thead className="">
 						<tr className="">
-							{tableHeaders.map((ele) =>
-								ele.show ? (
+							{tableHeaders.map(({ key, show }) =>
+								show ? (
 									<th
 										className={`border border-gray-400 border-solid py-0.5 px-1.5 md:min-w-[50px] ${
 											language === "jp" ? "font-[500]" : ""
 										}`}
-										key={ele.en}
+										key={key}
 									>
-										{ele.en === "aspd"
-											? ele[language] + " /s"
-											: ele[language] === "mdef"
-											? "res"
-											: ele[language]}
+										{key === "aspd" ? key + " /s" : key === "res" ? "res" : key}
 									</th>
 								) : null
 							)}

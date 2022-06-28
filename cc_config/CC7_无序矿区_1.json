@@ -76,7 +76,7 @@
 						"mods": {
 							"hp": "%60",
 							"atk": "%60",
-							"mdef": 30,
+							"res": 30,
 							"special": {
 								"mudrock_shield": {
 									"tooltip": {
@@ -100,7 +100,7 @@
 							"hp": "%60",
 							"atk": "%60",
 							"def": "%50",
-							"mdef": 30
+							"res": 30
 						}
 					}
 				],
@@ -176,7 +176,7 @@
 						"mods": {
 							"hp": "%100",
 							"atk": "%90",
-							"mdef": 45,
+							"res": 45,
 							"special": {
 								"mudrock_shield": {
 									"tooltip": {
@@ -200,7 +200,7 @@
 							"hp": "%100",
 							"atk": "%90",
 							"def": "%100",
-							"mdef": 45
+							"res": 45
 						}
 					}
 				],
@@ -229,7 +229,7 @@
 						"mods": {
 							"hp": "%90",
 							"atk": "%90",
-							"mdef": 45,
+							"res": 45,
 							"special": {
 								"extra": {
 									"tooltip": {
