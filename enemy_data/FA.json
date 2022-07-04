@@ -10,9 +10,9 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "20",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "0.5",
+			"lifepoint":1,"ms": "0.5",
 			"special": [
 				{
 					"name": "ballista",
@@ -77,9 +77,9 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "20.0",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "0.3",
+			"lifepoint":1,"ms": "0.3",
 			"special": [
 				{
 					"name": "ballista",

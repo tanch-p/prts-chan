@@ -14,9 +14,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.4",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"lifepoint": 1,
 			"special": [
 				{
@@ -40,9 +40,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.4",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"lifepoint": 1,
 			"special": [
 				{
@@ -66,9 +66,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.4",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"lifepoint": 1,
 			"special": [
 				{

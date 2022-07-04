@@ -10,9 +10,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "bomb",
@@ -46,9 +46,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.7",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "bomb",
@@ -81,9 +81,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.7",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "bomb",

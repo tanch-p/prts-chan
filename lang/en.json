@@ -28,7 +28,7 @@
 
 	"enemy_stats": {
 		"enemy":"enemy",
-		"HP": "HP",
+		"hp": "hp",
 		"atk": "atk",
 		"def": "def",
 		"res": "res",

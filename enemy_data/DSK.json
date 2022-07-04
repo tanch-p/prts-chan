@@ -11,9 +11,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "10",
-			"ms": "0.5",
+			"lifepoint":1,"ms": "0.5",
 			"special": [
 				{
 					"name": "破桎而出",
@@ -57,9 +57,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "10",
-			"ms": "0.5",
+			"lifepoint":1,"ms": "0.5",
 			"special": [
 				{
 					"name": "破桎而出",

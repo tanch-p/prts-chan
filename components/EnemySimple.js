@@ -7,6 +7,17 @@ import { parseAtkType, setOtherMods, getModdedStats } from "../lib/parseStats";
 import { useAppContext } from "context/AppContext";
 import { v4 as uuidv4 } from "uuid";
 
+const powerupOddRows = [
+	"enemy",
+	"count",
+	"type",
+	"hp",
+	"weight",
+	"range",
+	"lifepoint",
+];
+const multiformOddRows = ["enemy", "count", "type", "weight", "lifepoint"];
+
 export default function EnemySimple({
 	mapConfig,
 	language,
@@ -24,21 +35,12 @@ export default function EnemySimple({
 		{ key: "def", show: true },
 		{ key: "res", show: true },
 		{ key: "weight", show: true },
-		{ key: "ms", show: true },
-		{ key: "lifepoint", show: true },
+		{ key: "ms", show: false },
+		{ key: "lifepoint", show: false },
 		{ key: "remarks", show: true },
 	]);
 	const [multipliers, setMultipliers] = useState({
-		ALL: {
-			hp: 1,
-			atk: 1,
-			def: 1,
-			res: 0,
-			aspd: 1,
-			ms: 1,
-			range: 1,
-			weight: 0,
-		},
+		ALL: {},
 	});
 	const [specialMods, setSpecialMods] = useState({});
 	console.log("spMods", specialMods);
@@ -151,7 +153,7 @@ export default function EnemySimple({
 					fixedIncValue += multipliers.Ranged[stat];
 				}
 				if (enemy.format === "prisoner" && row !== 0) {
-					fixedIncValue += enemy.release?.[stat] ?? 0;
+					fixedIncValue += enemy.released?.[stat] ?? 0;
 				}
 				return Math.min(
 					100,
@@ -204,15 +206,15 @@ export default function EnemySimple({
 						if (specialMods[enemy.id]?.hasOwnProperty("release")) {
 							return (
 								moddedStats *
-									(specialMods[enemy.id].release[stat] ??
-										enemy.release[stat] ??
+									(specialMods[enemy.id].released[stat] ??
+										enemy.released[stat] ??
 										1) +
-								(specialMods[enemy.id].release[`fixed-${stat}`] ?? 0)
+								(specialMods[enemy.id].released[`fixed-${stat}`] ?? 0)
 							);
 						}
 						return (
-							moddedStats * (enemy.release[stat] ?? 1) +
-							(enemy.release[`fixed-${stat}`] ?? 0)
+							moddedStats * (enemy.released[stat] ?? 1) +
+							(enemy.released[`fixed-${stat}`] ?? 0)
 						);
 					}
 				} else if (enemy.format === "powerup") {
@@ -340,19 +342,13 @@ export default function EnemySimple({
 		);
 	};
 
-	const getRowSpan = (
-		format,
-		stat,
-		powerupArr,
-		multiformArr,
-		numRowstoRender
-	) => {
+	const getRowSpan = (format, stat, maxRowSpan) => {
 		switch (format) {
 			case "powerup":
 			case "prisoner":
-				return powerupArr.includes(stat) ? numRowstoRender : 1;
+				return powerupOddRows.includes(stat) ? maxRowSpan : 1;
 			case "multiform":
-				return multiformArr.includes(stat) ? numRowstoRender : 1;
+				return multiformOddRows.includes(stat) ? maxRowSpan : 1;
 			default:
 				return 1;
 		}
@@ -380,8 +376,6 @@ export default function EnemySimple({
 	};
 
 	const renderRow = (enemy, count, entry, index, format) => {
-		const powerupOddRows = ["enemy", "count", "type", "hp", "weight", "range"];
-		const multiformOddRows = ["enemy", "count", "type", "weight"];
 		const numRowstoRender =
 			format === "powerup" || format === "prisoner"
 				? 2
@@ -439,27 +433,15 @@ export default function EnemySimple({
 										) : stat === "atk" ? (
 											enemy.id !== "MR" ? (
 												[
-													<p>{`${Math.round(statValue)} (${(format ===
-														"prisoner" && row === 1
-														? enemy.release.normal_attack.hits !== 1
-															? `x ${enemy.release.normal_attack.hits}`
-															: ""
-														: enemy.normal_attack.hits !== 1
-														? `x ${enemy.normal_attack.hits}`
-														: ""
-													).concat(
+													<p>{`${Math.round(statValue)} (${
 														format === "prisoner" && row === 1
-															? parseAtkType(
-																	enemy.release.normal_attack.atk_type,
-																	language,
-																	langPack
-															  )
-															: parseAtkType(
-																	enemy.normal_attack.atk_type,
-																	language,
-																	langPack
-															  )
-													)})`}</p>,
+															? enemy.released.normal_attack.hits !== 1
+																? `x ${enemy.released.normal_attack.hits}`
+																: ""
+															: enemy.normal_attack.hits !== 1
+															? `x ${enemy.normal_attack.hits}`
+															: ""
+													})`}</p>,
 												].concat(
 													parseSpecial(enemy, stat, entry, statValue, row)
 												)
@@ -616,42 +598,93 @@ export default function EnemySimple({
 								<tbody>
 									{mapConfig.enemies.map(({ id, stats }) => {
 										const enemy = require(`/enemy_data/${id}.json`);
-										const moddedStats = getModdedStats(
-											enemy,
-											stats,
-											multipliers
-										);
-										return (
-											<tr key={id}>
-												{filteredTableHeaders.map(({ key }) => {
-													let returnContainer = "";
-													switch (key) {
-														case "enemy":
-															returnContainer = (
-																<img
-																	src={`/enemy_icons/${id}.png`}
-																	alt={enemy.name["jp"]}
-																	height="75px"
-																	width="75px"
-																	className="select-none"
-																	loading="lazy"
-																/>
-															);
-															break;
-														case "type":
-															returnContainer = parseType(enemy.type, language);
-															break;
-														default:
-															break;
-													}
-													return (
-														<td key={`${id}-${key}`}>
-															<div>{returnContainer}</div>
-														</td>
-													);
-												})}
-											</tr>
-										);
+										const format = enemy?.format ?? "normal";
+										const maxRowSpan =
+											format === "powerup" || format === "prisoner"
+												? 2
+												: format === "multiform"
+												? enemy["forms"].length
+												: 1;
+										const trArr = [];
+										for (let row = 0; row < maxRowSpan; row++) {
+											const statsToMap =
+												row === 0
+													? filteredTableHeaders
+													: filteredTableHeaders.filter(({ key }) =>
+															format === "powerup" || format === "prisoner"
+																? !powerupOddRows.includes(key)
+																: !multiformOddRows.includes(key)
+													  );
+											const moddedStats = getModdedStats(
+												enemy,
+												stats,
+												multipliers,
+												format,
+												row
+											);
+											trArr.push(
+												<tr key={id + row}>
+													{statsToMap.map(({ key: stat }) => {
+														let rowSpan = 1;
+														if (format !== "normal")
+															rowSpan = getRowSpan(format, stat, maxRowSpan);
+														let returnContainer = "";
+														switch (stat) {
+															case "enemy":
+																returnContainer = (
+																	<img
+																		src={`/enemy_icons/${id}.png`}
+																		alt={enemy.name["jp"]}
+																		height="75px"
+																		width="75px"
+																		className="select-none"
+																		loading="lazy"
+																	/>
+																);
+																break;
+															case "type":
+																returnContainer = parseType(
+																	enemy.type,
+																	language
+																);
+																break;
+															case "atk":
+																returnContainer = (
+																	<p className="whitespace-nowrap">
+																		{moddedStats[stat]}
+																		<span>
+																			{parseAtkType(
+																				enemy.normal_attack,
+																				language,
+																				langPack
+																			)}
+																		</span>
+																	</p>
+																);
+																break;
+															case "remarks":
+																returnContainer = parseRemarks(
+																	enemy,
+																	specialMods,
+																	stats,
+																	row,
+																	language
+																);
+																break;
+															default:
+																returnContainer = <p>{moddedStats[stat]}</p>;
+																break;
+														}
+														return (
+															<td key={`${id}-${stat}`} rowSpan={rowSpan}>
+																<div>{returnContainer}</div>
+															</td>
+														);
+													})}
+												</tr>
+											);
+										}
+										return trArr;
 									})}
 								</tbody>
 							</table>
@@ -678,7 +711,7 @@ export default function EnemySimple({
 							)}
 						</tr>
 					</thead>
-					<tbody className="">{renderEnemyStats()}</tbody>
+					{/* <tbody className="">{renderEnemyStats()}</tbody> */}
 				</table>
 			</div>
 		</>

@@ -15,7 +15,6 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "2",
-			"HP回復速度": "0",
 			"weight": "1",
 			"ms": "0.9",
 			"lifepoint": 1,
@@ -32,8 +31,7 @@
 	"凍結耐性": "無",
 	"type": ["ranged"],
 	"imprisoned": {
-		"aspd": -0.5,
-		"fixed-def": 0,
+		"mods": { "aspd": 0.5 },
 		"special": [
 			{
 				"name": "self_release",
@@ -52,8 +50,8 @@
 			}
 		]
 	},
-	"release": {
-		"atk": 1.5,
+	"released": {
+		"mods": { "atk": 1.5 },
 		"normal_attack": {
 			"atk_type": ["ranged", "arts"],
 			"hits": 1

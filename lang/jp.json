@@ -28,7 +28,7 @@
 
 	"enemy_stats": {
 		"enemy": "敵",
-		"HP": "HP",
+		"hp": "HP",
 		"atk": "攻撃力",
 		"def": "防御力",
 		"res": "術耐性",

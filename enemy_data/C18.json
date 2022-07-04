@@ -15,8 +15,9 @@
 			"aspd%": "100",
 			"aspd": "3.3",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "3",
+			"lifepoint": 1,
 			"ms": "0.8",
 			"lifepoint": 1,
 			"special": []
@@ -31,8 +32,7 @@
 	"眠り耐性": "無",
 	"凍結耐性": "無",
 	"imprisoned": {
-		"aspd": -0.5,
-		"fixed-def": 0,
+		"mods": { "aspd": 0.5 },
 		"special": [
 			{
 				"name": "self_release",
@@ -51,9 +51,8 @@
 			}
 		]
 	},
-	"release": {
-		"atk": 1.5,
-		"res": 40,
+	"released": {
+		"mods": { "atk": 1.5, "res": 40 },
 		"normal_attack": {
 			"atk_type": ["melee", "phys"],
 			"hits": 1

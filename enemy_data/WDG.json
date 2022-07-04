@@ -10,9 +10,9 @@
 			"aspd%": "100",
 			"aspd": "4.4",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "4",
-			"ms": "0.5",
+			"lifepoint":1,"ms": "0.5",
 			"special": [
 				{
 					"name": "throw_rock",
@@ -40,9 +40,9 @@
 			"aspd%": "100",
 			"aspd": "4.4",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "4",
-			"ms": "0.5",
+			"lifepoint":1,"ms": "0.5",
 			"special": []
 		}
 	},

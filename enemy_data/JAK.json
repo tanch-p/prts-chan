@@ -15,9 +15,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2",
-			"HP回復速度": "0",
+			
 			"weight": "6",
-			"ms": "0.6",
+			"lifepoint":1,"ms": "0.6",
 			"forms": [
 				{
 					"res": "+50",
@@ -48,7 +48,7 @@
 					"atk": "+700",
 					"def": "+1000",
 					"aspd": "-1.5",
-					"ms": "+0.3",
+					"lifepoint":1,"ms": "+0.3",
 					"normal_attack": {
 						"atk_type": ["melee", "phys"],
 						"hits": 2

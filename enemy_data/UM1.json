@@ -12,7 +12,7 @@
 			"range": "3.5",
 			"lifepoint": 1,
 			"weight": "4",
-			"ms": "0.65",
+			"lifepoint":1,"ms": "0.65",
 			"special": [
 				{
 					"type": "others",

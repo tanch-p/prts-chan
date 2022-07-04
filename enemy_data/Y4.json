@@ -10,9 +10,9 @@
 			"aspd%": "100",
 			"aspd": "4.5",
 			"range": "2.2",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"special": []
 		},
 		"彻骨冰寒": {
@@ -23,9 +23,9 @@
 			"aspd%": "100",
 			"aspd": "4.5",
 			"range": "2.2",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"special": ["starts with skill active"]
 		}
 	},

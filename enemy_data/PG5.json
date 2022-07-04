@@ -14,9 +14,9 @@
 			"aspd%": "100",
 			"aspd": "2.6",
 			"range": "3.5",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.9",
+			"lifepoint":1,"ms": "0.9",
 			"special": [
 				{
 					"name": "RPG",

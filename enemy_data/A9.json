@@ -14,9 +14,9 @@
 			"aspd%": "100",
 			"aspd": "2.7",
 			"range": "1.75",
-			"HP回復速度": "0",
+			
 			"weight": "0",
-			"ms": "1",
+			"lifepoint":1,"ms": "1",
 			"lifepoint": 1,
 			"special": []
 		}
