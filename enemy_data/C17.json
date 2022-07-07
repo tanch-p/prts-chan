@@ -59,7 +59,7 @@
 			{
 				"tooltip": {
 					"simple": {
-						"en": ["Recovers 150hp/s"],
+						"en": ["Recovers 150 hp/s"],
 						"jp": ["毎秒HP150回復する"],
 						"cn": []
 					}

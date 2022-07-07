@@ -3,7 +3,12 @@ import Image from "next/image";
 import { parseRemarks } from "@/lib/parseRemarks";
 import { useState, useEffect } from "react";
 import { parseType } from "../lib/parseType";
-import { parseAtkType, setOtherMods, getModdedStats } from "../lib/parseStats";
+import {
+	getAtkType,
+	parseAtkType,
+	setOtherMods,
+	getModdedStats,
+} from "../lib/parseStats";
 import { useAppContext } from "context/AppContext";
 import { v4 as uuidv4 } from "uuid";
 
@@ -50,19 +55,6 @@ export default function EnemySimple({
 		useAppContext();
 
 	const langPack = require(`../lang/${language}.json`);
-
-	const textAlign = (stat) => {
-		switch (stat) {
-			case "type":
-			case "atk":
-			case "remarks":
-			case "def":
-				return "text-left px-[5.5px]";
-
-			default:
-				return "text-center";
-		}
-	};
 
 	const getMinWidth = (stat) => {
 		switch (stat) {
@@ -432,17 +424,7 @@ export default function EnemySimple({
 											parseType(enemy["type"], language)
 										) : stat === "atk" ? (
 											enemy.id !== "MR" ? (
-												[
-													<p>{`${Math.round(statValue)} (${
-														format === "prisoner" && row === 1
-															? enemy.released.normal_attack.hits !== 1
-																? `x ${enemy.released.normal_attack.hits}`
-																: ""
-															: enemy.normal_attack.hits !== 1
-															? `x ${enemy.normal_attack.hits}`
-															: ""
-													})`}</p>,
-												].concat(
+												[].concat(
 													parseSpecial(enemy, stat, entry, statValue, row)
 												)
 											) : (
@@ -584,19 +566,22 @@ export default function EnemySimple({
 					<div></div>
 					<div className="">
 						<div id="table-wrapper">
-							<table>
+							<table className="border border-gray-400 border-collapse">
 								<colgroup></colgroup>
 								<thead>
 									<tr>
 										{filteredTableHeaders.map(({ key }) => (
-											<th key={key}>
+											<th
+												key={key}
+												className="border border-gray-400 border-solid py-0.5 px-1.5 md:min-w-[50px]"
+											>
 												<span>{langPack.enemy_stats[key]}</span>
 											</th>
 										))}
 									</tr>
 								</thead>
 								<tbody>
-									{mapConfig.enemies.map(({ id, stats }) => {
+									{mapConfig.enemies.map(({ id, stats }, index) => {
 										const enemy = require(`/enemy_data/${id}.json`);
 										const format = enemy?.format ?? "normal";
 										const maxRowSpan =
@@ -623,7 +608,12 @@ export default function EnemySimple({
 												row
 											);
 											trArr.push(
-												<tr key={id + row}>
+												<tr
+													key={id + row}
+													className={`${
+														index % 2 === 1 ? " dark:bg-[#333333]" : ""
+													}`}
+												>
 													{statsToMap.map(({ key: stat }) => {
 														let rowSpan = 1;
 														if (format !== "normal")
@@ -654,7 +644,7 @@ export default function EnemySimple({
 																		{moddedStats[stat]}
 																		<span>
 																			{parseAtkType(
-																				enemy.normal_attack,
+																				getAtkType(enemy, format, row),
 																				language,
 																				langPack
 																			)}
@@ -676,7 +666,13 @@ export default function EnemySimple({
 																break;
 														}
 														return (
-															<td key={`${id}-${stat}`} rowSpan={rowSpan}>
+															<td
+																key={`${id}-${stat}`}
+																rowSpan={rowSpan}
+																className={`border border-gray-400 h-[65px] ${textAlign(
+																	stat
+																)}`}
+															>
 																<div>{returnContainer}</div>
 															</td>
 														);
@@ -717,3 +713,18 @@ export default function EnemySimple({
 		</>
 	);
 }
+
+const textAlign = (stat) => {
+	switch (stat) {
+		case "hp":
+			return "text-center px-3";
+		case "type":
+		case "atk":
+			return "text-left px-3";
+
+		case "remarks":
+			return "text-left px-2 py-2";
+		default:
+			return "text-center";
+	}
+};
