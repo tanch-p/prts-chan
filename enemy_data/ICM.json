@@ -15,22 +15,18 @@
 			"aspd%": "100",
 			"aspd": "6",
 			"range": "0",
-			
 			"weight": "4",
-			"lifepoint":1,"ms": "0.6",
+			"lifepoint": 3,
+			"ms": "0.6",
 			"special": [
 				{
-					"name": "freeze_hit",
-					"type": "others",
+					"name": "ice_pick",
+					"type": "atk",
+					"multiplier": 2.5,
 					"tooltip": {
 						"simple": {
-							"en": ["Attacks freeze enemy"],
-							"jp": ["通常攻撃"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
+							"en": ["Deals 250% damage to frozen units"],
+							"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が250%まで上昇"],
 							"cn": []
 						}
 					}
@@ -47,11 +43,9 @@
 	"凍結耐性": "無",
 	"type": ["melee", "boss"],
 	"powerup": {
-		"atk": 1.8,
-		"aspd": 2,
-		"lifepoint":1,"ms": 1.5,
+		"state_name": "rage",
+		"mods": { "aspd": 2, "ms": 2 },
 		"normal_attack": {
-			"state_name": "rage",
 			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},
@@ -59,8 +53,8 @@
 			{
 				"tooltip": {
 					"simple": {
-						"en": [ "Move speed+150%"],
-						"jp": [ "移動速度＋150％"],
+						"en": ["Move speed+150%"],
+						"jp": ["移動速度＋150％"],
 						"cn": []
 					}
 				}

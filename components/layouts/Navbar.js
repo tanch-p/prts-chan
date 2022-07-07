@@ -8,7 +8,7 @@ import FloorTitle from "../IS/Floor_title";
 const IS_THEMES = ["phcs"];
 
 export const Navbar = ({ open, setOpen, device, theme }) => {
-	const { language, setLanguage } = useAppContext();
+	const { language, setLanguage, hallucinations } = useAppContext();
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	const languageOptions = [
@@ -20,7 +20,7 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 	const getThemeStyles = (theme) => {
 		switch (theme) {
 			case "phcs":
-				return "bg-neutral-800 text-white fixed top-0 h-24";
+				return `bg-neutral-800 text-white fixed top-0 ${hallucinations.length >0 ? "h-24": "h-16"} `;
 			default:
 				return "bg-gray-200 text-gray-700 dark:bg-[#131313] dark:text-white border-b dark:border-none dark:shadow-lg border-gray-400";
 		}

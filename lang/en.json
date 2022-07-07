@@ -32,7 +32,7 @@
 		"atk": "atk",
 		"def": "def",
 		"res": "res",
-		"aspd": "aspd",
+		"aspd": "aspd /s",
 		"range": "range",
 		"weight": "weight",
 		"type": "type",
