@@ -3,6 +3,8 @@
 	"img": "ISW-NO_仪式之夜",
 	"theme": "phcs",
 	"floors": [5],
+	"count": "46~47",
+	"sp_count": "47",
 	"hard_mods": [
 		{
 			"targets": ["ALL"],
@@ -13,7 +15,6 @@
 			"text": "敌方单位的攻击力提升至120%，生命值提升至140%"
 		}
 	],
-	"count": "46~47",
 	"enemies": [
 		{ "id": "S7", "stats": "仪式之夜" },
 		{ "id": "S8", "stats": "level0" },

@@ -218,6 +218,28 @@
 		},
 		{
 			"name": {
+				"en": "苦痛的快乐",
+				"jp": "苦痛的快乐",
+				"cn": "苦痛的快乐"
+			},
+			"img": "苦痛的快乐",
+			"effects": [
+				{
+					"targets": ["ALL"],
+					"mods": {
+						"hp": "%85",
+						"ms": "%85"
+					}
+				}
+			],
+			"tooltip": {
+				"en": "All enemy units have -15 Attackspeed. ",
+				"jp": "",
+				"cn": "所有敌方单位的攻击速度-15"
+			}
+		},
+		{
+			"name": {
 				"en": "'Civilight Eterna'",
 				"jp": "",
 				"cn": "“文明的存续”"

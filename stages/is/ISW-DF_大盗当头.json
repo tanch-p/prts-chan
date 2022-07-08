@@ -1,0 +1,15 @@
+{
+	"name": { "en": "大盗当头", "jp": "大盗当头", "cn": "大盗当头" },
+	"img": "ISW-DF_大盗当头",
+	"theme": "phcs",
+	"floors": [3],
+	"count": "43",
+	"enemies": [
+		{ "id": "JTM", "count": "1", "stats": "大盗当头" },
+		{ "id": "D4", "count": "6", "stats": "大盗当头" },
+		{ "id": "D7", "count": "7", "stats": "大盗当头" },
+		{ "id": "C0", "count": "19", "stats": "大盗当头" },
+		{ "id": "C2", "count": "7", "stats": "大盗当头" },
+		{ "id": "C4", "count": "5", "stats": "大盗当头" }
+	]
+}

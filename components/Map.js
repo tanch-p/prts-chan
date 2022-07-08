@@ -11,7 +11,6 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 		device === "mobile" ? (1062 * 2) / 5 : Math.floor((1062 * 3) / 5);
 	const height =
 		device === "mobile" ? (600 * 2) / 5 : Math.floor((600 * 3) / 5);
-	const [hover, setHover] = useState(false);
 
 	return (
 		<>
@@ -20,39 +19,27 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 					{mapConfig.name[language]}
 				</div>
 				<div className="">
-					<div
-						className="md:h-[360px] relative select-none z-0"
-						onMouseEnter={() => setHover(true)}
-						onMouseLeave={() => setHover(false)}
-					>
+					<div className="md:h-[360px] relative select-none z-0">
 						<div
 							className={`absolute flex flex-col items-center justify-center bg-neutral-800 transition-opacity ${
-								hover ? "opacity-[.85]" : "opacity-0"
+								false ? "opacity-[.85]" : "opacity-0"
 							}  h-full w-full z-10`}
 						>
 							{mapConfig.hasOwnProperty("sp_count") && (
 								<div className="flex items-center relative h-[75px] bg-neutral-900 bg-opacity-80 pr-4">
-									<Image
-										src={DLDGPN}
-										height="75px"
-										width="75px"
-										layout="intrinsic"
-										alt="sp enemy"
-										className="bg-[#0a0a0a]"
-									/>
-
-									<p className=" flex items-center text-3xl h-full pl-3">
-										<span className="">-</span>{" "}
-										<Image
-											src={enemy_count}
-											layout="intrinsic"
-											alt="map enemy count"
-											className=""
-										/>
-										{mapConfig.sp_count}
-									</p>
+									<p className=" flex items-center text-3xl h-full pl-3"></p>
 								</div>
 							)}
+						</div>
+						<div className="absolute left-[50%] -translate-x-[50%] z-[5] bg-neutral-900 bg-opacity-80 pl-2 pr-4 py-2 flex items-center">
+							<Image
+								src={enemy_count}
+								layout="intrinsic"
+								alt="map enemy count"
+								className=""
+								unoptimized
+							/>
+							<p>{mapConfig.count}</p>
 						</div>
 						<div className="absolute flex items-center bg-neutral-900 bg-opacity-80 hover:opacity-10 p-2 right-0 bottom-[20%]  z-[5]">
 							<Image
@@ -76,7 +63,19 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 					</div>
 					<div></div>
 				</div>
-				<div className="w-[100vw] md:w-full">{/* <h2>Map stats</h2> */}</div>
+				<div className="w-[100vw] md:w-full">
+					<div className="flex justify-center items-center gap-x-5">
+						<Image
+							src={DLDGPN}
+							height="75px"
+							width="75px"
+							layout="fixed"
+							alt="sp enemy"
+							className="bg-[#0a0a0a]"
+						/>
+						{mapConfig.sp_count}
+					</div>
+				</div>
 			</div>
 		</>
 	);

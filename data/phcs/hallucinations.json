@@ -5,7 +5,7 @@
 		"effects": [
 			{
 				"targets": ["ALL"],
-				"mods": { "lifepoint": "x2" }
+				"mods": { "lifepoint": "2" }
 			}
 		],
 		"tooltip": {

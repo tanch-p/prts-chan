@@ -22,6 +22,15 @@
 		{ "id": "C11", "stats": "level0" },
 		{ "id": "C13", "stats": "level0" },
 		{ "id": "C15", "stats": "感化" },
+		{ "id": "C17", "stats": "level0" },
+		{ "id": "DLD", "stats": "level1" },
+		{ "id": "GPN", "stats": "level1" }
+	],
+	"hard_enemies": [
+		{ "id": "CS1", "stats": "level0" },
+		{ "id": "CS4", "stats": "level0" },
+		{ "id": "C11", "stats": "level0" },
+		{ "id": "C13", "stats": "level0" },
 		{ "id": "C16", "stats": "感化" },
 		{ "id": "C17", "stats": "level0" },
 		{ "id": "DLD", "stats": "level1" },

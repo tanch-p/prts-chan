@@ -41,11 +41,11 @@ export default function EnemySimple({
 		{ key: "res", show: true },
 		{ key: "weight", show: true },
 		{ key: "ms", show: false },
-		{ key: "lifepoint", show: false },
+		{ key: "lifepoint", show: true },
 		{ key: "remarks", show: true },
 	]);
 	const [multipliers, setMultipliers] = useState({
-		ALL: {},
+		ALL: { hp: 1, atk: 1, def: 1, res: 0, aspd: 1, ms: 1, range: 1, weight: 0 },
 	});
 	const [specialMods, setSpecialMods] = useState({});
 	console.log("spMods", specialMods);
@@ -174,17 +174,7 @@ export default function EnemySimple({
 		);
 	};
 
-	const getRowSpan = (format, stat, maxRowSpan) => {
-		switch (format) {
-			case "powerup":
-			case "prisoner":
-				return powerupOddRows.includes(stat) ? maxRowSpan : 1;
-			case "multiform":
-				return multiformOddRows.includes(stat) ? maxRowSpan : 1;
-			default:
-				return 1;
-		}
-	};
+	
 
 	const getAtk = (enemy, stats, base_stat) => {
 		let returnArr = [];
@@ -381,12 +371,10 @@ export default function EnemySimple({
 		updateMultiplier();
 	}, [hallucinations, selectedHardRelic, selectedNormalRelic]);
 
-	const enemies = {};
-	for (const { id, stats } of mapConfig.enemies) {
-		const enemy = require(`/enemy_data/${id}.json`);
-		enemies[enemy.id] = getModdedStats(enemy, stats, multipliers);
-	}
-	console.log(enemies);
+	const enemies =
+		mode === "hard"
+			? mapConfig.hard_enemies ?? mapConfig.enemies
+			: mapConfig.enemies;
 
 	const filteredTableHeaders = tableHeaders.filter((ele) => ele.show);
 
@@ -406,7 +394,7 @@ export default function EnemySimple({
 					<div></div>
 					<div className="">
 						<div id="table-wrapper">
-							<table className="border border-gray-400 border-collapse">
+							<table className="border border-gray-400 border-collapse ">
 								<colgroup></colgroup>
 								<thead>
 									<tr>
@@ -421,7 +409,7 @@ export default function EnemySimple({
 									</tr>
 								</thead>
 								<tbody>
-									{mapConfig.enemies.map(({ id, stats }, index) => {
+									{enemies.map(({ id, stats }, index) => {
 										const enemy = require(`/enemy_data/${id}.json`);
 										const format = enemy?.format ?? "normal";
 										const maxRowSpan =
@@ -544,5 +532,17 @@ const textAlign = (stat) => {
 			return "text-left px-2 py-2";
 		default:
 			return "text-center";
+	}
+};
+
+const getRowSpan = (format, stat, maxRowSpan) => {
+	switch (format) {
+		case "powerup":
+		case "prisoner":
+			return powerupOddRows.includes(stat) ? maxRowSpan : 1;
+		case "multiform":
+			return multiformOddRows.includes(stat) ? maxRowSpan : 1;
+		default:
+			return 1;
 	}
 };
