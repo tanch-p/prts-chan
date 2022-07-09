@@ -1,8 +1,6 @@
 import Image from "next/image";
 import relicIcon from "@/public/images/phcs/relic.png";
-import combat from "@/public/images/misc/combat.png";
-import boss from "@/public/images/misc/boss.png";
-import encount from "@/public/images/misc/encount.png";
+
 import phcs_text_logo from "@/public/images/phcs/phcs_text_logo.png";
 import Overlay from "./Overlay";
 import useToggle from "../../hooks/useToggle";
@@ -71,6 +69,7 @@ export default function FooterBar() {
 									src={phcs_text_logo}
 									layout="fixed"
 									alt="phantom & phantom solitaire"
+									className="brightness-110 "
 									unoptimized
 								/>
 							</div>

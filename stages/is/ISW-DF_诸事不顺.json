@@ -1,0 +1,15 @@
+{
+	"name": { "en": "诸事不顺", "jp": "诸事不顺", "cn": "诸事不顺" },
+	"img": "ISW-DF_诸事不顺",
+	"theme": "phcs",
+	"floors": [6],
+	"count": "55",
+	"enemies": [
+		{ "id": "CS1", "count": "16", "stats": "level0" },
+		{ "id": "CS2", "count": "4", "stats": "level0" },
+		{ "id": "CS3", "count": "2", "stats": "level0" },
+		{ "id": "HST", "count": "1", "stats": "level0" },
+		{ "id": "L2", "count": "24", "stats": "level0" },
+		{ "id": "L9", "count": "8", "stats": "level0" }
+	]
+}

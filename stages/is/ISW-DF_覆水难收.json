@@ -1,0 +1,17 @@
+{
+	"name": { "en": "覆水难收", "jp": "覆水难收", "cn": "覆水难收" },
+	"img": "ISW-DF_覆水难收",
+	"theme": "phcs",
+	"floors": [5],
+	"count": "80",
+	"enemies": [
+		{ "id": "CS1", "count": "12", "stats": "level0" },
+		{ "id": "CS2", "count": "17", "stats": "level0" },
+		{ "id": "CS4", "count": "13", "stats": "level0" },
+		{ "id": "L4", "count": "28", "stats": "level0" },
+		{ "id": "L10", "count": "4", "stats": "level0" },
+		{ "id": "10", "count": "5", "stats": "level0" },
+		{ "id": "PTM", "count": "1", "stats": "level0" },
+		{ "id": "PTS", "count": "0", "stats": "level0" }
+	]
+}

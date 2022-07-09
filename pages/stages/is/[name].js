@@ -7,12 +7,15 @@ import { useState, useEffect } from "react";
 import { useAppContext } from "context/AppContext";
 import { TabComponent } from "@/components/Tabs";
 import FooterBar from "@/components/IS/Footer_bar";
+import FloorNavigation from "@/components/IS/Floor_navigation";
 
 export async function getStaticProps({ params }) {
+	const stagesList = getAllStageIds("is");
 	const stageData = await getStageData(params.name, "is");
 	return {
 		props: {
 			stageData,
+			stagesList,
 		},
 	};
 }
@@ -34,7 +37,7 @@ export async function getStaticPaths() {
 	};
 }
 
-export default function Stage({ stageData }) {
+export default function Stage({ stageData, stagesList }) {
 	// console.log(stageData);
 	const { language, floor, setFloor, device } = useAppContext();
 	const { mapConfig } = stageData;
@@ -110,6 +113,10 @@ export default function Stage({ stageData }) {
 					/>
 				</div>
 			)}
+			<FloorNavigation
+				stagesList={stagesList}
+				floor={floor}
+			/>
 			<FooterBar />
 		</Layout>
 	);
