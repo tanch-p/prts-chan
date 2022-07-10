@@ -1,0 +1,28 @@
+{
+	"name": { "en": "危机四伏", "jp": "危机四伏", "cn": "危机四伏" },
+	"img": "ISW-NO_危机四伏",
+	"theme": "phcs",
+	"floors": [5],
+	"count": "40~41",
+	"sp_count": "41",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%120",
+				"def": "%120",
+				"hp": "%150"
+			},
+			"text": "敌方单位的攻击力和防御力都提升至120%，生命值提升至150% "
+		}
+	],
+	"enemies": [
+		{ "id": "13", "count": "9", "stats": "危机四伏" },
+		{ "id": "16", "count": "6", "stats": "危机四伏" },
+		{ "id": "G17", "count": "7", "stats": "危机四伏" },
+		{ "id": "04", "count": "18", "stats": "危机四伏" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
+	]
+}

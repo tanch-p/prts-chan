@@ -1,0 +1,35 @@
+{
+	"name": { "en": "礼炮小队", "jp": "礼炮小队", "cn": "礼炮小队" },
+	"img": "ISW-NO_礼炮小队",
+	"theme": "phcs",
+	"floors": [1, 2],
+	"count": "32~35",
+	"sp_count": "35: 100%",
+	"initial_cost": "20",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%145",
+				"hp": "%160"
+			},
+			"text": "敌方单位的攻击力提升至145%，生命值提升至160%"
+		}
+	],
+	"enemies": [
+		{ "id": "01", "count": "30", "stats": "level0" },
+		{ "id": "A7", "count": "2", "stats": "礼炮小队" },
+		{ "id": "B2", "count": "4", "stats": "level0" },
+		{ "id": "B6", "count": "2", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level0" },
+		{ "id": "GPN", "count": "1", "stats": "level0" }
+	],
+	"hard_enemies": [
+		{ "id": "01", "count": "30", "stats": "level0" },
+		{ "id": "A8", "count": "2", "stats": "礼炮小队" },
+		{ "id": "B2", "count": "4", "stats": "level0" },
+		{ "id": "B6", "count": "2", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level0" },
+		{ "id": "GPN", "count": "1", "stats": "level0" }
+	]
+}

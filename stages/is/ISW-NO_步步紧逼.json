@@ -1,0 +1,29 @@
+{
+	"name": { "en": "步步紧逼", "jp": "步步紧逼", "cn": "步步紧逼" },
+	"img": "ISW-NO_步步紧逼",
+	"theme": "phcs",
+	"floors": [4],
+	"count": "36~37",
+	"sp_count": "37",
+	"initial_cost": "40",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%120",
+				"def": "%110",
+				"hp": "%130"
+			},
+			"text": "敌方单位的攻击力提升至120%，防御力提升至110%，生命值提升至130%"
+		}
+	],
+	"enemies": [
+		{ "id": "07", "count": "14", "stats": "level0" },
+		{ "id": "36", "count": "4", "stats": "猩红孤钻" },
+		{ "id": "D8", "count": "7", "stats": "猩红孤钻" },
+		{ "id": "35", "count": "4", "stats": "level0" },
+		{ "id": "24", "count": "10", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level0" },
+		{ "id": "GPN", "count": "1", "stats": "level0" }
+	]
+}

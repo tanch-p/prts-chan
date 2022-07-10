@@ -4,6 +4,7 @@
 	"theme": "phcs",
 	"floors": [3],
 	"count": "16",
+	"initial_cost": "10",
 	"enemies": [
 		{ "id": "FSK", "count": "1", "stats": "恐怖传说" },
 		{ "id": "27", "count": "7", "stats": "恐怖传说" },

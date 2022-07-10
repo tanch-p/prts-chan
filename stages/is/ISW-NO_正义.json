@@ -1,0 +1,45 @@
+{
+	"name": { "en": "正义", "jp": "正义", "cn": "正义" },
+	"img": "ISW-NO_正义",
+	"theme": "phcs",
+	"floors": [3],
+	"count": "66~67",
+	"sp_count": "67",
+	"initial_cost": "25",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%120",
+				"hp": "%120"
+			},
+			"text": "敌方单位的攻击力和生命值都提升至120%,乌萨斯突袭弩手被替换为乌萨斯高级突袭弩手，乌萨斯突击者被替换为乌萨斯突击队队长"
+		}
+	],
+	"enemies": [
+		{ "id": "U16", "count": "8", "stats": "level0" },
+		{ "id": "U1", "count": "20", "stats": "level0" },
+		{ "id": "U2", "count": "3", "stats": "level0" },
+		{ "id": "U5", "count": "6", "stats": "level0" },
+		{ "id": "U6", "count": "0 ~ 1", "stats": "level0" },
+		{ "id": "B8", "count": "2", "stats": "正义" },
+		{ "id": "U9", "count": "6", "stats": "正义" },
+		{ "id": "U10", "count": "1", "stats": "正义" },
+		{ "id": "U7", "count": "2", "stats": "正义" },
+		{ "id": "B3", "count": "22", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	],
+	"hard_enemies": [
+		{ "id": "U16", "count": "8", "stats": "level0" },
+		{ "id": "U1", "count": "20", "stats": "level0" },
+		{ "id": "U2", "count": "3", "stats": "level0" },
+		{ "id": "U6", "count": "7", "stats": "level0" },
+		{ "id": "B8", "count": "2", "stats": "正义" },
+		{ "id": "U10", "count": "7", "stats": "正义" },
+		{ "id": "U7", "count": "2", "stats": "正义" },
+		{ "id": "B3", "count": "22", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	]
+}

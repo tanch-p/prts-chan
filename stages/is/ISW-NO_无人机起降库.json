@@ -1,0 +1,32 @@
+{
+	"name": { "en": "无人机起降库", "jp": "无人机起降库", "cn": "无人机起降库" },
+	"img": "ISW-NO_无人机起降库",
+	"theme": "phcs",
+	"floors": [5],
+	"count": "64~66",
+	"sp_count": "66: 100%",
+	"initial_cost": "25",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%110",
+				"def": "%110",
+				"hp": "%135"
+			},
+			"text": "敌方单位的攻击力和防御力都提升至110%，生命值提升至135%"
+		}
+	],
+	"enemies": [
+		{ "id": "D1", "count": "24", "stats": "无人机起降库" },
+		{ "id": "D3", "count": "1", "stats": "无人机起降库" },
+		{ "id": "D7", "count": "13", "stats": "无人机起降库" },
+		{ "id": "D8", "count": "1", "stats": "无人机起降库" },
+		{ "id": "D4", "count": "4", "stats": "无人机起降库" },
+		{ "id": "25", "count": "4", "stats": "无人机起降库" },
+		{ "id": "01", "count": "16", "stats": "无人机起降库" },
+		{ "id": "A2", "count": "10", "stats": "无人机起降库" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
+	]
+}

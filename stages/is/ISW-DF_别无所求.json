@@ -4,6 +4,7 @@
 	"theme": "phcs",
 	"floors": [5],
 	"count": "1",
+	"initial_cost": "10",
 	"enemies": [
 		{ "id": "K2", "count": "0", "stats": "level0" },
 		{ "id": "L12", "count": "0", "stats": "level0" },

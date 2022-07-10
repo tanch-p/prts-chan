@@ -1,0 +1,44 @@
+{
+	"name": { "en": "乌萨斯的渴求", "jp": "乌萨斯的渴求", "cn": "乌萨斯的渴求" },
+	"img": "ISW-NO_乌萨斯的渴求",
+	"theme": "phcs",
+	"floors": [6],
+	"count": "40~41",
+	"hard_count": "42~43",
+	"sp_count": "41",
+	"hard_sp_count": "43",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%125",
+				"def": "%110",
+				"hp": "%140"
+			},
+			"text": "敌方单位的攻击力提升至125%，防御力提升至110%，生命值提升至140%,帝国炮火先兆者被替换为帝国炮火中枢先兆者，额外出现2个帝国炮火中枢先兆者"
+		}
+	],
+	"enemies": [
+		{ "id": "U11", "count": "3", "stats": "乌萨斯的渴求" },
+		{ "id": "SP1", "count": "4", "stats": "乌萨斯的渴求" },
+		{ "id": "CS3", "count": "3", "stats": "乌萨斯的渴求" },
+		{ "id": "S10", "count": "9", "stats": "乌萨斯的渴求" },
+		{ "id": "39", "count": "4", "stats": "乌萨斯的渴求" },
+		{ "id": "U10", "count": "6", "stats": "level0" },
+		{ "id": "U4", "count": "13", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
+	],
+	"hard_enemies": [
+		{ "id": "U12", "count": "5", "stats": "乌萨斯的渴求" },
+		{ "id": "SP1", "count": "4", "stats": "乌萨斯的渴求" },
+		{ "id": "CS3", "count": "3", "stats": "乌萨斯的渴求" },
+		{ "id": "S10", "count": "9", "stats": "乌萨斯的渴求" },
+		{ "id": "39", "count": "4", "stats": "乌萨斯的渴求" },
+		{ "id": "U10", "count": "6", "stats": "level0" },
+		{ "id": "U4", "count": "13", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
+	]
+}

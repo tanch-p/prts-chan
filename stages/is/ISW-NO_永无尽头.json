@@ -1,0 +1,25 @@
+{
+	"name": { "en": "永无尽头", "jp": "永无尽头", "cn": "永无尽头" },
+	"img": "ISW-NO_永无尽头",
+	"theme": "phcs",
+	"floors": [4],
+	"count": "31~32",
+	"sp_count": "32",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"hp": "%120",
+				"ms": "%130"
+			},
+			"text": "敌方单位的生命值提升至120%，移动速度提升至130%"
+		}
+	],
+	"enemies": [
+		{ "id": "S9", "count": "5", "stats": "永无尽头" },
+		{ "id": "S10", "count": "26", "stats": "永无尽头" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	]
+}

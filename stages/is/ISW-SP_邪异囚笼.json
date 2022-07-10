@@ -3,8 +3,9 @@
 	"img": "ISW-SP_邪异囚笼",
 	"theme": "phcs",
 	"floors": [2, 3, 4],
+	"count": "8",
 	"enemies": [
-		{ "id": "G20", "stats": "邪异囚笼" },
-		{ "id": "S2", "stats": "邪异囚笼" }
+		{ "id": "G20", "count": "4","stats": "邪异囚笼" },
+		{ "id": "S2", "count": "4","stats": "邪异囚笼" }
 	]
 }

@@ -14,9 +14,10 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.85",
+			"lifepoint": 1,
+			"ms": "0.85",
 			"special": [
 				{
 					"type": "others",
@@ -30,7 +31,7 @@
 				}
 			]
 		},
-		"猩红孤钻": {
+		"驯兽小屋": {
 			"hp": "10000",
 			"atk": "480",
 			"def": "200",
@@ -38,9 +39,10 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.85",
+			"lifepoint": 1,
+			"ms": "0.85",
 			"special": [
 				{
 					"type": "others",
@@ -56,7 +58,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Melee/Arts", "jp": "近・術", "cn": "近・法术" },
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

@@ -1,0 +1,38 @@
+{
+	"name": { "en": "分赃不均", "jp": "分赃不均", "cn": "分赃不均" },
+	"img": "ISW-NO_分赃不均",
+	"theme": "phcs",
+	"floors": [2],
+	"count": "26~27",
+	"sp_count": "27",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%130",
+				"def": "%120",
+				"hp": "%140"
+			},
+			"text": "敌方单位的攻击力提升至130%，防御力提升至120%，生命值提升至140%,高阶术师被替换为护盾高阶术师，特战术师被替换为特战术师组长"
+		}
+	],
+	"enemies": [
+		{ "id": "CS", "count": "1", "stats": "分赃不均" },
+		{ "id": "34", "count": "12", "stats": "level0" },
+		{ "id": "19", "count": "9", "stats": "level0" },
+		{ "id": "A5", "count": "4", "stats": "分赃不均" },
+		{ "id": "AL1", "count": "4", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	],
+	"hard_enemies": [
+		{ "id": "CS", "count": "1", "stats": "分赃不均" },	
+		{ "id": "34", "count": "12", "stats": "level0" },
+		{ "id": "19", "count": "9", "stats": "level0" },
+		{ "id": "A-7", "count": "4", "stats": "level0" },
+		{ "id": "AL2", "count": "4", "stats": "分赃不均" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	]
+}

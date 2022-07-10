@@ -16,13 +16,13 @@
 		}
 	],
 	"enemies": [
-		{ "id": "S7", "stats": "仪式之夜" },
-		{ "id": "S8", "stats": "level0" },
-		{ "id": "S1", "stats": "仪式之夜" },
-		{ "id": "S13", "stats": "level0" },
-		{ "id": "S15", "stats": "仪式之夜" },
-		{ "id": "S5", "stats": "level0" },
-		{ "id": "DLD", "stats": "level2" },
-		{ "id": "GPN", "stats": "level2" }
+		{ "id": "S7", "count": "23", "stats": "仪式之夜" },
+		{ "id": "S8", "count": "0", "stats": "level0" },
+		{ "id": "S1", "count": "12", "stats": "仪式之夜" },
+		{ "id": "S13", "count": "4", "stats": "level0" },
+		{ "id": "S15", "count": "6", "stats": "仪式之夜" },
+		{ "id": "S5", "count": "2", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
 	]
 }

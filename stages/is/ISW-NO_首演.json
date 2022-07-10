@@ -1,0 +1,34 @@
+{
+	"name": { "en": "首演", "jp": "首演", "cn": "首演" },
+	"img": "ISW-NO_首演",
+	"theme": "phcs",
+	"floors": [3],
+	"count": "31~32",
+	"sp_count": "32",
+	"initial_cost": "7",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%115",
+				"hp": "%115"
+			},
+			"text": "敌方单位的攻击力和生命值都提升至115%,绯红歌伶的防御力提升至150%"
+		},
+		{
+			"targets": ["CS2"],
+			"mods": {
+				"def": "%150"
+			}
+		}
+	],
+	"enemies": [
+		{ "id": "CS2", "count": "2", "stats": "level0" },
+		{ "id": "CS1", "count": "4", "stats": "level0" },
+		{ "id": "O1", "count": "9", "stats": "level0" },
+		{ "id": "25", "count": "10", "stats": "level0" },
+		{ "id": "21", "count": "12", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level0" },
+		{ "id": "GPN", "count": "1", "stats": "level0" }
+	]
+}

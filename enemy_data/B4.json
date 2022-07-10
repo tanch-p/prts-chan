@@ -14,13 +14,13 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "1.8",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "1",
+			"ms": "1",
 			"lifepoint": 1,
 			"special": []
 		},
-		"猩红孤钻": {
+		"与虫为伴": {
 			"hp": "2080",
 			"atk": "100",
 			"def": "80",
@@ -28,9 +28,9 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "1.8",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "1",
+			"ms": "1",
 			"lifepoint": 1,
 			"special": []
 		}

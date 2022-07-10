@@ -2,9 +2,10 @@
 	"name": { "en": "ISW-NO_意外", "jp": "ISW-NO_意外", "cn": "ISW-NO_意外" },
 	"img": "ISW-NO_意外",
 	"theme": "phcs",
-	"floors": [1,2],
+	"floors": [1, 2],
 	"count": "44~45",
 	"sp_count": "45",
+	"initial_cost": "10",
 	"hard_mods": [
 		{
 			"targets": ["ALL"],
@@ -17,19 +18,19 @@
 		}
 	],
 	"enemies": [
-		{ "id": "02", "stats": "level0" },
-		{ "id": "B8", "stats": "level0" },
-		{ "id": "B1", "stats": "level0" },
-		{ "id": "A9", "stats": "level0" },
-		{ "id": "DLD", "stats": "level0" },
-		{ "id": "GPN", "stats": "level0" }
+		{ "id": "02", "count": "22", "stats": "level0" },
+		{ "id": "B8", "count": "4", "stats": "level0" },
+		{ "id": "B1", "count": "11", "stats": "level0" },
+		{ "id": "A9", "count": "7", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level0" },
+		{ "id": "GPN", "count": "1", "stats": "level0" }
 	],
 	"hard_enemies": [
-		{ "id": "U5", "stats": "意外" },
-		{ "id": "B8", "stats": "level0" },
-		{ "id": "B1", "stats": "level0" },
-		{ "id": "A9", "stats": "level0" },
-		{ "id": "DLD", "stats": "level0" },
-		{ "id": "GPN", "stats": "level0" }
+		{ "id": "U5", "count": "22", "stats": "意外" },
+		{ "id": "B8", "count": "4", "stats": "level0" },
+		{ "id": "B1", "count": "11", "stats": "level0" },
+		{ "id": "A9", "count": "7", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level0" },
+		{ "id": "GPN", "count": "1", "stats": "level0" }
 	]
 }

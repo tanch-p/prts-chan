@@ -14,9 +14,9 @@
 			"aspd%": "100",
 			"aspd": "2.4",
 			"range": "2",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.9",
+			"lifepoint": 1,
+			"ms": "0.9",
 			"special": [
 				{
 					"name": "barrier",
@@ -36,7 +36,7 @@
 				}
 			]
 		},
-		"猩红孤钻": {
+		"与虫为伴": {
 			"hp": "2800",
 			"atk": "240",
 			"def": "100",
@@ -44,9 +44,9 @@
 			"aspd%": "100",
 			"aspd": "2.4",
 			"range": "2",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.9",
+			"lifepoint": 1,
+			"ms": "0.9",
 			"special": [
 				{
 					"name": "barrier",
@@ -74,9 +74,9 @@
 			"aspd%": "100",
 			"aspd": "2.4",
 			"range": "2",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.9",
+			"lifepoint": 1,
+			"ms": "0.9",
 			"special": [
 				{
 					"name": "barrier",
@@ -98,7 +98,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

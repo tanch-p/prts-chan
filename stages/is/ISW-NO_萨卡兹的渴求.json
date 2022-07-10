@@ -1,0 +1,29 @@
+{
+	"name": { "en": "萨卡兹的渴求", "jp": "萨卡兹的渴求", "cn": "萨卡兹的渴求" },
+	"img": "ISW-NO_萨卡兹的渴求",
+	"theme": "phcs",
+	"floors": [6],
+	"count": "55~56",
+	"sp_count": "56",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%120",
+				"hp": "%140"
+			},
+			"text": "敌方单位的攻击力提升至120%，生命值提升至140%,“小惊喜”的移动速度提升至300%"
+		}
+	],
+	"enemies": [
+		{ "id": "S16", "count": "10", "stats": "萨卡兹的渴求" },
+		{ "id": "S11", "count": "2", "stats": "level0" },
+		{ "id": "39", "count": "2", "stats": "萨卡兹的渴求" },
+		{ "id": "S8", "count": "29", "stats": "萨卡兹的渴求" },
+		{ "id": "S14", "count": "2", "stats": "level0" },
+		{ "id": "CS4", "count": "12", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
+	]
+}

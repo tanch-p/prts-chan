@@ -1,0 +1,40 @@
+{
+	"name": { "en": "巡逻队", "jp": "巡逻队", "cn": "巡逻队" },
+	"img": "ISW-NO_巡逻队",
+	"theme": "phcs",
+	"floors": [2],
+	"count": "33~35",
+	"sp_count": "35: 100%",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"def": "%130",
+				"hp": "%160"
+			},
+			"text": "敌方单位的攻击力和防御力都提升至130%，生命值提升至160%,提亚卡乌勇士和寻仇者的攻击力提升至140% "
+		},
+		{
+			"targets": ["T11", "14"],
+			"mods": {
+				"atk": "%140"
+			}
+		},
+		{
+			"targets": ["06", "01", "O2", "DLD", "GPN"],
+			"mods": {
+				"atk": "%130"
+			}
+		}
+	],
+	"enemies": [
+		{ "id": "T11", "count": "4", "stats": "巡逻队" },
+		{ "id": "14", "count": "4", "stats": "level0" },
+		{ "id": "06", "count": "8", "stats": "level0" },
+		{ "id": "01", "count": "14", "stats": "巡逻队" },
+		{ "id": "O2", "count": "8", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	]
+}

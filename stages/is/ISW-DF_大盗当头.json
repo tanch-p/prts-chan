@@ -4,6 +4,7 @@
 	"theme": "phcs",
 	"floors": [3],
 	"count": "43",
+	"initial_cost": "0",
 	"enemies": [
 		{ "id": "JTM", "count": "1", "stats": "大盗当头" },
 		{ "id": "D4", "count": "6", "stats": "大盗当头" },

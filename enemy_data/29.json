@@ -10,13 +10,13 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.7",
+			"ms": "0.7",
 			"lifepoint": 1,
 			"special": []
 		},
-		"猩红孤钻": {
+		"驯兽小屋": {
 			"hp": "11000",
 			"atk": "700",
 			"def": "200",
@@ -24,9 +24,9 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.7",
+			"ms": "0.7",
 			"lifepoint": 1,
 			"special": []
 		}

@@ -1,0 +1,45 @@
+{
+	"name": { "en": "落魄骑士", "jp": "落魄骑士", "cn": "落魄骑士" },
+	"img": "ISW-NO_落魄骑士",
+	"theme": "phcs",
+	"floors": [2],
+	"count": "19~22",
+	"sp_count": "22: 100%",
+	"initial_cost": "20",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%130",
+				"def": "%120",
+				"hp": "%130"
+			},
+			"text": "敌方单位的攻击力和生命值都提升至130%，防御力提升至120%,沸血骑士团学徒和沸血骑士团精锐获得隐匿"
+		},
+		{
+			"targets": ["K11,K10"],
+			"mods": {
+				"special": {
+					"extra": {
+						"name": "stealth",
+						"tooltip": {
+							"en": ["Stealth"],
+							"jp": ["ステルス"],
+							"cn": ["隐匿"]
+						}
+					}
+				}
+			}
+		}
+	],
+	"enemies": [
+		{ "id": "K11", "count": "1", "stats": "落魄骑士" },
+		{ "id": "K10", "count": "1", "stats": "落魄骑士" },
+		{ "id": "A-7", "count": "2", "stats": "level0" },
+		{ "id": "A5", "count": "2", "stats": "落魄骑士" },
+		{ "id": "K1", "count": "15", "stats": "level0" },
+		{ "id": "K3", "count": "4", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	]
+}

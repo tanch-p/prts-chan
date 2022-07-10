@@ -14,12 +14,12 @@
 			"aspd%": "100",
 			"aspd": "1.4",
 			"range": "0",
-			
 			"weight": "0",
-			"lifepoint":1,"ms": "1.9",
+			"lifepoint": 1,
+			"ms": "1.9",
 			"special": []
 		},
-		"猩红孤钻": {
+		"驯兽小屋": {
 			"hp": "2200",
 			"atk": "250",
 			"def": "0",
@@ -27,14 +27,14 @@
 			"aspd%": "100",
 			"aspd": "1.4",
 			"range": "0",
-			
 			"weight": "0",
-			"lifepoint":1,"ms": "1.9",
+			"lifepoint": 1,
+			"ms": "1.9",
 			"special": []
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

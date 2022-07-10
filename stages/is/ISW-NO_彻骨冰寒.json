@@ -1,0 +1,30 @@
+{
+	"name": { "en": "彻骨冰寒", "jp": "彻骨冰寒", "cn": "彻骨冰寒" },
+	"img": "ISW-NO_彻骨冰寒",
+	"theme": "phcs",
+	"floors": [5],
+	"count": "61~66",
+	"sp_count": "66: 100%",
+	"initial_cost": "0",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%115",
+				"def": "%110",
+				"hp": "%125"
+			},
+			"text": "敌方单位的攻击力提升至115%，防御力提升至110%，生命值提升至125%"
+		}
+	],
+	"enemies": [
+		{ "id": "B9", "count": "9", "stats": "level0" },
+		{ "id": "O4", "count": "25", "stats": "level0" },
+		{ "id": "Y1", "count": "24", "stats": "level0" },
+		{ "id": "Y4", "count": "4", "stats": "彻骨冰寒" },
+		{ "id": "D10", "count": "2", "stats": "level0" },
+		{ "id": "Y6", "count": "3", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
+	]
+}
