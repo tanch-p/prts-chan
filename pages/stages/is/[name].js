@@ -94,29 +94,28 @@ export default function Stage({ stageData, stagesList }) {
 			<Head>
 				<title>{mapConfig.name[language]}</title>
 			</Head>
-			<Map
-				mapConfig={mapConfig}
-				language={language}
-				device={device}
-				fontThemes={fontThemes}
-			/>
+			<div className="max-w-5xl">
+				<Map
+					mapConfig={mapConfig}
+					language={language}
+					device={device}
+					fontThemes={fontThemes}
+				/>
 
-			{mapConfig.hasOwnProperty("hard_mods") ? (
-				<TabComponent tabArr={tabArr} />
-			) : (
-				<div className="">
-					<EnemySimple
-						mapConfig={mapConfig}
-						language={language}
-						device={device}
-						fontThemes={fontThemes}
-					/>
-				</div>
-			)}
-			<FloorNavigation
-				stagesList={stagesList}
-				floor={floor}
-			/>
+				{mapConfig.hasOwnProperty("hard_mods") ? (
+					<TabComponent tabArr={tabArr} />
+				) : (
+					<div className="">
+						<EnemySimple
+							mapConfig={mapConfig}
+							language={language}
+							device={device}
+							fontThemes={fontThemes}
+						/>
+					</div>
+				)}
+				<FloorNavigation stagesList={stagesList} floor={floor} />
+			</div>
 			<FooterBar />
 		</Layout>
 	);

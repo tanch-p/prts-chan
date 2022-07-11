@@ -8,7 +8,7 @@
 	"enemies": [
 		{ "id": "WDG", "count": "1", "stats": "开门请当心" },
 		{ "id": "06", "count": "9", "stats": "开门请当心" },
-		{ "id": "A7", "count": "6", "stats": "开门请当心" },
+		{ "id": "A-7", "count": "6", "stats": "开门请当心" },
 		{ "id": "04", "count": "14", "stats": "开门请当心" },
 		{ "id": "09", "count": "4", "stats": "开门请当心" }
 	]

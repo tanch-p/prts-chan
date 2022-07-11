@@ -10,10 +10,9 @@
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-			
 			"weight": "2",
-			"lifepoint":1,"ms": "0.65",
 			"lifepoint": 1,
+			"ms": "0.65",
 			"special": [
 				{
 					"name": "avenger",
@@ -45,10 +44,10 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.65",
 			"lifepoint": 1,
+			"ms": "0.65",
 			"special": [
 				{
 					"name": "avenger",
@@ -80,10 +79,10 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.65",
 			"lifepoint": 1,
+			"ms": "0.65",
 			"special": [
 				{
 					"name": "avenger",

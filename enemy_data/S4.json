@@ -1,35 +1,31 @@
 {
-    "id": "S4",
-    "name_en": "Sarkaz Crossbowman Leader",
-    "name_jp": "サルカズ狙撃隊長",
-    "name_cn": "萨卡兹狙击组长",
-    "atk_type_jp": "物理",
-    "hp": "12000",
-    "atk": "570",
-    "def": "200",
-    "res": "50",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "2.2",
-    
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.8",
-    "type_jp": [
-        "遠距離",
-        "サルカズ"
-    ],
-    "type_en": [
-        "Ranged",
-        "Sarkaz"
-    ],
-    "type_cn": [
-        "远程",
-        "萨卡兹"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "S4",
+	"name": {
+		"en": "Sarkaz Crossbowman Leader",
+		"jp": "サルカズ狙撃隊長",
+		"cn": "萨卡兹狙击组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "12000",
+			"atk": "570",
+			"def": "200",
+			"res": "50",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "2.2",
+			"weight": "2",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "sarkaz"]
 }

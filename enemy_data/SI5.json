@@ -14,9 +14,9 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "2.2",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.9",
+			"lifepoint": 1,
+			"ms": "0.9",
 			"special": [
 				{
 					"type": "others",
@@ -33,7 +33,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

@@ -10,10 +10,10 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "1.3",
-			
+
 			"weight": "5",
-			"lifepoint":1,"ms": "0.5",
 			"lifepoint": 2,
+			"ms": "0.5",
 			"special": [
 				{
 					"name": "four_block",
@@ -49,10 +49,11 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "1.3",
-			
+
 			"weight": "5",
-			"lifepoint":1,"ms": "0.5",
 			"lifepoint": 2,
+			"ms": "0.5",
+
 			"special": [
 				{
 					"name": "four_block",

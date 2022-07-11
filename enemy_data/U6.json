@@ -21,7 +21,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

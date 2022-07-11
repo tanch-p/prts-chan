@@ -14,23 +14,12 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 
 	return (
 		<>
-			<div className="mt-2  text-xl max-w-5xl">
+			<div className="mt-2 text-xl w-max mx-auto">
 				<div className={` font-semibold ${fontThemes[language]}`}>
 					{mapConfig.name[language]}
 				</div>
 				<div className="">
-					<div className="md:h-[360px] relative select-none z-0">
-						<div
-							className={`absolute flex flex-col items-center justify-center bg-neutral-800 transition-opacity ${
-								false ? "opacity-[.85]" : "opacity-0"
-							}  h-full w-full z-10`}
-						>
-							{mapConfig.hasOwnProperty("sp_count") && (
-								<div className="flex items-center relative h-[75px] bg-neutral-900 bg-opacity-80 pr-4">
-									<p className=" flex items-center text-3xl h-full pl-3"></p>
-								</div>
-							)}
-						</div>
+					<div className="md:h-[360px] relative select-none z-0 flex justify-center">
 						<div className="absolute left-[50%] -translate-x-[50%] z-[5] bg-neutral-900 bg-opacity-80 pl-2 pr-4 py-2 flex items-center">
 							<Image
 								src={enemy_count}
@@ -41,7 +30,7 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 							/>
 							<p>{mapConfig.count}</p>
 						</div>
-						<div className="absolute flex items-center bg-neutral-900 bg-opacity-80 hover:opacity-10 p-2 right-0 bottom-[20%]  z-[5]">
+						<div className="absolute flex items-center bg-neutral-900 bg-opacity-80 p-2 right-0 bottom-[20%] z-[5]">
 							<Image
 								src={cost_icon}
 								height="30px"
@@ -50,7 +39,9 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 								alt="cost icon"
 								className=""
 							/>
-							<p className="pl-2 font-medium">{langPack.initial_cost} - 10</p>
+							<p className="pl-2 font-medium">
+								{langPack.initial_cost} - {mapConfig.initial_cost}
+							</p>
 						</div>
 						<Image
 							priority

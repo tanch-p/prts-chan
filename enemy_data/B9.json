@@ -17,7 +17,6 @@
 			
 			"weight": "0",
 			"lifepoint":1,"ms": "1",
-			"lifepoint": 1,
 			"special": []
 		},
 		"寒渊惜别": {
@@ -31,7 +30,6 @@
 			
 			"weight": "0",
 			"lifepoint":1,"ms": "1",
-			"lifepoint": 1,
 			"special": []
 		}
 	},

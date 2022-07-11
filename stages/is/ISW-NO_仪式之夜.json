@@ -5,6 +5,7 @@
 	"floors": [5],
 	"count": "46~47",
 	"sp_count": "47",
+	"initial_cost": "10",
 	"hard_mods": [
 		{
 			"targets": ["ALL"],

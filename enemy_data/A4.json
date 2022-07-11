@@ -17,7 +17,6 @@
 			
 			"weight": "1",
 			"lifepoint":1,"ms": "0.8",
-			"lifepoint": 1,
 			"special": []
 		},
 		"阴云笼罩": {
@@ -27,11 +26,9 @@
 			"res": "50",
 			"aspd%": "100",
 			"aspd": "4",
-			"range": "2",
-			
+			"range": "2",	
 			"weight": "1",
 			"lifepoint":1,"ms": "0.8",
-			"lifepoint": 1,
 			"special": []
 		}
 	},

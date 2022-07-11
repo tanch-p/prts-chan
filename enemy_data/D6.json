@@ -14,9 +14,10 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "2",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.6",
+			"lifepoint": 1,
+			"ms": "0.6",
 			"special": []
 		},
 		"酒商运输队": {
@@ -27,9 +28,10 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "2",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.6",
+			"lifepoint": 1,
+			"ms": "0.6",
 			"special": []
 		},
 		"烟花秀": {
@@ -40,14 +42,15 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "2",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.6",
+			"lifepoint": 1,
+			"ms": "0.6",
 			"special": []
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Bomb/Phys", "jp": "爆弾・物理", "cn": "炸弹・物理" },
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

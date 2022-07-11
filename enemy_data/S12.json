@@ -14,9 +14,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.5",
+			"lifepoint": 1,
+			"ms": "0.5",
 			"special": [
 				{
 					"name": "callforhelp",
@@ -39,7 +40,7 @@
 		}
 	},
 	"normal_attack": {
-		"atk_type":["no_attack"],
+		"atk_type": ["no_attack"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

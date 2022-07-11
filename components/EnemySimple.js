@@ -380,7 +380,7 @@ export default function EnemySimple({
 
 	return (
 		<>
-			<div className="w-[100vw] md:w-full z-[50]">
+			<div className="w-[100vw] md:w-full ">
 				<div className="grid auto-cols-auto gap-x-2">
 					{Object.keys(multipliers.ALL).map((ele) => (
 						<span key={ele}>

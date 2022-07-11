@@ -10,9 +10,10 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "2.5",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": [
 				{
 					"type": "others",
@@ -40,9 +41,10 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "2.5",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": [
 				{
 					"type": "others",
@@ -70,9 +72,10 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "2.5",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": [
 				{
 					"type": "others",

@@ -29,8 +29,8 @@
 		}
 	],
 	"enemies": [
-		{ "id": "T11", "count": "4", "stats": "巡逻队" },
-		{ "id": "14", "count": "4", "stats": "level0" },
+		{ "id": "T11", "count": "4", "stats": "level0" },
+		{ "id": "14", "count": "4", "stats": "巡逻队" },
 		{ "id": "06", "count": "8", "stats": "level0" },
 		{ "id": "01", "count": "14", "stats": "巡逻队" },
 		{ "id": "O2", "count": "8", "stats": "level0" },

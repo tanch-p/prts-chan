@@ -10,10 +10,9 @@
 			"aspd%": "100",
 			"aspd": "1.2",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.1",
 			"lifepoint": 1,
+			"ms": "1.1",
 			"special": []
 		},
 		"开门请当心": {
@@ -24,10 +23,9 @@
 			"aspd%": "100",
 			"aspd": "1.2",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.1",
 			"lifepoint": 1,
+			"ms": "1.1",
 			"special": []
 		},
 		"危机四伏": {
@@ -38,10 +36,9 @@
 			"aspd%": "100",
 			"aspd": "1.2",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.1",
 			"lifepoint": 1,
+			"ms": "1.1",
 			"special": []
 		}
 	},

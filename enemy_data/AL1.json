@@ -13,7 +13,6 @@
 			
 			"weight": "2",
 			"lifepoint":1,"ms": "0.8",
-			"lifepoint": 1,
 			"special": []
 		},
 		"第6区跡": {
@@ -27,7 +26,6 @@
 			
 			"weight": "2",
 			"lifepoint":1,"ms": "0.8",
-			"lifepoint": 1,
 			"special": []
 		},
 		"阴云笼罩": {
@@ -41,7 +39,6 @@
 			
 			"weight": "2",
 			"lifepoint":1,"ms": "0.8",
-			"lifepoint": 1,
 			"special": []
 		}
 	},

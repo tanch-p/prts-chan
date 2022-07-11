@@ -14,14 +14,15 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "2",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.6",
+			"lifepoint": 1,
+			"ms": "0.6",
 			"special": []
 		}
 	},
 	"normal_attack": {
-		"atk_type": ["bomb","phys"],
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

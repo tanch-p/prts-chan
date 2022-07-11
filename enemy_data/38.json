@@ -17,7 +17,6 @@
 			
 			"weight": "4",
 			"lifepoint":1,"ms": "0.6",
-			"lifepoint": 1,
 			"special": [
 				{
 					"name": "splash",
@@ -48,7 +47,6 @@
 			
 			"weight": "4",
 			"lifepoint":1,"ms": "0.6",
-			"lifepoint": 1,
 			"special": [
 				{
 					"name": "splash",

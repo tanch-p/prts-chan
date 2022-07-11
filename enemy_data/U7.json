@@ -14,9 +14,10 @@
 			"aspd%": "100",
 			"aspd": "2.8",
 			"range": "2.2",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.9",
+			"lifepoint": 1,
+			"ms": "0.9",
 			"special": []
 		},
 		"正义": {
@@ -27,23 +28,17 @@
 			"aspd%": "100",
 			"aspd": "2.8",
 			"range": "2.2",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.9",
+			"lifepoint": 1,
+			"ms": "0.9",
 			"special": []
 		}
 	},
 	"normal_attack": {
-		"type": {
-			"en": "Ranged/Arts",
-			"jp": "遠・術",
-			"cn": "远・法术"
-		},
+		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
-	"スタン耐性": "無",
-	"眠り耐性": "無",
-	"凍結耐性": "",
 
 	"type": ["ranged"]
 }

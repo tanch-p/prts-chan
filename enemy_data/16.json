@@ -17,7 +17,6 @@
 			
 			"weight": "1",
 			"lifepoint":1,"ms": "1.2",
-			"lifepoint": 1,
 			"special": [
 				{
 					"name": "no_block",
@@ -44,7 +43,6 @@
 			
 			"weight": "1",
 			"lifepoint":1,"ms": "1.2",
-			"lifepoint": 1,
 			"special": [
 				{
 					"name": "no_block",
@@ -71,7 +69,6 @@
 			
 			"weight": "1",
 			"lifepoint":1,"ms": "1.2",
-			"lifepoint": 1,
 			"special": [
 				{
 					"name": "no_block",

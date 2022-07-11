@@ -14,19 +14,31 @@
 			"aspd%": "100",
 			"aspd": "0",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.65",
-			"special": []
+			"lifepoint": 0,
+			"ms": "0.65",
+			"special": [
+				{
+					"name": "civ_death",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Friendly Unit→Reduces lifepoint by 1 when defeated",
+								"Cannot be healed"
+							],
+							"jp": ["要介護ユニット→死亡すると耐久値減る", "回復受け付けない"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		}
 	},
 
 	"normal_attack": {
-		"type": {
-			"en": "Does not attack",
-			"jp": "攻撃しない",
-			"cn": "不攻击"
-		},
+		"atk_type": ["no_attack"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

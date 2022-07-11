@@ -17,7 +17,6 @@
 			
 			"weight": "1",
 			"lifepoint":1,"ms": "0.9",
-			"lifepoint": 1,
 			"special": [
 				{
 					"name": "stealth",
@@ -43,7 +42,6 @@
 			
 			"weight": "1",
 			"lifepoint":1,"ms": "0.9",
-			"lifepoint": 1,
 			"special": [
 				{
 					"name": "stealth",

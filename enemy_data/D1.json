@@ -14,10 +14,10 @@
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "0.9",
 			"lifepoint": 1,
+			"ms": "0.9",
 			"special": []
 		},
 		"酒商运输队": {
@@ -28,10 +28,10 @@
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "0.9",
 			"lifepoint": 1,
+			"ms": "0.9",
 			"special": []
 		},
 		"无人机起降库": {
@@ -42,10 +42,10 @@
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "0.9",
 			"lifepoint": 1,
+			"ms": "0.9",
 			"special": []
 		}
 	},

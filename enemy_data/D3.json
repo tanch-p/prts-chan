@@ -17,7 +17,6 @@
 			
 			"weight": "0",
 			"lifepoint":1,"ms": "0.5",
-			"lifepoint": 1,
 			"special": []
 		},
 		"无人机起降库": {
@@ -31,7 +30,6 @@
 			
 			"weight": "0",
 			"lifepoint":1,"ms": "0.5",
-			"lifepoint": 1,
 			"special": []
 		}
 	},

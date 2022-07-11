@@ -17,7 +17,6 @@
 			
 			"weight": "4",
 			"lifepoint":1,"ms": "0.5",
-			"lifepoint": 1,
 			"special": [
 				{
 					"name": "stun_attack",

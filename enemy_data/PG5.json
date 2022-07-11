@@ -42,7 +42,8 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+		"atk_type": ["ranged", "arts"],
+
 		"hits": 1
 	},
 	"スタン耐性": "無",

@@ -20,7 +20,8 @@
 		}
 	],
 	"enemies": [
-		{ "id": "U11", "count": "3", "stats": "乌萨斯的渴求" },
+		{ "id": "U11", "count": "2 ~ 3", "stats": "乌萨斯的渴求" },
+		{ "id": "U12", "count": "0 ~ 1", "stats": "乌萨斯的渴求" },
 		{ "id": "SP1", "count": "4", "stats": "乌萨斯的渴求" },
 		{ "id": "CS3", "count": "3", "stats": "乌萨斯的渴求" },
 		{ "id": "S10", "count": "9", "stats": "乌萨斯的渴求" },

@@ -14,10 +14,10 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "0.6",
 			"lifepoint": 1,
+			"ms": "0.6",
 			"special": [
 				{
 					"name": "splash",
@@ -32,7 +32,7 @@
 				}
 			]
 		},
-		"萨卡兹的渴求 ": {
+		"萨卡兹的渴求": {
 			"hp": "30000",
 			"atk": "2200",
 			"def": "1000",
@@ -40,10 +40,9 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-			
 			"weight": "4",
-			"lifepoint":1,"ms": "0.6",
 			"lifepoint": 1,
+			"ms": "0.6",
 			"special": [
 				{
 					"name": "splash",
@@ -66,10 +65,10 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "0.6",
 			"lifepoint": 1,
+			"ms": "0.6",
 			"special": [
 				{
 					"name": "splash",

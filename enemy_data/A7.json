@@ -13,7 +13,6 @@
 			
 			"weight": "2",
 			"lifepoint":1,"ms": "0.8",
-			"lifepoint": 1,
 			"special": [
 				{
 					"type": "others",
@@ -41,7 +40,6 @@
 			
 			"weight": "2",
 			"lifepoint":1,"ms": "0.8",
-			"lifepoint": 1,
 			"special": [
 				{
 					"type": "others",

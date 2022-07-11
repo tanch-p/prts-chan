@@ -1,31 +1,32 @@
 {
-  "id": "K8",
-  "name": {
-    "en": "Independent Knight Shielder",
-    "jp": "盾持ち独立騎士",
-    "cn": "持盾独立骑士"
-  },
-  "stats": {
-    "level0": {
-      "hp": "8000",
-      "atk": "700",
-      "def": "1000",
-      "res": "0",
-      "aspd%": "100",
-      "aspd": "3",
-      "range": "0",
-      
-      "weight": "4",
-      "lifepoint":1,"ms": "0.7",
-      "special": []
-    }
-  },
-  "normal_attack": {
-    "type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": ["melee"]
+	"id": "K8",
+	"name": {
+		"en": "Independent Knight Shielder",
+		"jp": "盾持ち独立騎士",
+		"cn": "持盾独立骑士"
+	},
+	"stats": {
+		"level0": {
+			"hp": "8000",
+			"atk": "700",
+			"def": "1000",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "0",
+
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }

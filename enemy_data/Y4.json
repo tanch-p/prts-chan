@@ -10,10 +10,28 @@
 			"aspd%": "100",
 			"aspd": "4.5",
 			"range": "2.2",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.8",
-			"special": []
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": [
+				{
+					"name": "freeze_attack",
+					"type": "debuff",
+					"tooltip": {
+						"simple": {
+							"en": ["Every 3rd attack inflicts cold❄ for 10s"],
+							"jp": ["攻撃2回の度に次の攻撃に相手を10秒【寒冷❄】効果を与える"],
+							"cn": ["攻击2次后，下一次攻击会对攻击对目标施加持续10秒的寒冷❄"]
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
 		},
 		"彻骨冰寒": {
 			"hp": "7000",
@@ -23,10 +41,28 @@
 			"aspd%": "100",
 			"aspd": "4.5",
 			"range": "2.2",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.8",
-			"special": ["starts with skill active"]
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": [
+				{
+					"name": "freeze_attack",
+					"type": "debuff",
+					"tooltip": {
+						"simple": {
+							"en": ["Every 3rd attack inflicts cold❄ for 10s"],
+							"jp": ["攻撃2回の度に次の攻撃に相手を10秒【寒冷❄】効果を与える"],
+							"cn": ["攻击2次后，下一次攻击会对攻击对目标施加持续10秒的寒冷❄"]
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

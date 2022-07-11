@@ -10,10 +10,10 @@
 			"aspd%": "100",
 			"aspd": "3.3",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.75",
 			"lifepoint": 1,
+			"ms": "0.75",
 			"special": []
 		},
 		"斗兽笼": {
@@ -24,10 +24,10 @@
 			"aspd%": "100",
 			"aspd": "3.3",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.75",
 			"lifepoint": 1,
+			"ms": "0.75",
 			"special": []
 		},
 		"恐怖传说": {
@@ -38,10 +38,9 @@
 			"aspd%": "100",
 			"aspd": "3.3",
 			"range": "0",
-			
 			"weight": "3",
-			"lifepoint":1,"ms": "0.75",
 			"lifepoint": 1,
+			"ms": "0.75",
 			"special": []
 		}
 	},

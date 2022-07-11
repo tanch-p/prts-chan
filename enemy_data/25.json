@@ -10,10 +10,10 @@
 			"aspd%": "100",
 			"aspd": "1.5",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1",
 			"lifepoint": 1,
+			"ms": "1",
 			"special": []
 		},
 		"第6区跡": {
@@ -24,10 +24,10 @@
 			"aspd%": "100",
 			"aspd": "1.5",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1",
 			"lifepoint": 1,
+			"ms": "1",
 			"special": []
 		},
 		"无人机起降库": {
@@ -38,10 +38,9 @@
 			"aspd%": "100",
 			"aspd": "1.5",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1",
 			"lifepoint": 1,
+			"ms": "1",
 			"special": []
 		}
 	},

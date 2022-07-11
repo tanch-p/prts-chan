@@ -4,7 +4,16 @@ import hallucinationsList from "@/data/phcs/hallucinations.json";
 import { useState } from "react";
 import hallu_banner from "@/public/images/phcs/hallu-banner.png";
 
-const FLOOR_ROMAN_NUMERALS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
+export const FLOOR_ROMAN_NUMERALS = [
+	"I",
+	"II",
+	"III",
+	"IV",
+	"V",
+	"VI",
+	"VII",
+	"VIII",
+];
 
 const HallucationDiv = ({ text, selected, size }) => {
 	const selectedStyles = "bg-hallu-red";

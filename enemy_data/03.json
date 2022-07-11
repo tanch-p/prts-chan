@@ -10,10 +10,8 @@
             "aspd%": "100",
             "aspd": "1.9",
             "range": "0",
-            
             "weight": "0",
 			"lifepoint":1,"ms": "1",
-			"lifepoint": 1,
 			"special": []
 		}
 	},

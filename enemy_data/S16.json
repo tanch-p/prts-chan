@@ -14,17 +14,18 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.4",
+			"lifepoint": 1,
+			"ms": "0.4",
 			"special": [
 				{
 					"name": "standby",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": [],
+							"en": ["Does not attack while on standby"],
+							"jp": ["待機中攻撃しない"],
 							"cn": []
 						}
 					}
@@ -39,17 +40,18 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.4",
+			"lifepoint": 1,
+			"ms": "0.4",
 			"special": [
 				{
 					"name": "standby",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": [],
+							"en": ["Does not attack while on standby"],
+							"jp": ["待機中攻撃しない"],
 							"cn": []
 						}
 					}
@@ -64,17 +66,18 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.4",
+			"lifepoint": 1,
+			"ms": "0.4",
 			"special": [
 				{
 					"name": "standby",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": [],
+							"en": ["Does not attack while on standby"],
+							"jp": ["待機中攻撃しない"],
 							"cn": []
 						}
 					}
@@ -83,7 +86,7 @@
 		}
 	},
 	"normal_attack": {
-		"atk_type":["melee","arts"],
+		"atk_type": ["melee", "arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

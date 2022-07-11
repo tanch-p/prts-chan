@@ -10,10 +10,10 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "0.5",
 			"lifepoint": 1,
+			"ms": "0.5",
 			"special": [
 				{
 					"name": "stun_attack",
@@ -41,10 +41,10 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "0.5",
 			"lifepoint": 1,
+			"ms": "0.5",
 			"special": [
 				{
 					"name": "stun_attack",
@@ -72,10 +72,10 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "0.5",
 			"lifepoint": 1,
+			"ms": "0.5",
 			"special": [
 				{
 					"name": "stun_attack",
