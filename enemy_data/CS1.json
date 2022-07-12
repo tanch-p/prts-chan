@@ -10,10 +10,24 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "1.2",
-			"special": []
+			"lifepoint": 1,
+			"ms": "1.2",
+			"special": [
+				{
+					"name": "nervous_impair",
+					"type": "others",
+					"value": 0.2,
+					"tooltip": {
+						"simple": {
+							"en": ["Attacks deal 20% ATK Nervous Impairment"],
+							"jp": ["攻撃時、攻撃力の20%の神経ダメージを与える"],
+							"cn": ["普通攻击附带自身攻击力20%的神经损伤"]
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

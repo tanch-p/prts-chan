@@ -15,9 +15,9 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2",
-			
 			"weight": "6",
-			"lifepoint":1,"ms": "0.6",
+			"lifepoint": 1,
+			"ms": "0.6",
 			"forms": [
 				{
 					"res": "+50",
@@ -28,9 +28,7 @@
 					"special": [
 						{
 							"name": "strong_wine_attack",
-							"type": "atk",
-							"multiplier": 1,
-							"hits": 1,
+							"type": "others",
 							"fixedInc": 0,
 							"start": 0,
 							"skill": 3,
@@ -48,7 +46,8 @@
 					"atk": "+700",
 					"def": "+1000",
 					"aspd": "-1.5",
-					"lifepoint":1,"ms": "+0.3",
+					"lifepoint": 1,
+					"ms": "+0.3",
 					"normal_attack": {
 						"atk_type": ["melee", "phys"],
 						"hits": 2

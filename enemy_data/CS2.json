@@ -10,10 +10,41 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.8",
-			"special": []
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": [
+				{
+					"name": "nervous_impair",
+					"type": "others",
+					"value": 0.2,
+					"tooltip": {
+						"simple": {
+							"en": ["Attacks deal 20% ATK Nervous Impairment"],
+							"jp": ["攻撃時、攻撃力の20%の神経ダメージを与える"],
+							"cn": ["普通攻击附带自身攻击力20%的神经损伤"]
+						}
+					}
+				},
+				{
+					"name": "aspd_buff",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Upon every 20 hits received, increases all enemies' ASPD by 100 for 10s (does not stack)"
+							],
+							"jp": [
+								"攻撃20回受ける度に、敵全体の攻撃速度を10秒100上昇（重複しない）"
+							],
+							"cn": [
+								"每受到20次可触发受击回复的伤害后，使当前场上全体敌方单位攻击速度增加100，持续10s（不可叠加）"
+							]
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

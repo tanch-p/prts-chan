@@ -1,14 +1,14 @@
 {
-	"id": "K10",
+	"id": "K12",
 	"name": {
-		"en": "Bloodboil Knightclub Trainee",
-		"jp": "ブラッドボイル見習い騎士",
-		"cn": "沸血骑士团学徒"
+		"en": "Brassrust' Olmer Ingra",
+		"jp": "「錆銅」オルマー・イングラ",
+		"cn": "“锈铜”奥尔默·英格拉"
 	},
 	"stats": {
 		"level0": {
-			"hp": "9000",
-			"atk": "500",
+			"hp": "15000",
+			"atk": "700",
 			"def": "800",
 			"res": "0",
 			"aspd%": "100",
@@ -38,16 +38,15 @@
 				}
 			]
 		},
-		"落魄骑士": {
-			"hp": "13000",
-			"atk": "500",
-			"def": "800",
+		"骑士对决": {
+			"hp": "70000",
+			"atk": "1200",
+			"def": "1500",
 			"res": "0",
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-
-			"weight": "3",
+			"weight": "5",
 			"lifepoint": 1,
 			"ms": "0.7",
 			"special": [
@@ -57,12 +56,12 @@
 					"tooltip": {
 						"simple": {
 							"en": [
-								"Each time an enemy is defeated, gains ATK and ASPD, max 10 stacks."
+								"Each time an enemy is defeated, ATK +40% and ASPD +40, max 3 stacks."
 							],
 							"jp": [
-								"ほかの敵が倒される度に、攻撃力+10%・攻撃速度+5（最大10回）"
+								"ほかの敵が倒される度に、攻撃力+40%・攻撃速度+40（最大3回）"
 							],
-							"cn": ["每有一个敌人死亡时攻击力与攻击速度提升，最多提升10次"]
+							"cn": ["每有一个敌人死亡时攻击力与攻击速度提升，最多提升3次"]
 						}
 					}
 				}
@@ -76,5 +75,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee"]
+	"type": ["melee","elite"]
 }

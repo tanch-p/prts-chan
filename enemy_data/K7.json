@@ -1,0 +1,68 @@
+{
+	"id": "K7",
+	"name": {
+		"en": "Plastic' Szewczyk",
+		"jp": "「合成樹脂」シェブチック",
+		"cn": "“塑料”瑟奇亚克"
+	},
+	"stats": {
+		"level0": {
+			"hp": "3800",
+			"atk": "600",
+			"def": "100",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "2.4",
+			"range": "2",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": [
+				{
+					"name": "barrier",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Barrier→for 60s, Def+3000, Res+95"],
+							"jp": ["バリア→60秒間、防御力+3000、術耐性+95"],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"骑士对决": {
+			"hp": "15000",
+			"atk": "900",
+			"def": "100",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "2.4",
+			"range": "2",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": [
+				{
+					"name": "barrier",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Barrier→for 100s, Def+3000, Res+95"],
+							"jp": ["バリア→100秒間、防御力+3000、術耐性+95"],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "elite"]
+}

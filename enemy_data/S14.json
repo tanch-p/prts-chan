@@ -35,8 +35,8 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Does not attack while on standby"],
-							"jp": ["待機中攻撃しない"],
+							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
+							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}

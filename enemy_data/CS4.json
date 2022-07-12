@@ -1,6 +1,6 @@
 {
 	"id": "CS4",
-	"name": { "en": "Sample", "jp": "サンプル", "cn": "“小惊喜”" },
+	"name": { "en": "Little Surprise", "jp": "爆弾", "cn": "“小惊喜”" },
 	"stats": {
 		"level0": {
 			"hp": "4000",
@@ -10,11 +10,24 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "1.25",
-
 			"weight": "0",
 			"lifepoint": 1,
 			"ms": "0.5",
-			"special": []
+			"special": [
+				{
+					"name": "nervous_bomb",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"On defeat, deals 100% Arts dmg & Nervous Impairment to nearby units (Can be silenced)"
+							],
+							"jp": ["倒された時、周囲に攻撃力100%術ダメージと神経ダメージを与える（無効化可能）"],
+							"cn": ["死亡后对自身半径1.25范围内全体我方单位造成自身攻击力100%的法术溅射伤害和神经损伤（可被沉默） "]
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

@@ -1,0 +1,43 @@
+{
+	"id": "L9",
+	"name": {
+		"en": "Mudrock Matterllurgist Leader",
+		"jp": "マドロック隊投魔隊長",
+		"cn": "泥岩小队掷能者组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "10000",
+			"atk": "500",
+			"def": "500",
+			"res": "30",
+			"aspd%": "100",
+			"aspd": "2.6",
+			"range": "2.5",
+			"weight": "3",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Normal attack targets 2 units"],
+							"jp": ["2体同時攻撃"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["ranged", "sarkaz"]
+}

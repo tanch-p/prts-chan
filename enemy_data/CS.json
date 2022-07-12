@@ -10,10 +10,22 @@
 			"aspd%": "100",
 			"aspd": "2.8",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.4",
-			"special": []
+			"lifepoint": 2,
+			"ms": "1.4",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["When blocked, teleports past unit. CD15s"],
+							"jp": ["ブロックされた時、ユニットの背後に回り込む　CD15秒"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		},
 		"分赃不均": {
 			"hp": "1000",
@@ -23,10 +35,22 @@
 			"aspd%": "100",
 			"aspd": "2.8",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.4",
-			"special": []
+			"lifepoint": 2,
+			"ms": "1.4",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["When blocked, blinks past unit. CD15s"],
+							"jp": ["ブロックされた時、ユニットの背後に回り込む　CD15秒"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

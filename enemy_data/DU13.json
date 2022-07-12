@@ -14,17 +14,18 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "1.3",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": [
 				{
-					"type": "res",
+					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Refraction - RES+70 (can be silenced)"],
-							"jp": ["屈折→術耐性+70 (無効化可能)"],
-							"cn": ["折射：法术抗性增加70（可被沉默）"]
+							"en": ["Becomes ground unit after Stun, Sleep, Frozen"],
+							"jp": ["スタン/睡眠/凍結を受けると飛行が解除される"],
+							"cn": [""]
 						}
 					}
 				}

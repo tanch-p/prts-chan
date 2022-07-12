@@ -27,8 +27,8 @@
 					"fixedInc": 0,
 					"tooltip": {
 						"simple": {
-							"en": ["Explodes on death, dealing 400% dmg to nearby units"],
-							"jp": ["死亡時には爆発する"],
+							"en": ["Explodes on death, dealing 400% dmg to nearby units (Can be silenced)"],
+							"jp": ["死亡時には爆発する（無効化可能）"],
 							"cn": ["死亡后对周围造成大量物理伤害"]
 						}
 					}

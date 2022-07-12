@@ -18,7 +18,7 @@
 		}
 	],
 	"enemies": [
-		{ "id": "CS1", "count": "2", "stats": "level0" },
+		{ "id": "CS2", "count": "2", "stats": "level0" },
 		{ "id": "CS4", "count": "3", "stats": "level0" },
 		{ "id": "C11", "count": "16", "stats": "level0" },
 		{ "id": "C13", "count": "5", "stats": "level0" },
@@ -28,7 +28,7 @@
 		{ "id": "GPN", "count": "1", "stats": "level1" }
 	],
 	"hard_enemies": [
-		{ "id": "CS1", "count": "2", "stats": "level0" },
+		{ "id": "CS2", "count": "2", "stats": "level0" },
 		{ "id": "CS4", "count": "3", "stats": "level0" },
 		{ "id": "C11", "count": "16", "stats": "level0" },
 		{ "id": "C13", "count": "5", "stats": "level0" },

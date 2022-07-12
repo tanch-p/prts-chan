@@ -14,18 +14,22 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			
 			"weight": "3",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 5,
+			"ms": "0.8",
 			"special": [
 				{
-					"name": "splash",
+					"name": "jetpack",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Jumps"],
-							"jp": [""],
-							"cn": []
+							"en": [
+								"When blocked activates Jetpack, ms+50% and flies for 7s. CD25s"
+							],
+							"jp": [
+								"ブロックされたらジェットパックを起動→7秒間飛行する＆移動速度＋50％、CD25秒"
+							],
+							"cn": [""]
 						}
 					}
 				}
@@ -39,18 +43,23 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 5,
+			"ms": "0.8",
 			"special": [
 				{
-					"name": "splash",
+					"name": "jetpack",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Jumps"],
-							"jp": [""],
-							"cn": []
+							"en": [
+								"When blocked activates Jetpack, ms+50% and flies for 7s. CD25s"
+							],
+							"jp": [
+								"ブロックされたらジェットパックを起動する→7秒間飛行する＆移動速度＋50％　CD25秒"
+							],
+							"cn": [""]
 						}
 					}
 				}

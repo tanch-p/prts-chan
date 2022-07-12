@@ -148,7 +148,7 @@ export default function EnemySimple({
 			if (skill.type === stat) {
 				if (skill.hasOwnProperty("fixed")) {
 					return (
-						<p>
+						<p className={`whitespace-nowrap ${stat === "atk" ? "" : "px-2"}`}>
 							{skill["fixed"]}
 							{` (${skill.suffix[language]})`}
 						</p>
@@ -157,8 +157,8 @@ export default function EnemySimple({
 				const fixedInc = skill.fixed_inc ?? 0;
 				const multiplier = skill.multiplier ?? 1;
 				return (
-					<p>
-						{(moddedStat + fixedInc) * multiplier}
+					<p className={`whitespace-nowrap ${stat === "atk" ? "" : "px-2"}`}>
+						{Math.round((moddedStat + fixedInc) * multiplier)}
 						{` (${skill.suffix[language]})`}
 					</p>
 				);
@@ -378,6 +378,7 @@ export default function EnemySimple({
 															case "remarks":
 																returnContainer = parseRemarks(
 																	enemy,
+																	moddedStats,
 																	specialMods,
 																	stats,
 																	row,

@@ -69,7 +69,7 @@
 				{
 					"name": "sand_tomb",
 					"type": "atk",
-					"suffix": { "en": "🌪/Arts", "jp": "🌪・術", "cn": "🌪" },
+					"suffix": { "en": "🌪/arts", "jp": "🌪・術", "cn": "🌪" },
 					"fixed": 70,
 					"hits": 1,
 					"tooltip": {

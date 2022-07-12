@@ -19,12 +19,18 @@
 			"lifepoint":1,"ms": "0.3",
 			"special": [
 				{
-					"type": "res",
+					"name": "fireball",
+					"type": "atk",
+					"fixed": 600,
+					"suffix": { "en": "🔥", "jp": "🔥", "cn": "🔥" },
 					"tooltip": {
 						"simple": {
-							"en": ["Refraction - RES+70 (can be silenced)"],
-							"jp": ["屈折→術耐性+70 (無効化可能)"],
-							"cn": ["折射：法术抗性增加70（可被沉默）"]
+							"en": [
+								"Fireball explodes on contact with melee unit, dealing arts and burn damage to units within range 1.8",
+								"Fireball's ATK decreases over distance travelled"
+							],
+							"jp": ["炎は地上にいる味方に触れると爆発、半径1.8内に術と灼熱ダメージを与える"],
+							"cn": []
 						}
 					}
 				}
@@ -43,12 +49,18 @@
 			"lifepoint":1,"ms": "0.3",
 			"special": [
 				{
-					"type": "res",
+					"name": "fireball",
+					"type": "atk",
+					"fixed": 600,
+					"suffix": { "en": "🔥", "jp": "🔥", "cn": "🔥" },
 					"tooltip": {
 						"simple": {
-							"en": ["Refraction - RES+70 (can be silenced)"],
-							"jp": ["屈折→術耐性+70 (無効化可能)"],
-							"cn": ["折射：法术抗性增加70（可被沉默）"]
+							"en": [
+								"Fireball explodes on contact with melee unit, dealing arts and burn damage to units within range 1.8",
+								"Fireball's ATK decreases over distance travelled"
+							],
+							"jp": ["炎は地上にいる味方に触れると爆発、半径1.8内に術と灼熱ダメージを与える"],
+							"cn": []
 						}
 					}
 				}

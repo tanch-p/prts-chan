@@ -17,7 +17,7 @@
 			"range": "2.2",
 
 			"weight": "4",
-			"lifepoint": 1,
+			"lifepoint": 3,
 			"ms": "0.6",
 			"special": [
 				{
@@ -26,12 +26,7 @@
 					"tooltip": {
 						"simple": {
 							"en": ["Attacks freeze enemy"],
-							"jp": ["通常攻撃"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
+							"jp": ["通常攻撃は【寒冷❄】を付与する"],
 							"cn": []
 						}
 					}
@@ -56,10 +51,30 @@
 		},
 		"special": [
 			{
+				"name": "freeze_hit",
+				"type": "others",
+				"tooltip": {
+					"simple": {
+						"en": ["Attacks freeze enemy"],
+						"jp": ["通常攻撃は【寒冷❄】を付与する"],
+						"cn": []
+					}
+				}
+			},
+			{
 				"tooltip": {
 					"simple": {
 						"en": ["Deals 250% damage to frozen units"],
 						"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が250%まで上昇"],
+						"cn": []
+					}
+				}
+			},
+			{
+				"tooltip": {
+					"simple": {
+						"en": ["Move speed+150%"],
+						"jp": ["移動速度＋150％"],
 						"cn": []
 					}
 				}

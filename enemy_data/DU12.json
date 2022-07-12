@@ -19,7 +19,7 @@
 			"lifepoint":1,"ms": "0.7",
 			"special": [
 				{
-					"type": "res",
+					"type": "others",
 					"tooltip": {
 						"simple": {
 							"en": ["Refraction - RES+70 (can be silenced)"],
@@ -43,7 +43,7 @@
 			"lifepoint":1,"ms": "0.7",
 			"special": [
 				{
-					"type": "res",
+					"type": "others",
 					"tooltip": {
 						"simple": {
 							"en": ["Refraction - RES+70 (can be silenced)"],

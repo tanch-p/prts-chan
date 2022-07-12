@@ -17,7 +17,7 @@
 			"special": [
 				{
 					"name": "ice_poke",
-					"type": "atk",
+					"type": "others",
 					"multiplier": 1.5,
 					"tooltip": {
 						"simple": {

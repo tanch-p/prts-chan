@@ -21,8 +21,7 @@
 			"special": [
 				{
 					"name": "ice_pick",
-					"type": "atk",
-					"multiplier": 2.5,
+					"type": "others",
 					"tooltip": {
 						"simple": {
 							"en": ["Deals 250% damage to frozen units"],

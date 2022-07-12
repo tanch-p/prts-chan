@@ -10,9 +10,10 @@
 			"aspd%": "100",
 			"aspd": "1.5",
 			"range": "0",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "0.5 ",
+			"lifepoint": 1,
+			"ms": "0.5 ",
 			"special": [
 				{
 					"name": "killer_melody",
@@ -20,9 +21,11 @@
 					"tooltip": {
 						"simple": {
 							"en": [
-								"When not blocked, deals 100 arts dmg /s to all units on map"
+								"When not blocked, plays killer melody that deals 100 arts dmg /s to all units on map"
 							],
-							"jp": [""],
+							"jp": [
+								"未ブロック時、致死なメロディで味方全体に毎秒100術ダメージを与える"
+							],
 							"cn": []
 						}
 					}

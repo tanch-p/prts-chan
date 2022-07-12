@@ -25,7 +25,7 @@
 					"tooltip": {
 						"simple": {
 							"en": [
-								"When attacked sounds alarm, turns units on standby to combat-ready mode, increases all enemies atk & def by 50% (Stacks with other Sentinels)"
+								"On HP loss sounds alarm, turns units on standby to combat-ready mode, increases all enemies atk & def by 50% (Stacks with other Sentinels)"
 							],
 							"jp": [
 								"ダメージを受けると警報を鳴らします",

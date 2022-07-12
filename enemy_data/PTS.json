@@ -1,32 +1,42 @@
 {
-    "id": "PTS",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "不祥幻影",
-    "atk_type_jp": "物理",
-    "hp": "10000",
-    "atk": "750",
-    "def": "400",
-    "res": "20",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "0",
-    
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.6",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "PTS",
+	"name": { "en": "Shadow", "jp": "影", "cn": "不祥幻影" },
+	"stats": {
+		"level0": {
+			"hp": "10000",
+			"atk": "750",
+			"def": "400",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "0",
+			"weight": "2",
+			"lifepoint": 1,
+			"ms": "0.6",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Same as above except no blink skill"
+							],
+							"jp": [
+								"回り込みスキルがない以外、上と同じ"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "elite"]
 }

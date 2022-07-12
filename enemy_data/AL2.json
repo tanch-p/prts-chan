@@ -14,9 +14,10 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.4",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": [
 				{
 					"type": "others",
@@ -39,9 +40,10 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.4",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": [
 				{
 					"type": "others",
@@ -64,9 +66,10 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.4",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": [
 				{
 					"type": "others",

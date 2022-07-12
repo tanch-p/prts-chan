@@ -21,8 +21,8 @@
 		{ "id": "G13", "count": "10", "stats": "鲍勃酒品" },
 		{ "id": "G14", "count": "21", "stats": "鲍勃酒品" },
 		{ "id": "SI8", "count": "1", "stats": "level0" },
-		{ "id": "D2", "count": "17", "stats": "level0" },
-		{ "id": "D4", "count": "3", "stats": "level0" },
+		{ "id": "D2", "count": "17", "stats": "level1" },
+		{ "id": "D4", "count": "3", "stats": "level1" },
 		{ "id": "D6", "count": "9", "stats": "level0" },
 		{ "id": "DLD", "count": "1", "stats": "level1" },
 		{ "id": "GPN", "count": "1", "stats": "level1" }
@@ -30,8 +30,8 @@
 	"hard_enemies": [
 		{ "id": "G14", "count": "31", "stats": "鲍勃酒品" },
 		{ "id": "SI8", "count": "1", "stats": "level0" },
-		{ "id": "D2", "count": "17", "stats": "level0" },
-		{ "id": "D4", "count": "3", "stats": "level0" },
+		{ "id": "D2", "count": "17", "stats": "level1" },
+		{ "id": "D4", "count": "3", "stats": "level1" },
 		{ "id": "D6", "count": "9", "stats": "level0" },
 		{ "id": "DLD", "count": "1", "stats": "level1" },
 		{ "id": "GPN", "count": "1", "stats": "level1" }

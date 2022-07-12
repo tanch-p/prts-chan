@@ -21,7 +21,6 @@
 	"enemies": [
 		{ "id": "O3", "count": "30", "stats": "阴云笼罩" },
 		{ "id": "A8", "count": "3", "stats": "阴云笼罩" },
-		{ "id": "15", "count": "0", "stats": "阴云笼罩" },
 		{ "id": "A4", "count": "4", "stats": "阴云笼罩" },
 		{ "id": "AL1", "count": "2", "stats": "阴云笼罩" },
 		{ "id": "AL2", "count": "8", "stats": "阴云笼罩" },
@@ -29,5 +28,6 @@
 		{ "id": "B7", "count": "2", "stats": "level0" },
 		{ "id": "DLD", "count": "1", "stats": "level1" },
 		{ "id": "GPN", "count": "1", "stats": "level1" }
-	]
+	],
+	"temp": [{ "id": "15", "count": "0", "stats": "阴云笼罩" }]
 }
