@@ -69,6 +69,8 @@ export default function EnemySimple({
 						return getSkills(enemy.powerup.special, stat, moddedStat);
 				}
 			}
+		} else {
+			return;
 		}
 
 		return enemy["stats"][entry].special.map((skill) => {
@@ -280,7 +282,7 @@ export default function EnemySimple({
 											format === "powerup" || format === "prisoner"
 												? 2
 												: format === "multiform"
-												? enemy["forms"].length
+												? enemy.stats[stats].forms.length
 												: 1;
 										const trArr = [];
 										for (let row = 0; row < maxRowSpan; row++) {

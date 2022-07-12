@@ -32,7 +32,7 @@
 	"imprisoned": {
 		"mods": {
 			"aspd": -0.5,
-			"fixed-def": 300
+			"fixed_def": 300
 		},
 		"special": [
 			{

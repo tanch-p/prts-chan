@@ -30,7 +30,7 @@
 	"凍結耐性": "無",
 	"type": ["ranged", "elite"],
 	"imprisoned": {
-		"mods": { "aspd": -0.5, "fixed-def": 300 },
+		"mods": { "aspd": -0.5, "fixed_def": 300 },
 		"special": [
 			{
 				"name": "caster_release",

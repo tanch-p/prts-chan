@@ -16,15 +16,11 @@
 			"aspd": "4",
 			"range": "2",
 			"weight": "6",
-			"lifepoint": 1,
+			"lifepoint": 2,
 			"ms": "0.6",
 			"forms": [
 				{
-					"res": "+50",
-					"normal_attack": {
-						"atk_type": ["ranged", "arts"],
-						"hits": 1
-					},
+					"mods": { "res": 50 },
 					"special": [
 						{
 							"name": "strong_wine_attack",
@@ -34,38 +30,40 @@
 							"skill": 3,
 							"tooltip": {
 								"simple": {
-									"en": ["Skill→ stuns 3 sec"],
-									"jp": ["スキル→", ""],
-									"cn": []
+									"en": ["Every 4th attack targets 2 units & stuns for 3s"],
+									"jp": ["攻撃3回の度に次の攻撃に2体攻撃、3秒スタンを与える"],
+									"cn": ["攻击3次后，下一次攻击会晕眩目标 "]
 								}
 							}
 						}
 					]
 				},
 				{
-					"atk": "+700",
-					"def": "+1000",
-					"aspd": "-1.5",
-					"lifepoint": 1,
-					"ms": "+0.3",
-					"normal_attack": {
-						"atk_type": ["melee", "phys"],
-						"hits": 2
+					"mods": {
+						"fixed_atk": 700,
+						"fixed_def": 1000,
+						"fixed_aspd": -1.5,
+						"fixed_ms": 0.3,
+						"fixed_range": -2
 					},
+
 					"special": [
 						{
 							"name": "strong_sword_attack",
-							"type": "atk",
+							"type": "others",
 							"multiplier": 1,
-							"hits": 1,
+							"hits": 2,
+							"suffix": { "en": "Skill", "jp": "強撃", "cn": "" },
 							"fixedInc": 0,
 							"start": 0,
 							"skill": 3,
 							"tooltip": {
 								"simple": {
-									"en": ["Skill→Ignores 60% def", ""],
-									"jp": ["スキル→", ""],
-									"cn": []
+									"en": [
+										"Every 4th attack does 2 x 100% ATK phys dmg, Ignores 60% def"
+									],
+									"jp": ["攻撃3回の度に次の攻撃に2回攻撃、防御力60％無視"],
+									"cn": ["攻击3次后，下一次攻击会晕眩目标 "]
 								}
 							}
 						}
@@ -74,6 +72,16 @@
 			]
 		}
 	},
+	"normal_attack": [
+		{
+			"atk_type": ["ranged", "arts"],
+			"hits": 1
+		},
+		{
+			"atk_type": ["melee", "phys"],
+			"hits": 1
+		}
+	],
 	"スタン耐性": "有",
 	"眠り耐性": "有",
 	"凍結耐性": "有",
