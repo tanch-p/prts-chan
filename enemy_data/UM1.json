@@ -61,7 +61,7 @@
 					"type": "atk",
 					"suffix": { "en": "💥/Arts", "jp": "💥・術", "cn": "💥・法术" },
 					"multiplier": 1,
-					"fixed-dmg": 1000,
+					"fixed": 1000,
 					"hits": 1,
 					"fixedInc": 0,
 					"tooltip": {

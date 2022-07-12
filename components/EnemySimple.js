@@ -56,26 +56,22 @@ export default function EnemySimple({
 
 	const langPack = require(`../lang/${language}.json`);
 
-	const getMinWidth = (stat) => {
-		switch (stat) {
-			case "type":
-				return "min-w-[93px] md:min-w-min lg:px-2";
-			case "atk":
-			case "hp":
-			case "def":
-				return "min-w-[80px] md:min-w-min lg:px-2";
-			case "remarks":
-				return "min-w-[300px]";
-			default:
-				return "min-w-[50px]";
-		}
-	};
-
-	const parseSpecial = (enemy, stat, stats, base_stat, row) => {
-		const returnSpecArr = [];
+	const parseSpecial = (enemy, format, stat, entry, moddedStat, row) => {
 		let specialModded = false;
-		let skillMultiplier = 0;
-		return enemy["stats"][stats].special.map((skill) => {
+		if (format !== "multiform") {
+			if (row === 0) {
+				return getSkills(enemy.stats[entry].special, stat, moddedStat);
+			} else {
+				switch (format) {
+					case "prisoner":
+						return getSkills(enemy.released.special, stat, moddedStat);
+					case "powerup":
+						return getSkills(enemy.powerup.special, stat, moddedStat);
+				}
+			}
+		}
+
+		return enemy["stats"][entry].special.map((skill) => {
 			let statValue = 0;
 			if (skill.type === stat) {
 				skillMultiplier = skill.multiplier;
@@ -147,161 +143,29 @@ export default function EnemySimple({
 		});
 	};
 
-	const parseMultiformMods = (mods, stat, base_stat) => {
-		const mod = mods[stat];
-		// console.log(mod);
-		if (mod.includes("%")) {
-			base_stat *= 1 + parseInt(mod.slice(1)) / 100;
-		}
-		return base_stat;
-	};
-
-	const applyModifiers = (enemy, stats, stat, row) => {
-		const numericStats = ["hp", "atk", "aspd", "range", "def", "res", "weight"];
-		if (numericStats.includes(stat)) {
-			return calculate(enemy, stats, stat, row);
-		}
-	};
-
-	const toggleTableHeader = (header) => {
-		setTableHeaders(
-			tableHeaders.map((ele) => {
-				if (ele.en === header) {
-					ele.show = !ele.show;
-				}
-				return ele;
-			})
-		);
-	};
-
-	
-
-	const getAtk = (enemy, stats, base_stat) => {
-		let returnArr = [];
-		switch (enemy.id) {
-			case "MR":
-				const suffix = language === "en" ? "th atk/Phys" : "回目";
-				for (let i = 1; i < 7; i++) {
-					returnArr.push(
+	const getSkills = (skills, stat, moddedStat) => {
+		return skills.map((skill) => {
+			if (skill.type === stat) {
+				if (skill.hasOwnProperty("fixed")) {
+					return (
 						<p>
-							{Math.ceil(base_stat * (1 + 0.6 * i))} ({i}
-							{suffix})
+							{skill["fixed"]}
+							{` (${skill.suffix[language]})`}
 						</p>
 					);
 				}
-				break;
-
-			default:
-				break;
-		}
-		return returnArr;
-	};
-
-	const renderRow = (enemy, count, entry, index, format) => {
-		const numRowstoRender =
-			format === "powerup" || format === "prisoner"
-				? 2
-				: format === "multiform"
-				? enemy["forms"].length
-				: 1;
-		const returnArr = [];
-		for (let row = 0; row < numRowstoRender; row++) {
-			const arrayToMap =
-				row === 0
-					? tableHeaders
-					: tableHeaders.filter(({ key }) =>
-							format === "powerup" || format === "prisoner"
-								? !powerupOddRows.includes(key)
-								: !multiformOddRows.includes(key)
-					  );
-			returnArr.push(
-				<>
-					<tr className={`${index % 2 === 1 ? "bg-neutral-700" : ""}`}>
-						{arrayToMap.map(({ key, show }) => {
-							const stat = key;
-							const statValue = applyModifiers(enemy, entry, stat, row);
-							if (show) {
-								return (
-									<td
-										className={`border border-gray-400 my-auto py-0 mx-2 md:max-w-[300px] ${textAlign(
-											stat
-										)} ${getMinWidth(stat)}  h-[75px] lg:text-md`}
-										key={enemy.name + stat}
-										rowSpan={
-											row !== 0
-												? 1
-												: getRowSpan(
-														enemy.format,
-														stat,
-														powerupOddRows,
-														multiformOddRows,
-														numRowstoRender
-												  )
-										}
-									>
-										{stat === "enemy" ? (
-											<img
-												src={`/enemy_icons/${enemy.id}.png`}
-												alt={enemy.name["jp"]}
-												height="75px"
-												width="75px"
-												className="select-none"
-												loading="lazy"
-											/>
-										) : stat === "count" ? (
-											<p>{count + (specialMods?.[enemy.id]?.count ?? 0)}</p>
-										) : stat === "type" ? (
-											parseType(enemy["type"], language)
-										) : stat === "atk" ? (
-											enemy.id !== "MR" ? (
-												[].concat(
-													parseSpecial(enemy, stat, entry, statValue, row)
-												)
-											) : (
-												getAtk(enemy, entry, statValue)
-											)
-										) : stat === "remarks" ? (
-											parseRemarks(enemy, specialMods, entry, row, language)
-										) : stat === "range" ? (
-											enemy["stats"][entry]["range"] === "0" ? (
-												"0"
-											) : (
-												(Math.floor(statValue * 100) / 100).toFixed(2)
-											)
-										) : stat === "weight" || stat === "aspd" ? (
-											[<p key="">{statValue}</p>].concat(
-												parseSpecial(enemy, stat, entry, statValue, row)
-											)
-										) : (
-											[<p key="">{Math.round(statValue)}</p>].concat(
-												parseSpecial(enemy, stat, entry, statValue, row)
-											)
-										)}
-									</td>
-								);
-							}
-						})}
-					</tr>
-				</>
-			);
-		}
-		return returnArr;
-	};
-
-	//! Render Table
-	const renderEnemyStats = () => {
-		const enemies =
-			mode === "hard" && mapConfig.hasOwnProperty("hard_enemies")
-				? mapConfig.hard_enemies
-				: mapConfig.enemies;
-		return enemies.map(({ id, count, stats }, index) => {
-			//get enemydata file
-			//map through enemydata
-			let enemy = require(`../enemy_data/${id}.json`);
-			// console.log(enemy["stats"][stats]);
-			return renderRow(enemy, count, stats, index, enemy.format, language);
+				const fixedInc = skill.fixed_inc ?? 0;
+				const multiplier = skill.multiplier ?? 1;
+				return (
+					<p>
+						{(moddedStat + fixedInc) * multiplier}
+						{` (${skill.suffix[language]})`}
+					</p>
+				);
+			}
 		});
 	};
+
 	const updateMultiplier = () => {
 		const distill = (holder, effects) => {
 			effects.forEach((effect) => {
@@ -391,7 +255,7 @@ export default function EnemySimple({
 				</div>
 				<div>
 					<div>Filter</div>
-					<div></div>
+
 					<div className="">
 						<div id="table-wrapper">
 							<table className="border border-gray-400 border-collapse ">
@@ -439,7 +303,7 @@ export default function EnemySimple({
 												<tr
 													key={id + row}
 													className={`${
-														index % 2 === 1 ? " dark:bg-[#333333]" : ""
+														index % 2 === 1 ? " bg-[#333333]" : ""
 													}`}
 												>
 													{statsToMap.map(({ key: stat }) => {
@@ -468,16 +332,47 @@ export default function EnemySimple({
 																break;
 															case "atk":
 																returnContainer = (
-																	<p className="whitespace-nowrap">
-																		{moddedStats[stat]}
-																		<span>
-																			{parseAtkType(
-																				getAtkType(enemy, format, row),
-																				language,
-																				langPack
+																	<>
+																		<p className="whitespace-nowrap">
+																			{moddedStats[stat]}
+																			<span>
+																				{parseAtkType(
+																					getAtkType(enemy, format, row),
+																					language,
+																					langPack
+																				)}
+																			</span>
+																		</p>
+																		{parseSpecial(
+																			enemy,
+																			format,
+																			stat,
+																			stats,
+																			moddedStats[stat],
+																			row
+																		)}
+																	</>
+																);
+																break;
+															case "def":
+															case "res":
+															case "aspd":
+															case "range":
+															case "ms":
+																returnContainer = (
+																	<>
+																		<p>
+																			{moddedStats[stat]}
+																			{parseSpecial(
+																				enemy,
+																				format,
+																				stat,
+																				stats,
+																				moddedStats[stat],
+																				row
 																			)}
-																		</span>
-																	</p>
+																		</p>
+																	</>
 																);
 																break;
 															case "remarks":

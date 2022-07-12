@@ -14,10 +14,26 @@
 			"aspd%": "100",
 			"aspd": "1.7",
 			"range": "0",
-			
 			"weight": "0",
-			"lifepoint":1,"ms": "1",
-			"special": []
+			"lifepoint": 1,
+			"ms": "1",
+			"special": [
+				{
+					"name": "bug_explode",
+					"type": "atk",
+					"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
+					"multiplier": 4,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": ["Explodes on death, dealing 400% dmg to nearby units"],
+							"jp": ["死亡時には爆発する"],
+							"cn": ["死亡后对周围造成大量物理伤害"]
+						}
+					}
+				}
+			]
 		},
 		"酒商运输队": {
 			"hp": "7500",
@@ -27,10 +43,26 @@
 			"aspd%": "100",
 			"aspd": "1.7",
 			"range": "0",
-			
 			"weight": "0",
-			"lifepoint":1,"ms": "1",
-			"special": []
+			"lifepoint": 1,
+			"ms": "1",
+			"special": [
+				{
+					"name": "bug_explode",
+					"type": "atk",
+					"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
+					"multiplier": 4,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": ["Explodes on death, dealing 400% dmg to nearby units"],
+							"jp": ["死亡時には爆発する"],
+							"cn": ["死亡后对周围造成大量物理伤害"]
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

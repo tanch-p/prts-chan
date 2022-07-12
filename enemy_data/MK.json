@@ -49,8 +49,8 @@
 				{
 					"name": "sand_cross",
 					"type": "atk",
-					"suffix": { "en": "Skill/Phys", "jp": "スキル・物理", "cn": "" },
-					"fixed_dmg": 1200,
+					"suffix": { "en": "➕/phys", "jp": "➕・物理", "cn": "➕" },
+					"fixed": 1200,
 					"hits": 1,
 					"tooltip": {
 						"simple": {
@@ -69,8 +69,8 @@
 				{
 					"name": "sand_tomb",
 					"type": "atk",
-					"suffix": { "en": "Skill/Arts", "jp": "スキル・術", "cn": "" },
-					"fixed_dmg": 70,
+					"suffix": { "en": "🌪/Arts", "jp": "🌪・術", "cn": "🌪" },
+					"fixed": 70,
 					"hits": 1,
 					"tooltip": {
 						"simple": {

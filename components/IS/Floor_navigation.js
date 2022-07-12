@@ -101,7 +101,7 @@ export default function FloorNavigation({ stagesList, floor }) {
 	}, [floor]);
 
 	return (
-		<div className="grid grid-cols-[35px_auto_35px] items-center w-full md:w-max md:-translate-x-[55px] mt-16 mx-auto select-none shadow-lg">
+		<div className="grid grid-cols-[35px_auto_35px] items-center w-full md:w-max md:-translate-x-[55px] mt-16 mx-auto select-none shadow-lg ">
 			<div></div>
 
 			<div className="grid grid-cols-[100px_auto]">

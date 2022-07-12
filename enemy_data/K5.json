@@ -10,7 +10,7 @@
 			"hp": "2800",
 			"atk": "300",
 			"def": "100",
-			"res": "100",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "2.4",
 			"range": "2",
@@ -20,7 +20,7 @@
 			"special": [
 				{
 					"name": "barrier",
-					"type": "self-buff",
+					"type": "others",
 					"tooltip": {
 						"simple": {
 							"en": ["Barrier→for 30s, Def+3000, Res+95"],
@@ -40,7 +40,7 @@
 			"hp": "2800",
 			"atk": "240",
 			"def": "100",
-			"res": "100",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "2.4",
 			"range": "2",
@@ -50,7 +50,7 @@
 			"special": [
 				{
 					"name": "barrier",
-					"type": "self-buff",
+					"type": "others",
 					"tooltip": {
 						"simple": {
 							"en": ["Barrier→for 30s, Def+3000, Res+95"],

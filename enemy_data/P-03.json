@@ -10,10 +10,22 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "3.5",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.8",
-			"special": []
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": [
+				{
+					"name": "stun_attack",
+					"type": "debuff",
+					"tooltip": {
+						"simple": {
+							"en": ["Every 3rd attack stuns target for 5s"],
+							"jp": ["攻撃2回の度に次の攻撃に相手を5秒スタンする"],
+							"cn": ["攻击2次后，下一次攻击会晕眩目标5秒"]
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {
