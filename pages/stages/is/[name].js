@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 import { useAppContext } from "context/AppContext";
 import FooterBar from "@/components/IS/Footer_bar";
 import FloorNavigation from "@/components/IS/Floor_navigation";
+import ModeToggle from "@/components/Mode_toggle";
+import { TabComponent } from "@/components/Tabs";
 
 export async function getStaticProps({ params }) {
 	const stagesList = getAllStageIds("is");
@@ -43,22 +45,39 @@ export default function Stage({ stageData, stagesList }) {
 	const theme = mapConfig.hasOwnProperty("theme") ? mapConfig.theme : "";
 	const fontThemes = { en: "font-sans", jp: "font-jp font-light" };
 	const [hardMode, setHardMode] = useState(false);
+	const langPack = require(`../../../lang/${language}.json`);
 
-	useEffect(() => {
-		const fetchData = () => {
-			let floorToSet = Math.min(...mapConfig.floors);
-			const storedFloor = parseInt(sessionStorage.getItem("floor"));
-			if (storedFloor) {
-				console.log("storedFloor", storedFloor);
-				if (mapConfig.floors.includes(storedFloor)) {
-					floorToSet = storedFloor;
-				}
-			}
-			setFloor(floorToSet);
-			sessionStorage.setItem("floor", floorToSet);
-		};
-		fetchData();
-	}, []);
+	const tabArr = [
+		{
+			key: "normal",
+			title: langPack.normal_mode,
+			children: (
+				<EnemySimple
+					mapConfig={mapConfig}
+					mode="normal"
+					language={language}
+					device={device}
+					fontThemes={fontThemes}
+				/>
+			),
+		},
+		{
+			key: "hard",
+			title: langPack.hard_mode,
+			children: (
+				<EnemySimple
+					mapConfig={mapConfig}
+					mode="hard"
+					language={language}
+					device={device}
+					fontThemes={fontThemes}
+				/>
+			),
+		},
+	];
+
+
+	
 
 	return (
 		<Layout theme={theme} floor={mapConfig.floor}>
@@ -72,14 +91,19 @@ export default function Stage({ stageData, stagesList }) {
 					device={device}
 					fontThemes={fontThemes}
 				/>
-				<div className="mt-8">
-					<EnemySimple
-						mapConfig={mapConfig}
-						language={language}
-						device={device}
-						fontThemes={fontThemes}
-					/>
-				</div>
+
+				{mapConfig.hasOwnProperty("hard_mods") ? (
+					<TabComponent tabArr={tabArr} />
+				) : (
+					<div className="">
+						<EnemySimple
+							mapConfig={mapConfig}
+							language={language}
+							device={device}
+							fontThemes={fontThemes}
+						/>
+					</div>
+				)}
 				<FloorNavigation stagesList={stagesList} floor={floor} />
 			</div>
 			<FooterBar />

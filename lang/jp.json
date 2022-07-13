@@ -2,7 +2,8 @@
 	"index": {
 		"stages": "ステージ"
 	},
-
+	"normal_mode": "通常作戦",
+	"hard_mode": "緊急作戦",
 	"initial_cost": "初期COST",
 
 	"炽热溶洞": "灼熱の溶岩洞",
@@ -17,7 +18,7 @@
 	"hp_50": "HP50％以下",
 	"rage": "怒り状態",
 	"prisoner_release": "解放状態",
-	"multiform_suffix":"第#形態",
+	"multiform_suffix": "第#形態",
 	"phcs_levels": [
 		"迷霧の岐路",
 		"落陽の庭園",
@@ -26,7 +27,8 @@
 		"緋月の回路",
 		"渴欲大厅"
 	],
-	"floor_title_suffix":"の",
+	"floor_title_suffix": "の",
+	"relic_labels": ["困難モード", "-攻撃力", "-防御力", "-最大HP", "特殊"],
 
 	"enemy_stats": {
 		"enemy": "敵",

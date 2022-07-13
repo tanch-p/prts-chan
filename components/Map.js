@@ -33,7 +33,7 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 				</div>
 				<div className="w-[100vw] md:w-full">
 					{mapConfig.hasOwnProperty("sp_count") ? (
-						<div className="flex justify-center items-center gap-x-5 my-4">
+						<div className="flex justify-center items-center gap-x-1 my-4">
 							<Image
 								src={DLDGPN}
 								height="75px"
@@ -42,7 +42,14 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 								alt="sp enemy"
 								className="bg-[#0a0a0a]"
 							/>
-							{mapConfig.sp_count}
+							<Image
+								src={enemy_count}
+								layout="intrinsic"
+								alt="map enemy count"
+								className=""
+								unoptimized
+							/>
+							<span className="font-medium text-2xl">{mapConfig.sp_count}</span>
 						</div>
 					) : null}
 				</div>

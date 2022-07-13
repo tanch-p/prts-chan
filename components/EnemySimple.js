@@ -48,11 +48,16 @@ export default function EnemySimple({
 		ALL: { hp: 1, atk: 1, def: 1, res: 0, aspd: 1, ms: 1, range: 1, weight: 0 },
 	});
 	const [specialMods, setSpecialMods] = useState({});
-	console.log("spMods", specialMods);
-	console.log("mul", multipliers);
+	// console.log("spMods", specialMods);
+	// console.log("mul", multipliers);
 
-	const { selectedHardRelic, selectedNormalRelic, hallucinations } =
-		useAppContext();
+	const {
+		selectedHardRelic,
+		selectedNormalRelic,
+		hallucinations,
+		floor,
+		setFloor,
+	} = useAppContext();
 
 	const langPack = require(`../lang/${language}.json`);
 
@@ -236,6 +241,11 @@ export default function EnemySimple({
 	useEffect(() => {
 		updateMultiplier();
 	}, [hallucinations, selectedHardRelic, selectedNormalRelic]);
+
+	useEffect(() => {
+		if (!mapConfig.floors.includes(floor))
+			setFloor(Math.min(...mapConfig.floors));
+	}, []);
 
 	const enemies =
 		mode === "hard"

@@ -3,8 +3,12 @@ import Image from "next/image";
 export default function RelicDiv({ label, data, type, state, setState }) {
 	return (
 		<div className="place-self-center">
-			<p>{label}</p>
-			<div className={`grid grid-cols-[repeat(6,140px)] gap-x-[1px]`}>
+			<p className="text-center md:text-left mb-2 text-xl font-medium">
+				{label}
+			</p>
+			<div
+				className={`flex flex-wrap justify-center gap-y-1 md:grid grid-cols-[repeat(6,140px)] gap-x-1 md:gap-x-[1px]`}
+			>
 				{data.map((relic) => {
 					const selected = state.find((ele) => ele.img === relic.img);
 					const someSelected = state.length > 0;
@@ -37,16 +41,16 @@ export default function RelicDiv({ label, data, type, state, setState }) {
 								alt={relic.name["cn"]}
 								width={140}
 								height={140}
-								layout="fixed"
+								layout="intrinsic"
 								className={`translate-y-1 ${
 									!selected && "grayscale brightness-[.05]"
 								} ${
 									type === "hard"
 										? !someSelected && !selected
-											? "group-hover:grayscale-0 group-hover:brightness-100"
+											? "md:group-hover:grayscale-0 md:group-hover:brightness-100"
 											: ""
 										: !selected &&
-										  "group-hover:grayscale-0 group-hover:brightness-100"
+										  "md:group-hover:grayscale-0 md:group-hover:brightness-100"
 								}`}
 							/>
 						</div>

@@ -4,7 +4,7 @@
 	"theme": "phcs",
 	"floors": [1, 2],
 	"count": "32~35",
-	"sp_count": "35: 100%",
+	"sp_count": "35 - 100%",
 	"initial_cost": "20",
 	"hard_mods": [
 		{

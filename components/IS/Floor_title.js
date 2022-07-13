@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useAppContext } from "context/AppContext";
 import hallucinationsList from "@/data/phcs/hallucinations.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import hallu_banner from "@/public/images/phcs/hallu-banner.png";
 
 export const FLOOR_ROMAN_NUMERALS = [
@@ -113,6 +113,11 @@ export default function FloorTitle({ theme }) {
 		useAppContext();
 	const langPack = require("../../lang/" + language + ".json");
 	const [open, setOpen] = useState(false);
+
+	useEffect(() => {
+		setHallucinations([]);
+	}, [floor]);
+
 	return (
 		<>
 			<div className="relative text-xl select-none self-center place-self-center">

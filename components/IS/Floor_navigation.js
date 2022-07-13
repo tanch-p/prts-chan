@@ -69,14 +69,18 @@ export default function FloorNavigation({ stagesList, floor }) {
 				}`}
 			>
 				<div className="flex flex-col md:grid md:grid-cols-[100px_480px] items-center">
-					<div className="md:h-[68px] pt-2 md:pt-0 flex items-center">{normalOps}</div>
+					<div className="md:h-[68px] pt-2 md:pt-0 flex items-center">
+						{normalOps}
+					</div>
 					<div className="flex flex-wrap md:flex-wrap-reverse justify-center items-center mb-1">
 						{floorNormalStages}
 					</div>
 				</div>
 				{(floorDuckStages.length > 0 || floorEncounterStages.length > 0) && (
 					<div className="flex flex-col md:grid md:grid-cols-[100px_480px] items-center">
-						<div className="md:h-[68px] pt-4 md:pt-0 flex items-center">{encountStage}</div>
+						<div className="md:h-[68px] pt-4 md:pt-0 flex items-center">
+							{encountStage}
+						</div>
 						<div className="flex flex-wrap  items-center justify-center mb-1">
 							{floorDuckStages}
 							{floorEncounterStages}
@@ -85,8 +89,10 @@ export default function FloorNavigation({ stagesList, floor }) {
 				)}
 				{floorBossStages.length > 0 && (
 					<div className="flex flex-col md:grid md:grid-cols-[100px_480px] items-center">
-						<div className="md:h-[68px] pt-4 md:pt-0 flex items-center">{bossStage}</div>
-						<div className="flex flex-wrap  items-center justify-center mb-1">
+						<div className="md:h-[68px] pt-4 md:pt-0 flex items-center">
+							{bossStage}
+						</div>
+						<div className="flex flex-wrap md:flex-nowrap  items-center justify-center mb-1">
 							{floorBossStages}
 						</div>
 					</div>
