@@ -15,7 +15,7 @@ export const FLOOR_ROMAN_NUMERALS = [
 	"VIII",
 ];
 
-const HallucationDiv = ({ text, selected, size }) => {
+const HallucationDiv = ({ text, selected, size, langPack }) => {
 	const selectedStyles = "bg-hallu-red";
 	const unselectedStyles = "bg-neutral-800 text-neutral-500";
 	// console.log(text, selected);
@@ -26,7 +26,7 @@ const HallucationDiv = ({ text, selected, size }) => {
 			} relative`}
 		>
 			<div className="text-center flex items-center justify-center h-full">
-				{text}的
+				{text}{langPack.floor_title_suffix}
 			</div>
 			<div
 				className={`absolute ${
@@ -42,7 +42,7 @@ const HallucationDiv = ({ text, selected, size }) => {
 	);
 };
 
-const Dropdown = ({ open, setOpen, state, setState }) => {
+const Dropdown = ({ open, setOpen, state, setState,langPack }) => {
 	return (
 		<>
 			<div
@@ -87,6 +87,7 @@ const Dropdown = ({ open, setOpen, state, setState }) => {
 										text={hallu.name}
 										selected={selected}
 										size="normal"
+										langPack={langPack}
 									/>
 								</div>
 							);
@@ -109,7 +110,6 @@ export default function FloorTitle({ theme }) {
 		useAppContext();
 	const langPack = require("../../lang/" + language + ".json");
 	const [open, setOpen] = useState(false);
-
 	return (
 		<>
 			<div className="relative text-xl select-none self-center place-self-center">
@@ -134,6 +134,7 @@ export default function FloorTitle({ theme }) {
 									text={hallu.name}
 									selected={true}
 									size="small"
+									langPack={langPack}
 								/>
 							);
 						})}
@@ -145,6 +146,7 @@ export default function FloorTitle({ theme }) {
 					setOpen={setOpen}
 					state={hallucinations}
 					setState={setHallucinations}
+					langPack={langPack}
 				/>
 			</div>
 		</>

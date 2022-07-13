@@ -16,7 +16,7 @@
 	"hp_50": "HP↓50%",
 	"rage": "Rage Mode",
 	"prisoner_release": "Released State",
-
+	"multiform_suffix":"# Form",
 	"phcs_levels": [
 		"迷雾歧途",
 		"落阳庭院",
@@ -25,6 +25,7 @@
 		"血月长廊",
 		"渴欲大厅"
 	],
+	"floor_title_suffix":"的",
 
 	"enemy_stats": {
 		"enemy":"enemy",

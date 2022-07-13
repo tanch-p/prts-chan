@@ -10,9 +10,10 @@
 			"aspd%": "100",
 			"aspd": "3.2",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.9",
+			"lifepoint": 1,
+			"ms": "0.9",
 			"special": [
 				{
 					"name": "gray_shield",

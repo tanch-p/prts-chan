@@ -1,6 +1,10 @@
 {
 	"id": "HST",
-	"name": { "en": "“剧团喉舌”", "jp": "“剧团喉舌”", "cn": "“剧团喉舌”" },
+	"name": {
+		"en": "“剧团喉舌”",
+		"jp": "“剧团喉舌”",
+		"cn": "“剧团喉舌”"
+	},
 	"format": "multiform",
 	"stats": {
 		"level0": {
@@ -11,31 +15,147 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2",
-			
 			"weight": "7",
-			"lifepoint":1,"ms": "0.5",
-			"special": [
+			"lifepoint": 30,
+			"ms": "0.5",
+			"forms": [
 				{
-					"name": "statue",
-					"type": "def",
-					"tooltip": {
-						"simple": {
-							"en": ["DEF UP "],
-							"jp": [],
-							"cn": []
+					"mods": {},
+					"special": [
+						{
+							"type": "others",
+							"tooltip": {
+								"simple": {
+									"en": [
+										"Invincible - cannot be attacked, lasts indefinitely",
+										"Loses 10% HP when Host's Assistant is defeated"
+									],
+									"jp": [
+										"無敵→攻撃を受け付けない、継続時間永久",
+										"助手が倒される度に最大HP10％のダメージを受ける"
+									],
+									"cn": [""]
+								}
+							}
 						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
+						{
+							"name": "summon_helper",
+							"type": "others",
+							"start": 0,
+							"skill": 3,
+							"tooltip": {
+								"simple": {
+									"en": ["Every 45s summons 2 Host's Assistants"],
+									"jp": ["45秒毎に助手を2体召喚する"],
+									"cn": [""]
+								}
+							}
+						},
+						{
+							"type": "others",
+							"tooltip": {
+								"simple": {
+									"en": ["Normal attack targets 2 units"],
+									"jp": ["2体同時攻撃"],
+									"cn": []
+								},
+								"detailed": { "en": [], "jp": [], "cn": [] }
+							}
+						},
+						{
+							"name": "nervous_impair",
+							"type": "others",
+							"value": 0.2,
+							"tooltip": {
+								"simple": {
+									"en": ["Attacks deal 20% ATK Nervous Impairment"],
+									"jp": ["攻撃時、攻撃力の20%の神経ダメージを与える"],
+									"cn": ["普通攻击附带自身攻击力20%的神经损伤"]
+								}
+							}
+						}
+					]
+				},
+				{
+					"mods": {},
+
+					"special": [
+						{
+							"name": "summon_helper_2",
+							"type": "others",
+							"start": 0,
+							"skill": 3,
+							"tooltip": {
+								"simple": {
+									"en": [
+										"On revival summons 10 Host's Assistants which are invincible for 10s",
+										"Does not summon any more units for the rest of the battle"
+									],
+									"jp": [
+										"復活後10秒無敵の助手を10体召喚する",
+										"以降助手召喚しない"
+									],
+									"cn": [""]
+								}
+							}
+						},
+						{
+							"type": "others",
+							"tooltip": {
+								"simple": {
+									"en": [
+										"Invincible - cannot be attacked, lasts indefinitely",
+										"Loses 10% HP when Host's Assistant is defeated"
+									],
+									"jp": [
+										"無敵→攻撃を受け付けない、継続時間∞",
+										"助手が倒される度に最大HP10％のダメージを受ける"
+									],
+									"cn": [""]
+								}
+							}
+						},
+
+						{
+							"type": "others",
+							"tooltip": {
+								"simple": {
+									"en": ["Normal attack targets 2 units"],
+									"jp": ["2体同時攻撃"],
+									"cn": []
+								},
+								"detailed": { "en": [], "jp": [], "cn": [] }
+							}
+						},
+						{
+							"name": "nervous_impair",
+							"type": "others",
+							"value": 0.2,
+							"tooltip": {
+								"simple": {
+									"en": ["Attacks deal 20% ATK Nervous Impairment"],
+									"jp": ["攻撃時、攻撃力の20%の神経ダメージを与える"],
+									"cn": ["普通攻击附带自身攻击力20%的神经损伤"]
+								}
+							}
+						}
+					]
 				}
 			]
 		}
 	},
-	"normal_attack": {
-		"atk_type": ["ranged", "arts"],
-		"hits": 1
-	},
-	"スタン耐性": "無",
-	"眠り耐性": "無",
-	"凍結耐性": "無",
+	"normal_attack": [
+		{
+			"atk_type": ["ranged", "arts"],
+			"hits": 1
+		},
+		{
+			"atk_type": ["ranged", "arts"],
+			"hits": 1
+		}
+	],
+	"スタン耐性": "有",
+	"眠り耐性": "有",
+	"凍結耐性": "有",
 	"type": ["ranged", "boss"]
 }

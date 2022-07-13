@@ -17,14 +17,16 @@
 	"hp_50": "HP50％以下",
 	"rage": "怒り状態",
 	"prisoner_release": "解放状態",
+	"multiform_suffix":"第#形態",
 	"phcs_levels": [
-		"迷雾歧途",
-		"落阳庭院",
+		"迷霧の岐路",
+		"落陽の庭園",
 		"故土残躯",
-		"噩梦之始",
-		"血月长廊",
+		"悪夢の始まり",
+		"緋月の回路",
 		"渴欲大厅"
 	],
+	"floor_title_suffix":"の",
 
 	"enemy_stats": {
 		"enemy": "敵",

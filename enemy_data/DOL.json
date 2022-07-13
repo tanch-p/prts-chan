@@ -9,7 +9,7 @@
 			"res": "60",
 			"aspd%": "100",
 			"aspd": "4",
-			"range": "0",
+			"range": "99",
 			"weight": "10",
 			"lifepoint": 30,
 			"ms": "0.5",
@@ -32,7 +32,7 @@
 						"simple": {
 							"en": ["Recovers 0.25% Max Hp/s (Can be disabled by a relic)"],
 							"jp": [
-								"毎秒最大HPの0.25％を回復する（あるおたからで無効化可能）"
+								"毎秒最大HPの0.25％を回復する（ある秘宝で無効化可能）"
 							],
 							"cn": []
 						}
@@ -41,7 +41,7 @@
 				{
 					"name": "counter",
 					"type": "atk",
-					"suffix": { "en": "Counter", "jp": "反撃", "cn": "反击" },
+					"suffix": { "en": "counter", "jp": "反撃", "cn": "反击" },
 					"multiplier": 1,
 					"hits": 1,
 					"tooltip": {

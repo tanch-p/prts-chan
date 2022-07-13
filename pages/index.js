@@ -6,6 +6,7 @@ import { useAppContext } from "context/AppContext";
 
 //images
 import phcs_main_banner from "@/public/images/banners/phcs-main-banner.png";
+import phcs_banner_2 from "@/public/images/banners/phcs_banner_2.webp";
 
 export default function Home() {
 	const { language, device } = useAppContext();
@@ -56,10 +57,23 @@ export default function Home() {
 
 	const linesOfText = {
 		jp: ["CC7お疲れ様でした！", "統合戦略のページは鋭意開発中！"],
+		en: ["Miss Christine has been awaiting your arrival, Doctor."],
+	};
+	const TODOtitle = { en: "To be implemented:", jp: "鋭意開発中：" };
+	const TODO = {
 		en: [
-			"Hope you found this site useful for CC#7!",
-			"See you back in July for the greatest treat of the year - ",
-			"Phantom & Crimson Solitaire",
+			"Map Data",
+			"Enemy Routes",
+			"Relic Tooltips",
+			"Stage Name Translations",
+			"and more...",
+		],
+		jp: [
+			"ステージ情報",
+			"敵ルート",
+			"秘宝テキスト",
+			"ステージ名翻訳",
+			"色々…",
 		],
 	};
 
@@ -75,19 +89,31 @@ export default function Home() {
 				}`}
 			>
 				<div id="main content" className="w-full md:min-w-10">
-					<div className="relative shadow-2xl">
-						<Image
-							src={phcs_main_banner}
-							layout="responsive"
-							alt="phantom and crimson solitaire"
-							className="brightness-[.15] "
-						/>
+					<div className="relative shadow-2xl max-w-screen-sm md:max-w-3xl">
+						<Link href="/stages/is/ISW-NO_礼炮小队">
+							<Image
+								src={phcs_banner_2}
+								layout="intrinsic"
+								alt="phantom and crimson solitaire"
+								className="hover:cursor-pointer"
+							/>
+						</Link>
 					</div>
 				</div>
-				<div className="w-100vw ml-2 md:ml-0 md:w-[560px] mt-6 text-center">
+				<div className="w-100vw ml-2 md:ml-0 md:w-full mt-6 text-center">
 					<ul>
 						{linesOfText[language].map((line) => (
 							<li key={line}>{line}</li>
+						))}
+					</ul>
+				</div>
+				<div className="justify-self-start mt-20">
+					<ul>
+						<span className="font-medium">{TODOtitle[language]}</span>
+						{TODO[language].map((line) => (
+							<li key={line} className="text-sm list-outside list-disc">
+								{line}
+							</li>
 						))}
 					</ul>
 				</div>
