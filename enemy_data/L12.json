@@ -1,0 +1,54 @@
+{
+	"id": "L12",
+	"name": {
+		"en": "Mudrock Zealot Leader",
+		"jp": "マドロック隊実動部隊長",
+		"cn": "泥岩小队践行者组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "13000",
+			"atk": "1000",
+			"def": "800",
+			"res": "30",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "0",
+			"weight": "3",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": [
+				{
+					"name": "MR_squad_shield",
+					"type": "self-buff",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Appears with a shield which absorbs up to 10002 Arts damage",
+								"Shield Active: Max HP+50%、ASPD+50%"
+							],
+							"jp": [
+								"登場時、合計10002の術攻撃を吸収するシールドを持つ",
+								"シールド存在中は最大HP+50%、攻撃速度+50%"
+							],
+							"cn": []
+						},
+						"detailed": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["melee", "sarkaz"]
+}

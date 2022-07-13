@@ -8,7 +8,7 @@ import FloorTitle from "../IS/Floor_title";
 const IS_THEMES = ["phcs"];
 
 export const Navbar = ({ open, setOpen, device, theme }) => {
-	const { language, setLanguage } = useAppContext();
+	const { language, setLanguage, hallucinations } = useAppContext();
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	const languageOptions = [
@@ -20,7 +20,9 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 	const getThemeStyles = (theme) => {
 		switch (theme) {
 			case "phcs":
-				return "bg-neutral-800 text-white fixed top-0";
+				return `bg-neutral-800 text-white fixed top-0 ${
+					hallucinations.length > 0 ? "h-24" : "h-16"
+				} `;
 			default:
 				return "bg-gray-200 text-gray-700 dark:bg-[#131313] dark:text-white border-b dark:border-none dark:shadow-lg border-gray-400";
 		}
@@ -31,19 +33,19 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 			<nav
 				className={`w-[100vw] md:w-full px-6 md:px-0 z-10 ${getThemeStyles(
 					theme
-				)}   ${language === "jp" ? "font-jp" : "font-sans"}`}
+				)}   ${language === "jp" ? "" : ""}`}
 			>
 				<div
-					className={`grid grid-cols-3 place-items-center max-w-7xl mx-auto h-16`}
+					className={`grid md:grid-cols-3 place-items-center max-w-7xl mx-auto h-16`}
 				>
 					<div
 						className={`flex items-center relative justify-self-start  ${
-							IS_THEMES.includes(theme) ? "self-start mt-[18px]" : ""
+							IS_THEMES.includes(theme) ? "self-start mt-[18px] hidden md:block" : ""
 						}`}
 					>
 						<button
 							aria-label="Open Menu"
-							className={`${
+							className={`hidden ${
 								device === "mobile" ? "mx-2 h-0 w-0" : " mr-2"
 							} opacity-0`}
 							onClick={() => setOpen(!open)}
@@ -53,11 +55,13 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 						</button>
 
 						<Link href={`/`}>
-							<a className="text-xl font-bold min-w-min">PRTSちゃん</a>
+							<a className="text-xl font-bold min-w-min whitespace-nowrap">
+								PRTSちゃん
+							</a>
 						</Link>
 						{IS_THEMES.includes(theme) ? null : (
 							<Link href={`/about`}>
-								<a className="pl-2 font-medium">About</a>
+								<a className="pl-2 ml-2 md:ml-4 font-medium">About</a>
 							</Link>
 						)}
 					</div>
@@ -67,8 +71,8 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 						<div></div>
 					)}
 					<div
-						className={`text-left relative justify-self-end mr-12 ${
-							IS_THEMES.includes(theme) ? "self-start mt-[13px]" : ""
+						className={`text-left relative justify-self-end md:mr-12 ${
+							IS_THEMES.includes(theme) ? "self-start mt-[13px] hidden md:block" : ""
 						}`}
 					>
 						<div>
@@ -80,7 +84,7 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 									setMenuOpen(!menuOpen);
 								}}
 							>
-								<p>
+								<p className="whitespace-nowrap">
 									{language === "jp" ? "言語：" : "Language: "}
 									<span className="font-bold">{`${language.toUpperCase()}`}</span>
 								</p>

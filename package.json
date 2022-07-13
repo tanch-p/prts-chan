@@ -3,11 +3,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
+    "eslint": "^8.18.0",
+    "eslint-config-next": "^12.1.6",
     "next": "latest",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.2.3",

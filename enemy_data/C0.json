@@ -6,12 +6,13 @@
 			"hp": "2200",
 			"atk": "300",
 			"def": "90",
-			"mdef": "20",
+			"res": "20",
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "1",
+			"lifepoint": 1,
 			"ms": "1",
 			"special": [
 				{
@@ -31,12 +32,13 @@
 			"hp": "4000",
 			"atk": "300",
 			"def": "90",
-			"mdef": "20",
+			"res": "20",
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "1",
+			"lifepoint": 1,
 			"ms": "1",
 			"special": [
 				{
@@ -56,12 +58,13 @@
 			"hp": "6000",
 			"atk": "300",
 			"def": "130",
-			"mdef": "20",
+			"res": "20",
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "1",
+			"lifepoint": 1,
 			"ms": "1",
 			"special": [
 				{

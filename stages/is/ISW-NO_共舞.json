@@ -1,0 +1,32 @@
+{
+	"name": { "en": "共舞", "jp": "共舞", "cn": "共舞" },
+	"img": "ISW-NO_共舞",
+	"theme": "phcs",
+	"floors": [4],
+	"count": "20-22",
+	"sp_count": "22 - 100%",
+	"initial_cost": "7",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%120",
+				"hp": "%120"
+			},
+			"text": "敌方单位的攻击力和生命值都提升至120%,绯红歌伶的防御力提升至200%"
+		},
+		{
+			"targets": ["CS2"],
+			"mods": {
+				"def": "%200"
+			}
+		}
+	],
+	"enemies": [
+		{ "id": "CS1", "count": "11", "stats": "level0" },
+		{ "id": "CS2", "count": "3", "stats": "level0" },
+		{ "id": "CS4", "count": "10", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	]
+}

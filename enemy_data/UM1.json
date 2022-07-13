@@ -6,13 +6,13 @@
 			"hp": "40000",
 			"atk": "230",
 			"def": "220",
-			"mdef": "70",
+			"res": "70",
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "3.5",
 			"lifepoint": 1,
 			"weight": "4",
-			"ms": "0.65",
+			"lifepoint":1,"ms": "0.65",
 			"special": [
 				{
 					"type": "others",
@@ -61,7 +61,7 @@
 					"type": "atk",
 					"suffix": { "en": "💥/Arts", "jp": "💥・術", "cn": "💥・法术" },
 					"multiplier": 1,
-					"fixed-dmg": 1000,
+					"fixed": 1000,
 					"hits": 1,
 					"fixedInc": 0,
 					"tooltip": {

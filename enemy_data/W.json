@@ -6,13 +6,13 @@
 			"hp": "10000",
 			"atk": "470",
 			"def": "100",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "bomb",
@@ -42,13 +42,13 @@
 			"hp": "21000",
 			"atk": "650",
 			"def": "200",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.7",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "bomb",
@@ -77,13 +77,13 @@
 			"hp": "18000",
 			"atk": "530",
 			"def": "200",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.7",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "bomb",
@@ -110,7 +110,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

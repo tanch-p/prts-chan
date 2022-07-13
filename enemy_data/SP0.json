@@ -10,12 +10,13 @@
 			"hp": "15000",
 			"atk": "700",
 			"def": "1300",
-			"mdef": "60",
+			"res": "60",
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "4",
+			"lifepoint": 1,
 			"ms": "0.7",
 			"special": [
 				{
@@ -31,12 +32,13 @@
 			"hp": "10000",
 			"atk": "600",
 			"def": "1000",
-			"mdef": "40",
+			"res": "40",
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "4",
+			"lifepoint": 1,
 			"ms": "0.7",
 			"special": [
 				{
@@ -52,12 +54,13 @@
 			"hp": "10000",
 			"atk": "600",
 			"def": "1000",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "4",
+			"lifepoint": 1,
 			"ms": "0.7",
 			"special": [
 				{
@@ -71,7 +74,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

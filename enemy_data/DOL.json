@@ -6,21 +6,52 @@
 			"hp": "300000",
 			"atk": "800",
 			"def": "700",
-			"mdef": "60",
+			"res": "60",
 			"aspd%": "100",
 			"aspd": "4",
-			"range": "0",
-			"HP回復速度": "0",
+			"range": "99",
 			"weight": "10",
+			"lifepoint": 30,
 			"ms": "0.5",
 			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Normal attack targets 2 units"],
+							"jp": ["2体同時攻撃"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
 				{
 					"name": "hp_regen",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["recovers 1% hp/s"],
-							"jp": [],
+							"en": ["Recovers 0.25% Max Hp/s (Can be disabled by a relic)"],
+							"jp": [
+								"毎秒最大HPの0.25％を回復する（ある秘宝で無効化可能）"
+							],
+							"cn": []
+						}
+					}
+				},
+				{
+					"name": "counter",
+					"type": "atk",
+					"suffix": { "en": "counter", "jp": "反撃", "cn": "反击" },
+					"multiplier": 1,
+					"hits": 1,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Every 20 hits received, unleases a 100% ATK arts dmg counter to all units"
+							],
+							"jp": [
+								"20回攻撃を受けると、味方全体に攻撃力100％術ダメージのカウンターを放つ"
+							],
 							"cn": []
 						}
 					}
@@ -30,22 +61,27 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["HP shield"],
-							"jp": [],
+							"en": [
+								"Shield absorbs up to 15% Max Hp of ALL damage types",
+								"Shield Active: does not normal attack & all enemies MS+200%",
+								"CD45s, during shield active cooldown proceeds"
+							],
+							"jp": [
+								"バリア→最大HP15％のダメージを吸収する",
+								"バリア使用中→通常攻撃しない、敵全体移動速度＋200％",
+								"CD45秒, クールタイムは使用中でもカウントされる"
+							],
 							"cn": []
 						}
 					}
 				},
 				{
-					"name": "counter",
-					"type": "atk",
-					"suffix": { "en": "Counter", "jp": "反撃", "cn": "反击" },
-					"multiplier": 1,
-					"hits": 1,
+					"name": "self_destruct",
+					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Skill→", ""],
-							"jp": ["スキル→", ""],
+							"en": ["Self-destructs after 8mins, taking away 30 lifepoint"],
+							"jp": ["8分後自爆して、耐久値30点減る"],
 							"cn": []
 						}
 					}

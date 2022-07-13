@@ -1,0 +1,13 @@
+{
+	"name": { "en": "无序盛宴", "jp": "无序盛宴", "cn": "无序盛宴" },
+	"img": "ISW-SP_无序盛宴",
+	"theme": "phcs",
+	"floors": [4, 5],
+	"count": "14",
+	"enemies": [
+		{ "id": "CS1", "count": "2", "stats": "level0" },
+		{ "id": "JAK", "count": "1", "stats": "level0" },
+		{ "id": "G19", "count": "3", "stats": "level0" },
+		{ "id": "G20", "count": "8", "stats": "level0" }
+	]
+}

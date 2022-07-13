@@ -11,7 +11,7 @@
 				},
 				"img": "8号競技場/75px-Enemy_scorpn_1",
 				"effects": [
-					{ "targets": ["K3"], "mods": { "def": "%40", "mdef": 40 } }
+					{ "targets": ["K3"], "mods": { "def": "%40", "res": 40 } }
 				],
 				"tooltip": {
 					"en": "[Training Pincerbeast] DEF +40%, RES +40",

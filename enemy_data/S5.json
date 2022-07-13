@@ -10,14 +10,33 @@
 			"hp": "12000",
 			"atk": "500",
 			"def": "200",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-			"HP回復速度": "0",
+
 			"weight": "2",
+			"lifepoint": 1,
 			"ms": "0.8",
-			"special": []
+			"special": [
+				{
+					"name": "bind",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Skill → Uses chains to disable units (deals 35% atk Arts dmg/s for 20s, only used once per battle)"
+							],
+							"jp": [
+								"スキル→20秒間味方ユニット1体を束縛し、1秒当たり攻撃力35%分の継続術ダメージを与える",
+								"※本スキルは戦闘中1回使う"
+							],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {
@@ -27,5 +46,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["ranged", "sarkaz","elite"]
+	"type": ["ranged", "sarkaz", "elite"]
 }

@@ -10,12 +10,13 @@
 			"hp": "800",
 			"atk": "0",
 			"def": "50",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "0",
+			"lifepoint": 1,
 			"ms": "0.9",
 			"special": []
 		},
@@ -23,12 +24,13 @@
 			"hp": "2500",
 			"atk": "0",
 			"def": "50",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "0",
+			"lifepoint": 1,
 			"ms": "0.9",
 			"special": []
 		},
@@ -36,20 +38,21 @@
 			"hp": "3000",
 			"atk": "0",
 			"def": "100",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "0",
+			"lifepoint": 1,
 			"ms": "0.9",
 			"special": []
 		}
 	},
-		"normal_attack": {
-			"atk_type": ["no_attack"],
-			"hits": 1
-		},
+	"normal_attack": {
+		"atk_type": ["no_attack"],
+		"hits": 1
+	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",

@@ -6,13 +6,13 @@
 			"hp": "3300",
 			"atk": "400",
 			"def": "150",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "4.5",
 			"range": "7",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"special": [
 				{
 					"type": "others",
@@ -33,13 +33,13 @@
 			"hp": "3300",
 			"atk": "220",
 			"def": "150",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "4.5",
 			"range": "7",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"special": [
 				{
 					"type": "others",

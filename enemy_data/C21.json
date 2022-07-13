@@ -11,12 +11,12 @@
 			"hp": "20000",
 			"atk": "800",
 			"def": "400",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "0",
-			"HP回復速度": "0",
 			"weight": "5",
+			"lifepoint": 1,
 			"ms": "0.8",
 			"special": []
 		}
@@ -29,8 +29,7 @@
 	"眠り耐性": "無",
 	"凍結耐性": "無",
 	"imprisoned": {
-		"aspd": -0.5,
-		"fixed-def": 300,
+		"mods": { "aspd": -0.5, "fixed_def": 300 },
 		"special": [
 			{
 				"name": "self_release",
@@ -64,23 +63,13 @@
 			}
 		]
 	},
-	"release": {
-		"atk": 1.5,
+	"released": {
+		"mods": { "atk": 1.5 },
 		"normal_attack": {
 			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Released State"],
-						"jp": ["解放状態"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": []
 	},
-	"type": ["melee","elite"]
+	"type": ["melee", "elite"]
 }

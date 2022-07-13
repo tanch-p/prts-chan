@@ -10,13 +10,13 @@
 			"hp": "13500",
 			"atk": "380",
 			"def": "160",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-			"HP回復速度": "0",
+			
 			"weight": "1",
-			"ms": "0.7",
+			"lifepoint":1,"ms": "0.7",
 			"special": [
 				{
 					"type": "others",
@@ -35,19 +35,21 @@
 			"hp": "15000",
 			"atk": "380",
 			"def": "160",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-			"HP回復速度": "0",
+			
 			"weight": "1",
-			"ms": "0.7",
+			"lifepoint":1,"ms": "0.7",
 			"special": [
 				{
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Normal Atks do 100% splash to 4 tiles surrounding target"],
+							"en": [
+								"Normal Atks do 100% splash to 4 tiles surrounding target"
+							],
 							"jp": ["通常攻撃→攻撃対象の隣接4マスに100％のダメージ"],
 							"cn": []
 						},
@@ -65,5 +67,5 @@
 	"眠り耐性": "無",
 	"凍結耐性": "",
 
-	"type":["ranged"]
+	"type": ["ranged"]
 }

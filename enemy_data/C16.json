@@ -11,26 +11,28 @@
 			"hp": "9500",
 			"atk": "400",
 			"def": "400",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "2",
+			"lifepoint": 1,
 			"ms": "1.6",
+			"lifepoint": 1,
 			"special": []
 		},
 		"感化": {
 			"hp": "11000",
 			"atk": "350",
 			"def": "400",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			"HP回復速度": "0",
 			"weight": "2",
 			"ms": "1.6",
+			"lifepoint": 1,
 			"special": []
 		}
 	},
@@ -43,8 +45,7 @@
 	"凍結耐性": "無",
 	"type": ["melee"],
 	"imprisoned": {
-		"aspd": -0.5,
-		"fixed-def": 0,
+		"mods": { "aspd": 0.5 },
 		"special": [
 			{
 				"name": "self_release",
@@ -63,8 +64,8 @@
 			}
 		]
 	},
-	"release": {
-		"atk": 1.5,
+	"released": {
+		"mods": { "atk": 1.5 },
 		"normal_attack": {
 			"atk_type": ["melee", "phys"],
 			"hits": 1
@@ -73,8 +74,8 @@
 			{
 				"tooltip": {
 					"simple": {
-						"en": ["Released State, attacks ignores 80% def"],
-						"jp": ["解放状態", "攻撃は防御80％無視"],
+						"en": ["Attacks ignores 80% def"],
+						"jp": ["攻撃は防御80％無視"],
 						"cn": []
 					}
 				}

@@ -1,40 +1,96 @@
 {
 	"id": "U10",
-	"name": { "en": "Ursus Raider Leader", "jp": "ウルサスコマンドス隊長", "cn": "乌萨斯突击队队长" },
+	"name": {
+		"en": "Ursus Raider Leader",
+		"jp": "ウルサスコマンドス隊長",
+		"cn": "乌萨斯突击队队长"
+	},
 	"stats": {
 		"level0": {
-            "hp": "10000",
-            "atk": "700",
-            "def": "500",
-            "mdef": "50",
-            "aspd%": "100",
-            "aspd": "2.2",
-            "range": "0",
-            "HP回復速度": "0",
-            "weight": "2",
+			"hp": "10000",
+			"atk": "700",
+			"def": "500",
+			"res": "50",
+			"aspd%": "100",
+			"aspd": "2.2",
+			"range": "0",
+
+			"weight": "2",
+			"lifepoint": 1,
 			"ms": "1.5",
-			"special": ["可使用远程武器攻击乌萨斯平民与斗士塔露拉","占用2个阻挡数"]
+			"special": [
+				{
+					"name": "two_block",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Block count - 2"],
+							"jp": ["ブロック数2以上でブロック可能"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
+				{
+					"name": "civ_attack",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Can use long-ranged weapons to attack Ursus Civilians"],
+							"jp": ["ウルサス民間人に対して遠距離攻撃を行う"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		},
-        "正义": {
-            "hp": "12000",
-            "atk": "700",
-            "def": "500",
-            "mdef": "50",
-            "aspd%": "100",
-            "aspd": "2.2",
-            "range": "0",
-            "HP回復速度": "0",
-            "weight": "2",
+		"正义": {
+			"hp": "12000",
+			"atk": "700",
+			"def": "500",
+			"res": "50",
+			"aspd%": "100",
+			"aspd": "2.2",
+			"range": "0",
+
+			"weight": "2",
+			"lifepoint": 1,
 			"ms": "1.5",
-			"special": ["可使用远程武器攻击乌萨斯平民与斗士塔露拉","占用2个阻挡数"]
+			"special": [
+				{
+					"name": "two_block",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Block count - 2"],
+							"jp": ["ブロック数2以上でブロック可能"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				},
+				{
+					"name": "civ_attack",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Can use long-ranged weapons to attack Ursus Civilians"],
+							"jp": ["ウルサス民間人に対して遠距離攻撃を行う"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee","elite"]
+	"type": ["melee", "elite"]
 }

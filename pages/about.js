@@ -12,7 +12,7 @@ export default function About({ allStagesData }) {
 				<title>{siteTitle}</title>
 			</Head>
 			{language === "jp" ? (
-				<div id="home-container" className="min-h-[100vh] font-jp">
+				<div id="home-container" className="min-h-[100vh] font-jp px-4 md:px-0">
 					<p className="text-lg font-semibold py-2">このサイトについて</p>
 					<p className="lg:max-w-xl my-3">
 						このサイトは補正が掛かった敵のデータを可視化するように、統合戦略のために作りました。統合戦略はまだ先なので、試しに危機契約のステージを加えました。まだまだ開発中なので、もしバグや不具合または改善したところを見つかったら、ディスコード
@@ -55,7 +55,7 @@ export default function About({ allStagesData }) {
 					</dl>
 				</div>
 			) : (
-				<div id="home-container" className="min-h-[100vh] font-sans">
+				<div id="home-container" className="min-h-[100vh] font-sans px-4 md:px-0">
 					<p className="text-lg font-semibold py-2">About this site:</p>
 					<p className="lg:max-w-xl my-3">
 						This website was created with the goal of being able to see the

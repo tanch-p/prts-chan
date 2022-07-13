@@ -7,13 +7,13 @@
             "hp": "10000",
             "atk": "550",
             "def": "550",
-            "mdef": "0",
+            "res": "0",
             "aspd%": "100",
             "aspd": "4",
             "range": "1.6",
-            "HP回復速度": "0",
+            
             "weight": "4",
-            "ms": "0.5",
+            "lifepoint":1,"ms": "0.5",
 			"special": [
 				{
 					"name": "statue",

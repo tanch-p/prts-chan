@@ -12,6 +12,8 @@ export default function Overlay({ open, setOpen, relicsArr, setRelicsArr }) {
 		setSelectedNormalRelic,
 	} = useAppContext();
 
+	const langPack = require(`../../lang/${language}.json`);
+
 	useEffect(() => {
 		const element = document.getElementById("relic-container");
 		element.scrollTo(0, element.scrollHeight);
@@ -26,7 +28,7 @@ export default function Overlay({ open, setOpen, relicsArr, setRelicsArr }) {
 
 	return (
 		<div
-			className={`relative transition-opacity duration-[50ms] ease-in-out select-none ${
+			className={`relative transition-opacity duration-[50ms] ease-in-out select-none  ${
 				open ? "opacity-100" : "opacity-0 invisible"
 			}`}
 			role="dialog"
@@ -45,8 +47,8 @@ export default function Overlay({ open, setOpen, relicsArr, setRelicsArr }) {
 					}
 				}}
 			>
-				<div className="max-w-7xl mx-auto py-36 ">
-					<div className="flex flex-col-reverse gap-y-12 w-full my-auto">
+				<div className="w-full md:w-full max-w-7xl mx-auto py-36">
+					<div className="flex flex-col-reverse gap-y-12 w-full overflow-x-auto md:overflow-visible my-auto">
 						<div
 							id="reset"
 							className="place-self-center rounded-xl bg-neutral-700 px-16 py-2 hover:cursor-pointer hover:bg-neutral-600"
@@ -58,35 +60,35 @@ export default function Overlay({ open, setOpen, relicsArr, setRelicsArr }) {
 							Reset
 						</div>
 						<RelicDiv
-							label="Hard Relics"
+							label={langPack.relic_labels[0]}
 							data={relics.hard}
 							type="hard"
 							state={selectedHardRelic}
 							setState={setSelectedHardRelic}
 						/>
 						<RelicDiv
-							label="-ATK"
+							label={langPack.relic_labels[1]}
 							data={relics.atk}
 							type="normal"
 							state={selectedNormalRelic}
 							setState={setSelectedNormalRelic}
 						/>
 						<RelicDiv
-							label="-DEF"
+							label={langPack.relic_labels[2]}
 							data={relics.def}
 							type="normal"
 							state={selectedNormalRelic}
 							setState={setSelectedNormalRelic}
 						/>
 						<RelicDiv
-							label="-HP"
+							label={langPack.relic_labels[3]}
 							data={relics.hp}
 							type="normal"
 							state={selectedNormalRelic}
 							setState={setSelectedNormalRelic}
 						/>
 						<RelicDiv
-							label="Others"
+							label={langPack.relic_labels[4]}
 							data={relics.others}
 							type="normal"
 							state={selectedNormalRelic}

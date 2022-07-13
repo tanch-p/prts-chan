@@ -10,13 +10,13 @@
 			"hp": "22000",
 			"atk": "850",
 			"def": "300",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "3",
-			"HP回復速度": "0",
+			
 			"weight": "3",
-			"ms": "0.4",
+			"lifepoint":1,"ms": "0.4",
 			"special": [
 				{
 					"name": "multi-target",
@@ -35,8 +35,8 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Does not attack while on standby"],
-							"jp": ["待機中攻撃しない"],
+							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
+							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}

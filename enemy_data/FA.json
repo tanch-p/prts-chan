@@ -6,13 +6,13 @@
 			"hp": "37000",
 			"atk": "1000",
 			"def": "350",
-			"mdef": "35",
+			"res": "35",
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "20",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "0.5",
+			"lifepoint":1,"ms": "0.5",
 			"special": [
 				{
 					"name": "ballista",
@@ -73,13 +73,13 @@
 			"hp": "22000",
 			"atk": "650",
 			"def": "350",
-			"mdef": "35",
+			"res": "35",
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "20.0",
-			"HP回復速度": "0",
+			
 			"weight": "5",
-			"ms": "0.3",
+			"lifepoint":1,"ms": "0.3",
 			"special": [
 				{
 					"name": "ballista",

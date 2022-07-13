@@ -1,18 +1,21 @@
 {
 	"id": "32",
-	"name": { "en": "Senior Armed Militant", "jp": "凶悪武装戦闘員", "cn": "高级武装人员" },
+	"name": {
+		"en": "Senior Armed Militant",
+		"jp": "凶悪武装戦闘員",
+		"cn": "高级武装人员"
+	},
 	"stats": {
 		"level0": {
 			"hp": "12000",
 			"atk": "1050",
 			"def": "700",
-			"mdef": "30",
+			"res": "30",
 			"aspd%": "100",
 			"aspd": "3.5",
-			"range": "0",
-			"HP回復速度": "0",
+			"range": "0",	
 			"weight": "3",
-			"ms": "0.65",
+			"lifepoint":1,"ms": "0.65",
 			"special": []
 		}
 	},

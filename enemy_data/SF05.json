@@ -6,13 +6,13 @@
 			"hp": "4800",
 			"atk": "300",
 			"def": "240",
-			"mdef": "20",
+			"res": "20",
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "0",
-			"ms": "0.75",
+			"lifepoint":1,"ms": "0.75",
 			"special": [
 				{
 					"type": "others",

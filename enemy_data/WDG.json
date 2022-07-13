@@ -6,17 +6,18 @@
 			"hp": "75000",
 			"atk": "1500",
 			"def": "600",
-			"mdef": "4.4",
+			"res": "4.4",
 			"aspd%": "100",
 			"aspd": "4.4",
 			"range": "2.5",
-			"HP回復速度": "0",
+
 			"weight": "4",
+			"lifepoint": 1,
 			"ms": "0.5",
 			"special": [
 				{
 					"name": "throw_rock",
-					"type": "atk",
+					"type": "others",
 					"multiplier": 0.7,
 					"hits": 1,
 					"fixedInc": 0,
@@ -24,8 +25,12 @@
 					"skill": 13,
 					"tooltip": {
 						"simple": {
-							"en": ["Skill→ stuns 25 sec, targets unstunned units first"],
-							"jp": ["スキル→", ""],
+							"en": [
+								"Rock Throw→stuns unit for 25 sec, prioritises unstunned units first. CD13s"
+							],
+							"jp": [
+								"石投げ→25秒スタンする、CD13秒 (スタンしてないユニットを優先に狙う）"
+							],
 							"cn": []
 						}
 					}
@@ -36,14 +41,36 @@
 			"hp": "80000",
 			"atk": "1500",
 			"def": "600",
-			"mdef": "4.4",
+			"res": "4.4",
 			"aspd%": "100",
 			"aspd": "4.4",
 			"range": "2.5",
-			"HP回復速度": "0",
+
 			"weight": "4",
+			"lifepoint": 2,
 			"ms": "0.5",
-			"special": []
+			"special": [
+				{
+					"name": "throw_rock",
+					"type": "others",
+					"multiplier": 0.7,
+					"hits": 1,
+					"fixedInc": 0,
+					"start": 13,
+					"skill": 13,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Rock Throw→stuns unit for 25 sec, prioritises unstunned units first. CD13s"
+							],
+							"jp": [
+								"石投げ→25秒スタンする、CD13秒 (スタンしてないユニットを優先に狙う）"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

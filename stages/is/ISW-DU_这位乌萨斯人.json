@@ -1,0 +1,13 @@
+{
+	"name": { "en": "这位乌萨斯人", "jp": "这位乌萨斯人", "cn": "这位乌萨斯人" },
+	"img": "ISW-DU_这位乌萨斯人",
+	"theme": "phcs",
+	"floors": [5],
+	"count": "58",
+	"initial_cost": "10",
+	"enemies": [
+		{ "id": "GPN", "count": "1", "stats": "这位乌萨斯人" },
+		{ "id": "R2", "count": "57", "stats": "这位乌萨斯人" },
+		{ "id": "R14", "count": "0", "stats": "level0" }
+	]
+}

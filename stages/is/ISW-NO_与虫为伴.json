@@ -1,0 +1,28 @@
+{
+	"name": { "en": "与虫为伴", "jp": "与虫为伴", "cn": "与虫为伴" },
+	"img": "ISW-NO_与虫为伴",
+	"theme": "phcs",
+	"floors": [1, 2],
+	"count": "33~35",
+	"sp_count": "35 - 100%",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%160",
+				"def": "%120",
+				"hp": "%140"
+			},
+			"text": "敌方单位的攻击力和防御力都提升至150%，生命值提升至190% "
+		}
+	],
+	"enemies": [
+		{ "id": "B1", "count": "20", "stats": "level0" },
+		{ "id": "B2", "count": "13", "stats": "level0" },
+		{ "id": "B4", "count": "5", "stats": "与虫为伴" },
+		{ "id": "K5", "count": "6", "stats": "与虫为伴" },
+		{ "id": "DLD", "count": "1", "stats": "level0" },
+		{ "id": "GPN", "count": "1", "stats": "level0" }
+	]
+}

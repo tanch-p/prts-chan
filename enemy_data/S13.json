@@ -10,12 +10,12 @@
 			"hp": "15000",
 			"atk": "700",
 			"def": "250",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "3",
-			"HP回復速度": "0",
 			"weight": "3",
+			"lifepoint": 1,
 			"ms": "0.4",
 			"special": [
 				{
@@ -35,8 +35,11 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Does not attack while on standby"],
-							"jp": ["待機中攻撃しない"],
+							"en": [
+								"Does not attack while on standby",
+								"Combat Ready - ms +200%"
+							],
+							"jp": ["待機中攻撃しない", "【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}
@@ -47,12 +50,12 @@
 			"hp": "15000",
 			"atk": "600",
 			"def": "200",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "3",
-			"HP回復速度": "0",
 			"weight": "3",
+			"lifepoint": 1,
 			"ms": "0.4",
 			"special": [
 				{
@@ -71,8 +74,11 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Does not attack while on standby"],
-							"jp": ["待機中攻撃しない"],
+							"en": [
+								"Does not attack while on standby",
+								"Combat Ready - ms +200%"
+							],
+							"jp": ["待機中攻撃しない", "【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}
@@ -81,11 +87,11 @@
 		}
 	},
 	"normal_attack": {
-		"atk_type":["ranged","arts"],
+		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "",
-	"type": ["ranged", "sarkaz","elite"]
+	"type": ["ranged", "sarkaz", "elite"]
 }

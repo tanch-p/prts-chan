@@ -1,40 +1,40 @@
 {
-  "id": "11",
-  "name": { "en": "Big Bob", "jp": "Big Bob", "cn": "大鲍勃" },
-  "stats": {
-    "level0": {
-      "hp": "22000",
-      "atk": "1900",
-      "def": "800",
-      "mdef": "30",
-      "aspd%": "100",
-      "aspd": "6",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "4",
-      "ms": "0.5",
-      "special": []
-    },
-    "無秩序な鉱区": {
-      "hp": "35000",
-      "atk": "1900",
-      "def": "1000",
-      "mdef": "30",
-      "aspd%": "100",
-      "aspd": "7",
-      "range": "0",
-      "HP回復速度": "0",
-      "weight": "4",
-      "ms": "0.5",
-      "special": []
-    }
-  },
+	"id": "11",
+	"name": { "en": "Big Bob", "jp": "Big Bob", "cn": "大鲍勃" },
+	"stats": {
+		"level0": {
+			"hp": "22000",
+			"atk": "1900",
+			"def": "800",
+			"res": "30",
+			"aspd%": "100",
+			"aspd": "6",
+			"range": "0",
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.5",
+			"special": []
+		},
+		"無秩序な鉱区": {
+			"hp": "35000",
+			"atk": "1900",
+			"def": "1000",
+			"res": "30",
+			"aspd%": "100",
+			"aspd": "7",
+			"range": "0",
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.5",
+			"special": []
+		}
+	},
 	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "",
-  "type": ["melee", "boss"]
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["melee", "boss"]
 }

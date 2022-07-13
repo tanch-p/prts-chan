@@ -10,13 +10,13 @@
 			"hp": "20000",
 			"atk": "1500",
 			"def": "2000",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "4",
-			"ms": "0.5",
+			"lifepoint":1,"ms": "0.5",
 			"special": [
 				{
 					"name": "stun_attack",

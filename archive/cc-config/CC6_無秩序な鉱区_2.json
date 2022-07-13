@@ -132,7 +132,7 @@
             "mods": {
               "hp": "%100",
               "atk": "%90",
-              "mdef": 45,
+              "res": 45,
               "special": {
                 "mudrock_shield": {
                   "tooltip": {
@@ -156,7 +156,7 @@
               "hp": "%100",
               "atk": "%90",
               "def": "%100",
-              "mdef": 45
+              "res": 45
             }
           }
         ],

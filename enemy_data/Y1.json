@@ -6,14 +6,28 @@
 			"hp": "3400",
 			"atk": "360",
 			"def": "100",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "1",
+			"lifepoint": 1,
 			"ms": "1.1",
-			"special": []
+			"special": [
+				{
+					"name": "ice_poke",
+					"type": "others",
+					"multiplier": 1.5,
+					"tooltip": {
+						"simple": {
+							"en": ["Deals 150% damage to frozen units"],
+							"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が150%まで上昇"],
+							"cn": []
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

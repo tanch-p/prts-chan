@@ -6,13 +6,13 @@
 			"hp": "10000",
 			"atk": "500",
 			"def": "200",
-			"mdef": "60",
+			"res": "60",
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "3",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"special": [
 				{
 					"name": "envy_beam",

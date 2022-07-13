@@ -10,12 +10,27 @@
 			"hp": "1550",
 			"atk": "220",
 			"def": "50",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "0",
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": []
+		},
+		"level1": {
+			"hp": "2500",
+			"atk": "330",
+			"def": "125",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+
+			"weight": "0",
+			"lifepoint": 1,
 			"ms": "0.9",
 			"special": []
 		}

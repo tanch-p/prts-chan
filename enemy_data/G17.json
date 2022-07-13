@@ -6,13 +6,13 @@
 			"hp": "16000",
 			"atk": "800",
 			"def": "800",
-			"mdef": "20",
+			"res": "20",
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "4",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "three_block",
@@ -32,13 +32,13 @@
 			"hp": "20000",
 			"atk": "800",
 			"def": "800",
-			"mdef": "20",
+			"res": "20",
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "4",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "three_block",

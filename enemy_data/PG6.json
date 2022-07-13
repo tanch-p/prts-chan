@@ -10,13 +10,13 @@
 			"hp": "4800",
 			"atk": "750",
 			"def": "50",
-			"mdef": "40",
+			"res": "40",
 			"aspd%": "100",
 			"aspd": "2.6",
 			"range": "4",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.9",
+			"lifepoint":1,"ms": "0.9",
 			"special": [
 				{
 					"name": "RPG",
@@ -42,7 +42,8 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+		"atk_type": ["ranged", "phys"],
+
 		"hits": 1
 	},
 	"スタン耐性": "無",

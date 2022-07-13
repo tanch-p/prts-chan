@@ -9,7 +9,7 @@
 				"effects": [
 					{
 						"targets": ["Melee"],
-						"mods": { "hp": "%40", "def": "%25", "mdef": 15 }
+						"mods": { "hp": "%40", "def": "%25", "res": 15 }
 					}
 				],
 				"tooltip": {
@@ -124,7 +124,7 @@
 							"hp": "%120",
 							"atk": "%75",
 							"def": "%100",
-							"mdef": 20,
+							"res": 20,
 							"special": {
 								"bomb": {
 									"multiplier": "%33",

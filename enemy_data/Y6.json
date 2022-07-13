@@ -10,14 +10,27 @@
 			"hp": "16000",
 			"atk": "830",
 			"def": "500",
-			"mdef": "20",
+			"res": "20",
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "3",
+			"lifepoint": 1,
 			"ms": "0.7",
-			"special": []
+			"special": [
+				{
+					"name": "ice_pick",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Deals 250% damage to frozen units"],
+							"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が250%まで上昇"],
+							"cn": []
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

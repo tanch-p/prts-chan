@@ -10,24 +10,40 @@
 			"hp": "50000",
 			"atk": "500",
 			"def": "300",
-			"mdef": "30",
+			"res": "30",
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "2.5",
-			"HP回復速度": "0",
+
 			"weight": "3",
+			"lifepoint": 1,
 			"ms": "0.6",
 			"special": [
 				{
+					"name": "fsk_powerup_10",
+					"type": "atk",
+					"multiplier": 1.7,
+					"suffix": { "en": "10 stacks", "jp": "10回", "cn": "10次" },
+					"tooltip": {
+						"simple": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				},
+				{
 					"name": "fsk_powerup",
-					"type": "others",
+					"type": "atk",
+					"multiplier": 2.4,
+					"suffix": { "en": "20 stacks", "jp": "20回", "cn": "20次" },
 					"tooltip": {
 						"simple": {
 							"en": [
 								"Every atk increases atk by 7%, aspd by 5, max 28 stacks",
 								"resets after not attacking for 4s"
 							],
-							"jp": [""],
+							"jp": ["攻撃するたびに攻撃力7%と攻撃速度が5上昇(28回まで）"],
 							"cn": []
 						}
 					}
@@ -38,24 +54,40 @@
 			"hp": "60000",
 			"atk": "550",
 			"def": "300",
-			"mdef": "30",
+			"res": "30",
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "2.5",
-			"HP回復速度": "0",
+
 			"weight": "3",
+			"lifepoint": 1,
 			"ms": "0.6",
 			"special": [
 				{
+					"name": "fsk_powerup_10",
+					"type": "atk",
+					"multiplier": 1.7,
+					"suffix": { "en": "10 stacks", "jp": "10回", "cn": "10次" },
+					"tooltip": {
+						"simple": {
+							"en": [],
+							"jp": [],
+							"cn": []
+						}
+					}
+				},
+				{
 					"name": "fsk_powerup",
-					"type": "others",
+					"type": "atk",
+					"multiplier": 2.4,
+					"suffix": { "en": "20 stacks", "jp": "20回", "cn": "20次" },
 					"tooltip": {
 						"simple": {
 							"en": [
 								"Every atk increases atk by 7%, aspd by 5, max 28 stacks",
 								"resets after not attacking for 4s"
 							],
-							"jp": [""],
+							"jp": ["攻撃するたびに攻撃力7%と攻撃速度が5上昇(28回まで）"],
 							"cn": []
 						}
 					}

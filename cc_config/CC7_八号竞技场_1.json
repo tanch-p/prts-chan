@@ -153,7 +153,7 @@
 						"mods": {
 							"hp": "%90",
 							"atk": "%30",
-							"mdef": 25,
+							"res": 25,
 							"special": {
 								"powerup": { "aspd": 2.5 },
 								"extra": {

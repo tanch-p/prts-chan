@@ -1,0 +1,100 @@
+{
+	"id": "K15",
+	"name": {
+		"en": "Left-hand' Tytus Topola",
+		"jp": "「左腕」タイタス・トポラ",
+		"cn": "“左手”泰特斯·白杨"
+	},
+	"stats": {
+		"level0": {
+			"hp": "20000",
+			"atk": "750",
+			"def": "700",
+			"res": "50",
+			"aspd%": "100",
+			"aspd": "2.5",
+			"range": "1.3",
+			"weight": "3",
+			"lifepoint": 1,
+			"ms": "0.75",
+			"special": [
+				{
+					"name": "revive",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["On defeat, recovers with full HP (once per battle)"],
+							"jp": ["倒されると一度だけHP100％で復活する"],
+							"cn": []
+						}
+					}
+				},
+				{
+					"name": "left_hand",
+					"type": "debuff",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Skill→Applies -50% Atk debuff to operator with highest attack stat, CD10s"
+							],
+							"jp": [
+								"スキル→最も攻撃力が高い味方の攻撃力を25秒50％減少する",
+								"CD:10秒"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		},
+		"骑士对决": {
+			"hp": "32000",
+			"atk": "800",
+			"def": "700",
+			"res": "50",
+			"aspd%": "100",
+			"aspd": "2.5",
+			"range": "1.3",
+			"weight": "3",
+			"lifepoint": 1,
+			"ms": "0.75",
+			"special": [
+				{
+					"name": "revive",
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["On defeat, recovers with full HP (once per battle)"],
+							"jp": ["倒されると一度だけHP100％で復活する"],
+							"cn": []
+						}
+					}
+				},
+				{
+					"name": "left_hand",
+					"type": "debuff",
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Skill→Applies -50% Atk debuff to operator with highest attack stat, CD25s"
+							],
+							"jp": [
+								"スキル→最も攻撃力が高い味方の攻撃力を25秒50％減少する",
+								"CD:25秒"
+							],
+							"cn": []
+						}
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["ranged", "arts"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged","elite"]
+}

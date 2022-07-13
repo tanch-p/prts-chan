@@ -128,7 +128,7 @@
             "targets": ["SP0"],
             "mods": {
               "hp": "%50",
-              "mdef": 20,
+              "res": 20,
               "special": {
                 "count": 2
               }

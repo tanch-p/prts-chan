@@ -12,8 +12,8 @@ export default function TooltipComponent({
 	};
 	if (tooltipType === "type") {
 		return (
-			<div className="group cursor-pointer relative w-min ">
-				<div className="overflow-visible ">
+			<div className="group cursor-pointer relative w-min">
+				<div className="overflow-hidden">
 					<div
 						className={`${position.top}
 						${language === "jp" ? "text-sm w-[230px]" : "text-sm w-[160px]"}

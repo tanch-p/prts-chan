@@ -83,7 +83,7 @@
 						"mods": {
 							"hp": "%80",
 							"atk": "%30",
-							"mdef": 40,
+							"res": 40,
 							"special": {
 								"duel": {
 									"multiplier": 0.3,

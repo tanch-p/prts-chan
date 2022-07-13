@@ -1,32 +1,43 @@
 {
-    "id": "SI4",
-    "name_en": "Guerrilla Fighter Leader",
-    "name_jp": "遊撃隊戦士隊長",
-    "name_cn": "游击队战士组长",
-    "atk_type_jp": "物理",
-    "hp": "4500",
-    "atk": "330",
-    "def": "350",
-    "mdef": "20",
-    "aspd%": "100",
-    "aspd": "2",
-    "range": "0",
-    "HP回復速度": "0",
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "1.1",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "SI4",
+	"name": {
+		"en": "Guerrilla Fighter Leader",
+		"jp": "遊撃隊戦士隊長",
+		"cn": "游击队战士组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "4500",
+			"atk": "330",
+			"def": "350",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "1.1",
+			"special": [
+				{
+					"type": "others",
+					"tooltip": {
+						"simple": {
+							"en": ["Special Buff→Inc ms 30%"],
+							"jp": ["特殊強化→移動速度＋30％"],
+							"cn": []
+						},
+						"detailed": { "en": [], "jp": [], "cn": [] }
+					}
+				}
+			]
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }

@@ -10,18 +10,18 @@
 			"hp": "5500",
 			"atk": "430",
 			"def": "200",
-			"mdef": "20",
+			"res": "20",
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "2.4",
-			"HP回復速度": "0",
+			
 			"weight": "1",
-			"ms": "1",
+			"lifepoint":1,"ms": "1",
 			"special": []
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

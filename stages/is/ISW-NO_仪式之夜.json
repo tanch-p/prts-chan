@@ -1,8 +1,11 @@
 {
-	"name": { "en": "仪式之夜", "jp": "仪式之夜", "cn": "仪式之夜" },
+	"name": { "en": "仪式之夜", "jp": "儀式の夜", "cn": "仪式之夜" },
 	"img": "ISW-NO_仪式之夜",
 	"theme": "phcs",
 	"floors": [5],
+	"count": "46~47",
+	"sp_count": "47",
+	"initial_cost": "10",
 	"hard_mods": [
 		{
 			"targets": ["ALL"],
@@ -13,15 +16,14 @@
 			"text": "敌方单位的攻击力提升至120%，生命值提升至140%"
 		}
 	],
-	"count": "46~47",
 	"enemies": [
-		{ "id": "S7", "stats": "仪式之夜" },
-		{ "id": "S8", "stats": "level0" },
-		{ "id": "S1", "stats": "仪式之夜" },
-		{ "id": "S13", "stats": "level0" },
-		{ "id": "S15", "stats": "仪式之夜" },
-		{ "id": "S5", "stats": "level0" },
-		{ "id": "DLD", "stats": "level2" },
-		{ "id": "GPN", "stats": "level2" }
+		{ "id": "S7", "count": "23", "stats": "仪式之夜" },
+		{ "id": "S8", "count": "0", "stats": "level0" },
+		{ "id": "S1", "count": "12", "stats": "仪式之夜" },
+		{ "id": "S13", "count": "4", "stats": "level0" },
+		{ "id": "S15", "count": "6", "stats": "仪式之夜" },
+		{ "id": "S5", "count": "2", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
 	]
 }

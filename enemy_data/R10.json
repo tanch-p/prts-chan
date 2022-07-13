@@ -10,13 +10,13 @@
 			"hp": "5000",
 			"atk": "1200",
 			"def": "300",
-			"mdef": "30",
+			"res": "30",
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "1",
-			"ms": "0.9",
+			"lifepoint":1,"ms": "0.9",
 			"special": [
 				{
 					"name": "knife",

@@ -10,13 +10,13 @@
 			"hp": "6000",
 			"atk": "250",
 			"def": "200",
-			"mdef": "70",
+			"res": "70",
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "3",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"special": [
 				{
 					"name": "staffstrike",
@@ -65,7 +65,7 @@
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "ranged/arts", "jp": "遠・術", "cn": "远・法术" },
+		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

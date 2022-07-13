@@ -10,27 +10,65 @@
 			"hp": "3250",
 			"atk": "300",
 			"def": "0",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "1.7",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "0",
+			"lifepoint": 1,
 			"ms": "1",
-			"special": []
+			"special": [
+				{
+					"name": "bug_explode",
+					"type": "atk",
+					"suffix": { "en": "💥/arts", "jp": "💥・術", "cn": "💥・法术" },
+					"multiplier": 2,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Explodes on death, dealing 200% dmg to nearby units (Can be silenced)"
+							],
+							"jp": ["死亡時には爆発する（無効化可能）"],
+							"cn": ["死亡后对周围造成大量物理伤害"]
+						}
+					}
+				}
+			]
 		},
 		"寒渊惜别": {
 			"hp": "3250",
 			"atk": "270",
 			"def": "0",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "1.7",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "0",
+			"lifepoint": 1,
 			"ms": "1",
-			"special": []
+			"special": [
+				{
+					"name": "bug_explode",
+					"type": "atk",
+					"suffix": { "en": "💥/arts", "jp": "💥・術", "cn": "💥・法术" },
+					"multiplier": 2,
+					"hits": 1,
+					"fixedInc": 0,
+					"tooltip": {
+						"simple": {
+							"en": [
+								"Explodes on death, dealing 200% dmg + Cold❄ to nearby units (Can be silenced)"
+							],
+							"jp": ["死亡時には爆発する（無効化可能）"],
+							"cn": ["死亡后对周围造成大量物理伤害"]
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {

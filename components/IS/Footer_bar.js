@@ -1,6 +1,7 @@
 import Image from "next/image";
-import relicIcon from "../../public/images/phcs/relic.png";
-import combat from "../../public/images/phcs/combat.png";
+import relicIcon from "@/public/images/phcs/relic.png";
+
+import phcs_text_logo from "@/public/images/phcs/phcs_text_logo.png";
 import Overlay from "./Overlay";
 import useToggle from "../../hooks/useToggle";
 import { useState } from "react";
@@ -9,7 +10,7 @@ export default function FooterBar() {
 	const [relicOpen, setRelicOpen] = useToggle(false);
 	const [relicsArr, setRelicsArr] = useState([]);
 	return (
-		<div className="fixed bottom-0 left-0 select-none">
+		<div className="fixed bottom-0 left-0 select-none ">
 			<Overlay
 				open={relicOpen}
 				setOpen={setRelicOpen}
@@ -18,7 +19,7 @@ export default function FooterBar() {
 			/>
 			<div
 				as="nav"
-				className="border-t-2 border-gray-600 bg-neutral-900 w-full mt-4 fixed bottom-0 py-2 z-[30]"
+				className="shadow-2xl shadow-gray-400 bg-neutral-900 w-full max-w-[100vw] mt-4 fixed bottom-0 py-2 z-[30]"
 				onClick={() => {
 					if (relicOpen) setRelicOpen(!relicOpen);
 				}}
@@ -26,11 +27,11 @@ export default function FooterBar() {
 				<>
 					<div className="max-w-7xl mx-auto px-2 md:px-4">
 						<div className="relative flex items-center justify-between h-16">
-							<div className=" flex items-center py-[2px] bg-gradient-to-r from-neutral-600 via-neutral-900 to-neutral-900 relative">
+							<div className=" flex items-center py-[2px] bg-gradient-to-r from-neutral-700 via-neutral-900 to-neutral-900 relative">
 								<div className="flex items-center px-[6px] py-1 relative">
-
 									<Image
 										src={relicIcon}
+										alt="relic icon"
 										layout="intrinsic"
 										className="hover:cursor-pointer "
 										unoptimized
@@ -63,8 +64,14 @@ export default function FooterBar() {
 									</div>
 								</div>
 							</div>
-							<div className="">
-								<Image src={combat} layout="intrinsic" />
+							<div className="mt-2 hidden md:block">
+								<Image
+									src={phcs_text_logo}
+									layout="fixed"
+									alt="phantom & phantom solitaire"
+									className="brightness-110 "
+									unoptimized
+								/>
 							</div>
 						</div>
 					</div>

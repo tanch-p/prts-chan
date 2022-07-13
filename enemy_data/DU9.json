@@ -10,16 +10,16 @@
             "hp": "4000",
             "atk": "300",
             "def": "300",
-            "mdef": "0",
+            "res": "0",
             "aspd%": "100",
             "aspd": "2.5",
             "range": "0",
-            "HP回復速度": "0",
+            
             "weight": "2",
-            "ms": "1",
+            "lifepoint":1,"ms": "1",
 			"special": [
 				{
-					"type": "res",
+					"type": "others",
 					"tooltip": {
 						"simple": {
 							"en": ["Refraction - RES+70 (can be silenced)"],

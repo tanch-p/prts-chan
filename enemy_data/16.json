@@ -10,13 +10,13 @@
 			"hp": "3800",
 			"atk": "100",
 			"def": "350",
-			"mdef": "35",
+			"res": "35",
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "1",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "no_block",
@@ -36,13 +36,13 @@
 			"hp": "4300",
 			"atk": "100",
 			"def": "350",
-			"mdef": "35",
+			"res": "35",
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "1",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "no_block",
@@ -62,13 +62,13 @@
 			"hp": "3800",
 			"atk": "100",
 			"def": "350",
-			"mdef": "35",
+			"res": "35",
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "1",
-			"ms": "1.2",
+			"lifepoint":1,"ms": "1.2",
 			"special": [
 				{
 					"name": "no_block",

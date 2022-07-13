@@ -1,0 +1,29 @@
+{
+	"name": { "en": "似曾相识", "jp": "似曾相识", "cn": "似曾相识" },
+	"img": "ISW-NO_似曾相识",
+	"theme": "phcs",
+	"floors": [3],
+	"count": "26~28",
+	"sp_count": "28 - 100%",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%150",
+				"def": "%110",
+				"hp": "%150"
+			},
+			"text": "敌方单位的防御力提升至110%，攻击力和生命值都提升至150%"
+		}
+	],
+	"enemies": [
+		{ "id": "W", "count": "1", "stats": "似曾相识" },
+		{ "id": "S11", "count": "1 ~ 2", "stats": "level0" },
+		{ "id": "S7", "count": "17", "stats": "似曾相识" },
+		{ "id": "S15", "count": "6", "stats": "似曾相识" },
+		{ "id": "S16", "count": "2 ~ 3", "stats": "似曾相识" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	]
+}

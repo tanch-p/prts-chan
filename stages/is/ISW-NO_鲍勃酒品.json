@@ -1,0 +1,39 @@
+{
+	"name": { "en": "鲍勃酒品", "jp": "鲍勃酒品", "cn": "鲍勃酒品" },
+	"img": "ISW-NO_鲍勃酒品",
+	"theme": "phcs",
+	"floors": [4],
+	"count": "50~54",
+	"sp_count": "54 - 100%",
+	"initial_cost": "15",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%110",
+				"def": "%110",
+				"hp": "%130"
+			},
+			"text": "敌方单位的攻击力和防御力都提升至110%，生命值提升至130%,打手被替换为精干打手"
+		}
+	],
+	"enemies": [
+		{ "id": "G13", "count": "10", "stats": "鲍勃酒品" },
+		{ "id": "G14", "count": "21", "stats": "鲍勃酒品" },
+		{ "id": "SI8", "count": "1", "stats": "level0" },
+		{ "id": "D2", "count": "17", "stats": "level1" },
+		{ "id": "D4", "count": "3", "stats": "level1" },
+		{ "id": "D6", "count": "9", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	],
+	"hard_enemies": [
+		{ "id": "G14", "count": "31", "stats": "鲍勃酒品" },
+		{ "id": "SI8", "count": "1", "stats": "level0" },
+		{ "id": "D2", "count": "17", "stats": "level1" },
+		{ "id": "D4", "count": "3", "stats": "level1" },
+		{ "id": "D6", "count": "9", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	]
+}

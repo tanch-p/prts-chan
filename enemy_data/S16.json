@@ -10,12 +10,13 @@
 			"hp": "9500",
 			"atk": "500",
 			"def": "250",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "2",
+			"lifepoint": 1,
 			"ms": "0.4",
 			"special": [
 				{
@@ -23,8 +24,8 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": [],
+							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
+							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}
@@ -35,12 +36,13 @@
 			"hp": "12000",
 			"atk": "500",
 			"def": "250",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "2",
+			"lifepoint": 1,
 			"ms": "0.4",
 			"special": [
 				{
@@ -48,8 +50,8 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": [],
+							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
+							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}
@@ -60,12 +62,13 @@
 			"hp": "16000",
 			"atk": "600",
 			"def": "250",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			"HP回復速度": "0",
+
 			"weight": "2",
+			"lifepoint": 1,
 			"ms": "0.4",
 			"special": [
 				{
@@ -73,8 +76,8 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": [],
-							"jp": [],
+							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
+							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}
@@ -83,7 +86,7 @@
 		}
 	},
 	"normal_attack": {
-		"atk_type":["melee","arts"],
+		"atk_type": ["melee", "arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

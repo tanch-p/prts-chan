@@ -6,18 +6,31 @@
 			"hp": "4000",
 			"atk": "200",
 			"def": "150",
-			"mdef": "10",
+			"res": "10",
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "4",
-			"HP回復速度": "0",
+
 			"weight": "1",
+			"lifepoint": 1,
 			"ms": "0.8",
-			"special": []
+			"special": [
+				{
+					"name": "stun_attack",
+					"type": "debuff",
+					"tooltip": {
+						"simple": {
+							"en": ["Every 3rd attack stuns target for 15s"],
+							"jp": ["攻撃2回の度に次の攻撃に相手を15秒スタンする"],
+							"cn": ["攻击2次后，下一次攻击会晕眩目标15秒"]
+						}
+					}
+				}
+			]
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "遠・物理" },
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

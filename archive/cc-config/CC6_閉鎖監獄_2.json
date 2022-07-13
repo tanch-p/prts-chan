@@ -26,7 +26,7 @@
         "rank": 1,
         "name": { "jp": "増幅：法術阻害", "en": "Enemy RES 1", "cn": "" },
         "img": "閉鎖監獄/75px-Enemy_magicresistance_1",
-        "effects": [{ "targets": ["ALL"], "mods": { "mdef": 20 } }],
+        "effects": [{ "targets": ["ALL"], "mods": { "res": 20 } }],
         "tooltip": {
           "en": "All enemies RES +20",
           "cn": "",

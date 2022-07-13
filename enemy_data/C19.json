@@ -11,13 +11,13 @@
 			"hp": "9000",
 			"atk": "300",
 			"def": "100",
-			"mdef": "0",
+			"res": "0",
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "3",
-			"HP回復速度": "0",
 			"weight": "3",
 			"ms": "0.5",
+			"lifepoint": 1,
 			"special": []
 		}
 	},
@@ -30,8 +30,7 @@
 	"凍結耐性": "無",
 	"type": ["ranged", "elite"],
 	"imprisoned": {
-		"aspd": -0.5,
-		"fixed-def": 300,
+		"mods": { "aspd": 0.5, "fixed_def": 300 },
 		"special": [
 			{
 				"name": "caster_release",
@@ -70,8 +69,8 @@
 			}
 		]
 	},
-	"release": {
-		"atk": 1.5,
+	"released": {
+		"mods": { "atk": 1.5 },
 		"normal_attack": {
 			"atk_type": ["ranged", "arts"],
 			"hits": 1
@@ -80,8 +79,8 @@
 			{
 				"tooltip": {
 					"simple": {
-						"en": ["Released State, attacks 2 targets at once"],
-						"jp": ["解放状態", "2体同時攻撃"],
+						"en": ["Attacks 2 targets at once"],
+						"jp": ["2体同時攻撃"],
 						"cn": []
 					}
 				}

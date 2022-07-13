@@ -10,9 +10,15 @@ Get me a
 - searchable enemy details page that is actually human readable and doesn't load everything at once
 - tooltip for simple attributes such as taunt
 
+- Enemy Simple
+
+  1. Controls for atk type - when removed atk becomes text-center instead of left
+  2. stats with 2 or more rows become text left?
+  3. Controls - for stats
+  4. Controls - for special enemy buffs (sentry etc)
+
 - IS
 
-  1. slide motion for hallucinations
   2. small selected relics
   3. test if normal collection is times multiplier
   4. tooltips for hallu and relics
@@ -52,7 +58,7 @@ Get me a
   1. evaluate current schema if it will work with detailed view
 
 - Language
-  - Do we want to use i18n?
+  - Do we want to use i18n? for search purposes
 
 #### Resolved conflicts in enemy IDs:
 

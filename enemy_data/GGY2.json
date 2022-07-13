@@ -1,32 +1,107 @@
 {
-    "id": "GGY2",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "愤怒的守墓石像",
-    "atk_type_jp": "物理",
-    "hp": "12000",
-    "atk": "750",
-    "def": "750",
-    "mdef": "0",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "1.6",
-    "HP回復速度": "0",
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "ms": "0.5",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "GGY2",
+	"name": {
+		"en": "Enraged Tombkeeper Grotesque",
+		"jp": "怒れる墓守の石像",
+		"cn": "愤怒的守墓石像"
+	},
+	"format": "multiform",
+	"stats": {
+		"level0": {
+			"hp": "12000",
+			"atk": "750",
+			"def": "750",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "0",
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.5",
+			"forms": [
+				{
+					"mods": {},
+					"special": [
+						{
+							"type": "others",
+							"tooltip": {
+								"simple": {
+									"en": ["Refraction - RES+70 (can be silenced)"],
+									"jp": ["屈折→術耐性+70 (無効化可能)"],
+									"cn": ["折射：法术抗性增加70（可被沉默）"]
+								}
+							}
+						},
+						{
+							"type": "others",
+							"tooltip": {
+								"simple": {
+									"en": [
+										"Does not transit to 2nd form if defeated using Tattered Pillar"
+									],
+									"jp": [
+										"脆い石柱によるダメージで倒された場合、形態移行せずそのまま消滅する"
+									],
+									"cn": [""]
+								}
+							}
+						}
+					]
+				},
+				{
+					"mods": {
+						"fixed_range": 1.6
+					},
+
+					"special": [
+						{
+							"type": "def",
+							"multiplier": 1,
+							"fixed_def": 800,
+							"suffix": {
+								"en": "Stone Statue",
+								"jp": "石像形態",
+								"cn": "石像形態"
+							},
+							"tooltip": {
+								"simple": {
+									"en": [
+										"Stone Form - DEF +800 RES +30 for 10s, changes to flying mode thereafter"
+									],
+									"jp": [
+										"石像形態 - 10秒間、防御力+800、術耐性+30。終了後、飛行形態に"
+									],
+									"cn": ["10秒間防御力增加800，法术抗性增加30"]
+								}
+							}
+						},
+						{
+							"type": "others",
+							"tooltip": {
+								"simple": {
+									"en": ["Refraction - RES+70 (can be silenced)"],
+									"jp": ["屈折→術耐性+70 (無効化可能)"],
+									"cn": ["折射：法术抗性增加70（可被沉默）"]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	"normal_attack": [
+		{
+			"atk_type": ["melee", "phys"],
+			"hits": 1
+		},
+		{
+			"atk_type": ["ranged", "arts"],
+			"hits": 1
+		}
+	],
+	"スタン耐性": "有",
+	"眠り耐性": "有",
+	"凍結耐性": "有",
+	"type": ["melee", "ranged", "flying", "elite"]
 }

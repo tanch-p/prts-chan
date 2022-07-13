@@ -1,28 +1,28 @@
 {
-    "id": "21",
-    "name": { "en": "Junkman", "jp": "流れ者", "cn": "拾荒者" },
-    "stats": {
-      "level0": {
-        "hp": "5000",
-        "atk": "500",
-        "def": "50",
-        "mdef": "20",
-        "aspd%": "100",
-        "aspd": "3",
-        "range": "0",
-        "HP回復速度": "0",
-        "weight": "2",
-        "ms": "0.8",
-        "special": []
-      }
-    },
-    "normal_attack": {
-      "atk_type": ["melee", "phys"],
-      "hits": 1
-    },
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "無",
-    "type":  ["melee"]
-  }
-  
+	"id": "21",
+	"name": { "en": "Junkman", "jp": "流れ者", "cn": "拾荒者" },
+	"stats": {
+		"level0": {
+			"hp": "5000",
+			"atk": "500",
+			"def": "50",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "0",
+
+			"weight": "2",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
+}

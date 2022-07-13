@@ -1,0 +1,41 @@
+{
+	"name": { "en": "荒唐把戏", "jp": "荒唐把戏", "cn": "荒唐把戏" },
+	"img": "ISW-NO_荒唐把戏",
+	"theme": "phcs",
+	"floors": [5],
+	"count": "48~49",
+	"sp_count": "49",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%120",
+				"hp": "%120"
+			},
+			"text": "敌方单位的攻击力和生命值都提升至120%,萨卡兹穿刺手组长获得隐匿"
+		},
+		{
+			"targets": ["S10"],
+			"mods": {
+				"special": {
+					"extra": {
+						"name": "stealth",
+						"tooltip": {
+							"en": ["Stealth"],
+							"jp": ["ステルス"],
+							"cn": ["隐匿"]
+						}
+					}
+				}
+			}
+		}
+	],
+	"enemies": [
+		{ "id": "S10", "count": "65", "stats": "level0" },
+		{ "id": "SI8", "count": "3", "stats": "level0" },
+		{ "id": "CS1", "count": "18", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
+	]
+}

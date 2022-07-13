@@ -3,16 +3,15 @@
 	"name": { "en": "Spec Ops Soldier", "jp": "特戦兵士", "cn": "特战士兵" },
 	"stats": {
 		"level0": {
-            "hp": "3200",
-            "atk": "350",
-            "def": "50",
-            "mdef": "0",
-            "aspd%": "100",
-            "aspd": "2",
-            "range": "0",
-            "HP回復速度": "0",
-            "weight": "1",
-			"ms": "1.1",
+			"hp": "3200",
+			"atk": "350",
+			"def": "50",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",	
+			"weight": "1",
+			"lifepoint":1,"ms": "1.1",
 			"special": []
 		}
 	},

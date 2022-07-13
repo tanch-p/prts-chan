@@ -10,31 +10,31 @@
 			"hp": "7000",
 			"atk": "400",
 			"def": "400",
-			"mdef": "30",
+			"res": "30",
 			"aspd%": "100",
 			"aspd": "2.6",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "3",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"special": []
 		},
 		"無秩序な鉱区": {
 			"hp": "6000",
 			"atk": "380",
 			"def": "300",
-			"mdef": "30",
+			"res": "30",
 			"aspd%": "100",
 			"aspd": "2.6",
 			"range": "2.5",
-			"HP回復速度": "0",
+			
 			"weight": "3",
-			"ms": "0.8",
+			"lifepoint":1,"ms": "0.8",
 			"special": []
 		}
 	},
 	"normal_attack": {
-		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

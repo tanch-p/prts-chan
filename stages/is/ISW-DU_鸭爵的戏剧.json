@@ -1,0 +1,14 @@
+{
+	"name": { "en": "鸭爵的戏剧", "jp": "鸭爵的戏剧", "cn": "鸭爵的戏剧" },
+	"img": "ISW-DU_鸭爵的戏剧",
+	"theme": "phcs",
+	"floors": [1,2],
+	"count": "7",
+	"initial_cost": "10",
+	"enemies": [
+		{ "id": "DLD", "count": "1", "stats": "鸭爵的戏剧" },
+		{ "id": "D4", "count": "3", "stats": "level0" },
+		{ "id": "P-04", "count": "2", "stats": "level0" },
+		{ "id": "P-03", "count": "2", "stats": "level0" }
+	]
+}

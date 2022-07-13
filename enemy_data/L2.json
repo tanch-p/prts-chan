@@ -1,0 +1,28 @@
+{
+	"id": "L2",
+	"name": {
+		"en": "Leithanien Rebel Leader",
+		"jp": "リターニア反乱兵隊長",
+		"cn": "莱塔尼亚叛兵组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "4000",
+			"atk": "180",
+			"def": "150",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "1.1",
+			"special": []
+		}
+	},
+	"normal_attack": {
+		"atk_type": ["melee", "arts"],
+		"hits": 1
+	},
+	"type": ["melee"]
+}

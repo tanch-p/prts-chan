@@ -1,0 +1,16 @@
+{
+	"name": { "en": "别无所求", "jp": "别无所求", "cn": "别无所求" },
+	"img": "ISW-DF_别无所求",
+	"theme": "phcs",
+	"floors": [5],
+	"count": "1",
+	"initial_cost": "10",
+	"enemies": [
+		{ "id": "K2", "count": "0", "stats": "level0" },
+		{ "id": "L12", "count": "0", "stats": "level0" },
+		{ "id": "G22", "count": "0", "stats": "level0" },
+		{ "id": "GGY2", "count": "0", "stats": "level0" },
+		{ "id": "CS3", "count": "0", "stats": "level0" },
+		{ "id": "DOL", "count": "1", "stats": "level0" }
+	]
+}

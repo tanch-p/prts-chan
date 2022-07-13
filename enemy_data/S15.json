@@ -10,21 +10,21 @@
 			"hp": "6500",
 			"atk": "400",
 			"def": "200",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.4",
+			"lifepoint":1,"ms": "0.4",
 			"special": [
 				{
 					"name": "standby",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Does not attack while on standby"],
-							"jp": ["待機中攻撃しない"],
+							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
+							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}
@@ -35,21 +35,21 @@
 			"hp": "8000",
 			"atk": "400",
 			"def": "200",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.5",
+			"lifepoint":1,"ms": "0.5",
 			"special": [
 				{
 					"name": "standby",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Does not attack while on standby"],
-							"jp": ["待機中攻撃しない"],
+							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
+							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}
@@ -60,21 +60,21 @@
 			"hp": "8000",
 			"atk": "400",
 			"def": "200",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.4",
+			"lifepoint":1,"ms": "0.4",
 			"special": [
 				{
 					"name": "standby",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Does not attack while on standby"],
-							"jp": ["待機中攻撃しない"],
+							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
+							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}
@@ -85,21 +85,21 @@
 			"hp": "12000",
 			"atk": "400",
 			"def": "200",
-			"mdef": "50",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			"HP回復速度": "0",
+			
 			"weight": "2",
-			"ms": "0.4",
+			"lifepoint":1,"ms": "0.4",
 			"special": [
 				{
 					"name": "standby",
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["Does not attack while on standby"],
-							"jp": ["待機中攻撃しない"],
+							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
+							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
 							"cn": []
 						}
 					}

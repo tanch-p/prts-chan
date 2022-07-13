@@ -10,13 +10,13 @@
       "hp": "5500",
       "atk": "320",
       "def": "380",
-      "mdef": "10",
+      "res": "10",
       "aspd%": "100",
       "aspd": "1",
       "range": "0",
-      "HP回復速度": "0",
+      
       "weight": "2",
-      "ms": "0.8",
+      "lifepoint":1,"ms": "0.8",
       "special": [
         {
           "name": "defdown",
@@ -48,7 +48,7 @@
     }
   },
   "normal_attack": {
-    "type": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
+		"atk_type": ["melee", "phys"],
     "hits": 1
   },
   "スタン耐性": "無",

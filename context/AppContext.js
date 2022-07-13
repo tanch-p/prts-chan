@@ -1,4 +1,4 @@
-import { createContext, useContext, useState} from "react";
+import { createContext, useContext, useState } from "react";
 
 const AppContext = createContext();
 
@@ -6,7 +6,7 @@ export function AppWrapper({ children }) {
 	const [selectedHardRelic, setSelectedHardRelic] = useState([]);
 	const [selectedNormalRelic, setSelectedNormalRelic] = useState([]);
 	const [hallucinations, setHallucinations] = useState([]);
-	const [floor, setFloor] = useState(0);
+	const [floor, setFloor] = useState(1);
 	const [language, setLanguage] = useState("en");
 	const [device, setDevice] = useState("desktop");
 
