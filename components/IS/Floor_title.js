@@ -22,11 +22,14 @@ const HallucationDiv = ({ text, selected, size, langPack }) => {
 	return (
 		<div
 			className={`${selected ? selectedStyles : unselectedStyles} ${
-				size === "small" ? "h-[28px] w-[74px]" : "h-[34px] w-[104px]"
+				size === "small"
+					? "h-[28px] w-[74px]"
+					: "h-[28px] md:h-[34px] w-[74px] md:w-[104px] text-base md:text-xl"
 			} relative`}
 		>
 			<div className="text-center flex items-center justify-center h-full">
-				{text}{langPack.floor_title_suffix}
+				{text}
+				{langPack.floor_title_suffix}
 			</div>
 			<div
 				className={`absolute ${
@@ -42,11 +45,11 @@ const HallucationDiv = ({ text, selected, size, langPack }) => {
 	);
 };
 
-const Dropdown = ({ open, setOpen, state, setState,langPack }) => {
+const Dropdown = ({ open, setOpen, state, setState, langPack }) => {
 	return (
 		<>
 			<div
-				className={`absolute left-[50%] -translate-x-[50%] mt-2 w-[700px] pb-8 rounded-md shadow-lg select-none bg-[#1b1b1b] transition-[opacity_transform] ease-in duration-200 ${
+				className={`absolute left-[50%] -translate-x-[50%] mt-2 w-[100vw] md:w-[700px] pb-8 rounded-md shadow-lg select-none bg-[#1b1b1b] transition-[opacity_transform] ease-in duration-200 ${
 					open
 						? "opacity-100 z-20 translate-y-0"
 						: "invisible opacity-0 -translate-y-10"
@@ -60,7 +63,7 @@ const Dropdown = ({ open, setOpen, state, setState,langPack }) => {
 						unoptimized
 					/>
 				</div>
-				<div className="w-[70%] mx-auto mt-3">
+				<div className="md:w-[70%] mx-auto mt-3 px-2 md:px-0">
 					<div className="grid grid-cols-3 gap-y-4 place-items-center">
 						{hallucinationsList.map((hallu) => {
 							const selected = state.find((ele) => ele.key === hallu.key);

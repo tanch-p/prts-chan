@@ -13,7 +13,7 @@ export default function Layout({ children, theme, floor = "" }) {
 
 	const { language, setLanguage, device, setDevice } = useAppContext();
 
-	const phcs_styles = "bg-neutral-800 text-white py-24";
+	const phcs_styles = "bg-neutral-800 text-white py-16 md:py-24";
 
 	useEffect(() => {
 		width > 800 ? setDevice("desktop") : setDevice("mobile");

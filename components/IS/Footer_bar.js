@@ -10,7 +10,7 @@ export default function FooterBar() {
 	const [relicOpen, setRelicOpen] = useToggle(false);
 	const [relicsArr, setRelicsArr] = useState([]);
 	return (
-		<div className="fixed bottom-0 left-0 select-none">
+		<div className="fixed bottom-0 left-0 select-none ">
 			<Overlay
 				open={relicOpen}
 				setOpen={setRelicOpen}
@@ -19,7 +19,7 @@ export default function FooterBar() {
 			/>
 			<div
 				as="nav"
-				className="shadow-2xl shadow-gray-400 bg-neutral-900 w-full mt-4 fixed bottom-0 py-2 z-[30]"
+				className="shadow-2xl shadow-gray-400 bg-neutral-900 w-full max-w-[100vw] mt-4 fixed bottom-0 py-2 z-[30]"
 				onClick={() => {
 					if (relicOpen) setRelicOpen(!relicOpen);
 				}}
@@ -64,7 +64,7 @@ export default function FooterBar() {
 									</div>
 								</div>
 							</div>
-							<div className="mt-2">
+							<div className="mt-2 hidden md:block">
 								<Image
 									src={phcs_text_logo}
 									layout="fixed"

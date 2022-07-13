@@ -246,21 +246,24 @@ export default function EnemySimple({
 
 	return (
 		<>
-			<div className="w-[100vw] md:w-full ">
-				<div className="grid auto-cols-auto gap-x-2">
+			<div className="">
+				{/* <div className="grid auto-cols-auto gap-x-2">
 					{Object.keys(multipliers.ALL).map((ele) => (
 						<span key={ele}>
 							{ele}
 							{multipliers.ALL[ele]}
 						</span>
 					))}
-				</div>
+				</div> */}
 				<div>
-					<div>Filter</div>
+					{/* <div>Filter</div> */}
 
 					<div className="">
-						<div id="table-wrapper">
-							<table className="border border-gray-400 border-collapse ">
+						<div
+							id="table-wrapper"
+							className="overflow-x-auto w-screen md:w-full"
+						>
+							<table className="border border-gray-400 border-collapse w-max md:w-full">
 								<colgroup></colgroup>
 								<thead>
 									<tr>

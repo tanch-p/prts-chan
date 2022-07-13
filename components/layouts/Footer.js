@@ -27,7 +27,7 @@ export const Footer = () => {
 						</svg>
 					</a>
 					<p className="place-self-center font-medium text-lg">
-						PRTS-chan v0.0.2
+						PRTS-chan v0.0.3
 					</p>
 				</div>
 			</div>

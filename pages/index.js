@@ -56,7 +56,7 @@ export default function Home() {
 	};
 
 	const linesOfText = {
-		jp: ["CC7お疲れ様でした！", "統合戦略のページは鋭意開発中！"],
+		jp: ["ミス・クリスティーンは君の到来を待っていたよ、ドクター"],
 		en: ["Miss Christine has been awaiting your arrival, Doctor."],
 	};
 	const TODOtitle = { en: "To be implemented:", jp: "鋭意開発中：" };
@@ -107,7 +107,7 @@ export default function Home() {
 						))}
 					</ul>
 				</div>
-				<div className="justify-self-start mt-20">
+				<div className="justify-self-start mt-20 pl-8 md:pl-0">
 					<ul>
 						<span className="font-medium">{TODOtitle[language]}</span>
 						{TODO[language].map((line) => (

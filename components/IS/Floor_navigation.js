@@ -68,26 +68,25 @@ export default function FloorNavigation({ stagesList, floor }) {
 					selectedFloor === floor ? "" : "hidden"
 				}`}
 			>
-				<div className="grid grid-cols-[100px_480px] items-center">
-					<div className="h-[68px] flex items-center">{normalOps}</div>
-					<div className="flex flex-wrap-reverse justify-center items-center mb-1">
+				<div className="flex flex-col md:grid md:grid-cols-[100px_480px] items-center">
+					<div className="md:h-[68px] pt-2 md:pt-0 flex items-center">{normalOps}</div>
+					<div className="flex flex-wrap md:flex-wrap-reverse justify-center items-center mb-1">
 						{floorNormalStages}
 					</div>
 				</div>
 				{(floorDuckStages.length > 0 || floorEncounterStages.length > 0) && (
-					<div className="grid grid-cols-[100px_480px] items-center">
-						<div className="h-[68px] flex items-center">{encountStage}</div>
-						<div className="flex items-center justify-center mb-1">
+					<div className="flex flex-col md:grid md:grid-cols-[100px_480px] items-center">
+						<div className="md:h-[68px] pt-4 md:pt-0 flex items-center">{encountStage}</div>
+						<div className="flex flex-wrap  items-center justify-center mb-1">
 							{floorDuckStages}
 							{floorEncounterStages}
 						</div>
 					</div>
 				)}
 				{floorBossStages.length > 0 && (
-					<div className="grid grid-cols-[100px_480px] items-center">
-						<div className="h-[68px] flex items-center">{bossStage}</div>
-						<div className="flex items-center justify-center mb-1">
-							{" "}
+					<div className="flex flex-col md:grid md:grid-cols-[100px_480px] items-center">
+						<div className="md:h-[68px] pt-4 md:pt-0 flex items-center">{bossStage}</div>
+						<div className="flex flex-wrap  items-center justify-center mb-1">
 							{floorBossStages}
 						</div>
 					</div>
@@ -101,10 +100,10 @@ export default function FloorNavigation({ stagesList, floor }) {
 	}, [floor]);
 
 	return (
-		<div className="grid grid-cols-[35px_auto_35px] items-center w-full md:w-max md:-translate-x-[55px] mt-16 mx-auto select-none shadow-lg ">
+		<div className="grid grid-cols-[35px_auto_35px] items-center w-[100vw] md:w-max md:-translate-x-[55px] mt-16 mx-auto select-none shadow-lg ">
 			<div></div>
 
-			<div className="grid grid-cols-[100px_auto]">
+			<div className="md:grid grid-cols-[100px_auto]">
 				<div></div>
 				<p className="text-center text-lg font-medium shadow-lg mb-1 ">
 					{FLOOR_ROMAN_NUMERALS[selectedFloor - 1]}
@@ -112,7 +111,11 @@ export default function FloorNavigation({ stagesList, floor }) {
 			</div>
 			<div></div>
 			<div
-				className={`${selectedFloor > 1 ? "hover:cursor-pointer hover:bg-neutral-700" : "brightness-50"} w-[35px] h-full flex items-center justify-center shadow-lg`}
+				className={`${
+					selectedFloor > 1
+						? "hover:cursor-pointer hover:bg-neutral-700"
+						: "brightness-50"
+				} w-[35px] h-full flex items-center justify-center shadow-lg`}
 				onClick={() => {
 					if (selectedFloor > 1) setSelectedFloor(selectedFloor - 1);
 				}}
@@ -130,7 +133,11 @@ export default function FloorNavigation({ stagesList, floor }) {
 				);
 			})}
 			<div
-				className={`${selectedFloor < 6 ? "hover:cursor-pointer hover:bg-neutral-700" : "brightness-50"} w-[35px] h-full flex items-center justify-center shadow-lg`}
+				className={`${
+					selectedFloor < 6
+						? "hover:cursor-pointer hover:bg-neutral-700"
+						: "brightness-50"
+				} w-[35px] h-full flex items-center justify-center shadow-lg`}
 				onClick={() => {
 					if (selectedFloor < 6) setSelectedFloor(selectedFloor + 1);
 				}}
@@ -146,7 +153,7 @@ const getStageLink = (stages, floor) => {
 		.filter(({ floors }) => floors.includes(floor))
 		.map(({ name }) => (
 			<Link href={name} key={name}>
-				<div className="hover:text-sky-400 w-[100px]  h-full mx-2 my-1 text-center hover:cursor-pointer">
+				<div className="hover:text-sky-400 w-[100px] md:h-full mx-2 my-3 md:my-1 text-center hover:cursor-pointer">
 					<span>{name.slice(7)}</span>
 				</div>
 			</Link>

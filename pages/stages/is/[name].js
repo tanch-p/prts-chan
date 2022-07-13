@@ -5,7 +5,6 @@ import Map from "@/components/Map";
 import EnemySimple from "@/components/EnemySimple";
 import { useState, useEffect } from "react";
 import { useAppContext } from "context/AppContext";
-import { TabComponent } from "@/components/Tabs";
 import FooterBar from "@/components/IS/Footer_bar";
 import FloorNavigation from "@/components/IS/Floor_navigation";
 
@@ -43,35 +42,7 @@ export default function Stage({ stageData, stagesList }) {
 	const { mapConfig } = stageData;
 	const theme = mapConfig.hasOwnProperty("theme") ? mapConfig.theme : "";
 	const fontThemes = { en: "font-sans", jp: "font-jp font-light" };
-
-	const tabArr = [
-		{
-			key: "normal",
-			title: "Normal",
-			children: (
-				<EnemySimple
-					mapConfig={mapConfig}
-					mode="normal"
-					language={language}
-					device={device}
-					fontThemes={fontThemes}
-				/>
-			),
-		},
-		{
-			key: "hard",
-			title: "Hard",
-			children: (
-				<EnemySimple
-					mapConfig={mapConfig}
-					mode="hard"
-					language={language}
-					device={device}
-					fontThemes={fontThemes}
-				/>
-			),
-		},
-	];
+	const [hardMode, setHardMode] = useState(false);
 
 	useEffect(() => {
 		const fetchData = () => {
@@ -94,26 +65,21 @@ export default function Stage({ stageData, stagesList }) {
 			<Head>
 				<title>{mapConfig.name[language]}</title>
 			</Head>
-			<div className="max-w-5xl">
+			<div className="w-[100vw] md:w-full max-w-5xl">
 				<Map
 					mapConfig={mapConfig}
 					language={language}
 					device={device}
 					fontThemes={fontThemes}
 				/>
-
-				{mapConfig.hasOwnProperty("hard_mods") ? (
-					<TabComponent tabArr={tabArr} />
-				) : (
-					<div className="">
-						<EnemySimple
-							mapConfig={mapConfig}
-							language={language}
-							device={device}
-							fontThemes={fontThemes}
-						/>
-					</div>
-				)}
+				<div className="mt-8">
+					<EnemySimple
+						mapConfig={mapConfig}
+						language={language}
+						device={device}
+						fontThemes={fontThemes}
+					/>
+				</div>
 				<FloorNavigation stagesList={stagesList} floor={floor} />
 			</div>
 			<FooterBar />
