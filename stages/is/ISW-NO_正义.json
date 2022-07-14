@@ -1,8 +1,9 @@
 {
-	"name": { "en": "正义", "jp": "正义", "cn": "正义" },
+	"name": { "en": "Justice", "jp": "正義", "cn": "正义" },
 	"img": "ISW-NO_正义",
 	"theme": "phcs",
 	"floors": [3],
+	"floor_nav": [3],
 	"count": "65~67",
 	"sp_count": "67",
 	"initial_cost": "25",

@@ -3,6 +3,7 @@
 	"img": "ISW-SP_骑士对决",
 	"theme": "phcs",
 	"floors": [5],
+	"floor_nav": [5],
 	"count": "4",
 	"enemies": [
 		{ "id": "K7", "count": "1", "stats": "骑士对决" },

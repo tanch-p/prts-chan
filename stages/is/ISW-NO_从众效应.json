@@ -1,8 +1,9 @@
 {
-	"name": { "en": "从众效应", "jp": "从众效应", "cn": "从众效应" },
+	"name": { "en": "Public Enemy", "jp": "パブリック・エネミー", "cn": "从众效应" },
 	"img": "ISW-NO_从众效应",
 	"theme": "phcs",
 	"floors": [3],
+	"floor_nav": [3],
 	"count": "159~163",
 	"sp_count": "163 - 100%",
 	"initial_cost": "10",

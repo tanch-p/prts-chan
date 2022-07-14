@@ -1,8 +1,9 @@
 {
-	"name": { "en": "这位乌萨斯人", "jp": "这位乌萨斯人", "cn": "这位乌萨斯人" },
+	"name": { "en": "这位乌萨斯人", "jp": "ウルサス人", "cn": "这位乌萨斯人" },
 	"img": "ISW-DU_这位乌萨斯人",
 	"theme": "phcs",
 	"floors": [5],
+	"floor_nav": [5],
 	"count": "58",
 	"initial_cost": "10",
 	"enemies": [

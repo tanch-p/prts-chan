@@ -1,8 +1,9 @@
 {
-	"name": { "en": "远方来客", "jp": "远方来客", "cn": "远方来客" },
+	"name": { "en": "远方来客", "jp": "遠方からの来客", "cn": "远方来客" },
 	"img": "ISW-NO_远方来客",
 	"theme": "phcs",
 	"floors": [4],
+	"floor_nav": [4],
 	"count": "47~49",
 	"sp_count": "49 - 100%",
 	"initial_cost": "10",

@@ -1,8 +1,9 @@
 {
-	"name": { "en": "乌萨斯的渴求", "jp": "乌萨斯的渴求", "cn": "乌萨斯的渴求" },
+	"name": { "en": "乌萨斯的渴求", "jp": "ウルサスの渇求", "cn": "乌萨斯的渴求" },
 	"img": "ISW-NO_乌萨斯的渴求",
 	"theme": "phcs",
 	"floors": [6],
+	"floor_nav": [6],
 	"count": "40~41",
 	"hard_count": "42~43",
 	"sp_count": "41",

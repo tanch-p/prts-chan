@@ -1,8 +1,9 @@
 {
-	"name": { "en": "惊喜工厂", "jp": "惊喜工厂", "cn": "惊喜工厂" },
+	"name": { "en": "惊喜工厂", "jp": "サプライズ工場", "cn": "惊喜工厂" },
 	"img": "ISW-NO_惊喜工厂",
 	"theme": "phcs",
 	"floors": [5],
+	"floor_nav": [5],
 	"count": "47~48 ",
 	"sp_count": "48",
 	"initial_cost": "10",

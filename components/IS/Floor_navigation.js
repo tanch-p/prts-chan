@@ -39,36 +39,57 @@ const encountStage = (
 	/>
 );
 
-export default function FloorNavigation({ stagesList, floor }) {
+export default function FloorNavigation({ stagesList, floor, language }) {
 	const FLOORS = [1, 2, 3, 4, 5, 6];
 	const [selectedFloor, setSelectedFloor] = useState(floor);
 
 	const stages = stagesList.map(({ params }) => {
 		const { name } = params;
 		const stage = require(`../../stages/is/${name}.json`);
-		return { name, floors: stage.floors };
+		return {
+			fileName: name,
+			floors: stage.floor_nav,
+			title: stage.name[language],
+		};
 	});
-	const allEncounterStages = stages.filter(({ name }) =>
-		name.includes("ISW-SP")
+	const allEncounterStages = stages.filter(({ fileName }) =>
+		fileName.includes("ISW-SP")
 	);
-	const allDuckStages = stages.filter(({ name }) => name.includes("ISW-DU"));
-	const allBossStages = stages.filter(({ name }) => name.includes("ISW-DF"));
-	const allNormalStages = stages.filter(({ name }) => name.includes("ISW-NO"));
+	const allDuckStages = stages.filter(({ fileName }) =>
+		fileName.includes("ISW-DU")
+	);
+	const allBossStages = stages.filter(({ fileName }) =>
+		fileName.includes("ISW-DF")
+	);
+	const allNormalStages = stages.filter(({ fileName }) =>
+		fileName.includes("ISW-NO")
+	);
 
-	const IndivFloorNavigation = ({ floor, selectedFloor }) => {
-		const floorNormalStages = getStageLink(allNormalStages, floor);
-		const floorEncounterStages = getStageLink(allEncounterStages, floor);
+	const IndivFloorNavigation = ({ floor, selectedFloor}) => {
+		const floorNormalStages = getStageLink(allNormalStages, floor, language);
+		const floorEncounterStages = getStageLink(
+			allEncounterStages,
+			floor,
+			language
+		);
 
-		const floorBossStages = getStageLink(allBossStages, floor);
-		const floorDuckStages = getStageLink(allDuckStages, floor);
+		const floorBossStages = getStageLink(allBossStages, floor, language);
+		const floorDuckStages = getStageLink(allDuckStages, floor, language);
 
+		const emergencyStages = getStageLink(allNormalStages, 1, language);
 		return (
 			<div
 				className={`grid auto-rows-auto ${
 					selectedFloor === floor ? "" : "hidden"
 				}`}
 			>
-				<div className="flex flex-col md:grid md:grid-cols-[100px_480px] items-center">
+				<div
+					className={`flex flex-col md:grid items-center ${
+						language === "jp"
+							? "md:grid-cols-[100px_560px]"
+							: "md:grid-cols-[100px_480px]"
+					}`}
+				>
 					<div className="md:h-[68px] pt-2 md:pt-0 flex items-center">
 						{normalOps}
 					</div>
@@ -76,8 +97,32 @@ export default function FloorNavigation({ stagesList, floor }) {
 						{floorNormalStages}
 					</div>
 				</div>
+				{floor === 2 ? (
+					<div
+						className={`flex flex-col md:grid items-center ${
+							language === "jp"
+								? "md:grid-cols-[100px_560px]"
+								: "md:grid-cols-[100px_480px]"
+						}`}
+					>
+						<div className="md:h-[68px] pt-2 md:pt-0 flex items-center">
+							{emergencyOps}
+						</div>
+						<div className="flex flex-wrap md:flex-wrap-reverse justify-center items-center mb-1">
+							{emergencyStages}
+						</div>
+					</div>
+				) : (
+					""
+				)}
 				{(floorDuckStages.length > 0 || floorEncounterStages.length > 0) && (
-					<div className="flex flex-col md:grid md:grid-cols-[100px_480px] items-center">
+					<div
+						className={`flex flex-col md:grid items-center ${
+							language === "jp"
+								? "md:grid-cols-[100px_560px]"
+								: "md:grid-cols-[100px_480px]"
+						}`}
+					>
 						<div className="md:h-[68px] pt-4 md:pt-0 flex items-center">
 							{encountStage}
 						</div>
@@ -88,7 +133,13 @@ export default function FloorNavigation({ stagesList, floor }) {
 					</div>
 				)}
 				{floorBossStages.length > 0 && (
-					<div className="flex flex-col md:grid md:grid-cols-[100px_480px] items-center">
+					<div
+						className={`flex flex-col md:grid items-center ${
+							language === "jp"
+								? "md:grid-cols-[100px_560px]"
+								: "md:grid-cols-[100px_480px]"
+						}`}
+					>
 						<div className="md:h-[68px] pt-4 md:pt-0 flex items-center">
 							{bossStage}
 						</div>
@@ -154,13 +205,19 @@ export default function FloorNavigation({ stagesList, floor }) {
 	);
 }
 
-const getStageLink = (stages, floor) => {
+const getStageLink = (stages, floor, language) => {
 	return stages
 		.filter(({ floors }) => floors.includes(floor))
-		.map(({ name }) => (
-			<Link href={name} key={name}>
-				<div className="hover:text-sky-400 w-[100px] md:h-full mx-2 my-3 md:my-1 text-center hover:cursor-pointer">
-					<span>{name.slice(7)}</span>
+		.map(({ title, fileName }) => (
+			<Link href={fileName} key={fileName}>
+				<div
+					className={`hover:text-sky-400  md:h-full mx-2 my-3 md:my-1 text-center hover:cursor-pointer ${
+						language === "jp"
+							? "whitespace-nowrap py-2 w-[120px]"
+							: "text-base w-[100px]"
+					}`}
+				>
+					<span>{title}</span>
 				</div>
 			</Link>
 		));

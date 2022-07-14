@@ -1,8 +1,9 @@
 {
-	"name": { "en": "鸭爵的戏剧", "jp": "鸭爵的戏剧", "cn": "鸭爵的戏剧" },
+	"name": { "en": "鸭爵的戏剧", "jp": "ダック卿の劇", "cn": "鸭爵的戏剧" },
 	"img": "ISW-DU_鸭爵的戏剧",
 	"theme": "phcs",
 	"floors": [1,2],
+	"floor_nav": [1,2],
 	"count": "7",
 	"initial_cost": "10",
 	"enemies": [

@@ -1,8 +1,9 @@
 {
-	"name": { "en": "驯兽小屋", "jp": "驯兽小屋", "cn": "驯兽小屋" },
+	"name": { "en": "驯兽小屋", "jp": "猛獣小屋", "cn": "驯兽小屋" },
 	"img": "ISW-NO_驯兽小屋",
 	"theme": "phcs",
 	"floors": [1, 2],
+	"floor_nav": [1],
 	"count": "31~32",
 	"sp_count": "32",
 	"initial_cost": "10",

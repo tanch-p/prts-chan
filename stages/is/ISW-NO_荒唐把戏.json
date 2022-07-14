@@ -3,6 +3,7 @@
 	"img": "ISW-NO_荒唐把戏",
 	"theme": "phcs",
 	"floors": [5],
+	"floor_nav": [5],
 	"count": "48~49",
 	"sp_count": "49",
 	"initial_cost": "10",
@@ -22,9 +23,9 @@
 					"extra": {
 						"name": "stealth",
 						"tooltip": {
-							"en": ["Stealth"],
-							"jp": ["ステルス"],
-							"cn": ["隐匿"]
+							"en": ["$Stealth$"],
+							"jp": ["$ステルス$"],
+							"cn": ["$隐匿$"]
 						}
 					}
 				}

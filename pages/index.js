@@ -56,8 +56,8 @@ export default function Home() {
 	};
 
 	const linesOfText = {
-		jp: ["ミス・クリスティーンは君の到来を待っていたよ、ドクター"],
-		en: ["Miss Christine has been awaiting your arrival, Doctor."],
+		jp: ["ミス・クリスティーンは君の到来を待っていたよ、","ドクター"],
+		en: ["Miss Christine has been awaiting your arrival,","Doctor"],
 	};
 	const TODOtitle = { en: "To be implemented:", jp: "鋭意開発中：" };
 	const TODO = {

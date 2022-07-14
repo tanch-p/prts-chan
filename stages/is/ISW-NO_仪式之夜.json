@@ -3,6 +3,7 @@
 	"img": "ISW-NO_仪式之夜",
 	"theme": "phcs",
 	"floors": [5],
+	"floor_nav": [5],
 	"count": "46~47",
 	"sp_count": "47",
 	"initial_cost": "10",

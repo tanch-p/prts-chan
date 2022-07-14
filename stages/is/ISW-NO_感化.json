@@ -3,6 +3,7 @@
 	"img": "ISW-NO_感化",
 	"theme": "phcs",
 	"floors": [3],
+	"floor_nav": [3],
 	"count": "31~32",
 	"sp_count": "32",
 	"initial_cost": "10",

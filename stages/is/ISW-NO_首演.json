@@ -1,8 +1,9 @@
 {
-	"name": { "en": "首演", "jp": "首演", "cn": "首演" },
+	"name": { "en": "首演", "jp": "初演", "cn": "首演" },
 	"img": "ISW-NO_首演",
 	"theme": "phcs",
 	"floors": [3],
+	"floor_nav": [3],
 	"count": "31~32",
 	"sp_count": "32",
 	"initial_cost": "7",

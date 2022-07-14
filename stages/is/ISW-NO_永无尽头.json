@@ -1,8 +1,9 @@
 {
-	"name": { "en": "永无尽头", "jp": "永无尽头", "cn": "永无尽头" },
+	"name": { "en": "Endless Charge", "jp": "エンドレスチャージ", "cn": "永无尽头" },
 	"img": "ISW-NO_永无尽头",
 	"theme": "phcs",
 	"floors": [4],
+	"floor_nav": [4],
 	"count": "31~32",
 	"sp_count": "32",
 	"initial_cost": "10",

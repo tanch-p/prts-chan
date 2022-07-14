@@ -1,8 +1,9 @@
 {
-	"name": { "en": "压轴登场", "jp": "压轴登场", "cn": "压轴登场" },
+	"name": { "en": "压轴登场", "jp": "真打ち登場", "cn": "压轴登场" },
 	"img": "ISW-NO_压轴登场",
 	"theme": "phcs",
 	"floors": [2],
+	"floor_nav": [2],
 	"count": "45~46",
 	"sp_count": "46",
 	"initial_cost": "10",

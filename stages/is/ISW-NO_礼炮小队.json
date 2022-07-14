@@ -1,8 +1,9 @@
 {
-	"name": { "en": "礼炮小队", "jp": "礼炮小队", "cn": "礼炮小队" },
+	"name": { "en": "礼炮小队", "jp": "礼砲小隊", "cn": "礼炮小队" },
 	"img": "ISW-NO_礼炮小队",
 	"theme": "phcs",
 	"floors": [1, 2],
+	"floor_nav": [1],
 	"count": "32~35",
 	"sp_count": "35 - 100%",
 	"initial_cost": "20",

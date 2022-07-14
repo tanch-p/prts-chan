@@ -1,8 +1,9 @@
 {
-	"name": { "en": "鲍勃酒品", "jp": "鲍勃酒品", "cn": "鲍勃酒品" },
+	"name": { "en": "鲍勃酒品", "jp": "ボブ酒造", "cn": "鲍勃酒品" },
 	"img": "ISW-NO_鲍勃酒品",
 	"theme": "phcs",
 	"floors": [4],
+	"floor_nav": [4],
 	"count": "50~54",
 	"sp_count": "54 - 100%",
 	"initial_cost": "15",

@@ -55,8 +55,6 @@ export default function EnemySimple({
 		selectedHardRelic,
 		selectedNormalRelic,
 		hallucinations,
-		floor,
-		setFloor,
 	} = useAppContext();
 
 	const langPack = require(`../lang/${language}.json`);
@@ -155,7 +153,10 @@ export default function EnemySimple({
 			if (skill.type === stat) {
 				if (skill.hasOwnProperty("fixed")) {
 					return (
-						<p className={`whitespace-nowrap ${stat === "atk" ? "" : "px-2"}`}>
+						<p
+							// key={""}
+							className={`whitespace-nowrap ${stat === "atk" ? "" : "px-2"}`}
+						>
 							{skill["fixed"]}
 							{` (${skill.suffix[language]})`}
 						</p>
@@ -235,17 +236,12 @@ export default function EnemySimple({
 			distill(multiplierHolder, relic.effects);
 		}
 
-		setSpecialMods({ ...specialMods, ...other_mods });
+		setSpecialMods({ ...other_mods });
 		setMultipliers(multiplierHolder);
 	};
 	useEffect(() => {
 		updateMultiplier();
 	}, [hallucinations, selectedHardRelic, selectedNormalRelic]);
-
-	useEffect(() => {
-		if (!mapConfig.floors.includes(floor))
-			setFloor(Math.min(...mapConfig.floors));
-	}, []);
 
 	const enemies =
 		mode === "hard"

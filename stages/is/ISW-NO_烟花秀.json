@@ -1,8 +1,9 @@
 {
-	"name": { "en": "烟花秀", "jp": "烟花秀", "cn": "烟花秀" },
+	"name": { "en": "Fireworks Show", "jp": "花火ショー", "cn": "烟花秀" },
 	"img": "ISW-NO_烟花秀",
 	"theme": "phcs",
 	"floors": [4],
+	"floor_nav": [4],
 	"count": "27~30",
 	"sp_count": "30 - 100%",
 	"initial_cost": "10",
