@@ -40,7 +40,7 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["※Will not collect unowned wealth"],
+							"en": ["※Will not collect unowned treasure"],
 							"jp": ["※財宝回収しません"],
 							"cn": ["※不会收集无主的财富"]
 						}
@@ -86,7 +86,7 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["※Will not collect unowned wealth"],
+							"en": ["※Will not collect unowned treasure"],
 							"jp": ["※財宝回収しません"],
 							"cn": ["※不会收集无主的财富"]
 						}
@@ -132,7 +132,7 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["※Will not collect unowned wealth"],
+							"en": ["※Will not collect unowned treasure"],
 							"jp": ["※財宝回収しません"],
 							"cn": ["※不会收集无主的财富"]
 						}
@@ -178,7 +178,7 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["※Will not collect unowned wealth"],
+							"en": ["※Will not collect unowned treasure"],
 							"jp": ["※財宝回収しません"],
 							"cn": ["※不会收集无主的财富"]
 						}
@@ -224,7 +224,7 @@
 					"type": "others",
 					"tooltip": {
 						"simple": {
-							"en": ["※Will not collect unowned wealth"],
+							"en": ["※Will not collect unowned treasure"],
 							"jp": ["※財宝回収しません"],
 							"cn": ["※不会收集无主的财富"]
 						}
