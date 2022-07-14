@@ -38,5 +38,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee", "elite"]
+	"type": ["melee","ranged", "elite"]
 }
