@@ -1,6 +1,6 @@
 {
 	"id": "CS1",
-	"name": { "en": "骇笑看客", "jp": "骇笑看客", "cn": "骇笑看客" },
+	"name": { "en": "Derisive Audience", "jp": "骇笑看客", "cn": "骇笑看客" },
 	"stats": {
 		"level0": {
 			"hp": "8000",

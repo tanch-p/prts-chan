@@ -1,6 +1,6 @@
 {
 	"id": "MSC",
-	"name": { "en": "漂泊颂偶", "jp": "漂泊颂偶", "cn": "漂泊颂偶" },
+	"name": { "en": "Wandering Puppet", "jp": "漂泊颂偶", "cn": "漂泊颂偶" },
 	"stats": {
 		"level0": {
 			"hp": "40000",
