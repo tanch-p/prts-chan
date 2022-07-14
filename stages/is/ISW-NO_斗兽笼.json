@@ -3,6 +3,7 @@
 	"img": "ISW-NO_斗兽笼",
 	"theme": "phcs",
 	"floors": [3],
+	"floor_nav": [3],
 	"count": "55~56",
 	"sp_count": "56",
 	"initial_cost": "10",

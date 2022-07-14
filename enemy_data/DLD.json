@@ -10,9 +10,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.4",
+			"lifepoint": 0,
+			"ms": "0.4",
 			"special": [
 				{
 					"type": "others",
@@ -55,9 +56,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.4",
+			"lifepoint": 0,
+			"ms": "0.4",
 			"special": [
 				{
 					"type": "others",
@@ -100,9 +102,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.4",
+			"lifepoint": 0,
+			"ms": "0.4",
 			"special": [
 				{
 					"type": "others",
@@ -145,9 +148,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.4",
+			"lifepoint": 0,
+			"ms": "0.4",
 			"special": [
 				{
 					"type": "others",
@@ -190,9 +194,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.4",
+			"lifepoint": 0,
+			"ms": "0.4",
 			"special": [
 				{
 					"type": "others",

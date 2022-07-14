@@ -1,8 +1,9 @@
 {
-	"name": { "en": "ISW-NO_意外", "jp": "ISW-NO_意外", "cn": "ISW-NO_意外" },
+	"name": { "en": "Accident", "jp": "墜落事故", "cn": "意外" },
 	"img": "ISW-NO_意外",
 	"theme": "phcs",
 	"floors": [1, 2],
+	"floor_nav": [1],
 	"count": "44~45",
 	"sp_count": "45",
 	"initial_cost": "10",

@@ -3,6 +3,7 @@
 	"img": "ISW-NO_巡逻队",
 	"theme": "phcs",
 	"floors": [2],
+	"floor_nav": [2],
 	"count": "33~35",
 	"sp_count": "35 - 100%",
 	"initial_cost": "10",

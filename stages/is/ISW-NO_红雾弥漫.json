@@ -1,9 +1,10 @@
 {
-	"name": { "en": "红雾弥漫", "jp": "红雾弥漫", "cn": "红雾弥漫" },
+	"name": { "en": "红雾弥漫", "jp": "赤い霧の眠らぬ夜", "cn": "红雾弥漫" },
 	"img": "ISW-NO_红雾弥漫",
 	"debuff": "我方单位每0.5秒持续受到25真实伤害",
 	"theme": "phcs",
 	"floors": [5],
+	"floor_nav": [5],
 	"count": "51~52",
 	"sp_count": "52",
 	"initial_cost": "10",

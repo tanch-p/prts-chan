@@ -1,8 +1,9 @@
 {
-	"name": { "en": "高普尼克之拳", "jp": "高普尼克之拳", "cn": "高普尼克之拳" },
+	"name": { "en": "Gopnik's Fist", "jp": "ゴプニクの拳", "cn": "高普尼克之拳" },
 	"img": "ISW-DU_高普尼克之拳",
 	"theme": "phcs",
 	"floors": [4],
+	"floor_nav": [4],
 	"count": "27",
 	"initial_cost": "10",
 	"enemies": [

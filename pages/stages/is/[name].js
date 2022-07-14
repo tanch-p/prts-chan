@@ -76,8 +76,10 @@ export default function Stage({ stageData, stagesList }) {
 		},
 	];
 
-
-	
+	useEffect(() => {
+		if (!mapConfig.floors.includes(floor))
+			setFloor(Math.min(...mapConfig.floors));
+	});
 
 	return (
 		<Layout theme={theme} floor={mapConfig.floor}>
@@ -104,7 +106,7 @@ export default function Stage({ stageData, stagesList }) {
 						/>
 					</div>
 				)}
-				<FloorNavigation stagesList={stagesList} floor={floor} />
+				<FloorNavigation stagesList={stagesList} floor={floor} language={language} />
 			</div>
 			<FooterBar />
 		</Layout>

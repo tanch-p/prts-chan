@@ -1,8 +1,9 @@
 {
-	"name": { "en": "分赃不均", "jp": "分赃不均", "cn": "分赃不均" },
+	"name": { "en": "分赃不均", "jp": "分け前のもつれ", "cn": "分赃不均" },
 	"img": "ISW-NO_分赃不均",
 	"theme": "phcs",
 	"floors": [2],
+	"floor_nav": [2],
 	"count": "26~27",
 	"sp_count": "27",
 	"initial_cost": "10",

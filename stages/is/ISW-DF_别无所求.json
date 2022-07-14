@@ -3,6 +3,7 @@
 	"img": "ISW-DF_别无所求",
 	"theme": "phcs",
 	"floors": [5],
+	"floor_nav": [5],
 	"count": "1",
 	"initial_cost": "10",
 	"enemies": [

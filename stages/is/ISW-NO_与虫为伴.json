@@ -1,8 +1,9 @@
 {
-	"name": { "en": "与虫为伴", "jp": "与虫为伴", "cn": "与虫为伴" },
+	"name": { "en": "与虫为伴", "jp": "ムシと一緒", "cn": "与虫为伴" },
 	"img": "ISW-NO_与虫为伴",
 	"theme": "phcs",
 	"floors": [1, 2],
+	"floor_nav": [1],
 	"count": "33~35",
 	"sp_count": "35 - 100%",
 	"initial_cost": "10",

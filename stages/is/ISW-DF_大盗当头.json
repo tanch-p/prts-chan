@@ -3,6 +3,7 @@
 	"img": "ISW-DF_大盗当头",
 	"theme": "phcs",
 	"floors": [3],
+	"floor_nav": [3],
 	"count": "43",
 	"initial_cost": "0",
 	"enemies": [

@@ -1,8 +1,9 @@
 {
-	"name": { "en": "鸭爵的宴会", "jp": "鸭爵的宴会", "cn": "鸭爵的宴会" },
+	"name": { "en": "鸭爵的宴会", "jp": "ダック卿の宴会", "cn": "鸭爵的宴会" },
 	"img": "ISW-DU_鸭爵的宴会",
 	"theme": "phcs",
 	"floors": [3],
+	"floor_nav": [3],
 	"count": "77",
 	"initial_cost": "10",
 	"enemies": [

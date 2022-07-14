@@ -1,9 +1,10 @@
 {
-	"name": { "en": "阴云笼罩", "jp": "阴云笼罩", "cn": "阴云笼罩" },
+	"name": { "en": "阴云笼罩", "jp": "覆う黒雲", "cn": "阴云笼罩" },
 	"img": "ISW-NO_阴云笼罩",
 	"debuff": "我方单位每0.5秒持续受到15真实伤害",
 	"theme": "phcs",
 	"floors": [4],
+	"floor_nav": [4],
 	"count": "51~52",
 	"sp_count": "52",
 	"initial_cost": "10",

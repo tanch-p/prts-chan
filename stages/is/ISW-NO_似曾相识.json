@@ -1,8 +1,9 @@
 {
-	"name": { "en": "似曾相识", "jp": "似曾相识", "cn": "似曾相识" },
+	"name": { "en": "Dejavu", "jp": "デジャヴュ", "cn": "似曾相识" },
 	"img": "ISW-NO_似曾相识",
 	"theme": "phcs",
 	"floors": [3],
+	"floor_nav": [3],
 	"count": "26~28",
 	"sp_count": "28 - 100%",
 	"initial_cost": "10",
