@@ -19,14 +19,14 @@
 	"prisoner_release": "Released State",
 	"multiform_suffix": "# Form",
 	"phcs_levels": [
-		"迷雾歧途",
-		"落阳庭院",
-		"故土残躯",
-		"噩梦之始",
-		"血月长廊",
-		"渴欲大厅"
+		"Mist-stricken Missteps",
+		"Sunset Courtyard",
+		"Homeland Remnants",
+		"Nightmare's Prelude",
+		"Blood-soaked Corridor",
+		"Hall of Desires"
 	],
-	"floor_title_suffix": "的",
+	"floor_title_suffix": "",
 
 	"relic_labels": ["Hard Mode", "-ATK", "-DEF", "-HP", "Others"],
 

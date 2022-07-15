@@ -1,5 +1,5 @@
 {
-	"name": { "en": "开门请当心", "jp": "敷居に注意を", "cn": "开门请当心" },
+	"name": { "en": "Mind the Doors", "jp": "敷居に注意を", "cn": "开门请当心" },
 	"img": "ISW-DF_开门请当心",
 	"theme": "phcs",
 	"floors": [3],

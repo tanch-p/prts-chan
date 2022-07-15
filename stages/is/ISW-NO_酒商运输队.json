@@ -1,5 +1,5 @@
 {
-	"name": { "en": "酒商运输队", "jp": "酒屋の輸送隊", "cn": "酒商运输队" },
+	"name": { "en": "Vintage Transport", "jp": "酒屋の輸送隊", "cn": "酒商运输队" },
 	"img": "ISW-NO_酒商运输队",
 	"theme": "phcs",
 	"floors": [3],

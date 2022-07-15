@@ -15,7 +15,7 @@ export const FLOOR_ROMAN_NUMERALS = [
 	"VIII",
 ];
 
-const HallucationDiv = ({ text, selected, size, langPack }) => {
+const HallucationDiv = ({ text, selected, size, langPack, language }) => {
 	const selectedStyles = "bg-hallu-red";
 	const unselectedStyles = "bg-neutral-800 text-neutral-500";
 	// console.log(text, selected);
@@ -23,8 +23,12 @@ const HallucationDiv = ({ text, selected, size, langPack }) => {
 		<div
 			className={`${selected ? selectedStyles : unselectedStyles} ${
 				size === "small"
-					? "h-[28px] w-[74px]"
-					: "h-[28px] md:h-[34px] w-[74px] md:w-[104px] text-base md:text-xl"
+					? `h-[28px] ${language === "en" ? "text-sm w-[94px]" : " w-[74px]"}`
+					: `h-[28px] md:h-[34px] w-[74px] md:w-[104px] ${
+							language === "en"
+								? "text-xs md:text-base"
+								: "text-base md:text-xl"
+					  } `
 			} relative`}
 		>
 			<div className="text-center flex items-center justify-center h-full">
@@ -45,7 +49,7 @@ const HallucationDiv = ({ text, selected, size, langPack }) => {
 	);
 };
 
-const Dropdown = ({ open, setOpen, state, setState, langPack }) => {
+const Dropdown = ({ open, setOpen, state, setState, langPack, language }) => {
 	return (
 		<>
 			<div
@@ -87,10 +91,11 @@ const Dropdown = ({ open, setOpen, state, setState, langPack }) => {
 									}}
 								>
 									<HallucationDiv
-										text={hallu.name}
+										text={hallu.name[language]}
 										selected={selected}
 										size="normal"
 										langPack={langPack}
+										language={language}
 									/>
 								</div>
 							);
@@ -138,11 +143,12 @@ export default function FloorTitle({ theme }) {
 						{hallucinations.map((hallu) => {
 							return (
 								<HallucationDiv
-									key={hallu.name}
-									text={hallu.name}
+									key={hallu.key}
+									text={hallu.name[language]}
 									selected={true}
 									size="small"
 									langPack={langPack}
+									language={language}
 								/>
 							);
 						})}
@@ -155,6 +161,7 @@ export default function FloorTitle({ theme }) {
 					state={hallucinations}
 					setState={setHallucinations}
 					langPack={langPack}
+					language={language}
 				/>
 			</div>
 		</>
