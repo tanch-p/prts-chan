@@ -16,7 +16,7 @@
 			"range": "2.5",
 
 			"weight": "3",
-			"lifepoint": 1,
+			"lifepoint": 5,
 			"ms": "0.6",
 			"special": [
 				{
@@ -60,7 +60,7 @@
 			"range": "2.5",
 
 			"weight": "3",
-			"lifepoint": 1,
+			"lifepoint": 5,
 			"ms": "0.6",
 			"special": [
 				{

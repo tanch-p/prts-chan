@@ -12,7 +12,7 @@
 			"range": "0",
 
 			"weight": "4",
-			"lifepoint": 1,
+			"lifepoint": 5,
 			"ms": "0.5 ",
 			"special": [
 				{
