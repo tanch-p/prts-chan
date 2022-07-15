@@ -1,5 +1,5 @@
 {
-	"name": { "en": "斗兽笼", "jp": "闘獣の檻", "cn": "斗兽笼" },
+	"name": { "en": "Beast Fighting", "jp": "闘獣の檻", "cn": "斗兽笼" },
 	"img": "ISW-NO_斗兽笼",
 	"theme": "phcs",
 	"floors": [3],

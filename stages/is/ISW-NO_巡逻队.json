@@ -1,5 +1,5 @@
 {
-	"name": { "en": "巡逻队", "jp": "巡視隊", "cn": "巡逻队" },
+	"name": { "en": "Patrol Squad", "jp": "巡視隊", "cn": "巡逻队" },
 	"img": "ISW-NO_巡逻队",
 	"theme": "phcs",
 	"floors": [2],

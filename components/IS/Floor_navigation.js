@@ -65,7 +65,7 @@ export default function FloorNavigation({ stagesList, floor, language }) {
 		fileName.includes("ISW-NO")
 	);
 
-	const IndivFloorNavigation = ({ floor, selectedFloor}) => {
+	const IndivFloorNavigation = ({ floor, selectedFloor }) => {
 		const floorNormalStages = getStageLink(allNormalStages, floor, language);
 		const floorEncounterStages = getStageLink(
 			allEncounterStages,
@@ -211,14 +211,16 @@ const getStageLink = (stages, floor, language) => {
 		.map(({ title, fileName }) => (
 			<Link href={fileName} key={fileName}>
 				<div
-					className={`hover:text-sky-400  md:h-full mx-2 my-3 md:my-1 text-center hover:cursor-pointer ${
-						language === "jp"
-							? "whitespace-nowrap py-2 w-[120px]"
-							: "text-base w-[100px]"
-					}`}
+					className={`hover:text-sky-400  md:h-full mx-2 my-3 md:my-1 text-center hover:cursor-pointer ${languageStyles[language]}`}
 				>
 					<span>{title}</span>
 				</div>
 			</Link>
 		));
+};
+
+const languageStyles = {
+	jp: "whitespace-nowrap py-2 w-[120px]",
+	en: "text-sm w-[100px] py-1",
+	cn: "text-base w-[100px]",
 };

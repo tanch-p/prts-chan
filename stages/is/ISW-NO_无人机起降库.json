@@ -1,5 +1,5 @@
 {
-	"name": { "en": "无人机起降库", "jp": "ドローン発着庫", "cn": "无人机起降库" },
+	"name": { "en": "Drone Landing Zone", "jp": "ドローン発着庫", "cn": "无人机起降库" },
 	"img": "ISW-NO_无人机起降库",
 	"theme": "phcs",
 	"floors": [5],

@@ -36,11 +36,13 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 				)}   ${language === "jp" ? "" : ""}`}
 			>
 				<div
-					className={`grid md:grid-cols-3 place-items-center max-w-7xl mx-auto h-16`}
+					className={`grid grid-cols-3 place-items-center max-w-7xl mx-auto h-16`}
 				>
 					<div
 						className={`flex items-center relative justify-self-start  ${
-							IS_THEMES.includes(theme) ? "self-start mt-[18px] hidden md:block" : ""
+							IS_THEMES.includes(theme)
+								? "self-start mt-[18px] invisible md:visible md:block"
+								: ""
 						}`}
 					>
 						<button
@@ -72,7 +74,9 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 					)}
 					<div
 						className={`text-left relative justify-self-end md:mr-12 ${
-							IS_THEMES.includes(theme) ? "self-start mt-[13px] hidden md:block" : ""
+							IS_THEMES.includes(theme)
+								? "self-start mt-[13px] hidden md:block"
+								: ""
 						}`}
 					>
 						<div>
