@@ -267,9 +267,9 @@ export default function EnemySimple({
 					<div className="">
 						<div
 							id="table-wrapper"
-							className="overflow-x-auto w-screen md:w-full"
+							className="overflow-x-auto md:overflow-visible w-screen md:w-full"
 						>
-							<table className="border border-gray-400 border-collapse w-max md:w-full">
+							<table className="border border-gray-400 border-collapse  w-max md:w-full">
 								<colgroup></colgroup>
 								<thead>
 									<tr>
