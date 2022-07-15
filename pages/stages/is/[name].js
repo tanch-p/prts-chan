@@ -97,7 +97,7 @@ export default function Stage({ stageData, stagesList }) {
 				{mapConfig.hasOwnProperty("hard_mods") ? (
 					<TabComponent tabArr={tabArr} />
 				) : (
-					<div className="">
+					<div className="mt-8">
 						<EnemySimple
 							mapConfig={mapConfig}
 							language={language}
