@@ -14,9 +14,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1.2",
+			"lifepoint": 1,
+			"ms": "1.2",
 			"special": [
 				{
 					"name": "no_block",
@@ -40,9 +41,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1.2",
+			"lifepoint": 1,
+			"ms": "1.2",
 			"special": [
 				{
 					"name": "no_block",
@@ -59,16 +61,17 @@
 			]
 		},
 		"危机四伏": {
-			"hp": "3800",
+			"hp": "15000",
 			"atk": "100",
-			"def": "350",
-			"res": "35",
+			"def": "700",
+			"res": "50",
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1.2",
+			"lifepoint": 1,
+			"ms": "1.2",
 			"special": [
 				{
 					"name": "no_block",
