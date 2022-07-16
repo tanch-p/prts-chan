@@ -18,11 +18,12 @@
 			"text": "敌方单位的攻击力和生命值都提升至130%，防御力提升至120%,沸血骑士团学徒和沸血骑士团精锐获得隐匿"
 		},
 		{
-			"targets": ["K11,K10"],
+			"targets": ["K11", "K10"],
 			"mods": {
 				"special": {
 					"extra": {
 						"name": "stealth",
+						"type": "others",
 						"tooltip": {
 							"en": ["Stealth"],
 							"jp": ["ステルス"],

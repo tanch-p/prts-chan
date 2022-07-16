@@ -19,11 +19,11 @@
 		}
 	],
 	"enemies": [
-		{ "id": "07", "count": "14", "stats": "level0" },
+		{ "id": "07", "count": "14", "stats": "步步紧逼" },
 		{ "id": "36", "count": "4", "stats": "步步紧逼" },
 		{ "id": "D8", "count": "7", "stats": "步步紧逼" },
-		{ "id": "35", "count": "4", "stats": "level0" },
-		{ "id": "24", "count": "10", "stats": "level0" },
+		{ "id": "35", "count": "4", "stats": "步步紧逼" },
+		{ "id": "24", "count": "10", "stats": "步步紧逼" },
 		{ "id": "DLD", "count": "1", "stats": "level0" },
 		{ "id": "GPN", "count": "1", "stats": "level0" }
 	]
