@@ -14,22 +14,24 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "3",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": []
 		},
 		"步步紧逼": {
-			"hp": "6000",
-			"atk": "600",
+			"hp": "5500",
+			"atk": "320",
 			"def": "140",
-			"res": "65",
+			"res": "40",
 			"aspd%": "100",
 			"aspd": "3.5",
-			"range": "3",
-			
+			"range": "2.3",
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": []
 		},
 		"无人机起降库": {
@@ -40,9 +42,10 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "3",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.8",
+			"lifepoint": 1,
+			"ms": "0.8",
 			"special": []
 		}
 	},

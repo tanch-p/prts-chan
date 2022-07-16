@@ -26,7 +26,7 @@
 	"enemies": [
 		{ "id": "CS2", "count": "2", "stats": "level0" },
 		{ "id": "CS1", "count": "4", "stats": "level0" },
-		{ "id": "O1", "count": "9", "stats": "level0" },
+		{ "id": "01", "count": "9", "stats": "level0" },
 		{ "id": "25", "count": "10", "stats": "level0" },
 		{ "id": "21", "count": "12", "stats": "level0" },
 		{ "id": "DLD", "count": "1", "stats": "level0" },

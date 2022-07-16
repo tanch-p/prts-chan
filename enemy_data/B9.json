@@ -22,7 +22,7 @@
 				{
 					"name": "bug_explode",
 					"type": "atk",
-					"suffix": { "en": "💥/arts", "jp": "💥・術", "cn": "💥・法术" },
+					"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
 					"multiplier": 2,
 					"hits": 1,
 					"fixedInc": 0,
@@ -54,7 +54,7 @@
 				{
 					"name": "bug_explode",
 					"type": "atk",
-					"suffix": { "en": "💥/arts", "jp": "💥・術", "cn": "💥・法术" },
+					"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
 					"multiplier": 2,
 					"hits": 1,
 					"fixedInc": 0,

@@ -10,9 +10,10 @@
 			"aspd%": "100",
 			"aspd": "1.4",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1.9",
+			"lifepoint": 1,
+			"ms": "1.9",
 			"special": []
 		},
 		"步步紧逼": {
@@ -23,9 +24,9 @@
 			"aspd%": "100",
 			"aspd": "1.4",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.9",
+			"lifepoint": 1,
+			"ms": "1.9",
 			"special": []
 		}
 	},
