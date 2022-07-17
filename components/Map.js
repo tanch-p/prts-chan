@@ -12,6 +12,7 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 	const height =
 		device === "mobile" ? (600 * 2) / 5 : Math.floor((600 * 3) / 5);
 
+	const routes = mapConfig.routes;
 	return (
 		<>
 			<div className="mt-2 text-xl w-[100vw] md:w-max mx-auto ">
@@ -19,17 +20,32 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 					{mapConfig.name[language]}
 				</div>
 				<div className="">
-					<div className="md:h-[360px] relative select-none z-0 flex justify-center">
-						<Image
-							priority
-							src={`/images/maps/${mapConfig.img}.webp`}
-							alt={mapConfig.name[language]}
-							width={width}
-							height={height}
-							className=""
-						/>
-					</div>
-					<div></div>
+					{routes ? (
+						routes.map(({ title, category, id }) => (
+							<div key={id} className="flex justify-center">
+								<iframe
+									width={width}
+									height={height}
+									src={`https://www.youtube-nocookie.com/embed/${id}?rel=0`}
+									title={mapConfig.name[language]}
+									frameBorder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowFullScreen
+								></iframe>
+							</div>
+						))
+					) : (
+						<div className="md:h-[360px] relative select-none z-0 flex justify-center">
+							<Image
+								priority
+								src={`/images/maps/${mapConfig.img}.webp`}
+								alt={mapConfig.name[language]}
+								width={width}
+								height={height}
+								className=""
+							/>
+						</div>
+					)}
 				</div>
 				<div className="w-[100vw] md:w-full">
 					{mapConfig.hasOwnProperty("sp_count") ? (

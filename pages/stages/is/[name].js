@@ -79,7 +79,7 @@ export default function Stage({ stageData, stagesList }) {
 	useEffect(() => {
 		if (!mapConfig.floors.includes(floor))
 			setFloor(Math.min(...mapConfig.floors));
-	}, [mapConfig.floors]);
+	}, [mapConfig]);
 
 	return (
 		<Layout theme={theme} floor={mapConfig.floor}>

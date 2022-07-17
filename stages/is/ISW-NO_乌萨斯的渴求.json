@@ -1,6 +1,17 @@
 {
-	"name": { "en": "Ursus Desire", "jp": "ウルサスの渇望", "cn": "乌萨斯的渴求" },
+	"name": {
+		"en": "Ursus Desire",
+		"jp": "ウルサスの渇望",
+		"cn": "乌萨斯的渴求"
+	},
 	"img": "ISW-NO_乌萨斯的渴求",
+	"routes": [
+		{
+			"category": "ex",
+			"title":"",
+			"id": "b2eWoeO-CEs"
+		}
+	],
 	"theme": "phcs",
 	"floors": [6],
 	"floor_nav": [6],
