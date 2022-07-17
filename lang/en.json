@@ -52,7 +52,7 @@
 	"no_attack": "does not attack",
 
 	"status_immune": {
-		"pre": "Immune to",
+		"pre": "Immune to ",
 		"post": "",
 		"separator":", ",
 		"ALL": "Immune to ALL status ailments",
