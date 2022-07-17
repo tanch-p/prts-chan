@@ -1,6 +1,17 @@
 {
-	"name": { "en": "Sarkaz Desire", "jp": "サルカズの渇望", "cn": "萨卡兹的渴求" },
+	"name": {
+		"en": "Sarkaz Desire",
+		"jp": "サルカズの渇望",
+		"cn": "萨卡兹的渴求"
+	},
 	"img": "ISW-NO_萨卡兹的渴求",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "iXv9KyrQN_A"
+		}
+	],
 	"theme": "phcs",
 	"floors": [6],
 	"floor_nav": [6],
