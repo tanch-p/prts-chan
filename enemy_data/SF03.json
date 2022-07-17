@@ -20,7 +20,8 @@
         "special": []
       }
     },
-    "normal_attack": {
+    "status_immune":[],
+"normal_attack": {
       "type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
       "hits": 1
     },

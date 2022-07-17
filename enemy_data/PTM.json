@@ -80,6 +80,7 @@
 			]
 		}
 	},
+	"status_immune": ["stun","sleep","freeze","silence"],
 	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
@@ -87,5 +88,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee","ranged", "boss"]
+	"type": ["melee", "ranged", "boss"]
 }

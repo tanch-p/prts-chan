@@ -50,6 +50,21 @@
 	"melee": "melee",
 	"ranged": "ranged",
 	"no_attack": "does not attack",
+
+	"status_immune": {
+		"pre": "Immune to",
+		"post": "",
+		"separator":", ",
+		"ALL": "Immune to ALL status ailments",
+		"stun": "Stun",
+		"sleep": "Sleep",
+		"freeze": "Freeze",
+		"silence": "Silence",
+		"bind": "Bind",
+		"slow": "Slow",
+		"unbalance": ""
+	},
+
 	"type": {
 		"melee": { "name": "Melee", "ops": [] },
 		"ranged": {

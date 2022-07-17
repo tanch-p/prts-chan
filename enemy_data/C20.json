@@ -21,7 +21,8 @@
 			"special": []
 		}
 	},
-	"normal_attack": {
+	"status_immune":[],
+"normal_attack": {
 		"atk_type": ["no_attack"],
 		"hits": 1
 	},
@@ -71,7 +72,8 @@
 	},
 	"released": {
 		"mods": { "atk": 1.5 },
-		"normal_attack": {
+		"status_immune":[],
+"normal_attack": {
 			"atk_type": ["ranged", "arts"],
 			"hits": 1
 		},
