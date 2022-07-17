@@ -128,8 +128,8 @@
 			]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": ["stun", "freeze"],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
