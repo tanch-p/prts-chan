@@ -31,9 +31,7 @@
 					"tooltip": {
 						"simple": {
 							"en": ["Recovers 0.25% Max Hp/s (Can be disabled by a relic)"],
-							"jp": [
-								"毎秒最大HPの0.25％を回復する（ある秘宝で無効化可能）"
-							],
+							"jp": ["毎秒最大HPの0.25％を回復する（ある秘宝で無効化可能）"],
 							"cn": []
 						}
 					}
@@ -89,6 +87,7 @@
 			]
 		}
 	},
+	"status_immune": ["ALL"],
 	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1

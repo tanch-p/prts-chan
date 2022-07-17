@@ -95,7 +95,8 @@
 			]
 		}
 	},
-	"normal_attack": {
+	"status_immune":[],
+"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

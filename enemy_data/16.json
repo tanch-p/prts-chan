@@ -88,7 +88,8 @@
 			]
 		}
 	},
-	"normal_attack": {
+	"status_immune":[],
+"normal_attack": {
 		"atk_type": ["no_attack"],
 		"hits": 1
 	},

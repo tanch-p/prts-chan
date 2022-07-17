@@ -65,7 +65,8 @@
 			]
 		}
 	},
-	"normal_attack": {
+	"status_immune":[],
+"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

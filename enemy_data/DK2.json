@@ -71,7 +71,8 @@
 			]
 		}
 	},
-	"normal_attack": {
+	"status_immune":[],
+"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
@@ -86,7 +87,8 @@
 			"aspd": 2,
 			"ms": 1.5
 		},
-		"normal_attack": {
+		"status_immune":[],
+"normal_attack": {
 			"atk_type": ["ranged", "arts"],
 			"hits": 1
 		},

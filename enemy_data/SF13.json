@@ -33,7 +33,8 @@
 			]
 		}
 	},
-	"normal_attack": {
+	"status_immune":[],
+"normal_attack": {
 		"type": { "en": "Ranged/Arts", "jp": "遠・術", "cn": "远・法术" },
 		"hits": 1
 	},

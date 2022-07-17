@@ -51,6 +51,21 @@
 	"melee": "近",
 	"ranged": "遠",
 	"no_attack": "攻撃しない",
+
+	"status_immune": {
+		"pre": "【",
+		"post": "】無効",
+		"separator":"、",
+		"ALL": "全状態異常無効",
+		"stun": "スタン",
+		"sleep": "睡眠",
+		"freeze": "凍結",
+		"silence": "特殊能力無効化",
+		"bind": "バインド",
+		"slow": "足止め",
+		"unbalance":""
+	},
+
 	"type": {
 		"melee": { "name": "近距離", "ops": [] },
 		"ranged": {

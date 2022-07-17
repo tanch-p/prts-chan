@@ -59,7 +59,8 @@
 			]
 		}
 	},
-	"normal_attack": {
+	"status_immune":[],
+"normal_attack": {
 		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
 		"hits": 1
 	},

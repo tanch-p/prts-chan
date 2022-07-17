@@ -83,7 +83,8 @@
 			]
 		}
 	},
-	"normal_attack": {
+	"status_immune":[],
+"normal_attack": {
 		"type": { "en": "Melee/Arts", "jp": "近・術", "cn": "近・法术" },
 		"hits": 1
 	},

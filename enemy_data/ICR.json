@@ -34,7 +34,8 @@
 			]
 		}
 	},
-	"normal_attack": {
+	"status_immune":[],
+"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
@@ -45,7 +46,8 @@
 	"powerup": {
 		"state_name": "rage",
 		"mods": { "aspd": 2, "ms": 2 },
-		"normal_attack": {
+		"status_immune":[],
+"normal_attack": {
 			"atk_type": ["ranged", "arts"],
 			"hits": 1
 		},
