@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Nothing Ends Well", "jp": "茶番の終わり", "cn": "诸事不顺" },
 	"img": "ISW-DF_诸事不顺",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "YRkuVgWUZi8"
+		}
+	],
 	"theme": "phcs",
 	"floors": [6],
 	"floor_nav": [6],

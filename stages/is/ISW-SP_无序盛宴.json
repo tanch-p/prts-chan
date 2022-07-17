@@ -1,9 +1,20 @@
 {
-	"name": { "en": "Disorderly Banquet", "jp": "秩序無き盛宴", "cn": "无序盛宴" },
+	"name": {
+		"en": "Disorderly Banquet",
+		"jp": "秩序無き盛宴",
+		"cn": "无序盛宴"
+	},
 	"img": "ISW-SP_无序盛宴",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "wjr6rZPdWu4"
+		}
+	],
 	"theme": "phcs",
 	"floors": [4, 5],
-	"floor_nav": [4,5],
+	"floor_nav": [4, 5],
 	"count": "14",
 	"enemies": [
 		{ "id": "CS1", "count": "2", "stats": "level0" },
