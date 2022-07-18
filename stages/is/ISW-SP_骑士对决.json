@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Knights' Duel", "jp": "「騎士対決」", "cn": "“骑士对决”" },
 	"img": "ISW-SP_骑士对决",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "p3viay0GAv8"
+		}
+	],
 	"theme": "phcs",
 	"floors": [5],
 	"floor_nav": [5],

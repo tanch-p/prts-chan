@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Bob's Beers", "jp": "ボブ酒造", "cn": "鲍勃酒品" },
 	"img": "ISW-NO_鲍勃酒品",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "Rnc71nCgbo4"
+		}
+	],
 	"theme": "phcs",
 	"floors": [4],
 	"floor_nav": [4],

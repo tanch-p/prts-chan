@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Justice", "jp": "正義", "cn": "正义" },
 	"img": "ISW-NO_正义",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "AbVVg5HacS8"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],

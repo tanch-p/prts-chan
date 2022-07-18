@@ -1,6 +1,17 @@
 {
-	"name": { "en": "This Ursus Man", "jp": "ウルサスの漢", "cn": "这位乌萨斯人" },
+	"name": {
+		"en": "This Ursus Man",
+		"jp": "ウルサスの漢",
+		"cn": "这位乌萨斯人"
+	},
 	"img": "ISW-DU_这位乌萨斯人",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "SnBhzYXUj5k"
+		}
+	],
 	"theme": "phcs",
 	"floors": [5],
 	"floor_nav": [5],

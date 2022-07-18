@@ -1,6 +1,13 @@
 {
 	"name": { "en": "A Dance Together", "jp": "ナイトフィーバー", "cn": "共舞" },
 	"img": "ISW-NO_共舞",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "-mmcomH-imw"
+		}
+	],
 	"theme": "phcs",
 	"floors": [4],
 	"floor_nav": [4],

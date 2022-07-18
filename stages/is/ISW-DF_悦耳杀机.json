@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Fatal Melodies", "jp": "殺戮の調べ", "cn": "悦耳杀机" },
 	"img": "ISW-DF_悦耳杀机",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "f_6CpqdZdc"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],
