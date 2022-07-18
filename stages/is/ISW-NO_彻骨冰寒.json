@@ -1,6 +1,13 @@
 {
 	"name": { "en": "The Biting Cold", "jp": "氷の芸術", "cn": "彻骨冰寒" },
 	"img": "ISW-NO_彻骨冰寒",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "R8-d5j3kFts"
+		}
+	],
 	"theme": "phcs",
 	"floors": [5],
 	"floor_nav": [5],
