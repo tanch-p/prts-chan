@@ -5,6 +5,13 @@
 		"cn": "惊喜工厂"
 	},
 	"img": "ISW-NO_惊喜工厂",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "6kPSaudEuUk"
+		}
+	],
 	"theme": "phcs",
 	"floors": [5],
 	"floor_nav": [5],
