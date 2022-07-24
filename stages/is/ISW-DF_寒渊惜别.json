@@ -1,6 +1,13 @@
 {
 	"name": { "en": "A Cold Separation", "jp": "酷寒の惜別", "cn": "寒渊惜别" },
 	"img": "ISW-DF_寒渊惜别",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "right",
+			"id": "x5iNEO3gslM"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],

@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Mind the Doors", "jp": "敷居に注意を", "cn": "开门请当心" },
 	"img": "ISW-DF_开门请当心",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "r-6HEncEBU0"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],
