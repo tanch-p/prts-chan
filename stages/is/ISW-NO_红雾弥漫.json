@@ -1,6 +1,13 @@
 {
 	"name": { "en": "The Red Mist", "jp": "赤い霧の眠らぬ夜", "cn": "红雾弥漫" },
 	"img": "ISW-NO_红雾弥漫",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "5hVrZ-s4MPc"
+		}
+	],
 	"debuff": "我方单位每0.5秒持续受到25真实伤害",
 	"theme": "phcs",
 	"floors": [5],
