@@ -26,10 +26,10 @@
 					"tooltip": {
 						"simple": {
 							"en": [
-								"Rock Throw→stuns unit for 25 sec, prioritises unstunned units first. CD13s"
+								"Rock Throw→stuns unit for 25 sec, does not target stunned units. CD13s"
 							],
 							"jp": [
-								"石投げ→25秒スタンする、CD13秒 (スタンしてないユニットを優先に狙う）"
+								"石投げ→25秒スタンする、CD13秒 (スタンしてるユニットは無視）"
 							],
 							"cn": []
 						}
@@ -61,10 +61,10 @@
 					"tooltip": {
 						"simple": {
 							"en": [
-								"Rock Throw→stuns unit for 25 sec, prioritises unstunned units first. CD13s"
+								"Rock Throw→stuns unit for 25 sec, does not target stunned units. CD13s"
 							],
 							"jp": [
-								"石投げ→25秒スタンする、CD13秒 (スタンしてないユニットを優先に狙う）"
+								"石投げ→25秒スタンする、CD13秒 (スタンしてるユニットは無視）"
 							],
 							"cn": []
 						}
@@ -73,8 +73,8 @@
 			]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

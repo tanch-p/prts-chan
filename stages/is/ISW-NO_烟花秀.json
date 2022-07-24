@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Fireworks Show", "jp": "花火ショー", "cn": "烟花秀" },
 	"img": "ISW-NO_烟花秀",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "G9195vVSAbU"
+		}
+	],
 	"theme": "phcs",
 	"floors": [4],
 	"floor_nav": [4],

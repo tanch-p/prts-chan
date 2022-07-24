@@ -1,6 +1,17 @@
 {
-	"name": { "en": "Terrifying Legends", "jp": "恐怖の都市伝説", "cn": "恐怖传说" },
+	"name": {
+		"en": "Terrifying Legends",
+		"jp": "恐怖の都市伝説",
+		"cn": "恐怖传说"
+	},
 	"img": "ISW-DF_恐怖传说",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "lCd58jX1_g0"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],

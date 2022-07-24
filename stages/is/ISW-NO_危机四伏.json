@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Dangers Abound", "jp": "ポルターガイスト", "cn": "危机四伏" },
 	"img": "ISW-NO_危机四伏",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "K7-mY4RXq7k"
+		}
+	],
 	"theme": "phcs",
 	"floors": [5],
 	"floor_nav": [5],
