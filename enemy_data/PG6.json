@@ -14,9 +14,10 @@
 			"aspd%": "100",
 			"aspd": "2.6",
 			"range": "4",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.9",
+			"lifepoint": 1,
+			"ms": "0.9",
 			"special": [
 				{
 					"name": "RPG",
@@ -41,8 +42,8 @@
 			]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 
 		"hits": 1
@@ -50,5 +51,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee", "ranged"]
+	"type": ["melee", "ranged", "elite"]
 }

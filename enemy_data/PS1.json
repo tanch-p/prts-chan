@@ -23,7 +23,7 @@
 	"status_immune": [],
 	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
-		"hits": 1
+		"hits": 2
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",

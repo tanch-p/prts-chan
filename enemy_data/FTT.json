@@ -1,38 +1,32 @@
 {
-    "id": "FTT",
-    "name_en": "The First To Talk",
-    "name_jp": "ファースト・トーカー",
-    "name_cn": "首言者",
-    "atk_type_jp": "物理",
-    "hp": "21000",
-    "atk": "600",
-    "def": "500",
-    "res": "20",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "2.5",
-    
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.8",
-    "type_jp": [
-        "近距離",
-        "ボス",
-        "海の怪物"
-    ],
-    "type_en": [
-        "Melee",
-        "Boss",
-        "Sea Monster"
-    ],
-    "type_cn": [
-        "近战",
-        "领袖",
-        "海怪"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "FTT",
+	"name": {
+		"en": "The First To Talk",
+		"jp": "ファースト・トーカー",
+		"cn": "首言者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "21000",
+			"atk": "600",
+			"def": "500",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "2.5",
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "sea_monster","elite"]
 }

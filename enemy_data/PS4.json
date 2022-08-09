@@ -22,8 +22,8 @@
 	},
 	"status_immune": [],
 	"normal_attack": {
-		"atk_type": ["ranged", "phys"],
+		"atk_type": ["no_attack"],
 		"hits": 1
 	},
-	"type": ["ranged", "flying", "drone"]
+	"type": ["flying", "drone"]
 }

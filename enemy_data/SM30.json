@@ -1,22 +1,22 @@
 {
-	"id": "PD2",
+	"id": "SM30",
 	"name": {
-		"en": "Tactical Crossbowman Leader",
-		"jp": "戦術射撃隊長",
-		"cn": "战术弩手组长"
+		"en": "深溟裂礁者",
+		"jp": "深溟裂礁者",
+		"cn": "深溟裂礁者"
 	},
 	"stats": {
 		"level0": {
-			"hp": "4200",
-			"atk": "390",
-			"def": "260",
+			"hp": "20000",
+			"atk": "300",
+			"def": "750",
 			"res": "40",
 			"aspd%": "100",
-			"aspd": "2.4",
-			"range": "2.7",
-			"weight": "1",
+			"aspd": "1.5",
+			"range": "1.5",
+			"weight": "4",
 			"lifepoint": 1,
-			"ms": "0.9",
+			"ms": "1.2",
 			"special": []
 		}
 	},
@@ -28,5 +28,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["ranged", "elite"]
+	"type": ["ranged", "sea_monster", "elite"]
 }

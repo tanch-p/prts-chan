@@ -1,32 +1,32 @@
 {
-	"id": "SM9",
+	"id": "SM16",
 	"name": {
-		"en": "Basin Sea Reaper",
-		"jp": "鉢海のリーパー",
-		"cn": "钵海收割者"
+		"en": "富营养的奠基者",
+		"jp": "富营养的奠基者",
+		"cn": "富营养的奠基者"
 	},
 	"stats": {
 		"level0": {
-			"hp": "20000",
-			"atk": "400",
-			"def": "800",
-			"res": "75",
+			"hp": "9000",
+			"atk": "600",
+			"def": "250",
+			"res": "30",
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "0",
 			"weight": "2",
 			"lifepoint": 1,
-			"ms": "0.3",
+			"ms": "1",
 			"special": []
 		}
 	},
 	"status_immune": [],
 	"normal_attack": {
-		"atk_type": ["melee", "phys"],
+		"atk_type": ["melee", "arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee", "sea_monster", "elite"]
+	"type": ["melee", "sea_monster","elite"]
 }

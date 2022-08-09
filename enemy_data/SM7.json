@@ -1,38 +1,32 @@
 {
-    "id": "SM7",
-    "name_en": "Floating Sea Drifter",
-    "name_jp": "浮海のドリフター",
-    "name_cn": "浮海飘航者",
-    "atk_type_jp": "物理",
-    "hp": "3000",
-    "atk": "220",
-    "def": "200",
-    "res": "20",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "2.5",
-    
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.75",
-    "type_jp": [
-        "遠距離",
-        "飛行",
-        "海の怪物"
-    ],
-    "type_en": [
-        "Ranged",
-        "Flying",
-        "Sea Monster"
-    ],
-    "type_cn": [
-        "远程",
-        "飞行",
-        "海怪"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "SM7",
+	"name": {
+		"en": "Floating Sea Drifter",
+		"jp": "浮海のドリフター",
+		"cn": "浮海飘航者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "3000",
+			"atk": "220",
+			"def": "200",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "2.5",
+			"weight": "0",
+			"lifepoint": 1,
+			"ms": "0.75",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "flying", "sea_monster"]
 }
