@@ -1,20 +1,20 @@
 {
-	"id": "PD3",
+	"id": "NL19",
 	"name": {
-		"en": "Tactical Defender",
-		"jp": "戦術重装兵",
-		"cn": "战术防御者"
+		"en": "Nightzmora Follower",
+		"jp": "悪夢のマニア",
+		"cn": "梦魇追随者"
 	},
 	"stats": {
 		"level0": {
-			"hp": "7000",
-			"atk": "700",
-			"def": "800",
-			"res": "40",
+			"hp": "15000",
+			"atk": "1500",
+			"def": "750",
+			"res": "20",
 			"aspd%": "100",
-			"aspd": "2.6",
+			"aspd": "5",
 			"range": "0",
-			"weight": "4",
+			"weight": "5",
 			"lifepoint": 1,
 			"ms": "0.7",
 			"special": []

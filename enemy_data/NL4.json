@@ -1,19 +1,19 @@
 {
-	"id": "PD1",
+	"id": "NL4",
 	"name": {
-		"en": "Tactical Crossbowman",
-		"jp": "戦術射撃兵",
-		"cn": "战术弩手"
+		"en": "Armorless Union Crossbowman Leader",
+		"jp": "無冑盟弩手隊長",
+		"cn": "无胄盟弩手组长"
 	},
 	"stats": {
 		"level0": {
-			"hp": "3100",
-			"atk": "320",
-			"def": "260",
-			"res": "40",
+			"hp": "4000",
+			"atk": "350",
+			"def": "150",
+			"res": "0",
 			"aspd%": "100",
-			"aspd": "2.4",
-			"range": "2.5",
+			"aspd": "2.9",
+			"range": "2",
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.9",

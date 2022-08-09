@@ -1,22 +1,22 @@
 {
-	"id": "PD3",
+	"id": "NL6",
 	"name": {
-		"en": "Tactical Defender",
-		"jp": "戦術重装兵",
-		"cn": "战术防御者"
+		"en": "Armorless Union Assassin Leader",
+		"jp": "無冑盟刺客隊長",
+		"cn": "无胄盟刺客组长"
 	},
 	"stats": {
 		"level0": {
-			"hp": "7000",
-			"atk": "700",
-			"def": "800",
-			"res": "40",
+			"hp": "5500",
+			"atk": "500",
+			"def": "300",
+			"res": "20",
 			"aspd%": "100",
-			"aspd": "2.6",
+			"aspd": "2.2",
 			"range": "0",
-			"weight": "4",
+			"weight": "1",
 			"lifepoint": 1,
-			"ms": "0.7",
+			"ms": "1",
 			"special": []
 		}
 	},

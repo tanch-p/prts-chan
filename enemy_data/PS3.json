@@ -1,36 +1,29 @@
 {
-    "id": "PS3",
-    "name_en": "Anvil",
-    "name_jp": "鉄砧",
-    "name_cn": "铁砧",
-    "atk_type_jp": "攻撃しない",
-    "hp": "5000",
-    "atk": "0",
-    "def": "80",
-    "res": "50",
-    "aspd%": "100",
-    "aspd": "1",
-    "range": "2.5",
-    
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "1",
-    "type_jp": [
-        "攻撃しない",
-        "飛行",
-        "ドローン"
-    ],
-    "type_en": [
-        "Does not attack",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "不攻击",
-        "飞行",
-        "无人机"
-    ],
-    "special": ""
+	"id": "PS3",
+	"name": {
+		"en": "Anvil",
+		"jp": "鉄砧",
+		"cn": "铁砧"
+	},
+	"stats": {
+		"level0": {
+			"hp": "5000",
+			"atk": "0",
+			"def": "80",
+			"res": "50",
+			"aspd%": "100",
+			"aspd": "1",
+			"range": "2.5",
+			"weight": "0",
+			"lifepoint": 1,
+			"ms": "1",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"type": ["ranged", "flying", "drone"]
 }

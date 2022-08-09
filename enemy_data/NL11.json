@@ -1,22 +1,22 @@
 {
-	"id": "PD1",
+	"id": "NL11",
 	"name": {
-		"en": "Tactical Crossbowman",
-		"jp": "戦術射撃兵",
-		"cn": "战术弩手"
+		"en": "Lazurite, Monique",
+		"jp": "「ラズライト」モニーク",
+		"cn": "青金，莫妮克"
 	},
 	"stats": {
 		"level0": {
-			"hp": "3100",
-			"atk": "320",
-			"def": "260",
+			"hp": "9000",
+			"atk": "600",
+			"def": "200",
 			"res": "40",
 			"aspd%": "100",
-			"aspd": "2.4",
-			"range": "2.5",
-			"weight": "1",
+			"aspd": "3",
+			"range": "10",
+			"weight": "2",
 			"lifepoint": 1,
-			"ms": "0.9",
+			"ms": "0.8",
 			"special": []
 		}
 	},

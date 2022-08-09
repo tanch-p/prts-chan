@@ -1,22 +1,22 @@
 {
-	"id": "PD3",
+	"id": "NL1",
 	"name": {
-		"en": "Tactical Defender",
-		"jp": "戦術重装兵",
-		"cn": "战术防御者"
+		"en": "Undertide Gloompincer",
+		"jp": "不浄なる鉗獣",
+		"cn": "暗潮钳兽"
 	},
 	"stats": {
 		"level0": {
-			"hp": "7000",
-			"atk": "700",
-			"def": "800",
-			"res": "40",
+			"hp": "1800",
+			"atk": "350",
+			"def": "300",
+			"res": "30",
 			"aspd%": "100",
-			"aspd": "2.6",
+			"aspd": "2.1",
 			"range": "0",
-			"weight": "4",
+			"weight": "0",
 			"lifepoint": 1,
-			"ms": "0.7",
+			"ms": "1.5",
 			"special": []
 		}
 	},
@@ -28,5 +28,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee"]
+	"type": ["melee","infected_creature"]
 }

@@ -1,32 +1,32 @@
 {
-    "id": "PD4",
-    "name_en": "Tactical Defender Leader",
-    "name_jp": "戦術重装隊長",
-    "name_cn": "战术防御者组长",
-    "atk_type_jp": "物理",
-    "hp": "10000",
-    "atk": "700",
-    "def": "1000",
-    "res": "60",
-    "aspd%": "100",
-    "aspd": "2.6",
-    "range": "0",
-    
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.7",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "PD4",
+	"name": {
+		"en": "Tactical Defender Leader",
+		"jp": "戦術重装隊長",
+		"cn": "战术防御者组长"
+	},
+	"stats": {
+		"level0": {
+            "hp": "10000",
+            "atk": "700",
+            "def": "1000",
+            "res": "60",
+            "aspd%": "100",
+            "aspd": "2.6",
+            "range": "0",
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }

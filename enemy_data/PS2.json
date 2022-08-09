@@ -1,38 +1,32 @@
 {
-    "id": "PS2",
-    "name_en": "Scrap Model-U",
-    "name_jp": "破片タイプU",
-    "name_cn": "破片U型",
-    "atk_type_jp": "物理",
-    "hp": "8000",
-    "atk": "350",
-    "def": "80",
-    "res": "50",
-    "aspd%": "100",
-    "aspd": "3.8",
-    "range": "1.4",
-    
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "1",
-    "type_jp": [
-        "遠距離",
-        "飛行",
-        "ドローン"
-    ],
-    "type_en": [
-        "Ranged",
-        "Flying",
-        "Drone"
-    ],
-    "type_cn": [
-        "远程",
-        "飞行",
-        "无人机"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "PS2",
+	"name": {
+		"en": "Scrap Model-U",
+		"jp": "破片タイプU",
+		"cn": "破片U型"
+	},
+	"stats": {
+		"level0": {
+            "hp": "8000",
+            "atk": "350",
+            "def": "80",
+            "res": "50",
+            "aspd%": "100",
+            "aspd": "3.8",
+            "range": "1.4",
+            "weight": "0",
+			"lifepoint": 1,
+			"ms": "1",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged","flying","drone"]
 }

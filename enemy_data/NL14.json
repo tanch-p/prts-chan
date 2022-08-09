@@ -1,22 +1,22 @@
 {
-	"id": "PD1",
+	"id": "NL14",
 	"name": {
-		"en": "Tactical Crossbowman",
-		"jp": "戦術射撃兵",
-		"cn": "战术弩手"
+		"en": "Lazurite, Roy",
+		"jp": "「ラズライト」ロイ",
+		"cn": "青金，罗伊"
 	},
 	"stats": {
 		"level0": {
-			"hp": "3100",
-			"atk": "320",
-			"def": "260",
+			"hp": "9000",
+			"atk": "800",
+			"def": "200",
 			"res": "40",
 			"aspd%": "100",
-			"aspd": "2.4",
-			"range": "2.5",
-			"weight": "1",
+			"aspd": "5",
+			"range": "10",
+			"weight": "2",
 			"lifepoint": 1,
-			"ms": "0.9",
+			"ms": "0.8",
 			"special": []
 		}
 	},

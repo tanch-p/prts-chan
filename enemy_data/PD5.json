@@ -1,27 +1,32 @@
 {
-    "id": "PD5",
-    "name_en": "War Phantom",
-    "name_jp": "ウォーゴースト",
-    "name_cn": "战争幽灵",
-    "atk_type_jp": "近・物理",
-    "hp": "10000",
-    "atk": "1100",
-    "def": "500",
-    "res": "60",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "0",
-    
-    "weight": "3",
-    "lifepoint":1,"ms": "1.2",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "special": ""
+	"id": "PD5",
+	"name": {
+		"en": "War Phantom",
+		"jp": "ウォーゴースト",
+		"cn": "战争幽灵"
+	},
+	"stats": {
+		"level0": {
+			"hp": "10000",
+			"atk": "1100",
+			"def": "500",
+			"res": "60",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "0",
+			"weight": "3",
+			"lifepoint": 1,
+			"ms": "1.2",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }
