@@ -10,20 +10,10 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "3.5",
-			"lifepoint": 1,
 			"weight": "4",
-			"lifepoint":1,"ms": "0.65",
+			"lifepoint":1,
+			"ms": "0.65",
 			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Hint: Lifepoint 1"],
-							"jp": ["ヒント: 耐久値減少量1"],
-							"cn": ["生命值:1"]
-						}
-					}
-				},
 				{
 					"name": "aspd_inc",
 					"type": "others",
@@ -79,7 +69,7 @@
 	},
 	"status_immune":[],
 "normal_attack": {
-		"type": { "en": "ranged/arts", "jp": "遠・術", "cn": "远・法术" },
+		"atk_type":["ranged","arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

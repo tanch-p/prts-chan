@@ -44,10 +44,6 @@ export default function EnemySimple({
 		{ key: "lifepoint", show: true },
 		{ key: "remarks", show: true },
 	]);
-	const [multipliers, setMultipliers] = useState({
-		ALL: { hp: 1, atk: 1, def: 1, res: 0, aspd: 1, ms: 1, range: 1, weight: 0 },
-	});
-	const [specialMods, setSpecialMods] = useState({});
 	// console.log("spMods", specialMods);
 	// console.log("mul", multipliers);
 
@@ -173,75 +169,6 @@ export default function EnemySimple({
 			}
 		});
 	};
-
-	const updateMultiplier = () => {
-		const distill = (holder, effects) => {
-			effects.forEach((effect) => {
-				for (const target of effect.targets) {
-					if (!holder[target]) {
-						holder[target] = {
-							hp: 1,
-							atk: 1,
-							def: 1,
-							res: 0,
-							aspd: 1,
-							ms: 1,
-							range: 1,
-							weight: 0,
-						};
-					}
-					for (const key in effect.mods) {
-						if (key !== "special") {
-							if (effect.mods[key][0] === "%") {
-								holder[target][key] *=
-									parseInt(effect.mods[key].slice(1)) / 100;
-							} else {
-								holder[target][key] = effect.mods[key];
-							}
-						} else {
-							if (!other_mods[target]) {
-								other_mods[target] = {};
-							}
-							setOtherMods(other_mods[target], effect.mods.special);
-						}
-					}
-				}
-			});
-		};
-
-		const multiplierHolder = {
-			ALL: {
-				hp: 1,
-				atk: 1,
-				def: 1,
-				res: 0,
-				aspd: 1,
-				ms: 1,
-				range: 1,
-				weight: 0,
-			},
-		};
-		const other_mods = {};
-		if (mode === "hard") {
-			const effects = mapConfig.hard_mods;
-			distill(multiplierHolder, effects);
-		}
-		for (const hallu of hallucinations) {
-			distill(multiplierHolder, hallu.effects);
-		}
-		for (const relic of selectedHardRelic) {
-			distill(multiplierHolder, relic.effects);
-		}
-		for (const relic of selectedNormalRelic) {
-			distill(multiplierHolder, relic.effects);
-		}
-
-		setSpecialMods({ ...other_mods });
-		setMultipliers(multiplierHolder);
-	};
-	useEffect(() => {
-		updateMultiplier();
-	}, [hallucinations, selectedHardRelic, selectedNormalRelic]);
 
 	const enemies =
 		mode === "hard"

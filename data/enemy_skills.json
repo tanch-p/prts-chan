@@ -10,5 +10,50 @@
     },
     "four_block":{
         
+    },
+
+    "nightzmora_slash":{
+        "name":"nightzmora_slash",
+        "type":"atk",
+        "suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "技能・物理" },
+        "hits":1,
+        "multiplier":0.85,
+        "initial":10,
+        "cost":15,
+        "skill_regen":"auto",
+        "tooltip": {
+            "simple": {
+                "en": [""],
+                "jp": [""],
+                "cn": []
+            },
+            "detailed": {
+                "en": [],
+                "jp": [],
+                "cn": []
+            }
+        }
+    },
+    "tola_nightzmora_slash":{
+        "name":"nightzmora_slash",
+        "type":"atk",
+        "suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "技能・物理" },
+        "hits":1,
+        "multiplier":0.85,
+        "initial":5,
+        "cost":10,
+        "skill_regen":"auto",
+        "tooltip": {
+            "simple": {
+                "en": [""],
+                "jp": [""],
+                "cn": ["对场上所有身后一格没有视野的我方干员造成攻击力85%的物理普通伤害"]
+            },
+            "detailed": {
+                "en": [],
+                "jp": [],
+                "cn": []
+            }
+        }
     }
 }

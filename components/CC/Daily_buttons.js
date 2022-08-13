@@ -25,7 +25,7 @@ export default function Daily_buttons({
 								</p>
 								<Risk_triangle risk={num} type={"daily"} />
 							</div>
-							<div className="flex flex-wrap flex-col">
+							<div className="grid grid-rows-3">
 								{ccConfig.map((category) =>
 									category[`options`].map((option) => {
 										if (option.rank === num) {
