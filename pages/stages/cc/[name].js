@@ -209,7 +209,7 @@ export default function Stage({ stageData }) {
       }
     }
     setSpecialMods(other_mods);
-    setMultiplier(multiplier);
+    setMultipliers(multiplier);
     setTotalRisk(selected.reduce((prev, curr) => prev + (curr.rank ?? 0), 0));
   }, [selected]);
 
@@ -401,6 +401,7 @@ export default function Stage({ stageData }) {
         language={language}
         device={device}
         fontThemes={fontThemes}
+        enemies={mapConfig.enemies}
       />
     </Layout>
   );

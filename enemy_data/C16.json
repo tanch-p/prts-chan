@@ -15,9 +15,7 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
 			"weight": "2",
-			"lifepoint": 1,
 			"ms": "1.6",
 			"lifepoint": 1,
 			"special": []

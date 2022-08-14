@@ -1,112 +1,112 @@
 {
-	"id": "C19",
-	"name": {
-		"en": "Caster Prisoner",
-		"jp": "術師囚人",
-		"cn": "术师囚犯"
-	},
-	"format": "prisoner",
-	"stats": {
-		"level0": {
-			"hp": "9000",
-			"atk": "300",
-			"def": "100",
-			"res": "0",
-			"aspd%": "100",
-			"aspd": "3.5",
-			"range": "3",
-			"weight": "3",
-			"ms": "0.5",
-			"lifepoint": 1,
-			"special": []
-		}
-	},
-	"status_immune":[],
-"normal_attack": {
-		"atk_type": ["no_attack"],
-		"hits": 1
-	},
-	"スタン耐性": "無",
-	"眠り耐性": "無",
-	"凍結耐性": "無",
-	"type": ["ranged", "elite"],
-	"imprisoned": {
-		"mods": { "aspd": 0.5, "fixed_def": 300 },
-		"special": [
-			{
-				"name": "caster_release",
-				"tooltip": {
-					"simple": {
-						"en": ["Imprisoned state, does not attack"],
-						"jp": ["禁固状態中→攻撃しない"],
-						"cn": []
-					},
-					"detailed": {
-						"en": [],
-						"jp": ["禁固状態中→攻撃しない"],
-						"cn": []
-					}
-				}
-			},
-			{
-				"name": "prison_arts",
-				"type": "buff",
-				"tooltip": {
-					"simple": {
-						"en": [
-							"Buff→All enemies on field gains +30% aspd (Does not stack)"
-						],
-						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-						"cn": []
-					},
-					"detailed": {
-						"en": [
-							"Buff→All enemies on field gains +30% aspd (Does not stack)"
-						],
-						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-						"cn": []
-					}
-				}
-			}
-		]
-	},
-	"released": {
-		"mods": { "atk": 1.5 },
-		"status_immune":[],
-"normal_attack": {
-			"atk_type": ["ranged", "arts"],
-			"hits": 1
-		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Attacks 2 targets at once"],
-						"jp": ["2体同時攻撃"],
-						"cn": []
-					}
-				}
-			},
-			{
-				"name": "prison_arts",
-				"type": "buff",
-				"tooltip": {
-					"simple": {
-						"en": [
-							"Buff→All enemies on field gains +30% aspd (Does not stack)"
-						],
-						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-						"cn": []
-					},
-					"detailed": {
-						"en": [
-							"Buff→All enemies on field gains +30% aspd (Does not stack)"
-						],
-						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-						"cn": []
-					}
-				}
-			}
-		]
-	}
+  "id": "C19",
+  "name": {
+    "en": "Caster Prisoner",
+    "jp": "術師囚人",
+    "cn": "术师囚犯"
+  },
+  "format": "prisoner",
+  "stats": {
+    "level0": {
+      "hp": "9000",
+      "atk": "300",
+      "def": "100",
+      "res": "0",
+      "aspd%": "100",
+      "aspd": "3.5",
+      "range": "3",
+      "weight": "3",
+      "ms": "0.5",
+      "lifepoint": 1,
+      "special": []
+    }
+  },
+  "status_immune": [],
+  "normal_attack": {
+    "atk_type": ["no_attack"],
+    "hits": 1
+  },
+  "スタン耐性": "無",
+  "眠り耐性": "無",
+  "凍結耐性": "無",
+  "type": ["ranged", "elite"],
+  "imprisoned": {
+    "mods": { "aspd": 0.5, "fixed_def": 300 },
+    "special": [
+      {
+        "name": "caster_release",
+        "tooltip": {
+          "simple": {
+            "en": ["Imprisoned state, does not attack"],
+            "jp": ["禁固状態中→攻撃しない"],
+            "cn": []
+          },
+          "detailed": {
+            "en": [],
+            "jp": ["禁固状態中→攻撃しない"],
+            "cn": []
+          }
+        }
+      },
+      {
+        "name": "prison_arts",
+        "type": "buff",
+        "tooltip": {
+          "simple": {
+            "en": [
+              "Buff→All enemies on field gains +30% aspd (Does not stack)"
+            ],
+            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+            "cn": []
+          },
+          "detailed": {
+            "en": [
+              "Buff→All enemies on field gains +30% aspd (Does not stack)"
+            ],
+            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+            "cn": []
+          }
+        }
+      }
+    ]
+  },
+  "released": {
+    "mods": { "atk": 1.5 },
+    "status_immune": [],
+    "normal_attack": {
+      "atk_type": ["ranged", "arts"],
+      "hits": 1
+    },
+    "special": [
+      {
+        "tooltip": {
+          "simple": {
+            "en": ["Attacks 2 targets at once"],
+            "jp": ["2体同時攻撃"],
+            "cn": []
+          }
+        }
+      },
+      {
+        "name": "prison_arts",
+        "type": "buff",
+        "tooltip": {
+          "simple": {
+            "en": [
+              "Buff→All enemies on field gains +30% aspd (Does not stack)"
+            ],
+            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+            "cn": []
+          },
+          "detailed": {
+            "en": [
+              "Buff→All enemies on field gains +30% aspd (Does not stack)"
+            ],
+            "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+            "cn": []
+          }
+        }
+      }
+    ]
+  }
 }

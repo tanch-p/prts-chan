@@ -59,7 +59,7 @@
 		"pre": "Immune to ",
 		"post": "",
 		"separator":", ",
-		"ALL": "Immune to ALL status ailments",
+		"ALL": "Immune to ALL status ailments except Bind",
 		"stun": "Stun",
 		"sleep": "Sleep",
 		"freeze": "Freeze",

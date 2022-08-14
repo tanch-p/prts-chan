@@ -148,7 +148,7 @@
 							"special": {
 								"explosion": {
 									"type": "atk",
-									"fixed-dmg": 2000,
+									"fixed": 2000,
 									"tooltip": {
 										"en": [
 											"When blocked, creates an explosion around self every $5s$"
