@@ -17,7 +17,7 @@
 			"weight": "5",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [ "nightzmora_slash"]
+			"special": []
 		}
 	},
 	"status_immune": [],
@@ -28,5 +28,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee"]
+	"type": ["melee","elite"]
 }

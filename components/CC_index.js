@@ -27,7 +27,6 @@ export default function CCIndex({ language, langPack }) {
 
   for (const [index, { text, link }] of dailyStages.entries()) {
     dailyCCArr.push(
-      <>
         <div className="border-b border-gray-500 mt-1" key={link}>
           <div className="h-min w-full text-sm py-1">
             {`8/${index + 30}`}
@@ -42,7 +41,6 @@ export default function CCIndex({ language, langPack }) {
             </div>
           </Link>
         </div>
-      </>
     );
   }
   return (
@@ -51,18 +49,18 @@ export default function CCIndex({ language, langPack }) {
         <Image
           src={CC8_banner}
           layout="intrinsic"
-          alt="phantom and crimson solitaire"
-          className="hover:cursor-pointer"
+          alt="CC8 Banner"
+          className="h"
         />
       </div>
       <table className="border border-gray-500 border-collapse w-full text-center align-middle">
         <tbody>
-          <tr className="border-y border-gray-500">
+          <tr className="border-b border-gray-500">
             <td className="py-2">{langPack.index.perma_stage}</td>
           </tr>
           <tr>
             <td>
-              <Link href={`/stages/cc/cc7-perma`}>
+              <Link href={`/stages/cc/CC8_大骑士领酒吧街`}>
                 <div className={`py-2 hover:cursor-pointer hover:bg-gray-600 text-indigo-300  ${getTheme()}`}>
                   {langPack.大骑士领酒吧街}
                 </div>
