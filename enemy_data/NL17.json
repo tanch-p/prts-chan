@@ -17,31 +17,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"name": "candlelight",
-					"type": "atk",
-					"multiplier": 3,
-					"fixed_inc": 0,
-					"suffix": {
-						"en": "skill/arts",
-						"jp": "スキル・術",
-						"cn": "技能・法术"
-					},
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Glimmering Touch - after 7s deals 300% dmg to units in range"
-							],
-							"jp": [
-								"微光の蝕 - 攻撃半径内のユニットに7秒間チャージしたあと範囲攻撃を行う"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["glimmering_touch"]
 		},
 		"level1": {
 			"hp": "16000",
@@ -54,31 +30,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"name": "candlelight",
-					"type": "atk",
-					"multiplier": 3,
-					"fixed_inc": 0,
-					"suffix": {
-						"en": "skill/arts",
-						"jp": "スキル・術",
-						"cn": "技能・法术"
-					},
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Glimmering Touch - after 7s deals 250% dmg to units in range"
-							],
-							"jp": [
-								"微光の蝕 - 攻撃半径内のユニットに7秒間チャージしたあと範囲攻撃を行う"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["glimmering_touch"]
 		},
 		"骑士对决": {
 			"hp": "50000",
@@ -91,31 +43,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"name": "candlelight",
-					"type": "atk",
-					"multiplier": 3,
-					"fixed_inc": 0,
-					"suffix": {
-						"en": "skill/arts",
-						"jp": "スキル・術",
-						"cn": "技能・法术"
-					},
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Glimmering Touch - after 7s deals 300% dmg to units in range"
-							],
-							"jp": [
-								"微光の蝕 - 攻撃半径内のユニットに7秒間チャージしたあと範囲攻撃を行う"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["glimmering_touch"]
 		}
 	},
 	"status_immune": [],

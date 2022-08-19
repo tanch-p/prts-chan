@@ -11,11 +11,21 @@
 						"mods": {
 							"hp": "%50",
 							"special": {
-								"extra": {
+								"glimmering_touch": {
+									"type": "atk",
+									"multiplier": 3,
+									"fixed_inc": 0,
+									"initial": 10,
+									"cost": 10,
+									"skill_regen": "auto",
 									"tooltip": {
-										"en": ["$Stealth$"],
-										"jp": ["$ステルス$"],
-										"cn": ""
+										"en": [
+											"Glimmering Touch - after charging for 7s does 250% dmg to units within skill's range, $CD10s$"
+										],
+										"jp": [
+											"微光の蝕 - 攻撃半径内のユニットに7秒間チャージしたあと範囲攻撃を行う、$CD10秒$"
+										],
+										"cn": []
 									}
 								}
 							}
@@ -23,9 +33,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +50%, Glimmering Touch casting time halved.",
+					"en": "[Viviana] Max HP +50%, Glimmering Touch charging time halved.",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+50%"
+					"jp": "「ヴィヴィアナ」の最大HP+50%、微光の蝕のチャージ時間50％減少する"
 				}
 			},
 			{
@@ -39,9 +49,26 @@
 							"special": {
 								"extra": {
 									"tooltip": {
-										"en": ["$Stealth$"],
-										"jp": ["$ステルス$"],
+										"en": ["$Lower Target Priority$"],
+										"jp": ["$狙われにくくなる$"],
 										"cn": ""
+									}
+								},
+								"glimmering_touch": {
+									"type": "atk",
+									"multiplier": 3,
+									"fixed_inc": 0,
+									"initial": 10,
+									"cost": 10,
+									"skill_regen": "auto",
+									"tooltip": {
+										"en": [
+											"Glimmering Touch - after charging for $3.5s$ does 250% dmg to units within skill's range, $CD12s$"
+										],
+										"jp": [
+											"微光の蝕 - 攻撃半径内のユニットに$3.5秒$間チャージしたあと範囲攻撃を行う、$CD12秒$"
+										],
+										"cn": []
 									}
 								}
 							}
@@ -49,9 +76,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +50%, Glimmering Touch casting time halved.",
+					"en": "[Viviana] Max HP +110%, has lower target priority, Glimmering Touch charging time halved and cooldown reduced by 40%.",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+50%"
+					"jp": "「ヴィヴィアナ」の最大HP+110%、狙われにくくなる、微光の蝕のチャージ時間50％減少、クールタイム40％減少"
 				}
 			},
 			{
@@ -65,9 +92,26 @@
 							"special": {
 								"extra": {
 									"tooltip": {
-										"en": ["$Stealth$"],
-										"jp": ["$ステルス$"],
+										"en": ["$Lower Target Priority$"],
+										"jp": ["$狙われにくくなる$"],
 										"cn": ""
+									}
+								},
+								"glimmering_touch": {
+									"type": "atk",
+									"multiplier": 3,
+									"fixed_inc": 0,
+									"initial": 10,
+									"cost": 10,
+									"skill_regen": "auto",
+									"tooltip": {
+										"en": [
+											"Glimmering Touch - $instantly$ does 250% dmg to units within skill's range, $CD6s$"
+										],
+										"jp": [
+											"微光の蝕 - 攻撃半径内のユニットに$即時$範囲攻撃を行う、$CD6秒$"
+										],
+										"cn": []
 									}
 								}
 							}
@@ -75,9 +119,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +160%, Glimmering Touch has no casting time.",
+					"en": "[Viviana] Max HP +160%, has lower target priority, Glimmering Touch becomes instant cast and cooldown reduced by 70%.",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+160%"
+					"jp": "「ヴィヴィアナ」の最大HP+160%、狙われにくくなる、微光の蝕のチャージ時間がなくなる、クールタイム70％減少"
 				}
 			}
 		]
@@ -95,13 +139,30 @@
 						"mods": {
 							"hp": "%80",
 							"atk": "%50",
-							"range": "",
+							"range": "%70",
 							"special": {
 								"extra": {
 									"tooltip": {
-										"en": ["$Stealth$"],
-										"jp": ["$ステルス$"],
+										"en": ["$Attacks ignore 35 RES$"],
+										"jp": ["$攻撃が術耐性35無視$"],
 										"cn": ""
+									}
+								},
+								"glimmering_touch": {
+									"type": "atk",
+									"multiplier": 3,
+									"fixed_inc": 0,
+									"initial": 10,
+									"cost": 10,
+									"skill_regen": "auto",
+									"tooltip": {
+										"en": [
+											"Glimmering Touch - after charging for $3.5s$ does 250% dmg to units within skill's range, CD20s"
+										],
+										"jp": [
+											"微光の蝕 - 攻撃半径内のユニットに$3.5秒$間チャージしたあと範囲攻撃を行う、CD20秒"
+										],
+										"cn": []
 									}
 								}
 							}
@@ -109,9 +170,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +80%, ATK +50%, Glimmering Touch casting time halved.",
+					"en": "[Viviana] Max HP +80%, ATK +50%, Range increases, attacks ignore 35 RES and Glimmering Touch's charging time is halved",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+50%"
+					"jp": "「ヴィヴィアナ」の最大HP+80%、攻撃力+50%、攻撃範囲増加、攻撃は術耐性35無視、微光の蝕のチャージ時間50％減少"
 				}
 			},
 			{
@@ -123,13 +184,30 @@
 						"mods": {
 							"hp": "%110",
 							"atk": "%90",
-							"range": "",
+							"range": "%125",
 							"special": {
 								"extra": {
 									"tooltip": {
-										"en": ["$Stealth$"],
-										"jp": ["$ステルス$"],
+										"en": ["$Attacks ignore 80 RES$"],
+										"jp": ["$攻撃が術耐性80無視$"],
 										"cn": ""
+									}
+								},
+								"glimmering_touch": {
+									"type": "atk",
+									"multiplier": 3,
+									"fixed_inc": 0,
+									"initial": 10,
+									"cost": 10,
+									"skill_regen": "auto",
+									"tooltip": {
+										"en": [
+											"Glimmering Touch - after charging for $3.5s$ does 250% dmg to units within skill's range, CD20s"
+										],
+										"jp": [
+											"微光の蝕 - 攻撃半径内のユニットに$3.5秒$間チャージしたあと範囲攻撃を行う、CD20秒"
+										],
+										"cn": []
 									}
 								}
 							}
@@ -137,9 +215,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +80%, ATK +50%, Glimmering Touch casting time halved.",
+					"en": "[Viviana] Max HP +110%, ATK +90%, Range increases greatly, attacks ignore 80 RES and Glimmering Touch's charging time is halved",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+50%"
+					"jp": "「ヴィヴィアナ」の最大HP+110%、攻撃力+90%、攻撃範囲大幅増加、攻撃は術耐性80無視、微光の蝕のチャージ時間50％減少"
 				}
 			}
 		]
@@ -221,15 +299,7 @@
 							"hp": "%65",
 							"atk": "%80",
 							"def": "%60",
-							"special": {
-								"extra": {
-									"tooltip": {
-										"en": ["$Stealth$"],
-										"jp": ["$ステルス$"],
-										"cn": ""
-									}
-								}
-							}
+							"special": {}
 						}
 					}
 				],
@@ -249,15 +319,7 @@
 							"hp": "%80",
 							"atk": "%150",
 							"def": "%100",
-							"special": {
-								"extra": {
-									"tooltip": {
-										"en": ["$Stealth$"],
-										"jp": ["$ステルス$"],
-										"cn": ""
-									}
-								}
-							}
+							"special": {}
 						}
 					}
 				],
@@ -298,6 +360,7 @@
 			},
 			{
 				"rank": 2,
+				"latter": true,
 				"name": {
 					"jp": "",
 					"en": "",
@@ -374,6 +437,7 @@
 			},
 			{
 				"rank": 3,
+				"latter": true,
 				"name": {
 					"en": "Enemy ATK ASPD 3",
 					"jp": "増幅：火力III",
@@ -460,6 +524,7 @@
 			},
 			{
 				"rank": 3,
+				"latter": true,
 				"name": {
 					"en": "Reduced Ally ATK 3",
 					"jp": "制限：火力減衰III",
@@ -510,6 +575,7 @@
 			},
 			{
 				"rank": 3,
+				"latter": true,
 				"name": {
 					"jp": "制限：体力減衰III",
 					"en": "Reduced Operator HP 3",
@@ -530,22 +596,23 @@
 		"options": [
 			{
 				"rank": 1,
-				"img": "大骑士领酒吧街/Char_cost_attackers_1",
+				"latter": true,
+				"img": "75px-Char_cost_tokentrap_1",
 				"effects": [],
 				"tooltip": {
-					"en": "Sniper and Caster DP cost doubled",
-					"cn": "",
-					"jp": "狙撃・術士の配置コストが2倍"
+					"en": "Summoned Units, Objects DP cost tripled",
+					"jp": "召喚物・装置の配置コストが3倍",
+					"cn": ""
 				}
 			},
 			{
 				"rank": 2,
-				"img": "大骑士领酒吧街/Char_cost_attackers_2",
+				"img": "75px-Char_exclude_snipercaster_3",
 				"effects": [],
 				"tooltip": {
-					"en": "DP Cost of Snipers, Guards, Casters is doubled, and redeployment time extended by 50%.",
-					"cn": "",
-					"jp": "狙撃・前衛・術士の配置コストが3倍、再配置時間が+50%"
+					"en": "Snipers and Casters are banned.",
+					"jp": "狙撃・術師使用禁止",
+					"cn": ""
 				}
 			},
 			{ "rank": 3 }
@@ -556,24 +623,41 @@
 		"options": [
 			{
 				"rank": 1,
-				"img": "大骑士领酒吧街/Char_cost_supporters_1",
+				"img": "75px-Char_cost_snipercaster_1",
 				"effects": [],
 				"tooltip": {
-					"en": "Supporter and Defender DP Cost doubled",
-					"cn": "",
-					"jp": "重装・補助の配置コストが2倍"
+					"en": "Snipers and Casters DP cost doubled.",
+					"jp": "狙撃・術師の配置コストが2倍",
+					"cn": ""
 				}
 			},
 			{
 				"rank": 2,
-				"img": "大骑士领酒吧街/Char_cost_supporters_2",
+				"img": "75px-Char_exclude_guardspecial_2",
 				"effects": [],
 				"tooltip": {
-					"en": "Supporter, Healer and Defender DP Cost doubled, and the redeployment time extended by 50%.",
-					"cn": "",
-					"jp": "医療・重装・補助の配置コストが2倍、再配置時間が+50%"
+					"en": "Guards and Specialists banned",
+					"jp": "前衛・特殊使用禁止",
+					"cn": ""
 				}
 			},
+			{ "rank": 3 }
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 1,
+				"img": "75px-Char_cost_guardspecial_1.png",
+				"effects": [],
+				"tooltip": {
+					"en": "Guards and Specialists DP cost doubled",
+					"jp": "前衛・特殊使の配置コストが2倍",
+					"cn": ""
+				}
+			},
+			{ "rank": 2 },
 			{ "rank": 3 }
 		]
 	},
@@ -623,9 +707,9 @@
 				"img": "75px-Global_squadnum_2",
 				"effects": [],
 				"tooltip": {
-					"en": "Maximum 6 operators in squad",
+					"en": "Maximum 7 operators in squad",
 					"cn": "",
-					"jp": "編成可能数が最大6人に"
+					"jp": "編成可能数が最大7人に"
 				}
 			},
 			{ "rank": 3 }
@@ -672,6 +756,7 @@
 			},
 			{
 				"rank": 2,
+				"latter": true,
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_2",
 				"effects": [],
 				"tooltip": {
@@ -746,13 +831,14 @@
 		"options": [
 			{
 				"rank": 1,
+				"latter": true,
 				"name": {
 					"en": "Increased Enemy DEF",
 					"jp": "増幅：装甲I",
 					"cn": "反装甲I"
 				},
 				"img": "75px-Enemy_def_1",
-				"effects": [{ "targets": ["ALL"], "mods": { "fixed-def": 200 } }],
+				"effects": [{ "targets": ["ALL"], "mods": { "fixed_def": 200 } }],
 				"tooltip": {
 					"en": "Enemy DEF +200",
 					"jp": "全ての敵の防御力+200",
@@ -795,6 +881,7 @@
 		"options": [
 			{
 				"rank": 1,
+				"latter": true,
 				"name": {
 					"en": "",
 					"jp": "",

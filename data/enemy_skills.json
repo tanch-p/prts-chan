@@ -1,343 +1,454 @@
 {
-  "stealth": {
-    "type": "others",
-    "tooltip": {
-      "simple": {
-        "en": ["Stealth"],
-        "jp": ["ステルス"],
-        "cn": []
-      }
-    }
-  },
-  "no_block": {
-    "type": "others",
-    "tooltip": {
-      "simple": {
-        "en": ["Cannot be blocked"],
-        "jp": ["ブロックされない"],
-        "cn": []
-      },
-      "detailed": { "en": [], "jp": [], "cn": [] }
-    }
-  },
-  "two_block": {
-    "type": "others",
-    "tooltip": {
-      "simple": {
-        "en": ["Block count - 2"],
-        "jp": ["ブロック数2以上でブロック可能"],
-        "cn": []
-      },
-      "detailed": { "en": [], "jp": [], "cn": [] }
-    }
-  },
-  "three_block": {
-    "type": "others",
-    "tooltip": {
-      "simple": {
-        "en": ["Block count - 3"],
-        "jp": ["ブロック数3以上でブロック可能"],
-        "cn": []
-      },
-      "detailed": { "en": [], "jp": [], "cn": [] }
-    }
-  },
-  "four_block": {
-    "type": "others",
-    "tooltip": {
-      "simple": {
-        "en": ["Block count - 2"],
-        "jp": ["ブロック数2以上でブロック可能"],
-        "cn": []
-      },
-      "detailed": { "en": [], "jp": [], "cn": [] }
-    }
-  },
-  "avenger_100": {
-    "type": "atk",
-    "suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
-    "multiplier": 2,
-    "hits": 1,
-    "fixedInc": 0,
-    "tooltip": {
-      "simple": {
-        "en": ["HP↓50%→Atk power x 2"],
-        "jp": ["HP50%以下→攻撃力2倍"],
-        "cn": []
-      },
-      "detailed": {
-        "en": [],
-        "jp": ["HPが50%以下になると、攻撃力+100%"],
-        "cn": []
-      }
-    }
-  },
-  "avenger_150": {
-    "name": "avenger",
-    "type": "atk",
-    "suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
-    "multiplier": 2.5,
-    "hits": 1,
-    "fixedInc": 0,
-    "tooltip": {
-      "simple": {
-        "en": ["HP↓50%→Atk power x 2.5"],
-        "jp": ["HP50%以下→攻撃力2.5倍"],
-        "cn": []
-      },
-      "detailed": {
-        "en": [],
-        "jp": ["HPが50%以下になると、攻撃力+150%"],
-        "cn": []
-      }
-    }
-  },
-  "avenger_180": {
-    "name": "avenger",
-    "type": "atk",
-    "suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
-    "multiplier": 2.8,
-    "hits": 1,
-    "fixedInc": 0,
-    "tooltip": {
-      "simple": {
-        "en": ["HP↓50%→Atk power x 2.8"],
-        "jp": ["HP50%以下→攻撃力2.8倍"],
-        "cn": []
-      },
-      "detailed": {
-        "en": [],
-        "jp": ["HPが50%以下になると、攻撃力+180%"],
-        "cn": []
-      }
-    }
-  },
-  "crusher_stun": {
-    "name": "stun_attack",
-    "type": "debuff",
-    "tooltip": {
-      "simple": {
-        "en": ["Every 3rd attack stuns target for 7s"],
-        "jp": ["攻撃2回の度に次の攻撃に相手を７秒スタンする"],
-        "cn": ["攻击2次后，下一次攻击会晕眩目标 "]
-      },
-      "detailed": {
-        "en": [],
-        "jp": [],
-        "cn": []
-      }
-    }
-  },
-  "splash_4sq_50": {
-    "name": "splash",
-    "type": "others",
-    "tooltip": {
-      "simple": {
-        "en": ["Attacks do 50% splash to 4 tiles surrounding target"],
-        "jp": ["通常攻撃→攻撃対象の隣接4マスに50％ダメージ"],
-        "cn": []
-      },
-      "detailed": {
-        "en": [],
-        "jp": [],
-        "cn": []
-      }
-    }
-  },
-  "splash_4sq_100": {
-    "type": "others",
-    "tooltip": {
-      "simple": {
-        "en": ["Attacks do 100% splash to 4 tiles surrounding target"],
-        "jp": ["通常攻撃→攻撃対象の隣接4マスに100％ダメージ"],
-        "cn": []
-      },
-      "detailed": { "en": [], "jp": [], "cn": [] }
-    }
-  },
-  "splash_8sq_100": {
-    "type": "others",
-    "tooltip": {
-      "simple": {
-        "en": ["Normal Atks do 100% splash to 8 tiles surrounding target"],
-        "jp": ["通常攻撃→攻撃対象の隣接8マスに100％のダメージ"],
-        "cn": []
-      }
-    }
-  },
-  "target_2": {
-    "type": "others",
-    "tooltip": {
-      "simple": {
-        "en": ["Normal attack targets 2 units"],
-        "jp": ["2体同時攻撃"],
-        "cn": []
-      },
-      "detailed": { "en": [], "jp": [], "cn": [] }
-    }
-  },
-  "ignore_def_60": {
-    "tooltip": {
-      "simple": {
-        "en": ["Attacks ignores 60% def"],
-        "jp": ["攻撃は防御60％無視"],
-        "cn": []
-      }
-    }
-  },
-  "ignore_def_80": {
-    "tooltip": {
-      "simple": {
-        "en": ["Attacks ignores 80% def"],
-        "jp": ["攻撃は防御80％無視"],
-        "cn": []
-      }
-    }
-  },
-  "hp_regen_150": {
-    "tooltip": {
-      "simple": {
-        "en": ["Recovers 150 hp/s"],
-        "jp": ["毎秒HP150回復する"],
-        "cn": []
-      }
-    }
-  },
-  "bug_explode": {
-    "type": "atk",
-    "suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
-    "multiplier": 4,
-    "hits": 1,
-    "fixedInc": 0,
-    "tooltip": {
-      "simple": {
-        "en": [
-          "Explodes on death, dealing 400% dmg to nearby units (Can be silenced)"
-        ],
-        "jp": ["死亡時には爆発する（無効化可能）"],
-        "cn": ["死亡后对周围造成大量物理伤害"]
-      }
-    }
-  },
-  "bug_explode_frost": {
-    "type": "atk",
-    "suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
-    "multiplier": 2,
-    "hits": 1,
-    "fixedInc": 0,
-    "tooltip": {
-      "simple": {
-        "en": [
-          "Explodes on death, dealing 200% dmg + Cold❄ to nearby units (Can be silenced)"
-        ],
-        "jp": ["死亡時には爆発する（無効化可能）"],
-        "cn": ["死亡后对周围造成大量物理伤害"]
-      }
-    }
-  },
-  "prisoner_atk_release": {
-    "name": "self_release",
-    "tooltip": {
-      "simple": {
-        "en": ["Imprisoned state, gets released on 4th attack"],
-        "jp": ["禁固状態、攻撃4回→解放状態となる"],
-        "cn": []
-      },
-      "detailed": {
-        "en": ["Imprisoned state, gets released on 4th attack"],
-        "jp": ["禁固状態、攻撃4回→解放状態となる"],
-        "cn": []
-      }
-    }
-  },
-  "caster_prisoner_imprisoned": {
-    "name": "caster_release",
-    "tooltip": {
-      "simple": {
-        "en": ["Imprisoned state, does not attack"],
-        "jp": ["禁固状態中→攻撃しない"],
-        "cn": []
-      },
-      "detailed": {
-        "en": [],
-        "jp": ["禁固状態中→攻撃しない"],
-        "cn": []
-      }
-    }
-  },
-  "prisoner_release_all": {
-    "name": "all_release",
-    "tooltip": {
-      "simple": {
-        "en": ["On release, releases all other prisoners on field as well"],
-        "jp": ["解放時フィールド上の敵全体解放状態にする"],
-        "cn": []
-      },
-      "detailed": {
-        "en": [],
-        "jp": ["解放時フィールド上の敵全体解放状態にする"],
-        "cn": []
-      }
-    }
-  },
-  "aspd_buff_ALL": {
-    "name": "prison_arts",
-    "type": "buff",
-    "tooltip": {
-      "simple": {
-        "en": ["Buff→All enemies on field gains +30% aspd (Does not stack)"],
-        "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-        "cn": []
-      },
-      "detailed": {
-        "en": ["Buff→All enemies on field gains +30% aspd (Does not stack)"],
-        "jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-        "cn": []
-      }
-    }
-  },
-  "nightzmora_slash": {
-    "type": "atk",
-    "suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "技能・物理" },
-    "hits": 1,
-    "multiplier": 0.85,
-    "initial": 10,
-    "cost": 15,
-    "skill_regen": "auto",
-    "tooltip": {
-      "simple": {
-        "en": [""],
-        "jp": [""],
-        "cn": []
-      },
-      "detailed": {
-        "en": [],
-        "jp": [],
-        "cn": []
-      }
-    }
-  },
-  "tola_nightzmora_slash": {
-    "type": "atk",
-    "suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "技能・物理" },
-    "hits": 1,
-    "multiplier": 0.85,
-    "initial": 5,
-    "cost": 10,
-    "skill_regen": "auto",
-    "tooltip": {
-      "simple": {
-        "en": [""],
-        "jp": [""],
-        "cn": [
-          "对场上所有身后一格没有视野的我方干员造成攻击力85%的物理普通伤害"
-        ]
-      },
-      "detailed": {
-        "en": [],
-        "jp": [],
-        "cn": []
-      }
-    }
-  }
+	"stealth": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Stealth"],
+				"jp": ["ステルス"],
+				"cn": []
+			}
+		}
+	},
+	"no_block": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Cannot be blocked"],
+				"jp": ["ブロックされない"],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
+	"two_block": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Block count - 2"],
+				"jp": ["ブロック数2以上でブロック可能"],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
+	"three_block": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Block count - 3"],
+				"jp": ["ブロック数3以上でブロック可能"],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
+	"four_block": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Block count - 2"],
+				"jp": ["ブロック数2以上でブロック可能"],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
+	"avenger_100": {
+		"type": "atk",
+		"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
+		"multiplier": 2,
+		"hits": 1,
+		"fixedInc": 0,
+		"tooltip": {
+			"simple": {
+				"en": ["HP↓50%→Atk power x 2"],
+				"jp": ["HP50%以下→攻撃力2倍"],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": ["HPが50%以下になると、攻撃力+100%"],
+				"cn": []
+			}
+		}
+	},
+	"avenger_150": {
+		"name": "avenger",
+		"type": "atk",
+		"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
+		"multiplier": 2.5,
+		"hits": 1,
+		"fixedInc": 0,
+		"tooltip": {
+			"simple": {
+				"en": ["HP↓50%→Atk power x 2.5"],
+				"jp": ["HP50%以下→攻撃力2.5倍"],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": ["HPが50%以下になると、攻撃力+150%"],
+				"cn": []
+			}
+		}
+	},
+	"avenger_180": {
+		"name": "avenger",
+		"type": "atk",
+		"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
+		"multiplier": 2.8,
+		"hits": 1,
+		"fixedInc": 0,
+		"tooltip": {
+			"simple": {
+				"en": ["HP↓50%→Atk power x 2.8"],
+				"jp": ["HP50%以下→攻撃力2.8倍"],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": ["HPが50%以下になると、攻撃力+180%"],
+				"cn": []
+			}
+		}
+	},
+	"crusher_stun": {
+		"name": "stun_attack",
+		"type": "debuff",
+		"tooltip": {
+			"simple": {
+				"en": ["Every 3rd attack stuns target for 7s"],
+				"jp": ["攻撃2回の度に次の攻撃に相手を７秒スタンする"],
+				"cn": ["攻击2次后，下一次攻击会晕眩目标 "]
+			},
+			"detailed": {
+				"en": [],
+				"jp": [],
+				"cn": []
+			}
+		}
+	},
+	"splash_4sq_50": {
+		"name": "splash",
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Attacks do 50% splash to 4 tiles surrounding target"],
+				"jp": ["通常攻撃→攻撃対象の隣接4マスに50％ダメージ"],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": [],
+				"cn": []
+			}
+		}
+	},
+	"splash_4sq_100": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Attacks do 100% splash to 4 tiles surrounding target"],
+				"jp": ["通常攻撃→攻撃対象の隣接4マスに100％ダメージ"],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
+	"splash_8sq_100": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Normal Atks do 100% splash to 8 tiles surrounding target"],
+				"jp": ["通常攻撃→攻撃対象の隣接8マスに100％のダメージ"],
+				"cn": []
+			}
+		}
+	},
+	"target_2": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Normal attack targets 2 units"],
+				"jp": ["2体同時攻撃"],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
+	"ignore_def_60": {
+		"tooltip": {
+			"simple": {
+				"en": ["Attacks ignores 60% def"],
+				"jp": ["攻撃は防御60％無視"],
+				"cn": []
+			}
+		}
+	},
+	"ignore_def_80": {
+		"tooltip": {
+			"simple": {
+				"en": ["Attacks ignores 80% def"],
+				"jp": ["攻撃は防御80％無視"],
+				"cn": []
+			}
+		}
+	},
+	"hp_regen_150": {
+		"tooltip": {
+			"simple": {
+				"en": ["Recovers 150 hp/s"],
+				"jp": ["毎秒HP150回復する"],
+				"cn": []
+			}
+		}
+	},
+	"bug_explode": {
+		"type": "atk",
+		"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
+		"multiplier": 4,
+		"hits": 1,
+		"fixedInc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Explodes on death, dealing 400% dmg to nearby units (Can be silenced)"
+				],
+				"jp": ["死亡時には爆発する（無効化可能）"],
+				"cn": ["死亡后对周围造成大量物理伤害"]
+			}
+		}
+	},
+	"bug_explode_frost": {
+		"type": "atk",
+		"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
+		"multiplier": 2,
+		"hits": 1,
+		"fixedInc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Explodes on death, dealing 200% dmg + Cold❄ to nearby units (Can be silenced)"
+				],
+				"jp": ["死亡時には爆発する（無効化可能）"],
+				"cn": ["死亡后对周围造成大量物理伤害"]
+			}
+		}
+	},
+	"prisoner_atk_release": {
+		"name": "self_release",
+		"tooltip": {
+			"simple": {
+				"en": ["Imprisoned state, gets released on 4th attack"],
+				"jp": ["禁固状態、攻撃4回→解放状態となる"],
+				"cn": []
+			},
+			"detailed": {
+				"en": ["Imprisoned state, gets released on 4th attack"],
+				"jp": ["禁固状態、攻撃4回→解放状態となる"],
+				"cn": []
+			}
+		}
+	},
+	"caster_prisoner_imprisoned": {
+		"name": "caster_release",
+		"tooltip": {
+			"simple": {
+				"en": ["Imprisoned state, does not attack"],
+				"jp": ["禁固状態中→攻撃しない"],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": ["禁固状態中→攻撃しない"],
+				"cn": []
+			}
+		}
+	},
+	"prisoner_release_all": {
+		"name": "all_release",
+		"tooltip": {
+			"simple": {
+				"en": ["On release, releases all other prisoners on field as well"],
+				"jp": ["解放時フィールド上の敵全体解放状態にする"],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": ["解放時フィールド上の敵全体解放状態にする"],
+				"cn": []
+			}
+		}
+	},
+	"aspd_buff_ALL": {
+		"name": "prison_arts",
+		"type": "buff",
+		"tooltip": {
+			"simple": {
+				"en": ["Buff→All enemies on field gains +30% aspd (Does not stack)"],
+				"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+				"cn": []
+			},
+			"detailed": {
+				"en": ["Buff→All enemies on field gains +30% aspd (Does not stack)"],
+				"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
+				"cn": []
+			}
+		}
+	},
+	"knight_sleep_120": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Spawns in Standby Mode - Does not move/attack",
+					"exits Standby Mode after 120s or when tile unit is on gains visibility"
+				],
+				"jp": [
+					"開始時待機する→移動・攻撃しない",
+					"120秒後か立ち位置の「暗闇」が解除されると行動する"
+				],
+				"cn": []
+			}
+		}
+	},
+	"armorless_assassin_atk_arts": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["While in areas without visiblity, attacks do Arts damage"],
+				"jp": ["【暗闇】内にいる時は術攻撃に変化"],
+				"cn": []
+			}
+		}
+	},
+	"armorless_assassin_atk_stack": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"While in areas without visibility, ATK increases by 5% per second, max 40 stacks (200%)",
+					"Resets after attacking"
+				],
+				"jp": [
+					"【暗闇】内にいる時、攻撃力が毎秒+5%（最大40回/+200%）",
+					"攻撃後リセットされる"
+				],
+				"cn": []
+			}
+		}
+	},
+	"corrosion_35": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Attack deals 35% of ATK as Corrosion damage"],
+				"jp": ["攻撃で攻撃力の35%の侵蝕ダメージを与える"],
+				"cn": []
+			}
+		}
+	},
+	"lazurite_power_strike": {
+		"type": "atk",
+		"suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "技能・物理" },
+		"hits": 1,
+		"multiplier": 1.5,
+		"fixed_inc": 0,
+		"initial": 0,
+		"cost": 3,
+		"skill_regen": "attack",
+		"tooltip": {
+			"simple": {
+				"en": ["Every 4th attack does 150% phys damage"],
+				"jp": ["攻撃3回の度に次の攻撃は1.5倍のダメージを与える"],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": [],
+				"cn": []
+			}
+		}
+	},
+
+	"glimmering_touch": {
+		"type": "atk",
+		"suffix": {
+			"en": "skill/arts",
+			"jp": "スキル・術",
+			"cn": "技能・法术"
+		},
+		"hits": 1,
+		"multiplier": 3,
+		"fixed_inc": 0,
+		"initial": 20,
+		"cost": 20,
+		"skill_regen": "auto",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Glimmering Touch - after charging for 7s does 250% dmg to units within skill's range, CD20s"
+				],
+				"jp": [
+					"微光の蝕 - 攻撃半径内のユニットに7秒間チャージしたあと範囲攻撃を行う、CD20秒"
+				],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
+	"nightzmora_slash": {
+		"type": "atk",
+		"suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "技能・物理" },
+		"hits": 1,
+		"multiplier": 0.85,
+		"fixed_inc": 0,
+		"initial": 10,
+		"cost": 15,
+		"skill_regen": "auto",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Coalescing Fear - Does 85% ATK phys damage to all Operators with no visibility on the tile behind them."
+				],
+				"jp": [
+					"スキル(凝聚する恐怖)→背後1マスが【暗闇】の味方ユニットの全員に、攻撃力の85%の物理ダメージを与える"
+				],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": [],
+				"cn": []
+			}
+		}
+	},
+	"tola_nightzmora_slash": {
+		"type": "atk",
+		"suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "技能・物理" },
+		"hits": 1,
+		"multiplier": 0.85,
+		"fixed_inc": 0,
+		"initial": 5,
+		"cost": 10,
+		"skill_regen": "auto",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Coalescing Fear - Does 85% ATK phys damage to all Operators with no visibility on the tile behind them."
+				],
+				"jp": [
+					"スキル(凝聚する恐怖)→背後1マスが【暗闇】の味方ユニットの全員に、攻撃力の85%の物理ダメージを与える"
+				],
+				"cn": [
+					"对场上所有身后一格没有视野的我方干员造成攻击力85%的物理普通伤害"
+				]
+			},
+			"detailed": {
+				"en": [],
+				"jp": [],
+				"cn": []
+			}
+		}
+	}
 }

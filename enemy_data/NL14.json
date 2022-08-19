@@ -17,7 +17,7 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": []
+			"special": ["corrosion_35", "lazurite_power_strike"]
 		}
 	},
 	"status_immune": [],
@@ -28,5 +28,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["ranged","elite"]
+	"type": ["ranged", "elite"]
 }
