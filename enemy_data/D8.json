@@ -14,7 +14,6 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "3",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.8",
@@ -28,7 +27,6 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "2.3",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.8",
@@ -42,15 +40,14 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "3",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.8",
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

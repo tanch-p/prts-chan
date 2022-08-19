@@ -10,43 +10,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
 			"weight": "3",
 			"lifepoint": 0,
 			"ms": "0.4",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Cannot be blocked"],
-							"jp": ["ブロックされない"],
-							"cn": ["无法被阻挡"]
-						}
-					}
-				},
-				{
-					"name": "duck_dash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["When attacked, movespeed +400%"],
-							"jp": ["攻撃された時、移動速度+400%"],
-							"cn": ["自身被攻击后移动速度提升400%"]
-						}
-					}
-				},
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_block", "duck_dash", "no_collect_treasure"]
 		},
 		"level1": {
 			"hp": "35000",
@@ -56,43 +23,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
 			"weight": "3",
 			"lifepoint": 0,
 			"ms": "0.4",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Cannot be blocked"],
-							"jp": ["ブロックされない"],
-							"cn": ["无法被阻挡"]
-						}
-					}
-				},
-				{
-					"name": "duck_dash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["When attacked, movespeed +400%"],
-							"jp": ["攻撃された時、移動速度+400%"],
-							"cn": ["自身被攻击后移动速度提升400%"]
-						}
-					}
-				},
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_block", "duck_dash", "no_collect_treasure"]
 		},
 		"level2": {
 			"hp": "45000",
@@ -102,43 +36,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
 			"weight": "3",
 			"lifepoint": 0,
 			"ms": "0.4",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Cannot be blocked"],
-							"jp": ["ブロックされない"],
-							"cn": ["无法被阻挡"]
-						}
-					}
-				},
-				{
-					"name": "duck_dash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["When attacked, movespeed +400%"],
-							"jp": ["攻撃された時、移動速度+400%"],
-							"cn": ["自身被攻击后移动速度提升400%"]
-						}
-					}
-				},
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_block", "duck_dash", "no_collect_treasure"]
 		},
 		"鸭爵的戏剧": {
 			"hp": "9300",
@@ -148,43 +49,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
 			"weight": "3",
 			"lifepoint": 0,
 			"ms": "0.4",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Cannot be blocked"],
-							"jp": ["ブロックされない"],
-							"cn": ["无法被阻挡"]
-						}
-					}
-				},
-				{
-					"name": "duck_dash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["When attacked, movespeed +400%"],
-							"jp": ["攻撃された時、移動速度+400%"],
-							"cn": ["自身被攻击后移动速度提升400%"]
-						}
-					}
-				},
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_block", "duck_dash", "no_collect_treasure"]
 		},
 		"鸭爵的宴会": {
 			"hp": "30000",
@@ -194,47 +62,14 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
 			"weight": "3",
 			"lifepoint": 0,
 			"ms": "0.4",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Cannot be blocked"],
-							"jp": ["ブロックされない"],
-							"cn": ["无法被阻挡"]
-						}
-					}
-				},
-				{
-					"name": "duck_dash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["When attacked, movespeed +400%"],
-							"jp": ["攻撃された時、移動速度+400%"],
-							"cn": ["自身被攻击后移动速度提升400%"]
-						}
-					}
-				},
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_block", "duck_dash", "no_collect_treasure"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["no_attack"],
 		"hits": 1
 	},

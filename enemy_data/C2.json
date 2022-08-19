@@ -14,22 +14,11 @@
 			"aspd%": "100",
 			"aspd": "2.7",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.9",
-			"special": [
-				{
-					"name": "stealth",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Stealth"],
-							"jp": ["ステルス"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": ["stealth"]
 		},
 		"大盗当头": {
 			"hp": "5000",
@@ -39,26 +28,15 @@
 			"aspd%": "100",
 			"aspd": "2.7",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.9",
-			"special": [
-				{
-					"name": "stealth",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Stealth"],
-							"jp": ["ステルス"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": ["stealth"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

@@ -73,7 +73,6 @@
 		}
 	},
 	"avenger_150": {
-		"name": "avenger",
 		"type": "atk",
 		"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
 		"multiplier": 2.5,
@@ -93,7 +92,6 @@
 		}
 	},
 	"avenger_180": {
-		"name": "avenger",
 		"type": "atk",
 		"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
 		"multiplier": 2.8,
@@ -113,8 +111,7 @@
 		}
 	},
 	"crusher_stun": {
-		"name": "stun_attack",
-		"type": "debuff",
+		"type": "others",
 		"tooltip": {
 			"simple": {
 				"en": ["Every 3rd attack stuns target for 7s"],
@@ -128,8 +125,68 @@
 			}
 		}
 	},
+	"mcv4_def_buff": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Buff→enemies within 2.5 tile range DEF+300, does not apply to self, does not stack",
+					"Can be silenced"
+				],
+				"jp": [
+					"バフ→ 攻撃範囲内の敵の防御力300上昇（重複しない、自分に効果なし）",
+					"無力化可能"
+				],
+				"cn": []
+			}
+		}
+	},
+	"drone_bomb": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Bomb does 100% AOE dmg 8sq around target",
+					"After firing bomb - ms +200%"
+				],
+				"jp": ["爆弾→周囲8マスに100％ダメージ", "投下後移動速度+200%"],
+				"cn": [
+					"爆弾→对目标及其周围八格造成100%群体物理伤害",
+					"投弹后移速最终提升至200%"
+				]
+			}
+		}
+	},
+	"drone_bomb_frost": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Bomb does 100% AOE dmg + Cold❄ 8sq around target",
+					"After firing bomb - ms +200%"
+				],
+				"jp": [
+					"爆弾→周囲8マスに100％ダメージ＋【寒冷❄】",
+					"投下後移動速度+200%"
+				],
+				"cn": [
+					"爆弾→对目标及其周围八格造成100%群体物理伤害＋【寒冷❄】",
+					"投弹后移速最终提升至200%"
+				]
+			}
+		}
+	},
+	"drone_frost_debuff": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Debuff→operators with ranged aspd down", "Can be silenced"],
+				"jp": ["バフ→ 攻撃範囲内の", "無力化可能"],
+				"cn": []
+			}
+		}
+	},
 	"splash_4sq_50": {
-		"name": "splash",
 		"type": "others",
 		"tooltip": {
 			"simple": {
@@ -176,7 +233,34 @@
 			"detailed": { "en": [], "jp": [], "cn": [] }
 		}
 	},
+	"def_down_10": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Every attack decreases operator's def by 10, lasts indefinitely until operator retreats"
+				],
+				"jp": ["攻撃1回につき相手のDEF10低下", "(蓄積する、撤退まで永続)"],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
+	"def_down_15": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Every attack decreases operator's def by 15, lasts indefinitely until operator retreats"
+				],
+				"jp": ["攻撃1回につき相手のDEF15低下", "(蓄積する、撤退まで永続)"],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
 	"ignore_def_60": {
+		"type": "others",
 		"tooltip": {
 			"simple": {
 				"en": ["Attacks ignores 60% def"],
@@ -186,6 +270,7 @@
 		}
 	},
 	"ignore_def_80": {
+		"type": "others",
 		"tooltip": {
 			"simple": {
 				"en": ["Attacks ignores 80% def"],
@@ -195,6 +280,7 @@
 		}
 	},
 	"hp_regen_150": {
+		"type": "others",
 		"tooltip": {
 			"simple": {
 				"en": ["Recovers 150 hp/s"],
@@ -235,8 +321,39 @@
 			}
 		}
 	},
+	"atk_arts_change": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Atk type - Arts"],
+				"jp": ["攻撃属性が術になる"],
+				"cn": []
+			}
+		}
+	},
+	"recover_hp_150": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Recovers 150 hp/s"],
+				"jp": ["毎秒HP150回復する"],
+				"cn": []
+			}
+		}
+	},
+	"cs_blink": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["When blocked, teleports past unit. CD15s"],
+				"jp": ["ブロックされた時、ユニットの背後に回り込む　CD15秒"],
+				"cn": []
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
 	"prisoner_atk_release": {
-		"name": "self_release",
+		"type": "others",
 		"tooltip": {
 			"simple": {
 				"en": ["Imprisoned state, gets released on 4th attack"],
@@ -251,7 +368,7 @@
 		}
 	},
 	"caster_prisoner_imprisoned": {
-		"name": "caster_release",
+		"type": "others",
 		"tooltip": {
 			"simple": {
 				"en": ["Imprisoned state, does not attack"],
@@ -296,13 +413,56 @@
 			}
 		}
 	},
+	"corrupted_knight_charge_atk": {
+		"type": "atk",
+		"suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "" },
+		"multiplier": 3,
+		"hits": 1,
+		"fixedInc": 0,
+		"tooltip": {
+			"simple": {
+				"en": ["Skill→Every 22s unleashes charged attack"],
+				"jp": ["スキル→チャージ攻撃、CD22秒"],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": [],
+				"cn": []
+			}
+		}
+	},
+	"withered_knight_arrow_bomb": {
+		"type": "atk",
+		"suffix": { "en": "skill/arts", "jp": "スキル・術", "cn": "" },
+		"multiplier": 1.4,
+		"hits": 1,
+		"fixedInc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Skill→Every 22s unleashes charged attack → Fires a delayed exploding arrow on max 3 targets, deals damage to target + surrounding 4 tiles"
+				],
+				"jp": [
+					"スキル→３体に爆発の矢を放つ、",
+					"対象と隣接4マスに術ダメージ、CD22秒"
+				],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": [],
+				"cn": []
+			}
+		}
+	},
 	"knight_sleep_120": {
 		"type": "others",
 		"tooltip": {
 			"simple": {
 				"en": [
 					"Spawns in Standby Mode - Does not move/attack",
-					"exits Standby Mode after 120s or when tile unit is on gains visibility"
+					"Starts moving after 120s or when tile unit is on gains visibility"
 				],
 				"jp": [
 					"開始時待機する→移動・攻撃しない",
@@ -335,6 +495,17 @@
 					"攻撃後リセットされる"
 				],
 				"cn": []
+			}
+		}
+	},
+	"nervous_impair_20": {
+		"type": "others",
+		"value": 0.2,
+		"tooltip": {
+			"simple": {
+				"en": ["Attacks deal 20% ATK Nervous Impairment"],
+				"jp": ["攻撃時、攻撃力の20%の神経ダメージを与える"],
+				"cn": ["普通攻击附带自身攻击力20%的神经损伤"]
 			}
 		}
 	},
@@ -448,6 +619,69 @@
 				"en": [],
 				"jp": [],
 				"cn": []
+			}
+		}
+	},
+	"duck_dash": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["When attacked, movespeed +400%"],
+				"jp": ["攻撃された時、移動速度+400%"],
+				"cn": ["自身被攻击后移动速度提升400%"]
+			}
+		}
+	},
+	"no_collect_treasure": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["※Will not collect unowned treasure"],
+				"jp": ["※財宝回収しません"],
+				"cn": ["※不会收集无主的财富"]
+			}
+		}
+	},
+	"singer_aspd_buff": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Upon every 20 hits received, increases all enemies' ASPD by 100 for 10s (does not stack)"
+				],
+				"jp": [
+					"攻撃20回受ける度に、敵全体の攻撃速度を10秒100上昇（重複しない）"
+				],
+				"cn": [
+					"每受到20次可触发受击回复的伤害后，使当前场上全体敌方单位攻击速度增加100，持续10s（不可叠加）"
+				]
+			}
+		}
+	},
+	"aoe_all_atk": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Attacks hit all units within attack range"],
+				"jp": ["攻撃範囲内全ユニットにダメージを与える"],
+				"cn": ["对攻击范围内所有单位造成伤害"]
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
+	"surpise_bomb": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"On defeat, deals 100% Arts dmg & Nervous Impairment to nearby units (Can be silenced)"
+				],
+				"jp": [
+					"倒された時、周囲に攻撃力100%術ダメージと神経ダメージを与える（無効化可能）"
+				],
+				"cn": [
+					"死亡后对自身半径1.25范围内全体我方单位造成自身攻击力100%的法术溅射伤害和神经损伤（可被沉默） "
+				]
 			}
 		}
 	}

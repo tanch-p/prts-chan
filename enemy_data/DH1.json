@@ -1,53 +1,32 @@
 {
-  "id": "DH1",
-  "name": {
-    "en": "Diver",
-    "jp": "潜水員",
-    "cn": "潜水员"
-  },
-  "stats": {
-    "level0": {
-      "hp": "3300",
-      "atk": "240",
-      "def": "150",
-      "res": "20",
-      "aspd%": "100",
-      "aspd": "2.7",
-      "range": "1.9",
-      "weight": "1",
-      "lifepoint": 1,
-      "ms": "0.9",
-      "special": [
-        {
-          "name": "payload_unload_freeze",
-          "type": "others",
-          "tooltip": {
-            "simple": {
-              "en": [
-                "Bomb does 100% AOE dmg + Cold❄ 8sq around target",
-                "After firing bomb - ms +200%"
-              ],
-              "jp": [
-                "爆弾→周囲8マスに100％ダメージ＋【寒冷❄】",
-                "投下後移動速度+200%"
-              ],
-              "cn": [
-                "爆弾→对目标及其周围八格造成100%群体物理伤害＋【寒冷❄】",
-                "投弹后移速最终提升至200%"
-              ]
-            }
-          }
-        }
-      ]
-    }
-  },
-  "status_immune": [],
-  "normal_attack": {
-    "atk_type": ["ranged", "phys"],
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": ["ranged"]
+	"id": "DH1",
+	"name": {
+		"en": "Diver",
+		"jp": "潜水員",
+		"cn": "潜水员"
+	},
+	"stats": {
+		"level0": {
+			"hp": "3300",
+			"atk": "240",
+			"def": "150",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "2.7",
+			"range": "1.9",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged"]
 }

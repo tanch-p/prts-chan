@@ -260,27 +260,33 @@ export default function Stage({ stageData }) {
 							stickyTable ? "sticky top-0 z-10" : ""
 						}`}
 					>
-						<div className="w-[100vw] md:w-full flex flex-wrap place-content-end mb-1">
+						<div className="w-[100vw] md:w-full flex flex-wrap place-content-end mb-1 gap-x-1">
 							<button
 								onClick={() => setStickyTable(!stickyTable)}
-								className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg  ${
-									stickyTable ? "bg-gray-400" : "border-gray-400 bg-white"
+								className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg text-black ${
+									stickyTable
+										? "bg-gray-400 border-transparent"
+										: "border-gray-400 bg-white"
 								}`}
 							>
 								{language === "jp" ? "テーブル固定" : "Anchor Table"}
 							</button>
 							<button
 								onClick={() => setShowGrid(!showGrid)}
-								className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg  ${
-									showGrid ? "bg-gray-400" : "border-gray-400 bg-white"
+								className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg text-black ${
+									showGrid
+										? "bg-gray-400 border-transparent"
+										: "border-gray-400 bg-white"
 								}`}
 							>
 								{language === "jp" ? "グリッド表示" : "Toggle Grids"}
 							</button>
 							<button
 								onClick={() => setToggleRankColor(!toggleRankColor)}
-								className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg  ${
-									toggleRankColor ? "bg-gray-400" : "border-gray-400 bg-white"
+								className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg text-black  ${
+									toggleRankColor
+										? "bg-gray-400 border-transparent"
+										: "border-gray-400 bg-white "
 								}`}
 							>
 								{language === "jp" ? "ランク色表示" : "Toggle Color"}

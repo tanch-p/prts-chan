@@ -14,29 +14,10 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "2",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "payload_unload",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Bomb does 100% AOE dmg 8sq around target",
-								"After firing bomb - ms +200%"
-							],
-							"jp": ["爆弾→周囲8マスに100％ダメージ", "投下後移動速度+200%"],
-							"cn": [
-								"爆弾→对目标及其周围八格造成100%群体物理伤害",
-								"投弹后移速最终提升至200%"
-							]
-						}
-					}
-				}
-			]
+			"special": ["drone_bomb"]
 		},
 		"酒商运输队": {
 			"hp": "5000",
@@ -46,29 +27,10 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "2",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "payload_unload",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Bomb does 100% AOE dmg 8sq around target",
-								"After firing bomb - ms +200%"
-							],
-							"jp": ["爆弾→周囲8マスに100％ダメージ", "投下後移動速度+200%"],
-							"cn": [
-								"爆弾→对目标及其周围八格造成100%群体物理伤害",
-								"投弹后移速最终提升至200%"
-							]
-						}
-					}
-				}
-			]
+			"special": ["drone_bomb"]
 		},
 		"烟花秀": {
 			"hp": "8000",
@@ -78,33 +40,14 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "2",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "payload_unload",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Bomb does 100% AOE dmg 8sq around target",
-								"After firing bomb - ms +200%"
-							],
-							"jp": ["爆弾→周囲8マスに100％ダメージ", "投下後移動速度+200%"],
-							"cn": [
-								"爆弾→对目标及其周围八格造成100%群体物理伤害",
-								"投弹后移速最终提升至200%"
-							]
-						}
-					}
-				}
-			]
+			"special": ["drone_bomb"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

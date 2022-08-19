@@ -15,6 +15,16 @@ export default function Layout({ children, theme, floor = "" }) {
 
 	const phcs_styles = "bg-neutral-800 text-white pb-16 pt-24 md:py-24";
 
+	const getThemeStyles = (theme) => {
+		switch (theme) {
+			case "phcs":
+				return phcs_styles;
+
+			default:
+				return "bg-neutral-800 text-white pb-16 pt-24 md:py-24";
+		}
+	};
+
 	useEffect(() => {
 		width > 800 ? setDevice("desktop") : setDevice("mobile");
 	}, [width]);
@@ -52,7 +62,9 @@ export default function Layout({ children, theme, floor = "" }) {
 				<Navbar device={device} theme={theme} floor={floor} />
 			</header>
 			<main
-				className={`mx-auto flex flex-wrap flex-col items-center ${phcs_styles}`}
+				className={`mx-auto flex flex-wrap flex-col items-center ${getThemeStyles(
+					theme
+				)}`}
 			>
 				{children}
 			</main>

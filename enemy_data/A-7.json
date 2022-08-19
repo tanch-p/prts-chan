@@ -14,23 +14,10 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["AOE - 4sq around target"],
-							"jp": ["範囲攻撃→目標周囲4マス"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["splash_4sq_100"]
 		},
 		"开门请当心": {
 			"hp": "10000",
@@ -40,23 +27,10 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["AOE - 4sq around target"],
-							"jp": ["範囲攻撃→目標周囲4マス"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["splash_4sq_100"]
 		},
 		"红雾弥漫": {
 			"hp": "12000",
@@ -66,27 +40,14 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["AOE - 4sq around target"],
-							"jp": ["範囲攻撃→目標周囲4マス"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["splash_4sq_100"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

@@ -14,36 +14,14 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "2.5",
-
 			"weight": "0",
 			"lifepoint": 1,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "payload_unload_freeze",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Bomb does 100% AOE dmg + Cold❄ 8sq around target",
-								"After firing bomb - ms +200%"
-							],
-							"jp": [
-								"爆弾→周囲8マスに100％ダメージ＋【寒冷❄】",
-								"投下後移動速度+200%"
-							],
-							"cn": [
-								"爆弾→对目标及其周围八格造成100%群体物理伤害＋【寒冷❄】",
-								"投弹后移速最终提升至200%"
-							]
-						}
-					}
-				}
-			]
+			"special": ["drone_bomb_frost"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

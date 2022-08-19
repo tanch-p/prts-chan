@@ -22,8 +22,8 @@
 		}
 	},
 
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
@@ -32,42 +32,18 @@
 	"凍結耐性": "無",
 	"type": ["ranged"],
 	"imprisoned": {
-		"mods": { "aspd": 0.5},
-		"special": [
-			{
-				"name": "self_release",
-				"tooltip": {
-					"simple": {
-						"en": ["Imprisoned state, gets released on 4th attack"],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					},
-					"detailed": {
-						"en": [],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"mods": { "aspd": 0.5 },
+		"special": ["prisoner_atk_release"]
 	},
 	"released": {
 		"mods": { "atk": 1.5 },
-		"status_immune":[],
-"normal_attack": {
+		"status_immune": [],
+		"normal_attack": {
 			"atk_type": ["ranged", "arts"],
 			"hits": 1
 		},
 		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Atk type - Arts"],
-						"jp": ["攻撃属性が術になる"],
-						"cn": []
-					}
-				}
-			}
+			"atk_arts_change"
 		]
 	}
 }

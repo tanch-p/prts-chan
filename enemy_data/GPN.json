@@ -10,22 +10,10 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-
 			"weight": "4",
 			"lifepoint": 0,
 			"ms": "0.5",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_collect_treasure"]
 		},
 		"level1": {
 			"hp": "70000",
@@ -35,22 +23,10 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-
 			"weight": "4",
 			"lifepoint": 0,
 			"ms": "0.5",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_collect_treasure"]
 		},
 		"level2": {
 			"hp": "90000",
@@ -60,22 +36,10 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-
 			"weight": "4",
 			"lifepoint": 0,
 			"ms": "0.5",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_collect_treasure"]
 		},
 		"高普尼克之拳": {
 			"hp": "78000",
@@ -85,22 +49,10 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-
 			"weight": "4",
 			"lifepoint": 0,
 			"ms": "0.5",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_collect_treasure"]
 		},
 		"这位乌萨斯人": {
 			"hp": "84000",
@@ -110,22 +62,10 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-
 			"weight": "4",
 			"lifepoint": 0,
 			"ms": "0.5",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["※Will not collect unowned treasure"],
-							"jp": ["※財宝回収しません"],
-							"cn": ["※不会收集无主的财富"]
-						}
-					}
-				}
-			]
+			"special": ["no_collect_treasure"]
 		}
 	},
 	"status_immune": ["stun", "freeze"],

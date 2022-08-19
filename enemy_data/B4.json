@@ -14,11 +14,10 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "1.8",
-
 			"weight": "0",
 			"ms": "1",
 			"lifepoint": 1,
-			"special": []
+			"special": ["def_down_10"]
 		},
 		"与虫为伴": {
 			"hp": "2080",
@@ -28,15 +27,14 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "1.8",
-
 			"weight": "0",
 			"ms": "1",
 			"lifepoint": 1,
-			"special": []
+			"special": ["def_down_10"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

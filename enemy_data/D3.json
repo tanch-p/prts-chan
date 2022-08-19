@@ -14,9 +14,9 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "0",
-			
 			"weight": "0",
-			"lifepoint":1,"ms": "0.5",
+			"lifepoint": 1,
+			"ms": "0.5",
 			"special": []
 		},
 		"无人机起降库": {
@@ -27,14 +27,14 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "0",
-			
 			"weight": "0",
-			"lifepoint":1,"ms": "0.5",
+			"lifepoint": 1,
+			"ms": "0.5",
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

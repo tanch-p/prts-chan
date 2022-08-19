@@ -13,28 +13,7 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.65",
-			"special": [
-				{
-					"name": "avenger",
-					"type": "atk",
-					"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
-					"multiplier": 2,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": ["HP↓50%→Atk power x 2"],
-							"jp": ["HP50%以下→攻撃力2倍"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": ["HPが50%以下になると、攻撃力+100%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["avenger_100"]
 		},
 		"廃工場": {
 			"hp": "7000",
@@ -48,28 +27,7 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.65",
-			"special": [
-				{
-					"name": "avenger",
-					"type": "atk",
-					"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
-					"multiplier": 2,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": ["HP↓50%→Atk power x 2"],
-							"jp": ["HP50%以下→攻撃力2倍"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": ["HPが50%以下になると、攻撃力+100%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["avenger_100"]
 		},
 		"巡逻队": {
 			"hp": "12000",
@@ -83,32 +41,11 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.65",
-			"special": [
-				{
-					"name": "avenger",
-					"type": "atk",
-					"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
-					"multiplier": 2.5,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": ["HP↓50%→Atk power x 2.5"],
-							"jp": ["HP50%以下→攻撃力2.5倍"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": ["HPが50%以下になると、攻撃力+150%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["avenger_150"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

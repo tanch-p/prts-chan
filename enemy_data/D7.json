@@ -14,9 +14,9 @@
 			"aspd%": "100",
 			"aspd": "2.15",
 			"range": "1.8",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.5",
+			"lifepoint": 1,
+			"ms": "1.5",
 			"special": []
 		},
 		"大盗当头": {
@@ -27,9 +27,9 @@
 			"aspd%": "100",
 			"aspd": "2.15",
 			"range": "1.8",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.5",
+			"lifepoint": 1,
+			"ms": "1.5",
 			"special": []
 		},
 		"无人机起降库": {
@@ -40,14 +40,14 @@
 			"aspd%": "100",
 			"aspd": "2.15",
 			"range": "1.8",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.5",
+			"lifepoint": 1,
+			"ms": "1.5",
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

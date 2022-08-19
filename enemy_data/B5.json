@@ -1,34 +1,34 @@
 {
-  "id": "B5",
-  "name": {
-    "en": "Acid Originium Slug α",
-    "jp": "アシッドムシ・α",
-    "cn": "酸液源石虫·α"
-  },
-  "stats": {
-    "level0": {
-      "hp": "2780",
-      "atk": "290",
-      "def": "0",
-      "res": "0",
-      "aspd%": "100",
-      "aspd": "3.3",
-      "range": "1.75",
+	"id": "B5",
+	"name": {
+		"en": "Acid Originium Slug α",
+		"jp": "アシッドムシ・α",
+		"cn": "酸液源石虫·α"
+	},
+	"stats": {
+		"level0": {
+			"hp": "2780",
+			"atk": "290",
+			"def": "0",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "3.3",
+			"range": "1.75",
 
-      "weight": "0",
-      "lifepoint": 1,
-      "ms": "1",
-      "special": []
-    }
-  },
-  "status_immune": [],
-  "normal_attack": {
-    "atk_type": ["ranged", "phys"],
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "",
+			"weight": "0",
+			"lifepoint": 1,
+			"ms": "1",
+			"special": ["def_down_15"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
 
-  "type": ["ranged", "infected_creature"]
+	"type": ["ranged", "infected_creature"]
 }

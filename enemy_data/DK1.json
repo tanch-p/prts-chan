@@ -15,50 +15,10 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "0",
-
 			"weight": "6",
 			"lifepoint": 1,
 			"ms": "0.65",
-			"special": [
-				{
-					"name": "splash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Normal Atks do 100% splash to units 4 tiles surrounding target"
-							],
-							"jp": ["通常攻撃→攻撃対象の隣接4マスに100％のダメージ"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				},
-				{
-					"name": "hammertime",
-					"type": "atk",
-					"suffix": { "en": "Skill/Phys", "jp": "スキル・物理", "cn": "" },
-					"multiplier": 3,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": ["Skill→Every 22s unleashes charged attack"],
-							"jp": ["スキル→チャージ攻撃、CD22秒"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["splash_4sq_100", "corrupted_knight_charge_atk"]
 		},
 		"8号競技場": {
 			"hp": "25000",
@@ -68,54 +28,14 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "0",
-
 			"weight": "6",
 			"lifepoint": 1,
 			"ms": "0.65",
-			"special": [
-				{
-					"name": "splash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Normal Atks do 100% splash to units 4 tiles surrounding target"
-							],
-							"jp": ["通常攻撃→攻撃対象の隣接4マスに100％のダメージ"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				},
-				{
-					"name": "hammertime",
-					"type": "atk",
-					"suffix": { "en": "Skill/Phys", "jp": "スキル・物理", "cn": "" },
-					"multiplier": 2.8,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": ["Skill→Every 22s unleashes charged attack"],
-							"jp": ["スキル→チャージ攻撃、CD22秒"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["splash_4sq_100", "corrupted_knight_charge_atk"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
@@ -130,8 +50,8 @@
 			"aspd": 2,
 			"ms": 1.5
 		},
-		"status_immune":[],
-"normal_attack": {
+		"status_immune": [],
+		"normal_attack": {
 			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},

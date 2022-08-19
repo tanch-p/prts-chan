@@ -10,9 +10,9 @@
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.75",
+			"lifepoint": 1,
+			"ms": "0.75",
 			"special": []
 		},
 		"正义": {
@@ -23,14 +23,14 @@
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.75",
+			"lifepoint": 1,
+			"ms": "0.75",
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
