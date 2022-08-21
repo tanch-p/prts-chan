@@ -18,18 +18,7 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.85",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["When coming into contact with a Pulse Wave, takes no damage and will deal Arts damage with normal attacks."],
-							"jp": ["源石衝撃波に触れると、ダメージを受けず、攻撃が術攻撃に変わる"],
-							"cn": ["接触脉冲波时，不受伤害且攻击切换成法术伤害 "]
-						}
-					}
-				}
-			]
+			"special": ["sarkaz_guerilla_fighter"]
 		},
 		"驯兽小屋": {
 			"hp": "10000",
@@ -43,22 +32,11 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.85",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["When coming into contact with a Pulse Wave, takes no damage and will deal Arts damage with normal attacks."],
-							"jp": ["源石衝撃波に触れると、ダメージを受けず、攻撃が術攻撃に変わる"],
-							"cn": ["接触脉冲波时，不受伤害且攻击切换成法术伤害 "]
-						}
-					}
-				}
-			]
+			"special": ["sarkaz_guerilla_fighter"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

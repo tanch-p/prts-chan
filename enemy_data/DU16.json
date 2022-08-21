@@ -7,32 +7,22 @@
 	},
 	"stats": {
 		"level0": {
-            "hp": "10000",
-            "atk": "600",
-            "def": "550",
-            "res": "0",
-            "aspd%": "100",
-            "aspd": "2",
-            "range": "1.5",
-            
-            "weight": "3",
-			"lifepoint":1,"ms": "0.8",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Refraction - RES+70 (can be silenced)"],
-							"jp": ["屈折→術耐性+70 (無効化可能)"],
-							"cn": ["折射：法术抗性增加70（可被沉默）"]
-						}
-					}
-				}
-			]
+			"hp": "10000",
+			"atk": "600",
+			"def": "550",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "1.5",
+
+			"weight": "3",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["refraction"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

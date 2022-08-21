@@ -14,28 +14,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.5",
-			"special": [
-				{
-					"name": "throw_rock",
-					"type": "others",
-					"multiplier": 0.7,
-					"hits": 1,
-					"fixedInc": 0,
-					"start": 13,
-					"skill": 13,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Rock Throw→stuns unit for 25 sec, does not target stunned units. CD13s"
-							],
-							"jp": [
-								"石投げ→25秒スタンする、CD13秒 (スタンしてるユニットは無視）"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["WDG_throw_rock"]
 		},
 		"开门请当心": {
 			"hp": "80000",
@@ -49,28 +28,7 @@
 			"weight": "4",
 			"lifepoint": 2,
 			"ms": "0.5",
-			"special": [
-				{
-					"name": "throw_rock",
-					"type": "others",
-					"multiplier": 0.7,
-					"hits": 1,
-					"fixedInc": 0,
-					"start": 13,
-					"skill": 13,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Rock Throw→stuns unit for 25 sec, does not target stunned units. CD13s"
-							],
-							"jp": [
-								"石投げ→25秒スタンする、CD13秒 (スタンしてるユニットは無視）"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["WDG_throw_rock"]
 		}
 	},
 	"status_immune": [],

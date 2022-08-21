@@ -13,31 +13,16 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.6",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Same as above except no blink skill"
-							],
-							"jp": [
-								"回り込みスキルがない以外、上と同じ"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["PTS_copy"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee","ranged", "elite"]
+	"type": ["melee", "ranged", "elite"]
 }

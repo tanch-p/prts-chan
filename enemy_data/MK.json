@@ -18,79 +18,15 @@
 			"lifepoint": 1,
 			"ms": "0.6",
 			"special": [
-				{
-					"name": "mk_shield",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Spawns with a barrier which absorbs up to 14001 Arts dmg",
-								"Shield Active: DEF+3000"
-							],
-							"jp": [
-								"スキル→15秒毎にシールドを張り、合計16500の術攻撃を吸収する",
-								"シールド展開中：DEF+3000"
-							],
-							"cn": []
-						}
-					}
-				},
-				{
-					"name": "rage",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["HP↓50% - Final Damage dealt increased by 1.5 times"],
-							"jp": ["HP50％以下 - 最終ダメージ+50％"],
-							"cn": []
-						}
-					}
-				},
-				{
-					"name": "sand_cross",
-					"type": "atk",
-					"suffix": { "en": "➕/phys", "jp": "➕・物理", "cn": "➕" },
-					"fixed": 1200,
-					"hits": 1,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Skill→Every 20s unleashes cross-shaped sand blast on unit with highest Max HP"
-							],
-							"jp": [
-								"スキル→20秒毎に最大HPが最も高いユニット及び十字方向3マスに物理ダメージ"
-							],
-							"cn": [
-								"以场上生命上限最高的我方单位为中心，对范围内的所有我方单位造成800物理溅射伤害"
-							]
-						}
-					}
-				},
-				{
-					"name": "sand_tomb",
-					"type": "atk",
-					"suffix": { "en": "🌪/arts", "jp": "🌪・術", "cn": "🌪" },
-					"fixed": 70,
-					"hits": 1,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Skill→Every 60s unleashes sand tornado on unit with lowest Max HP lasting 15s, reduces affected units atk by 70%"
-							],
-							"jp": [
-								"スキル→60秒毎に最大HPが最も低いユニットを中心に砂の嵐を起こして、周囲8マス内のユニットの攻撃力-70%"
-							],
-							"cn": [
-								"以场上生命上限最低的我方单位为中心释放沙狱，沙狱每秒对范围内的所有我方单位造成70法术buff伤害，并最终下降70%攻击力。沙狱持续15s"
-							]
-						}
-					}
-				}
+				"rat_king_shield",
+				"rat_king_rage",
+				"rat_king_sand_cross",
+				"rat_king_sand_tomb"
 			]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

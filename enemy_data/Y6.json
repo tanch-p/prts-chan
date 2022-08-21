@@ -18,23 +18,11 @@
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"name": "ice_pick",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Deals 250% damage to frozen units"],
-							"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が250%まで上昇"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["ice_pick_250"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

@@ -42,23 +42,11 @@
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.9",
-			"special": [
-				{
-					"name": "barrier",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Barrier→for 100s, Def+3000, Res+95"],
-							"jp": ["バリア→100秒間、防御力+3000、術耐性+95"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["plasticknight_barrier_骑士对决"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

@@ -10,23 +10,16 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "2.5",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "0.75",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": { "en": ["Targets units of opposing element first"], "jp": ["反対属性の相手を優先して攻撃する"], "cn": [""] },
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.75",
+			"special": ["yinyang_target_opposite"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
-		"type": { "en": "Ranged/Phys", "jp": "遠・物理", "cn": "远・物理" },
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

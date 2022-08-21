@@ -14,28 +14,15 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "1.9",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"On death, this unit will spawn 2 Originiutant Excrescence.",
-								"Can be silenced."
-							],
-							"jp": ["死亡時、変異腫瘍を2体召喚する", "無効化可能"],
-							"cn": ["死亡后召唤2个畸变赘生物（可被沉默）"]
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "1.9",
+			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

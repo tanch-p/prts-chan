@@ -14,27 +14,16 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "1.3",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Can only be blocked by units of same element"],
-							"jp": ["同じ属性の味方でのみブロックできる"],
-							"cn": [""]
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "1.3",
+			"special": ["yinyang_same_block"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
-		"type": { "en": "Melee/Phys", "jp": "近・物理", "cn": "近・物理" },
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

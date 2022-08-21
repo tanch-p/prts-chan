@@ -14,28 +14,11 @@
 			"aspd%": "100",
 			"aspd": "2.7",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Buff→Inc all enemies atk10% def100, stacks with other Heralds",
-								"Activates special abilities of Guerilla Squad"
-							],
-							"jp": [
-								"バフ→ 敵全体の攻撃力10%＆防御力100上昇（重複する）",
-								"遊撃隊に特殊強化"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "1",
+			"special": ["guerilla_herald_buff"]
 		},
 		"高普尼克之拳": {
 			"hp": "5000",
@@ -45,32 +28,15 @@
 			"aspd%": "100",
 			"aspd": "2.7",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Buff→Inc all enemies atk10% def100, stacks with other Heralds",
-								"Activates special abilities of Guerilla Squad"
-							],
-							"jp": [
-								"バフ→ 敵全体の攻撃力10%＆防御力100上昇（重複する）",
-								"遊撃隊に特殊強化"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "1",
+			"special": ["guerilla_herald_buff"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

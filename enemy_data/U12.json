@@ -14,24 +14,11 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "2",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "0.5",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Normal Atk does 100% splash damage to units 8sq around target"
-							],
-							"jp": ["通常攻撃→目標＋周囲8マスに100％ダメージ"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.5",
+			"special": ["splash_8sq_100"]
 		},
 		"乌萨斯的渴求": {
 			"hp": "30000",
@@ -41,28 +28,15 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "2",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "0.5",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Normal Atk does 100% splash damage to units 8sq around target"
-							],
-							"jp": ["通常攻撃→目標＋周囲8マスに100％ダメージ"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.5",
+			"special": ["splash_8sq_100"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

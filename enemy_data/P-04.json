@@ -14,23 +14,11 @@
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": [
-				{
-					"name": "stun_attack",
-					"type": "debuff",
-					"tooltip": {
-						"simple": {
-							"en": ["Every 3rd attack stuns target for 15s"],
-							"jp": ["攻撃2回の度に次の攻撃に相手を15秒スタンする"],
-							"cn": ["攻击2次后，下一次攻击会晕眩目标15秒"]
-						}
-					}
-				}
-			]
+			"special": ["sniper_leader_stun"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

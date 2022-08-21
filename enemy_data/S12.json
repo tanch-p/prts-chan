@@ -18,29 +18,11 @@
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.5",
-			"special": [
-				{
-					"name": "callforhelp",
-					"type": "buff",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"On HP loss sounds alarm, turns units on standby to combat-ready mode, increases all enemies atk & def by 50% (Stacks with other Sentinels)"
-							],
-							"jp": [
-								"ダメージを受けると警報を鳴らします",
-								"警報→魔剣士と呪術師を臨戦態勢に変化し、敵全体に攻撃力と防御力＋50％バフ（重複する）"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["sarkaz_sentinel_leader_alert"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["no_attack"],
 		"hits": 1
 	},

@@ -1,32 +1,32 @@
 {
-    "id": "P-08",
-    "name_en": "Shielded Guard Leader",
-    "name_jp": "機動軽装兵隊長",
-    "name_cn": "机动卫兵组长",
-    "atk_type_jp": "物理",
-    "hp": "3700",
-    "atk": "300",
-    "def": "500",
-    "res": "0",
-    "aspd%": "100",
-    "aspd": "2",
-    "range": "0",
-    
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "1",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "P-08",
+	"name": {
+		"en": "Shielded Guard Leader",
+		"jp": "機動軽装兵隊長",
+		"cn": "机动卫兵组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "3700",
+			"atk": "300",
+			"def": "500",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "1",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["melee"]
 }

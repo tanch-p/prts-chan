@@ -21,77 +21,20 @@
 			"forms": [
 				{
 					"mods": {},
-					"special": [
-						{
-							"type": "others",
-							"tooltip": {
-								"simple": {
-									"en": ["Refraction - RES+70 (can be silenced)"],
-									"jp": ["屈折→術耐性+70 (無効化可能)"],
-									"cn": ["折射：法术抗性增加70（可被沉默）"]
-								}
-							}
-						},
-						{
-							"type": "others",
-							"tooltip": {
-								"simple": {
-									"en": [
-										"Does not transit to 2nd form if defeated using Tattered Pillar"
-									],
-									"jp": [
-										"脆い石柱によるダメージで倒された場合、形態移行せずそのまま消滅する"
-									],
-									"cn": [""]
-								}
-							}
-						}
-					]
+					"special": ["refraction", "ggy_pillar_smash"]
 				},
 				{
 					"mods": {
 						"fixed_range": 1.6
 					},
 
-					"special": [
-						{
-							"type": "def",
-							"multiplier": 1,
-							"fixed_def": 800,
-							"suffix": {
-								"en": "Stone Statue",
-								"jp": "石像形態",
-								"cn": "石像形態"
-							},
-							"tooltip": {
-								"simple": {
-									"en": [
-										"Stone Form - DEF +800 RES +30 for 10s, changes to flying mode thereafter"
-									],
-									"jp": [
-										"石像形態 - 10秒間、防御力+800、術耐性+30。終了後、飛行形態に"
-									],
-									"cn": ["10秒間防御力增加800，法术抗性增加30"]
-								}
-							}
-						},
-						{
-							"type": "others",
-							"tooltip": {
-								"simple": {
-									"en": ["Refraction - RES+70 (can be silenced)"],
-									"jp": ["屈折→術耐性+70 (無効化可能)"],
-									"cn": ["折射：法术抗性增加70（可被沉默）"]
-								}
-							}
-						}
-					]
+					"special": ["ggy_stone_form", "refraction"]
 				}
 			]
 		}
 	},
-	"status_immune":[],
-"normal_attack": [
+	"status_immune": [],
+	"normal_attack": [
 		{
 			"atk_type": ["melee", "phys"],
 			"hits": 1

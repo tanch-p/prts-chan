@@ -14,30 +14,7 @@
 			"weight": "5",
 			"lifepoint": 2,
 			"ms": "1.2",
-			"special": [
-				{
-					"name": "bomb",
-					"type": "atk",
-					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
-					"multiplier": 1.8,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Skill→Plants bomb on 2 units, CD21s",
-								"HP↓50%:plants bomb on 3 units, uses skill immediately"
-							],
-							"jp": [
-								"スキル→敵ユニット2体に爆弾設置する",
-								"(爆弾：単体に180%物理ダメージ)",
-								"HP50%以下：爆弾2体ｰ>3体、即時爆弾設置する"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["W_C4_180"]
 		},
 		"第6区跡": {
 			"hp": "21000",
@@ -51,29 +28,7 @@
 			"weight": "5",
 			"lifepoint": 2,
 			"ms": "1.2",
-			"special": [
-				{
-					"name": "bomb",
-					"type": "atk",
-					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
-					"multiplier": 2.2,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Skill→Plants bomb on 2 units, CD21s",
-								"HP↓50%:plants bomb on 3 units, uses skill immediately"
-							],
-							"jp": [
-								"スキル→敵ユニット2体に爆弾設置する、CD21秒",
-								"HP50%以下：爆弾2体ｰ>3体、即時スキル使用する"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["W_C4_220"]
 		},
 		"似曾相识": {
 			"hp": "18000",
@@ -87,29 +42,7 @@
 			"weight": "5",
 			"lifepoint": 2,
 			"ms": "1.2",
-			"special": [
-				{
-					"name": "bomb",
-					"type": "atk",
-					"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
-					"multiplier": 1.8,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Skill→Plants bomb on 2 units, CD21s",
-								"HP↓50%:plants bomb on 3 units, uses skill immediately"
-							],
-							"jp": [
-								"スキル→敵ユニット2体に爆弾設置する、CD21秒",
-								"HP50%以下：爆弾2体ｰ>3体、即時スキル使用する"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["W_C4_180"]
 		}
 	},
 	"status_immune": [],

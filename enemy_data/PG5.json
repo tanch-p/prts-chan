@@ -14,35 +14,15 @@
 			"aspd%": "100",
 			"aspd": "2.6",
 			"range": "3.5",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.9",
-			"special": [
-				{
-					"name": "RPG",
-					"type": "atk",
-					"suffix": { "en": "RPG/phys", "jp": "RPG・物理", "cn": "RPG・物理" },
-					"multiplier": 2,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"RPG → deals 100% splash dmg to target & surrounding 8 tiles, switches to Melee & ms+200% after firing"
-							],
-							"jp": [
-								"RPG → 目標と周囲8マスにダメージ",
-								"発射後は近接に切り替わって、移動速度+200%"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": ["RPG"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 
 		"hits": 1

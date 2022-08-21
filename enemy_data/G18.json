@@ -10,27 +10,15 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			
+
 			"weight": "4",
-			"lifepoint":1,"ms": "1.2",
-			"special": [
-				{
-					"name": "three_block",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Block count - 3"],
-							"jp": ["ブロック数3以上でブロック可能"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "1.2",
+			"special": ["three_block"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

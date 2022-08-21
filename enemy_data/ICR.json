@@ -19,23 +19,11 @@
 			"weight": "4",
 			"lifepoint": 3,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "freeze_hit",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Attacks freeze enemy"],
-							"jp": ["通常攻撃は【寒冷❄】を付与する"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["freeze_attack"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
@@ -46,41 +34,11 @@
 	"powerup": {
 		"state_name": "rage",
 		"mods": { "aspd": 2, "ms": 2 },
-		"status_immune":[],
-"normal_attack": {
+		"status_immune": [],
+		"normal_attack": {
 			"atk_type": ["ranged", "arts"],
 			"hits": 1
 		},
-		"special": [
-			{
-				"name": "freeze_hit",
-				"type": "others",
-				"tooltip": {
-					"simple": {
-						"en": ["Attacks freeze enemy"],
-						"jp": ["通常攻撃は【寒冷❄】を付与する"],
-						"cn": []
-					}
-				}
-			},
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Deals 250% damage to frozen units"],
-						"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が250%まで上昇"],
-						"cn": []
-					}
-				}
-			},
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Move speed+150%"],
-						"jp": ["移動速度＋150％"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["freeze_attack", "ice_pick_250", "ms_inc_150"]
 	}
 }

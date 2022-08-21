@@ -14,29 +14,11 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.3",
-			"special": [
-				{
-					"name": "lancer-accelerate",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Accelerates every 0.5s, inc ms by 50%, does extra damage which scales with ms for 1 attack, after attacking ms stack resets"
-							],
-							"jp": [
-								"0.5秒毎加速する",
-								"加速→移動速度+50％、攻撃時一回追加ダメージを加える、攻撃後リセットする",
-								"追加ダメージ（1ms:800)"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.3",
+			"special": ["lancer_leader_accelerate"]
 		},
 		"永无尽头": {
 			"hp": "9000",
@@ -46,29 +28,11 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.3",
-			"special": [
-				{
-					"name": "lancer-accelerate",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Accelerates every 0.5s, inc ms by 50%, does extra damage which scales with ms for 1 attack, after attacking ms stack resets"
-							],
-							"jp": [
-								"0.5秒毎加速する",
-								"加速→移動速度+50％、攻撃時一回追加ダメージを加える、攻撃後リセットする",
-								"追加ダメージ（1ms:800)"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.3",
+			"special": ["lancer_leader_accelerate"]
 		},
 		"乌萨斯的渴求": {
 			"hp": "8000",
@@ -78,38 +42,20 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.3",
-			"special": [
-				{
-					"name": "lancer-accelerate",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Accelerates every 0.5s, inc ms by 50%, does extra damage which scales with ms for 1 attack, after attacking ms stack resets"
-							],
-							"jp": [
-								"0.5秒毎加速する",
-								"加速→移動速度+50％、攻撃時一回追加ダメージを加える、攻撃後リセットする",
-								"追加ダメージ（1ms:800)"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.3",
+			"special": ["lancer_leader_accelerate"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
-		"atk_type":["melee","phys"],
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee", "sarkaz","elite"]
+	"type": ["melee", "sarkaz", "elite"]
 }

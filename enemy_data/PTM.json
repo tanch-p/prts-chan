@@ -14,73 +14,15 @@
 			"lifepoint": 30,
 			"ms": "0.6",
 			"special": [
-				{
-					"name": "nervous_impair",
-					"type": "others",
-					"value": 0.2,
-					"tooltip": {
-						"simple": {
-							"en": ["Attacks deal 20% ATK Nervous Impairment"],
-							"jp": ["攻撃時、攻撃力20%の神経ダメージを与える"],
-							"cn": ["普通攻击附带自身攻击力20%的神经损伤"]
-						}
-					}
-				},
-				{
-					"name": "evasion",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["When not blocked, gains 40% phys & arts evasion"],
-							"jp": ["未ブロック時、物理と術回避率+40%"],
-							"cn": []
-						}
-					}
-				},
-				{
-					"name": "ignore_def",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Attacks ignores 40% def"],
-							"jp": ["攻撃は防御40％無視"],
-							"cn": []
-						}
-					}
-				},
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"When blocked, blinks past unit & summons 1 shadow in place. CD15s"
-							],
-							"jp": [
-								"ブロックされた時、ユニットの背後に回り込む、その場に影を召喚する　CD15秒"
-							],
-							"cn": []
-						}
-					}
-				},
-				{
-					"name": "sing_for_me",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"AOE (range 2)→ does 80% ATK phys dmg & 20% ATK Nervous Impairment to all units within range. CD10s"
-							],
-							"jp": [
-								"範囲攻撃（半径2）→範囲内の全味方に攻撃力80％の物理ダメージと攻撃力20%の神経ダメージを与える　CD10秒"
-							],
-							"cn": []
-						}
-					}
-				}
+				"nervous_impair_20",
+				"PTM_evasion",
+				"ignore_def_40",
+				"PTM_blink",
+				"PTM_aoe"
 			]
 		}
 	},
-	"status_immune": ["stun","sleep","freeze","silence"],
+	"status_immune": ["stun", "sleep", "freeze", "silence"],
 	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1

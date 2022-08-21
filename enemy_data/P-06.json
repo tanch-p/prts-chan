@@ -1,32 +1,32 @@
 {
-    "id": "P-06",
-    "name_en": "Authorized Caster Leader",
-    "name_jp": "制式術師隊長",
-    "name_cn": "编制术师组长",
-    "atk_type_jp": "術",
-    "hp": "4000",
-    "atk": "350",
-    "def": "200",
-    "res": "50",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "1.8",
-    
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.8",
-    "type_jp": [
-        "遠距離"
-    ],
-    "type_en": [
-        "Ranged"
-    ],
-    "type_cn": [
-        "远程"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "P-06",
+	"name": {
+		"en": "Authorized Caster Leader",
+		"jp": "制式術師隊長",
+		"cn": "编制术师组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "4000",
+			"atk": "350",
+			"def": "200",
+			"res": "50",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "1.8",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "arts"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged"]
 }

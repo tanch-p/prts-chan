@@ -18,19 +18,7 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.4",
-			"special": [
-				{
-					"name": "standby",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
-							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["sarkaz_standby"]
 		},
 		"似曾相识": {
 			"hp": "12000",
@@ -44,19 +32,7 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.4",
-			"special": [
-				{
-					"name": "standby",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
-							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["sarkaz_standby"]
 		},
 		"萨卡兹的渴求": {
 			"hp": "16000",
@@ -70,23 +46,11 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.4",
-			"special": [
-				{
-					"name": "standby",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
-							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["sarkaz_standby"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "arts"],
 		"hits": 1
 	},

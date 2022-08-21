@@ -22,130 +22,26 @@
 				{
 					"mods": {},
 					"special": [
-						{
-							"type": "others",
-							"tooltip": {
-								"simple": {
-									"en": [
-										"Invincible - cannot be attacked, lasts indefinitely",
-										"Loses 10% HP when Host's Assistant is defeated"
-									],
-									"jp": [
-										"無敵→攻撃を受け付けない、継続時間永久",
-										"助手が倒される度に最大HP10％のダメージを受ける"
-									],
-									"cn": [""]
-								}
-							}
-						},
-						{
-							"name": "summon_helper",
-							"type": "others",
-							"start": 0,
-							"skill": 3,
-							"tooltip": {
-								"simple": {
-									"en": ["Every 45s summons 2 Host's Assistants"],
-									"jp": ["45秒毎に助手を2体召喚する"],
-									"cn": [""]
-								}
-							}
-						},
-						{
-							"type": "others",
-							"tooltip": {
-								"simple": {
-									"en": ["Normal attack targets 2 units"],
-									"jp": ["2体同時攻撃"],
-									"cn": []
-								},
-								"detailed": { "en": [], "jp": [], "cn": [] }
-							}
-						},
-						{
-							"name": "nervous_impair",
-							"type": "others",
-							"value": 0.2,
-							"tooltip": {
-								"simple": {
-									"en": ["Attacks deal 20% ATK Nervous Impairment"],
-									"jp": ["攻撃時、攻撃力の20%の神経ダメージを与える"],
-									"cn": ["普通攻击附带自身攻击力20%的神经损伤"]
-								}
-							}
-						}
+						"HST_invincible",
+						"HST_summon_helper",
+						"target_2",
+						"nervous_impair_20"
 					]
 				},
 				{
 					"mods": {},
-
 					"special": [
-						{
-							"name": "summon_helper_2",
-							"type": "others",
-							"start": 0,
-							"skill": 3,
-							"tooltip": {
-								"simple": {
-									"en": [
-										"On revival summons 10 Host's Assistants which are invincible for 10s",
-										"Does not summon any more units for the rest of the battle"
-									],
-									"jp": [
-										"復活後10秒無敵の助手を10体召喚する",
-										"以降助手召喚しない"
-									],
-									"cn": [""]
-								}
-							}
-						},
-						{
-							"type": "others",
-							"tooltip": {
-								"simple": {
-									"en": [
-										"Invincible - cannot be attacked, lasts indefinitely",
-										"Loses 10% HP when Host's Assistant is defeated"
-									],
-									"jp": [
-										"無敵→攻撃を受け付けない、継続時間∞",
-										"助手が倒される度に最大HP10％のダメージを受ける"
-									],
-									"cn": [""]
-								}
-							}
-						},
-
-						{
-							"type": "others",
-							"tooltip": {
-								"simple": {
-									"en": ["Normal attack targets 2 units"],
-									"jp": ["2体同時攻撃"],
-									"cn": []
-								},
-								"detailed": { "en": [], "jp": [], "cn": [] }
-							}
-						},
-						{
-							"name": "nervous_impair",
-							"type": "others",
-							"value": 0.2,
-							"tooltip": {
-								"simple": {
-									"en": ["Attacks deal 20% ATK Nervous Impairment"],
-									"jp": ["攻撃時、攻撃力の20%の神経ダメージを与える"],
-									"cn": ["普通攻击附带自身攻击力20%的神经损伤"]
-								}
-							}
-						}
+						"HST_summon_helper_revival",
+						"HST_invincible",
+						"target_2",
+						"nervous_impair_20"
 					]
 				}
 			]
 		}
 	},
-	"status_immune":[],
-"normal_attack": [
+	"status_immune": [],
+	"normal_attack": [
 		{
 			"atk_type": ["ranged", "arts"],
 			"hits": 1

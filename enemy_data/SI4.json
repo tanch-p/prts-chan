@@ -17,23 +17,11 @@
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "1.1",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Special Buff→Inc ms 30%"],
-							"jp": ["特殊強化→移動速度＋30％"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["guerilla_fighter_buff"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

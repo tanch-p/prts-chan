@@ -29,7 +29,7 @@
 			"aspd": "4",
 			"range": "2.5",
 			"weight": "6",
-			"lifepoint": 1,
+			"lifepoint": 3,
 			"ms": "0.65",
 			"special": ["target_2", "withered_knight_arrow_bomb"]
 		}
@@ -55,16 +55,6 @@
 			"atk_type": ["ranged", "arts"],
 			"hits": 1
 		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Move speed+150%"],
-						"jp": ["移動速度＋150％"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["ms_inc_150"]
 	}
 }

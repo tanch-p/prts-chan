@@ -14,25 +14,14 @@
 			"aspd%": "100",
 			"aspd": "2.3",
 			"range": "2.3",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.1",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Refraction - RES+70 (can be silenced)"],
-							"jp": ["屈折→術耐性+70 (無効化可能)"],
-							"cn": ["折射：法术抗性增加70（可被沉默）"]
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "1.1",
+			"special": ["refraction"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
