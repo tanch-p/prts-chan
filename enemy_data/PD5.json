@@ -17,7 +17,11 @@
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "1.2",
-			"special": []
+			"special": [
+				"support_drone_ms_buff",
+				"summon_scrap_war_phantom",
+				"summon_anvil"
+			]
 		}
 	},
 	"status_immune": [],
@@ -28,5 +32,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee","elite"]
+	"type": ["melee", "elite"]
 }

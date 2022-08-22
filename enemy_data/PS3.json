@@ -17,7 +17,11 @@
 			"weight": "0",
 			"lifepoint": 1,
 			"ms": "1",
-			"special": []
+			"special": [
+				"lower_target_priority",
+				"drone_flying_time",
+				"anvil_healing_aura"
+			]
 		}
 	},
 	"status_immune": [],

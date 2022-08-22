@@ -187,6 +187,105 @@
 			}
 		}
 	},
+	"summon_scrap_normal": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Once per battle, after 2s summons Scrap to target's position when target present within attack range",
+					"Can be cancelled by stun/sleep/freeze/pull"
+				],
+				"jp": [
+					"攻撃範囲内に標的発見時、1回だけ2秒後標的の位置に「破片」を向かわせる",
+					"スタン/睡眠/凍結/強制移動で中断できる"
+				],
+				"cn": [
+					"攻击范围内存在目标时触发",
+					"以目标所在地块为空援地点，延迟2s后在<可移动战术机库>0.4边长正方形范围内随机位置召唤破片",
+					"※此技能仅触发一次"
+				]
+			}
+		}
+	},
+	"summon_scrap_war_phantom": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Once per battle, summons Scrap before executing first attack"],
+				"jp": ["初回攻撃直前に、攻撃対象の位置に「破片」を向かわせる"],
+				"cn": [
+					"首次攻击成功时，以目标所在地块为空援地点，在<可移动战术机库>0.4边长正方形范围内随机位置召唤破片"
+				]
+			}
+		}
+	},
+	"summon_anvil": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"When HP drops below 50% for the first time, summons Anvil to own position."
+				],
+				"jp": ["HPが初回50%以下になった時、自身の位置に「鉄砧」を向かわせる"],
+				"cn": [
+					"生命值首次降至一半以下时，以自身所在地块为空援地点，延迟2s后在<可移动战术机库>0.4边长正方形范围内随机位置召唤铁砧"
+				]
+			}
+		}
+	},
+	"support_drone_ms_buff": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"When present on battlefield, all Air Support Drones' MS increased by 200%"
+				],
+				"jp": ["フィールドにいる時、空中支援ドローンの移動速度+200%"],
+				"cn": ["在场时，所有空援无人机移速提升200%"]
+			}
+		}
+	},
+	"scrap_def_down": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Attacks reduce target's DEF by 50% for 5s (does not stack, can be silenced)"
+				],
+				"jp": [
+					"攻撃が相手の防御力を5秒50％減少する (重複しない、無効化できる)"
+				],
+				"cn": ["攻击使目标防御力最终降低50%，持续5s（不叠加，可沉默）"]
+			}
+		}
+	},
+	"anvil_healing_aura": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"All enemy units within attack range (excluding self) gains 200 DEF and restores 200HP/s",
+					"(does not stack, can be silenced)"
+				],
+				"jp": [
+					"自分を除く攻撃範囲内の敵は、防御力+200、HPが毎秒200回復する (重複しない、無効化できる)"
+				],
+				"cn": [
+					"攻击范围内全体敌方单位（不含自身）防御力增加200，每秒恢复200生命值，不可叠加（可被沉默） "
+				]
+			}
+		}
+	},
+	"drone_flying_time": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Automatically defeated after 30s"],
+				"jp": ["出現から30秒後、撤退する"],
+				"cn": ["出场30s后自动死亡"]
+			}
+		}
+	},
 	"mcv4_def_buff": {
 		"type": "others",
 		"tooltip": {
@@ -334,7 +433,7 @@
 		"tooltip": {
 			"simple": {
 				"en": [
-					"Every attack decreases operator's def by 10, lasts indefinitely until operator retreats"
+					"Attacks decreases operator's def by 10, lasts indefinitely until operator retreats"
 				],
 				"jp": ["攻撃1回につき相手のDEF10低下", "(蓄積する、撤退まで永続)"],
 				"cn": []
@@ -347,7 +446,7 @@
 		"tooltip": {
 			"simple": {
 				"en": [
-					"Every attack decreases operator's def by 15, lasts indefinitely until operator retreats"
+					"Attacks decreases operator's def by 15, lasts indefinitely until operator retreats"
 				],
 				"jp": ["攻撃1回につき相手のDEF15低下", "(蓄積する、撤退まで永続)"],
 				"cn": []
@@ -1684,10 +1783,25 @@
 			"detailed": { "en": [], "jp": [], "cn": [] }
 		}
 	},
+	"lower_target_priority": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["Lower Target Priority"],
+				"jp": ["狙われにくい"],
+				"cn": ["嘲讽等级为-1"]
+			},
+			"detailed": { "en": [], "jp": [], "cn": [] }
+		}
+	},
 	"taunt": {
 		"type": "others",
 		"tooltip": {
-			"simple": { "en": ["Taunt"], "jp": ["挑発"], "cn": ["嘲讽"] },
+			"simple": {
+				"en": ["Taunt - Higher Target Priority"],
+				"jp": ["挑発→狙われやすい"],
+				"cn": ["嘲讽"]
+			},
 			"detailed": { "en": [], "jp": [], "cn": [] }
 		}
 	},

@@ -7,17 +7,22 @@
 	},
 	"stats": {
 		"level0": {
-            "hp": "5000",
-            "atk": "250",
-            "def": "80",
-            "res": "50",
-            "aspd%": "100",
-            "aspd": "3.8",
-            "range": "1.4",
-            "weight": "0",
+			"hp": "5000",
+			"atk": "250",
+			"def": "80",
+			"res": "50",
+			"aspd%": "100",
+			"aspd": "3.8",
+			"range": "1.4",
+			"weight": "0",
 			"lifepoint": 1,
 			"ms": "1",
-			"special": []
+			"special": [
+				"lower_target_priority",
+				"drone_flying_time",
+				"splash_8sq_100",
+				"scrap_def_down"
+			]
 		}
 	},
 	"status_immune": [],
@@ -28,5 +33,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["ranged","flying","drone"]
+	"type": ["ranged", "flying", "drone"]
 }

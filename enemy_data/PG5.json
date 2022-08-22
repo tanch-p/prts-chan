@@ -23,7 +23,7 @@
 	},
 	"status_immune": [],
 	"normal_attack": {
-		"atk_type": ["ranged", "arts"],
+		"atk_type": ["ranged", "phys"],
 
 		"hits": 1
 	},

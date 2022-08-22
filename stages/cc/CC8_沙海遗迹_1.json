@@ -1,21 +1,21 @@
 {
 	"name": {
 		"en": "Desert Ruins",
-		"jp": "",
+		"jp": "沙海遗迹",
 		"cn": "沙海遗迹"
 	},
 	"img": "沙海遗迹",
 	"config": "CC8_沙海遗迹_1",
-	"ccType": "perma",
+	"ccType": "daily",
 	"enemies": [
-		{ "id": "PD1", "count": 7, "stats": "level1" },
+		{ "id": "D7", "count": 0, "stats": "level0" },
+		{ "id": "PS1", "count": 0, "stats": "level0" },
+		{ "id": "PS3", "count": 0, "stats": "level0" },
+		{ "id": "PD1", "count": 7, "stats": "level0" },
 		{ "id": "PD3", "count": 5, "stats": "level0" },
 		{ "id": "PG5", "count": 12, "stats": "level0" },
 		{ "id": "PD5", "count": 3, "stats": "level0" },
 		{ "id": "P-02", "count": 16, "stats": "level0" },
-		{ "id": "P-07", "count": 10, "stats": "level0" },
-		{ "id": "D7", "count": 0, "stats": "level0" },
-		{ "id": "PS1", "count": 0, "stats": "level0" },
-		{ "id": "PS3", "count": 0, "stats": "level0" }
+		{ "id": "P-07", "count": 10, "stats": "level0" }
 	]
 }

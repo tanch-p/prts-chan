@@ -278,8 +278,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +150%, ATK +100%, RES +50",
-					"jp": "「最後のケシク」トゥーラの最大HP+150%、攻撃力+100%、術耐性+50",
+					"en": "'The Last Kheshig', Tola's Max HP +150%, ATK +100%, RES +50, gains Stealth",
+					"jp": "「最後のケシク」トゥーラの最大HP+150%、攻撃力+100%、術耐性+50, ステルス",
 					"cn": ""
 				}
 			}
@@ -304,8 +304,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +65%, ATK +80%, DEF +60%",
-					"jp": "「最後のケシク」トゥーラの最大HP+65%、攻撃力+80%、防御力+60%",
+					"en": "'The Last Kheshig', Tola's Max HP +65%, ATK +80%, DEF +60%, 3 [Nightzmora Imitators] appear",
+					"jp": "「最後のケシク」トゥーラの最大HP+65%、攻撃力+80%、防御力+60%、悪夢のマニアが3体出現",
 					"cn": ""
 				}
 			},
@@ -324,8 +324,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +80%, ATK +150%, DEF +100%",
-					"jp": "「最後のケシク」トゥーラの最大HP+80%、攻撃力+150%、防御力+100%",
+					"en": "'The Last Kheshig', Tola's Max HP +80%, ATK +150%, DEF +100%, 2 waves of 3 [Nightzmora Imitators] appear",
+					"jp": "「最後のケシク」トゥーラの最大HP+80%、攻撃力+150%、防御力+100%、悪夢のマニアが2ウェーブで3体ずつ出現",
 					"cn": ""
 				}
 			}
@@ -749,9 +749,9 @@
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_amod_1",
 				"effects": [],
 				"tooltip": {
-					"en": "Number of firecrackers decreased to 1",
+					"en": "Center top and upper right City Neons are removed, deployable Knight's Emblems count decreased to 0",
 					"cn": "",
-					"jp": "使用できる「改良型爆竹」の数が1つに減少"
+					"jp": "上と右上の「都市のネオン」が除外され、使用できる「騎士の紋章」の数が0に減少"
 				}
 			},
 			{
@@ -760,9 +760,9 @@
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_2",
 				"effects": [],
 				"tooltip": {
-					"en": "Number of firecrackers decreased to 1",
+					"en": "ALL City Neons are removed, deployable Knight's Emblems count decreased to 1",
 					"cn": "",
-					"jp": "使用できる「改良型爆竹」の数が1つに減少"
+					"jp": "全「都市のネオン」が除外され、使用できる「騎士の紋章」の数が1つに減少"
 				}
 			},
 			{ "rank": 3 }
@@ -776,9 +776,9 @@
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_bmod_1",
 				"effects": [],
 				"tooltip": {
-					"en": "Number of firecrackers decreased to 1",
+					"en": "Center top and lower right City Neons are removed, deployable Knight's Emblems count decreased to 0",
 					"cn": "",
-					"jp": "使用できる「改良型爆竹」の数が1つに減少"
+					"jp": "上と右下の「都市のネオン」が除外され、使用できる「騎士の紋章」の数が0に減少"
 				}
 			},
 			{ "rank": 2 },
@@ -867,8 +867,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "",
-					"jp": "+200",
+					"en": "Armorless Union Crossbowmen Max HP +50% , ATK +40% , RES +30",
+					"jp": "「無冑盟弩手」の最大HP+50%、攻撃力+40%、術耐性+30, ステルス",
 					"cn": ""
 				}
 			},
@@ -888,11 +888,34 @@
 					"cn": ""
 				},
 				"img": "大骑士领酒吧街/75px-Enemy_aruass_1",
-				"effects": [{ "targets": ["NL5"], "mods": { "hp": "%100" } }],
+				"effects": [
+					{
+						"targets": ["NL5"],
+						"mods": {
+							"hp": "%100",
+							"special": {
+								"armorless_assassin_atk_stack": {
+									"type": "others",
+									"tooltip": {
+										"en": [
+											"While in areas without visibility, ATK increases by $5% per 0.5s, max 80 stacks (400%)$",
+											"Resets after attacking"
+										],
+										"jp": [
+											"【暗闇】内にいる時、攻撃力が$0.5秒+5%（最大80回/+400%）$",
+											"攻撃後リセットされる"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
 				"tooltip": {
-					"en": "Enemy DEF +200",
-					"jp": "全ての敵の防御力+200",
-					"cn": "所有敌人的防御力提升200"
+					"en": "Armorless Union Assassin Max HP +100% , ability's increase rate and max stacks doubled ",
+					"jp": "「無冑盟刺客」の最大HP+100%、特殊能力の増加速度と上限が倍になる",
+					"cn": ""
 				}
 			},
 			{ "rank": 2 },
