@@ -31,7 +31,6 @@ export default function CCIndex({ language, langPack }) {
 			.toString()
 			.padStart(2, "0")}T00:00:00Z`;
 		const date = new Date(dateISOstring);
-		console.log(dateISOstring);
 		dailyCCArr.push(
 			<div className="border-b border-gray-500 mt-1" key={day}>
 				<div className="h-min w-full text-sm py-1">{`${

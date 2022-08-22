@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import { useAppContext } from "context/AppContext";
-import CCIndex from "@/components/CC_index";
+import CCIndex from "@/components/CC/CC_index";
 
 //images
 
