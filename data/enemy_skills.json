@@ -1926,7 +1926,7 @@
 		"tooltip": {
 			"simple": {
 				"en": [
-					"When Blocked, only takes damage from blocking unit",
+					"When blocked, only takes damage from blocking unit",
 					"Self and Unit's def drops by 70%"
 				],
 				"jp": [

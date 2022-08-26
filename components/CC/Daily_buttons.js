@@ -31,6 +31,7 @@ export default function Daily_buttons({
 										if (option.rank === num) {
 											return (
 												<div
+													key={option.img}
 													className={`flex flex-wrap flex-row place-items-center rounded  md:min-w-min h-[50px] mx-2 my-2 active:brightness-75  ${toggleOptionColor(
 														category.category,
 														option.img,

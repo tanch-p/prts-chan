@@ -138,8 +138,8 @@ export default function EnemySimple({
 																break;
 															case "atk":
 																returnContainer = (
-																	<>
-																		<p className="whitespace-nowrap">
+																	<div className="whitespace-nowrap">
+																		<p>
 																			{moddedStats[stat]}
 																			<span>
 																				{parseAtkType(
@@ -159,7 +159,7 @@ export default function EnemySimple({
 																			specialMods,
 																			language
 																		)}
-																	</>
+																	</div>
 																);
 																break;
 															case "def":
@@ -168,21 +168,19 @@ export default function EnemySimple({
 															case "range":
 															case "ms":
 																returnContainer = (
-																	<>
-																		<p>
-																			{moddedStats[stat]}
-																			{parseSpecial(
-																				enemy,
-																				format,
-																				stat,
-																				stats,
-																				moddedStats[stat],
-																				row,
-																				specialMods,
-																				language
-																			)}
-																		</p>
-																	</>
+																	<div>
+																		<p>{moddedStats[stat]}</p>
+																		{parseSpecial(
+																			enemy,
+																			format,
+																			stat,
+																			stats,
+																			moddedStats[stat],
+																			row,
+																			specialMods,
+																			language
+																		)}
+																	</div>
 																);
 																break;
 															case "remarks":
