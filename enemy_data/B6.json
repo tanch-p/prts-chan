@@ -17,23 +17,7 @@
 			"weight": "0",
 			"lifepoint": 1,
 			"ms": "1",
-			"special": [
-				{
-					"name": "bug_explode",
-					"type": "atk",
-					"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
-					"multiplier": 4,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": ["Explodes on death, dealing 400% dmg to nearby units (Can be silenced)"],
-							"jp": ["死亡時には爆発する（無効化可能）"],
-							"cn": ["死亡后对周围造成大量物理伤害"]
-						}
-					}
-				}
-			]
+			"special": ["bug_explode"]
 		},
 		"酒商运输队": {
 			"hp": "7500",
@@ -46,27 +30,11 @@
 			"weight": "0",
 			"lifepoint": 1,
 			"ms": "1",
-			"special": [
-				{
-					"name": "bug_explode",
-					"type": "atk",
-					"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
-					"multiplier": 4,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": ["Explodes on death, dealing 400% dmg to nearby units"],
-							"jp": ["死亡時には爆発する（無効化可能）"],
-							"cn": ["死亡后对周围造成大量物理伤害"]
-						}
-					}
-				}
-			]
+			"special": ["bug_explode"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

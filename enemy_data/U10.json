@@ -18,32 +18,7 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "1.5",
-			"special": [
-				{
-					"name": "two_block",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Block count - 2"],
-							"jp": ["ブロック数2以上でブロック可能"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				},
-				{
-					"name": "civ_attack",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Can use long-ranged weapons to attack Ursus Civilians"],
-							"jp": ["ウルサス民間人に対して遠距離攻撃を行う"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["two_block", "ursus_civ_attack"]
 		},
 		"正义": {
 			"hp": "12000",
@@ -57,36 +32,11 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "1.5",
-			"special": [
-				{
-					"name": "two_block",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Block count - 2"],
-							"jp": ["ブロック数2以上でブロック可能"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				},
-				{
-					"name": "civ_attack",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Can use long-ranged weapons to attack Ursus Civilians"],
-							"jp": ["ウルサス民間人に対して遠距離攻撃を行う"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["two_block", "ursus_civ_attack"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

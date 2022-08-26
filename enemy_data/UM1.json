@@ -10,76 +10,20 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "3.5",
-			"lifepoint": 1,
 			"weight": "4",
-			"lifepoint":1,"ms": "0.65",
+			"lifepoint": 1,
+			"ms": "0.65",
 			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Hint: Lifepoint 1"],
-							"jp": ["ヒント: 耐久値減少量1"],
-							"cn": ["生命值:1"]
-						}
-					}
-				},
-				{
-					"name": "aspd_inc",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["HP↓50%→ASPD+40"],
-							"jp": ["HP↓50%→攻撃速度+40"],
-							"cn": ["HP↓50%→攻撃速度+40"]
-						}
-					}
-				},
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Attacks 4 units at once"],
-							"jp": ["4体同時攻撃"],
-							"cn": ["同時攻撃4个单位"]
-						}
-					}
-				},
-				{
-					"name": "burn",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Attacks inflict Burn (20 Arts dmg every 0.33s) for 10s"],
-							"jp": ["攻撃で10秒火傷・術(20/0.33秒)付与される"],
-							"cn": ["攻击造成灼烧伤害(20法伤/0.33秒)，持续10秒"]
-						}
-					}
-				},
-				{
-					"name": "explosion",
-					"type": "atk",
-					"suffix": { "en": "💥/Arts", "jp": "💥・術", "cn": "💥・法术" },
-					"multiplier": 1,
-					"fixed": 1000,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"When blocked, creates an explosion around self every 10s"
-							],
-							"jp": ["ブロックされると10秒毎に自分中心に爆発"],
-							"cn": []
-						}
-					}
-				}
+				"pompeii_aspd_inc",
+				"target_4",
+				"pompeii_burn",
+				"pompeii_explosion"
 			]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
-		"type": { "en": "ranged/arts", "jp": "遠・術", "cn": "远・法术" },
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

@@ -17,23 +17,11 @@
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.9",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Special Buff→Targets 2 units"],
-							"jp": ["特殊強化→2体攻撃"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["guerilla_sniper_buff"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

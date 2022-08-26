@@ -18,15 +18,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": { "en": ["Taunt"], "jp": ["挑発"], "cn": ["嘲讽"] },
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["taunt"]
 		},
 		"風蝕の高原": {
 			"hp": "10000",
@@ -40,15 +32,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": { "en": ["Taunt"], "jp": ["挑発"], "cn": ["嘲讽"] },
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["taunt"]
 		},
 		"高普尼克之拳": {
 			"hp": "10000",
@@ -62,19 +46,11 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": { "en": ["Taunt"], "jp": ["挑発"], "cn": ["嘲讽"] },
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["taunt"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

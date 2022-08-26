@@ -1,0 +1,32 @@
+{
+	"id": "NL1",
+	"name": {
+		"en": "Undertide Gloompincer",
+		"jp": "不浄なる鉗獣",
+		"cn": "暗潮钳兽"
+	},
+	"stats": {
+		"level0": {
+			"hp": "1800",
+			"atk": "350",
+			"def": "300",
+			"res": "30",
+			"aspd%": "100",
+			"aspd": "2.1",
+			"range": "0",
+			"weight": "0",
+			"lifepoint": 1,
+			"ms": "1.5",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee","infected_creature"]
+}

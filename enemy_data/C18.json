@@ -15,17 +15,15 @@
 			"aspd%": "100",
 			"aspd": "3.3",
 			"range": "0",
-
 			"weight": "3",
-			"lifepoint": 1,
 			"ms": "0.8",
 			"lifepoint": 1,
 			"special": []
 		}
 	},
 
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
@@ -34,42 +32,16 @@
 	"凍結耐性": "無",
 	"imprisoned": {
 		"mods": { "aspd": 0.5 },
-		"special": [
-			{
-				"name": "self_release",
-				"tooltip": {
-					"simple": {
-						"en": ["Imprisoned state, gets released on 4th attack"],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					},
-					"detailed": {
-						"en": ["Imprisoned state, gets released on 4th attack"],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["prisoner_atk_release"]
 	},
 	"released": {
 		"mods": { "atk": 1.5, "res": 40 },
-		"status_immune":[],
-"normal_attack": {
+		"status_immune": [],
+		"normal_attack": {
 			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Recovers 150 hp/s"],
-						"jp": ["毎秒HP150回復する"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["recover_hp_150"]
 	},
 	"type": ["melee", "elite"]
 }

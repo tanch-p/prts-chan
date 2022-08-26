@@ -17,24 +17,7 @@
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.9",
-			"special": [
-				{
-					"name": "barrier",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Barrier→for 30s, Def+3000, Res+95"],
-							"jp": ["バリア→30秒間、防御力+3000、術耐性+95"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["roarknight_barrier"]
 		},
 		"与虫为伴": {
 			"hp": "2800",
@@ -47,24 +30,7 @@
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.9",
-			"special": [
-				{
-					"name": "barrier",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Barrier→for 30s, Def+3000, Res+95"],
-							"jp": ["バリア→30秒間、防御力+3000、術耐性+95"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["roarknight_barrier"]
 		},
 		"8号競技場": {
 			"hp": "3300",
@@ -77,28 +43,11 @@
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.9",
-			"special": [
-				{
-					"name": "barrier",
-					"type": "self-buff",
-					"tooltip": {
-						"simple": {
-							"en": ["Barrier→for 30s, Def+3000, Res+95"],
-							"jp": ["バリア→30秒間、防御力+3000、術耐性+95"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["roarknight_barrier"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

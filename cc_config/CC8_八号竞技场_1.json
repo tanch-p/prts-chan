@@ -1,0 +1,240 @@
+[
+	{
+		"category": "crab",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "特化：鉗獣育成",
+					"en": "Pincerbeast 1",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_scorpn_1",
+				"effects": [{ "targets": ["K3"], "mods": { "def": "%40", "res": 40 } }],
+				"tooltip": {
+					"en": "[Training Pincerbeast] DEF +40%, RES +40",
+					"cn": "",
+					"jp": "全ての＜訓練用鉗獣＞の防御力+40%、術耐性+40"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_ms",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy Movement Speed 1",
+					"jp": "増幅：機動力I",
+					"cn": ""
+				},
+				"img": "75px-Enemy_movespeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"ms": "%40"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemies movement speed +40%",
+					"jp": "全ての敵の移動速度+40%",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_aspd",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced Ally ASPD 1",
+					"jp": "制限：疲労累積I",
+					"cn": ""
+				},
+				"img": "75px-Char_attackspeed_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ASPD -25",
+					"jp": "全ての味方の攻撃速度-25",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy ATK 2",
+					"jp": "増幅：火力II",
+					"cn": "源石环境：刺激II"
+				},
+				"img": "75px-Enemy_atk_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%35"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +35%",
+					"jp": "全ての敵の攻撃力+35%",
+					"cn": "所有敌人的攻击力提升35%"
+				}
+			}
+		]
+	},
+	{
+		"category": "deploy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Deploy Limit 2",
+					"jp": "環境：小規模戦II",
+					"cn": "环境：交战区II"
+				},
+				"img": "75px-Global_pcharnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Deploy Limit reduced to 6",
+					"jp": "同時配置可能数が6人に",
+					"cn": "可同时部署的单位数量减少至6"
+				}
+			}
+		]
+	},
+	{
+		"category": "grids",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Forbidden Grids 2",
+					"jp": "環境：峻険地形II",
+					"cn": ""
+				},
+				"img": "75px-Global_forbidloc_2",
+				"effects": [],
+				"tooltip": {
+					"en": "11 tiles forbid deployment",
+					"jp": "マップ上の11つのマスが配置不可に",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "dk_mod",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：単独訓練III",
+					"en": "Solo Knights 3",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_dekght_bmod_3",
+				"effects": [
+					{
+						"targets": ["DK1"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%50",
+							"res": 25,
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Stealth$"],
+										"jp": ["$ステルス$"],
+										"cn": ""
+									}
+								},
+								"corrupted_knight_charge_atk_CC": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/phys",
+										"jp": "スキル・物理",
+										"cn": ""
+									},
+									"multiplier": 3.8,
+									"hits": 1,
+									"fixed_inc": 0,
+									"tooltip": {
+										"en": ["Skill→Every 22s unleashes charged attack"],
+										"jp": ["スキル→チャージ攻撃、CD22秒"],
+										"cn": []
+									}
+								}
+							}
+						}
+					},
+					{
+						"targets": ["DK2"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%50",
+							"special": {
+								"withered_knight_arrow_bomb_CC": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/arts",
+										"jp": "スキル・術",
+										"cn": ""
+									},
+									"multiplier": 2.4,
+									"hits": 1,
+									"fixed_inc": 0,
+									"tooltip": {
+										"en": [
+											"Skill→Every 22s unleashes charged attack → Fires a delayed exploding arrow on max 3 targets, deals damage to target + surrounding 4 tiles"
+										],
+										"jp": [
+											"スキル→３体に爆発の矢を放つ、",
+											"対象と隣接4マスに術ダメージ、CD22秒"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Corrupted Knight] and [Withered Knight] Max HP +90%, ATK +50%, Charged Attacks dmg increased by 100%. [Corrupted Knight] RES+25 and gains stealth",
+					"cn": "",
+					"jp": "「腐敗騎士」と「凋零騎士」のHP+90%、攻撃力+50%、チャージ攻撃のダメージ +100%。「腐敗騎士」の術耐性+25、ステルスになる"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Reduced Ally ATK 3",
+					"jp": "制限：火力減衰III",
+					"cn": "环境：高价值目标III"
+				},
+				"img": "75px-Char_atk_3",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -45%",
+					"jp": "全ての味方の攻撃力-45%",
+					"cn": "所有我方单位的攻击力降低45%"
+				}
+			}
+		]
+	}
+]

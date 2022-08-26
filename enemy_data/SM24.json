@@ -1,0 +1,32 @@
+{
+	"id": "SM24",
+	"name": {
+		"en": "深溟喷溅者",
+		"jp": "深溟喷溅者",
+		"cn": "深溟喷溅者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "4000",
+			"atk": "650",
+			"def": "100",
+			"res": "50",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "1.1",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "0.3",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "sea_monster"]
+}

@@ -14,22 +14,11 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["AOE - 4sq around target"],
-							"jp": ["範囲攻撃→目標周囲4マス"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": ["splash_4sq_100"]
 		},
 		"第6区跡": {
 			"hp": "15000",
@@ -39,28 +28,15 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Normal Atks do 100% splash to 4 tiles surrounding target"
-							],
-							"jp": ["通常攻撃→攻撃対象の隣接4マスに100％のダメージ"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": ["splash_4sq_100"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

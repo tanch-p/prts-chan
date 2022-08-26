@@ -13,24 +13,11 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.9",
-			"special": [
-				{
-					"name": "minus_block",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Reduces maximum Block of attacked unit by 1 for 10s"],
-							"jp": ["攻撃時、対象のブロック数上限を10秒間-1する(重複しない)"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["agent_leader_minus_block"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "arts"],
 		"hits": 1
 	},

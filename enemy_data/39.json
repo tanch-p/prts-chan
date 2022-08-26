@@ -14,23 +14,10 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "splash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Normal Atks do 50% splash to 4 tiles surrounding target"],
-							"jp": ["通常攻撃→攻撃対象の隣接4マスに50％のダメージ"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["splash_4sq_50"]
 		},
 		"萨卡兹的渴求": {
 			"hp": "30000",
@@ -43,19 +30,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "splash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Normal Atks do 50% splash to 4 tiles surrounding target"],
-							"jp": ["通常攻撃→攻撃対象の隣接4マスに50％のダメージ"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["splash_4sq_50"]
 		},
 		"乌萨斯的渴求": {
 			"hp": "30000",
@@ -65,27 +40,14 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "splash",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Normal Atks do 50% splash to 4 tiles surrounding target"],
-							"jp": ["通常攻撃→攻撃対象の隣接4マスに50％のダメージ"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["splash_4sq_50"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

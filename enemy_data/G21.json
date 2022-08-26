@@ -14,24 +14,11 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.9",
-			"special": [
-				{
-					"name": "gray_shield",
-					"type": "def",
-					"tooltip": {
-						"simple": {
-							"en": ["DEF UP on break MS UP"],
-							"jp": [],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["greytail_shield"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

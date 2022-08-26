@@ -13,31 +13,11 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.9",
-			"special": [
-				{
-					"name": "greytail_shield",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Appears with a shield which absorbs up to 10002 Arts damage",
-								"Shield Active: DEF+1750",
-								"Shield Broken: MS+200%"
-							],
-							"jp": [
-								"登場時、合計10002の術攻撃を吸収するシールドを持つ",
-								"シールド存在中は防御力+1750",
-								"シールドが破れると移動速度+200％"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["greytail_shield"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

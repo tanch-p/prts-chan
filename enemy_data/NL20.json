@@ -1,0 +1,32 @@
+{
+	"id": "NL20",
+	"name": {
+		"en": "'The Last Kheshig', Tola",
+		"jp": "「最後のケシク」トゥーラ",
+		"cn": "“最后的怯薛”，拓拉"
+	},
+	"stats": {
+		"level0": {
+			"hp": "18000",
+			"atk": "1200",
+			"def": "700",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "0",
+			"weight": "5",
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": ["tola_nightzmora_slash"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "elite"]
+}

@@ -14,22 +14,11 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.4",
-			"special": [
-				{
-					"name": "standby",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
-							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.4",
+			"special": ["sarkaz_standby"]
 		},
 		"風蝕の高原": {
 			"hp": "8000",
@@ -39,22 +28,11 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.5",
-			"special": [
-				{
-					"name": "standby",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
-							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.5",
+			"special": ["sarkaz_standby"]
 		},
 		"似曾相识": {
 			"hp": "8000",
@@ -64,22 +42,11 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.4",
-			"special": [
-				{
-					"name": "standby",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
-							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.4",
+			"special": ["sarkaz_standby"]
 		},
 		"仪式之夜": {
 			"hp": "12000",
@@ -89,27 +56,16 @@
 			"aspd%": "100",
 			"aspd": "2.5",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.4",
-			"special": [
-				{
-					"name": "standby",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Does not attack while on standby","Combat Ready - ms +200%"],
-							"jp": ["待機中攻撃しない","【臨戦】態勢 - 移動速度+200%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.4",
+			"special": ["sarkaz_standby"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
-		"atk_type":["melee","arts"],
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "arts"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

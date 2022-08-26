@@ -17,23 +17,7 @@
 			"weight": "3",
 			"lifepoint": 5,
 			"ms": "0.8",
-			"special": [
-				{
-					"name": "jetpack",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"When blocked activates Jetpack, ms+50% and flies for 7s. CD25s"
-							],
-							"jp": [
-								"ブロックされたらジェットパックを起動→7秒間飛行する＆移動速度＋50％、CD25秒"
-							],
-							"cn": [""]
-						}
-					}
-				}
-			]
+			"special": ["JTM_jetpack"]
 		},
 		"大盗当头": {
 			"hp": "70000",
@@ -43,31 +27,14 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-
 			"weight": "3",
 			"lifepoint": 5,
 			"ms": "0.8",
-			"special": [
-				{
-					"name": "jetpack",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"When blocked activates Jetpack, ms+50% and flies for 7s. CD25s"
-							],
-							"jp": [
-								"ブロックされたらジェットパックを起動する→7秒間飛行する＆移動速度＋50％　CD25秒"
-							],
-							"cn": [""]
-						}
-					}
-				}
-			]
+			"special": ["JTM_jetpack"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

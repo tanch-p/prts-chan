@@ -10,24 +10,10 @@
 			"aspd%": "100",
 			"aspd": "4.5",
 			"range": "7",
-			
 			"weight": "2",
-			"lifepoint":1,"ms": "0.8",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Normal Atks do 100% splash to 8 tiles surrounding target"
-							],
-							"jp": ["通常攻撃→攻撃対象の隣接8マスに100％のダメージ"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["splash_8sq_100"]
 		},
 		"礼炮小队": {
 			"hp": "3300",
@@ -37,28 +23,14 @@
 			"aspd%": "100",
 			"aspd": "4.5",
 			"range": "7",
-			
 			"weight": "2",
-			"lifepoint":1,"ms": "0.8",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Normal Atks do 100% splash to 8 tiles surrounding target"
-							],
-							"jp": ["通常攻撃→攻撃対象の隣接8マスに100％のダメージ"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["splash_8sq_100"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

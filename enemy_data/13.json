@@ -17,20 +17,7 @@
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "1.2",
-			"special": [
-				{
-					"name": "no_block",
-					"type": "self_buff",
-					"tooltip": {
-						"simple": {
-							"en": ["Cannot be blocked"],
-							"jp": ["ブロックされない"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["no_block"]
 		},
 		"压轴登场": {
 			"hp": "3200",
@@ -40,24 +27,10 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "1.2",
-			"special": [
-				{
-					"name": "no_block",
-					"type": "self_buff",
-					"tooltip": {
-						"simple": {
-							"en": ["Cannot be blocked"],
-							"jp": ["ブロックされない"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["no_block"]
 		},
 		"危机四伏": {
 			"hp": "6600",
@@ -67,28 +40,14 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "1.2",
-			"special": [
-				{
-					"name": "no_block",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Cannot be blocked"],
-							"jp": ["ブロックされない"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["no_block"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["no_attack"],
 		"hits": 1
 	},

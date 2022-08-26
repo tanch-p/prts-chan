@@ -14,54 +14,16 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.9",
-			"special": [
-				{
-					"name": "knife",
-					"type": "atk",
-					"suffix": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
-					"multiplier": 0.3,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				},
-				{
-					"tooltip": {
-						"type": "others",
-						"simple": {
-							"en": ["Stealth", "Targets only units in sandstorm"],
-							"jp": [
-								"ステルス",
-								"砂嵐にさらされているユニットに射程無限の遠距離攻撃"
-							],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": ["redmark_melee", "redmark_sniper"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
-		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

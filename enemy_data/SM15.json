@@ -1,0 +1,32 @@
+{
+	"id": "SM15",
+	"name": {
+		"en": "深溟奠基者",
+		"jp": "深溟奠基者",
+		"cn": "深溟奠基者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "7000",
+			"atk": "450",
+			"def": "200",
+			"res": "30",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "0",
+			"weight": "2",
+			"lifepoint": 1,
+			"ms": "1",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "arts"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "sea_monster","elite"]
+}

@@ -1,0 +1,32 @@
+{
+	"id": "NL18",
+	"name": {
+		"en": "Nightzmora Imitator",
+		"jp": "悪夢のファン",
+		"cn": "梦魇效仿者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "10000",
+			"atk": "1200",
+			"def": "700",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "5",
+			"range": "0",
+			"weight": "5",
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": ["nightzmora_slash"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee", "elite"]
+}

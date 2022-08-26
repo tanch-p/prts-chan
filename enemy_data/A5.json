@@ -14,23 +14,10 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["AOE - 4sq around target"],
-							"jp": ["範囲攻撃→目標周囲4マス"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["splash_4sq_100"]
 		},
 		"落魄骑士": {
 			"hp": "6000",
@@ -40,23 +27,10 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["AOE - 4sq around target"],
-							"jp": ["範囲攻撃→目標周囲4マス"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["splash_4sq_100"]
 		},
 		"分赃不均": {
 			"hp": "7000",
@@ -66,27 +40,14 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "2.2",
-
 			"weight": "1",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["AOE - 4sq around target"],
-							"jp": ["範囲攻撃→目標周囲4マス"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["splash_4sq_100"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

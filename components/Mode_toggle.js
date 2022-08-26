@@ -1,5 +1,4 @@
-export default function ModeToggle({ hardMode, setHardMode, language }) {
-	const langPack = require(`../lang/${language}.json`);
+export default function ModeToggle({ hardMode, setHardMode, langPack }) {
 
 	return (
 		<div className="grid grid-cols-2 font-bold text-lg text-gray-700 mt-8 mb-3 select-none">

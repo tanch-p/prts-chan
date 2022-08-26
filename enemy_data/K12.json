@@ -17,26 +17,7 @@
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"name": "bloodboil",
-					"type": "others",
-					"multiplier": 2,
-					"fixed_inc": 0,
-					"suffix": { "en": "MAX", "jp": "最大", "cn": "" },
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Each time an enemy is defeated, gains ATK and ASPD, max 10 stacks."
-							],
-							"jp": [
-								"ほかの敵が倒される度に、攻撃力+10%・攻撃速度+5（最大10回）"
-							],
-							"cn": ["每有一个敌人死亡时攻击力与攻击速度提升，最多提升10次"]
-						}
-					}
-				}
-			]
+			"special": ["bloodboil_knight"]
 		},
 		"骑士对决": {
 			"hp": "70000",
@@ -49,32 +30,16 @@
 			"weight": "5",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": [
-				{
-					"name": "bloodboil",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Each time an enemy is defeated, ATK +40% and ASPD +40, max 3 stacks."
-							],
-							"jp": [
-								"ほかの敵が倒される度に、攻撃力+40%・攻撃速度+40（最大3回）"
-							],
-							"cn": ["每有一个敌人死亡时攻击力与攻击速度提升，最多提升3次"]
-						}
-					}
-				}
-			]
+			"special": ["bloodboil_骑士对决"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["melee","elite"]
+	"type": ["melee", "elite"]
 }

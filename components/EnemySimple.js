@@ -1,15 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import { parseRemarks } from "@/lib/parseRemarks";
-import { useState, useEffect } from "react";
+import { parseRemarks, parseSpecial } from "@/lib/parseRemarks";
+import { useState } from "react";
 import { parseType } from "../lib/parseType";
-import {
-	getAtkType,
-	parseAtkType,
-	setOtherMods,
-	getModdedStats,
-} from "../lib/parseStats";
-import { useAppContext } from "context/AppContext";
+import { getAtkType, parseAtkType, getModdedStats } from "../lib/parseStats";
 import { v4 as uuidv4 } from "uuid";
 
 const powerupOddRows = [
@@ -24,11 +17,12 @@ const powerupOddRows = [
 const multiformOddRows = ["enemy", "count", "type", "weight", "lifepoint"];
 
 export default function EnemySimple({
-	mapConfig,
+	multipliers,
+	specialMods,
 	language,
 	device,
 	fontThemes,
-	mode = "normal",
+	enemies,
 }) {
 	const [tableHeaders, setTableHeaders] = useState([
 		{ key: "enemy", show: true },
@@ -44,209 +38,10 @@ export default function EnemySimple({
 		{ key: "lifepoint", show: true },
 		{ key: "remarks", show: true },
 	]);
-	const [multipliers, setMultipliers] = useState({
-		ALL: { hp: 1, atk: 1, def: 1, res: 0, aspd: 1, ms: 1, range: 1, weight: 0 },
-	});
-	const [specialMods, setSpecialMods] = useState({});
 	// console.log("spMods", specialMods);
 	// console.log("mul", multipliers);
 
-	const {
-		selectedHardRelic,
-		selectedNormalRelic,
-		hallucinations,
-	} = useAppContext();
-
 	const langPack = require(`../lang/${language}.json`);
-
-	const parseSpecial = (enemy, format, stat, entry, moddedStat, row) => {
-		let specialModded = false;
-		if (format !== "multiform") {
-			if (row === 0) {
-				return getSkills(enemy.stats[entry].special, stat, moddedStat);
-			} else {
-				switch (format) {
-					case "prisoner":
-						return getSkills(enemy.released.special, stat, moddedStat);
-					case "powerup":
-						return getSkills(enemy.powerup.special, stat, moddedStat);
-				}
-			}
-		} else {
-			return;
-		}
-
-		return enemy["stats"][entry].special.map((skill) => {
-			let statValue = 0;
-			if (skill.type === stat) {
-				skillMultiplier = skill.multiplier;
-				// console.log(skill.multiplier, enemy.id);
-				if (enemy.format === "multiform") {
-					const multi_skill_index = enemy.forms[row].special.findIndex(
-						(ele) => ele.name === skill.name
-					);
-					if (multi_skill_index !== -1) {
-						skillMultiplier =
-							enemy.forms[row].special[multi_skill_index].multiplier;
-					}
-				}
-
-				if (
-					specialMods[enemy.id] &&
-					specialMods[enemy.id]?.hasOwnProperty(skill.name)
-				) {
-					if (specialMods[enemy.id][skill.name].hasOwnProperty("fixed-dmg")) {
-						return (
-							<p>
-								<span className="text-rose-600 font-semibold">
-									{specialMods[enemy.id][skill.name]["fixed-dmg"]}
-								</span>
-
-								{` (${skill.suffix[language]})`}
-							</p>
-						);
-					}
-					const specialModMultiplier =
-						specialMods[enemy.id][skill.name].multiplier;
-					statValue =
-						specialModMultiplier[0] === "%"
-							? base_stat *
-							  (skillMultiplier *
-									(1 + parseInt(specialModMultiplier.slice(1)) / 100))
-							: base_stat * (skillMultiplier + specialModMultiplier);
-					if (statValue !== base_stat * skillMultiplier) {
-						specialModded = true;
-					}
-				} else {
-					if (skill.hasOwnProperty("fixed-dmg")) {
-						return (
-							<p>
-								{skill["fixed-dmg"]}
-								{` (${skill.suffix[language]})`}
-							</p>
-						);
-					}
-					statValue = base_stat * skillMultiplier;
-				}
-				statValue += skill.fixedInc;
-				return (
-					<p>
-						<span
-							className={`${
-								specialModded ? "text-rose-600 font-semibold" : ""
-							} `}
-						>
-							{Math.round(statValue)}
-						</span>
-						{` (${
-							specialMods?.[enemy.id]?.[skill.name]?.suffix?.[language] ??
-							skill.suffix[language]
-						})`}
-					</p>
-				);
-			}
-		});
-	};
-
-	const getSkills = (skills, stat, moddedStat) => {
-		return skills.map((skill) => {
-			if (skill.type === stat) {
-				if (skill.hasOwnProperty("fixed")) {
-					return (
-						<p
-							// key={""}
-							className={`whitespace-nowrap ${stat === "atk" ? "" : "px-2"}`}
-						>
-							{skill["fixed"]}
-							{` (${skill.suffix[language]})`}
-						</p>
-					);
-				}
-				const fixedInc = skill.fixed_inc ?? 0;
-				const multiplier = skill.multiplier ?? 1;
-				return (
-					<p className={`whitespace-nowrap ${stat === "atk" ? "" : "px-2"}`}>
-						{Math.round((moddedStat + fixedInc) * multiplier)}
-						{` (${skill.suffix[language]})`}
-					</p>
-				);
-			}
-		});
-	};
-
-	const updateMultiplier = () => {
-		const distill = (holder, effects) => {
-			effects.forEach((effect) => {
-				for (const target of effect.targets) {
-					if (!holder[target]) {
-						holder[target] = {
-							hp: 1,
-							atk: 1,
-							def: 1,
-							res: 0,
-							aspd: 1,
-							ms: 1,
-							range: 1,
-							weight: 0,
-						};
-					}
-					for (const key in effect.mods) {
-						if (key !== "special") {
-							if (effect.mods[key][0] === "%") {
-								holder[target][key] *=
-									parseInt(effect.mods[key].slice(1)) / 100;
-							} else {
-								holder[target][key] = effect.mods[key];
-							}
-						} else {
-							if (!other_mods[target]) {
-								other_mods[target] = {};
-							}
-							setOtherMods(other_mods[target], effect.mods.special);
-						}
-					}
-				}
-			});
-		};
-
-		const multiplierHolder = {
-			ALL: {
-				hp: 1,
-				atk: 1,
-				def: 1,
-				res: 0,
-				aspd: 1,
-				ms: 1,
-				range: 1,
-				weight: 0,
-			},
-		};
-		const other_mods = {};
-		if (mode === "hard") {
-			const effects = mapConfig.hard_mods;
-			distill(multiplierHolder, effects);
-		}
-		for (const hallu of hallucinations) {
-			distill(multiplierHolder, hallu.effects);
-		}
-		for (const relic of selectedHardRelic) {
-			distill(multiplierHolder, relic.effects);
-		}
-		for (const relic of selectedNormalRelic) {
-			distill(multiplierHolder, relic.effects);
-		}
-
-		setSpecialMods({ ...other_mods });
-		setMultipliers(multiplierHolder);
-	};
-	useEffect(() => {
-		updateMultiplier();
-	}, [hallucinations, selectedHardRelic, selectedNormalRelic]);
-
-	const enemies =
-		mode === "hard"
-			? mapConfig.hard_enemies ?? mapConfig.enemies
-			: mapConfig.enemies;
 
 	const filteredTableHeaders = tableHeaders.filter((ele) => ele.show);
 
@@ -360,7 +155,9 @@ export default function EnemySimple({
 																			stat,
 																			stats,
 																			moddedStats[stat],
-																			row
+																			row,
+																			specialMods,
+																			language
 																		)}
 																	</>
 																);
@@ -380,7 +177,9 @@ export default function EnemySimple({
 																				stat,
 																				stats,
 																				moddedStats[stat],
-																				row
+																				row,
+																				specialMods,
+																				language
 																			)}
 																		</p>
 																	</>

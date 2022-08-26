@@ -14,34 +14,16 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "1.5",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1.3",
-			"special": [
-				{
-					"tooltip": {
-						"type": "others",
-						"simple": {
-							"en": ["Does not move","Under sandstorm, gains 40% phys/arts evasion"],
-							"jp": [
-								"移動しない",
-								"砂嵐にさらされている時、物理・術回避率+40%"
-							],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": ["ブロックされている時防御力+130"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "1.3",
+			"special": ["no_move", "sandstorm_evade_40"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
-		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

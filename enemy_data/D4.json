@@ -10,28 +10,10 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "2.5",
-
 			"weight": "0",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Buff→enemies within 2.5 tile range DEF+300, does not apply to self?, does not stack",
-								"Can be silenced"
-							],
-							"jp": [
-								"バフ→ 攻撃範囲内の敵の防御力300上昇（重複しない、自分に効果なし）",
-								"無力化可能"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["mcv4_def_buff"]
 		},
 		"level1": {
 			"hp": "8000",
@@ -41,28 +23,10 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "2.5",
-
 			"weight": "0",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Buff→enemies within 2.5 tile range DEF+300, does not apply to self?, does not stack",
-								"Can be silenced"
-							],
-							"jp": [
-								"バフ→ 攻撃範囲内の敵の防御力300上昇（重複しない、自分に効果なし）",
-								"無力化可能"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["mcv4_def_buff"]
 		},
 		"大盗当头": {
 			"hp": "8000",
@@ -72,28 +36,10 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "2.5",
-
 			"weight": "0",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Buff→enemies within 2.5 tile range DEF+300, does not apply to self?, does not stack",
-								"Can be silenced"
-							],
-							"jp": [
-								"バフ→ 攻撃範囲内の敵の防御力300上昇（重複しない、自分に効果なし）",
-								"無力化可能"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["mcv4_def_buff"]
 		},
 		"无人机起降库": {
 			"hp": "11000",
@@ -103,32 +49,14 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "2.5",
-
 			"weight": "0",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Buff→enemies within atk range DEF+300, does not apply to self, does not stack",
-								"Can be silenced"
-							],
-							"jp": [
-								"バフ→ 攻撃範囲内の敵の防御力300上昇（重複しない、自分に効果なし）",
-								"無力化可能"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["mcv4_def_buff"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["no_attack"],
 		"hits": 1
 	},

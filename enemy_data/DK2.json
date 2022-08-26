@@ -15,10 +15,10 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-
 			"weight": "6",
 			"lifepoint": 1,
-			"ms": "0.65"
+			"ms": "0.65",
+			"special": ["target_2", "withered_knight_arrow_bomb"]
 		},
 		"8号競技場": {
 			"hp": "25000",
@@ -28,51 +28,14 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-
 			"weight": "6",
-			"lifepoint": 1,
+			"lifepoint": 3,
 			"ms": "0.65",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Targets 2 units at once"],
-							"jp": ["2体まで攻撃する"],
-							"cn": ["最多同时攻击2个目标"]
-						}
-					}
-				},
-				{
-					"name": "explosive_arrow",
-					"type": "atk",
-					"suffix": { "en": "Skill/Arts", "jp": "スキル・術", "cn": "" },
-					"multiplier": 1.4,
-					"hits": 1,
-					"fixedInc": 0,
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Skill→Every 22s unleashes charged attack → Fires a delayed exploding arrow on max 3 targets, deals damage to target + surrounding 4 tiles"
-							],
-							"jp": [
-								"スキル→３体に爆発の矢を放つ、",
-								"対象と隣接4マスに術ダメージ、CD22秒"
-							],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["target_2", "withered_knight_arrow_bomb_CC"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},
@@ -87,21 +50,11 @@
 			"aspd": 2,
 			"ms": 1.5
 		},
-		"status_immune":[],
-"normal_attack": {
+		"status_immune": [],
+		"normal_attack": {
 			"atk_type": ["ranged", "arts"],
 			"hits": 1
 		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Move speed+150%"],
-						"jp": ["移動速度＋150％"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["ms_inc_150"]
 	}
 }

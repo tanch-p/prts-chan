@@ -18,29 +18,11 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": [
-				{
-					"name": "bind",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Skill → Uses chains to disable units (deals 35% atk Arts dmg/s for 20s, only used once per battle)"
-							],
-							"jp": [
-								"スキル→20秒間味方ユニット1体を束縛し、1秒当たり攻撃力35%分の継続術ダメージを与える",
-								"※本スキルは戦闘中1回使う"
-							],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"special": ["sarkaz_caster_bind"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

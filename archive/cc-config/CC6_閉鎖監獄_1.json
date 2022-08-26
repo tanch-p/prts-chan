@@ -73,7 +73,7 @@
             "mods": {
               "special": {
                 "imprisoned": {
-                  "fixed-def": 800,
+                  "fixed_def": 800,
                   "prison_arts": {
                     "tooltip": {
                       "simple": {

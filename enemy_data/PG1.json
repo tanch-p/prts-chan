@@ -14,32 +14,15 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "1.2",
-			"special": [
-				{
-					"name": "no_block",
-					"type": "self_buff",
-					"tooltip": {
-						"simple": {
-							"en": ["Cannot be blocked"],
-							"jp": ["ブロックされない"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "1.2",
+			"special": ["no_block"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
-		"type": {
-			"en": "Does not attack",
-			"jp": "攻撃しない",
-			"cn": "不攻击"
-		},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["no_attack"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

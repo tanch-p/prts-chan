@@ -14,14 +14,15 @@
 			"aspd%": "100",
 			"aspd": "3.3",
 			"range": "1.75",
-			
+
 			"weight": "0",
-			"lifepoint":1,"ms": "1",
-			"special": []
+			"lifepoint": 1,
+			"ms": "1",
+			"special": ["def_down_15"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

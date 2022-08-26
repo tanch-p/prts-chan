@@ -14,9 +14,10 @@
 			"aspd%": "100",
 			"aspd": "2.6",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.75",
+			"lifepoint": 1,
+			"ms": "0.75",
 			"special": []
 		},
 		"廃工場": {
@@ -27,14 +28,15 @@
 			"aspd%": "100",
 			"aspd": "3",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.75",
+			"lifepoint": 1,
+			"ms": "0.75",
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

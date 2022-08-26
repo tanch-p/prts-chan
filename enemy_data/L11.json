@@ -14,33 +14,11 @@
 			"aspd%": "100",
 			"aspd": "3.5",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.8",
-			"special": [
-				{
-					"name": "MR_squad_shield",
-					"type": "self-buff",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Appears with a shield which absorbs up to 6000 Arts damage",
-								"Shield Active: Max HP+50%、ASPD+50%"
-							],
-							"jp": [
-								"登場時、合計6000の術攻撃を吸収するシールドを持つ",
-								"シールド存在中は最大HP+50%、攻撃速度+50%"
-							],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["MR_zealot_shield"]
 		},
 		"無秩序な鉱区": {
 			"hp": "8000",
@@ -50,37 +28,15 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-			
+
 			"weight": "3",
-			"lifepoint":1,"ms": "0.8",
-			"special": [
-				{
-					"name": "MR_squad_shield",
-					"type": "self-buff",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Appears with a shield which absorbs up to 6000 Arts damage",
-								"Shield Active: Max HP+50%、ASPD+50%"
-							],
-							"jp": [
-								"登場時、合計6000の術攻撃を吸収するシールドを持つ",
-								"シールド存在中は最大HP+50%、攻撃速度+50%"
-							],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["MR_zealot_shield"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

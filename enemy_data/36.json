@@ -14,24 +14,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.5",
-			"special": [
-				{
-					"name": "stun_attack",
-					"type": "debuff",
-					"tooltip": {
-						"simple": {
-							"en": ["Every 3rd attack stuns target for 7s"],
-							"jp": ["攻撃2回の度に次の攻撃に相手を７秒スタンする"],
-							"cn": ["攻击2次后，下一次攻击会晕眩目标 "]
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["crusher_stun"]
 		},
 		"無秩序な鉱区": {
 			"hp": "10000",
@@ -45,24 +28,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.5",
-			"special": [
-				{
-					"name": "stun_attack",
-					"type": "debuff",
-					"tooltip": {
-						"simple": {
-							"en": ["Every 3rd attack stuns target for 7s"],
-							"jp": ["攻撃2回の度に次の攻撃に相手を７秒スタンする"],
-							"cn": ["攻击2次后，下一次攻击会晕眩目标 "]
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["crusher_stun"]
 		},
 		"步步紧逼": {
 			"hp": "16000",
@@ -76,28 +42,11 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.5",
-			"special": [
-				{
-					"name": "stun_attack",
-					"type": "debuff",
-					"tooltip": {
-						"simple": {
-							"en": ["Every 3rd attack stuns target for 7s"],
-							"jp": ["攻撃2回の度に次の攻撃に相手を７秒スタンする"],
-							"cn": ["攻击2次后，下一次攻击会晕眩目标 "]
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["crusher_stun"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

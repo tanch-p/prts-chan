@@ -21,8 +21,8 @@
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
@@ -31,43 +31,12 @@
 	"凍結耐性": "無",
 	"imprisoned": {
 		"mods": { "aspd": -0.5, "fixed_def": 300 },
-		"special": [
-			{
-				"name": "self_release",
-				"tooltip": {
-					"simple": {
-						"en": ["Imprisoned state, gets released on 4th attack"],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					},
-					"detailed": {
-						"en": ["Imprisoned state, gets released on 4th attack"],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					}
-				}
-			},
-			{
-				"name": "all_release",
-				"tooltip": {
-					"simple": {
-						"en": ["On release, releases all other prisoners on field as well"],
-						"jp": ["解放時フィールド上の敵全体解放状態にする"],
-						"cn": []
-					},
-					"detailed": {
-						"en": [],
-						"jp": ["解放時フィールド上の敵全体解放状態にする"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["prisoner_atk_release", "prisoner_release_all"]
 	},
 	"released": {
 		"mods": { "atk": 1.5 },
-		"status_immune":[],
-"normal_attack": {
+		"status_immune": [],
+		"normal_attack": {
 			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},

@@ -1,5 +1,6 @@
 import Risk_triangle from "./Risk_triangle";
 import useToggle from "hooks/useToggle";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Selected_options({ selected, ccType }) {
 	const [value, toggleValue] = useToggle(true);
@@ -28,7 +29,7 @@ export default function Selected_options({ selected, ccType }) {
 					<div className="flex flex-wrap flex-col border-b border-b-gray-400 w-[100vw] md:w-full md:h-[300px] md:max-w-[900px] text-[12px] lg:text-md bg-[#292929] text-gray-300">
 						{selected.map((option) => (
 							<>
-								<div>
+								<div key={uuidv4()}>
 									{/* {option.tooltip !== "" ? (
                 <Risk_triangle risk={option.rank} />
               ) : null} */}

@@ -1,6 +1,8 @@
 {
 	"index": {
-		"stages": "ステージ"
+		"stages": "ステージ",
+		"perma_stage": "Permanent Stage",
+		"daily_stage": "Daily Stages"
 	},
 	"normal_mode": "Combat Ops",
 	"hard_mode": "Emergency Ops",
@@ -13,6 +15,8 @@
 	"无序矿区": "Abandoned Mine",
 	"八号竞技场": "Arena 8",
 	"狂嚎沙原": "Howling Desert",
+	"大骑士领酒吧街":"大骑士领酒吧街",
+	"沙海遗迹":"Desert Ruins",
 
 	"hp_50": "HP↓50%",
 	"rage": "Rage Mode",
@@ -55,7 +59,7 @@
 		"pre": "Immune to ",
 		"post": "",
 		"separator":", ",
-		"ALL": "Immune to ALL status ailments",
+		"ALL": "Immune to ALL status ailments except Bind",
 		"stun": "Stun",
 		"sleep": "Sleep",
 		"freeze": "Freeze",

@@ -1,59 +1,33 @@
 {
-  "id": "T5",
-  "name": {
-    "en": "Tiacauh Fanatic",
-    "jp": "ティアカウ猛攻兵",
-    "cn": "提亚卡乌好战者"
-  },
-  "stats": {
-    "level0": {
-      "hp": "5500",
-      "atk": "320",
-      "def": "380",
-      "res": "10",
-      "aspd%": "100",
-      "aspd": "1",
-      "range": "0",
-      
-      "weight": "2",
-      "lifepoint":1,"ms": "0.8",
-      "special": [
-        {
-          "name": "defdown",
-          "type": "debuff",
-          "multiplier": 1,
-          "value": -10,
-          "tooltip": {
-            "simple": {
-              "en": [
-                "Every attack decreases operator's def by 10, lasts indefinitely until operator retreats"
-              ],
-              "jp": [
-                "攻撃1回につき相手のDEF10低下",
-                "(蓄積する、撤退まで永続)"
-              ],
-              "cn": []
-            },
-            "detailed": {
-              "en": [],
-              "jp": [
-                "攻撃1回につき相手のDEF10低下",
-                "(蓄積する、撤退まで永続)"
-              ],
-              "cn": []
-            }
-          }
-        }
-      ]
-    }
-  },
-  "status_immune":[],
-"normal_attack": {
+	"id": "T5",
+	"name": {
+		"en": "Tiacauh Fanatic",
+		"jp": "ティアカウ猛攻兵",
+		"cn": "提亚卡乌好战者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "5500",
+			"atk": "320",
+			"def": "380",
+			"res": "10",
+			"aspd%": "100",
+			"aspd": "1",
+			"range": "0",
+
+			"weight": "2",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["def_down_10"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
-    "hits": 1
-  },
-  "スタン耐性": "無",
-  "眠り耐性": "無",
-  "凍結耐性": "無",
-  "type": ["melee"]
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
 }

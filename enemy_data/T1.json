@@ -14,34 +14,15 @@
 			"aspd%": "100",
 			"aspd": "1.8",
 			"range": "0",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.8",
-			"special": [
-				{
-					"name": "def_up",
-					"type": "def",
-					"suffix": { "en": "blocked", "jp": "ブロック中", "cn": "被阻挡时" },
-					"multiplier": 1,
-					"fixedInc": 130,
-					"tooltip": {
-						"simple": {
-							"en": ["Blocked→DEF+130"],
-							"jp": ["ブロック→防御力+130"],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": ["ブロックされている時防御力+130"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["blocked_def_up_130"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

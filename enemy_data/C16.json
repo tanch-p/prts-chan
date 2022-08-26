@@ -15,9 +15,7 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
 			"weight": "2",
-			"lifepoint": 1,
 			"ms": "1.6",
 			"lifepoint": 1,
 			"special": []
@@ -36,8 +34,8 @@
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
@@ -47,41 +45,15 @@
 	"type": ["melee"],
 	"imprisoned": {
 		"mods": { "aspd": 0.5 },
-		"special": [
-			{
-				"name": "self_release",
-				"tooltip": {
-					"simple": {
-						"en": ["Imprisoned state, gets released on 4th attack"],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					},
-					"detailed": {
-						"en": ["Imprisoned state, gets released on 4th attack"],
-						"jp": ["禁固状態、攻撃4回→解放状態となる"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["prisoner_atk_release"]
 	},
 	"released": {
 		"mods": { "atk": 1.5 },
-		"status_immune":[],
-"normal_attack": {
+		"status_immune": [],
+		"normal_attack": {
 			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Attacks ignores 80% def"],
-						"jp": ["攻撃は防御80％無視"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["ignore_def_80"]
 	}
 }

@@ -1,35 +1,32 @@
 {
-    "id": "SM13",
-    "name_en": "Primal Sea Piercer",
-    "name_jp": "始海のピアッサー",
-    "name_cn": "始海穿刺者",
-    "atk_type_jp": "物理",
-    "hp": "9000",
-    "atk": "550",
-    "def": "240",
-    "res": "20",
-    "aspd%": "100",
-    "aspd": "3.5",
-    "range": "1.7",
-    
-    "weight": "3",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.75",
-    "type_jp": [
-        "遠距離",
-        "海の怪物"
-    ],
-    "type_en": [
-        "Ranged",
-        "Sea Monster"
-    ],
-    "type_cn": [
-        "远程",
-        "海怪"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "SM13",
+	"name": {
+		"en": "Primal Sea Piercer",
+		"jp": "始海のピアッサー",
+		"cn": "始海穿刺者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "9000",
+			"atk": "550",
+			"def": "240",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "3.5",
+			"range": "1.7",
+			"weight": "3",
+			"lifepoint": 1,
+			"ms": "0.75",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "sea_monster","elite"]
 }

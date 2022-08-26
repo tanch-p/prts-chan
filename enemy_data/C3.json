@@ -14,26 +14,15 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "0.8",
-			"special": [
-				{
-					"name": "stealth",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Stealth"],
-							"jp": ["ステルス"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["stealth"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

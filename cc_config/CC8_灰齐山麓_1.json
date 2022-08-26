@@ -1,0 +1,217 @@
+[
+	{
+		"category": "char_aspd",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced Ally ASPD 1",
+					"jp": "制限：疲労累積I",
+					"cn": ""
+				},
+				"img": "75px-Char_attackspeed_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ASPD -20",
+					"jp": "全ての味方の攻撃速度-20",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：体力減衰I",
+					"en": "Reduced Operator HP 1",
+					"cn": "源石环境：侵蚀I"
+				},
+				"img": "75px-Char_hp_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -15%",
+					"jp": "全ての味方の最大HP-15%",
+					"cn": "所有我方单位的生命值上限降低15%"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "DP Down 1",
+					"jp": "指令：孤軍奮闘I",
+					"cn": "目标：深度渗透I"
+				},
+				"img": "75px-Global_costrecovery_1",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 25%",
+					"jp": "コストの自然回復速度-25%",
+					"cn": "部署费用的自然回复速度降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "dusk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Dusk Weft and Warp",
+					"jp": "自在　緯地経天",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_xi_bmod_2",
+				"effects": [
+					{
+						"targets": ["DSK"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%70",
+							"res": 15,
+							"special": {
+								"weft_and_warp_CC": {
+									"multiplier": 0,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": ["Uses $'Weft and Warp'$ every 30s"],
+										"jp": ["30秒毎に$「緯地経天」$使用する"],
+										"cn": ""
+									},
+									"tooltip2": {
+										"en": ["Uses $'Weft and Warp'$ every 30s"],
+										"jp": ["30秒毎に$「緯地経天」$使用する"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Free] Max HP +90%, ATK +70%, +15 RES, uses 'Weft And Warp'",
+					"cn": "",
+					"jp": "「ジザイ」の最大HP+90%、攻撃力+70%、術耐性+15、【緯地経天】を使用する"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy HP 2",
+					"jp": "増幅：体力II",
+					"cn": "源石环境：活性II"
+				},
+				"img": "75px-Enemy_hp_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%60"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +60%",
+					"jp": "全ての敵の最大HP+60%",
+					"cn": "所有敌人的生命值提升60%"
+				}
+			}
+		]
+	},
+	{
+		"category": "envy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Envy",
+					"jp": "ソネミ",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_spmage_2",
+				"effects": [
+					{
+						"targets": ["SF13"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%50",
+							"special": {
+								"envy_beam": {
+									"multiplier": 2,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": [
+											"Uses Charged Atk every $18s$ - after 5s does 200% Arts damage to single target, and inverts tile element target is on"
+										],
+										"jp": [
+											"$18秒$毎に溜め攻撃→5秒後単体に200%術ダメージ、目標所在の床属性を反転させる"
+										],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Envy] Max HP +90%, ATK +50%, charged attack cooldown decreased by 70%",
+					"cn": "",
+					"jp": "「ソネミ」の最大HP+90%、攻撃力+50%、チャージ攻撃の間隔が70%短縮"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_aspd",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Reduced Ally ASPD 3",
+					"jp": "制限：疲労累積III",
+					"cn": ""
+				},
+				"img": "75px-Char_attackspeed_3",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ASPD -60",
+					"jp": "全ての味方の攻撃速度-60",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Supporters 3",
+					"jp": "制限：過負荷III",
+					"cn": ""
+				},
+				"img": "灰齐山麓/Char_cost_supporters_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Supporter, Healer and Defender DP Cost tripled, and the redeployment time extended by 100%.",
+					"cn": "",
+					"jp": "医療・重装・補助の配置コストが3倍、再配置時間が+100%"
+				}
+			}
+		]
+	}
+]

@@ -1,0 +1,32 @@
+{
+	"id": "NL4",
+	"name": {
+		"en": "Armorless Union Crossbowman Leader",
+		"jp": "無冑盟弩手隊長",
+		"cn": "无胄盟弩手组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "4000",
+			"atk": "350",
+			"def": "150",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "2.9",
+			"range": "2",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": ["armorless_assassin_atk_arts"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged"]
+}

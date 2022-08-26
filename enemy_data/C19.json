@@ -21,8 +21,8 @@
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["no_attack"],
 		"hits": 1
 	},
@@ -32,81 +32,15 @@
 	"type": ["ranged", "elite"],
 	"imprisoned": {
 		"mods": { "aspd": 0.5, "fixed_def": 300 },
-		"special": [
-			{
-				"name": "caster_release",
-				"tooltip": {
-					"simple": {
-						"en": ["Imprisoned state, does not attack"],
-						"jp": ["禁固状態中→攻撃しない"],
-						"cn": []
-					},
-					"detailed": {
-						"en": [],
-						"jp": ["禁固状態中→攻撃しない"],
-						"cn": []
-					}
-				}
-			},
-			{
-				"name": "prison_arts",
-				"type": "buff",
-				"tooltip": {
-					"simple": {
-						"en": [
-							"Buff→All enemies on field gains +30% aspd (Does not stack)"
-						],
-						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-						"cn": []
-					},
-					"detailed": {
-						"en": [
-							"Buff→All enemies on field gains +30% aspd (Does not stack)"
-						],
-						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["caster_prisoner_imprisoned", "aspd_buff_ALL"]
 	},
 	"released": {
 		"mods": { "atk": 1.5 },
-		"status_immune":[],
-"normal_attack": {
+		"status_immune": [],
+		"normal_attack": {
 			"atk_type": ["ranged", "arts"],
 			"hits": 1
 		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Attacks 2 targets at once"],
-						"jp": ["2体同時攻撃"],
-						"cn": []
-					}
-				}
-			},
-			{
-				"name": "prison_arts",
-				"type": "buff",
-				"tooltip": {
-					"simple": {
-						"en": [
-							"Buff→All enemies on field gains +30% aspd (Does not stack)"
-						],
-						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-						"cn": []
-					},
-					"detailed": {
-						"en": [
-							"Buff→All enemies on field gains +30% aspd (Does not stack)"
-						],
-						"jp": ["バフ→敵全体攻撃速度+30％（重複しない）"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["target_2", "aspd_buff_ALL"]
 	}
 }

@@ -17,34 +17,7 @@
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.4",
-			"special": [
-				{
-					"name": "multi-target",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Normal Atks targets 2 units"],
-							"jp": ["通常攻撃→2体同時攻撃"],
-							"cn": []
-						},
-						"detailed": { "en": [], "jp": [], "cn": [] }
-					}
-				},
-				{
-					"name": "standby",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Does not attack while on standby",
-								"Combat Ready - ms +200%"
-							],
-							"jp": ["待機中攻撃しない", "【臨戦】態勢 - 移動速度+200%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["target_2", "sarkaz_standby"]
 		},
 		"風蝕の高原": {
 			"hp": "15000",
@@ -57,37 +30,11 @@
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.4",
-			"special": [
-				{
-					"name": "multi-target",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Normal Atks targets 2 units"],
-							"jp": ["通常攻撃→2体同時攻撃"],
-							"cn": []
-						}
-					}
-				},
-				{
-					"name": "standby",
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Does not attack while on standby",
-								"Combat Ready - ms +200%"
-							],
-							"jp": ["待機中攻撃しない", "【臨戦】態勢 - 移動速度+200%"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["target_2", "sarkaz_standby"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1
 	},

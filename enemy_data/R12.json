@@ -14,35 +14,16 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "1.5",
-			
+
 			"weight": "1",
-			"lifepoint":1,"ms": "1.3",
-			"special": [
-				{
-					"tooltip": {
-						"type": "others",
-						"simple": {
-							"en": ["Summons hologram when attacked","While hologram is on field:","Cannot be blocked, does not attack, lower target priority"],
-							"jp": [
-								"ダメージ受けるとホログラムを召喚",
-								"ホログラムがある間：","攻撃せず、ブロック不可となり、狙われにくくなる",
-								"砂嵐にさらされている時、物理・術回避率+40%"
-							],
-							"cn": []
-						},
-						"detailed": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				}
-			]
+			"lifepoint": 1,
+			"ms": "1.3",
+			"special": ["redmark_hologram", "sandstorm_evade_40"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
-		"type": { "en": "ranged/phys", "jp": "遠・物理", "cn": "远・物理" },
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},
 	"スタン耐性": "無",

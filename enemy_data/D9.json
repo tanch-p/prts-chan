@@ -3,38 +3,21 @@
 	"name": { "en": "Frost", "jp": "コキュートス", "cn": "寒霜" },
 	"stats": {
 		"level0": {
-            "hp": "6500",
-            "atk": "100",
-            "def": "600",
-            "res": "30",
-            "aspd%": "100",
-            "aspd": "1",
-            "range": "2.5",
-            
-            "weight": "1",
-            "lifepoint":1,"ms": "0.9",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Debuff→operators with ranged aspd down",
-								"Can be silenced"
-							],
-							"jp": [
-								"バフ→ 攻撃範囲内の",
-								"無力化可能"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"hp": "6500",
+			"atk": "100",
+			"def": "600",
+			"res": "30",
+			"aspd%": "100",
+			"aspd": "1",
+			"range": "2.5",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": ["drone_frost_debuff"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["no_attack"],
 		"hits": 1
 	},

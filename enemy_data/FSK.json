@@ -18,37 +18,7 @@
 			"weight": "3",
 			"lifepoint": 5,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "fsk_powerup_10",
-					"type": "atk",
-					"multiplier": 1.7,
-					"suffix": { "en": "10 stacks", "jp": "10回", "cn": "10次" },
-					"tooltip": {
-						"simple": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				},
-				{
-					"name": "fsk_powerup",
-					"type": "atk",
-					"multiplier": 2.4,
-					"suffix": { "en": "20 stacks", "jp": "20回", "cn": "20次" },
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Every atk increases atk by 7%, aspd by 5, max 28 stacks",
-								"resets after not attacking for 4s"
-							],
-							"jp": ["攻撃するたびに攻撃力7%と攻撃速度が5上昇(28回まで）"],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["fsk_powerup_10", "fsk_powerup"]
 		},
 		"恐怖传说": {
 			"hp": "60000",
@@ -62,40 +32,7 @@
 			"weight": "3",
 			"lifepoint": 5,
 			"ms": "0.6",
-			"special": [
-				{
-					"name": "fsk_powerup_10",
-					"type": "atk",
-					"multiplier": 1.7,
-					"suffix": { "en": "10 stacks", "jp": "10回", "cn": "10次" },
-					"tooltip": {
-						"simple": {
-							"en": [],
-							"jp": [],
-							"cn": []
-						}
-					}
-				},
-				{
-					"name": "fsk_powerup",
-					"type": "atk",
-					"multiplier": 2.4,
-					"suffix": { "en": "20 stacks", "jp": "20回", "cn": "20次" },
-					"tooltip": {
-						"simple": {
-							"en": [
-								"Every atk increases atk by 7%, aspd by 5, max 28 stacks",
-								"resets after not attacking for 4s"
-							],
-							"jp": [
-								"攻撃するたびに攻撃力7%と攻撃速度が5上昇(28回まで）",
-								"4秒間攻撃しなかったら強化状態がリセット"
-							],
-							"cn": []
-						}
-					}
-				}
-			]
+			"special": ["fsk_powerup_10", "fsk_powerup"]
 		}
 	},
 	"status_immune": [],

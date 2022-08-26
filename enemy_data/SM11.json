@@ -1,33 +1,32 @@
 {
-    "id": "SM11",
-    "name_en": "Pocket Sea Crawler",
-    "name_jp": "嚢海のクローラー",
-    "name_cn": "囊海爬行者",
-    "atk_type_jp": "攻撃しない",
-    "hp": "25000",
-    "atk": "300",
-    "def": "0",
-    "res": "0",
-    "aspd%": "100",
-    "aspd": "3",
-    "range": "0",
-    
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.4",
-    "type_jp": [
-        "攻撃しない",
-        "海の怪物"
-    ],
-    "type_en": [
-        "Does not attack",
-        "Sea Monster"
-    ],
-    "type_cn": [
-        "不攻击",
-        "海怪"
-    ],
-    "special": ""
+	"id": "SM11",
+	"name": {
+		"en": "Pocket Sea Crawler",
+		"jp": "嚢海のクローラー",
+		"cn": "囊海爬行者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "25000",
+			"atk": "300",
+			"def": "0",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "3",
+			"range": "0",
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.4",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["no_attack"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "sea_monster", "elite"]
 }

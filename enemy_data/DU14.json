@@ -18,22 +18,11 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": [
-				{
-					"type": "others",
-					"tooltip": {
-						"simple": {
-							"en": ["Becomes ground unit after Stun, Sleep, Frozen"],
-							"jp": ["スタン/睡眠/凍結を受けると飛行が解除される"],
-							"cn": [""]
-						}
-					}
-				}
-			]
+			"special": ["dublinn_hover"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
 	},

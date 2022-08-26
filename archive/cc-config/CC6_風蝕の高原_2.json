@@ -10,7 +10,7 @@
           "cn": ""
         },
         "img": "風蝕の高原/75px-Enemy_def_1",
-        "effects": [{ "targets": ["ALL"], "mods": { "fixed-def": 150 } }],
+        "effects": [{ "targets": ["ALL"], "mods": { "fixed_def": 150 } }],
         "tooltip": {
           "en": "Enemy DEF +150",
           "cn": "",

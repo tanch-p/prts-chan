@@ -1,0 +1,32 @@
+{
+	"id": "NL6",
+	"name": {
+		"en": "Armorless Union Assassin Leader",
+		"jp": "無冑盟刺客隊長",
+		"cn": "无胄盟刺客组长"
+	},
+	"stats": {
+		"level0": {
+			"hp": "5500",
+			"atk": "500",
+			"def": "300",
+			"res": "20",
+			"aspd%": "100",
+			"aspd": "2.2",
+			"range": "0",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "1",
+			"special": ["armorless_assassin_atk_stack"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["melee"]
+}

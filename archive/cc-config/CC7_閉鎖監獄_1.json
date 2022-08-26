@@ -1,0 +1,241 @@
+[
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Enemy HP 1",
+					"jp": "増幅：体力I",
+					"cn": "源石环境：活性I"
+				},
+				"img": "75px-Enemy_hp_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%30"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +30%",
+					"jp": "全ての敵の最大HP+30%",
+					"cn": "所有敌人的生命值提升30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_def",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy DEF",
+					"jp": "増幅：装甲I",
+					"cn": "反装甲I"
+				},
+				"img": "75px-Enemy_def_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"fixed_def": 100
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy DEF +100",
+					"jp": "全ての敵の防御力+100",
+					"cn": "所有敌人的防御力提升100"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_ms",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy Movement Speed 1",
+					"jp": "増幅：機動力I",
+					"cn": ""
+				},
+				"img": "75px-Enemy_movespeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"ms": "%50"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemies movement speed +50%",
+					"jp": "全ての敵の移動速度+50%",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "prison_2",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：束縛解除II",
+					"en": "Release 2",
+					"cn": ""
+				},
+				"img": "閉鎖監獄/75px-Enemy_prison_2",
+				"effects": [
+					{
+						"targets": ["C22", "C21", "C19", "C17", "C15", "C13", "C11"],
+						"mods": {
+							"special": {
+								"imprisoned": {
+									"self_release": {
+										"tooltip": {
+											"simple": {
+												"en": [
+													"Imprisoned state, gets released on $3nd attack$"
+												],
+												"jp": ["禁固状態、攻撃$3回$→解放状態となる"],
+												"cn": []
+											}
+										}
+									}
+								},
+								"release": {
+									"atk": 2
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Number of attacks to liberate prisoners reduced by 1, when released attack increased by 100%",
+					"cn": "",
+					"jp": "全ての囚人の禁固状態の解除に必要な攻撃回数-1、解除後の攻撃力上昇効果は+100%になる"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy HP 2",
+					"jp": "増幅：体力II",
+					"cn": "源石环境：活性II"
+				},
+				"img": "75px-Enemy_hp_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%70"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +70%",
+					"jp": "全ての敵の最大HP+70%",
+					"cn": "所有敌人的生命值提升70%"
+				}
+			}
+		]
+	},
+	{
+		"category": "deploy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Deploy Limit 2",
+					"jp": "環境：小規模戦II",
+					"cn": "环境：交战区II"
+				},
+				"img": "75px-Global_pcharnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Deploy Limit reduced to 6",
+					"jp": "同時配置可能数が6人に",
+					"cn": "可同时部署的单位数量减少至6"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：重火力II",
+					"en": "Triple DP Cost Caster and Specialist",
+					"cn": ""
+				},
+				"img": "75px-Char_cost_casterspecial_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Cost of Casters and Specialists tripled and redeployment time +50%",
+					"cn": "",
+					"jp": "術師・特殊の配置コストが3倍、再配置時間が+50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy ATK 2",
+					"jp": "増幅：火力II",
+					"cn": "源石环境：刺激II"
+				},
+				"img": "75px-Enemy_atk_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%50"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +50%",
+					"jp": "全ての敵の攻撃力+50%",
+					"cn": "所有敌人的攻击力提升50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "DP Down 3",
+					"jp": "指令：孤軍奮闘III",
+					"cn": "目标：深度渗透III"
+				},
+				"img": "75px-Global_costrecovery_3",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 75%",
+					"jp": "コストの自然回復速度-75%",
+					"cn": "部署费用的自然回复速度降低75%"
+				}
+			}
+		]
+	}
+]

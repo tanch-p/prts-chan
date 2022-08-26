@@ -14,14 +14,14 @@
 			"aspd%": "100",
 			"aspd": "1.7",
 			"range": "0",
-			
 			"weight": "0",
-			"lifepoint":1,"ms": "1",
-			"special": []
+			"lifepoint": 1,
+			"ms": "1",
+			"special": ["bug_explode_frost"]
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

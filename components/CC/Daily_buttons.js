@@ -12,7 +12,7 @@ export default function Daily_buttons({
 
 	return (
 		<>
-			<div className="w-[100vw] md:w-full overflow-x-scroll md:overflow-hidden">
+			<div className="w-[100vw] md:w-full overflow-x-scroll md:overflow-hidden text-black">
 				<div className="flex flex-wrap flex-row md:min-h-min w-[190vw] overflow-auto md:w-full md:max-w-[900px] select-none bg-neutral-300 ">
 					{rank.map((num) => (
 						<div
@@ -25,7 +25,7 @@ export default function Daily_buttons({
 								</p>
 								<Risk_triangle risk={num} type={"daily"} />
 							</div>
-							<div className="flex flex-wrap flex-col">
+							<div className="grid grid-rows-3">
 								{ccConfig.map((category) =>
 									category[`options`].map((option) => {
 										if (option.rank === num) {
@@ -56,7 +56,7 @@ export default function Daily_buttons({
 														} `}
 													/>
 													<p
-														className={` px-2 ${
+														className={`px-2 ${
 															language === "en"
 																? "text-sm font-semibold w-[152px]"
 																: "font-medium w-[150px]"
