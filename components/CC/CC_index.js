@@ -8,23 +8,23 @@ export default function CCIndex({ language, langPack }) {
 	};
 	const dailyStages = [
 		{ text: "沙海遗迹", link: "CC8_沙海遗迹_1" },
-		{ text: "沙海遗迹", link: "CC7_炽热溶洞_1" },
-		{ text: "无序矿区", link: "CC7_风蚀高地_1" },
-		{ text: "狂嚎沙原", link: "CC7_闭锁监狱_1" },
-		{ text: "炽热溶洞", link: "CC7_遗弃地块_1" },
-		{ text: "八号竞技场", link: "CC7_无序矿区_1" },
-		{ text: "遗弃地块", link: "CC7_八号竞技场_1" },
-		{ text: "灰齐山麓", link: "CC7_狂嚎沙原_1" },
-		{ text: "狂嚎沙原", link: "CC7_风蚀高地_2" },
-		{ text: "灰齐山麓", link: "CC7_狂嚎沙原_2" },
-		{ text: "炽热溶洞", link: "CC7_遗弃地块_2" },
-		{ text: "遗弃地块", link: "CC7_八号竞技场_2" },
-		{ text: "八号竞技场", link: "CC7_无序矿区_2" },
-		{ text: "沙海遗迹", link: "CC7_炽热溶洞_2" },
+		{ text: "沙海遗迹", link: "CC8_沙海遗迹_1" },
+		{ text: "无序矿区", link: "CC8_无序矿区_1" },
+		{ text: "狂嚎沙原", link: "CC8_狂嚎沙原_1" },
+		{ text: "炽热溶洞", link: "CC8_炽热溶洞_1" },
+		{ text: "八号竞技场", link: "CC8_八号竞技场_1" },
+		{ text: "遗弃地块", link: "CC8_遗弃地块_1" },
+		{ text: "灰齐山麓", link: "CC8_灰齐山麓_1" },
+		{ text: "狂嚎沙原", link: "CC8_狂嚎沙原_2" },
+		{ text: "灰齐山麓", link: "CC8_灰齐山麓_2" },
+		{ text: "炽热溶洞", link: "CC8_炽热溶洞_2" },
+		{ text: "遗弃地块", link: "CC8_遗弃地块_2" },
+		{ text: "八号竞技场", link: "CC8_八号竞技场_2" },
+		{ text: "沙海遗迹", link: "CC8_沙海遗迹_2" },
 	];
 
 	const dailyCCArr = [];
-	let day = 26;
+	let day = 30;
 	let month = 8;
 	for (const [index, { text, link }] of dailyStages.entries()) {
 		const dateISOstring = `2022-0${month}-${day

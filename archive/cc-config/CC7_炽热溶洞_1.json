@@ -1,0 +1,197 @@
+[
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 1,
+				"name": { "jp": "増幅：体力I", "en": "Enemy HP 1", "cn": "" },
+				"img": "75px-Enemy_hp_1",
+				"effects": [{ "targets": ["ALL"], "mods": { "hp": "%30" } }],
+				"tooltip": {
+					"en": "Enemy Max HP +30%",
+					"cn": "",
+					"jp": "全ての敵の最大HP+30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint_1",
+		"options": [
+			{
+				"rank": 1,
+				"name": { "jp": "指令：背水の陣", "en": "None Escape", "cn": "" },
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"cn": "",
+					"jp": "防衛ラインの最大耐久値が1に"
+				}
+			}
+		]
+	},
+	{
+		"category": "map_vol",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "環境：溶岩地帯α",
+					"en": "Environment: Surging Lava α",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Global_forbidloc_amod_1",
+				"effects": [],
+				"tooltip": {
+					"en": "1 tile forbids deployment and [Lava Fountain]'s damage is increased by 200",
+					"cn": "",
+					"jp": "マップ上の1つのマスが配置不可になり、溶岩噴出口によるダメージ+200"
+				}
+			}
+		]
+	},
+
+	{
+		"category": "pompeii",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "強敵：粘性火焔II",
+					"en": "Pompeii: Viscous Flame II",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_fire_2",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": {
+							"special": {
+								"burn": {
+									"tooltip": {
+										"en": [
+											"Attacks inflict Burn ($25$ Arts dmg every 0.33s) for $30s$"
+										],
+										"jp": ["攻撃で$30秒$火傷・術($25$/0.33秒)付与される"],
+										"cn": ["攻击造成灼烧伤害($25法伤$/0.33秒)，持续$30秒$"]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii's burn damage increased by 25% and duration by 200%",
+					"cn": "",
+					"jp": "「Pompeii」による火傷ダメージが+25%、持続時間200%延長"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：縦深攻撃",
+					"en": "Sniper and Guard 2",
+					"cn": ""
+				},
+				"img": "75px-Char_cost_sniperguard_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Cost of Snipers and Guards tripled and redeployment time increased by 50%",
+					"cn": "",
+					"jp": "狙撃・前衛の配置コストが3倍、再配置時間+50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "環境：少数精鋭II",
+					"en": "Max Squad Size 2",
+					"cn": ""
+				},
+				"img": "75px-Global_pcharnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 7 operators in squad",
+					"cn": "",
+					"jp": "編成可能数が7人に"
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_a",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：溶岩爆裂III",
+					"en": "Pompeii: Internal Eruption III",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_a_amod_3",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": {
+							"hp": "%120",
+							"special": {
+								"explosion": {
+									"type": "atk",
+									"fixed": 2000,
+									"tooltip": {
+										"en": [
+											"When blocked, creates an explosion around self every $5s$"
+										],
+										"jp": ["ブロックされると$5秒$毎に自分中心に爆発"],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii Max HP increased by 120%, explosion damage by 100%, and explosion re-cast decreased by 50%",
+					"cn": "",
+					"jp": "「Pompeii」の最大HP+120%、爆発ダメージ+100%、発動間隔半減"
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_b",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：溶岩外殻III",
+					"en": "Pompeii: Tough Constitution III",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_b_amod_3",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": { "atk": "%60", "fixed_def": 1000, "res": 40 }
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii ATK +60%, DEF +1000, and RES +40",
+					"jp": "「Pompeii」の攻撃力+60%、防御力+1000、術耐性+40",
+					"cn": ""
+				}
+			}
+		]
+	}
+]

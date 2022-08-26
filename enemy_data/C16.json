@@ -54,16 +54,6 @@
 			"atk_type": ["melee", "phys"],
 			"hits": 1
 		},
-		"special": [
-			{
-				"tooltip": {
-					"simple": {
-						"en": ["Attacks ignores 80% def"],
-						"jp": ["攻撃は防御80％無視"],
-						"cn": []
-					}
-				}
-			}
-		]
+		"special": ["ignore_def_80"]
 	}
 }

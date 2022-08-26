@@ -1,0 +1,213 @@
+[
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced Ally ATK 1",
+					"jp": "制限：火力減衰I",
+					"cn": "环境：高价值目标I"
+				},
+				"img": "75px-Char_atk_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -15%",
+					"jp": "全ての味方の攻撃力-15%",
+					"cn": "所有我方单位的攻击力降低15%"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "rock_obstacle",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "環境：障害物排除",
+					"en": "Rocks Removed",
+					"cn": ""
+				},
+				"img": "無秩序な鉱区/75px-Trap_change_1",
+				"effects": [],
+				"tooltip": {
+					"en": "4 Rocks on map are removed",
+					"jp": "マップ上の「礫岩」が4つ減少",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -30%",
+					"jp": "全ての味方の攻撃力-30%",
+					"cn": "所有我方单位的攻击力降低30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Max Squad Size 2",
+					"jp": "環境：少数精鋭II",
+					"cn": "目标：隐秘行动II "
+				},
+				"img": "75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 7 operators in squad",
+					"jp": "編成可能数が7人に",
+					"cn": "最多可编入7名干员进入作战"
+				}
+			}
+		]
+	},
+	{
+		"category": "grids",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Forbidden Grids 2",
+					"jp": "環境：峻険地形II",
+					"cn": ""
+				},
+				"img": "75px-Global_forbidloc_2",
+				"effects": [],
+				"tooltip": {
+					"en": "9 tiles forbid deployment",
+					"jp": "マップ上の9つのマスが配置不可に",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "MR_BB",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：鎧付加III",
+					"en": "BobRock 3",
+					"cn": ""
+				},
+				"img": "無秩序な鉱区/75px-Enemy_bigbomdrock_3",
+				"effects": [
+					{
+						"targets": ["MR"],
+						"mods": {
+							"hp": "%100",
+							"atk": "%90",
+							"res": 45,
+							"special": {
+								"mudrock_shield_CC": {
+									"tooltip": {
+										"en": [
+											"Skill→Every $63s$ creates shield which absorbs up to $30000$ Arts damage",
+											"Shield Active: Max HP+50%、ASPD+50%"
+										],
+										"jp": [
+											"スキル→$63秒$毎にシールドを張り、合計$30000$の術攻撃を吸収する",
+											"シールド展開中：最大HP+50%、攻撃速度+50%"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					},
+					{
+						"targets": ["11"],
+						"mods": {
+							"hp": "%100",
+							"atk": "%90",
+							"def": "%100",
+							"res": 45
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Big Bob] and [Mudrock] ATK +90%, Max HP +100%, RES +45. [Big Bob] DEF +100%, [Mudrock] shield +100% and shield cooldown reduced to 70% of original value.",
+					"cn": "",
+					"jp": "「Big Bob」と「Mudrock」の攻撃力+90%、最大HP+100%、術耐性+45、「Big Bob」の防御力をさらに+100%、「Mudrock」のシールドの耐久値+100%、クールダウンが70％までに短縮"
+				}
+			}
+		]
+	},
+	{
+		"category": "MR_golem",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：盤岩闊歩III",
+					"en": "Stun Immune Empowered Colossi 3",
+					"cn": ""
+				},
+				"img": "無秩序な鉱区/75px-Enemy_mdgint_bmod_3",
+				"effects": [
+					{
+						"targets": ["L13"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%90",
+							"res": 45,
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Stun Immune$"],
+										"jp": ["$スタン無効$"],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Mudrock Colossus Max HP +90%, ATK +90%, RES +45. becomes Immune to Stun",
+					"cn": "",
+					"jp": "「マドロックの巨像」の最大HP+90%、攻撃力+90%、術耐性+45、スタン効果を受けなくなる"
+				}
+			}
+		]
+	}
+]

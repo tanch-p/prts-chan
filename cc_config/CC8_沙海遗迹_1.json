@@ -103,8 +103,8 @@
 					{
 						"targets": ["D7", "PS1", "PS3"],
 						"mods": {
-							"hp": "%90",
-							"def": "%25",
+							"hp": "%190",
+							"def": "%125",
 							"special": {
 								"drone_flying_time": {
 									"type": "others",
@@ -160,7 +160,7 @@
 					{
 						"targets": ["ALL"],
 						"mods": {
-							"aspd": "%60"
+							"aspd": "%160"
 						}
 					}
 				],
@@ -207,9 +207,9 @@
 					{
 						"targets": ["D7", "PS1", "PS3"],
 						"mods": {
-							"atk": "%70",
-							"ms": "%100",
-							"range": "%50",
+							"atk": "%170",
+							"ms": "%200",
+							"range": "%150",
 							"special": {
 								"scrap_def_down": {
 									"type": "others",

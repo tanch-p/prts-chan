@@ -14,38 +14,63 @@
 			"weight": "10",
 			"lifepoint": 3,
 			"ms": "0.5",
-			"special": ["break_the_chains_1"]
+			"forms": [
+				{
+					"special": ["break_the_chains_1", "weft_and_warp_CC"]
+				},
+				{
+					"mods": {
+						"atk": "%105"
+					},
+
+					"special": [
+						"target_2_multi_alt",
+						"break_the_chains_2",
+						"weft_and_warp_CC"
+					]
+				}
+			]
 		},
 		"灰齐山麓": {
 			"hp": "25000",
-			"atk": "500",
-			"def": "650",
-			"res": "50",
+			"atk": "700",
+			"def": "400",
+			"res": "20",
 			"aspd%": "100",
 			"aspd": "4",
-			"range": "2.5",
-			"weight": "10",
-			"lifepoint": 3,
-			"ms": "0.5",
-			"special": ["break_the_chains_1", "weft_and_warp_CC"]
-		}
-	},
-	"forms": [
-		{ "special": [] },
-		{
-			"atk": "%5",
-			"special": [
-				"target_2_multi_alt",
-				"break_the_chains_2",
-				"weft_and_warp_CC"
+			"range": "2",
+			"weight": "6",
+			"lifepoint": 2,
+			"ms": "0.6",
+			"forms": [
+				{
+					"special": ["break_the_chains_1", "weft_and_warp_CC"]
+				},
+				{
+					"mods": {
+						"atk": 1.05
+					},
+
+					"special": [
+						"target_2_multi_alt",
+						"break_the_chains_2",
+						"weft_and_warp_CC"
+					]
+				}
 			]
 		}
-	],
-	"status_immune": [],
-	"normal_attack": {
-		"atk_type": ["ranged", "arts"],
-		"hits": 1
 	},
+	"status_immune": ["ALL"],
+	"normal_attack": [
+		{
+			"atk_type": ["ranged", "arts"],
+			"hits": 1
+		},
+		{
+			"atk_type": ["ranged", "arts"],
+			"hits": 1
+		}
+	],
 	"スタン耐性": "有",
 	"眠り耐性": "有",
 	"凍結耐性": "有",

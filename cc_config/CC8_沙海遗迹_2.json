@@ -1,91 +1,236 @@
 [
-    {
-        "category": "char_atk",
-        "options": [
-            {
-                "rank": 1,
-                "name": {
-                    "en": "Reduced Ally ATK 1",
-                    "jp": "制限：火力減衰I",
-                    "cn": "环境：高价值目标I"
-                },
-                "img": "75px-Char_atk_1",
-                "effects": [],
-                "tooltip": {
-                    "en": "All allies’ ATK -15%",
-                    "jp": "全ての味方の攻撃力-15%",
-                    "cn": "所有我方单位的攻击力降低15%"
-                }
-            }
-        ]
-    },
-    {
-        "category": "lifepoint",
-        "options": [
-            {
-                "rank": 1,
-                "name": {
-                    "en": "None Escape",
-                    "jp": "指令：背水の陣",
-                    "cn": "目标：最后防线"
-                },
-                "img": "75px-Global_lifepoint_1",
-                "effects": [],
-                "tooltip": {
-                    "en": "No enemies escape (Level HP set to 1)",
-                    "jp": "防衛ラインの最大耐久値が1に",
-                    "cn": "我方防御点可承受的敌方数量变为1 "
-                }
-            }
-        ]
-    },
-    {
-        "category": "enemy_hp",
-        "options": [
-            {
-                "rank": 2,
-                "name": {
-                    "en": "Enemy HP 2",
-                    "jp": "増幅：体力II",
-                    "cn": "源石环境：活性II"
-                },
-                "img": "75px-Enemy_hp_2",
-                "effects": [
-                    {
-                        "targets": [
-                            "ALL"
-                        ],
-                        "mods": {
-                            "hp": "%70"
-                        }
-                    }
-                ],
-                "tooltip": {
-                    "en": "Enemy Max HP +70%",
-                    "jp": "全ての敵の最大HP+70%",
-                    "cn": "所有敌人的生命值提升70%"
-                }
-            }
-        ]
-    },
-    {
-        "category": "char_hp",
-        "options": [
-            {
-                "rank": 3,
-                "name": {
-                    "jp": "制限：体力減衰III",
-                    "en": "Reduced Operator HP 3",
-                    "cn": "源石环境：侵蚀III"
-                },
-                "img": "75px-Char_hp_3",
-                "effects": [],
-                "tooltip": {
-                    "en": "Ally Max HP reduced -50%",
-                    "jp": "全ての味方の最大HP-50%",
-                    "cn": "所有我方单位的生命值上限降低50%"
-                }
-            }
-        ]
-    }
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced Ally ATK 1",
+					"jp": "制限：火力減衰I",
+					"cn": "环境：高价值目标I"
+				},
+				"img": "75px-Char_atk_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -15%",
+					"jp": "全ての味方の攻撃力-15%",
+					"cn": "所有我方单位的攻击力降低15%"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "char_block",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：ブロック数",
+					"en": "Reduced Blockcount 1",
+					"cn": "环境：精神散I"
+				},
+				"img": "75px-Char_blockcnt_add",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies' block count -1",
+					"jp": "全ての味方のブロック数-1",
+					"cn": "所有角色阻挡数-1"
+				}
+			}
+		]
+	},
+	{
+		"category": "drone_a",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "ドローン：動力強化II",
+					"en": "Drone ATK Buff 2",
+					"cn": ""
+				},
+				"img": "沙海遗迹/75px-Enemy_drones_1_2",
+				"effects": [
+					{
+						"targets": ["D7", "PS1", "PS3"],
+						"mods": {
+							"atk": "%150",
+							"ms": "%200",
+							"range": "%125",
+							"special": {
+								"scrap_def_down": {
+									"type": "others",
+									"tooltip": {
+										"en": [
+											"Attacks reduce target's DEF by $60% for 8s$",
+											"(does not stack, can be silenced)"
+										],
+										"jp": [
+											"攻撃が相手の防御力を$8秒60％$減少する (重複しない、無効化できる)"
+										],
+										"cn": [
+											"攻击使目标防御力最终降低$60%，持续8s$（不叠加，可沉默）"
+										]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": [
+						"All drone type enemies ATK +50%, MS +100%, Range +25%, Scrap's def down effect increased by 20% and duration by 3s"
+					],
+					"jp": [
+						"「ドローン」系の攻撃力 +50%、移動速度 +100%、攻撃範囲 +25%、破片の防御力低下能力が20%増加、効果時間3秒増加"
+					],
+					"cn": []
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy HP 2",
+					"jp": "増幅：体力II",
+					"cn": "源石环境：活性II"
+				},
+				"img": "75px-Enemy_hp_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%170"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +70%",
+					"jp": "全ての敵の最大HP+70%",
+					"cn": "所有敌人的生命值提升70%"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特殊・重装禁止",
+					"en": "No Defender/Specialists",
+					"cn": ""
+				},
+				"img": "75px-Char_exclude_defenderspecial_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Defenders and Specialists are banned.",
+					"jp": "特殊・重装使用禁止",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "drone_b",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "ドローン：強化装甲III",
+					"en": "Drone Armor 3",
+					"cn": ""
+				},
+				"img": "沙海遗迹/75px-Enemy_drones_2_2",
+				"effects": [
+					{
+						"targets": ["D7", "PS1", "PS3"],
+						"mods": {
+							"hp": "%260",
+							"def": "%130",
+							"special": {
+								"drone_flying_time": {
+									"type": "others",
+									"tooltip": {
+										"en": ["Automatically defeated after $210s$"],
+										"jp": ["出現から$210秒$後、撤退する"],
+										"cn": ["出场$210s$后自动死亡"]
+									}
+								},
+								"anvil_healing_aura": {
+									"type": "others",
+									"tooltip": {
+										"en": [
+											"All enemy units within attack range (excluding self) gains $350 DEF and restores 300HP/s$",
+											"(does not stack, can be silenced)"
+										],
+										"jp": [
+											"自分を除く攻撃範囲内の敵は、$防御力+350、HPが毎秒300回復する$(重複しない、無効化できる)"
+										],
+										"cn": [
+											"攻击范围内全体敌方单位（不含自身）$防御力增加350，每秒恢复300生命值$，不可叠加（可被沉默） "
+										]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": [
+						"All drone type enemies Max HP +160%, DEF +30%, Anvil and Scrap's retreat time +180s, Anvil's def buff increased by 75%, regen by 50%"
+					],
+					"jp": [
+						"「ドローン」系の敵最大HP +160%、防御力 +30%、破片と鉄砧の撤退時間が180秒伸びる、鉄砧の防御力増加 +75%、回復力 +50%"
+					],
+					"cn": []
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "制限：体力減衰III",
+					"en": "Reduced Operator HP 3",
+					"cn": "源石环境：侵蚀III"
+				},
+				"img": "75px-Char_hp_3",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -60%",
+					"jp": "全ての味方の最大HP-60%",
+					"cn": "所有我方单位的生命值上限降低60%"
+				}
+			}
+		]
+	}
 ]

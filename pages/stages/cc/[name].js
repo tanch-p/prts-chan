@@ -193,8 +193,8 @@ export default function Stage({ stageData }) {
 						for (const key in effect.mods) {
 							if (key !== "special") {
 								if (effect.mods[key][0] === "%") {
-									multiplier[target][key] +=
-										parseInt(effect.mods[key].slice(1)) / 100;
+									multiplier[target][key] *=
+										1 + parseInt(effect.mods[key].slice(1)) / 100;
 								} else {
 									multiplier[target][key] = effect.mods[key];
 								}

@@ -43,7 +43,7 @@
           "cn": ""
         },
         "img": "放棄された土地/75px-Enemy_def_1",
-        "effects": [{ "targets": ["ALL"], "mods": { "fixed-def": 200 } }],
+        "effects": [{ "targets": ["ALL"], "mods": { "fixed_def": 200 } }],
         "tooltip": {
           "en": "Enemy DEF +200",
           "cn": "",
@@ -165,7 +165,7 @@
           }
         ],
         "tooltip": {
-          "en": "[Monster Mk2]'s movespeed +100%, Max HP +100%, ATK +10%",
+          "en": "[Monster Mk2]'s movespeed +100%, Max HP +100%, ATK +100%",
           "cn": "",
           "jp": "「怪鳥Mk2」の移動速度+100%、HP+100%、攻撃力+100%"
         }

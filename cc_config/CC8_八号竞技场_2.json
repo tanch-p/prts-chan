@@ -1,0 +1,233 @@
+[
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "DP Down 1",
+					"jp": "指令：孤軍奮闘I",
+					"cn": "目标：深度渗透I"
+				},
+				"img": "75px-Global_costrecovery_1",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 25%",
+					"jp": "コストの自然回復速度-25%",
+					"cn": "部署费用的自然回复速度降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：過負荷",
+					"en": "Defender Caster Cost",
+					"cn": ""
+				},
+				"img": "75px-Char_cost_casterdefender_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Defender and Caster DP Cost tripled",
+					"cn": "",
+					"jp": "重装・術師の配置コストが3倍"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "dk_mod",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "強敵：単独訓練II",
+					"en": "Solo Knights 2",
+					"cn": ""
+				},
+				"img": "8号競技場/75px-Enemy_dekght_bmod_2",
+				"effects": [
+					{
+						"targets": ["DK1"],
+						"mods": {
+							"hp": "%50",
+							"atk": "%30",
+							"res": 15,
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Stealth$"],
+										"jp": ["$ステルス$"],
+										"cn": ""
+									}
+								},
+								"corrupted_knight_charge_atk_CC": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/phys",
+										"jp": "スキル・物理",
+										"cn": ""
+									},
+									"multiplier": 3.3,
+									"hits": 1,
+									"fixed_inc": 0,
+									"tooltip": {
+										"en": ["Skill→Every 22s unleashes charged attack"],
+										"jp": ["スキル→チャージ攻撃、CD22秒"],
+										"cn": []
+									}
+								}
+							}
+						}
+					},
+					{
+						"targets": ["DK2"],
+						"mods": {
+							"hp": "%50",
+							"atk": "%30",
+							"special": {
+								"withered_knight_arrow_bomb_CC": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/arts",
+										"jp": "スキル・術",
+										"cn": ""
+									},
+									"multiplier": 1.9,
+									"hits": 1,
+									"fixed_inc": 0,
+									"tooltip": {
+										"en": [
+											"Skill→Every 22s unleashes charged attack → Fires a delayed exploding arrow on max 3 targets, deals damage to target + surrounding 4 tiles"
+										],
+										"jp": [
+											"スキル→３体に爆発の矢を放つ、",
+											"対象と隣接4マスに術ダメージ、CD22秒"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Corrupted Knight] and [Withered Knight] Max HP +50%, ATK +30%, Charged Attacks dmg increased by 50%. [Corrupted Knight] RES+15 and gains stealth",
+					"cn": "",
+					"jp": "「腐敗騎士」と「凋零騎士」のHP+50%、攻撃力+30%、チャージ攻撃のダメージ +50%。「腐敗騎士」の術耐性+25、ステルスになる"
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Max Squad Size 2",
+					"jp": "環境：少数精鋭II",
+					"cn": "目标：隐秘行动II "
+				},
+				"img": "75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 8 operators in squad",
+					"jp": "編成可能数が8人に",
+					"cn": "最多可编入8名干员进入作战"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "指令：待機命令",
+					"en": "Guard and Healer Forbidden",
+					"cn": ""
+				},
+				"img": "75px-Char_exclude_guardhealer_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Guard and Healer cannot be deployed",
+					"cn": "",
+					"jp": "重装・術師の配置禁止"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Enemy HP 3",
+					"jp": "増幅：体力III",
+					"cn": "源石环境：活性III"
+				},
+				"img": "75px-Enemy_hp_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%100"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +100%",
+					"jp": "全ての敵の最大HP+100%",
+					"cn": "所有敌人的生命值提升100%"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "DP Down 3",
+					"jp": "指令：孤軍奮闘III",
+					"cn": "目标：深度渗透III"
+				},
+				"img": "75px-Global_costrecovery_3",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 75%",
+					"jp": "コストの自然回復速度-75%",
+					"cn": "部署费用的自然回复速度降低75%"
+				}
+			}
+		]
+	}
+]

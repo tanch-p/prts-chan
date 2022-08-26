@@ -1,0 +1,195 @@
+[
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Max Squad Size 1",
+					"jp": "環境：少数精鋭I",
+					"cn": "目标：隐秘行动I"
+				},
+				"img": "75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 10 operators in squad",
+					"cn": "最多可编入10名干员进入作战",
+					"jp": "編成可能数が10人に"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_aspd",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Enemy ASPD 1",
+					"jp": "増幅：ラッシュ",
+					"cn": ""
+				},
+				"img": "75px-Enemy_attackspeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"aspd": "%20"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy ASPD +20",
+					"jp": "全ての敵の攻撃速度+20",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "others_4",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Sandstorm Resistance",
+					"jp": "環境：砂嵐耐性",
+					"cn": ""
+				},
+				"img": "狂嚎沙原/storm_speed_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Sandstorm no longer reduces enemy movement speed.",
+					"cn": "",
+					"jp": "「砂嵐」で敵の移動速度が減少しなくなる"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_aspd",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ASPD 2",
+					"jp": "制限：疲労累積II",
+					"cn": ""
+				},
+				"img": "75px-Char_attackspeed_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ASPD -40",
+					"jp": "全ての味方の攻撃速度-40",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "制限：体力減衰II",
+					"en": "Reduced Operator HP 2",
+					"cn": "源石环境：侵蚀II"
+				},
+				"img": "75px-Char_hp_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -30%",
+					"jp": "全ての味方の最大HP-30%",
+					"cn": "所有我方单位的生命值上限降低30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Guard/Specialist DP tripled",
+					"jp": "指令：契約実行",
+					"cn": "目标：执行合约"
+				},
+				"img": "75px-Char_cost_guardspecial_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Costs of Guards and Specialists is tripled, and the redeployment time extended by 50%.",
+					"jp": "前衛・特殊の配置コストが3倍、再配置時間が+50%",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "croc_brave",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Tiacauh Brave Stealth",
+					"jp": "ティアカウ勇士",
+					"cn": ""
+				},
+				"img": "狂嚎沙原/cchmpn_amod_3",
+				"effects": [
+					{
+						"targets": ["T11"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%50",
+							"res": 60,
+							"aspd": "%150",
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Stealth$"],
+										"jp": ["$ステルス$"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Tiacauh Brave] Max HP +90%, ATK +50%, ASPD +150, RES +60, gains Stealth",
+					"cn": "",
+					"jp": "「ティアカウ勇士」の最大HP+90%、攻撃力+50%、攻撃速度+150、術耐性+60、さらにステルスを獲得"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Enemy HP 3",
+					"jp": "増幅：体力III",
+					"cn": "源石环境：活性III"
+				},
+				"img": "75px-Enemy_hp_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%110"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +110%",
+					"jp": "全ての敵の最大HP+110%",
+					"cn": "所有敌人的生命值提升110%"
+				}
+			}
+		]
+	}
+]

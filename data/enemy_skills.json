@@ -58,7 +58,7 @@
 		"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
 		"multiplier": 2,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": ["HP↓50%→Atk power x 2"],
@@ -77,7 +77,7 @@
 		"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
 		"multiplier": 2.5,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": ["HP↓50%→Atk power x 2.5"],
@@ -96,7 +96,7 @@
 		"suffix": { "en": "HP↓50%", "jp": "HP50%以下", "cn": "HP50%以下" },
 		"multiplier": 2.8,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": ["HP↓50%→Atk power x 2.8"],
@@ -173,7 +173,7 @@
 		"suffix": { "en": "RPG/phys", "jp": "RPG・物理", "cn": "RPG・物理" },
 		"multiplier": 2,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [
@@ -423,7 +423,7 @@
 				"en": [
 					"Normal Attack targets 2 units (or if only 1 unit within range, deals 2 hits)"
 				],
-				"jp": ["2体同時攻撃（射程内1体のみいるの場合は2回連続攻撃"],
+				"jp": ["2体同時攻撃（射程内1体のみいるの場合は2回連続攻撃）"],
 				"cn": []
 			}
 		}
@@ -518,7 +518,7 @@
 		"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
 		"multiplier": 4,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [
@@ -534,7 +534,7 @@
 		"suffix": { "en": "💥/phys", "jp": "💥・物理", "cn": "💥・物理" },
 		"multiplier": 2,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [
@@ -638,7 +638,7 @@
 		}
 	},
 	"prisoner_release_all": {
-		"name": "all_release",
+		"type": "others",
 		"tooltip": {
 			"simple": {
 				"en": ["On release, releases all other prisoners on field as well"],
@@ -673,7 +673,7 @@
 		"suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "" },
 		"multiplier": 3,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": ["Skill→Every 22s unleashes charged attack"],
@@ -687,12 +687,31 @@
 			}
 		}
 	},
-	"withered_knight_arrow_bomb": {
+	"corrupted_knight_charge_atk_CC": {
+		"type": "atk",
+		"suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "" },
+		"multiplier": 2.8,
+		"hits": 1,
+		"fixed_inc": 0,
+		"tooltip": {
+			"simple": {
+				"en": ["Skill→Every 22s unleashes charged attack"],
+				"jp": ["スキル→チャージ攻撃、CD22秒"],
+				"cn": []
+			},
+			"detailed": {
+				"en": [],
+				"jp": [],
+				"cn": []
+			}
+		}
+	},
+	"withered_knight_arrow_bomb_CC": {
 		"type": "atk",
 		"suffix": { "en": "skill/arts", "jp": "スキル・術", "cn": "" },
 		"multiplier": 1.4,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [
@@ -712,8 +731,11 @@
 		}
 	},
 	"JAK_strong_wine_attack": {
-		"type": "others",
-		"fixedInc": 0,
+		"type": "atk",
+		"multiplier": 1,
+		"hits": 1,
+		"suffix": { "en": "skill/arts", "jp": "強撃・術", "cn": "" },
+		"fixed_inc": 0,
 		"start": 0,
 		"skill": 3,
 		"tooltip": {
@@ -725,11 +747,11 @@
 		}
 	},
 	"JAK_strong_sword_attack": {
-		"type": "others",
+		"type": "atk",
 		"multiplier": 1,
 		"hits": 2,
-		"suffix": { "en": "Skill", "jp": "強撃", "cn": "" },
-		"fixedInc": 0,
+		"suffix": { "en": "skill/phys", "jp": "強撃・物理", "cn": "" },
+		"fixed_inc": 0,
 		"start": 0,
 		"skill": 3,
 		"tooltip": {
@@ -1241,7 +1263,7 @@
 	"ggy_stone_form": {
 		"type": "def",
 		"multiplier": 1,
-		"fixed_def": 800,
+		"fixed_inc": 800,
 		"suffix": {
 			"en": "Stone Statue",
 			"jp": "石像形態",
@@ -1489,7 +1511,7 @@
 		"suffix": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
 		"multiplier": 0.3,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [],
@@ -1684,7 +1706,7 @@
 		"suffix": { "en": "💥on Kill/Arts", "jp": "撃破時・術", "cn": "C4" },
 		"multiplier": 4,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": ["Self-destructs when defeated"],
@@ -1699,7 +1721,7 @@
 		"suffix": { "en": "Explosion/Arts", "jp": "心中・術", "cn": "C4" },
 		"multiplier": 15,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [
@@ -1730,7 +1752,7 @@
 		"suffix": { "en": "Charged Atk/Arts", "jp": "溜め攻撃・術", "cn": "C4" },
 		"multiplier": 2,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [
@@ -1836,7 +1858,7 @@
 		"type": "def",
 		"suffix": { "en": "blocked", "jp": "ブロック中", "cn": "被阻挡时" },
 		"multiplier": 1,
-		"fixedInc": 130,
+		"fixed_inc": 130,
 		"tooltip": {
 			"simple": {
 				"en": ["Blocked→DEF+130"],
@@ -1858,7 +1880,7 @@
 		},
 		"type": "def",
 		"multiplier": 1,
-		"fixedInc": 200,
+		"fixed_inc": 200,
 		"tooltip": {
 			"simple": {
 				"en": ["Blocked→DEF+200"],
@@ -1877,7 +1899,7 @@
 		"suffix": { "en": "melee/phys", "jp": "近・物理", "cn": "近・物理" },
 		"multiplier": 4,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [],
@@ -1900,7 +1922,7 @@
 			"cn": "被阻挡时"
 		},
 		"multiplier": 0.3,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [
@@ -1964,10 +1986,8 @@
 	"pompeii_explosion": {
 		"type": "atk",
 		"suffix": { "en": "💥/Arts", "jp": "💥・術", "cn": "💥・法术" },
-		"multiplier": 1,
 		"fixed": 1000,
 		"hits": 1,
-		"fixedInc": 0,
 		"tooltip": {
 			"simple": {
 				"en": ["When blocked, creates an explosion around self every 10s"],
@@ -1981,7 +2001,7 @@
 		"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
 		"multiplier": 1.8,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [
@@ -2002,7 +2022,7 @@
 		"suffix": { "en": "C4", "jp": "爆弾・物理", "cn": "C4" },
 		"multiplier": 2.2,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": [
@@ -2021,7 +2041,7 @@
 		"type": "others",
 		"multiplier": 0.7,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"start": 13,
 		"skill": 13,
 		"tooltip": {
@@ -2111,12 +2131,12 @@
 		"type": "atk",
 		"suffix": {
 			"en": "Barrier/Arts",
-			"jp": "桎梏打破",
-			"cn": "破桎而出"
+			"jp": "桎梏打破・術",
+			"cn": "破桎而出・法术"
 		},
 		"multiplier": 6,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": ["'Break the Chains' - Initial SP: 30, SP Cost: 70"],
@@ -2137,7 +2157,7 @@
 		},
 		"multiplier": 8,
 		"hits": 1,
-		"fixedInc": 0,
+		"fixed_inc": 0,
 		"tooltip": {
 			"simple": {
 				"en": ["'Break the Chains(Rage)' - Initial SP: 40, SP Cost: 70"],

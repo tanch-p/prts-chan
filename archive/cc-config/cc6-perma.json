@@ -588,7 +588,7 @@
 			{
 				"rank": 1,
 				"img": "狂嚎沙原/enemy_def_1",
-				"effects": [{ "targets": ["ALL"], "mods": { "fixed-def": 200 } }],
+				"effects": [{ "targets": ["ALL"], "mods": { "fixed_def": 200 } }],
 				"tooltip": {
 					"en": "Enemy DEF +200",
 					"cn": "",

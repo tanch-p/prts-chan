@@ -177,7 +177,9 @@ export default function EnemySimple({
 																				stat,
 																				stats,
 																				moddedStats[stat],
-																				row
+																				row,
+																				specialMods,
+																				language
 																			)}
 																		</p>
 																	</>

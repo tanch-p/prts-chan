@@ -31,7 +31,7 @@
 			"weight": "6",
 			"lifepoint": 3,
 			"ms": "0.65",
-			"special": ["splash_4sq_100", "corrupted_knight_charge_atk"]
+			"special": ["splash_4sq_100", "corrupted_knight_charge_atk_CC"]
 		}
 	},
 	"status_immune": [],

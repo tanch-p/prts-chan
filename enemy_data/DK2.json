@@ -31,7 +31,7 @@
 			"weight": "6",
 			"lifepoint": 3,
 			"ms": "0.65",
-			"special": ["target_2", "withered_knight_arrow_bomb"]
+			"special": ["target_2", "withered_knight_arrow_bomb_CC"]
 		}
 	},
 	"status_immune": [],

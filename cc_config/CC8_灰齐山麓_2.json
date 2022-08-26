@@ -1,0 +1,182 @@
+[
+	{
+		"category": "char_res",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced Ally RES 1",
+					"jp": "制限：術耐性I",
+					"cn": ""
+				},
+				"img": "75px-Char_magicresistance_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ RES -12",
+					"jp": "全ての味方の術耐性-12",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_def",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy DEF RES",
+					"jp": "増幅：装甲I",
+					"cn": "反装甲I"
+				},
+				"img": "75px-Enemy_def_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"fixed_def": 100,
+							"res": 10
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy DEF +100, RES +10",
+					"jp": "全ての敵の防御力+100、術耐性+10",
+					"cn": "所有敌人的防御力提升100，術耐性+10"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_ms",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy Movement Speed 1",
+					"jp": "増幅：機動力I",
+					"cn": ""
+				},
+				"img": "75px-Enemy_movespeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"ms": "%40"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemies movement speed +40%",
+					"jp": "全ての敵の移動速度+40%",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Attackers 2",
+					"jp": "制限：過負荷II",
+					"cn": ""
+				},
+				"img": "灰齐山麓/Char_cost_attackers_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Cost of Snipers, Guards, Casters is doubled, and redeployment time extended by 50%.",
+					"cn": "",
+					"jp": "狙撃・前衛・術士の配置コストが3倍、再配置時間が+50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Max Squad Size 2",
+					"jp": "環境：少数精鋭II",
+					"cn": "目标：隐秘行动II "
+				},
+				"img": "75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 6 operators in squad",
+					"jp": "編成可能数が6人に",
+					"cn": "最多可编入6名干员进入作战"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -25%",
+					"jp": "全ての味方の攻撃力-25%",
+					"cn": "所有我方单位的攻击力降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "deyi",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "オニビ　III",
+					"en": "Deyi 3",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_spslme_amod_3",
+				"effects": [
+					{
+						"targets": ["SF09"],
+						"mods": { "hp": "%300", "res": 50 }
+					}
+				],
+				"tooltip": {
+					"en": "[Smarty] Max HP +300%, RES +50, Initial element reversed",
+					"cn": "",
+					"jp": "「オニビ」の最大HP+300%、術耐性+50, 初期明晦属性が反転"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "制限：体力減衰III",
+					"en": "Reduced Operator HP 3",
+					"cn": "源石环境：侵蚀III"
+				},
+				"img": "75px-Char_hp_3",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -55%",
+					"jp": "全ての味方の最大HP-55%",
+					"cn": "所有我方单位的生命值上限降低55%"
+				}
+			}
+		]
+	}
+]
