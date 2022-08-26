@@ -15,8 +15,9 @@
 	"无序矿区": "Abandoned Mine",
 	"八号竞技场": "Arena 8",
 	"狂嚎沙原": "Howling Desert",
-	"大骑士领酒吧街":"大骑士领酒吧街",
-	"沙海遗迹":"Desert Ruins",
+	"灰齐山麓": "Foothill Hui-Ch'i",
+	"大骑士领酒吧街": "Pub Street",
+	"沙海遗迹": "Desert Ruins",
 
 	"hp_50": "HP↓50%",
 	"rage": "Rage Mode",
@@ -58,7 +59,7 @@
 	"status_immune": {
 		"pre": "Immune to ",
 		"post": "",
-		"separator":", ",
+		"separator": ", ",
 		"ALL": "Immune to ALL status ailments except Bind",
 		"stun": "Stun",
 		"sleep": "Sleep",
