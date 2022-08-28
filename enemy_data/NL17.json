@@ -15,7 +15,7 @@
 			"aspd": "3.2",
 			"range": "2.2",
 			"weight": "4",
-			"lifepoint": 1,
+			"lifepoint": 3,
 			"ms": "0.7",
 			"special": ["glimmering_touch"]
 		},
