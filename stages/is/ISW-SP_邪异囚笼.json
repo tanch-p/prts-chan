@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Demonic Cage", "jp": "異端の檻", "cn": "邪异囚笼" },
 	"img": "ISW-SP_邪异囚笼",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "LqF1_usjCp8"
+		}
+	],
 	"theme": "phcs",
 	"floors": [2, 3, 4],
 	"floor_nav": [2,3,4],

@@ -1,6 +1,17 @@
 {
-	"name": { "en": "Vintage Transport", "jp": "酒屋の輸送隊", "cn": "酒商运输队" },
+	"name": {
+		"en": "Vintage Transport",
+		"jp": "酒屋の輸送隊",
+		"cn": "酒商运输队"
+	},
 	"img": "ISW-NO_酒商运输队",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "D7Tl49CzuPo"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],

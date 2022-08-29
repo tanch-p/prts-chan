@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Duck Lord's Play", "jp": "ダック卿のステージ", "cn": "鸭爵的戏剧" },
 	"img": "ISW-DU_鸭爵的戏剧",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "mOhmOb8kBvs"
+		}
+	],
 	"theme": "phcs",
 	"floors": [1,2],
 	"floor_nav": [1,2],

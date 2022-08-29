@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Duck Lord's Party", "jp": "ダック卿のパーティー", "cn": "鸭爵的宴会" },
 	"img": "ISW-DU_鸭爵的宴会",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "hANty5THfwg"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],
