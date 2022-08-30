@@ -10,7 +10,6 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.5",
-
 			"weight": "5",
 			"lifepoint": 2,
 			"ms": "1.2",
@@ -24,7 +23,6 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.7",
-
 			"weight": "5",
 			"lifepoint": 2,
 			"ms": "1.2",
@@ -38,7 +36,6 @@
 			"aspd%": "100",
 			"aspd": "4",
 			"range": "2.7",
-
 			"weight": "5",
 			"lifepoint": 2,
 			"ms": "1.2",

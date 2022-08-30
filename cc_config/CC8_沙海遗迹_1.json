@@ -62,7 +62,7 @@
 										"jp": "RPG・物理",
 										"cn": "RPG・物理"
 									},
-									"multiplier": 6,
+									"multiplier": 12,
 									"hits": 1,
 									"fixedInc": 0,
 									"tooltip": {
