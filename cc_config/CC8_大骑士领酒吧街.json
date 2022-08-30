@@ -143,7 +143,7 @@
 						"mods": {
 							"hp": "%80",
 							"atk": "%50",
-							"range": "%70",
+							"range": "%50",
 							"special": {
 								"extra": {
 									"tooltip": {
@@ -189,7 +189,7 @@
 						"mods": {
 							"hp": "%110",
 							"atk": "%90",
-							"range": "%125",
+							"range": "%100",
 							"special": {
 								"extra": {
 									"tooltip": {
