@@ -45,7 +45,7 @@
 			{
 				"rank": 1,
 				"name": {
-					"jp": "特化：火力増加",
+					"jp": "特化：高性能榴弾",
 					"en": "RPG Firepower++",
 					"cn": ""
 				},
@@ -81,8 +81,8 @@
 					}
 				],
 				"tooltip": {
-					"en": ["Anti-Armor Infantry's RPG damage greatly increased"],
-					"jp": ["「対装甲歩兵」のロケット弾のダメージ大幅増加"],
+					"en": ["Anti-Armor Infantry's RPG damage greatly increased to 1200%"],
+					"jp": ["「対装甲歩兵」の超遠距離榴弾のダメージ倍率が1200％に上昇"],
 					"cn": []
 				}
 			}
@@ -94,7 +94,7 @@
 			{
 				"rank": 2,
 				"name": {
-					"jp": "ドローン：強化装甲II",
+					"jp": "強化：装甲強化II",
 					"en": "Drone Armor 2",
 					"cn": ""
 				},
@@ -138,7 +138,7 @@
 						"All drone type enemies Max HP +90%, DEF +25%, Anvil and Scrap's retreat time +120s, Anvil's def buff increased by 50%, regen by 25%"
 					],
 					"jp": [
-						"「ドローン」系の敵最大HP +90%、防御力 +25%、破片と鉄砧の撤退時間が120秒伸びる、鉄砧の防御力増加 +50%、回復力 +25%"
+						"すべての敵「ドローン」の敵最大HP+90%、防御力+25%、「破片」と「鉄砧」の航続時間+120秒、「鉄砧」の防御力上昇効果+50%、敵に付与するHP自動回復の効果値+25%"
 					],
 					"cn": []
 				}
@@ -152,7 +152,7 @@
 				"rank": 2,
 				"name": {
 					"en": "Enemy ASPD 2",
-					"jp": "増幅：ラッシュ",
+					"jp": "増幅：ラッシュII",
 					"cn": ""
 				},
 				"img": "75px-Enemy_attackspeed_2",
@@ -198,7 +198,7 @@
 			{
 				"rank": 3,
 				"name": {
-					"jp": "ドローン：動力強化III",
+					"jp": "特化：機能向上III",
 					"en": "Drone ATK Buff 3",
 					"cn": ""
 				},
@@ -235,7 +235,7 @@
 						"All drone type enemies ATK +70%, MS +100%, Range +50%, Scrap's def down effect increased by 40% and duration by 5s"
 					],
 					"jp": [
-						"「ドローン」系の攻撃力 +70%、移動速度 +100%、攻撃範囲 +50%、破片の防御力低下能力が40%増加、効果時間5秒増加"
+						"すべての敵「ドローン」の攻撃力+70%、移動速度+100%、攻撃範囲+50%、「破片」の防御力減少効果+40%、効果継続時間+5秒"
 					],
 					"cn": []
 				}
@@ -248,7 +248,7 @@
 			{
 				"rank": 3,
 				"name": {
-					"jp": "敵出現+++",
+					"jp": "環境：火力支援III",
 					"en": "Enemies +++",
 					"cn": ""
 				},
@@ -278,7 +278,7 @@
 						"A1 count +7, Tactical Crossbowman count +5, War Phantom count +4"
 					],
 					"jp": [
-						"アーツバードA1 - 7体、戦術射撃兵 - 5体、 ウォーゴースト - 4体増加"
+						"追加で「アーツバードA1」7体、「戦術射撃兵」5体、「ウォーゴースト」4体が登場"
 					],
 					"cn": []
 				}

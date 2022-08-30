@@ -4,6 +4,7 @@
 		"options": [
 			{
 				"rank": 1,
+				"name": { "en": "", "jp": "強敵：煌煌I", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_1",
 				"effects": [
 					{
@@ -35,11 +36,12 @@
 				"tooltip": {
 					"en": "[Viviana] Max HP +50%, Glimmering Touch charging time halved.",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+50%、微光の蝕のチャージ時間50％減少する"
+					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+50%、【微光の蝕】のチャージ時間-50％"
 				}
 			},
 			{
 				"rank": 2,
+				"name": { "en": "", "jp": "強敵：煌煌II", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_amod_2",
 				"effects": [
 					{
@@ -78,11 +80,12 @@
 				"tooltip": {
 					"en": "[Viviana] Max HP +110%, has lower target priority, Glimmering Touch charging time halved and cooldown reduced by 40%.",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+110%、狙われにくくなる、微光の蝕のチャージ時間50％減少、クールタイム40％減少"
+					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+110%、味方ユニットの攻撃対象となりにくい、【微光の蝕】のチャージ時間-50％、クールタイム-40％"
 				}
 			},
 			{
 				"rank": 3,
+				"name": { "en": "", "jp": "強敵：煌煌III", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_amod_3",
 				"effects": [
 					{
@@ -109,7 +112,7 @@
 											"Glimmering Touch - $instantly$ does 250% dmg to units within skill's range, $CD6s$"
 										],
 										"jp": [
-											"微光の蝕 - 攻撃半径内のユニットに$即時$範囲攻撃を行う、$CD6秒$"
+											"微光の蝕 - 攻撃半径内のユニットに$即時発動$の範囲攻撃を行う、$CD6秒$"
 										],
 										"cn": []
 									}
@@ -121,7 +124,7 @@
 				"tooltip": {
 					"en": "[Viviana] Max HP +160%, has lower target priority, Glimmering Touch becomes instant cast and cooldown reduced by 70%.",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+160%、狙われにくくなる、微光の蝕のチャージ時間がなくなる、クールタイム70％減少"
+					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+160%、味方ユニットの攻撃対象となりにくい、【微光の蝕】が即時発動し、クールタイム-70％"
 				}
 			}
 		]
@@ -132,6 +135,7 @@
 			{ "rank": 1 },
 			{
 				"rank": 2,
+				"name": { "en": "", "jp": "強敵：明灯II", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_bmod_2",
 				"effects": [
 					{
@@ -172,11 +176,12 @@
 				"tooltip": {
 					"en": "[Viviana] Max HP +80%, ATK +50%, Range increases, attacks ignore 35 RES and Glimmering Touch's charging time is halved",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+80%、攻撃力+50%、攻撃範囲増加、攻撃は術耐性35無視、微光の蝕のチャージ時間50％減少"
+					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+80%、攻撃力+50%、攻撃範囲が拡大し、攻撃対象の術耐性を35%無視、【微光の蝕】のチャージ時間-50％"
 				}
 			},
 			{
 				"rank": 3,
+				"name": { "en": "", "jp": "強敵：明灯III", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_bmod_3",
 				"effects": [
 					{
@@ -217,7 +222,7 @@
 				"tooltip": {
 					"en": "[Viviana] Max HP +110%, ATK +90%, Range increases greatly, attacks ignore 80 RES and Glimmering Touch's charging time is halved",
 					"cn": "",
-					"jp": "「ヴィヴィアナ」の最大HP+110%、攻撃力+90%、攻撃範囲大幅増加、攻撃は術耐性80無視、微光の蝕のチャージ時間50％減少"
+					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+110%、攻撃力+90%、攻撃範囲が拡大し、攻撃対象の術耐性を80%無視、【微光の蝕】のチャージ時間-50％"
 				}
 			}
 		]
@@ -227,6 +232,7 @@
 		"options": [
 			{
 				"rank": 1,
+				"name": { "en": "", "jp": "強敵：遥々天路I", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_1",
 				"effects": [
 					{
@@ -237,11 +243,12 @@
 				"tooltip": {
 					"en": "'The Last Kheshig', Tola's Max HP +50%, ATK +20%, DEF +20%, RES +10",
 					"cn": "",
-					"jp": "「最後のケシク」トゥーラの最大HP+50%、攻撃力+20%、防御力+20%、術耐性+10"
+					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+50%、攻撃力+20%、防御力+20%、術耐性+10"
 				}
 			},
 			{
 				"rank": 2,
+				"name": { "en": "", "jp": "強敵：遥々天路II", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_amod_2",
 				"effects": [
 					{
@@ -252,11 +259,12 @@
 				"tooltip": {
 					"en": "'The Last Kheshig', Tola's Max HP +100%, ATK +60%, RES +30",
 					"cn": "",
-					"jp": "「最後のケシク」トゥーラの最大HP+100%、攻撃力+60%、術耐性+30"
+					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+100%、攻撃力+60%、術耐性+30"
 				}
 			},
 			{
 				"rank": 3,
+				"name": { "en": "", "jp": "強敵：遥々天路III", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_amod_3",
 				"effects": [
 					{
@@ -279,7 +287,7 @@
 				],
 				"tooltip": {
 					"en": "'The Last Kheshig', Tola's Max HP +150%, ATK +100%, RES +50, gains Stealth",
-					"jp": "「最後のケシク」トゥーラの最大HP+150%、攻撃力+100%、術耐性+50, ステルス",
+					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+150%、攻撃力+100%、術耐性+50、【ステルス】状態になる",
 					"cn": ""
 				}
 			}
@@ -291,6 +299,7 @@
 			{ "rank": 1 },
 			{
 				"rank": 2,
+				"name": { "en": "", "jp": "強敵：悪夢の王II", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_bmod_2",
 				"effects": [
 					{
@@ -305,12 +314,13 @@
 				],
 				"tooltip": {
 					"en": "'The Last Kheshig', Tola's Max HP +65%, ATK +80%, DEF +60%, 3 [Nightzmora Imitators] appear",
-					"jp": "「最後のケシク」トゥーラの最大HP+65%、攻撃力+80%、防御力+60%、悪夢のマニアが3体出現",
+					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+65%、攻撃力+80%、防御力+60%、追加で悪夢のマニアが3体登場する",
 					"cn": ""
 				}
 			},
 			{
 				"rank": 3,
+				"name": { "en": "", "jp": "強敵：悪夢の王III", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_bmod_3",
 				"effects": [
 					{
@@ -325,7 +335,7 @@
 				],
 				"tooltip": {
 					"en": "'The Last Kheshig', Tola's Max HP +80%, ATK +150%, DEF +100%, 2 waves of 3 [Nightzmora Imitators] appear",
-					"jp": "「最後のケシク」トゥーラの最大HP+80%、攻撃力+150%、防御力+100%、悪夢のマニアが2ウェーブで3体ずつ出現",
+					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+80%、攻撃力+150%、防御力+100%、追加で悪夢のマニアが2ウェーブで3体ずつ登場する",
 					"cn": ""
 				}
 			}
@@ -337,8 +347,8 @@
 			{
 				"rank": 1,
 				"name": {
-					"jp": "",
 					"en": "",
+					"jp": "環境：酒類特価I",
 					"cn": "环境：酒水促销I"
 				},
 				"img": "大骑士领酒吧街/75px-Enemy_napkgt_1",
@@ -362,8 +372,8 @@
 				"rank": 2,
 				"latter": true,
 				"name": {
-					"jp": "",
 					"en": "",
+					"jp": "環境：酒類特価II",
 					"cn": "环境：酒水促销II"
 				},
 				"img": "大骑士领酒吧街/75px-Enemy_napkgt_2",
@@ -746,6 +756,7 @@
 		"options": [
 			{
 				"rank": 1,
+				"name": { "en": "", "jp": "環境：電力不足α", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_amod_1",
 				"effects": [],
 				"tooltip": {
@@ -755,8 +766,9 @@
 				}
 			},
 			{
-				"rank": 2,
 				"latter": true,
+				"rank": 2,
+				"name": { "en": "", "jp": "環境：電力不足γ", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_2",
 				"effects": [],
 				"tooltip": {
@@ -773,6 +785,7 @@
 		"options": [
 			{
 				"rank": 1,
+				"name": { "en": "", "jp": "環境：電力不足β", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_bmod_1",
 				"effects": [],
 				"tooltip": {
@@ -854,11 +867,7 @@
 		"options": [
 			{
 				"rank": 1,
-				"name": {
-					"en": "",
-					"jp": "",
-					"cn": ""
-				},
+				"name": { "en": "", "jp": "目標：弩手特訓", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_aruarw_1",
 				"effects": [
 					{
@@ -882,11 +891,7 @@
 			{
 				"rank": 1,
 				"latter": true,
-				"name": {
-					"en": "",
-					"jp": "",
-					"cn": ""
-				},
+				"name": { "en": "", "jp": "目標：刺客特訓", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_aruass_1",
 				"effects": [
 					{

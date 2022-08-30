@@ -206,7 +206,7 @@
 						"All drone type enemies Max HP +160%, DEF +30%, Anvil and Scrap's retreat time +180s, Anvil's def buff increased by 75%, regen by 50%"
 					],
 					"jp": [
-						"「ドローン」系の敵最大HP +160%、防御力 +30%、破片と鉄砧の撤退時間が180秒伸びる、鉄砧の防御力増加 +75%、回復力 +50%"
+						"すべての敵「ドローン」の敵最大HP+160%、防御力+30%、「破片」と「鉄砧」の航続時間+180秒、「鉄砧」の防御力上昇効果+75%、敵に付与するHP自動回復の効果値+50%"
 					],
 					"cn": []
 				}
