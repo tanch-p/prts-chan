@@ -4,7 +4,7 @@
 		"options": [
 			{
 				"rank": 1,
-				"name": { "en": "", "jp": "強敵：煌煌I", "cn": "" },
+				"name": { "en": "Viviana: Dazzle 1", "jp": "強敵：煌煌I", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_1",
 				"effects": [
 					{
@@ -41,7 +41,7 @@
 			},
 			{
 				"rank": 2,
-				"name": { "en": "", "jp": "強敵：煌煌II", "cn": "" },
+				"name": { "en": "Viviana: Dazzle 2", "jp": "強敵：煌煌II", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_amod_2",
 				"effects": [
 					{
@@ -85,7 +85,7 @@
 			},
 			{
 				"rank": 3,
-				"name": { "en": "", "jp": "強敵：煌煌III", "cn": "" },
+				"name": { "en": "Viviana: Dazzle 3", "jp": "強敵：煌煌III", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_amod_3",
 				"effects": [
 					{
@@ -135,7 +135,7 @@
 			{ "rank": 1 },
 			{
 				"rank": 2,
-				"name": { "en": "", "jp": "強敵：明灯II", "cn": "" },
+				"name": { "en": "Viviana: Candlelight 2", "jp": "強敵：明灯II", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_bmod_2",
 				"effects": [
 					{
@@ -181,7 +181,7 @@
 			},
 			{
 				"rank": 3,
-				"name": { "en": "", "jp": "強敵：明灯III", "cn": "" },
+				"name": { "en": "Viviana: Candlelight 3", "jp": "強敵：明灯III", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_bmod_3",
 				"effects": [
 					{
@@ -232,7 +232,7 @@
 		"options": [
 			{
 				"rank": 1,
-				"name": { "en": "", "jp": "強敵：遥々天路I", "cn": "" },
+				"name": { "en": "Tola: Lone Khaganquest 1", "jp": "強敵：遥々天路I", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_1",
 				"effects": [
 					{
@@ -248,7 +248,7 @@
 			},
 			{
 				"rank": 2,
-				"name": { "en": "", "jp": "強敵：遥々天路II", "cn": "" },
+				"name": { "en": "Tola: Lone Khaganquest 2", "jp": "強敵：遥々天路II", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_amod_2",
 				"effects": [
 					{
@@ -264,7 +264,7 @@
 			},
 			{
 				"rank": 3,
-				"name": { "en": "", "jp": "強敵：遥々天路III", "cn": "" },
+				"name": { "en": "Tola: Lone Khaganquest 3", "jp": "強敵：遥々天路III", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_amod_3",
 				"effects": [
 					{
@@ -299,7 +299,7 @@
 			{ "rank": 1 },
 			{
 				"rank": 2,
-				"name": { "en": "", "jp": "強敵：悪夢の王II", "cn": "" },
+				"name": { "en": "Tola: Khagan's Excursion 2", "jp": "強敵：悪夢の王II", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_bmod_2",
 				"effects": [
 					{
@@ -320,7 +320,7 @@
 			},
 			{
 				"rank": 3,
-				"name": { "en": "", "jp": "強敵：悪夢の王III", "cn": "" },
+				"name": { "en": "Tola: Khagan's Excursion 3", "jp": "強敵：悪夢の王III", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_bmod_3",
 				"effects": [
 					{
@@ -756,7 +756,7 @@
 		"options": [
 			{
 				"rank": 1,
-				"name": { "en": "", "jp": "環境：電力不足α", "cn": "" },
+				"name": { "en": "Insufficient Power α", "jp": "環境：電力不足α", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_amod_1",
 				"effects": [],
 				"tooltip": {
@@ -768,7 +768,7 @@
 			{
 				"latter": true,
 				"rank": 2,
-				"name": { "en": "", "jp": "環境：電力不足γ", "cn": "" },
+				"name": { "en": "Insufficient Power γ", "jp": "環境：電力不足γ", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_2",
 				"effects": [],
 				"tooltip": {
@@ -785,7 +785,7 @@
 		"options": [
 			{
 				"rank": 1,
-				"name": { "en": "", "jp": "環境：電力不足β", "cn": "" },
+				"name": { "en": "Insufficient Power β", "jp": "環境：電力不足β", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_bmod_1",
 				"effects": [],
 				"tooltip": {
@@ -867,7 +867,7 @@
 		"options": [
 			{
 				"rank": 1,
-				"name": { "en": "", "jp": "目標：弩手特訓", "cn": "" },
+				"name": { "en": "Sniper Training", "jp": "目標：弩手特訓", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_aruarw_1",
 				"effects": [
 					{
@@ -891,7 +891,7 @@
 			{
 				"rank": 1,
 				"latter": true,
-				"name": { "en": "", "jp": "目標：刺客特訓", "cn": "" },
+				"name": { "en": "Assassin Training", "jp": "目標：刺客特訓", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_aruass_1",
 				"effects": [
 					{

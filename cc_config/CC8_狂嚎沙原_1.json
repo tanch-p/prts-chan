@@ -113,7 +113,7 @@
 				"rank": 2,
 				"name": {
 					"en": "Guard/Specialist DP tripled",
-					"jp": "指令：契約実行",
+					"jp": "指令：執行妨害",
 					"cn": "目标：执行合约"
 				},
 				"img": "75px-Char_cost_guardspecial_2",
@@ -132,8 +132,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"en": "Tiacauh Brave Stealth",
-					"jp": "ティアカウ勇士",
+					"en": "Tiacauh Brave: Duel 3",
+					"jp": "強敵：鰐闘死合III",
 					"cn": ""
 				},
 				"img": "狂嚎沙原/cchmpn_amod_3",
