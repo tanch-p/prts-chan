@@ -20,10 +20,10 @@ Get me a
 - IS
 
   2. small selected relics
-  3. test if normal collection is times multiplier
   4. tooltips for hallu and relics
   5. map stats
   6. map tokens
+  7. change map nav to just return selectedFloor
 
 - Header
 

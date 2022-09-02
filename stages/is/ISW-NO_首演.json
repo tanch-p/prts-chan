@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Premiere", "jp": "初演", "cn": "首演" },
 	"img": "ISW-NO_首演",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "lWKX8z8849c"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],

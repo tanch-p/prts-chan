@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Gun Salute", "jp": "礼砲小隊", "cn": "礼炮小队" },
 	"img": "ISW-NO_礼炮小队",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "GxiKxTYJ4SY"
+		}
+	],
 	"theme": "phcs",
 	"floors": [1, 2],
 	"floor_nav": [1],

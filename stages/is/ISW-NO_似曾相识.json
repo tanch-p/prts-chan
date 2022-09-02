@@ -1,6 +1,13 @@
 {
 	"name": { "en": "A Familiar Face", "jp": "デジャヴュ", "cn": "似曾相识" },
 	"img": "ISW-NO_似曾相识",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "k91-nLm9RhM"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],

@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Reform", "jp": "感化", "cn": "感化" },
 	"img": "ISW-NO_感化",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "-7CqlwrwHxU"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],

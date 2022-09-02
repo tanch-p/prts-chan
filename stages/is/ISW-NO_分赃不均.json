@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Unequal Split", "jp": "分け前のもつれ", "cn": "分赃不均" },
 	"img": "ISW-NO_分赃不均",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "WHUM1HHJdC0"
+		}
+	],
 	"theme": "phcs",
 	"floors": [2],
 	"floor_nav": [2],

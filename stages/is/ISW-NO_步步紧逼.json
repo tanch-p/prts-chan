@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Pressing Ahead", "jp": "過去からの刺客", "cn": "步步紧逼" },
 	"img": "ISW-NO_步步紧逼",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "JBEea6Fg0Qw"
+		}
+	],
 	"theme": "phcs",
 	"floors": [4],
 	"floor_nav": [4],
