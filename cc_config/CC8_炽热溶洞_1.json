@@ -20,7 +20,7 @@
 		]
 	},
 	{
-		"category": "map_vol",
+		"category": "map_vol_a",
 		"options": [
 			{
 				"rank": 1,
@@ -40,7 +40,7 @@
 		]
 	},
 	{
-		"category": "map_vol",
+		"category": "map_vol_b",
 		"options": [
 			{
 				"rank": 1,
