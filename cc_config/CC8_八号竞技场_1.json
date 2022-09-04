@@ -166,7 +166,7 @@
 										"jp": "スキル・物理",
 										"cn": ""
 									},
-									"multiplier": 3.8,
+									"multiplier": 5.6,
 									"hits": 1,
 									"fixed_inc": 0,
 									"tooltip": {
@@ -191,7 +191,7 @@
 										"jp": "スキル・術",
 										"cn": ""
 									},
-									"multiplier": 2.4,
+									"multiplier": 2.8,
 									"hits": 1,
 									"fixed_inc": 0,
 									"tooltip": {

@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Unending", "jp": "エンドレスチャージ", "cn": "永无尽头" },
 	"img": "ISW-NO_永无尽头",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "e0TL5ohmlVA"
+		}
+	],
 	"theme": "phcs",
 	"floors": [4],
 	"floor_nav": [4],
