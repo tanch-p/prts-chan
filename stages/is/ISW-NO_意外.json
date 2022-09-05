@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Accident", "jp": "墜落事故", "cn": "意外" },
 	"img": "ISW-NO_意外",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "qW4fUuAjkP8"
+		}
+	],
 	"theme": "phcs",
 	"floors": [1, 2],
 	"floor_nav": [1],

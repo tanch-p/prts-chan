@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Beast Taming", "jp": "猛獣小屋", "cn": "驯兽小屋" },
 	"img": "ISW-NO_驯兽小屋",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "INx2xzfl5Rc"
+		}
+	],
 	"theme": "phcs",
 	"floors": [1, 2],
 	"floor_nav": [1],

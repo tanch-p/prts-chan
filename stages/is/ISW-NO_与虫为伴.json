@@ -1,6 +1,13 @@
 {
 	"name": { "en": "A Date With Slugs", "jp": "ムシと一緒", "cn": "与虫为伴" },
 	"img": "ISW-NO_与虫为伴",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "0XVMeh6IllU"
+		}
+	],
 	"theme": "phcs",
 	"floors": [1, 2],
 	"floor_nav": [1],
