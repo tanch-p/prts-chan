@@ -768,7 +768,7 @@
 			{
 				"latter": true,
 				"rank": 2,
-				"name": { "en": "Insufficient Power γ", "jp": "環境：電力不足γ", "cn": "" },
+				"name": { "en": "Lingering Starfire", "jp": "環境：一筋の光", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_2",
 				"effects": [],
 				"tooltip": {
@@ -891,7 +891,7 @@
 			{
 				"rank": 1,
 				"latter": true,
-				"name": { "en": "Assassin Training", "jp": "目標：刺客特訓", "cn": "" },
+				"name": { "en": "Assassin's Intuition", "jp": "目標：闇刃磨礪", "cn": "" },
 				"img": "大骑士领酒吧街/75px-Enemy_aruass_1",
 				"effects": [
 					{

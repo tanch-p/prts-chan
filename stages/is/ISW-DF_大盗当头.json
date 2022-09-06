@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Theft From Above", "jp": "天翔ける怪盗", "cn": "大盗当头" },
 	"img": "ISW-DF_大盗当头",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "c97PyuG3B40"
+		}
+	],
 	"theme": "phcs",
 	"floors": [3],
 	"floor_nav": [3],

@@ -65,8 +65,8 @@
 			{
 				"rank": 2,
 				"name": {
-					"en": "Dusk Weft and Warp",
-					"jp": "自在　緯地経天",
+					"en": "Free: Four Corners 2",
+					"jp": "強敵：天地縦横II",
 					"cn": ""
 				},
 				"img": "灰齐山麓/75px-Enemy_xi_bmod_2",
@@ -137,8 +137,8 @@
 			{
 				"rank": 2,
 				"name": {
-					"en": "Envy",
-					"jp": "ソネミ",
+					"en": "Envy: Overflowing Emotions",
+					"jp": "特化：妬心暴走",
 					"cn": ""
 				},
 				"img": "灰齐山麓/75px-Enemy_spmage_2",
@@ -200,8 +200,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"en": "Supporters 3",
-					"jp": "制限：過負荷III",
+					"en": "Multi-faceted Defense Contract",
+					"jp": "制限：多面堅守崩壊",
 					"cn": ""
 				},
 				"img": "灰齐山麓/Char_cost_supporters_2",
