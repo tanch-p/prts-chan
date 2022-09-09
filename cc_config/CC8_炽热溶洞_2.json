@@ -74,7 +74,7 @@
 					{
 						"targets": ["UM1"],
 						"mods": {
-							"hp": "%50",
+							"hp": "%90",
 							"special": {
 								"pompeii_explosion": {
 									"type": "atk",
@@ -92,9 +92,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "Pompeii Max HP increased by 50%, explosion damage by 100%",
+					"en": "Pompeii Max HP increased by 90%, explosion damage by 100%",
 					"cn": "",
-					"jp": "「Pompeii」の最大HP+50%、爆発ダメージ+100%"
+					"jp": "「Pompeii」の最大HP+90%、爆発ダメージ+100%"
 				}
 			}
 		]
