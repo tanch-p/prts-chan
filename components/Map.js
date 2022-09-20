@@ -11,7 +11,7 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 		device === "mobile" ? (1062 * 2) / 5 : Math.floor((1062 * 3) / 5);
 	const height =
 		device === "mobile" ? (600 * 2) / 5 : Math.floor((600 * 3) / 5);
-
+	const [current, setCurrent] = useState(0);
 	const routes = mapConfig.routes;
 	return (
 		<>
@@ -21,19 +21,34 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 				</div>
 				<div className="">
 					{routes ? (
-						routes.map(({ title, category, id }) => (
-							<div key={id} className="flex justify-center">
-								<iframe
-									width={width}
-									height={height}
-									src={`https://www.youtube-nocookie.com/embed/${id}?rel=0`}
-									title={mapConfig.name[language]}
-									frameBorder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowFullScreen
-								></iframe>
-							</div>
-						))
+						<>
+							{routes.length > 1 && (
+								<div>
+									<ul className="flex font-bold text-lg text-white text-center select-none">
+										{routes.map(({ title, id }, index) => (
+											<li
+												className={`w-full cursor-pointer `}
+												key={title}
+												onClick={() => setCurrent(index)}
+											>
+												<span
+													className={`inline-block p-3 w-full  active focus:outline-none ${
+														current !== index ? "opacity-30" : ""
+													}`}
+												>
+													{langPack[title]}
+												</span>
+											</li>
+										))}
+									</ul>
+								</div>
+							)}
+							{routes.map(({ id }, index) => (
+								<div hidden={index !== current} key={id}>
+									<RouteiframeComponent id={id} width={width} height={height} />
+								</div>
+							))}
+						</>
 					) : (
 						<div className="md:h-[360px] relative select-none z-0 flex justify-center">
 							<Image
@@ -74,38 +89,16 @@ export default function Map({ mapConfig, language, device, fontThemes }) {
 	);
 }
 
-{
-	/* <div className="absolute left-[50%] -translate-x-[50%] flex items-center">
-<Image src={enemy_count} layout="intrinsic" className="" />{" "}
-59
-</div> */
-}
-
-{
-	/* <div className="">
-<Image
-	src={cost_icon}
-	height="30px"
-	width="30px"
-	layout="intrinsic"
-	alt="cost icon"
-	className=""
-/>
-<p className="pl-2 font-medium">
-	{langPack.initial_cost} - {mapConfig.initial_cost}
-</p>
-</div> */
-}
-
-{
-	/* <div className="absolute left-[50%] -translate-x-[50%] z-[5] bg-neutral-900 bg-opacity-80 pl-2 pr-4 py-2 flex items-center">
-<Image
-	src={enemy_count}
-	layout="intrinsic"
-	alt="map enemy count"
-	className=""
-	unoptimized
-/>
-<p>{mapConfig.count}</p>
-</div> */
-}
+const RouteiframeComponent = ({ id, width, height }) => {
+	return (
+		<div key={id} className="flex justify-center">
+			<iframe
+				width={width}
+				height={height}
+				src={`https://www.youtube-nocookie.com/embed/${id}?rel=0`}
+				frameBorder="0"
+				allowFullScreen
+			></iframe>
+		</div>
+	);
+};

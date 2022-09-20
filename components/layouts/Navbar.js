@@ -39,7 +39,7 @@ export const Navbar = ({ open, setOpen, device, theme }) => {
 					className={`grid grid-cols-3 place-items-center max-w-7xl mx-auto h-16`}
 				>
 					<div
-						className={`flex items-center relative justify-self-start  ${
+						className={`flex items-center relative justify-self-start px-4  ${
 							IS_THEMES.includes(theme)
 								? "self-start mt-[18px] invisible md:visible md:block"
 								: ""

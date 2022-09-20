@@ -9,7 +9,6 @@ import FooterBar from "@/components/IS/Footer_bar";
 import FloorNavigation from "@/components/IS/Floor_navigation";
 import ModeToggle from "@/components/Mode_toggle";
 import { setOtherMods } from "@/lib/parseStats";
-import { TabComponent } from "@/components/Tabs";
 
 export async function getStaticProps({ params }) {
 	const stagesList = getAllStageIds("is");

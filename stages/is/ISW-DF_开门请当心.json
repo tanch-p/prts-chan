@@ -3,9 +3,12 @@
 	"img": "ISW-DF_开门请当心",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "route_left",
 			"id": "r-6HEncEBU0"
+		},
+		{
+			"title": "route_right",
+			"id": "jJBzNmj26nA"
 		}
 	],
 	"theme": "phcs",

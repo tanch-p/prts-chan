@@ -7,6 +7,8 @@
 	"normal_mode": "Combat Ops",
 	"hard_mode": "Emergency Ops",
 	"initial_cost": "Initial Cost",
+	"route_left": "Left Route",
+	"route_right": "Right Route",
 
 	"炽热溶洞": "Blazing Cavern",
 	"风蚀高地": "Windswept Highlands",
