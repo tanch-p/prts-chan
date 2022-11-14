@@ -1,30 +1,25 @@
 {
-    "id": "AN3",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "木制瑞印",
-    "atk_type_jp": "攻撃しない",
-    "hp": "2",
-    "atk": "0",
-    "def": "0",
-    "res": "0",
-    "aspd%": "100",
-    "aspd": "1",
-    "range": "0",
-    
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.8",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "special": ""
+	"id": "AN3",
+	"name": { "en": "Wooden Seal", "jp": "木製瑞印", "cn": "木制瑞印" },
+	"stats": {
+		"level0": {
+            "hp": "2",
+            "atk": "0",
+            "def": "0",
+            "res": "0",
+            "aspd%": "100",
+            "aspd": "1",
+            "range": "0",
+            "weight": "0",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["no_attack"],
+		"hits": 1
+	},
+	"type": []
 }

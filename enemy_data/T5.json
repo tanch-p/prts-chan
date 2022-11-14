@@ -14,7 +14,19 @@
 			"aspd%": "100",
 			"aspd": "1",
 			"range": "0",
-
+			"weight": "2",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["def_down_10"]
+		},
+		"死斗": {
+			"hp": "7000",
+			"atk": "250",
+			"def": "200",
+			"res": "10",
+			"aspd%": "100",
+			"aspd": "1",
+			"range": "0",
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.8",

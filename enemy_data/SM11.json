@@ -17,10 +17,10 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.4",
-			"special": []
+			"special": ["egg_stab"]
 		}
 	},
-	"status_immune": [],
+	"status_immune": ["silence"],
 	"normal_attack": {
 		"atk_type": ["no_attack"],
 		"hits": 1

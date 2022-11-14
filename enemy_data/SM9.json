@@ -17,10 +17,10 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "0.3",
-			"special": []
+			"special": ["sea_reaper_awaken"]
 		}
 	},
-	"status_immune": [],
+	"status_immune": ["silence"],
 	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1

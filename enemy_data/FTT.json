@@ -17,10 +17,10 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": []
+			"special": ["ftt_splash"]
 		}
 	},
-	"status_immune": [],
+	"status_immune": ["silence"],
 	"normal_attack": {
 		"atk_type": ["ranged", "phys"],
 		"hits": 1
@@ -28,5 +28,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["ranged", "sea_monster","elite"]
+	"type": ["ranged", "sea_monster", "elite"]
 }

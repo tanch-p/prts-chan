@@ -10,9 +10,9 @@
 			"aspd%": "100",
 			"aspd": "0.4",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.95",
+			"lifepoint": 1,
+			"ms": "0.95",
 			"special": []
 		},
 		"廃工場": {
@@ -23,9 +23,9 @@
 			"aspd%": "100",
 			"aspd": "0.4",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.95",
+			"lifepoint": 1,
+			"ms": "0.95",
 			"special": []
 		},
 		"鲍勃酒品": {
@@ -36,15 +36,28 @@
 			"aspd%": "100",
 			"aspd": "0.4",
 			"range": "0",
-			
 			"weight": "1",
-			"lifepoint":1,"ms": "0.95",
+			"lifepoint": 1,
+			"ms": "0.95",
+			"special": []
+		},
+		"死斗": {
+			"hp": "4000",
+			"atk": "270",
+			"def": "200",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "0.4",
+			"range": "0",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "0.95",
 			"special": []
 		}
 	},
 
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},

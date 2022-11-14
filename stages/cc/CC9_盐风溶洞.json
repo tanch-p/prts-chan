@@ -1,0 +1,17 @@
+{
+	"name": {
+		"en": "盐风溶洞",
+		"jp": "盐风溶洞",
+		"cn": "盐风溶洞"
+	},
+	"img": "盐风溶洞",
+	"config": "CC9_盐风溶洞",
+	"ccType": "perma",
+	"enemies": [
+		{ "id": "FTT", "count": 1, "stats": "level0" },
+		{ "id": "SM11", "count": 1, "stats": "level0" },
+		{ "id": "SM9", "count": 1, "stats": "level0" },
+		{ "id": "SM3", "count": 1, "stats": "level0" },
+		{ "id": "SM5", "count": 1, "stats": "level0" }
+	]
+}

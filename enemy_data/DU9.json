@@ -17,7 +17,7 @@
 			"weight": "2",
 			"lifepoint": 1,
 			"ms": "1",
-			"special": ["refraction"]
+			"special": ["refraction", "dublinn_phalanx"]
 		}
 	},
 	"status_immune": [],

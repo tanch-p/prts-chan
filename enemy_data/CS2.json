@@ -14,6 +14,19 @@
 			"lifepoint": 1,
 			"ms": "0.8",
 			"special": ["nervous_impair_20", "singer_aspd_buff"]
+		},
+		"死斗": {
+			"hp": "12000",
+			"atk": "400",
+			"def": "200",
+			"res": "60",
+			"aspd%": "100",
+			"aspd": "4",
+			"range": "2.5",
+			"weight": "3",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": ["nervous_impair_20", "singer_aspd_buff"]
 		}
 	},
 	"status_immune": [],

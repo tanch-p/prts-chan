@@ -10,7 +10,6 @@
             "aspd%": "100",
             "aspd": "1.4",
             "range": "0",
-            
             "weight": "0",
 			"lifepoint":1,"ms": "1.9",
 			"special": []
@@ -23,7 +22,18 @@
             "aspd%": "100",
             "aspd": "1.4",
             "range": "0",
-            
+            "weight": "0",
+			"lifepoint":1,"ms": "1.9",
+			"special": []
+		},
+		"雕匠与石像": {
+            "hp": "2500",
+            "atk": "260",
+            "def": "0",
+            "res": "20",
+            "aspd%": "100",
+            "aspd": "1.4",
+            "range": "0",
             "weight": "0",
 			"lifepoint":1,"ms": "1.9",
 			"special": []

@@ -14,7 +14,6 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "0",
-
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.7",
@@ -28,7 +27,6 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "0",
-
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.7",
@@ -42,7 +40,19 @@
 			"aspd%": "100",
 			"aspd": "3.8",
 			"range": "0",
-
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": ["taunt"]
+		},
+		"先来后到": {
+			"hp": "10000",
+			"atk": "700",
+			"def": "1300",
+			"res": "60",
+			"aspd%": "100",
+			"aspd": "3.8",
+			"range": "0",
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.7",

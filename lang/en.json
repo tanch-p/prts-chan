@@ -4,11 +4,7 @@
 		"perma_stage": "Permanent Stage",
 		"daily_stage": "Daily Stages"
 	},
-	"normal_mode": "Combat Ops",
-	"hard_mode": "Emergency Ops",
 	"initial_cost": "Initial Cost",
-	"route_left": "Left Route",
-	"route_right": "Right Route",
 
 	"炽热溶洞": "Blazing Cavern",
 	"风蚀高地": "Windswept Highlands",
@@ -34,6 +30,13 @@
 		"Hall of Desires"
 	],
 	"floor_title_suffix": "",
+	"normal_mode": "Combat Ops",
+	"hard_mode": "Emergency Ops",
+	"route_left": "Left Route",
+	"route_right": "Right Route",
+	"duck":"Duck",
+	"bear":"Bear",
+	"sp_enemy":"SP",
 
 	"relic_labels": ["Hard Mode", "-ATK", "-DEF", "-HP", "Others"],
 

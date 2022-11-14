@@ -1,32 +1,25 @@
 {
     "id": "IL6",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "冰原战士队长",
-    "atk_type_jp": "物理",
-    "hp": "4000",
-    "atk": "350",
-    "def": "150",
-    "res": "20",
-    "aspd%": "100",
-    "aspd": "2.2",
-    "range": "0",
-    
-    "weight": "1",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.9",
-    "type_jp": [
-        "遠距離"
-    ],
-    "type_en": [
-        "Ranged"
-    ],
-    "type_cn": [
-        "远程"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"name": { "en": "Icefield Warrior Leader", "jp": "氷原の戦士長", "cn": "冰原战士队长" },
+	"stats": {
+		"level0": {
+            "hp": "4000",
+            "atk": "350",
+            "def": "150",
+            "res": "20",
+            "aspd%": "100",
+            "aspd": "2.2",
+            "range": "0",
+            "weight": "1",
+			"lifepoint": 1,
+			"ms": "0.9",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"type": ["melee"]
 }

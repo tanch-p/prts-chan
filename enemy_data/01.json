@@ -15,6 +15,19 @@
 			"ms": "1.1",
 			"special": []
 		},
+		"level1": {
+			"hp": "2750",
+			"atk": "300",
+			"def": "130",
+			"res": "0",
+			"aspd%": "100",
+			"aspd": "2",
+			"range": "0",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "1.1",
+			"special": []
+		},
 		"巡逻队": {
 			"hp": "2550",
 			"atk": "250",
@@ -55,8 +68,8 @@
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
