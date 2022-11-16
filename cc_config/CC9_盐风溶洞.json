@@ -1,30 +1,28 @@
 [
 	{
-		"category": "viviana",
+		"category": "sea_reaper",
 		"options": [
 			{
 				"rank": 1,
-				"name": { "en": "Viviana: Dazzle 1", "jp": "強敵：煌煌I", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_1",
+				"name": { "en": "", "jp": "強敵：煌煌I", "cn": "" },
+				"img": "盐风溶洞/75px-Enemy_dslntc_1",
 				"effects": [
 					{
-						"targets": ["NL17"],
+						"targets": ["SM9"],
 						"mods": {
-							"hp": "%50",
 							"special": {
-								"glimmering_touch": {
-									"type": "atk",
-									"multiplier": 3,
-									"fixed_inc": 0,
-									"initial": 10,
-									"cost": 10,
-									"skill_regen": "auto",
+								"sea_reaper_awaken": {
+									"type": "others",
+									"value": 0.2,
 									"tooltip": {
 										"en": [
-											"Glimmering Touch - after charging for 7s does 250% dmg to units within skill's range, $CD10s$"
+											"Standby→Does not attack, switches to Combat Ready mode when HP below 99.99%",
+											"Combat Ready→Movement Speed is increased by 500% and loses $3% max HP$ every second. Deals 20% of ATK as Nervous Impairment to all allied units in a 2.5 tile radius (ignores camouflage)."
 										],
 										"jp": [
-											"微光の蝕 - 攻撃半径内のユニットに7秒間チャージしたあと範囲攻撃を行う、$CD10秒$"
+											"【待機状態】→攻撃しない、HPが99.99%未満になると【臨戦態勢】に移行",
+											"【臨戦態勢】→移動速度+500%、毎秒$最大HPの3%$分のダメージを受けて、",
+											"半径2.5マス以内の味方全員に、攻撃力の20%の神経ダメージを毎秒与える（迷彩無視）"
 										],
 										"cn": []
 									}
@@ -34,41 +32,38 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +50%, Glimmering Touch charging time halved.",
+					"en": "[sea_reaper] Max HP +50%, Glimmering Touch charging time halved.",
 					"cn": "",
 					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+50%、【微光の蝕】のチャージ時間-50％"
 				}
 			},
 			{
 				"rank": 2,
-				"name": { "en": "Viviana: Dazzle 2", "jp": "強敵：煌煌II", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_amod_2",
+				"name": {
+					"en": "sea_reaper: Dazzle 2",
+					"jp": "強敵：煌煌II",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dslntc_amod_2",
 				"effects": [
 					{
-						"targets": ["NL17"],
+						"targets": ["SM9"],
 						"mods": {
-							"hp": "%110",
+							"atk": "%25",
+							"ms": "%50",
 							"special": {
-								"extra": {
-									"tooltip": {
-										"en": ["$Lower Target Priority$"],
-										"jp": ["$狙われにくくなる$"],
-										"cn": ""
-									}
-								},
-								"glimmering_touch": {
-									"type": "atk",
-									"multiplier": 3,
-									"fixed_inc": 0,
-									"initial": 10,
-									"cost": 10,
-									"skill_regen": "auto",
+								"sea_reaper_awaken": {
+									"type": "others",
+									"value": 0.2,
 									"tooltip": {
 										"en": [
-											"Glimmering Touch - after charging for $3.5s$ does 250% dmg to units within skill's range, $CD12s$"
+											"Standby→Does not attack, switches to Combat Ready mode when HP below 99.99%",
+											"Combat Ready→Movement Speed is increased by 500% and loses $3% max HP$ every second. Deals 20% of ATK as Nervous Impairment to all allied units in a 2.5 tile radius (ignores camouflage)."
 										],
 										"jp": [
-											"微光の蝕 - 攻撃半径内のユニットに$3.5秒$間チャージしたあと範囲攻撃を行う、$CD12秒$"
+											"【待機状態】→攻撃しない、HPが99.99%未満になると【臨戦態勢】に移行",
+											"【臨戦態勢】→移動速度+500%、毎秒$最大HPの3%$分のダメージを受けて、",
+											"半径2.5マス以内の味方全員に、攻撃力の20%の神経ダメージを毎秒与える（迷彩無視）"
 										],
 										"cn": []
 									}
@@ -78,41 +73,38 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +110%, has lower target priority, Glimmering Touch charging time halved and cooldown reduced by 40%.",
+					"en": "[sea_reaper] Max HP +110%, has lower target priority, Glimmering Touch charging time halved and cooldown reduced by 40%.",
 					"cn": "",
 					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+110%、味方ユニットの攻撃対象となりにくい、【微光の蝕】のチャージ時間-50％、クールタイム-40％"
 				}
 			},
 			{
 				"rank": 3,
-				"name": { "en": "Viviana: Dazzle 3", "jp": "強敵：煌煌III", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_amod_3",
+				"name": {
+					"en": "sea_reaper: Dazzle 3",
+					"jp": "強敵：煌煌III",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dslntc_amod_3",
 				"effects": [
 					{
-						"targets": ["NL17"],
+						"targets": ["SM9"],
 						"mods": {
-							"hp": "%160",
+							"atk": "%50",
+							"ms": "%100",
 							"special": {
-								"extra": {
-									"tooltip": {
-										"en": ["$Lower Target Priority$"],
-										"jp": ["$狙われにくくなる$"],
-										"cn": ""
-									}
-								},
-								"glimmering_touch": {
-									"type": "atk",
-									"multiplier": 3,
-									"fixed_inc": 0,
-									"initial": 10,
-									"cost": 10,
-									"skill_regen": "auto",
+								"sea_reaper_awaken": {
+									"type": "others",
+									"value": 0.2,
 									"tooltip": {
 										"en": [
-											"Glimmering Touch - $instantly$ does 250% dmg to units within skill's range, $CD6s$"
+											"Standby→Does not attack, switches to Combat Ready mode when HP below 99.99%",
+											"Combat Ready→Movement Speed is increased by 500% and loses $2.67% max HP$ every second. Deals 20% of ATK as Nervous Impairment to all allied units in a 2.5 tile radius (ignores camouflage)."
 										],
 										"jp": [
-											"微光の蝕 - 攻撃半径内のユニットに$即時発動$の範囲攻撃を行う、$CD6秒$"
+											"【待機状態】→攻撃しない、HPが99.99%未満になると【臨戦態勢】に移行",
+											"【臨戦態勢】→移動速度+500%、毎秒$最大HPの2.67%$分のダメージを受けて、",
+											"半径2.5マス以内の味方全員に、攻撃力の20%の神経ダメージを毎秒与える（迷彩無視）"
 										],
 										"cn": []
 									}
@@ -122,7 +114,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +160%, has lower target priority, Glimmering Touch becomes instant cast and cooldown reduced by 70%.",
+					"en": "[sea_reaper] Max HP +160%, has lower target priority, Glimmering Touch becomes instant cast and cooldown reduced by 70%.",
 					"cn": "",
 					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+160%、味方ユニットの攻撃対象となりにくい、【微光の蝕】が即時発動し、クールタイム-70％"
 				}
@@ -130,41 +122,35 @@
 		]
 	},
 	{
-		"category": "viviana",
+		"category": "sea_reaper",
 		"options": [
 			{ "rank": 1 },
 			{
 				"rank": 2,
-				"name": { "en": "Viviana: Candlelight 2", "jp": "強敵：明灯II", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_bmod_2",
+				"name": {
+					"en": "sea_reaper: Candlelight 2",
+					"jp": "強敵：明灯II",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dslntc_bmod_2",
 				"effects": [
 					{
-						"targets": ["NL17"],
+						"targets": ["SM9"],
 						"mods": {
-							"hp": "%80",
-							"atk": "%50",
-							"range": "%50",
+							"hp": "%40",
 							"special": {
-								"extra": {
-									"tooltip": {
-										"en": ["$Attacks ignore 35 RES$"],
-										"jp": ["$攻撃が術耐性35無視$"],
-										"cn": ""
-									}
-								},
-								"glimmering_touch": {
-									"type": "atk",
-									"multiplier": 3,
-									"fixed_inc": 0,
-									"initial": 10,
-									"cost": 10,
-									"skill_regen": "auto",
+								"sea_reaper_awaken": {
+									"type": "others",
+									"value": 0.2,
 									"tooltip": {
 										"en": [
-											"Glimmering Touch - after charging for $3.5s$ does 250% dmg to units within skill's range, CD20s"
+											"Standby→Does not attack, switches to Combat Ready mode when HP below 99.99%",
+											"Combat Ready→Movement Speed is increased by 500% and loses $2% max HP$ every second. Deals 20% of ATK as Nervous Impairment to all allied units in a 2.5 tile radius (ignores camouflage)."
 										],
 										"jp": [
-											"微光の蝕 - 攻撃半径内のユニットに$3.5秒$間チャージしたあと範囲攻撃を行う、CD20秒"
+											"【待機状態】→攻撃しない、HPが99.99%未満になると【臨戦態勢】に移行",
+											"【臨戦態勢】→移動速度+500%、毎秒$最大HPの2%$分のダメージを受けて、",
+											"半径2.5マス以内の味方全員に、攻撃力の20%の神経ダメージを毎秒与える（迷彩無視）"
 										],
 										"cn": []
 									}
@@ -174,43 +160,37 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +80%, ATK +50%, Range increases, attacks ignore 35 RES and Glimmering Touch's charging time is halved",
+					"en": "[sea_reaper] Max HP +80%, ATK +50%, Range increases, attacks ignore 35 RES and Glimmering Touch's charging time is halved",
 					"cn": "",
 					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+80%、攻撃力+50%、攻撃範囲が拡大し、攻撃対象の術耐性を35%無視、【微光の蝕】のチャージ時間-50％"
 				}
 			},
 			{
 				"rank": 3,
-				"name": { "en": "Viviana: Candlelight 3", "jp": "強敵：明灯III", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_bmod_3",
+				"name": {
+					"en": "sea_reaper: Candlelight 3",
+					"jp": "強敵：明灯III",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dslntc_bmod_3",
 				"effects": [
 					{
-						"targets": ["NL17"],
+						"targets": ["SM9"],
 						"mods": {
-							"hp": "%110",
-							"atk": "%90",
-							"range": "%100",
+							"hp": "%70",
 							"special": {
-								"extra": {
-									"tooltip": {
-										"en": ["$Attacks ignore 80 RES$"],
-										"jp": ["$攻撃が術耐性80無視$"],
-										"cn": ""
-									}
-								},
-								"glimmering_touch": {
-									"type": "atk",
-									"multiplier": 3,
-									"fixed_inc": 0,
-									"initial": 10,
-									"cost": 10,
-									"skill_regen": "auto",
+								"sea_reaper_awaken": {
+									"type": "others",
+									"value": 0.2,
 									"tooltip": {
 										"en": [
-											"Glimmering Touch - after charging for $3.5s$ does 250% dmg to units within skill's range, CD20s"
+											"Standby→Does not attack, switches to Combat Ready mode when HP below 99.99%",
+											"Combat Ready→Movement Speed is increased by 500% and loses $0.8% max HP$ every second. Deals 20% of ATK as Nervous Impairment to all allied units in a 2.5 tile radius (ignores camouflage)."
 										],
 										"jp": [
-											"微光の蝕 - 攻撃半径内のユニットに$3.5秒$間チャージしたあと範囲攻撃を行う、CD20秒"
+											"【待機状態】→攻撃しない、HPが99.99%未満になると【臨戦態勢】に移行",
+											"【臨戦態勢】→移動速度+500%、毎秒$最大HPの0.8%$分のダメージを受けて、",
+											"半径2.5マス以内の味方全員に、攻撃力の20%の神経ダメージを毎秒与える（迷彩無視）"
 										],
 										"cn": []
 									}
@@ -220,7 +200,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "[Viviana] Max HP +110%, ATK +90%, Range increases greatly, attacks ignore 80 RES and Glimmering Touch's charging time is halved",
+					"en": "[sea_reaper] Max HP +110%, ATK +90%, Range increases greatly, attacks ignore 80 RES and Glimmering Touch's charging time is halved",
 					"cn": "",
 					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+110%、攻撃力+90%、攻撃範囲が拡大し、攻撃対象の術耐性を80%無視、【微光の蝕】のチャージ時間-50％"
 				}
@@ -228,16 +208,179 @@
 		]
 	},
 	{
-		"category": "nightzmora",
+		"category": "egg_mod",
 		"options": [
 			{
 				"rank": 1,
-				"name": { "en": "Tola: Lone Khaganquest 1", "jp": "強敵：遥々天路I", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_1",
+				"name": {
+					"en": "",
+					"jp": "環境：酒類特価I",
+					"cn": "环境：酒水促销I"
+				},
+				"img": "盐风溶洞/75px-Enemy_dsurch_1",
 				"effects": [
 					{
-						"targets": ["NL20"],
-						"mods": { "hp": "%50", "atk": "%20", "def": "%20", "res": 10 }
+						"targets": ["SM11"],
+						"mods": {
+							"special": {
+								"immune": ["stun", "freeze"],
+								"egg_stab": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/arts",
+										"jp": "スキル・術",
+										"cn": "技能・法术"
+									},
+									"hits": 1,
+									"multiplier": 2,
+									"fixed_inc": 0,
+									"initial": 0,
+									"cost": 0,
+									"skill_regen": "attack",
+									"tooltip": {
+										"en": [
+											"Every 15% of max HP lost, deals $200%$ of ATK as Arts splash damage and Nervous Impairment in a 2 tile radius"
+										],
+										"jp": [
+											"HPが15%減るごとに、半径2マス以内の味方全員に攻撃力の$200%$の術・神経ダメージを与える"
+										],
+										"cn": [
+											"每损失15%生命值，对半径2范围内所有我方单位造成攻击力$200%$法术溅射伤害与攻击力100%神经损伤"
+										]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Additional two Pocket Sea Crawler appears on map.",
+					"jp": "「嚢海のクローラー」が2体追加出現",
+					"cn": ""
+				}
+			},
+			{
+				"rank": 2,
+				"latter": true,
+				"name": {
+					"en": "",
+					"jp": "環境：酒類特価II",
+					"cn": "环境：酒水促销II"
+				},
+				"img": "盐风溶洞/75px-Enemy_dsurch_2",
+				"effects": [
+					{
+						"targets": ["SM11"],
+						"mods": {
+							"special": {
+								"immune": ["stun", "freeze"],
+								"egg_stab": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/arts",
+										"jp": "スキル・術",
+										"cn": "技能・法术"
+									},
+									"hits": 1,
+									"multiplier": 2.5,
+									"fixed_inc": 0,
+									"initial": 0,
+									"cost": 0,
+									"skill_regen": "attack",
+									"tooltip": {
+										"en": [
+											"Every $12%$ of max HP lost, deals $250%$ of ATK as Arts splash damage and Nervous Impairment in a $2.3$ tile radius"
+										],
+										"jp": [
+											"HPが$12%$減るごとに、半径$2.3$マス以内の味方全員に攻撃力の$250%$の術・神経ダメージを与える"
+										],
+										"cn": [
+											"每损失$12%$生命值，对半径$2.3$范围内所有我方单位造成攻击力$250%$法术溅射伤害与攻击力100%神经损伤"
+										]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Additional four Pocket Sea Crawler appears on map.",
+					"jp": "「嚢海のクローラー」が4体追加出現",
+					"cn": ""
+				}
+			},
+			{
+				"rank": 3,
+				"latter": true,
+				"name": {
+					"en": "",
+					"jp": "環境：酒類特価II",
+					"cn": "环境：酒水促销II"
+				},
+				"img": "盐风溶洞/75px-Enemy_dsurch_3",
+				"effects": [
+					{
+						"targets": ["SM11"],
+						"mods": {
+							"special": {
+								"immune": ["stun", "freeze"],
+								"egg_stab": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/arts",
+										"jp": "スキル・術",
+										"cn": "技能・法术"
+									},
+									"hits": 1,
+									"multiplier": 3,
+									"fixed_inc": 0,
+									"initial": 0,
+									"cost": 0,
+									"skill_regen": "attack",
+									"tooltip": {
+										"en": [
+											"Every $9%$ of max HP lost, deals $300%$ of ATK as Arts splash damage and Nervous Impairment in a $2.8$ tile radius"
+										],
+										"jp": [
+											"HPが$9%$減るごとに、半径$2.8$マス以内の味方全員に攻撃力の$300%$の術・神経ダメージを与える"
+										],
+										"cn": [
+											"每损失$9%$生命值，对半径$2.8$范围内所有我方单位造成攻击力$300%$法术溅射伤害与攻击力100%神经损伤"
+										]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Additional four Pocket Sea Crawler appears on map.",
+					"jp": "「嚢海のクローラー」が4体追加出現",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "ftt",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Tola: Lone Khaganquest 1",
+					"jp": "強敵：遥々天路I",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dsmant_1",
+				"effects": [
+					{
+						"targets": ["FTT"],
+						"mods": {
+							"hp": "%40",
+							"special": {
+								"immune": ["stun", "freeze"]
+							}
+						}
 					}
 				],
 				"tooltip": {
@@ -248,12 +391,23 @@
 			},
 			{
 				"rank": 2,
-				"name": { "en": "Tola: Lone Khaganquest 2", "jp": "強敵：遥々天路II", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_amod_2",
+				"name": {
+					"en": "Tola: Lone Khaganquest 2",
+					"jp": "強敵：遥々天路II",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dsmant_amod_2",
 				"effects": [
 					{
-						"targets": ["NL20"],
-						"mods": { "hp": "%100", "atk": "%60", "res": 30 }
+						"targets": ["FTT"],
+						"mods": {
+							"hp": "%60",
+							"atk": "%25",
+							"aspd": "%25",
+							"special": {
+								"immune": ["stun", "freeze"]
+							}
+						}
 					}
 				],
 				"tooltip": {
@@ -264,16 +418,21 @@
 			},
 			{
 				"rank": 3,
-				"name": { "en": "Tola: Lone Khaganquest 3", "jp": "強敵：遥々天路III", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_amod_3",
+				"name": {
+					"en": "Tola: Lone Khaganquest 3",
+					"jp": "強敵：遥々天路III",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dsmant_amod_3",
 				"effects": [
 					{
-						"targets": ["NL20"],
+						"targets": ["FTT"],
 						"mods": {
-							"hp": "%150",
-							"atk": "%100",
-							"res": 50,
+							"hp": "%80",
+							"atk": "%40",
+							"aspd": "%40",
 							"special": {
+								"immune": ["stun", "freeze"],
 								"extra": {
 									"tooltip": {
 										"en": ["$Stealth$"],
@@ -294,47 +453,111 @@
 		]
 	},
 	{
-		"category": "nightzmora",
+		"category": "ftt",
 		"options": [
 			{ "rank": 1 },
 			{
 				"rank": 2,
-				"name": { "en": "Tola: Khagan's Excursion 2", "jp": "強敵：悪夢の王II", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_bmod_2",
+				"name": {
+					"en": "Tola: Khagan's Excursion 2",
+					"jp": "強敵：悪夢の王II",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dsmant_bmod_2",
 				"effects": [
 					{
-						"targets": ["NL20"],
+						"targets": ["FTT"],
 						"mods": {
-							"hp": "%65",
-							"atk": "%80",
-							"def": "%60",
-							"special": {}
+							"hp": "%100",
+							"range": "%35",
+							"special": {
+								"immune": ["stun", "freeze"],
+								"ftt_splash": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/phys",
+										"jp": "スキル・物理",
+										"cn": "技能・物理"
+									},
+									"hits": 5,
+									"multiplier": 1.35,
+									"fixed_inc": 0,
+									"initial": 0,
+									"cost": 0,
+									"skill_regen": "attack",
+									"tooltip": {
+										"en": [
+											"Skill→Initial SP: 10, Cost:20",
+											"Attacks up to 5 times, dealing $135% of ATK$ as Physical damage and Nervous Impairment",
+											"While using skill, does not move and becomes invulnerable, "
+										],
+										"jp": [
+											"スキル→初期SP10、必要SP20",
+											"最大5回攻撃力の$135%$の物理・神経ダメージを与える",
+											"スキル発動中は無敵、移動しない、"
+										],
+										"cn": []
+									}
+								}
+							}
 						}
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +65%, ATK +80%, DEF +60%, 3 [Nightzmora Imitators] appear",
+					"en": "'The Last Kheshig', Tola's Max HP +65%, ATK +80%, DEF +60%, 3 [ftt Imitators] appear",
 					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+65%、攻撃力+80%、防御力+60%、追加で悪夢のマニアが3体登場する",
 					"cn": ""
 				}
 			},
 			{
 				"rank": 3,
-				"name": { "en": "Tola: Khagan's Excursion 3", "jp": "強敵：悪夢の王III", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_bmod_3",
+				"name": {
+					"en": "Tola: Khagan's Excursion 3",
+					"jp": "強敵：悪夢の王III",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dsmant_bmod_3",
 				"effects": [
 					{
-						"targets": ["NL20"],
+						"targets": ["FTT"],
 						"mods": {
-							"hp": "%80",
-							"atk": "%150",
-							"def": "%100",
-							"special": {}
+							"hp": "%150",
+							"range": "%35",
+							"special": {
+								"immune": ["stun", "freeze"],
+								"ftt_splash": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/phys",
+										"jp": "スキル・物理",
+										"cn": "技能・物理"
+									},
+									"hits": 5,
+									"multiplier": 2,
+									"fixed_inc": 0,
+									"initial": 0,
+									"cost": 0,
+									"skill_regen": "attack",
+									"tooltip": {
+										"en": [
+											"Skill→Initial SP: 10, $Cost:14$",
+											"Attacks up to 5 times, dealing $200% of ATK$ as Physical damage and Nervous Impairment",
+											"While using skill, does not move and becomes invulnerable, "
+										],
+										"jp": [
+											"スキル→初期SP10、$必要SP14$",
+											"最大5回攻撃力の$200%$の物理・神経ダメージを与える",
+											"スキル発動中は無敵、移動しない、"
+										],
+										"cn": []
+									}
+								}
+							}
 						}
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +80%, ATK +150%, DEF +100%, 2 waves of 3 [Nightzmora Imitators] appear",
+					"en": "'The Last Kheshig', Tola's Max HP +80%, ATK +150%, DEF +100%, 2 waves of 3 [ftt Imitators] appear",
 					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+80%、攻撃力+150%、防御力+100%、追加で悪夢のマニアが2ウェーブで3体ずつ登場する",
 					"cn": ""
 				}
@@ -342,131 +565,72 @@
 		]
 	},
 	{
-		"category": "sleeping_knight",
+		"category": "enemy_atk",
 		"options": [
 			{
 				"rank": 1,
 				"name": {
-					"en": "",
-					"jp": "環境：酒類特価I",
-					"cn": "环境：酒水促销I"
-				},
-				"img": "大骑士领酒吧街/75px-Enemy_napkgt_1",
-				"effects": [
-					{
-						"targets": ["NL8"],
-						"mods": {
-							"special": {
-								"count": 2
-							}
-						}
-					}
-				],
-				"tooltip": {
-					"en": "Additional two Knight Territory Hibernator appears on map.",
-					"jp": "「騎士領の凶悪酔漢」が2体追加出現",
-					"cn": ""
-				}
-			},
-			{
-				"rank": 2,
-				"latter": true,
-				"name": {
-					"en": "",
-					"jp": "環境：酒類特価II",
-					"cn": "环境：酒水促销II"
-				},
-				"img": "大骑士领酒吧街/75px-Enemy_napkgt_2",
-				"effects": [
-					{
-						"targets": ["NL8"],
-						"mods": {
-							"special": {
-								"count": 4
-							}
-						}
-					}
-				],
-				"tooltip": {
-					"en": "Additional four Knight Territory Hibernator appears on map.",
-					"jp": "「騎士領の凶悪酔漢」が4体追加出現",
-					"cn": ""
-				}
-			},
-			{ "rank": 3 }
-		]
-	},
-	{
-		"category": "enemy_atkaspd",
-		"options": [
-			{
-				"rank": 1,
-				"name": {
-					"en": "Enemy ATK ASPD 1",
+					"en": "Enemy ATK 1",
 					"jp": "増幅：火力I",
-					"cn": "源石环境：深层刺激I"
+					"cn": "源石环境：刺激I"
 				},
-				"img": "75px-Enemy_atk_attackspeed_1",
+				"img": "75px-Enemy_atk_1",
 				"effects": [
 					{
 						"targets": ["ALL"],
 						"mods": {
-							"atk": "%15",
-							"aspd": "%15"
+							"atk": "%20"
 						}
 					}
 				],
 				"tooltip": {
-					"en": "All enemies ATK +15%, ASPD +15",
-					"jp": "全ての敵の攻撃力+15%、攻撃速度+15",
-					"cn": "所有敌人的攻击力提升15%，攻击速度+15"
+					"en": "All enemies ATK +20%",
+					"jp": "全ての敵の攻撃力+20%",
+					"cn": "所有敌人的攻击力提升20%"
 				}
 			},
 			{
 				"rank": 2,
 				"name": {
-					"en": "Enemy ATK ASPD 2",
+					"en": "Enemy ATK 2",
 					"jp": "増幅：火力II",
-					"cn": "源石环境：深层刺激II"
+					"cn": "源石环境：刺激II"
 				},
-				"img": "75px-Enemy_atk_attackspeed_2",
+				"img": "75px-Enemy_atk_2",
 				"effects": [
 					{
 						"targets": ["ALL"],
 						"mods": {
-							"atk": "%30",
-							"aspd": "%30"
+							"atk": "%35"
 						}
 					}
 				],
 				"tooltip": {
-					"en": "All enemies ATK +30%, ASPD +30",
-					"jp": "全ての敵の攻撃力+30%、攻撃速度+30",
-					"cn": "所有敌人的攻击力提升30%，攻击速度+30"
+					"en": "All enemies ATK +35%",
+					"jp": "全ての敵の攻撃力+35%",
+					"cn": "所有敌人的攻击力提升35%"
 				}
 			},
 			{
 				"rank": 3,
-				"latter": true,
 				"name": {
-					"en": "Enemy ATK ASPD 3",
+					"en": "Enemy ATK 3",
 					"jp": "増幅：火力III",
-					"cn": "源石环境：深层刺激III"
+					"cn": "源石环境：刺激III"
 				},
-				"img": "75px-Enemy_atk_attackspeed_3",
+				"img": "75px-Enemy_atk_3",
 				"effects": [
 					{
 						"targets": ["ALL"],
 						"mods": {
-							"atk": "%45",
-							"aspd": "%45"
+							"atk": "%65"
 						}
 					}
 				],
 				"tooltip": {
-					"en": "All enemies ATK +45%, ASPD +45",
-					"jp": "全ての敵の攻撃力+45%、攻撃速度+45",
-					"cn": "所有敌人的攻击力提升45%，攻击速度+45"
+					"en": "All enemies ATK +65%",
+					"jp": "全ての敵の攻撃力+65%",
+					"cn": "所有敌人的攻击力提升65%"
 				}
 			}
 		]
@@ -476,27 +640,87 @@
 		"options": [
 			{
 				"rank": 1,
+				"name": {
+					"en": "Enemy HP 1",
+					"jp": "増幅：体力I",
+					"cn": "源石环境：活性I"
+				},
 				"img": "75px-Enemy_hp_1",
-				"effects": [{ "targets": ["ALL"], "mods": { "hp": "%30" } }],
+				"effects": [{ "targets": ["ALL"], "mods": { "hp": "%35" } }],
 				"tooltip": {
-					"en": "Enemies Max HP +30%",
-					"cn": "",
-					"jp": "全ての敵の最大HP+30%"
+					"en": "Enemy Max HP +35%",
+					"jp": "全ての敵の最大HP+35%",
+					"cn": "所有敌人的生命值提升35%"
 				}
 			},
 			{
 				"rank": 2,
+				"name": {
+					"en": "Enemy HP 2",
+					"jp": "増幅：体力II",
+					"cn": "源石环境：活性II"
+				},
 				"img": "75px-Enemy_hp_2",
-				"effects": [{ "targets": ["ALL"], "mods": { "hp": "%70" } }],
+				"effects": [{ "targets": ["ALL"], "mods": { "hp": "%75" } }],
 				"tooltip": {
-					"en": "Enemies Max HP +70%",
-					"cn": "",
-					"jp": "全ての敵の最大HP+70%"
+					"en": "Enemy Max HP +75%",
+					"jp": "全ての敵の最大HP+75%",
+					"cn": "所有敌人的生命值提升75%"
 				}
 			},
 			{
-				"rank": 3
+				"rank": 3,
+				"name": {
+					"en": "Enemy HP 3",
+					"jp": "増幅：体力III",
+					"cn": "源石环境：活性III"
+				},
+				"img": "75px-Enemy_hp_3",
+				"effects": [{ "targets": ["ALL"], "mods": { "hp": "%115" } }],
+				"tooltip": {
+					"en": "Enemy Max HP +115%",
+					"jp": "全ての敵の最大HP+115%",
+					"cn": "所有敌人的生命值提升115%"
+				}
 			}
+		]
+	},
+	{
+		"category": "enemy_def",
+		"options": [
+			{
+				"rank": 1,
+				"latter": true,
+				"name": {
+					"en": "Increased Enemy DEF",
+					"jp": "増幅：装甲I",
+					"cn": "反装甲I"
+				},
+				"img": "75px-Enemy_def_1",
+				"effects": [{ "targets": ["ALL"], "mods": { "fixed_def": 200 } }],
+				"tooltip": {
+					"en": "Enemy DEF +200",
+					"jp": "全ての敵の防御力+200",
+					"cn": "所有敌人的防御力提升200"
+				}
+			},
+			{
+				"rank": 2,
+				"latter": true,
+				"name": {
+					"en": "Increased Enemy DEF",
+					"jp": "増幅：装甲II",
+					"cn": "反装甲II"
+				},
+				"img": "75px-Enemy_def_2",
+				"effects": [{ "targets": ["ALL"], "mods": { "fixed_def": 400 } }],
+				"tooltip": {
+					"en": "Enemy DEF +400",
+					"jp": "全ての敵の防御力+400",
+					"cn": "所有敌人的防御力提升400"
+				}
+			},
+			{ "rank": 3 }
 		]
 	},
 	{
@@ -578,9 +802,9 @@
 				"img": "75px-Char_hp_2",
 				"effects": [],
 				"tooltip": {
-					"en": "Ally Max HP reduced -40%",
-					"jp": "全ての味方の最大HP-40%",
-					"cn": "所有我方单位的生命值上限降低40%"
+					"en": "Ally Max HP reduced -35%",
+					"jp": "全ての味方の最大HP-35%",
+					"cn": "所有我方单位的生命值上限降低35%"
 				}
 			},
 			{
@@ -594,10 +818,48 @@
 				"img": "75px-Char_hp_3",
 				"effects": [],
 				"tooltip": {
-					"en": "Ally Max HP reduced -60%",
-					"jp": "全ての味方の最大HP-60%",
-					"cn": "所有我方单位的生命值上限降低60%"
+					"en": "Ally Max HP reduced -55%",
+					"jp": "全ての味方の最大HP-55%",
+					"cn": "所有我方单位的生命值上限降低55%"
 				}
+			}
+		]
+	},
+	{
+		"category": "char_debuff",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Debuff Time 1",
+					"jp": "制限：I",
+					"cn": ""
+				},
+				"img": "75px-Char_debuff_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ stun/freeze duration increased by 50%",
+					"jp": "全ての味方のスタン、凍結の継続時間+50%",
+					"cn": ""
+				}
+			},
+			{
+				"rank": 2,
+				"name": {
+					"en": "Increased Debuff Time 2",
+					"jp": "制限：II",
+					"cn": ""
+				},
+				"img": "75px-Char_debuff_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ stun/freeze duration increased by 100%",
+					"jp": "全ての味方のスタン、凍結の継続時間+100%",
+					"cn": ""
+				}
+			},
+			{
+				"rank": 3
 			}
 		]
 	},
@@ -607,21 +869,21 @@
 			{
 				"rank": 1,
 				"latter": true,
-				"img": "75px-Char_cost_tokentrap_1",
+				"img": "75px-Char_cost_pioneerdefender_1",
 				"effects": [],
 				"tooltip": {
-					"en": "Summoned Units, Objects DP cost tripled",
-					"jp": "召喚物・装置の配置コストが3倍",
+					"en": "Vanguard and Defender DP cost doubled",
+					"jp": "先鋒・重装の配置コストが2倍",
 					"cn": ""
 				}
 			},
 			{
 				"rank": 2,
-				"img": "75px-Char_exclude_snipercaster_3",
+				"img": "75px-Char_cost_ranged_2",
 				"effects": [],
 				"tooltip": {
-					"en": "Snipers and Casters are banned.",
-					"jp": "狙撃・術師使用禁止",
+					"en": "Ranged Operators DP cost tripled",
+					"jp": "遠距離オペレーターの配置コストが3倍",
 					"cn": ""
 				}
 			},
@@ -633,41 +895,25 @@
 		"options": [
 			{
 				"rank": 1,
-				"img": "75px-Char_cost_snipercaster_1",
+				"latter": true,
+				"img": "75px-Char_cost_healersupport_1",
 				"effects": [],
 				"tooltip": {
-					"en": "Snipers and Casters DP cost doubled.",
-					"jp": "狙撃・術師の配置コストが2倍",
+					"en": "Healer and Supporter DP cost doubled",
+					"jp": "医療・補助の配置コストが2倍",
 					"cn": ""
 				}
 			},
 			{
 				"rank": 2,
-				"img": "75px-Char_exclude_guardspecial_2",
+				"img": "75px-Char_cost_melee_2",
 				"effects": [],
 				"tooltip": {
-					"en": "Guards and Specialists banned",
-					"jp": "前衛・特殊使用禁止",
+					"en": "Melee Operators DP cost tripled",
+					"jp": "近距離オペレーターの配置コストが3倍",
 					"cn": ""
 				}
 			},
-			{ "rank": 3 }
-		]
-	},
-	{
-		"category": "operator_cost",
-		"options": [
-			{
-				"rank": 1,
-				"img": "75px-Char_cost_guardspecial_1.png",
-				"effects": [],
-				"tooltip": {
-					"en": "Guards and Specialists DP cost doubled",
-					"jp": "前衛・特殊使の配置コストが2倍",
-					"cn": ""
-				}
-			},
-			{ "rank": 2 },
 			{ "rank": 3 }
 		]
 	},
@@ -752,50 +998,55 @@
 		]
 	},
 	{
-		"category": "neonlamp_candle",
+		"category": "egg_count",
 		"options": [
 			{
 				"rank": 1,
-				"name": { "en": "Insufficient Power α", "jp": "環境：電力不足α", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_amod_1",
+				"name": {
+					"en": "",
+					"jp": "環境：酒類特価I",
+					"cn": "环境：酒水促销I"
+				},
+				"img": "盐风溶洞/75px-Level_hidden_dsurch_1",
 				"effects": [],
 				"tooltip": {
-					"en": "Center top and upper right City Neons are removed, deployable Knight's Emblems count decreased to 0",
-					"cn": "",
-					"jp": "上と右上の「都市のネオン」が除外され、使用できる「騎士の紋章」の数が0に減少"
+					"en": "Additional two Pocket Sea Crawler appears on map.",
+					"jp": "「嚢海のクローラー」が2体追加出現",
+					"cn": ""
 				}
 			},
 			{
-				"latter": true,
 				"rank": 2,
-				"name": { "en": "Lingering Starfire", "jp": "環境：一筋の光", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_2",
+				"latter": true,
+				"name": {
+					"en": "",
+					"jp": "環境：酒類特価II",
+					"cn": "环境：酒水促销II"
+				},
+				"img": "盐风溶洞/75px-Level_hidden_dsurch_2",
 				"effects": [],
 				"tooltip": {
-					"en": "ALL City Neons are removed, deployable Knight's Emblems count decreased to 1",
-					"cn": "",
-					"jp": "全「都市のネオン」が除外され、使用できる「騎士の紋章」の数が1つに減少"
+					"en": "Additional four Pocket Sea Crawler appears on map.",
+					"jp": "「嚢海のクローラー」が4体追加出現",
+					"cn": ""
 				}
 			},
-			{ "rank": 3 }
-		]
-	},
-	{
-		"category": "neonlamp_candle",
-		"options": [
 			{
-				"rank": 1,
-				"name": { "en": "Insufficient Power β", "jp": "環境：電力不足β", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Token_neonlamp_candle_bmod_1",
+				"rank": 3,
+				"latter": true,
+				"name": {
+					"en": "",
+					"jp": "環境：酒類特価II",
+					"cn": "环境：酒水促销II"
+				},
+				"img": "盐风溶洞/75px-Level_hidden_dsurch_3",
 				"effects": [],
 				"tooltip": {
-					"en": "Center top and lower right City Neons are removed, deployable Knight's Emblems count decreased to 0",
-					"cn": "",
-					"jp": "上と右下の「都市のネオン」が除外され、使用できる「騎士の紋章」の数が0に減少"
+					"en": "Additional six Pocket Sea Crawler appears on map.",
+					"jp": "「嚢海のクローラー」が6体追加出現",
+					"cn": ""
 				}
-			},
-			{ "rank": 2 },
-			{ "rank": 3 }
+			}
 		]
 	},
 	{
@@ -819,7 +1070,7 @@
 		]
 	},
 	{
-		"category": "char_aspd",
+		"category": "char_cdtime",
 		"options": [
 			{
 				"rank": 2,
@@ -828,11 +1079,11 @@
 					"jp": "制限：疲労累積II",
 					"cn": ""
 				},
-				"img": "75px-Char_attackspeed_2",
+				"img": "75px-Char_cdtime_2",
 				"effects": [],
 				"tooltip": {
-					"en": "All allies’ ASPD -40",
-					"jp": "全ての味方の攻撃速度-40",
+					"en": "All allies’ skill sp cost +40%",
+					"jp": "全ての味方のスキル使用コスト+40%",
 					"cn": ""
 				}
 			},
@@ -840,44 +1091,20 @@
 		]
 	},
 	{
-		"category": "enemy_def",
+		"category": "char_res",
 		"options": [
 			{
 				"rank": 1,
-				"latter": true,
 				"name": {
-					"en": "Increased Enemy DEF",
-					"jp": "増幅：装甲I",
-					"cn": "反装甲I"
+					"en": "Reduced Ally RES 1",
+					"jp": "制限：術耐性I",
+					"cn": ""
 				},
-				"img": "75px-Enemy_def_1",
-				"effects": [{ "targets": ["ALL"], "mods": { "fixed_def": 200 } }],
+				"img": "75px-Char_magicresistance_1",
+				"effects": [],
 				"tooltip": {
-					"en": "Enemy DEF +200",
-					"jp": "全ての敵の防御力+200",
-					"cn": "所有敌人的防御力提升200"
-				}
-			},
-			{ "rank": 2 },
-			{ "rank": 3 }
-		]
-	},
-	{
-		"category": "assassin_snipe",
-		"options": [
-			{
-				"rank": 1,
-				"name": { "en": "Sniper Training", "jp": "目標：弩手特訓", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_aruarw_1",
-				"effects": [
-					{
-						"targets": ["NL3"],
-						"mods": { "hp": "%50", "atk": "%40", "res": 30 }
-					}
-				],
-				"tooltip": {
-					"en": "Armorless Union Crossbowmen Max HP +50% , ATK +40% , RES +30",
-					"jp": "「無冑盟弩手」の最大HP+50%、攻撃力+40%、術耐性+30, ステルス",
+					"en": "All allies’ RES -12",
+					"jp": "全ての味方の術耐性-12",
 					"cn": ""
 				}
 			},
@@ -886,40 +1113,20 @@
 		]
 	},
 	{
-		"category": "assassin_blade",
+		"category": "char_skillrec",
 		"options": [
 			{
 				"rank": 1,
-				"latter": true,
-				"name": { "en": "Assassin's Intuition", "jp": "目標：闇刃磨礪", "cn": "" },
-				"img": "大骑士领酒吧街/75px-Enemy_aruass_1",
-				"effects": [
-					{
-						"targets": ["NL5"],
-						"mods": {
-							"hp": "%100",
-							"special": {
-								"armorless_assassin_atk_stack": {
-									"type": "others",
-									"tooltip": {
-										"en": [
-											"While in areas without visibility, ATK increases by $5% per 0.5s, max 80 stacks (400%)$",
-											"Resets after attacking"
-										],
-										"jp": [
-											"【暗闇】内にいる時、攻撃力が$0.5秒+5%（最大80回/+400%）$",
-											"攻撃後リセットされる"
-										],
-										"cn": []
-									}
-								}
-							}
-						}
-					}
-				],
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_skillrecovery_1",
+				"effects": [],
 				"tooltip": {
-					"en": "Armorless Union Assassin Max HP +100% , ability's increase rate and max stacks doubled ",
-					"jp": "「無冑盟刺客」の最大HP+100%、特殊能力の増加速度と上限が倍になる",
+					"en": "All allies SP regen -30%",
+					"jp": "全ての味方のスキル回復速度-30%",
 					"cn": ""
 				}
 			},

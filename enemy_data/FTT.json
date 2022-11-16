@@ -17,7 +17,7 @@
 			"weight": "4",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": ["ftt_splash"]
+			"special": ["nervous_impair_40","ftt_splash"]
 		}
 	},
 	"status_immune": ["silence"],

@@ -1116,6 +1116,17 @@
 			}
 		}
 	},
+	"nervous_impair_40": {
+		"type": "others",
+		"value": 0.4,
+		"tooltip": {
+			"simple": {
+				"en": ["Attacks deal 40% ATK Nervous Impairment"],
+				"jp": ["攻撃時、攻撃力の40%の神経ダメージを与える"],
+				"cn": ["普通攻击附带自身攻击力40%的神经损伤"]
+			}
+		}
+	},
 	"corrosion_35": {
 		"type": "others",
 		"tooltip": {
@@ -1149,75 +1160,6 @@
 			}
 		}
 	},
-	"egg_stab_cc1": {
-		"type": "atk",
-		"suffix": { "en": "skill/arts", "jp": "スキル・術", "cn": "技能・法术" },
-		"hits": 1,
-		"multiplier": 2,
-		"fixed_inc": 0,
-		"initial": 0,
-		"cost": 0,
-		"skill_regen": "attack",
-		"tooltip": {
-			"simple": {
-				"en": [
-					"Every 15% of max HP lost, deals $200%$ of ATK as Arts splash damage and Nervous Impairment in a 2 tile radius"
-				],
-				"jp": [
-					"HPが15%減るごとに、半径2マス以内の味方全員に攻撃力の$200%$の術・神経ダメージを与える"
-				],
-				"cn": [
-					"每损失15%生命值，对半径2范围内所有我方单位造成攻击力$200%$法术溅射伤害与攻击力100%神经损伤"
-				]
-			}
-		}
-	},
-	"egg_stab_cc2": {
-		"type": "atk",
-		"suffix": { "en": "skill/arts", "jp": "スキル・術", "cn": "技能・法术" },
-		"hits": 1,
-		"multiplier": 2.5,
-		"fixed_inc": 0,
-		"initial": 0,
-		"cost": 0,
-		"skill_regen": "attack",
-		"tooltip": {
-			"simple": {
-				"en": [
-					"Every $12%$ of max HP lost, deals $250%$ of ATK as Arts splash damage and Nervous Impairment in a $2.3$ tile radius"
-				],
-				"jp": [
-					"HPが$12%$減るごとに、半径$2.3$マス以内の味方全員に攻撃力の$250%$の術・神経ダメージを与える"
-				],
-				"cn": [
-					"每损失$12%$生命值，对半径$2.3$范围内所有我方单位造成攻击力$250%$法术溅射伤害与攻击力100%神经损伤"
-				]
-			}
-		}
-	},
-	"egg_stab_cc3": {
-		"type": "atk",
-		"suffix": { "en": "skill/arts", "jp": "スキル・術", "cn": "技能・法术" },
-		"hits": 1,
-		"multiplier": 3,
-		"fixed_inc": 0,
-		"initial": 0,
-		"cost": 0,
-		"skill_regen": "attack",
-		"tooltip": {
-			"simple": {
-				"en": [
-					"Every $9%$ of max HP lost, deals $300%$ of ATK as Arts splash damage and Nervous Impairment in a $2.8$ tile radius"
-				],
-				"jp": [
-					"HPが$9%$減るごとに、半径$2.8$マス以内の味方全員に攻撃力の$300%$の術・神経ダメージを与える"
-				],
-				"cn": [
-					"每损失$9%$生命值，对半径$2.8$范围内所有我方单位造成攻击力$300%$法术溅射伤害与攻击力100%神经损伤"
-				]
-			}
-		}
-	},
 	"sea_reaper_awaken": {
 		"type": "others",
 		"value": 0.2,
@@ -1237,8 +1179,14 @@
 		}
 	},
 	"ftt_splash": {
-		"type": "others",
-		"value": 0.2,
+		"type": "atk",
+		"suffix": { "en": "skill/phys", "jp": "スキル・物理", "cn": "技能・物理" },
+		"hits": 5,
+		"multiplier": 0.6,
+		"fixed_inc": 0,
+		"initial": 0,
+		"cost": 0,
+		"skill_regen": "attack",
 		"tooltip": {
 			"simple": {
 				"en": [
