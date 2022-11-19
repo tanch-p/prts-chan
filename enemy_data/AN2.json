@@ -1,32 +1,25 @@
 {
-    "id": "AN2",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "明鉴",
-    "atk_type_jp": "物理",
-    "hp": "3100",
-    "atk": "390",
-    "def": "0",
-    "res": "20",
-    "aspd%": "100",
-    "aspd": "1.5",
-    "range": "0",
-    
-    "weight": "0",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "1.5",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "physical",
-    "atk_type_cn": "物理",
-    "special": ""
+	"id": "AN1",
+	"name": { "en": "明鉴 ", "jp": "明鉴", "cn": "明鉴" },
+	"stats": {
+		"level0": {
+            "hp": "3100",
+            "atk": "390",
+            "def": "0",
+            "res": "20",
+            "aspd%": "100",
+            "aspd": "1.5",
+            "range": "0",
+			"weight": "0",
+			"lifepoint": 1,
+			"ms": "1.5",
+			"special": ["spawn_rosewoodseal"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"type": ["melee"]
 }

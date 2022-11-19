@@ -1,40 +1,44 @@
 [
 	{
-		"category": "shield_guard",
+		"category": "grindstone",
 		"options": [
 			{
 				"rank": 1,
 				"name": {
-					"jp": "特化：庇護の盾Ⅰ",
-					"en": "Ambush Tactics I",
+					"jp": "特化：磨礱I",
+					"en": "Grindstone I1",
 					"cn": ""
 				},
-				"img": "放棄された土地/Enemy_sotisd_1",
-				"effects": [{ "targets": ["SP0"], "mods": { "hp": "%30" } }],
+				"img": "尚蜀山道/75px-Enemy_sfyin1",
+				"effects": [
+					{
+						"targets": ["AN1"],
+						"mods": {
+							"hp": "%50",
+							"special": {
+								"spawn_woodenseal": {
+									"type": "others",
+									"can_silence": false,
+									"tooltip": {
+										"en": [
+											"Spawns $4$ Wooden Seals when defeated",
+											"cannot be Silenced"
+										],
+										"jp": [
+											"死亡すると「木製瑞印」を$4体$召喚する",
+											"無効化不可能"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
 				"tooltip": {
-					"en": "Shield Guard Max HP +30%, and initial position and wait time are changed.",
+					"en": "Grindstone Max HP +50%, and spawns 4 wooden seals when defeated.",
 					"cn": "",
-					"jp": "「遊撃隊盾兵」の最大HP+30%、かつ「遊撃隊盾兵」一体の位置と待機時間変更"
-				}
-			}
-		]
-	},
-	{
-		"category": "cost_regen",
-		"options": [
-			{
-				"rank": 1,
-				"name": {
-					"en": "DP Down 1",
-					"jp": "指令：孤軍奮闘I",
-					"cn": "目标：深度渗透I"
-				},
-				"img": "75px-Global_costrecovery_1",
-				"effects": [],
-				"tooltip": {
-					"en": "DP Regeneration reduced by 25%",
-					"jp": "コストの自然回復速度-25%",
-					"cn": "部署费用的自然回复速度降低25%"
+					"jp": "「磨礱」の最大HP+50%、死亡すると「木製瑞印」を$4体$召喚する"
 				}
 			}
 		]
@@ -60,108 +64,162 @@
 		]
 	},
 	{
-		"category": "char_atk",
+		"category": "char_respawn",
 		"options": [
 			{
-				"rank": 2,
+				"rank": 1,
 				"name": {
-					"en": "Reduced Ally ATK 2",
-					"jp": "制限：火力減衰II",
-					"cn": "环境：高价值目标II"
+					"jp": "制限：効率低下I",
+					"en": "Reduced Operator Redeployment 1",
+					"cn": "目标：效率低下I"
 				},
-				"img": "75px-Char_atk_2",
+				"img": "75px-Char_respawntime_1",
 				"effects": [],
 				"tooltip": {
-					"en": "All allies’ ATK -30%",
-					"jp": "全ての味方の攻撃力-30%",
-					"cn": "所有我方单位的攻击力降低30%"
+					"en": "Ally redeployment time increased by 50%",
+					"jp": "全ての味方の再配置時間+50%",
+					"cn": "所有我方单位的再部署时间延长50%"
 				}
 			}
 		]
 	},
 	{
-		"category": "char_hp",
+		"category": "sharpedge",
 		"options": [
 			{
 				"rank": 2,
 				"name": {
-					"jp": "制限：体力減衰II",
-					"en": "Reduced Operator HP 2",
-					"cn": "源石环境：侵蚀II"
-				},
-				"img": "75px-Char_hp_2",
-				"effects": [],
-				"tooltip": {
-					"en": "Ally Max HP reduced -35%",
-					"jp": "全ての味方の最大HP-35%",
-					"cn": "所有我方单位的生命值上限降低35%"
-				}
-			}
-		]
-	},
-	{
-		"category": "operator_cost",
-		"options": [
-			{
-				"rank": 2,
-				"name": {
-					"jp": "指令：待機命令",
-					"en": "Guard and Caster Forbidden",
+					"jp": "特化：新砥II",
+					"en": "Sharpedge 2",
 					"cn": ""
 				},
-				"img": "75px-Char_exclude_guardcaster_2",
-				"effects": [],
+				"img": "尚蜀山道/75px-Enemy_sfji_2",
+				"effects": [
+					{
+						"targets": ["AN26"],
+						"mods": { "hp": "%70", "atk": "%50", "def": "%30", "res": 30 }
+					}
+				],
 				"tooltip": {
-					"en": "Guard and Caster cannot be deployed",
-					"cn": "",
-					"jp": "近衛・術師の配置禁止"
+					"en": "Sharpedge Max HP +70% ATK +50% DEF +30% RES +30",
+					"jp": "「磨礱」の最大HP+70%、攻撃力+50%、防御力+30%、術耐性+30",
+					"cn": ""
 				}
 			}
 		]
 	},
 	{
-		"category": "enemy_hp",
+		"category": "blueflower",
 		"options": [
 			{
-				"rank": 3,
+				"rank": 2,
 				"name": {
-					"en": "Enemy HP 3",
-					"jp": "増幅：体力III",
-					"cn": "源石环境：活性III"
+					"jp": "特化：青花II",
+					"en": "Blueflower 2",
+					"cn": ""
 				},
-				"img": "75px-Enemy_hp_3",
+				"img": "尚蜀山道/75px-Enemy_sfpin2",
 				"effects": [
 					{
-						"targets": ["ALL"],
+						"targets": ["AN21"],
+						"mods": { "atk": "%30", "aspd": "%35" }
+					}
+				],
+				"tooltip": {
+					"en": "Blueflower ATK +30% ASPD+35%",
+					"jp": "「青花」の最攻撃力+30%、攻撃速度+35",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "grindstone",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：磨礱II",
+					"en": "Grindstone 2",
+					"cn": ""
+				},
+				"img": "尚蜀山道/75px-Enemy_sfyin2",
+				"effects": [
+					{
+						"targets": ["AN1"],
 						"mods": {
-							"hp": "%120"
+							"hp": "%100",
+							"special": {
+								"spawn_woodenseal": {
+									"type": "others",
+									"can_silence": false,
+									"tooltip": {
+										"en": [
+											"Spawns $4$ Wooden Seals when defeated",
+											"cannot be Silenced"
+										],
+										"jp": [
+											"死亡すると「木製瑞印」を$4体$召喚する",
+											"無効化不可能"
+										],
+										"cn": []
+									}
+								}
+							}
 						}
 					}
 				],
 				"tooltip": {
-					"en": "Enemy Max HP +120%",
-					"jp": "全ての敵の最大HP+120%",
-					"cn": "所有敌人的生命值提升120%"
+					"en": "Grindstone Max HP +100%, and spawns 4 wooden seals when defeated.",
+					"cn": "",
+					"jp": "「磨礱」の最大HP+100%、死亡すると「木製瑞印」を$4体$召喚する"
 				}
 			}
 		]
 	},
 	{
-		"category": "squad",
+		"category": "clarity",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：清明II",
+					"en": "Clarity 2",
+					"cn": ""
+				},
+				"img": "尚蜀山道/75px-Enemy_hidden_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Additional 2 Clarity appears on map",
+					"cn": "",
+					"jp": "「磨礱」が2体追加出現"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_ms",
 		"options": [
 			{
 				"rank": 3,
 				"name": {
-					"en": "Max Squad Size 3",
-					"jp": "環境：少数精鋭III",
-					"cn": "目标：隐秘行动III "
+					"en": "Increased Enemy Movement Speed 3",
+					"jp": "増幅：機動力I",
+					"cn": ""
 				},
-				"img": "75px-Global_squadnum_3",
-				"effects": [],
+				"img": "75px-Enemy_movespeed_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"ms": "%70"
+						}
+					}
+				],
 				"tooltip": {
-					"en": "Maximum 6 operators in squad",
-					"jp": "編成可能数が6人に",
-					"cn": "最多可编入6名干员进入作战"
+					"en": "Enemies movement speed +70%",
+					"jp": "全ての敵の移動速度+70%",
+					"cn": ""
 				}
 			}
 		]

@@ -296,7 +296,7 @@
 				],
 				"jp": [
 					"バフ→ 攻撃範囲内の敵の防御力300上昇（重複しない、自分に効果なし）",
-					"無力化可能"
+					"無効化可能"
 				],
 				"cn": []
 			}
@@ -342,7 +342,7 @@
 		"tooltip": {
 			"simple": {
 				"en": ["Debuff→operators with ranged aspd down", "Can be silenced"],
-				"jp": ["バフ→ 攻撃範囲内の", "無力化可能"],
+				"jp": ["バフ→ 攻撃範囲内の", "無効化可能"],
 				"cn": []
 			}
 		}
@@ -2284,16 +2284,305 @@
 	},
 	"dublinn_phalanx": {
 		"type": "others",
-		"silence_able": false,
+		"can_silence": false,
 		"tooltip": {
 			"simple": {
 				"en": [
 					"Buff→Dublinn Phalanx within 1.5 tile range DEF+200, stacks with other Dublinn Phalanx",
-					"Cannot be silenced"
+					"cannot be Silenced"
 				],
 				"jp": [
 					"バフ→ 半径1.5内のダブリン方陣戦士の防御力200上昇（ほかのダブリン方陣戦士と重複する）",
-					"無力化不可能"
+					"無効化不可能"
+				],
+				"cn": []
+			}
+		}
+	},
+	"damage_1": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Takes 1 damage from attacks"],
+				"jp": ["受けたダメージは全て1になる"],
+				"cn": []
+			}
+		}
+	},
+	"damage_1_arts": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Immune to Physical damage", "Takes 1 damage from attacks"],
+				"jp": ["物理攻撃無効", "受けたダメージは全て1になる"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_woodenseal": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 2 Wooden Seals when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「木製瑞印」を2体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_redwoodseal": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 2 Redwood Seals when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「紅木瑞印」を2体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_novelscroll": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 3 Novel Scrolls when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「小説の巻物」を3体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_paintingscroll": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 3 Painting Scrolls when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「詩画の巻物」を3体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_bronzemirror": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 1 Bronze Mirror when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「青銅の鏡」を1体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_brassmirror": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 1 Brass Mirror when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「黄銅の鏡」を1体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_woodenpaperweight": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Spawns 15 Wooden Paperweights when defeated",
+					"cannot be Silenced"
+				],
+				"jp": ["死亡すると「木製文鎮」を15体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_rosewoodpaperweight": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Spawns 15 Rosewood Paperweights when defeated",
+					"cannot be Silenced"
+				],
+				"jp": ["死亡すると「紅木文鎮」を15体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_celadonteaware": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 4 Celadon Teawares when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「青磁の茶器」を4体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_porcelainteaware": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Spawns 4 Porcelain Teawares when defeated",
+					"cannot be Silenced"
+				],
+				"jp": ["死亡すると「彩磁の茶器」を4体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_celadonvase": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 1 Celadon Vase when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「青磁の花器」を1体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_porcelainvase": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 1 Porcelain Vase when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「彩磁の茶器」を1体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"encroaching_stream": {
+		"type": "others",
+		"can_silence": true,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Skill→Initial SP: 3, Cost:5, Attack Recovery, can be Silenced",
+					"Deals 100% of ATK as Arts damage to the target",
+					"and deals 30% ATK as arts damage every second which increases by 30% every 4s for 20s"
+				],
+				"jp": [
+					"スキル→初期SP3、必要SP5、攻撃回復、無効化可能",
+					"攻撃力の100%の術ダメージを与え、対象を20秒間、毎秒術ダメージを受ける状態にする",
+					"持続ダメージは4秒ごとに30％強化される"
+				],
+				"cn": []
+			}
+		}
+	},
+	"spawn_ironspearhead": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Spawns Bronze Spearheads equal to the remaining stacks of Broken Blade (at least 1) when defeated",
+					"cannot be Silenced"
+				],
+				"jp": ["死亡すると「銅矛」を1体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_bronzespearhead": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 2 Redwood Seals when defeated", "cannot be Silenced"],
+				"jp": [
+					"死亡すると、所持している【断刃】と同じ数の「銅矛」を召喚する（最低1体）",
+					"無効化不可能"
+				],
+				"cn": []
+			}
+		}
+	},
+	"broken_blade": {
+		"type": "atk",
+		"suffix": { "en": "broken blade", "jp": "断刃", "cn": "断刃" },
+		"multiplier": 1.7,
+		"hits": 1,
+		"fixed_inc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Gains 4 [Broken Blade] upon appearance",
+					"Every attack consumes 1 [Broken Blade] and ATK is increased by 70%"
+				],
+				"jp": [
+					"出現時に4つの【断刃】を持つ",
+					"攻撃時【断刃】を1つ消費して攻撃力を+70%する"
+				],
+				"cn": []
+			}
+		}
+	},
+	"broken_blade_sharp": {
+		"type": "atk",
+		"suffix": { "en": "broken blade", "jp": "断刃", "cn": "断刃" },
+		"multiplier": 1.8,
+		"hits": 1,
+		"fixed_inc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Gains 4 [Broken Blade] upon appearance",
+					"Every attack consumes 1 [Broken Blade] and ATK is increased by 80%"
+				],
+				"jp": [
+					"出現時に4つの【断刃】を持つ",
+					"攻撃時【断刃】を1つ消費して攻撃力を+80%する"
+				],
+				"cn": []
+			}
+		}
+	},
+	"spawn_bronzelampstand": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 1 Bronze Lampstand when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「銅の燭台」を1体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_ironlampstand": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 1 Iron Lampstand when defeated", "cannot be Silenced"],
+				"jp": ["死亡すると「鉄の燭台」を1体召喚する", "無効化不可能"],
+				"cn": []
+			}
+		}
+	},
+	"glorious_shine": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Skill→Initial SP: 5, Cost:15",
+					"Grants Stealth to all enemy units (excluding self) within 2 tile radius for 3s"
+				],
+				"jp": [
+					"スキル→初期SP5、必要SP15",
+					"半径2マス以内の自分以外の敵全員に3秒間ステルスを付与する"
 				],
 				"cn": []
 			}

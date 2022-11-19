@@ -13,7 +13,7 @@
             "weight": "3",
 			"lifepoint": 1,
 			"ms": "1.3",
-			"special": []
+			"special": ["broken_blade_sharp","spawn_ironspearhead"]
 		}
 	},
 	"status_immune": [],

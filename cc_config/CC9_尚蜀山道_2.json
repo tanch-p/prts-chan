@@ -1,0 +1,174 @@
+[
+	{
+		"category": "enemy_ms",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy Movement Speed 1",
+					"jp": "増幅：機動力I",
+					"cn": ""
+				},
+				"img": "75px-Enemy_movespeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"ms": "%30"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemies movement speed +30%",
+					"jp": "全ての敵の移動速度+30%",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "trap_b",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Less Boxes 1",
+					"jp": "箱",
+					"cn": ""
+				},
+				"img": "75px-Trap_hidden_bmod_1",
+				"effects": [],
+				"tooltip": {
+					"en": "2 boxes on the lower left are removed",
+					"jp": "左下の箱2個が除外される",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "制限：体力減衰II",
+					"en": "Reduced Operator HP 2",
+					"cn": "源石环境：侵蚀II"
+				},
+				"img": "75px-Char_hp_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -35%",
+					"jp": "全ての味方の最大HP-35%",
+					"cn": "所有我方单位的生命值上限降低35%"
+				}
+			}
+		]
+	},
+	{
+		"category": "deploy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Deploy Limit 2",
+					"jp": "環境：小規模戦II",
+					"cn": "环境：交战区II"
+				},
+				"img": "75px-Global_pcharnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Deploy Limit reduced to 5",
+					"jp": "同時配置可能数が5人に",
+					"cn": "可同时部署的单位数量减少至5"
+				}
+			}
+		]
+	},
+	{
+		"category": "grids",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Forbidden Grids 2",
+					"jp": "環境：峻険地形II",
+					"cn": ""
+				},
+				"img": "75px-Global_forbidloc_2",
+				"effects": [],
+				"tooltip": {
+					"en": "9 tiles forbid deployment",
+					"jp": "マップ上の9つのマスが配置不可に",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "sharpedge",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：新砥III",
+					"en": "Sharpedge 3",
+					"cn": ""
+				},
+				"img": "尚蜀山道/75px-Enemy_sfji_3",
+				"effects": [
+					{
+						"targets": ["AN26"],
+						"mods": { "hp": "%100", "atk": "%70", "def": "%50", "res": 50 }
+					}
+				],
+				"tooltip": {
+					"en": "Sharpedge Max HP +100% ATK +70% DEF +50% RES +50",
+					"jp": "「磨礱」の最大HP+100%、攻撃力+70%、防御力+50%、術耐性+50",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_aspd",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Reduced Ally ASPD 3",
+					"jp": "制限：疲労累積III",
+					"cn": ""
+				},
+				"img": "75px-Char_attackspeed_3",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ASPD -60",
+					"jp": "全ての味方の攻撃速度-60",
+					"cn": ""
+				}
+			}
+		]
+	}
+]

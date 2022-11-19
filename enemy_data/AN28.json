@@ -13,7 +13,7 @@
             "weight": "0",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": []
+			"special": ["no_block","damage_1"]
 		}
 	},
 	"status_immune": [],
