@@ -1,7 +1,7 @@
 {
 	"name": { "en": "Blazing Cavern", "jp": "灼熱の溶岩洞" },
 	"img": "炽热溶洞",
-	"config": "CC8_炽热溶洞_1",
+	"config": "CC9_炽热溶洞_1",
 	"ccType": "daily",
 	"enemies": [
 		{ "id": "UM1", "count": 1, "stats": "level0" },

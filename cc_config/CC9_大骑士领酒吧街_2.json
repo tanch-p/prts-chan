@@ -1,0 +1,208 @@
+[
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：体力減衰I",
+					"en": "Reduced Operator HP 1",
+					"cn": "源石环境：侵蚀I"
+				},
+				"img": "75px-Char_hp_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -20%",
+					"jp": "全ての味方の最大HP-20%",
+					"cn": "所有我方单位的生命值上限降低20%"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Summoned Unit/Object DP cost",
+					"jp": "召喚物・装置コスト",
+					"cn": ""
+				},
+				"latter": true,
+				"img": "75px-Char_cost_tokentrap_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Summoned Units, Objects DP cost tripled",
+					"jp": "召喚物・装置の配置コストが3倍",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -30%",
+					"jp": "全ての味方の攻撃力-30%",
+					"cn": "所有我方单位的攻击力降低30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "deploy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Deploy Limit 2",
+					"jp": "環境：小規模戦II",
+					"cn": "环境：交战区II"
+				},
+				"img": "75px-Global_pcharnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Deploy Limit reduced to 5",
+					"jp": "同時配置可能数が5人に",
+					"cn": "可同时部署的单位数量减少至5"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_aspd",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ASPD 2",
+					"jp": "制限：疲労累積II",
+					"cn": ""
+				},
+				"img": "75px-Char_attackspeed_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ASPD -40",
+					"jp": "全ての味方の攻撃速度-40",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "viviana",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Viviana: Candlelight 3",
+					"jp": "強敵：明灯III",
+					"cn": ""
+				},
+				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_bmod_3",
+				"effects": [
+					{
+						"targets": ["NL17"],
+						"mods": {
+							"hp": "%110",
+							"atk": "%90",
+							"range": "%100",
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Attacks ignore 80 RES$"],
+										"jp": ["$攻撃が術耐性80無視$"],
+										"cn": ""
+									}
+								},
+								"glimmering_touch": {
+									"type": "atk",
+									"multiplier": 3,
+									"fixed_inc": 0,
+									"initial": 10,
+									"cost": 10,
+									"skill_regen": "auto",
+									"tooltip": {
+										"en": [
+											"Glimmering Touch - after charging for $3.5s$ does 250% dmg to units within skill's range, CD20s"
+										],
+										"jp": [
+											"微光の蝕 - 攻撃半径内のユニットに$3.5秒$間チャージしたあと範囲攻撃を行う、CD20秒"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Viviana] Max HP +110%, ATK +90%, Range increases greatly, attacks ignore 80 RES and Glimmering Touch's charging time is halved",
+					"cn": "",
+					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+110%、攻撃力+90%、攻撃範囲が拡大し、攻撃対象の術耐性を80%無視、【微光の蝕】のチャージ時間-50％"
+				}
+			}
+		]
+	},
+	{
+		"category": "nightzmora",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Tola: Khagan's Excursion 3",
+					"jp": "強敵：悪夢の王III",
+					"cn": ""
+				},
+				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_bmod_3",
+				"effects": [
+					{
+						"targets": ["NL20"],
+						"mods": {
+							"hp": "%80",
+							"atk": "%150",
+							"def": "%100",
+							"special": {}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "'The Last Kheshig', Tola's Max HP +80%, ATK +150%, DEF +100%, 2 waves of 3 [Nightzmora Imitators] appear",
+					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+80%、攻撃力+150%、防御力+100%、追加で悪夢のマニアが2ウェーブで3体ずつ登場する",
+					"cn": ""
+				}
+			}
+		]
+	}
+]

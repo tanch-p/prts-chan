@@ -1,0 +1,241 @@
+[
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "assassin_snipe",
+		"options": [
+			{
+				"rank": 1,
+				"name": { "en": "Sniper Training", "jp": "目標：弩手特訓", "cn": "" },
+				"img": "大骑士领酒吧街/75px-Enemy_aruarw_1",
+				"effects": [
+					{
+						"targets": ["NL3"],
+						"mods": { "hp": "%50", "atk": "%40", "res": 30 }
+					}
+				],
+				"tooltip": {
+					"en": "Armorless Union Crossbowmen Max HP +50% , ATK +40% , RES +30",
+					"jp": "「無冑盟弩手」の最大HP+50%、攻撃力+40%、術耐性+30, ステルス",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "assassin_blade",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Assassin's Intuition",
+					"jp": "目標：闇刃磨礪",
+					"cn": ""
+				},
+				"img": "大骑士领酒吧街/75px-Enemy_aruass_1",
+				"effects": [
+					{
+						"targets": ["NL5"],
+						"mods": {
+							"hp": "%100",
+							"special": {
+								"armorless_assassin_atk_stack": {
+									"type": "others",
+									"tooltip": {
+										"en": [
+											"While in areas without visibility, ATK increases by $5% per 0.5s, max 80 stacks (400%)$",
+											"Resets after attacking"
+										],
+										"jp": [
+											"【暗闇】内にいる時、攻撃力が$0.5秒+5%（最大80回/+400%）$",
+											"攻撃後リセットされる"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Armorless Union Assassin Max HP +100% , ability's increase rate and max stacks doubled ",
+					"jp": "「無冑盟刺客」の最大HP+100%、特殊能力の増加速度と上限が倍になる",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atkaspd",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy ATK ASPD 2",
+					"jp": "増幅：攻勢II",
+					"cn": "源石环境：深层刺激II"
+				},
+				"img": "75px-Enemy_atk_attackspeed_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%30",
+							"aspd": "%30"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +30%, ASPD +30",
+					"jp": "全ての敵の攻撃力+30%、攻撃速度+30",
+					"cn": "所有敌人的攻击力提升30%，攻击速度+30"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -30%",
+					"jp": "全ての味方の攻撃力-30%",
+					"cn": "所有我方单位的攻击力降低30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Max Squad Size 2",
+					"jp": "環境：少数精鋭II",
+					"cn": "目标：隐秘行动II "
+				},
+				"img": "75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 7 operators in squad",
+					"jp": "編成可能数が7人に",
+					"cn": "最多可编入7名干员进入作战"
+				}
+			}
+		]
+	},
+	{
+		"category": "viviana",
+		"options": [
+			{
+				"rank": 3,
+				"name": { "en": "Viviana: Dazzle 3", "jp": "強敵：煌煌III", "cn": "" },
+				"img": "大骑士领酒吧街/75px-Enemy_cadkgt_amod_3",
+				"effects": [
+					{
+						"targets": ["NL17"],
+						"mods": {
+							"hp": "%160",
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Lower Target Priority$"],
+										"jp": ["$狙われにくくなる$"],
+										"cn": ""
+									}
+								},
+								"glimmering_touch": {
+									"type": "atk",
+									"multiplier": 3,
+									"fixed_inc": 0,
+									"initial": 10,
+									"cost": 10,
+									"skill_regen": "auto",
+									"tooltip": {
+										"en": [
+											"Glimmering Touch - $instantly$ does 250% dmg to units within skill's range, $CD6s$"
+										],
+										"jp": [
+											"微光の蝕 - 攻撃半径内のユニットに$即時発動$の範囲攻撃を行う、$CD6秒$"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Viviana] Max HP +160%, has lower target priority, Glimmering Touch becomes instant cast and cooldown reduced by 70%.",
+					"cn": "",
+					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+160%、味方ユニットの攻撃対象となりにくい、【微光の蝕】が即時発動し、クールタイム-70％"
+				}
+			}
+		]
+	},
+	{
+		"category": "nightzmora",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Tola: Lone Khaganquest 3",
+					"jp": "強敵：遥々天路III",
+					"cn": ""
+				},
+				"img": "大骑士领酒吧街/75px-Enemy_nmekgt_amod_3",
+				"effects": [
+					{
+						"targets": ["NL20"],
+						"mods": {
+							"hp": "%150",
+							"atk": "%100",
+							"res": 50,
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Stealth$"],
+										"jp": ["$ステルス$"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "'The Last Kheshig', Tola's Max HP +150%, ATK +100%, RES +50, gains Stealth",
+					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+150%、攻撃力+100%、術耐性+50、【ステルス】状態になる",
+					"cn": ""
+				}
+			}
+		]
+	}
+]

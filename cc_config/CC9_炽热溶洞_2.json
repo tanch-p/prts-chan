@@ -1,0 +1,217 @@
+[
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "map_vol_a",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "環境：溶岩地帯α",
+					"en": "Environment: Surging Lava α",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Global_forbidloc_amod_1",
+				"effects": [],
+				"tooltip": {
+					"en": "1 tile forbids deployment and [Lava Fountain]'s damage is increased by 200",
+					"cn": "",
+					"jp": "マップ上の1つのマスが配置不可になり、溶岩噴出口によるダメージ+200"
+				}
+			}
+		]
+	},
+	{
+		"category": "map_vol_b",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "環境：溶岩地帯 β",
+					"en": "Environment: Surging Lava β",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Global_forbidloc_bmod_1",
+				"effects": [],
+				"tooltip": {
+					"en": "3 tiles forbids deployment and [Lava Fountain]'s damage is increased by 200",
+					"cn": "",
+					"jp": "マップ上の3つのマスが配置不可になり、溶岩噴出口によるダメージ+200"
+				}
+			}
+		]
+	},
+	{
+		"category": "map_vol_y",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "環境：溶岩地帯 γ",
+					"en": "Environment: Surging Lava γ",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Global_forbidloc_cmod_1",
+				"effects": [],
+				"tooltip": {
+					"en": "6 tiles forbids deployment and [Lava Fountain]'s damage is increased by 200",
+					"cn": "",
+					"jp": "マップ上の6つのマスが配置不可になり、溶岩噴出口によるダメージ+200"
+				}
+			}
+		]
+	},
+	{
+		"category": "termite",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Ergate 2",
+					"jp": "特化：白蟻侵入II",
+					"cn": "目标：加速渗透II"
+				},
+				"img": "炽热溶洞/75px-Enemy_norgst_2",
+				"effects": [
+					{
+						"targets": ["PG1", "PG2"],
+						"mods": {
+							"hp": "%70",
+							"ms": "%100"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Ergate and Ergate Leader's Max HP +70% and Movespeed +100%",
+					"jp": "「シロアリ」「シロアリ隊長」の最大HP+70%、移動速度+100",
+					"cn": "「シロアリ」「シロアリ隊長」の最大HP+70%、移動速度+100"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -25%",
+					"jp": "全ての味方の攻撃力-25%",
+					"cn": "所有我方单位的攻击力降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "制限：体力減衰II",
+					"en": "Reduced Operator HP 2",
+					"cn": "源石环境：侵蚀II"
+				},
+				"img": "75px-Char_hp_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -25%",
+					"jp": "全ての味方の最大HP-25%",
+					"cn": "所有我方单位的生命值上限降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_a",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：溶岩爆裂III",
+					"en": "Pompeii: Internal Eruption III",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_a_amod_3",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": {
+							"hp": "%120",
+							"special": {
+								"pompeii_explosion": {
+									"type": "atk",
+									"fixed": 2000,
+									"tooltip": {
+										"en": [
+											"When blocked, creates an explosion around self every $5s$"
+										],
+										"jp": ["ブロックされると$5秒$毎に自分中心に爆発"],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii Max HP increased by 120%, explosion damage by 100%, and explosion re-cast decreased by 50%",
+					"cn": "",
+					"jp": "「Pompeii」の最大HP+120%、爆発ダメージ+100%、発動間隔半減"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Enemy HP 3",
+					"jp": "増幅：体力III",
+					"cn": "源石环境：活性III"
+				},
+				"img": "75px-Enemy_hp_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%120"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +120%",
+					"jp": "全ての敵の最大HP+120%",
+					"cn": "所有敌人的生命值提升120%"
+				}
+			}
+		]
+	}
+]

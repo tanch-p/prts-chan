@@ -1,0 +1,194 @@
+[
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_def",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy DEF",
+					"jp": "増幅：装甲I",
+					"cn": "反装甲I"
+				},
+				"img": "75px-Enemy_def_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"fixed-def": 100
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy DEF +100",
+					"jp": "全ての敵の防御力+100",
+					"cn": "所有敌人的防御力提升100"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_respawn",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：効率低下I",
+					"en": "Reduced Operator Redeployment 1",
+					"cn": "目标：效率低下I"
+				},
+				"img": "75px-Char_respawntime_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally redeployment time increased by 100%",
+					"jp": "全ての味方の再配置時間+100%",
+					"cn": "所有我方单位的再部署时间延长100%"
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_a_a",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "強敵：溶岩爆裂II",
+					"en": "Pompeii: Internal Eruption II",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_a_amod_2",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": {
+							"hp": "%90",
+							"special": {
+								"pompeii_explosion": {
+									"type": "atk",
+									"fixed": 2000,
+									"tooltip": {
+										"en": [
+											"When blocked, creates an explosion around self every 10s"
+										],
+										"jp": ["ブロックされると10秒毎に自分中心に爆発"],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii Max HP increased by 90%, explosion damage by 100%",
+					"cn": "",
+					"jp": "「Pompeii」の最大HP+90%、爆発ダメージ+100%"
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_b_a",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "強敵：溶岩外殻II",
+					"en": "Pompeii: Tough Constitution II",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_b_amod_2",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": { "atk": "%40", "fixed_def": 600, "res": 25 }
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii ATK +40%, DEF +600, and RES +25",
+					"jp": "「Pompeii」の攻撃力+40%、防御力+600、術耐性+25",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：縦深攻撃",
+					"en": "Sniper and Guard 2",
+					"cn": ""
+				},
+				"img": "75px-Char_cost_sniperguard_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Cost of Snipers and Guards tripled and redeployment time increased by 50%",
+					"cn": "",
+					"jp": "狙撃・前衛の配置コストが3倍、再配置時間+50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Reduced Ally ATK 3",
+					"jp": "制限：火力減衰III",
+					"cn": "环境：高价值目标III"
+				},
+				"img": "75px-Char_atk_3",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -45%",
+					"jp": "全ての味方の攻撃力-45%",
+					"cn": "所有我方单位的攻击力降低45%"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "DP Down 3",
+					"jp": "指令：孤軍奮闘III",
+					"cn": "目标：深度渗透III"
+				},
+				"img": "75px-Global_costrecovery_3",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 75%",
+					"jp": "コストの自然回復速度-75%",
+					"cn": "部署费用的自然回复速度降低75%"
+				}
+			}
+		]
+	}
+]

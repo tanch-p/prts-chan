@@ -1,0 +1,241 @@
+[
+	{
+		"category": "char_res",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced Ally RES 1",
+					"jp": "制限：術耐性I",
+					"cn": ""
+				},
+				"img": "75px-Char_magicresistance_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ RES -12",
+					"jp": "全ての味方の術耐性-12",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_def",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy DEF",
+					"jp": "増幅：装甲I",
+					"cn": "反装甲I"
+				},
+				"img": "75px-Enemy_def_1",
+				"effects": [
+					{ "targets": ["ALL"], "mods": { "fixed_def": 100, "res": 10 } }
+				],
+				"tooltip": {
+					"en": "Enemy DEF +100, RES +10",
+					"cn": "",
+					"jp": "全ての敵の防御力+100、術耐性+10"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_ms",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy Movement Speed 1",
+					"jp": "増幅：機動力I",
+					"cn": ""
+				},
+				"img": "75px-Enemy_movespeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"ms": "%40"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemies movement speed +40%",
+					"jp": "全ての敵の移動速度+40%",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_aspd",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy ASPD 2",
+					"jp": "増幅：ラッシュII",
+					"cn": ""
+				},
+				"img": "75px-Enemy_attackspeed_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"aspd": "%60"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy ASPD +60",
+					"jp": "全ての敵の攻撃速度+60",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy HP 2",
+					"jp": "増幅：体力II",
+					"cn": "源石环境：活性II"
+				},
+				"img": "75px-Enemy_hp_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%60"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +60%",
+					"jp": "全ての敵の最大HP+60%",
+					"cn": "所有敌人的生命值提升60%"
+				}
+			}
+		]
+	},
+	{
+		"category": "envy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Envy: Overflowing Emotions",
+					"jp": "特化：妬心暴走",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_spmage_2",
+				"effects": [
+					{
+						"targets": ["SF13"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%50",
+							"special": {
+								"envy_beam": {
+									"multiplier": 2,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": [
+											"Uses Charged Atk every $18s$ - after 5s does 200% Arts damage to single target, and inverts tile element target is on"
+										],
+										"jp": [
+											"$18秒$毎に溜め攻撃→5秒後単体に200%術ダメージ、目標所在の床属性を反転させる"
+										],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Envy] Max HP +90%, ATK +50%, charged attack cooldown decreased by 70%",
+					"cn": "",
+					"jp": "「ソネミ」の最大HP+90%、攻撃力+50%、チャージ攻撃の間隔が70%短縮"
+				}
+			}
+		]
+	},
+	{
+		"category": "dusk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Free: Four Corners 3",
+					"jp": "強敵：天地縦横III",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_xi_bmod_3",
+				"effects": [
+					{
+						"targets": ["DSK"],
+						"mods": {
+							"hp": "%200",
+							"atk": "%150",
+							"res": 15,
+							"range": "%300",
+							"special": {
+								"weft_and_warp_CC": {
+									"multiplier": 0,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": ["Uses $'Weft and Warp'$ every $15s$"],
+										"jp": ["$15秒$毎に$「緯地経天」$使用する"],
+										"cn": []
+									},
+									"tooltip2": {
+										"en": ["Uses $'Weft and Warp'$ every $15s$"],
+										"jp": ["$15秒$毎に$「緯地経天」$使用する"],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": " [Free] Max HP +200%, ATK +150%, +15 RES, Attack Range +300%, and uses 'Weft And Warp' with 60% shortened cooldown. ",
+					"cn": "",
+					"jp": "「ジザイ」の最大HP+200%、攻撃力+150%、術耐性+15、攻撃範囲+300%、【緯地経天】を展開し、発動間隔が60%短縮"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Enemy ATK 3",
+					"jp": "増幅：火力III",
+					"cn": "源石环境：刺激III"
+				},
+				"img": "75px-Enemy_atk_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%80"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +80%",
+					"jp": "全ての敵の攻撃力+80%",
+					"cn": "所有敌人的攻击力提升80%"
+				}
+			}
+		]
+	}
+]

@@ -5,8 +5,8 @@
 		"cn": "大骑士领酒吧街"
 	},
 	"img": "大骑士领酒吧街",
-	"config": "CC8_大骑士领酒吧街",
-	"ccType": "perma",
+	"config": "CC9_大骑士领酒吧街_1",
+	"ccType": "daily",
 	"enemies": [
 		{ "id": "NL17", "count": 1, "stats": "level1" },
 		{ "id": "NL20", "count": 1, "stats": "level0" },

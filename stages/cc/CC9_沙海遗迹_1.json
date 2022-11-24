@@ -5,7 +5,7 @@
 		"cn": "沙海遗迹"
 	},
 	"img": "沙海遗迹",
-	"config": "CC8_沙海遗迹_2",
+	"config": "CC9_沙海遗迹_1",
 	"ccType": "daily",
 	"enemies": [
 		{ "id": "D7", "count": 0, "stats": "level0" },

@@ -1,40 +1,29 @@
 [
 	{
-		"category": "char_hp",
+		"category": "status_immune",
 		"options": [
 			{
 				"rank": 1,
 				"name": {
-					"jp": "制限：体力減衰I",
-					"en": "Reduced Operator HP 1",
-					"cn": "源石环境：侵蚀I"
+					"en": "Stun Silence Immune",
+					"jp": "指令：鋼の心",
+					"cn": "目标：心如钢铁"
 				},
-				"img": "75px-Char_hp_1",
-				"effects": [],
+				"img": "75px-Enemy_immune_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"special": {
+								"immune": ["stun", "silence"]
+							}
+						}
+					}
+				],
 				"tooltip": {
-					"en": "Ally Max HP reduced -30%",
-					"jp": "全ての味方の最大HP-30%",
-					"cn": "所有我方单位的生命值上限降低30%"
-				}
-			}
-		]
-	},
-	{
-		"category": "lifepoint",
-		"options": [
-			{
-				"rank": 1,
-				"name": {
-					"en": "None Escape",
-					"jp": "指令：背水の陣",
-					"cn": "目标：最后防线"
-				},
-				"img": "75px-Global_lifepoint_1",
-				"effects": [],
-				"tooltip": {
-					"en": "No enemies escape (Level HP set to 1)",
-					"jp": "防衛ラインの最大耐久値が1に",
-					"cn": "我方防御点可承受的敌方数量变为1 "
+					"en": "All enemies gain immunity to stun and silence",
+					"jp": "敵全体がスタン、能力無力化無効になる",
+					"cn": "所以敌人获得免疫晕眩与沉默"
 				}
 			}
 		]
@@ -89,6 +78,26 @@
 		]
 	},
 	{
+		"category": "char_respawn",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：効率低下I",
+					"en": "Reduced Operator Redeployment 1",
+					"cn": "目标：效率低下I"
+				},
+				"img": "75px-Char_respawntime_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally redeployment time increased by 75%",
+					"jp": "全ての味方の再配置時間+75%",
+					"cn": "所有我方单位的再部署时间延长75%"
+				}
+			}
+		]
+	},
+	{
 		"category": "drone_b",
 		"options": [
 			{
@@ -103,8 +112,8 @@
 					{
 						"targets": ["D7", "PS1", "PS3"],
 						"mods": {
-							"hp": "%190",
-							"def": "%125",
+							"hp": "%90",
+							"def": "%25",
 							"special": {
 								"drone_flying_time": {
 									"type": "others",
@@ -146,6 +155,39 @@
 		]
 	},
 	{
+		"category": "more_enemies",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "環境：火力支援II",
+					"en": "Enemies ++",
+					"cn": ""
+				},
+				"img": "75px-Level_hidden_group_2",
+				"effects": [
+					{
+						"targets": ["D7"],
+						"mods": {
+							"count": 7
+						}
+					},
+					{
+						"targets": ["PD1"],
+						"mods": {
+							"count": 5
+						}
+					}
+				],
+				"tooltip": {
+					"en": ["A1 count +7, Tactical Crossbowman count +5"],
+					"jp": ["追加で「アーツバードA1」7体、「戦術射撃兵」5体が登場"],
+					"cn": []
+				}
+			}
+		]
+	},
+	{
 		"category": "enemy_aspd",
 		"options": [
 			{
@@ -160,7 +202,7 @@
 					{
 						"targets": ["ALL"],
 						"mods": {
-							"aspd": "%160"
+							"aspd": "%60"
 						}
 					}
 				],
@@ -173,114 +215,48 @@
 		]
 	},
 	{
-		"category": "deploy",
+		"category": "enemy_hp",
 		"options": [
 			{
-				"rank": 2,
+				"rank": 3,
 				"name": {
-					"en": "Deploy Limit 2",
-					"jp": "環境：小規模戦II",
-					"cn": "环境：交战区II"
+					"en": "Enemy HP 3",
+					"jp": "増幅：体力III",
+					"cn": "源石环境：活性III"
 				},
-				"img": "75px-Global_pcharnum_2",
+				"img": "75px-Enemy_hp_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%100"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +100%",
+					"jp": "全ての敵の最大HP+100%",
+					"cn": "所有敌人的生命值提升100%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Reduced Ally ATK 3",
+					"jp": "制限：火力減衰III",
+					"cn": "环境：高价值目标III"
+				},
+				"img": "75px-Char_atk_3",
 				"effects": [],
 				"tooltip": {
-					"en": "Deploy Limit reduced to 7",
-					"jp": "同時配置可能数が7人に",
-					"cn": "可同时部署的单位数量减少至7"
-				}
-			}
-		]
-	},
-	{
-		"category": "drone_a",
-		"options": [
-			{
-				"rank": 3,
-				"name": {
-					"jp": "特化：機能向上III",
-					"en": "Drone ATK Buff 3",
-					"cn": ""
-				},
-				"img": "沙海遗迹/75px-Enemy_drones_1_3",
-				"effects": [
-					{
-						"targets": ["D7", "PS1", "PS3"],
-						"mods": {
-							"atk": "%170",
-							"ms": "%200",
-							"range": "%150",
-							"special": {
-								"scrap_def_down": {
-									"type": "others",
-									"tooltip": {
-										"en": [
-											"Attacks reduce target's DEF by $70% for 10s$",
-											"(does not stack, can be silenced)"
-										],
-										"jp": [
-											"攻撃が相手の防御力を$10秒70％$減少する (重複しない、無効化できる)"
-										],
-										"cn": [
-											"攻击使目标防御力最终降低$70%，持续10s$（不叠加，可沉默）"
-										]
-									}
-								}
-							}
-						}
-					}
-				],
-				"tooltip": {
-					"en": [
-						"All drone type enemies ATK +70%, MS +100%, Range +50%, Scrap's def down effect increased by 40% and duration by 5s"
-					],
-					"jp": [
-						"すべての敵「ドローン」の攻撃力+70%、移動速度+100%、攻撃範囲+50%、「破片」の防御力減少効果+40%、効果継続時間+5秒"
-					],
-					"cn": []
-				}
-			}
-		]
-	},
-	{
-		"category": "more_enemies",
-		"options": [
-			{
-				"rank": 3,
-				"name": {
-					"jp": "環境：火力支援III",
-					"en": "Enemies +++",
-					"cn": ""
-				},
-				"img": "75px-Level_hidden_group_3",
-				"effects": [
-					{
-						"targets": ["D7"],
-						"mods": {
-							"count": 7
-						}
-					},
-					{
-						"targets": ["PD1"],
-						"mods": {
-							"count": 5
-						}
-					},
-					{
-						"targets": ["PD5"],
-						"mods": {
-							"count": 4
-						}
-					}
-				],
-				"tooltip": {
-					"en": [
-						"A1 count +7, Tactical Crossbowman count +5, War Phantom count +4"
-					],
-					"jp": [
-						"追加で「アーツバードA1」7体、「戦術射撃兵」5体、「ウォーゴースト」4体が登場"
-					],
-					"cn": []
+					"en": "All allies’ ATK -50%",
+					"jp": "全ての味方の攻撃力-50%",
+					"cn": "所有我方单位的攻击力降低50%"
 				}
 			}
 		]

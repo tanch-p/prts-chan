@@ -1,0 +1,204 @@
+[
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "制限：過負荷",
+					"en": "Guard Defender Cost",
+					"cn": ""
+				},
+				"img": "75px-Char_cost_guarddefender_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Guard and Defender DP Cost tripled",
+					"cn": "",
+					"jp": "前衛・重装の配置コストが3倍になる"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_aspd",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Enemy ASPD 1",
+					"jp": "増幅：ラッシュI",
+					"cn": ""
+				},
+				"img": "75px-Enemy_attackspeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"aspd": "%25"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy ASPD +25",
+					"jp": "全ての敵の攻撃速度+25",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_def",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy DEF",
+					"jp": "増幅：装甲I",
+					"cn": "反装甲I"
+				},
+				"img": "75px-Enemy_def_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"fixed_def": 200
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy DEF +200",
+					"jp": "全ての敵の防御力+200",
+					"cn": "所有敌人的防御力提升200"
+				}
+			}
+		]
+	},
+	{
+		"category": "drone_monster",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：エンジン改良II",
+					"en": "Engine Reform II",
+					"cn": ""
+				},
+				"img": "放棄された土地/Enemy_yokai_2",
+				"effects": [
+					{
+						"targets": ["D2"],
+						"mods": {
+							"hp": "%80",
+							"atk": "%50",
+							"ms": "%50"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Monster Mk2]'s movespeed +50%, Max HP +80%, ATK +50%",
+					"cn": "",
+					"jp": "「怪鳥Mk2」の移動速度+50%、HP+80%、攻撃力+50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "DP Down 2",
+					"jp": "指令：孤軍奮闘II",
+					"cn": "目标：深度渗透II"
+				},
+				"img": "75px-Global_costrecovery_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 50%",
+					"jp": "コストの自然回復速度-50%",
+					"cn": "部署费用的自然回复速度降低50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Max Squad Size 2",
+					"jp": "環境：少数精鋭II",
+					"cn": "目标：隐秘行动II "
+				},
+				"img": "75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 7 operators in squad",
+					"jp": "編成可能数が7人に",
+					"cn": "最多可编入7名干员进入作战"
+				}
+			}
+		]
+	},
+	{
+		"category": "imperial_arti",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：爆撃指令III",
+					"en": "Heavy Bombardment III",
+					"cn": ""
+				},
+				"img": "放棄された土地/Enemy_emppnt_3",
+				"effects": [
+					{
+						"targets": ["U11"],
+						"mods": {
+							"hp": "%100",
+							"atk": "%60"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Imperial Artillery Harbinger] appears early, Max HP +100%, ATK +60%",
+					"cn": "",
+					"jp": "「帝国砲撃誘導機」は早めに出現、HP+100%、攻撃力+60%、"
+				}
+			}
+		]
+	},
+	{
+		"category": "shield_guard",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：庇護の盾 III",
+					"en": "Ambush Tactics III",
+					"cn": ""
+				},
+				"img": "放棄された土地/Enemy_sotisd_3",
+				"effects": [
+					{
+						"targets": ["SP0"],
+						"mods": {
+							"hp": "%50",
+							"res": 20,
+							"special": {
+								"count": 2
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All <Guerilla Shieldguard> have +50% Max HP, +20 Res. Additional two <Guerilla Shieldguard> appears on map.",
+					"cn": "",
+					"jp": "「遊撃隊盾兵」のHP+50%、術耐性+20、「遊撃隊盾兵」が2体追加出現"
+				}
+			}
+		]
+	}
+]

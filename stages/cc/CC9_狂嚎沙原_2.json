@@ -1,7 +1,7 @@
 {
 	"name": { "en": "Howling Desert", "jp": "狂風の砂原", "cn": "狂嚎沙原" },
 	"img": "狂嚎沙原",
-	"config": "CC8_狂嚎沙原_2",
+	"config": "CC9_狂嚎沙原_2",
 	"ccType": "daily",
 	"enemies": [
 		{ "id": "T1", "count": 24, "stats": "level0" },

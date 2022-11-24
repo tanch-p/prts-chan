@@ -1,0 +1,214 @@
+[
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Enemy ATK 1",
+					"jp": "増幅：火力I",
+					"cn": "源石环境：刺激I"
+				},
+				"img": "75px-Enemy_atk_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%30"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +30%",
+					"jp": "全ての敵の攻撃力+30%",
+					"cn": "所有敌人的攻击力提升30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Enemy HP 1",
+					"jp": "増幅：体力I",
+					"cn": "源石环境：活性I"
+				},
+				"img": "75px-Enemy_hp_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%30"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +30%",
+					"jp": "全ての敵の最大HP+30%",
+					"cn": "所有敌人的生命值提升30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "grids",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Forbidden Grids 1",
+					"jp": "環境：峻険地形I",
+					"cn": ""
+				},
+				"img": "75px-Global_forbidloc_1",
+				"effects": [],
+				"tooltip": {
+					"en": "5 tiles forbid deployment",
+					"jp": "マップ上の5つのマスが配置不可に",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "deyi",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：陰陽晦明II",
+					"en": "Deyi 2",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_spslme_amod_2",
+				"effects": [
+					{
+						"targets": ["SF09"],
+						"mods": { "hp": "%220", "res": 50 }
+					}
+				],
+				"tooltip": {
+					"en": "[Smarty] Max HP +220%, RES +50",
+					"cn": "",
+					"jp": "「オニビ」の最大HP+220%、術耐性+50"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "DP Down 2",
+					"jp": "指令：孤軍奮闘II",
+					"cn": "目标：深度渗透II"
+				},
+				"img": "75px-Global_costrecovery_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 50%",
+					"jp": "コストの自然回復速度-50%",
+					"cn": "部署费用的自然回复速度降低50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -25%",
+					"jp": "全ての味方の攻撃力-25%",
+					"cn": "所有我方单位的攻击力降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "free",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Free: BTC 3",
+					"jp": "強敵：III",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_xi_amod_3",
+				"effects": [
+					{
+						"targets": ["DSK"],
+						"mods": {
+							"hp": "%50",
+							"def": "%250",
+							"res": 30,
+							"special": {
+								"break_the_chains_1": {
+									"multiplier": 6,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": [
+											"'Break the Chains' - Initial Cast: 30s, Thereafter: $35s$"
+										],
+										"jp": ["「破桎而出」初回使用:30秒、再使用：$35秒$"],
+										"cn": ""
+									}
+								},
+								"break_the_chains_2": {
+									"multiplier": 8,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": [
+											"'Break the Chains(Rage)' - Initial Cast: 30s, Thereafter: $35s$"
+										],
+										"jp": ["「破桎而出（凶暴）」初回使用:30秒、再使用：$35秒$"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Free] Max HP +50%, DEF +250%, RES +30, 'Break the Chains' has -50% cooldown and 100% larger explosion radius.",
+					"cn": "",
+					"jp": "「ジザイ」の最大HP+50%、防御力+250%、術耐性+30、【桎梏打破】の発動間隔が50%短縮、爆発範囲が100%拡大"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Multi-faceted Offense Contract",
+					"jp": "制限：多面襲撃崩壊",
+					"cn": ""
+				},
+				"img": "灰齐山麓/Char_cost_attackers_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Supporter, Healer and Defender DP Cost tripled, and the redeployment time extended by 100%.",
+					"cn": "",
+					"jp": "医療・重装・補助の配置コストが3倍、再配置時間が+100%"
+				}
+			}
+		]
+	}
+]

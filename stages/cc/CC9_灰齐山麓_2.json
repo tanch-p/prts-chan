@@ -1,7 +1,7 @@
 {
 	"name": { "en": "Foothill Hui-Ch'i", "jp": "灰斉山麓", "cn": "灰齐山麓" },
 	"img": "灰齐山麓",
-	"config": "CC8_灰齐山麓_2",
+	"config": "CC9_灰齐山麓_2",
 	"ccType": "daily",
 	"enemies": [
 		{ "id": "DSK", "count": 1, "stats": "灰齐山麓" },

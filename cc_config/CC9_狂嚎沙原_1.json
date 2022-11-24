@@ -1,0 +1,232 @@
+[
+	{
+		"category": "storm_direction",
+		"options": [
+			{
+				"name": {
+					"en": "Storm Direction",
+					"jp": "環境：東風",
+					"cn": "環境：東風"
+				},
+				"rank": 1,
+				"img": "狂嚎沙原/storm_direction_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Sandstorm will switch to blowing from right to left",
+					"cn": "",
+					"jp": "「砂嵐」が左方向に吹くようになる"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "others_4",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Sandstorm Resistance",
+					"jp": "環境：砂嵐耐性",
+					"cn": ""
+				},
+				"img": "狂嚎沙原/storm_speed_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Sandstorm no longer reduces enemy movement speed.",
+					"cn": "",
+					"jp": "「砂嵐」で敵の移動速度が減少しなくなる"
+				}
+			}
+		]
+	},
+	{
+		"category": "ripper",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Ripper mod_2",
+					"jp": "特化：猛攻無尽II",
+					"cn": ""
+				},
+				"img": "狂嚎沙原/ccripr_2",
+				"effects": [
+					{
+						"targets": ["T5"],
+						"mods": {
+							"hp": "%90",
+							"aspd": "%70",
+							"ms": "%100",
+							"weight": 1,
+							"special": {
+								"def_down_10": {
+									"tooltip": {
+										"en": [
+											"Attacks decreases operator's def by $20$, lasts indefinitely until operator retreats"
+										],
+										"jp": [
+											"攻撃1回につき相手の$DEF20$低下",
+											"(蓄積する、撤退まで永続)"
+										],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Tiacauh Fanatic] Max HP+90%, ASPD +70, movement speed +100%, weight level +1, DEF lowering effects +100%",
+					"cn": "",
+					"jp": "「ティアカウ猛攻兵」の最大HP+90%、攻撃速度+70、移動速度+100%、重量ランク+1 攻撃対象の防御力減少効果が1倍に上昇"
+				}
+			}
+		]
+	},
+	{
+		"category": "shaman",
+		"options": [
+			{
+				"name": {
+					"en": "Shaman mod 2",
+					"jp": "特化：密林呪法II",
+					"cn": ""
+				},
+				"rank": 2,
+				"img": "狂嚎沙原/75px-Enemy_ccwitch_2",
+				"effects": [
+					{
+						"targets": ["T7"],
+						"mods": {
+							"hp": "%70",
+							"atk": "%70",
+							"def": "%100",
+							"range": "%60"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Tiacauh Ritualist] Max HP +120%, ATK +70%, DEF +100%, attack range +60%",
+					"cn": "",
+					"jp": "「ティアカウ呪術師」の最大HP+120%、攻撃力+70%、防御力+100%、攻撃範囲+60"
+				}
+			}
+		]
+	},
+	{
+		"category": "deploy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Deploy Limit 2",
+					"jp": "環境：小規模戦II",
+					"cn": "环境：交战区II"
+				},
+				"img": "75px-Global_pcharnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Deploy Limit reduced to 5",
+					"jp": "同時配置可能数が5人に",
+					"cn": "可同时部署的单位数量减少至5"
+				}
+			}
+		]
+	},
+	{
+		"category": "croc_brave",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Tiacauh Brave DEF",
+					"jp": "ティアカウ勇士 B",
+					"cn": ""
+				},
+				"img": "狂嚎沙原/cchmpn_bmod_3",
+				"effects": [
+					{
+						"targets": ["T11"],
+						"mods": {
+							"hp": "%130",
+							"atk": "%50",
+							"res": 60,
+							"special": {
+								"croc_duel": {
+									"multiplier": 1,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": [
+											"When Blocked, only takes damage from blocking unit",
+											"$Self's def does not drop$",
+											"Unit's def drops by 70%"
+										],
+										"jp": [
+											"ブロックされている時、",
+											"ブロック相手以外からダメージを受けない",
+											"$自分の防御力は下げない$",
+											"相手の防御力を70%下げる"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Tiacauh Brave] Max HP +130%, ATK +50%, RES +60, no longer lowers own DEF when blocked",
+					"cn": "",
+					"jp": "「ティアカウ勇士」の最大HP+130%、攻撃力+50%、術耐性+60、ブロックされても防御力が減少しない"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Enemy HP 3",
+					"jp": "増幅：体力III",
+					"cn": "源石环境：活性III"
+				},
+				"img": "75px-Enemy_hp_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%110"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +110%",
+					"jp": "全ての敵の最大HP+110%",
+					"cn": "所有敌人的生命值提升110%"
+				}
+			}
+		]
+	}
+]
