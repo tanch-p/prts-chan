@@ -254,8 +254,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Additional two Pocket Sea Crawler appears on map.",
-					"jp": "「嚢海のクローラー」が2体追加出現",
+					"en": "Pocket Sea Crawler skill % range",
+					"jp": "「嚢海のクローラー」能力％距離",
 					"cn": ""
 				}
 			},
@@ -304,8 +304,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Additional four Pocket Sea Crawler appears on map.",
-					"jp": "「嚢海のクローラー」が4体追加出現",
+					"en": "Pocket Sea Crawler skill % range",
+					"jp": "「嚢海のクローラー」能力％距離",
 					"cn": ""
 				}
 			},
@@ -354,8 +354,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Additional four Pocket Sea Crawler appears on map.",
-					"jp": "「嚢海のクローラー」が4体追加出現",
+					"en": "Pocket Sea Crawler skill % range",
+					"jp": "「嚢海のクローラー」能力％距離",
 					"cn": ""
 				}
 			}
@@ -384,7 +384,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +50%, ATK +20%, DEF +20%, RES +10",
+					"en": "'FTT' Max HP +40%, becomes immune to stun & freeze",
 					"cn": "",
 					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+50%、攻撃力+20%、防御力+20%、術耐性+10"
 				}

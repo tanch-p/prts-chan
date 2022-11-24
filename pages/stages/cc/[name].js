@@ -155,7 +155,9 @@ export default function Stage({ stageData }) {
 	const setOtherMods = (other_mods, obj) => {
 		for (const key of Object.keys(obj)) {
 			if (!key.includes("tooltip")) {
-				if (typeof obj[key] !== "object") {
+				if (key === "immune") {
+					other_mods[key] = obj[key];
+				} else if (typeof obj[key] !== "object") {
 					other_mods[key] = obj[key];
 				} else {
 					if (!other_mods[key]) {
