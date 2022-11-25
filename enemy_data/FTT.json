@@ -15,7 +15,7 @@
 			"aspd": "3",
 			"range": "2.5",
 			"weight": "4",
-			"lifepoint": 1,
+			"lifepoint": 2,
 			"ms": "0.8",
 			"special": ["nervous_impair_40","ftt_splash"]
 		}
