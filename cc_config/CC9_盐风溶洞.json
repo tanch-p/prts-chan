@@ -32,9 +32,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[sea_reaper] Max HP +50%, Glimmering Touch charging time halved.",
+					"en": "[Basin Sea Reaper] HP loss decreased by 25% ",
 					"cn": "",
-					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+50%、【微光の蝕】のチャージ時間-50％"
+					"jp": "＜鉢海のリーパー＞のHP減少が-25％"
 				}
 			},
 			{
@@ -73,9 +73,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[sea_reaper] Max HP +110%, has lower target priority, Glimmering Touch charging time halved and cooldown reduced by 40%.",
+					"en": "[Basin Sea Reaper] HP loss decreased by 25%, ATK +25%, Movespeed +50%",
 					"cn": "",
-					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+110%、味方ユニットの攻撃対象となりにくい、【微光の蝕】のチャージ時間-50％、クールタイム-40％"
+					"jp": "＜鉢海のリーパー＞のHP減少が-25%、攻撃力+25%、移動速度+50%"
 				}
 			},
 			{
@@ -114,9 +114,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[sea_reaper] Max HP +160%, has lower target priority, Glimmering Touch becomes instant cast and cooldown reduced by 70%.",
+					"en": "[Basin Sea Reaper] HP loss decreased by 33%, ATK +50%, Movespeed +100%",
 					"cn": "",
-					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+160%、味方ユニットの攻撃対象となりにくい、【微光の蝕】が即時発動し、クールタイム-70％"
+					"jp": "＜鉢海のリーパー＞のHP減少が-33%、攻撃力+50%、移動速度+100%"
 				}
 			}
 		]
@@ -160,9 +160,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[sea_reaper] Max HP +80%, ATK +50%, Range increases, attacks ignore 35 RES and Glimmering Touch's charging time is halved",
+					"en": "[Basin Sea Reaper] HP loss decreased by 50%, Max HP +40%",
 					"cn": "",
-					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+80%、攻撃力+50%、攻撃範囲が拡大し、攻撃対象の術耐性を35%無視、【微光の蝕】のチャージ時間-50％"
+					"jp": "＜鉢海のリーパー＞のHP減少が-50%、最大HP+40%"
 				}
 			},
 			{
@@ -200,9 +200,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[sea_reaper] Max HP +110%, ATK +90%, Range increases greatly, attacks ignore 80 RES and Glimmering Touch's charging time is halved",
+					"en": "[Basin Sea Reaper] HP loss decreased by 80%, Max HP +70%",
 					"cn": "",
-					"jp": "＜「燭騎士」ヴィヴィアナ＞の最大HP+110%、攻撃力+90%、攻撃範囲が拡大し、攻撃対象の術耐性を80%無視、【微光の蝕】のチャージ時間-50％"
+					"jp": "＜鉢海のリーパー＞のHP減少が-80%、最大HP+70%"
 				}
 			}
 		]
@@ -254,8 +254,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Pocket Sea Crawler skill % range",
-					"jp": "「嚢海のクローラー」能力％距離",
+					"en": "Pocket Sea Crawler skill damage +100%, becomes immune to stun and freeze",
+					"jp": "「嚢海のクローラー」能力のダメージ倍率が200％に上昇、スタン、凍結無効になる",
 					"cn": ""
 				}
 			},
@@ -304,8 +304,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Pocket Sea Crawler skill % range",
-					"jp": "「嚢海のクローラー」能力％距離",
+					"en": "Pocket Sea Crawler skill activation hp threshold decreased by 3%, damage +150%, effect range increased, becomes immune to stun and freeze",
+					"jp": "「嚢海のクローラー」能力発動のHP値が減少、ダメージ倍率が250％に上昇、効果範囲増加、スタン、凍結無効になる",
 					"cn": ""
 				}
 			},
@@ -354,8 +354,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Pocket Sea Crawler skill % range",
-					"jp": "「嚢海のクローラー」能力％距離",
+					"en": "Pocket Sea Crawler skill activation hp threshold decreased by 6%, damage +200%, effect range further increased, becomes immune to stun and freeze",
+					"jp": "「嚢海のクローラー」能力発動のHP値がさらに減少、ダメージ倍率が300％に上昇、効果範囲さらに増加、スタン、凍結無効になる",
 					"cn": ""
 				}
 			}
@@ -384,9 +384,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "'FTT' Max HP +40%, becomes immune to stun & freeze",
+					"en": "'FTT' Max HP +40%, becomes immune to stun and freeze",
 					"cn": "",
-					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+50%、攻撃力+20%、防御力+20%、術耐性+10"
+					"jp": "＜ファースト・トーカー＞の最大HP+40%、スタン、凍結無効になる"
 				}
 			},
 			{
@@ -411,9 +411,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +100%, ATK +60%, RES +30",
+					"en": "'FTT' Max HP +60%, ATK +25%, ASPD +25%, becomes immune to stun and freeze",
 					"cn": "",
-					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+100%、攻撃力+60%、術耐性+30"
+					"jp": "＜ファースト・トーカー＞の最大HP+60%、攻撃力+25%、攻撃速度+25%、スタン、凍結無効になる"
 				}
 			},
 			{
@@ -445,9 +445,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +150%, ATK +100%, RES +50, gains Stealth",
-					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+150%、攻撃力+100%、術耐性+50、【ステルス】状態になる",
-					"cn": ""
+					"en": "'FTT' Max HP +80%, ATK +40%, ASPD +40%, becomes immune to stun and freeze, gains Stealth",
+					"cn": "",
+					"jp": "＜ファースト・トーカー＞の最大HP+80%、攻撃力+40%、攻撃速度+40%、スタン、凍結無効になる、ステルス"
 				}
 			}
 		]
@@ -504,9 +504,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +65%, ATK +80%, DEF +60%, 3 [ftt Imitators] appear",
-					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+65%、攻撃力+80%、防御力+60%、追加で悪夢のマニアが3体登場する",
-					"cn": ""
+					"en": "'FTT' Max HP +100%, attack range +35%, becomes immune to stun and freeze, skill's damage multiplier +75%",
+					"cn": "",
+					"jp": "＜ファースト・トーカー＞の最大HP+100%、攻撃範囲+35%、スタン、凍結無効になる、スキルのダメージ倍率が135％に上昇"
 				}
 			},
 			{
@@ -557,9 +557,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "'The Last Kheshig', Tola's Max HP +80%, ATK +150%, DEF +100%, 2 waves of 3 [ftt Imitators] appear",
-					"jp": "＜「最後のケシク」トゥーラ＞の最大HP+80%、攻撃力+150%、防御力+100%、追加で悪夢のマニアが2ウェーブで3体ずつ登場する",
-					"cn": ""
+					"en": "'FTT' Max HP +150%, attack range +35%, becomes immune to stun and freeze, skill's damage multiplier +140%, cooldown decreased by 30%",
+					"cn": "",
+					"jp": "＜ファースト・トーカー＞の最大HP+150%、攻撃範囲+35%、スタン、凍結無効になる、スキルのダメージ倍率が200％に上昇、クールタイム-30%"
 				}
 			}
 		]
