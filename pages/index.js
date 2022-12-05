@@ -18,8 +18,8 @@ export default function Home() {
 	};
 	const TODOtitle = { en: "To be implemented:", jp: "鋭意開発中：" };
 	const TODO = {
-		en: ["Map Data", "Enemy Routes", "Relic Tooltips", "and more..."],
-		jp: ["ステージ情報", "敵ルート", "秘宝テキスト", "色々…"],
+		en: ["Map Data", "Relic Tooltips", "and more..."],
+		jp: ["ステージ情報", "秘宝テキスト", "色々…"],
 	};
 
 	return (

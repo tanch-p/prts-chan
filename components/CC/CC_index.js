@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import CC9_banner from "@/public/images/banners/CC9_banner.png";
+import CC9_banner from "@/public/images/banners/CC9_banner.webp";
 
 export default function CCIndex({ language, langPack }) {
 	const getTheme = () => {

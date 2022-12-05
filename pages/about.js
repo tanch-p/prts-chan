@@ -15,8 +15,7 @@ export default function About({ allStagesData }) {
 				<div id="home-container" className="min-h-[100vh] font-jp px-4 md:px-0">
 					<p className="text-lg font-semibold py-2">このサイトについて</p>
 					<p className="lg:max-w-xl my-3">
-						このサイトは補正が掛かった敵のデータを可視化するように、統合戦略のために作りました。統合戦略はまだ先なので、試しに危機契約のステージを加えました。まだまだ開発中なので、もしバグや不具合または改善したところを見つかったら、ディスコード
-						@xiiao#0613にまでお知らせてください。
+						このサイトは統合戦略や危機契約において、補正が掛かった敵のデータを可視化するように作りました。もしバグや不具合または改善したところを見つかったら、以下の方法でお知らせてくださると助かります。
 					</p>
 					<dl className="flex flex-wrap flex-row w-full overflow-hidden m-0 p-0  max-w-[700px]">
 						<dt className="border-y border-gray-200 border-collapse py-2 font-semibold w-[25%] md:w-[17%]">
@@ -33,36 +32,25 @@ export default function About({ allStagesData }) {
 							</a>
 						</dd>
 						<dt className="border-y border-gray-200 border-collapse py-2 font-semibold w-[25%] md:w-[17%]">
-							メール
+							ディスコード
 						</dt>
 						<dd className="border-y border-gray-200 border-collapse py-2 w-[75%] md:w-[83%]">
-							prtschan@gmail.com
-						</dd>
-
-						<dt className="border-y border-gray-200 border-collapse py-2 font-semibold w-[25%] md:w-[17%]">
-							ツイーター
-						</dt>
-						<dd className="border-y border-gray-200 border-collapse py-2 w-[75%] md:w-[83%]">
-							<a
-								href="https://twitter.com/prts_chan"
-								className="underline text-blue-700"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								@prts_chan
-							</a>
+							@xiiao#0613
 						</dd>
 					</dl>
 				</div>
 			) : (
-				<div id="home-container" className="min-h-[100vh] font-sans px-4 md:px-0">
+				<div
+					id="home-container"
+					className="min-h-[100vh] font-sans px-4 md:px-0"
+				>
 					<p className="text-lg font-semibold py-2">About this site:</p>
 					<p className="lg:max-w-xl my-3">
 						This website was created with the goal of being able to see the
 						actual numbers of enemy stats with modifiers in mind, for Integrated
-						Strategies (IS) gameplay. As IS is only coming few months later,
-						this beta version for CC was made. If you find any bugs/mistakes or
-						have any feedback, please kindly contact me on Discord @xiiao#0613.
+						Strategies (IS) & Contigency Contract (CC) gameplay. If you find
+						any bugs/mistakes or have any feedback, please kindly contact me on
+						Discord @xiiao#0613.
 					</p>
 					<dl className="flex flex-wrap flex-row w-full overflow-hidden m-0 p-0  max-w-[700px]">
 						<dt className="border-y border-gray-200 border-collapse py-2 font-semibold w-[25%] md:w-[17%]">
@@ -79,24 +67,10 @@ export default function About({ allStagesData }) {
 							</a>
 						</dd>
 						<dt className="border-y border-gray-200 border-collapse py-2 font-semibold w-[25%] md:w-[17%]">
-							Email
+							Discord
 						</dt>
 						<dd className="border-y border-gray-200 border-collapse py-2 w-[75%] md:w-[83%]">
-							prtschan@gmail.com
-						</dd>
-
-						<dt className="border-y border-gray-200 border-collapse py-2 font-semibold w-[25%] md:w-[17%]">
-							Twitter
-						</dt>
-						<dd className="border-y border-gray-200 border-collapse py-2 w-[75%] md:w-[83%]">
-							<a
-								href="https://twitter.com/prts_chan"
-								className="underline text-blue-700"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								@prts_chan
-							</a>
+							@xiiao#0613
 						</dd>
 					</dl>
 				</div>
