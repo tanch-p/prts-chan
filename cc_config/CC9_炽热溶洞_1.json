@@ -34,7 +34,7 @@
 					{
 						"targets": ["ALL"],
 						"mods": {
-							"fixed-def": 100
+							"fixed_def": 100
 						}
 					}
 				],
