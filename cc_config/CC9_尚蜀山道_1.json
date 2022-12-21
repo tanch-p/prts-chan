@@ -5,8 +5,8 @@
 			{
 				"rank": 1,
 				"name": {
-					"jp": "特化：磨礱I",
-					"en": "Grindstone I1",
+					"jp": "特化：刻印I",
+					"en": "Grindstone I",
 					"cn": ""
 				},
 				"img": "尚蜀山道/75px-Enemy_sfyin1",
@@ -21,11 +21,11 @@
 									"can_silence": false,
 									"tooltip": {
 										"en": [
-											"Spawns $4$ Wooden Seals when defeated",
+											"Spawns 4 Wooden Seals when defeated",
 											"cannot be Silenced"
 										],
 										"jp": [
-											"死亡すると「木製瑞印」を$4体$召喚する",
+											"死亡すると「木製瑞印」を4体召喚する",
 											"無効化不可能"
 										],
 										"cn": []
@@ -36,9 +36,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "Grindstone Max HP +50%, and spawns 4 wooden seals when defeated.",
+					"en": "<Grindstone> gain +50% HP and spawns 4 wooden seals when defeated.",
 					"cn": "",
-					"jp": "「磨礱」の最大HP+50%、死亡すると「木製瑞印」を$4体$召喚する"
+					"jp": "＜刻印＞の最大HP+50%、倒されたときに生成される＜木製瑞印＞を4体召喚する"
 				}
 			}
 		]
@@ -89,7 +89,7 @@
 			{
 				"rank": 2,
 				"name": {
-					"jp": "特化：新砥II",
+					"jp": "特化：尚武II",
 					"en": "Sharpedge 2",
 					"cn": ""
 				},
@@ -102,7 +102,7 @@
 				],
 				"tooltip": {
 					"en": "Sharpedge Max HP +70% ATK +50% DEF +30% RES +30",
-					"jp": "「磨礱」の最大HP+70%、攻撃力+50%、防御力+30%、術耐性+30",
+					"jp": "「刻印」の最大HP+70%、攻撃力+50%、防御力+30%、術耐性+30",
 					"cn": ""
 				}
 			}
@@ -114,7 +114,7 @@
 			{
 				"rank": 2,
 				"name": {
-					"jp": "特化：青花II",
+					"jp": "特化：釉彩II",
 					"en": "Blueflower 2",
 					"cn": ""
 				},
@@ -139,7 +139,7 @@
 			{
 				"rank": 2,
 				"name": {
-					"jp": "特化：磨礱II",
+					"jp": "特化：刻印II",
 					"en": "Grindstone 2",
 					"cn": ""
 				},
@@ -172,7 +172,7 @@
 				"tooltip": {
 					"en": "Grindstone Max HP +100%, and spawns 4 wooden seals when defeated.",
 					"cn": "",
-					"jp": "「磨礱」の最大HP+100%、死亡すると「木製瑞印」を$4体$召喚する"
+					"jp": "＜刻印＞の最大HP+100%、倒されたときに生成される＜木製瑞印＞を4体召喚する"
 				}
 			}
 		]
@@ -183,7 +183,7 @@
 			{
 				"rank": 2,
 				"name": {
-					"jp": "特化：清明II",
+					"jp": "環境：威光赫赫II",
 					"en": "Clarity 2",
 					"cn": ""
 				},
@@ -192,7 +192,7 @@
 				"tooltip": {
 					"en": "Additional 2 Clarity appears on map",
 					"cn": "",
-					"jp": "「磨礱」が2体追加出現"
+					"jp": "追加で「清明」が2体登場"
 				}
 			}
 		]

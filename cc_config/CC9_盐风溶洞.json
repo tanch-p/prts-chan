@@ -4,7 +4,7 @@
 		"options": [
 			{
 				"rank": 1,
-				"name": { "en": "", "jp": "強敵：煌煌I", "cn": "" },
+				"name": { "en": "Sea Reaper: Predatory Need 1", "jp": "特化：鉢海捕食I", "cn": "" },
 				"img": "盐风溶洞/75px-Enemy_dslntc_1",
 				"effects": [
 					{
@@ -40,8 +40,8 @@
 			{
 				"rank": 2,
 				"name": {
-					"en": "sea_reaper: Dazzle 2",
-					"jp": "強敵：煌煌II",
+					"en": "Sea Reaper: Predatory Need 2",
+					"jp": "特化：鉢海捕食II",
 					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dslntc_amod_2",
@@ -81,8 +81,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"en": "sea_reaper: Dazzle 3",
-					"jp": "強敵：煌煌III",
+					"en": "Sea Reaper: Predatory Need 3",
+					"jp": "特化：鉢海捕食III",
 					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dslntc_amod_3",
@@ -128,8 +128,8 @@
 			{
 				"rank": 2,
 				"name": {
-					"en": "sea_reaper: Candlelight 2",
-					"jp": "強敵：明灯II",
+					"en": "Sea Reaper: Survival Need 2",
+					"jp": "特化：鉢海生存II",
 					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dslntc_bmod_2",
@@ -168,8 +168,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"en": "sea_reaper: Candlelight 3",
-					"jp": "強敵：明灯III",
+					"en": "Sea Reaper: Survival Need 3",
+					"jp": "特化：鉢海生存III",
 					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dslntc_bmod_3",
@@ -213,9 +213,9 @@
 			{
 				"rank": 1,
 				"name": {
-					"en": "",
-					"jp": "環境：酒類特価I",
-					"cn": "环境：酒水促销I"
+					"en": "Crawler: High-Performance Separation 1",
+					"jp": "特化：嚢海析出I",
+					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dsurch_1",
 				"effects": [
@@ -263,9 +263,9 @@
 				"rank": 2,
 				"latter": true,
 				"name": {
-					"en": "",
-					"jp": "環境：酒類特価II",
-					"cn": "环境：酒水促销II"
+					"en": "Crawler: High-Performance Separation 2",
+					"jp": "特化：嚢海析出II",
+					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dsurch_2",
 				"effects": [
@@ -313,8 +313,8 @@
 				"rank": 3,
 				"latter": true,
 				"name": {
-					"en": "",
-					"jp": "環境：酒類特価II",
+					"en": "Crawler: High-Performance Separation 3",
+					"jp": "特化：嚢海析出III",
 					"cn": "环境：酒水促销II"
 				},
 				"img": "盐风溶洞/75px-Enemy_dsurch_3",
@@ -367,8 +367,8 @@
 			{
 				"rank": 1,
 				"name": {
-					"en": "Tola: Lone Khaganquest 1",
-					"jp": "強敵：遥々天路I",
+					"en": "FTT: Tone 1",
+					"jp": "強敵：口調I",
 					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dsmant_1",
@@ -392,8 +392,8 @@
 			{
 				"rank": 2,
 				"name": {
-					"en": "Tola: Lone Khaganquest 2",
-					"jp": "強敵：遥々天路II",
+					"en": "FTT: Tone 2",
+					"jp": "強敵：口調II",
 					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dsmant_amod_2",
@@ -419,8 +419,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"en": "Tola: Lone Khaganquest 3",
-					"jp": "強敵：遥々天路III",
+					"en": "FTT: Tone 3",
+					"jp": "強敵：口調III",
 					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dsmant_amod_3",
@@ -459,8 +459,8 @@
 			{
 				"rank": 2,
 				"name": {
-					"en": "Tola: Khagan's Excursion 2",
-					"jp": "強敵：悪夢の王II",
+					"en": "FTT: Style 2",
+					"jp": "強敵：修辞II",
 					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dsmant_bmod_2",
@@ -512,8 +512,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"en": "Tola: Khagan's Excursion 3",
-					"jp": "強敵：悪夢の王III",
+					"en": "FTT: Style 3",
+					"jp": "強敵：修辞III",
 					"cn": ""
 				},
 				"img": "盐风溶洞/75px-Enemy_dsmant_bmod_3",
@@ -1003,8 +1003,8 @@
 			{
 				"rank": 1,
 				"name": {
-					"en": "",
-					"jp": "環境：酒類特価I",
+					"en": "Sea Crawler Propagation 1",
+					"jp": "環境：嚢海増殖I",
 					"cn": "环境：酒水促销I"
 				},
 				"img": "盐风溶洞/75px-Level_hidden_dsurch_1",
@@ -1019,8 +1019,8 @@
 				"rank": 2,
 				"latter": true,
 				"name": {
-					"en": "",
-					"jp": "環境：酒類特価II",
+					"en": "Sea Crawler Propagation 2",
+					"jp": "環境：嚢海増殖II",
 					"cn": "环境：酒水促销II"
 				},
 				"img": "盐风溶洞/75px-Level_hidden_dsurch_2",
@@ -1035,8 +1035,8 @@
 				"rank": 3,
 				"latter": true,
 				"name": {
-					"en": "",
-					"jp": "環境：酒類特価II",
+					"en": "Sea Crawler Propagation 3",
+					"jp": "環境：嚢海増殖III",
 					"cn": "环境：酒水促销II"
 				},
 				"img": "盐风溶洞/75px-Level_hidden_dsurch_3",
@@ -1075,15 +1075,15 @@
 			{
 				"rank": 2,
 				"name": {
-					"en": "Reduced Ally ASPD 2",
-					"jp": "制限：疲労累積II",
+					"en": "Increased Ally SP Cost",
+					"jp": "環境：阻害II",
 					"cn": ""
 				},
 				"img": "75px-Char_cdtime_2",
 				"effects": [],
 				"tooltip": {
 					"en": "All allies’ skill sp cost +40%",
-					"jp": "全ての味方のスキル使用コスト+40%",
+					"jp": "スキル発動に必要なSPが40%増加",
 					"cn": ""
 				}
 			},
@@ -1118,9 +1118,9 @@
 			{
 				"rank": 1,
 				"name": {
-					"en": "None Escape",
-					"jp": "指令：背水の陣",
-					"cn": "目标：最后防线"
+					"en": "",
+					"jp": "",
+					"cn": ""
 				},
 				"img": "75px-Global_skillrecovery_1",
 				"effects": [],
