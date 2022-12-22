@@ -3,9 +3,12 @@
 	"img": "ISW-NO_礼炮小队",
 	"routes": [
 		{
-			"category": "normal",
 			"title": "",
 			"id": "GxiKxTYJ4SY"
+		},
+		{
+			"title": "duck",
+			"id": "fOXHYIRWbmI"
 		}
 	],
 	"theme": "phcs",

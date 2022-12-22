@@ -1,0 +1,51 @@
+{
+	"name": { "en": "雕匠与石像", "jp": "雕匠与石像", "cn": "雕匠与石像" },
+	"img": "ISW-NO_雕匠与石像",
+	"routes": [
+		{
+			"title": "normal_mode",
+			"id": "2MSjFUvTeX8"
+		},
+		{
+			"title": "normal_mode",
+			"id": "xPm_3WgAaJE"
+		},
+		{
+			"title": "gpn",
+			"id": "WUhuuD1iWWE"
+		}
+	],
+	"theme": "phcs",
+	"floors": [3],
+	"floor_nav": [3],
+	"count": "34~39",
+	"sp_count": "39 - 100%",
+	"initial_cost": "10",
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"hp": "%120",
+				"atk": "%110",
+				"def": "%110"
+			},
+			"text": "敌方单位的攻击力和防御力提升至110%，生命值提升至120% 深池方阵战士被替换为深池方阵指挥官"
+		}
+	],
+	"enemies": [
+		{ "id": "O2", "count": "9", "stats": "雕匠与石像" },
+		{ "id": "01", "count": "9", "stats": "level1" },
+		{ "id": "DU9", "count": "14", "stats": "level0" },
+		{ "id": "GGY1", "count": "2", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	],
+	"hard_enemies": [
+		{ "id": "O2", "count": "9", "stats": "雕匠与石像" },
+		{ "id": "01", "count": "9", "stats": "level1" },
+		{ "id": "DU10", "count": "14", "stats": "level0" },
+		{ "id": "GGY1", "count": "2", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level1" },
+		{ "id": "GPN", "count": "1", "stats": "level1" }
+	]
+}

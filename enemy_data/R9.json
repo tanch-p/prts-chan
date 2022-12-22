@@ -1,35 +1,31 @@
 {
-    "id": "R9",
-    "name_en": "Originiutant α",
-    "name_jp": "オリジニュータントα",
-    "name_cn": "源石畸变体α",
-    "atk_type_jp": "術",
-    "hp": "7000",
-    "atk": "1500",
-    "def": "2000",
-    "res": "80",
-    "aspd%": "100",
-    "aspd": "4",
-    "range": "0",
-    
-    "weight": "4",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.7",
-    "type_jp": [
-        "近距離",
-        "感染生物"
-    ],
-    "type_en": [
-        "Melee",
-        "Infected Creature"
-    ],
-    "type_cn": [
-        "近战",
-        "感染生物"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "R9",
+	"name": {
+		"en": "Originiutant α",
+		"jp": "オリジニュータントα",
+		"cn": "源石畸变体α"
+	},
+	"stats": {
+		"level0": {
+			"hp": "7000",
+			"atk": "1500",
+			"def": "2000",
+			"res": "80",
+			"aspd": "4",
+			"range": "0",
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "arts"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "",
+	"type": ["melee"]
 }

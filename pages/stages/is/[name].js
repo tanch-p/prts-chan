@@ -166,6 +166,11 @@ export default function Stage({ stageData, stagesList }) {
 	const enemies = hardMode
 		? mapConfig.hard_enemies ?? mapConfig.enemies
 		: mapConfig.enemies;
+		
+	useEffect(() => {
+		setHardMode(false);
+	}, [mapConfig]);
+
 	return (
 		<Layout theme={theme} floor={mapConfig.floor}>
 			<Head>

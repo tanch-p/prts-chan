@@ -3,9 +3,12 @@
 	"img": "ISW-NO_鲍勃酒品",
 	"routes": [
 		{
-			"category": "normal",
 			"title": "",
 			"id": "Rnc71nCgbo4"
+		},
+		{
+			"title": "gpn",
+			"id": "dHohdTBrWCM"
 		}
 	],
 	"theme": "phcs",

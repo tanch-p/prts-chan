@@ -3,9 +3,12 @@
 	"img": "ISW-NO_与虫为伴",
 	"routes": [
 		{
-			"category": "normal",
 			"title": "",
 			"id": "0XVMeh6IllU"
+		},
+		{
+			"title": "duck",
+			"id": "7mu9b_AYw_U"
 		}
 	],
 	"theme": "phcs",

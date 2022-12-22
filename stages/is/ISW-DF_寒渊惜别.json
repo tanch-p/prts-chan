@@ -3,8 +3,11 @@
 	"img": "ISW-DF_寒渊惜别",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "right",
+			"title": "route_left",
+			"id": "4vpf9mMvNek"
+		},
+		{
+			"title": "route_right",
 			"id": "x5iNEO3gslM"
 		}
 	],

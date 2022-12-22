@@ -1,0 +1,39 @@
+{
+	"name": { "en": "雪山上的来客", "jp": "雪山上的来客", "cn": "雪山上的来客" },
+	"img": "ISW-NO_雪山上的来客",
+	"routes": [
+		{
+			"title": "normal_mode",
+			"id": "sSgUHTNAFeM"
+		},
+		{
+			"title": "hard_mode",
+			"id": ""
+		}
+	],
+	"theme": "phcs",
+	"floors": [4],
+	"floor_nav": [4],
+	"count": "58",
+	"sp_count": "59",
+	"initial_cost": 10,
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%110",
+				"hp": "%110"
+			},
+			"text": "敌方单位的攻击力和生命值提升至110%,霜星的源石冰晶被替换为源石冰晶(敌方)"
+		}
+	],
+	"enemies": [
+		{ "id": "CS3", "count": "1", "stats": "level0" },
+		{ "id": "IL9", "count": "10", "stats": "雪山上的来客" },
+		{ "id": "IL5", "count": "33", "stats": "level0" },
+		{ "id": "IL1", "count": "12", "stats": "level0" },
+		{ "id": "IL14", "count": "2", "stats": "雪山上的来客" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
+	]
+}

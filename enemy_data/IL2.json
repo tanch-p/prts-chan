@@ -1,6 +1,6 @@
 {
 	"id": "IL2",
-	"name": { "en": "Clawbeast", "jp": "爪獣", "cn": "凶爪兽" },
+	"name": { "en": "Ferocious Clawbeast", "jp": "凶爪獣", "cn": "凶爪兽" },
 	"stats": {
 		"level0": {
             "hp": "4500",

@@ -3,9 +3,12 @@
 	"img": "ISW-NO_落魄骑士",
 	"routes": [
 		{
-			"category": "normal",
 			"title": "",
 			"id": "0ogsLbsUp0Q"
+		},
+		{
+			"title": "duck",
+			"id": "GNtJeRTCP2M"
 		}
 	],
 	"theme": "phcs",

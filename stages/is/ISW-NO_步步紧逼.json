@@ -3,9 +3,12 @@
 	"img": "ISW-NO_步步紧逼",
 	"routes": [
 		{
-			"category": "normal",
 			"title": "",
 			"id": "JBEea6Fg0Qw"
+		},
+		{
+			"title": "gpn",
+			"id": "LbYSv2i-heM"
 		}
 	],
 	"theme": "phcs",

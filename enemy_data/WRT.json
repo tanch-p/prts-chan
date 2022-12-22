@@ -1,0 +1,42 @@
+{
+	"id": "WRT",
+	"name": { "en": "“剧作家”", "jp": "“剧作家”", "cn": "“剧作家”" },
+	"format": "powerup",
+	"stats": {
+		"level0": {
+			"hp": "80000",
+			"atk": "800",
+			"def": "1000",
+			"res": "50",
+			"aspd": "4",
+			"range": "99",
+			"weight": "7",
+			"lifepoint": 30,
+			"ms": "0.6",
+			"special": ["splash_4sq_100","playwright_screen_atk","playwright_gaze"]
+		}
+	},
+	"status_immune": ["silence", "stun", "sleep", "freeze"],
+	"normal_attack": {
+		"atk_type": ["ranged", "arts"],
+		"hits": 1
+	},
+	"スタン耐性": "無",
+	"眠り耐性": "無",
+	"凍結耐性": "無",
+	"type": ["ranged", "boss"],
+	"powerup": {
+		"state_name": "",
+		"mods": {
+			"atk": 1.5,
+			"def": 2,
+			"res": 40
+		},
+		"status_immune": [],
+		"normal_attack": {
+			"atk_type": ["ranged", "arts"],
+			"hits": 1
+		},
+		"special": ["playwright_hp50"]
+	}
+}

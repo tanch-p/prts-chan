@@ -7,9 +7,12 @@
 	"img": "ISW-NO_酒商运输队",
 	"routes": [
 		{
-			"category": "normal",
 			"title": "",
 			"id": "D7Tl49CzuPo"
+		},
+		{
+			"title": "gpn",
+			"id": "_mR_XA5BZ1o"
 		}
 	],
 	"theme": "phcs",

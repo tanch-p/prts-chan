@@ -1,0 +1,50 @@
+{
+	"name": { "en": "死斗", "jp": "死斗", "cn": "死斗" },
+	"img": "ISW-NO_死斗",
+	"routes": [
+		{
+			"title": "normal_mode",
+			"id": "CLUPi4R_a6M"
+		},
+		{
+			"title": "duck",
+			"id": "CjcLdfTDw7I"
+		}
+	],
+	"theme": "phcs",
+	"floors": [1],
+	"floor_nav": [1],
+	"count": "22",
+	"sp_count": "23",
+	"initial_cost": 20,
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"hp": "%160",
+				"atk": "%120",
+				"def": "%120"
+			},
+			"text": "敌方单位的攻击力和防御力提升至120%，生命值提升至160% 打手被替换为精干打手"
+		}
+	],
+	"enemies": [
+		{ "id": "G11", "count": "9", "stats": "level0" },
+		{ "id": "G13", "count": "9", "stats": "死斗" },
+		{ "id": "G14", "count": "14", "stats": "死斗" },
+		{ "id": "C15", "count": "2", "stats": "死斗" },
+		{ "id": "T5", "count": "2", "stats": "死斗" },
+		{ "id": "CS2", "count": "2", "stats": "死斗" },
+		{ "id": "DLD", "count": "1", "stats": "level0" },
+		{ "id": "GPN", "count": "1", "stats": "level0" }
+	],
+	"hard_enemies": [
+		{ "id": "G11", "count": "9", "stats": "level0" },
+		{ "id": "G14", "count": "14", "stats": "死斗" },
+		{ "id": "C15", "count": "2", "stats": "死斗" },
+		{ "id": "T5", "count": "2", "stats": "死斗" },
+		{ "id": "CS2", "count": "2", "stats": "死斗" },
+		{ "id": "DLD", "count": "1", "stats": "level0" },
+		{ "id": "GPN", "count": "1", "stats": "level0" }
+	]
+}

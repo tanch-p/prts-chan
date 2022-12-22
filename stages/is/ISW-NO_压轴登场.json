@@ -1,6 +1,12 @@
 {
 	"name": { "en": "The Grand Finale", "jp": "真打ち登場", "cn": "压轴登场" },
 	"img": "ISW-NO_压轴登场",
+	"routes": [
+		{
+			"title": "duck",
+			"id": "IYNfdDxsOgE"
+		}
+	],
 	"theme": "phcs",
 	"floors": [2],
 	"floor_nav": [2],

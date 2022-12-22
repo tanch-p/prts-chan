@@ -1,0 +1,27 @@
+{
+	"name": { "en": "Playwright", "jp": "劇作家", "cn": "再启新篇" },
+	"img": "ISW-DF_再启新篇",
+	"routes": [
+		{
+			"title": "",
+			"id": "-EeObp_H68g"
+		},
+		{
+			"title": "lumen",
+			"id": "NnjTM93R13E"
+		}
+	],
+	"theme": "phcs",
+	"floors": [6],
+	"floor_nav": [6],
+	"count": "1",
+	"initial_cost": "10",
+	"enemies": [
+		{ "id": "L2", "count": "0", "stats": "level0" },
+		{ "id": "L7", "count": "0", "stats": "level0" },
+		{ "id": "L8", "count": "0", "stats": "level0" },
+		{ "id": "R9", "count": "0", "stats": "level0" },
+		{ "id": "CS3", "count": "0", "stats": "level0" },
+		{ "id": "WRT", "count": "1", "stats": "level0" }
+	]
+}

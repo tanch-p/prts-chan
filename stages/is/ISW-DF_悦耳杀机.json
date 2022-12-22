@@ -3,8 +3,11 @@
 	"img": "ISW-DF_悦耳杀机",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "route_left",
+			"id": "tXQktHRiGmg"
+		},
+		{
+			"title": "route_right",
 			"id": "Df_6CpqdZdc"
 		}
 	],

@@ -1,11 +1,18 @@
 {
-	"name": { "en": "Traveler From Afar", "jp": "遠方からの来客", "cn": "远方来客" },
+	"name": {
+		"en": "Traveler From Afar",
+		"jp": "遠方からの来客",
+		"cn": "远方来客"
+	},
 	"img": "ISW-NO_远方来客",
 	"routes": [
 		{
-			"category": "normal",
 			"title": "",
 			"id": "zjnye9wijMk"
+		},
+		{
+			"title": "duck",
+			"id": "ObLFSoa_IKM"
 		}
 	],
 	"theme": "phcs",

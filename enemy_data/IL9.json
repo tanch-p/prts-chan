@@ -13,7 +13,20 @@
             "weight": "1",
 			"lifepoint": 1,
 			"ms": "0.7",
-			"special": []
+			"special": ["icefield_arts_fighter_explode","unbalance_damage_80"]
+		},
+		"雪山上的来客": {
+            "hp": "10000",
+            "atk": "600",
+            "def": "300",
+            "res": "40",
+            "aspd%": "100",
+            "aspd": "2.5",
+            "range": "0",
+            "weight": "1",
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": ["icefield_arts_fighter_explode","unbalance_damage_80"]
 		}
 	},
 	"status_immune": [],

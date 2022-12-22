@@ -1,16 +1,23 @@
 {
-	"name": { "en": "Duck Lord's Play", "jp": "ダック卿のステージ", "cn": "鸭爵的戏剧" },
+	"name": {
+		"en": "Duck Lord's Play",
+		"jp": "ダック卿のステージ",
+		"cn": "鸭爵的戏剧"
+	},
 	"img": "ISW-DU_鸭爵的戏剧",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "route_left",
+			"id": "byEhQNKATQU"
+		},
+		{
+			"title": "route_right",
 			"id": "mOhmOb8kBvs"
 		}
 	],
 	"theme": "phcs",
-	"floors": [1,2],
-	"floor_nav": [1,2],
+	"floors": [1, 2],
+	"floor_nav": [1, 2],
 	"count": "7",
 	"initial_cost": "10",
 	"enemies": [

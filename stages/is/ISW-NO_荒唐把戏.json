@@ -3,9 +3,12 @@
 	"img": "ISW-NO_荒唐把戏",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "combat_ops",
 			"id": "ALp9dFYVaF0"
+		},
+		{
+			"title": "duck",
+			"id": "X7QhKyGu9DU"
 		}
 	],
 	"theme": "phcs",

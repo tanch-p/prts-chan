@@ -3,9 +3,12 @@
 	"img": "ISW-NO_斗兽笼",
 	"routes": [
 		{
-			"category": "normal",
 			"title": "",
 			"id": "Iza7HJRXguU"
+		},
+		{
+			"title": "gpn",
+			"id": "d-FQXdiZgQY"
 		}
 	],
 	"theme": "phcs",

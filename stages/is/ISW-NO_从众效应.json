@@ -1,11 +1,18 @@
 {
-	"name": { "en": "With the Crowd", "jp": "パブリック・エネミー", "cn": "从众效应" },
+	"name": {
+		"en": "With the Crowd",
+		"jp": "パブリック・エネミー",
+		"cn": "从众效应"
+	},
 	"img": "ISW-NO_从众效应",
 	"routes": [
 		{
-			"category": "normal",
 			"title": "",
 			"id": "MqLtT-8gmJQ"
+		},
+		{
+			"title": "duck",
+			"id": "EjDE-n6cFVY"
 		}
 	],
 	"theme": "phcs",

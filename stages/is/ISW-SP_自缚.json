@@ -1,0 +1,23 @@
+{
+	"name": { "en": "Self Restraint", "jp": "自制", "cn": "自缚" },
+	"img": "ISW-SP_自缚",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "o1tZXWbbZgY"
+		}
+	],
+	"theme": "phcs",
+	"floors": [1, 2, 3],
+	"floor_nav": [1, 2, 3],
+	"count": "4",
+	"enemies": [
+		{ "id": "C11", "count": "21", "stats": "level0" },
+		{ "id": "C13", "count": "8", "stats": "level0" },
+		{ "id": "C15", "count": "5", "stats": "感化" },
+		{ "id": "C17", "count": "6", "stats": "level0" },
+		{ "id": "C21", "count": "1", "stats": "level0" },
+		{ "id": "C19", "count": "2", "stats": "level0" }
+	]
+}

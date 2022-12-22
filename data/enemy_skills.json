@@ -9,6 +9,20 @@
 			}
 		}
 	},
+	"resist": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Resist - duration of Stun, Cold, Freeze, etc debuffs are reduced by 50%"
+				],
+				"jp": [
+					"レジスト - スタン、寒冷、凍結などの状態異常の継続時間時間が50％減少"
+				],
+				"cn": []
+			}
+		}
+	},
 	"no_block": {
 		"type": "others",
 		"tooltip": {
@@ -46,8 +60,8 @@
 		"type": "others",
 		"tooltip": {
 			"simple": {
-				"en": ["Block count - 2"],
-				"jp": ["ブロック数2以上でブロック可能"],
+				"en": ["Block count - 4"],
+				"jp": ["ブロック数4以上でブロック可能"],
 				"cn": []
 			},
 			"detailed": { "en": [], "jp": [], "cn": [] }
@@ -560,8 +574,18 @@
 		"type": "others",
 		"tooltip": {
 			"simple": {
-				"en": ["Deals 250% damage to frozen units"],
-				"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が250%まで上昇"],
+				"en": ["ATK is increased to 150% when attacking frozen units"],
+				"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が150%まで上昇"],
+				"cn": []
+			}
+		}
+	},
+	"ice_pick_200": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["ATK is increased to 200% when attacking frozen units"],
+				"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が200%まで上昇"],
 				"cn": []
 			}
 		}
@@ -570,7 +594,7 @@
 		"type": "others",
 		"tooltip": {
 			"simple": {
-				"en": ["Deals 250% damage to frozen units"],
+				"en": ["ATK is increased to 250% when attacking frozen units"],
 				"jp": ["【❄凍結】状態の対象を攻撃する時に攻撃力が250%まで上昇"],
 				"cn": []
 			}
@@ -788,7 +812,7 @@
 			}
 		}
 	},
-	"rat_king_rage": {
+	"hp_50_rage_150": {
 		"type": "others",
 		"tooltip": {
 			"simple": {
@@ -1363,7 +1387,7 @@
 		"multiplier": 1,
 		"fixed_inc": 800,
 		"suffix": {
-			"en": "Stone Statue",
+			"en": "Stone Form",
 			"jp": "石像形態",
 			"cn": "石像形態"
 		},
@@ -2583,6 +2607,144 @@
 				"jp": [
 					"スキル→初期SP5、必要SP15",
 					"半径2マス以内の自分以外の敵全員に3秒間ステルスを付与する"
+				],
+				"cn": []
+			}
+		}
+	},
+	"playwright_screen_atk": {
+		"type": "atk",
+		"suffix": { "en": "Map AOE", "jp": "全体攻撃", "cn": "技能" },
+		"multiplier": 0.8,
+		"hits": 1,
+		"fixed_inc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Skill (Map AOE) → Initial SP: 10, Cost: 20",
+					"Targets all allied units, dealing 80% ATK as Arts damage to target and 4 tiles surrounding target"
+				],
+				"jp": [
+					"スキル（全体攻撃）→ 初期SP10、必要SP20",
+					"味方全体に対象と隣接4マスに攻撃力80％の術ダメージを与える"
+				],
+				"cn": []
+			}
+		}
+	},
+	"playwright_gaze": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Skill (Single Target) → Initial SP: 0, Cost: 20",
+					"Casts a $infinite duration$ debuff on an operator:",
+					"Reduces ASPD by 50%,",
+					"Deals 4% of Target's Max HP as Arts damage every second,",
+					"Seals tile occupied when target leaves",
+					"and increases redeployment time by 50%,",
+					"Does not target summoned units",
+					"or operators already under the effects of this skill",
+					"Cannot be removed by Lumen S3"
+				],
+				"jp": [
+					"スキル（眼差し）→ 初期SP0、必要SP20",
+					"味方単体に$継続時間無限$のデバフを与える：",
+					"攻撃速度-50、毎秒相手の最大HPの4％を術ダメージとして与える",
+					"相手が離脱した後、元いたマスを封印する",
+					"相手の再出撃時間を50％増加",
+					"召喚ユニットやすでに効果下の味方は選択されない"
+				],
+				"cn": []
+			}
+		}
+	},
+	"playwright_hp50": {
+		"type": "others",
+		"can_silence": false,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"HP↓50% - All skills cooldown -5s,",
+					"all damage dealt increased by 1.5 times",
+					"DEF is increased by 100%, RES is increased by 80%"
+				],
+				"jp": ["HP50％以下 - 最終ダメージ+50％"],
+				"cn": []
+			}
+		}
+	},
+	"icefield_arts_fighter_explode": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Upon death, deals 130% of ATK as Arts damage in a 1.65 tile radius to all allied and enemy units and applies Cold for 5s",
+					"(can be silenced)."
+				],
+				"jp": [
+					"死亡すると、半径1.65以内の敵味方全員に攻撃力の130%の術ダメージを与え、5秒間寒冷状態にする",
+					"無効化可能"
+				],
+				"cn": []
+			}
+		}
+	},
+	"unbalance_damage_80": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": ["When unbalanced, takes 80 True damage every 0.066s."],
+				"jp": [
+					"強制移動中、0.066秒ごとに80（1秒に約1200）の確定ダメージを受ける"
+				],
+				"cn": []
+			}
+		}
+	},
+	"shaman_bleed": {
+		"type": "others",
+		"tags": ["true_damage"],
+		"tooltip": {
+			"simple": {
+				"en": ["Takes 400 True damage every second"],
+				"jp": ["毎秒400の確定ダメージを受ける"],
+				"cn": []
+			}
+		}
+	},
+	"shaman_explode": {
+		"type": "atk",
+		"suffix": { "en": "💥・arts", "jp": "💥・術", "cn": "💥・法术" },
+		"multiplier": 2,
+		"hits": 1,
+		"fixed_inc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					" Upon death, deals 200% of ATK as Arts splash damage in a 1.5 tile radius to allied units"
+				],
+				"jp": [
+					"死亡時に自爆し、半径1.5以内の全ユニットに攻撃力の200%の術ダメージを与える"
+				],
+				"cn": []
+			}
+		}
+	},
+	"shaman_explode_2": {
+		"type": "atk",
+		"suffix": { "en": "💥・arts", "jp": "💥・術", "cn": "💥・法术" },
+		"multiplier": 2.5,
+		"hits": 1,
+		"fixed_inc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					" Upon death, deals 250% of ATK as Arts splash damage in a 1.5 tile radius to allied units"
+				],
+				"jp": [
+					"死亡時に自爆し、半径1.5以内の全ユニットに攻撃力の250%の術ダメージを与える"
 				],
 				"cn": []
 			}

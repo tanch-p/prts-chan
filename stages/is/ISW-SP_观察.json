@@ -1,0 +1,21 @@
+{
+	"name": { "en": "Observation", "jp": "観察", "cn": "观察" },
+	"img": "ISW-SP_观察",
+	"routes": [
+		{
+			"category": "normal",
+			"title": "",
+			"id": "gD34JNbihCo"
+		}
+	],
+	"theme": "phcs",
+	"floors": [4, 5],
+	"floor_nav": [4, 5],
+	"count": "4",
+	"enemies": [
+		{ "id": "L4", "count": "25", "stats": "level0" },
+		{ "id": "CS1", "count": "16", "stats": "level0" },
+		{ "id": "CS2", "count": "11", "stats": "level0" },
+		{ "id": "CS3", "count": "6", "stats": "level0" }
+	]
+}

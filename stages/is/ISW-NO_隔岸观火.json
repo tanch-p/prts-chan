@@ -1,0 +1,44 @@
+{
+	"name": { "en": "隔岸观火", "jp": "隔岸观火", "cn": "隔岸观火" },
+	"img": "ISW-NO_隔岸观火",
+	"routes": [
+		{
+			"title": "normal_mode",
+			"id": "3Y23FBHM9Xg"
+		},
+		{
+			"title": "duck",
+			"id": "zxMEi_C_cG0"
+		},
+		{
+			"title": "gpn",
+			"id": "WVfqtKJow7c"
+		}
+	],
+	"theme": "phcs",
+	"floors": [5],
+	"floor_nav": [5],
+	"count": "26",
+	"sp_count": "27",
+	"initial_cost": 10,
+	"hard_mods": [
+		{
+			"targets": ["ALL"],
+			"mods": {
+				"atk": "%130",
+				"hp": "%140",
+				"def": "%110"
+			},
+			"text": "敌方单位的攻击力提升至130%，防御力提升至110%，生命值提升至140%"
+		}
+	],
+	"enemies": [
+		{ "id": "SI6", "count": "1", "stats": "level0" },
+		{ "id": "SI8", "count": "10", "stats": "level0" },
+		{ "id": "CS2", "count": "33", "stats": "level0" },
+		{ "id": "15", "count": "12", "stats": "level0" },
+		{ "id": "37", "count": "2", "stats": "level0" },
+		{ "id": "DLD", "count": "1", "stats": "level2" },
+		{ "id": "GPN", "count": "1", "stats": "level2" }
+	]
+}
