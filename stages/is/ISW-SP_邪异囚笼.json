@@ -3,8 +3,7 @@
 	"img": "ISW-SP_邪异囚笼",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "combat_ops",
 			"id": "LqF1_usjCp8"
 		}
 	],

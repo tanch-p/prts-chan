@@ -1,6 +1,9 @@
 import DLD from "@/public/enemy_icons/DLD.png";
 import GPN from "@/public/enemy_icons/GPN.png";
 import THF from "@/public/enemy_icons/THF.png";
+import phcs_combat_ops_icon from "@/public/images/phcs/phcs_combat_ops_icon.png";
+import phcs_encounter from "@/public/images/phcs/phcs_encounter.png";
+import phcs_emergency_ops_icon from "@/public/images/phcs/phcs_emergency_ops_icon.png";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -18,6 +21,13 @@ export default function VideoTab({
 		{ title: "duck", img: DLD },
 		{ title: "gpn", img: GPN },
 		{ title: "thf", img: THF },
+		{ title: "combat_ops", img: phcs_combat_ops_icon, width: 49, height: 45 },
+		{
+			title: "emergency_ops",
+			img: phcs_emergency_ops_icon,
+			width: 49,
+			height: 45,
+		},
 	];
 	useEffect(() => {
 		setCurrent(0);
@@ -31,15 +41,15 @@ export default function VideoTab({
 							const icon = icons.find((ele) => ele.title === title);
 							return (
 								<li
-									className={`w-full cursor-pointer`}
+									className={`w-full cursor-pointer flex items-center justify-center py-1.5`}
 									key={title}
 									onClick={() => setCurrent(index)}
 								>
 									{icon ? (
 										<Image
 											src={icon.img}
-											height="50px"
-											width="50px"
+											height={icon.height ?? 50}
+											width={icon.width ?? 50}
 											layout="fixed"
 											alt={title}
 											className={`${current !== index ? "opacity-30" : ""}`}
@@ -80,4 +90,19 @@ const RouteiframeComponent = ({ id, width, height }) => {
 			></iframe>
 		</div>
 	);
+};
+
+const getImageToUse = (title, mapConfig) => {
+	switch (mapConfig.theme) {
+		case "phcs":
+			switch (title) {
+				case "combat_ops":
+					return phcs_combat_ops_icon;
+				case "emergency_ops":
+					return phcs_emergency_ops_icon;
+			}
+			break;
+		case "mizuki":
+			break;
+	}
 };

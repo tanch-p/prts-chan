@@ -7,8 +7,7 @@
 	"img": "ISW-NO_惊喜工厂",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "combat_ops",
 			"id": "SMchzrs0fOM"
 		}
 	],

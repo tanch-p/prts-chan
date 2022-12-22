@@ -2670,9 +2670,12 @@
 					"all damage dealt increased by 1.5 times",
 					"DEF is increased by 100%, RES is increased by 80%"
 				],
-				"jp": ["HP50％以下 - 最終ダメージ+50％"],
+				"jp": [
+					"HP50％以下 - 全スキルクールタイム-5秒、最終ダメージ+50％",
+					"防御力＋100％、術耐性＋80%"
+				],
 				"cn": []
-			}
+		}
 		}
 	},
 	"icefield_arts_fighter_explode": {

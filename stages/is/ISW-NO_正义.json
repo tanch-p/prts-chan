@@ -3,8 +3,7 @@
 	"img": "ISW-NO_正义",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "combat_ops",
 			"id": "AbVVg5HacS8"
 		}
 	],

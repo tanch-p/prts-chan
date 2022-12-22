@@ -3,11 +3,11 @@
 	"img": "ISW-NO_先来后到",
 	"routes": [
 		{
-			"title": "normal_mode",
+			"title": "combat_ops",
 			"id": "-Rv39TDUqSY"
 		},
 		{
-			"title": "hard_mode",
+			"title": "emergency_ops",
 			"id": "m_QFuPeSkyc"
 		},
 		{

@@ -3,8 +3,7 @@
 	"img": "ISW-NO_烟花秀",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "combat_ops",
 			"id": "G9195vVSAbU"
 		}
 	],

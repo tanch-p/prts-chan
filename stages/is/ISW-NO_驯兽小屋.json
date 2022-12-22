@@ -3,8 +3,7 @@
 	"img": "ISW-NO_驯兽小屋",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "combat_ops",
 			"id": "INx2xzfl5Rc"
 		}
 	],

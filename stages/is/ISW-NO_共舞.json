@@ -3,8 +3,7 @@
 	"img": "ISW-NO_共舞",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "combat_ops",
 			"id": "-mmcomH-imw"
 		}
 	],

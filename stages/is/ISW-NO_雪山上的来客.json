@@ -3,12 +3,8 @@
 	"img": "ISW-NO_雪山上的来客",
 	"routes": [
 		{
-			"title": "normal_mode",
+			"title": "combat_ops",
 			"id": "sSgUHTNAFeM"
-		},
-		{
-			"title": "hard_mode",
-			"id": ""
 		}
 	],
 	"theme": "phcs",

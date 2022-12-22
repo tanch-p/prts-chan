@@ -3,8 +3,7 @@
 	"img": "ISW-SP_观察",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "combat_ops",
 			"id": "gD34JNbihCo"
 		}
 	],

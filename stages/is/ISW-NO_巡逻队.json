@@ -3,8 +3,7 @@
 	"img": "ISW-NO_巡逻队",
 	"routes": [
 		{
-			"category": "normal",
-			"title": "",
+			"title": "combat_ops",
 			"id": "Y8xccnPilFU"
 		}
 	],

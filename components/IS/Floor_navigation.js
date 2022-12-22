@@ -1,8 +1,8 @@
 import Image from "next/image";
-import normal_ops from "@/public/images/misc/normal_ops.png";
+import phcs_combat_ops from "@/public/images/phcs/phcs_combat_ops.png";
 import boss from "@/public/images/misc/boss.png";
-import encount from "@/public/images/misc/encount.png";
-import emergency_ops from "@/public/images/misc/emergency_ops.png";
+import phcs_encounter from "@/public/images/phcs/phcs_encounter.png";
+import phcs_emergency_ops from "@/public/images/phcs/phcs_emergency_ops.png";
 import Link from "next/link";
 import { FLOOR_ROMAN_NUMERALS } from "./Floor_title";
 import { useState, useEffect } from "react";
@@ -10,7 +10,7 @@ import { LeftArrowSVG } from "../svg";
 
 const normalOps = (
 	<Image
-		src={normal_ops}
+		src={phcs_combat_ops}
 		width={"100px"}
 		height={"42px"}
 		alt="combat"
@@ -19,7 +19,7 @@ const normalOps = (
 );
 const emergencyOps = (
 	<Image
-		src={emergency_ops}
+		src={phcs_emergency_ops}
 		width={"100px"}
 		height={"42px"}
 		alt="emergency operation"
@@ -31,7 +31,7 @@ const bossStage = (
 );
 const encountStage = (
 	<Image
-		src={encount}
+		src={phcs_encounter}
 		width={"100px"}
 		height={"42px"}
 		alt="encount"
