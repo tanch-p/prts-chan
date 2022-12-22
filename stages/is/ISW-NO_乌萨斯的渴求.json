@@ -7,7 +7,7 @@
 	"img": "ISW-NO_乌萨斯的渴求",
 	"routes": [
 		{
-			"title":"emergency_ops",
+			"title": "emergency_ops",
 			"id": "b2eWoeO-CEs"
 		}
 	],
@@ -16,8 +16,7 @@
 	"floor_nav": [6],
 	"count": "40~41",
 	"hard_count": "42~43",
-	"sp_count": "41",
-	"hard_sp_count": "43",
+	"sp_count": "41 / EX:43",
 	"initial_cost": "10",
 	"hard_mods": [
 		{
