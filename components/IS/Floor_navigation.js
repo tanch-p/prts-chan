@@ -1,6 +1,6 @@
 import Image from "next/image";
 import phcs_combat_ops from "@/public/images/phcs/phcs_combat_ops.png";
-import boss from "@/public/images/misc/boss.png";
+import phcs_boss from "@/public/images/misc/boss.png";
 import phcs_encounter from "@/public/images/phcs/phcs_encounter.png";
 import phcs_emergency_ops from "@/public/images/phcs/phcs_emergency_ops.png";
 import Link from "next/link";
@@ -27,7 +27,7 @@ const emergencyOps = (
 	/>
 );
 const bossStage = (
-	<Image src={boss} width={"100px"} height={"42px"} alt="boss" layout="fixed" />
+	<Image src={phcs_boss} width={"100px"} height={"42px"} alt="boss" layout="fixed" />
 );
 const encountStage = (
 	<Image

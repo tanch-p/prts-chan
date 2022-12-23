@@ -1,9 +1,10 @@
 import DLD from "@/public/enemy_icons/DLD.png";
 import GPN from "@/public/enemy_icons/GPN.png";
 import THF from "@/public/enemy_icons/THF.png";
-import phcs_combat_ops_icon from "@/public/images/phcs/phcs_combat_ops_icon.png";
-import phcs_encounter from "@/public/images/phcs/phcs_encounter.png";
-import phcs_emergency_ops_icon from "@/public/images/phcs/phcs_emergency_ops_icon.png";
+import boss_icon from "@/public/images/misc/boss_icon.png";
+import combat_ops_icon from "@/public/images/misc/combat_icon.png";
+import emergency_ops_icon from "@/public/images/misc/emergency_icon.png";
+import lumen from "@/public/images/misc/lumen.png";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -16,18 +17,14 @@ export default function VideoTab({
 	height,
 }) {
 	const [current, setCurrent] = useState(0);
-
 	const icons = [
 		{ title: "duck", img: DLD },
 		{ title: "gpn", img: GPN },
 		{ title: "thf", img: THF },
-		{ title: "combat_ops", img: phcs_combat_ops_icon, width: 49, height: 45 },
-		{
-			title: "emergency_ops",
-			img: phcs_emergency_ops_icon,
-			width: 49,
-			height: 45,
-		},
+		{ title: "lumen", img: lumen },
+		{ title: "boss", img: boss_icon },
+		{ title: "combat_ops", img: combat_ops_icon },
+		{ title: "emergency_ops", img: emergency_ops_icon, width: 55, height: 55 },
 	];
 	useEffect(() => {
 		setCurrent(0);
@@ -37,12 +34,12 @@ export default function VideoTab({
 			{routes.length > 1 && (
 				<div>
 					<ul className="flex font-bold text-lg text-white text-center select-none divide-x divide-gray-500">
-						{routes.map(({ title }, index) => {
+						{routes.map(({ title, id }, index) => {
 							const icon = icons.find((ele) => ele.title === title);
 							return (
 								<li
 									className={`w-full cursor-pointer flex items-center justify-center py-1.5`}
-									key={title}
+									key={id}
 									onClick={() => setCurrent(index)}
 								>
 									{icon ? (
@@ -90,19 +87,4 @@ const RouteiframeComponent = ({ id, width, height }) => {
 			></iframe>
 		</div>
 	);
-};
-
-const getImageToUse = (title, mapConfig) => {
-	switch (mapConfig.theme) {
-		case "phcs":
-			switch (title) {
-				case "combat_ops":
-					return phcs_combat_ops_icon;
-				case "emergency_ops":
-					return phcs_emergency_ops_icon;
-			}
-			break;
-		case "mizuki":
-			break;
-	}
 };
