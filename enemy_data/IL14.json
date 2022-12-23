@@ -38,5 +38,5 @@
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
-	"type": ["melee"]
+	"type": ["melee","elite"]
 }

@@ -8,8 +8,8 @@
 		}
 	],
 	"theme": "phcs",
-	"floors": [1, 2, 3],
-	"floor_nav": [1, 2, 3],
+	"floors": [2, 3],
+	"floor_nav": [2, 3],
 	"count": "4",
 	"enemies": [
 		{ "id": "C11", "count": "21", "stats": "level0" },

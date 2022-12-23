@@ -3,6 +3,10 @@
 	"img": "ISW-NO_压轴登场",
 	"routes": [
 		{
+			"title": "combat_ops",
+			"id": "01VtgwhOK7c"
+		},
+		{
 			"title": "duck",
 			"id": "IYNfdDxsOgE"
 		}

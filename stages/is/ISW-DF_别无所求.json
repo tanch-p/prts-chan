@@ -1,6 +1,13 @@
 {
 	"name": { "en": "Need No More", "jp": "最期の願い", "cn": "别无所求" },
 	"img": "ISW-DF_别无所求",
+	"routes": [
+		{
+			"title": "",
+			"id": "g09q4oBxNZc"
+		}
+	],
+
 	"theme": "phcs",
 	"floors": [5],
 	"floor_nav": [5],

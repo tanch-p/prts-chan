@@ -11,6 +11,14 @@
 			"id": "xPm_3WgAaJE"
 		},
 		{
+			"title": "emergency_ops",
+			"id": "EjOIaBsBNvo"
+		},
+		{
+			"title": "duck",
+			"id": "6dIUzdY4deI"
+		},
+		{
 			"title": "gpn",
 			"id": "WUhuuD1iWWE"
 		}
@@ -19,7 +27,7 @@
 	"floors": [3],
 	"floor_nav": [3],
 	"count": "34~39",
-	"sp_count": "35 / EX:39",
+	"sp_count": "35 / EX:40",
 	"initial_cost": "10",
 	"hard_mods": [
 		{

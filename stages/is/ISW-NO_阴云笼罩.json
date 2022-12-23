@@ -5,6 +5,10 @@
 		{
 			"title": "combat_ops",
 			"id": "x2hYbfdlN0g"
+		},
+		{
+			"title": "duck",
+			"id": "9XIFfeqr2k8"
 		}
 	],
 	"debuff": "我方单位每0.5秒持续受到15真实伤害",

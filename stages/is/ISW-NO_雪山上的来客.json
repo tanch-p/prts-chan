@@ -5,6 +5,14 @@
 		{
 			"title": "combat_ops",
 			"id": "sSgUHTNAFeM"
+		},
+		{
+			"title": "emergency_ops",
+			"id": "snDJH6W4Yzo"
+		},
+		{
+			"title": "gpn",
+			"id": "coRC-01qQSw"
 		}
 	],
 	"theme": "phcs",

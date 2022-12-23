@@ -34,5 +34,5 @@
 		"atk_type": ["melee", "arts"],
 		"hits": 1
 	},
-	"type": ["melee"]
+	"type": ["melee","elite"]
 }
