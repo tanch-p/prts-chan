@@ -8,6 +8,7 @@ export const PHCS_BOSSES = [
 	"PTM",
 	"DOL",
 	"HST",
+	"WRT"
 ];
 
 const hallu_temp = [

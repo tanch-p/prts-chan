@@ -1,5 +1,5 @@
 {
-	"name": { "en": "先来后到", "jp": "先来后到", "cn": "先来后到" },
+	"name": { "en": "First Come, Last Served", "jp": "早い者勝ち", "cn": "先来后到" },
 	"img": "ISW-NO_先来后到",
 	"routes": [
 		{

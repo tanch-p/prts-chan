@@ -8,7 +8,7 @@ import { FLOOR_ROMAN_NUMERALS } from "./Floor_title";
 import { useState, useEffect } from "react";
 import { LeftArrowSVG } from "../svg";
 
-const normalOps = (
+export const normalOps = (
 	<Image
 		src={phcs_combat_ops}
 		width={"100px"}
@@ -26,10 +26,10 @@ const emergencyOps = (
 		layout="fixed"
 	/>
 );
-const bossStage = (
+export const bossStage = (
 	<Image src={phcs_boss} width={"100px"} height={"42px"} alt="boss" layout="fixed" />
 );
-const encountStage = (
+export const encountStage = (
 	<Image
 		src={phcs_encounter}
 		width={"100px"}
@@ -84,7 +84,7 @@ export default function FloorNavigation({ stagesList, floor, language }) {
 				}`}
 			>
 				<div
-					className={`flex flex-col md:grid items-center ${
+					className={`flex flex-col md:grid items-center shadow-lg ${
 						language === "jp"
 							? "md:grid-cols-[100px_560px]"
 							: "md:grid-cols-[100px_480px]"
@@ -99,7 +99,7 @@ export default function FloorNavigation({ stagesList, floor, language }) {
 				</div>
 				{floor === 2 ? (
 					<div
-						className={`flex flex-col md:grid items-center ${
+						className={`flex flex-col md:grid items-center shadow-lg ${
 							language === "jp"
 								? "md:grid-cols-[100px_560px]"
 								: "md:grid-cols-[100px_480px]"
@@ -117,7 +117,7 @@ export default function FloorNavigation({ stagesList, floor, language }) {
 				)}
 				{(floorDuckStages.length > 0 || floorEncounterStages.length > 0) && (
 					<div
-						className={`flex flex-col md:grid items-center ${
+						className={`flex flex-col md:grid items-center shadow-lg ${
 							language === "jp"
 								? "md:grid-cols-[100px_560px]"
 								: "md:grid-cols-[100px_480px]"
@@ -134,7 +134,7 @@ export default function FloorNavigation({ stagesList, floor, language }) {
 				)}
 				{floorBossStages.length > 0 && (
 					<div
-						className={`flex flex-col md:grid items-center ${
+						className={`flex flex-col md:grid items-center shadow-lg ${
 							language === "jp"
 								? "md:grid-cols-[100px_560px]"
 								: "md:grid-cols-[100px_480px]"
@@ -205,7 +205,7 @@ export default function FloorNavigation({ stagesList, floor, language }) {
 	);
 }
 
-const getStageLink = (stages, floor, language) => {
+export const getStageLink = (stages, floor, language) => {
 	return stages
 		.filter(({ floors }) => floors.includes(floor))
 		.map(({ title, fileName }) => (
