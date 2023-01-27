@@ -16,8 +16,10 @@
 	"灰齐山麓": "Foothill Hui-Ch'i",
 	"大骑士领酒吧街": "Grand Knight Territory Bar District",
 	"沙海遗迹": "Sandsea Remnants",
-	"尚蜀山道":"Shangshu Trails",
-	"盐风溶洞":"Sal Viento Karst",
+	"尚蜀山道": "Shangshu Trails",
+	"盐风溶洞": "Sal Viento Karst",
+	"伦蒂尼姆边缘区块": "伦蒂尼姆边缘区块",
+	"小丘郡物流站": "",
 
 	"hp_50": "HP↓50%",
 	"rage": "Rage Mode",
@@ -36,9 +38,9 @@
 	"hard_mode": "Emergency Ops",
 	"route_left": "Left Route",
 	"route_right": "Right Route",
-	"duck":"Duck",
-	"bear":"Bear",
-	"sp_enemy":"SP",
+	"duck": "Duck",
+	"bear": "Bear",
+	"sp_enemy": "SP",
 
 	"relic_labels": ["Hard Mode", "-ATK", "-DEF", "-HP", "Others"],
 

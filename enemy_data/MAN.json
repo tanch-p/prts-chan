@@ -1,0 +1,71 @@
+{
+	"id": "MAN",
+	"name": { "en": "Manfred", "jp": "Manfred", "cn": "曼弗雷德" },
+	"format": "multiform",
+	"stats": {
+		"level0": {
+			"hp": "40000",
+			"atk": "1000",
+			"def": "600",
+			"res": "40",
+			"aspd": "5",
+			"range": "2",
+			"weight": "8",
+			"lifepoint": 3,
+			"ms": "0.5",
+			"forms": [
+				{
+					"special": ["manfred_military_training", "manfred_focus"]
+				},
+				{
+					"mods": {},
+
+					"special": ["manfred_military_training", "manfred_focus"]
+				}
+			]
+		},
+		"伦蒂尼姆边缘区块": {
+			"hp": "20000",
+			"atk": "600",
+			"def": "600",
+			"res": "20",
+			"aspd": "5",
+			"range": "2",
+			"weight": "8",
+			"lifepoint": 3,
+			"ms": "0.5",
+			"forms": [
+				{
+					"special": [
+						"manfred_military_training",
+						"manfred_focus",
+						"manfred_range_atk_1",
+						"manfred_rebirth"
+					]
+				},
+				{
+					"mods": {},
+
+					"special": [
+						"invincible_5s",
+						"manfred_military_training",
+						"manfred_focus",
+						"manfred_range_atk_2"
+					]
+				}
+			]
+		}
+	},
+	"status_immune": ["silence", "sleep"],
+	"normal_attack": [
+		{
+			"atk_type": ["raw"],
+			"hits": 1
+		},
+		{
+			"atk_type": ["ranged", "phys"],
+			"hits": 1
+		}
+	],
+	"type": ["ranged", "sarkaz", "boss"]
+}

@@ -1713,7 +1713,7 @@
 		"tooltip": {
 			"simple": {
 				"en": [
-					"Skill → Uses chains to disable units (deals 35% atk Arts dmg/s for 20s, only used once per battle)"
+					"Skill → Uses chains to disable units (deals 35% of ATK as Arts dmg/s for 20s, only used once per battle)"
 				],
 				"jp": [
 					"スキル→20秒間味方ユニット1体を束縛し、1秒当たり攻撃力35%分の継続術ダメージを与える",
@@ -2675,7 +2675,7 @@
 					"防御力＋100％、術耐性＋80%"
 				],
 				"cn": []
-		}
+			}
 		}
 	},
 	"icefield_arts_fighter_explode": {
@@ -2726,7 +2726,7 @@
 		"tooltip": {
 			"simple": {
 				"en": [
-					" Upon death, deals 200% of ATK as Arts splash damage in a 1.5 tile radius to allied units"
+					"Upon death, deals 200% of ATK as Arts splash damage in a 1.5 tile radius to allied units"
 				],
 				"jp": [
 					"死亡時に自爆し、半径1.5以内の全ユニットに攻撃力の200%の術ダメージを与える"
@@ -2744,10 +2744,209 @@
 		"tooltip": {
 			"simple": {
 				"en": [
-					" Upon death, deals 250% of ATK as Arts splash damage in a 1.5 tile radius to allied units"
+					"Upon death, deals 250% of ATK as Arts splash damage in a 1.5 tile radius to allied units"
 				],
 				"jp": [
 					"死亡時に自爆し、半径1.5以内の全ユニットに攻撃力の250%の術ダメージを与える"
+				],
+				"cn": []
+			}
+		}
+	},
+	"reduce_phys_arts_90": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": ["Takes 90% reduced Phys/Arts damage"],
+				"jp": ["受ける物理と術ダメージが90%減少"],
+				"cn": []
+			}
+		}
+	},
+	"creation_add_block_1": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": ["Units blocking this gains +1 Block (up to max +6)"],
+				"jp": [
+					"ブロックされうとブロックしたユニットのブロック数上限+1（最大+6まで）"
+				],
+				"cn": []
+			}
+		}
+	},
+	"bleed_true_60": {
+		"type": "others",
+		"tags": ["true_damage"],
+		"tooltip": {
+			"simple": {
+				"en": ["Takes 60 True damage every second"],
+				"jp": ["毎秒60の確定ダメージを受ける"],
+				"cn": []
+			}
+		}
+	},
+	"london_arti_sp1": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": ["Every attack grants the Londinium Artillery 1 SP"],
+				"jp": ["通常攻撃時、副砲のSP+1"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_sci1": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 1 Touch of the Sanguinarch upon death"],
+				"jp": ["死亡すると、大君の触手を1体召喚する"],
+				"cn": []
+			}
+		}
+	},
+	"spawn_sci3": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": ["Spawns 1 Gift of the Sanguinarch upon death"],
+				"jp": ["死亡すると、大君の祝福を1体召喚する"],
+				"cn": []
+			}
+		}
+	},
+	"hateweaver_atk_buff": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": [
+					"For every 'Reborn Creations' on field, ATK is increased by 15%, max 6 stacks"
+				],
+				"jp": ["マップ上の再生造物1体につき、攻撃力+15%（6体まで）"],
+				"cn": []
+			}
+		}
+	},
+	"recharge_london_arti": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Recharge Cannon→Stops attacking and grants 1SP to Londinium Artillery every second",
+					"If interrupted, Londinium Artillery loses 15SP",
+					"Can only be used once"
+				],
+				"jp": [
+					"副砲充填（1回のみ）→攻撃しなくなり、20秒間、副砲のSPを毎秒+1する",
+					"スキルが中断された時、副砲のSP-15"
+				],
+				"cn": []
+			}
+		}
+	},
+	"manfred_military_training": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": [
+					"[Military Training]→ gains 80% Physical/Arts evasion",
+					"When hit by Londinium Artillery, lose this effect for 30s and become stunned for 8s"
+				],
+				"jp": [
+					"【軍事訓練】→物理・術回避率+80%",
+					"副砲に当たると、回避効果が30秒間無効化され、8秒間スタンする"
+				],
+				"cn": []
+			}
+		}
+	},
+	"manfred_focus": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": [
+					"[Focus]→ When attacking the same target, ASPD+60, max 5 stacks",
+					" All stacks are cleared when switching targets or if 6s passes without attacking"
+				],
+				"jp": [
+					"【集中】→同じ対象に攻撃する度に、攻撃速度+60（最大5回まで）",
+					"攻撃対象が切り替わるか、6秒間攻撃を行わなかった時、このバフはリセットされる"
+				],
+				"cn": []
+			}
+		}
+	},
+	"manfred_range_atk_1": {
+		"type": "atk",
+		"suffix": { "en": "ranged/arts", "jp": "遠・術", "cn": "远・法术" },
+		"multiplier": 0.5,
+		"hits": 1,
+		"fixed_inc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Normal attacks does 50% ATK as Arts damage and grants the Londinium Artillery 3 SP"
+				],
+				"jp": [
+					"通常攻撃は攻撃力の50%の術ダメージを与え",
+					"攻撃の度に、副砲のSPを+3する"
+				],
+				"cn": []
+			}
+		}
+	},
+	"manfred_range_atk_2": {
+		"type": "atk",
+		"suffix": { "en": "ranged/arts", "jp": "遠・術", "cn": "远・法术" },
+		"multiplier": 0.5,
+		"hits": 1,
+		"fixed_inc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Normal attacks does 100% ATK Phys & 50% Arts damage and grants the Londinium Artillery 6 SP"
+				],
+				"jp": [
+					"通常攻撃は攻撃力の100%の物理と50%の術ダメージを与え",
+					"攻撃の度に、副砲のSPを+6する"
+				],
+				"cn": []
+			}
+		}
+	},
+	"invincible_5s": {
+		"type": "others",
+		"tags": [],
+		"tooltip": {
+			"simple": {
+				"en": ["Invincible for 5s"],
+				"jp": ["5秒間無敵"],
+				"cn": []
+			}
+		}
+	},
+	"manfred_rebirth": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"When defeated, resurrects over 20s and uses [From Withered Trunk, New Branches]",
+					"Attacks a random allied unit on the map, dealing 30% ATK as Arts damage",
+					"Each attack grants the Londinium Artillery 6 SP"
+				],
+				"jp": [
+					"倒されたとき、20秒かけてHPを全回復する、【新たな芽吹き】を使用",
+					"マップ全体のランダムな味方単体に攻撃力の30%の術ダメージを与え、副砲のSPを+6する"
 				],
 				"cn": []
 			}

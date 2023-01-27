@@ -1,0 +1,28 @@
+{
+	"id": "SCI4",
+	"name": {
+		"en": "Gift of Magnanimity",
+		"jp": "寛大な祝福",
+		"cn": "慷慨之赐"
+	},
+	"stats": {
+		"level0": {
+			"hp": "3000",
+			"atk": "800",
+			"def": "200",
+			"res": "20",
+			"aspd": "4",
+			"range": "0",
+			"weight": "3",
+			"lifepoint": 1,
+			"ms": "0.7",
+			"special": ["reduce_phys_arts_90", "creation_add_block_1"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"type": ["melee"]
+}

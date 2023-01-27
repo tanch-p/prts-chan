@@ -14,9 +14,9 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			
 			"weight": "2",
-			"lifepoint":1,"ms": "0.85",
+			"lifepoint": 1,
+			"ms": "0.85",
 			"special": []
 		},
 		"仪式之夜": {
@@ -27,19 +27,17 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "0",
-			
+
 			"weight": "2",
-			"lifepoint":1,"ms": "0.85",
+			"lifepoint": 1,
+			"ms": "0.85",
 			"special": []
 		}
 	},
-	"status_immune":[],
-"normal_attack": {
+	"status_immune": [],
+	"normal_attack": {
 		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
-	"スタン耐性": "無",
-	"眠り耐性": "無",
-	"凍結耐性": "無",
 	"type": ["melee", "sarkaz"]
 }

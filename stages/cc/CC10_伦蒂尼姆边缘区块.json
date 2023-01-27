@@ -1,0 +1,20 @@
+{
+	"name": {
+		"en": "伦蒂尼姆边缘区块",
+		"jp": "伦蒂尼姆边缘区块",
+		"cn": "伦蒂尼姆边缘区块"
+	},
+	"img": "伦蒂尼姆边缘区块",
+	"config": "CC10_伦蒂尼姆边缘区块",
+	"ccType": "perma",
+	"enemies": [
+		{ "id": "MAN", "count": 1, "stats": "伦蒂尼姆边缘区块" },
+		{ "id": "S7", "count": 1, "stats": "level0" },
+		{ "id": "S5", "count": 1, "stats": "level0" },
+		{ "id": "SCI13", "count": 1, "stats": "level0" },
+		{ "id": "SCI7", "count": 1, "stats": "level0" },
+		{ "id": "SCI15", "count": 1, "stats": "level0" },
+		{ "id": "SCI1", "count": 1, "stats": "level0" },
+		{ "id": "SCI3", "count": 1, "stats": "level0" }
+	]
+}

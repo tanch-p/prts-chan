@@ -1,0 +1,28 @@
+{
+	"id": "SCI7",
+	"name": {
+		"en": "Sarkaz Heirbearer Artificer",
+		"jp": "サルカズ眷属工匠",
+		"cn": "萨卡兹子裔工匠"
+	},
+	"stats": {
+		"level0": {
+			"hp": "6000",
+			"atk": "300",
+			"def": "250",
+			"res": "20",
+			"aspd": "2",
+			"range": "0",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "1",
+			"special": ["spawn_sci1","recharge_london_arti"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"type": ["melee", "sarkaz"]
+}

@@ -1,0 +1,28 @@
+{
+	"id": "SCI2",
+	"name": {
+		"en": "Touch of Benevolence",
+		"jp": "慈悲の触手",
+		"cn": "慈悲之触"
+	},
+	"stats": {
+		"level0": {
+			"hp": "1500",
+			"atk": "380",
+			"def": "100",
+			"res": "10",
+			"aspd": "2.5",
+			"range": "0",
+			"weight": "0",
+			"lifepoint": 1,
+			"ms": "1",
+			"special": ["reduce_phys_arts_90", "creation_add_block_1"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"type": ["melee"]
+}

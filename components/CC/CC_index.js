@@ -7,20 +7,20 @@ export default function CCIndex({ language, langPack }) {
 		return language === "en" ? "text-xs" : "";
 	};
 	const dailyStages = [
-		{ text: "尚蜀山道", link: "CC9_尚蜀山道_1" },
-		{ text: "尚蜀山道", link: "CC9_尚蜀山道_1" },
-		{ text: "遗弃地块", link: "CC9_遗弃地块_1" },
-		{ text: "灰齐山麓", link: "CC9_灰齐山麓_1" },
-		{ text: "沙海遗迹", link: "CC9_沙海遗迹_1" },
-		{ text: "狂嚎沙原", link: "CC9_狂嚎沙原_1" },
-		{ text: "炽热溶洞", link: "CC9_炽热溶洞_1" },
-		{ text: "大骑士领酒吧街", link: "CC9_大骑士领酒吧街_1" },
-		{ text: "灰齐山麓", link: "CC9_灰齐山麓_2" },
-		{ text: "大骑士领酒吧街", link: "CC9_大骑士领酒吧街_2" },
-		{ text: "沙海遗迹", link: "CC9_沙海遗迹_2" },
-		{ text: "炽热溶洞", link: "CC9_炽热溶洞_2" },
-		{ text: "狂嚎沙原", link: "CC9_狂嚎沙原_2" },
-		{ text: "尚蜀山道", link: "CC9_尚蜀山道_2" },
+		{ text: "小丘郡物流站", link: "CC10_小丘郡物流站_1" },
+		{ text: "小丘郡物流站", link: "CC10_小丘郡物流站_1" },
+		{ text: "炽热溶洞", link: "CC10_炽热溶洞_1" },
+		{ text: "大骑士领酒吧街", link: "CC10_大骑士领酒吧街_1" },
+		{ text: "尚蜀山道", link: "CC10_尚蜀山道_1" },
+		{ text: "灰齐山麓", link: "CC10_灰齐山麓_1" },
+		{ text: "沙海遗迹", link: "CC10_沙海遗迹_1" },
+		{ text: "盐风溶洞", link: "CC10_盐风溶洞_1" },
+		{ text: "大骑士领酒吧街", link: "CC10_大骑士领酒吧街_2" },
+		{ text: "盐风溶洞", link: "CC10_盐风溶洞_2" },
+		{ text: "尚蜀山道", link: "CC10_尚蜀山道_2" },
+		{ text: "沙海遗迹", link: "CC10_沙海遗迹_2" },
+		{ text: "灰齐山麓", link: "CC10_灰齐山麓_2" },
+		{ text: "小丘郡物流站", link: "CC10_小丘郡物流站_2" },
 	];
 
 	const dailyCCArr = [];
@@ -61,11 +61,11 @@ export default function CCIndex({ language, langPack }) {
 					</tr>
 					<tr>
 						<td>
-							<Link href={`/stages/cc/CC9_盐风溶洞`}>
+							<Link href={`/stages/cc/CC10_伦蒂尼姆边缘区块`}>
 								<div
 									className={`py-2 hover:cursor-pointer hover:bg-gray-600 text-indigo-300  ${getTheme()}`}
 								>
-									{langPack.盐风溶洞}
+									{langPack.伦蒂尼姆边缘区块}
 								</div>
 							</Link>
 						</td>

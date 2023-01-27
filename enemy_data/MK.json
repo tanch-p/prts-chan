@@ -25,7 +25,7 @@
 			]
 		}
 	},
-	"status_immune": [],
+	"status_immune": ["stun","sleep","freeze"],
 	"normal_attack": {
 		"atk_type": ["ranged", "arts"],
 		"hits": 1

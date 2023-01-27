@@ -1,0 +1,28 @@
+{
+	"id": "SCI13",
+	"name": {
+		"en": "Sarkaz Heirbearer Hatedrinker",
+		"jp": "サルカズ眷属集恨者",
+		"cn": "萨卡兹子裔集恨者"
+	},
+	"stats": {
+		"level0": {
+			"hp": "14000",
+			"atk": "1000",
+			"def": "800",
+			"res": "20",
+			"aspd": "5",
+			"range": "0",
+			"weight": "4",
+			"lifepoint": 1,
+			"ms": "0.5",
+			"special": ["spawn_sci3","hateweaver_atk_buff"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "phys"],
+		"hits": 1
+	},
+	"type": ["melee", "sarkaz","elite"]
+}

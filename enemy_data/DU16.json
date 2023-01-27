@@ -14,11 +14,10 @@
 			"aspd%": "100",
 			"aspd": "2",
 			"range": "1.5",
-
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": ["refraction"]
+			"special": []
 		}
 	},
 	"status_immune": [],

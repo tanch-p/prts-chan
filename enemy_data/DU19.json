@@ -1,32 +1,29 @@
 {
-    "id": "DU19",
-    "name_en": "",
-    "name_jp": "",
-    "name_cn": "深池伙友影刃",
-    "atk_type_jp": "術",
-    "hp": "12000",
-    "atk": "400",
-    "def": "350",
-    "res": "0",
-    "aspd%": "100",
-    "aspd": "2.1",
-    "range": "0",
-    
-    "weight": "2",
-    "スタン耐性": "無",
-    "眠り耐性": "無",
-    "凍結耐性": "",
-    "lifepoint":1,"ms": "0.8",
-    "type_jp": [
-        "近距離"
-    ],
-    "type_en": [
-        "Melee"
-    ],
-    "type_cn": [
-        "近战"
-    ],
-    "atk_type_en": "spell",
-    "atk_type_cn": "法术",
-    "special": ""
+	"id": "DU19",
+	"name": {
+		"en": "Dublinn Companion Shadowblade",
+		"jp": "ダブリンヘタイロイ影刃",
+		"cn": "深池伙友影刃"
+	},
+	"stats": {
+		"level0": {
+            "hp": "12000",
+            "atk": "400",
+            "def": "350",
+            "res": "0",
+            "aspd%": "100",
+            "aspd": "2.1",
+            "range": "0",
+            "weight": "2",
+			"lifepoint": 1,
+			"ms": "0.8",
+			"special": []
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["melee", "arts"],
+		"hits": 1
+	},
+	"type": ["melee"]
 }

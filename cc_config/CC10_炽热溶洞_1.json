@@ -1,0 +1,260 @@
+[
+	{
+		"category": "pompeii_a_a",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "強敵：溶岩爆裂I",
+					"en": "Pompeii: Internal Eruption I",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_a_amod_1",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": {
+							"hp": "%60",
+							"special": {
+								"explosion": {
+									"type": "atk",
+									"fixed": 1300,
+									"tooltip": {
+										"en": [
+											"When blocked, creates an explosion around self every 10s"
+										],
+										"jp": ["ブロックされると10秒毎に自分中心に爆発"],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii Max HP increased by 120%, explosion damage by 100%, and explosion re-cast decreased by 50%",
+					"cn": "",
+					"jp": "「Pompeii」の最大HP+120%、爆発ダメージ+100%、発動間隔半減"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_b_b",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "強敵：火山同化II",
+					"en": "Pompeii: Unstoppable Force II",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_b_bmod_2",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": {
+							"atk": "%20",
+							"range": "%70",
+							"special": {
+								"extra": {
+									"type": "others",
+									"tooltip": {
+										"en": ["$Immune to Slow,Bind,Stun$"],
+										"jp": ["$足止め・バインド・スタン無効$"],
+										"cn": [""]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii ATK +20%, Range greatly increases, and becomes immune to Slow, Bind and Stun",
+					"jp": "「Pompeii」の攻撃力+20%、攻撃範囲が拡大、足止め・バインド・スタンへの耐性を持ち",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -25%",
+					"jp": "全ての味方の攻撃力-25%",
+					"cn": "所有我方单位的攻击力降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_a_a",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：溶岩爆裂III",
+					"en": "Pompeii: Internal Eruption III",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_a_amod_3",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": {
+							"hp": "%120",
+							"special": {
+								"explosion": {
+									"type": "atk",
+									"fixed": 2000,
+									"tooltip": {
+										"en": [
+											"When blocked, creates an explosion around self every $5s$"
+										],
+										"jp": ["ブロックされると$5秒$毎に自分中心に爆発"],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii Max HP increased by 120%, explosion damage by 100%, and explosion re-cast decreased by 50%",
+					"cn": "",
+					"jp": "「Pompeii」の最大HP+120%、爆発ダメージ+100%、発動間隔半減"
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_b_a",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：溶岩外殻III",
+					"en": "Pompeii: Tough Constitution III",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_b_amod_3",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": { "atk": "%60", "fixed_def": 1000, "res": 40 }
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii ATK +60%, DEF +1000, and RES +40",
+					"jp": "「Pompeii」の攻撃力+60%、防御力+1000、術耐性+40",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_a_b",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：噴火激化III",
+					"en": "Pompeii: Desperate Survival III",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_a_bmod_3",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": {
+							"hp": "%60",
+							"special": {
+								"aspd_inc": {
+									"type": "others",
+									"tooltip": {
+										"en": ["HP↓50%→$ASPD+400?$ (0.7/s)"],
+										"jp": ["HP↓50%→攻撃速度+$400?$ (0.7/s)"],
+										"cn": ["HP↓50%→攻撃速度+$400?$"]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii Max HP + 60%, ASPD increase when below 50% HP increased greatly.",
+					"cn": "",
+					"jp": "「Pompeii」の最大HP+60%、HPが半分以下になった時の攻撃速度がさらに上昇"
+				}
+			}
+		]
+	},
+	{
+		"category": "pompeii_b_b",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "強敵：火山同化III",
+					"en": "Pompeii: Unstoppable Force III",
+					"cn": ""
+				},
+				"img": "炽热溶洞/75px-Enemy_lslime_b_bmod_3",
+				"effects": [
+					{
+						"targets": ["UM1"],
+						"mods": {
+							"atk": "%20",
+							"range": "%190",
+							"special": {
+								"extra": {
+									"type": "others",
+									"tooltip": {
+										"en": ["$Stealth$", "$Immune to Slow,Bind,Stun$"],
+										"jp": ["$ステルス$", "$足止め・バインド・スタン無効$"],
+										"cn": [""]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pompeii ATK +20%, Range greatly increases, and becomes immune to Slow, Bind and Stun, gains Stealth",
+					"jp": "「Pompeii」の攻撃力+20%、攻撃範囲が拡大、足止め・バインド・スタンへの耐性を持ち、ステルスを獲得する",
+					"cn": ""
+				}
+			}
+		]
+	}
+]

@@ -1,0 +1,21 @@
+{
+	"name": {
+		"en": "Shangshu Trails",
+		"jp": "尚蜀山道",
+		"cn": "尚蜀山道"
+	},
+	"img": "尚蜀山道",
+	"config": "CC10_尚蜀山道_1",
+	"ccType": "daily",
+	"enemies": [
+		{ "id": "AN1", "count": 1, "stats": "level0" },
+		{ "id": "AN3", "count": 1, "stats": "level0" },
+		{ "id": "AN29", "count": 1, "stats": "level0" },
+		{ "id": "AN31", "count": 1, "stats": "level0" },
+		{ "id": "AN21", "count": 1, "stats": "level0" },
+		{ "id": "AN23", "count": 1, "stats": "level0" },
+		{ "id": "AN26", "count": 1, "stats": "level0" },
+		{ "id": "AN28", "count": 1, "stats": "level0" },
+		{ "id": "SF03", "count": 1, "stats": "level0" }
+	]
+}

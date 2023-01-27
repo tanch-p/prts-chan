@@ -255,111 +255,107 @@ export default function Stage({ stageData }) {
 				device={device}
 				fontThemes={fontThemes}
 			/>
-			{mapConfig.ccType === "perma" ? (
-				<>
-					<div
-						className={`md:w-full md:max-w-[900px] ${
-							stickyTable ? "sticky top-0 z-10" : ""
-						}`}
-					>
-						<div className="w-[100vw] md:w-full flex flex-wrap place-content-end mb-1 gap-x-1">
-							<button
-								onClick={() => setStickyTable(!stickyTable)}
-								className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg text-black ${
-									stickyTable
-										? "bg-gray-400 border-transparent"
-										: "border-gray-400 bg-white"
-								}`}
-							>
-								{language === "jp" ? "テーブル固定" : "Anchor Table"}
-							</button>
-							<button
-								onClick={() => setShowGrid(!showGrid)}
-								className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg text-black ${
-									showGrid
-										? "bg-gray-400 border-transparent"
-										: "border-gray-400 bg-white"
-								}`}
-							>
-								{language === "jp" ? "グリッド表示" : "Toggle Grids"}
-							</button>
-							<button
-								onClick={() => setToggleRankColor(!toggleRankColor)}
-								className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg text-black  ${
-									toggleRankColor
-										? "bg-gray-400 border-transparent"
-										: "border-gray-400 bg-white "
-								}`}
-							>
-								{language === "jp" ? "ランク色表示" : "Toggle Color"}
-							</button>
-						</div>
-						<div
-							className={`flex flex-wrap flex-col w-[100vw] md:w-full h-[214px] md:max-w-[900px] overflow-x-scroll overflow-y-hidden select-none relative`}
+			{mapConfig.ccType === "perma" && (
+				<div
+					className={`md:w-full md:max-w-[900px] pt-3 ${
+						stickyTable ? "sticky top-0 z-10" : ""
+					}`}
+				>
+					<div className="w-[100vw] md:w-full flex flex-wrap place-content-end mb-1 gap-x-1">
+						<button
+							onClick={() => setStickyTable(!stickyTable)}
+							className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg text-black ${
+								stickyTable
+									? "bg-gray-400 border-transparent"
+									: "border-gray-400 bg-white"
+							}`}
 						>
-							<div className="bg-[#545753] lg:sticky left-0 z-10 border-x border-gray-700">
-								{rank.map((num) => (
-									<div
-										className={`  min-w-[50px] max-w-[100px] h-[65px] flex items-center `}
-										key={`rank${num}`}
-									>
-										<div className="leading-[10px] mx-[4px]">
-											<p className="text-[10px] text-gray-200 mb-1">
-												Contigency <br /> Level
-											</p>
-											<Risk_triangle risk={num} />
-										</div>
-										<span className="text-white text-[50px] mr-[2px] font-normal font-sans">
-											{num}
-										</span>
-									</div>
-								))}
-							</div>
-							{ccConfig.map((category) =>
-								category[`options`].map((option) => (
-									<div
-										className={`${
-											showGrid ? "border-[1px]" : ""
-										} border-collapse w-[65px] h-[65px] p-[1.5px] ${
-											option?.img !== undefined ? "active:brightness-75" : ""
-										}  ${
-											toggleRankColor
-												? getRankColor(option.rank)
-												: "bg-[#90928f]"
-										}`}
-										key={option.img}
-									>
-										{Object.keys(option).includes("img") ? (
-											<button
-												type="button"
-												onClick={() => handleClick(category, option)}
-											>
-												<Image
-													src={`/images/cc_buttons/${option.img}.png`}
-													alt={`${option.img}`}
-													width="65px"
-													height="65px"
-													className={`${toggleOptionColor(
-														category.category,
-														option.img
-													)}`}
-												/>{" "}
-											</button>
-										) : null}
-									</div>
-								))
-							)}
-						</div>
+							{language === "jp" ? "テーブル固定" : "Anchor Table"}
+						</button>
+						<button
+							onClick={() => setShowGrid(!showGrid)}
+							className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg text-black ${
+								showGrid
+									? "bg-gray-400 border-transparent"
+									: "border-gray-400 bg-white"
+							}`}
+						>
+							{language === "jp" ? "グリッド表示" : "Toggle Grids"}
+						</button>
+						<button
+							onClick={() => setToggleRankColor(!toggleRankColor)}
+							className={`text-xs font-semibold text-center py-1 px-2 border rounded-lg text-black  ${
+								toggleRankColor
+									? "bg-gray-400 border-transparent"
+									: "border-gray-400 bg-white "
+							}`}
+						>
+							{language === "jp" ? "ランク色表示" : "Toggle Color"}
+						</button>
 					</div>
-				</>
-			) : null}
+					<div
+						className={`flex flex-wrap flex-col w-[100vw] md:w-full h-[214px] md:max-w-[900px] overflow-x-scroll overflow-y-hidden select-none relative`}
+					>
+						<div className="bg-[#545753] lg:sticky left-0 z-10 border-x border-gray-700">
+							{rank.map((num) => (
+								<div
+									className={`  min-w-[50px] max-w-[100px] h-[65px] flex items-center `}
+									key={`rank${num}`}
+								>
+									<div className="leading-[10px] mx-[4px]">
+										<p className="text-[10px] text-gray-200 mb-1">
+											Contigency <br /> Level
+										</p>
+										<Risk_triangle risk={num} />
+									</div>
+									<span className="text-white text-[50px] mr-[2px] font-normal font-sans">
+										{num}
+									</span>
+								</div>
+							))}
+						</div>
+						{ccConfig.map((category) =>
+							category[`options`].map((option) => (
+								<div
+									className={`${
+										showGrid ? "border-[1px]" : ""
+									} border-collapse w-[65px] h-[65px] p-[1.5px] ${
+										option?.img !== undefined ? "active:brightness-75" : ""
+									}  ${
+										toggleRankColor ? getRankColor(option.rank) : "bg-[#90928f]"
+									}`}
+									key={option.img}
+								>
+									{Object.keys(option).includes("img") ? (
+										<button
+											type="button"
+											onClick={() => handleClick(category, option)}
+										>
+											<Image
+												src={`/images/cc_buttons/${option.img}.png`}
+												alt={`${option.img}`}
+												width="65px"
+												height="65px"
+												className={`${toggleOptionColor(
+													category.category,
+													option.img
+												)}`}
+											/>{" "}
+										</button>
+									) : null}
+								</div>
+							))
+						)}
+					</div>
+				</div>
+			)}
 			<div
 				id="CC-container"
 				className={`${
 					mapConfig.ccType === "perma" ? "w-[100vw] md:w-[900px]" : "min-w-min"
 				} ${fontThemes[language]}`}
 			>
-				{mapConfig.ccType === "daily" ? (
+				{mapConfig.ccType === "daily" && (
 					<Daily_buttons
 						ccConfig={ccConfig}
 						handleClick={handleClick}
@@ -367,7 +363,7 @@ export default function Stage({ stageData }) {
 						getRankColor={getRankColor}
 						language={language}
 					/>
-				) : null}
+				)}
 
 				<Selected_options selected={selected} ccType={mapConfig.ccType} />
 				<div className="flex flex-wrap border border-gray-800 w-[100vw] overflow:hidden md:w-full h-[50px] max-w-[900px] py-2 mb-2 select-none place-items-center bg-[#292929]">

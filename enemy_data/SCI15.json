@@ -1,0 +1,28 @@
+{
+	"id": "SCI15",
+	"name": {
+		"en": "Sarkaz Requisitioned Engineering Drone",
+		"jp": "サルカズ徴用作業ドローン",
+		"cn": "萨卡兹征用工程无人机"
+	},
+	"stats": {
+		"level0": {
+			"hp": "6000",
+			"atk": "500",
+			"def": "150",
+			"res": "10",
+			"aspd": "4.5",
+			"range": "2",
+			"weight": "1",
+			"lifepoint": 1,
+			"ms": "0.5",
+			"special": ["stealth","bleed_true_60","london_arti_sp1"]
+		}
+	},
+	"status_immune": [],
+	"normal_attack": {
+		"atk_type": ["ranged", "phys"],
+		"hits": 1
+	},
+	"type": ["ranged", "flying", "drone"]
+}

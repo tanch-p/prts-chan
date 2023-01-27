@@ -39,7 +39,7 @@ export default function Home() {
 				}`}
 			>
 				<div id="main content" className="w-full md:min-w-10">
-					{/* <CCIndex language={language} langPack={langPack} /> */}
+					<CCIndex language={language} langPack={langPack} />
 
 					<div className="relative shadow-2xl max-w-screen-sm md:max-w-3xl">
 						<Link href="/stages/is/ISW-NO_礼炮小队">
