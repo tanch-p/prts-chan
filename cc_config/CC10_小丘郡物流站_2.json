@@ -1,0 +1,250 @@
+[
+	{
+		"category": "char_res",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced Ally RES 1",
+					"jp": "制限：術耐性I",
+					"cn": ""
+				},
+				"img": "75px-Char_magicresistance_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ RES -12",
+					"jp": "全ての味方の術耐性-12",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "explosives",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "No explosives",
+					"jp": "爆発物取締",
+					"cn": ""
+				},
+				"img": "小丘郡物流站/75px-Global_dublst_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Number of deployable explosives decreased to 0",
+					"jp": "配置可能の爆発物が0になる",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "pillar",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Left Pillar",
+					"jp": "脆い石柱・左",
+					"cn": ""
+				},
+				"img": "小丘郡物流站/75px-Trap_hidden_dupilr_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Tattered Pillar at top left no longer appears on field",
+					"jp": "左上の脆い石柱は除外される",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "ggy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：石像II",
+					"en": "Gargoyle 2",
+					"cn": ""
+				},
+				"img": "小丘郡物流站/75px-Enemy_dugago_2",
+				"effects": [
+					{
+						"targets": ["GGY1"],
+						"mods": {
+							"hp": "%50",
+							"atk": "%50",
+							"def": "%30",
+							"ms": "%30"
+						}
+					}
+				],
+				"tooltip": {
+					"en": [
+						"[Tombkeeper Grotesque] HP +50%, ATK +50%, DEF +30%, Movespeed +30%"
+					],
+					"jp": [
+						"＜墓守の石像＞の最大HP+50%、攻撃力+50%、防御力+30%、移動速度+30%"
+					],
+					"cn": []
+				}
+			}
+		]
+	},
+	{
+		"category": "flamerazer",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：火炎放射II",
+					"en": "Flamerazer 2",
+					"cn": ""
+				},
+				"img": "小丘郡物流站/75px-Enemy_duspfr_amod_2",
+				"effects": [
+					{
+						"targets": ["DU15"],
+						"mods": {
+							"hp": "%70",
+							"atk": "%50",
+							"res": 20,
+							"special": {
+								"flamerazer_flamethrower": {
+									"type": "atk",
+									"suffix": {
+										"en": "🔥/arts",
+										"jp": "🔥・術",
+										"cn": "🔥・法术"
+									},
+									"multiplier": 0.12,
+									"hits": 1,
+									"fixed_inc": 0,
+									"tooltip": {
+										"en": [
+											"Skill (Initial SP: 0, Cost:10)",
+											"Does 12% of ATK as Arts damage and 6% ATK as Burn Damage every 0.5s for $15.9s$",
+											"Resets cooldown if skill is used again while chanelling",
+											"6s after channeling, enters cooldown",
+											"Skill is stopped when silenced/stunned"
+										],
+										"jp": [
+											"火炎放射（初期SP0、必要SP10）",
+											"$15.9秒間$、0.5秒ごとに攻撃力の12%の術ダメージと6%の灼熱ダメージを与える",
+											"無効化かスタンで中断できる"
+										],
+										"cn": []
+									}
+								},
+								"extra": {
+									"tooltip": {
+										"en": ["$Stealth$"],
+										"jp": ["$ステルス$"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": [
+						"[Flamerazer] HP +70%, ATK +50%, RES +20, Skill duration increased by 50%"
+					],
+					"jp": [
+						"＜ダブリン焼滅者＞の最大HP+70%、攻撃力+50%、術耐性+20、スキル継続時間+50%"
+					],
+					"cn": []
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -30%",
+					"jp": "全ての味方の攻撃力-30%",
+					"cn": "所有我方单位的攻击力降低30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "evocator",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：喚起術師III",
+					"en": "Evocator 3",
+					"cn": ""
+				},
+				"img": "小丘郡物流站/75px-Enemy_dusocr_bmod_3",
+				"effects": [
+					{
+						"targets": ["DU21"],
+						"mods": {
+							"hp": "%200",
+							"special": {
+								"dublinn_fireball": {
+									"name": "fireball",
+									"type": "atk",
+									"fixed": 1000,
+									"suffix": { "en": "🔥", "jp": "🔥", "cn": "🔥" },
+									"tooltip": {
+										"en": [
+											"Fireball explodes on contact with melee unit, dealing arts and burn damage to units within range 1.8",
+											"$Fireball's ATK no longer decreases over distance travelled$"
+										],
+										"jp": [
+											"炎は地上にいる味方に触れると爆発、半径1.8内に術と灼熱ダメージを与える",
+											"$時間経過で炎の攻撃力が減少しない$"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": ["[Dublinn Evocator] HP +200%, Fireball's damage +100%"],
+					"jp": ["＜ダブリン焼滅者＞の最大HP+200%、炎の攻撃力+100%"],
+					"cn": []
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "制限：体力減衰III",
+					"en": "Reduced Operator HP 3",
+					"cn": "源石环境：侵蚀III"
+				},
+				"img": "75px-Char_hp_3",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -55%",
+					"jp": "全ての味方の最大HP-55%",
+					"cn": "所有我方单位的生命值上限降低55%"
+				}
+			}
+		]
+	}
+]

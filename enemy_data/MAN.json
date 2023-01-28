@@ -15,12 +15,21 @@
 			"ms": "0.5",
 			"forms": [
 				{
-					"special": ["manfred_military_training", "manfred_focus"]
+					"special": [
+						"manfred_military_training",
+						"manfred_focus",
+						"manfred_range_atk_1",
+						"manfred_rebirth"
+					]
 				},
 				{
 					"mods": {},
-
-					"special": ["manfred_military_training", "manfred_focus"]
+					"special": [
+						"invincible_5s",
+						"manfred_military_training",
+						"manfred_focus",
+						"manfred_range_atk_2"
+					]
 				}
 			]
 		},
@@ -45,7 +54,6 @@
 				},
 				{
 					"mods": {},
-
 					"special": [
 						"invincible_5s",
 						"manfred_military_training",

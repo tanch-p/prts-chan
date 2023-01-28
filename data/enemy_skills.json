@@ -1362,7 +1362,8 @@
 					"Fireball's ATK decreases over distance travelled"
 				],
 				"jp": [
-					"炎は地上にいる味方に触れると爆発、半径1.8内に術と灼熱ダメージを与える"
+					"炎は地上にいる味方に触れると爆発、半径1.8内に術と灼熱ダメージを与える",
+					"時間経過で炎の攻撃力が減少する"
 				],
 				"cn": []
 			}
@@ -2947,6 +2948,47 @@
 				"jp": [
 					"倒されたとき、20秒かけてHPを全回復する、【新たな芽吹き】を使用",
 					"マップ全体のランダムな味方単体に攻撃力の30%の術ダメージを与え、副砲のSPを+6する"
+				],
+				"cn": []
+			}
+		}
+	},
+	"flamerazer_flamethrower": {
+		"type": "atk",
+		"suffix": { "en": "🔥/arts", "jp": "🔥・術", "cn": "🔥・法术" },
+		"multiplier": 0.12,
+		"hits": 1,
+		"fixed_inc": 0,
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Skill (Initial SP: 0, Cost:10)",
+					"Does 12% of ATK as Arts damage and 6% ATK as Burn Damage every 0.5s for 10.6s",
+					"Resets cooldown if skill is used again while chanelling",
+					"6s after channeling, enters cooldown",
+					"Skill is stopped when silenced/stunned"
+				],
+				"jp": [
+					"火炎放射（初期SP0、必要SP10）",
+					"10.6秒間、0.5秒ごとに攻撃力の12%の術ダメージと6%の灼熱ダメージを与える",
+					"無効化かスタンで中断できる"
+				],
+				"cn": []
+			}
+		}
+	},
+	"flamerazer_explode": {
+		"type": "others",
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Explodes upon defeat, dealing 100% of ATK as Arts damage to ally units in 1.5 tile radius",
+					"Instant kills other flamerazers and destroys Tattered Pillars",
+					"Can be silenced"
+				],
+				"jp": [
+					"死亡時に爆発し、攻撃半径(1.5)内の全味方に攻撃力の100%の術ダメージを与える",
+					"ダブリン焼滅者系を即死させ、脆い石柱を破壊する（無効化可能）"
 				],
 				"cn": []
 			}

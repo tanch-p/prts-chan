@@ -17,16 +17,13 @@
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.8",
-			"special": []
+			"special": ["flamerazer_flamethrower", "flamerazer_explode"]
 		}
 	},
 	"status_immune": [],
 	"normal_attack": {
-		"atk_type": ["ranged", "arts"],
+		"atk_type": ["melee", "phys"],
 		"hits": 1
 	},
-	"スタン耐性": "無",
-	"眠り耐性": "無",
-	"凍結耐性": "無",
-	"type": ["ranged"]
+	"type": ["melee", "ranged"]
 }
