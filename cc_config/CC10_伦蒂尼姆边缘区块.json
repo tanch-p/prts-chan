@@ -30,9 +30,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[SCI7, SCI13] ATK +50%, RES +10, gains Stealth",
+					"en": "[Sarkaz Heirbearer Artificer, Sarkaz Heirbearer Hatedrinker] ATK +50%, RES +10, gains Stealth",
 					"cn": "",
-					"jp": "＜SCI7,SCI13＞の攻撃力+50%、術耐性+10、ステルスになる"
+					"jp": "＜サルカズ眷属工匠＞、＜サルカズ眷属集恨者＞の攻撃力+50%、術耐性+10、ステルスになる"
 				}
 			},
 			{
@@ -62,9 +62,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[SCI7, SCI13] ATK +70%, RES +20, gains Stealth",
+					"en": "[Sarkaz Heirbearer Artificer, Sarkaz Heirbearer Hatedrinker] ATK +70%, RES +20, gains Stealth",
 					"cn": "",
-					"jp": "＜SCI7,SCI13＞の攻撃力+70%、術耐性+20、ステルスになる"
+					"jp": "＜サルカズ眷属工匠＞、＜サルカズ眷属集恨者＞の攻撃力+70%、術耐性+20、ステルスになる"
 				}
 			}
 		]
@@ -90,9 +90,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[SCI1,SCI3] Max HP +10%, ATK +20%",
+					"en": "[Touch of the Sanguinarch, Gift of the Sanguinarch] Max HP +10%, ATK +20%",
 					"cn": "",
-					"jp": "＜SCI1,SCI3＞の最大HP+10%、攻撃力+20%"
+					"jp": "＜大君の触手＞、＜大君の祝福＞の最大HP+10%、攻撃力+20%"
 				}
 			},
 			{
@@ -113,9 +113,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[SCI1,SCI3] Max HP +20%, ATK +30%",
+					"en": "[Touch of the Sanguinarch, Gift of the Sanguinarch] Max HP +20%, ATK +30%",
 					"cn": "",
-					"jp": "＜SCI1,SCI3＞の最大HP+20%、攻撃力+30%"
+					"jp": "＜大君の触手＞、＜大君の祝福＞の最大HP+20%、攻撃力+30%"
 				}
 			},
 			{
@@ -136,9 +136,9 @@
 					}
 				],
 				"tooltip": {
-					"en": "[SCI1,SCI3] Max HP +30%, ATK +40%",
+					"en": "[Touch of the Sanguinarch, Gift of the Sanguinarch] Max HP +30%, ATK +40%",
 					"cn": "",
-					"jp": "＜SCI1,SCI3＞の最大HP+30%、攻撃力+40%"
+					"jp": "＜大君の触手＞,＜大君の祝福＞の最大HP+30%、攻撃力+40%"
 				}
 			}
 		]
@@ -227,8 +227,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Manfred Max HP +70%, ATK +50%, Range +50%",
-					"jp": "＜Manfred＞の最大HP+70%、攻撃力+50%、攻撃範囲+50%",
+					"en": "Manfred Max HP +70%, ATK +50%, Range +50%, no longer gets stunned by Londinium Artillery, recovers his [Military Training] effect faster, 2nd form's normal attack additionally targets 1 unit",
+					"jp": "＜Manfred＞の最大HP+70%、攻撃力+50%、攻撃範囲+50%、「軍事訓練」の効果を失ってから復帰するまでの時間が短縮、、スタンしなくなって、第二形態では浮遊砲がターゲット2体を同時に攻撃する（他のターゲットがいない場合は2回攻撃になる）",
 					"cn": ""
 				}
 			},
@@ -291,8 +291,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Manfred Max HP +100%, ATK +70%, Range +50%",
-					"jp": "＜Manfred＞の最大HP+100%、攻撃力+70%、攻撃範囲+50%",
+					"en": "Manfred Max HP +100%, ATK +70%, Range +50%, no longer gets stunned by Londinium Artillery, recovers his [Military Training] effect significantly faster, in his second form, his floating cannon will attack one additional target (if there are none, it will instead attack twice).",
+					"jp": "＜Manfred＞の最大HP+100%、攻撃力+70%、攻撃範囲+50%、「軍事訓練」の効果を失ってから復帰するまでの時間が大幅に短縮、、スタンしなくなって、第二形態では浮遊砲がターゲット2体を同時に攻撃する（他のターゲットがいない場合は2回攻撃になる）",
 					"cn": ""
 				}
 			}
@@ -350,8 +350,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Manfred Max HP +120%, ATK +20%, RES +20",
-					"jp": "＜Manfred＞の最大HP+120%、攻撃力+20%、術耐性+20",
+					"en": "Manfred Max HP +120%, ATK +20%, RES +20, appears on field earlier, while present, all rebirthable enemies and reborn creations will deal continuous Arts damage to their surroundings, and Manfred recovers his [Military Training] effect faster",
+					"jp": "＜Manfred＞の最大HP+120%、攻撃力+20%、術耐性+20、早めに登場、「軍事訓練」の効果を失ってから復帰するまでの時間が短縮、戦場滞在中、全ての再生造物及び再生造物を生成する敵が周囲に継続的に術ダメージを与える",
 					"cn": ""
 				}
 			},
@@ -393,7 +393,7 @@
 											"grants all 'Reborn Creations' and enemies that spawn 'Reborn Creation' upon death",
 											"an aura that deals 5% of Manfred's ATK as Arts damage to all allied units in a 1.25 tile radius every 0.5s"
 										],
-										"jp": ["$ステルス$"],
+										"jp": ["$追加能力→戦場滞在中、全ての再生造物及び再生造物を生成する敵が周囲に継続的に術ダメージを与える$"],
 										"cn": ""
 									}
 								}
@@ -402,8 +402,8 @@
 					}
 				],
 				"tooltip": {
-					"en": "Manfred Max HP +150%, ATK +40%, RES +20",
-					"jp": "＜Manfred＞の最大HP+150%、攻撃力+40%、術耐性+20",
+					"en": "Manfred Max HP +150%, ATK +40%, RES +20, While present, all rebirthable enemies and reborn creations will deal continuous Arts damage to their surroundings, and Manfred recovers his [Military Training] effect significantly faster",
+					"jp": "＜Manfred＞の最大HP+150%、攻撃力+40%、術耐性+20、「軍事訓練」の効果を失ってから復帰するまでの時間が大幅に短縮、戦場滞在中、全ての再生造物及び再生造物を生成する敵が周囲に継続的に術ダメージを与える",
 					"cn": ""
 				}
 			}
@@ -800,8 +800,8 @@
 				"img": "伦蒂尼姆边缘区块/75px-Enemy_dmech_hidden_2",
 				"effects": [],
 				"tooltip": {
-					"en": "Additional SCI3 and SCI7 and SCI13 appears on map.",
-					"jp": "＜SCI3 SCI7 SCI13＞が体追加出現",
+					"en": "Additional [Gift of the Sanguinarch], [Sarkaz Heirbearer Artificer] and [Sarkaz Heirbearer Hatedrinker] appears on map.",
+					"jp": "＜大君の祝福＞、＜サルカズ眷属工匠＞、＜サルカズ眷属集恨者＞が体追加出現",
 					"cn": ""
 				}
 			},

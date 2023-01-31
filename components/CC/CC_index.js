@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import CC9_banner from "@/public/images/banners/CC9_banner.webp";
+import CC10_banner from "@/public/images/banners/CC10_banner.webp";
 
 export default function CCIndex({ language, langPack }) {
 	const getTheme = () => {
@@ -48,7 +48,7 @@ export default function CCIndex({ language, langPack }) {
 		<div id="cc6" className="max-w-screen-sm md:max-w-3xl mb-24">
 			<div className="relative shadow-2xl max-w-screen-sm md:max-w-3xl md:mt-8">
 				<Image
-					src={CC9_banner}
+					src={CC10_banner}
 					layout="intrinsic"
 					alt="CC8 Banner"
 					className=""
