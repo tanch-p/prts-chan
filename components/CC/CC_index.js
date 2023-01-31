@@ -24,8 +24,8 @@ export default function CCIndex({ language, langPack }) {
 	];
 
 	const dailyCCArr = [];
-	let day = 8;
-	let month = 12;
+	let day = 3;
+	let month = 2;
 	for (const [index, { text, link }] of dailyStages.entries()) {
 		dailyCCArr.push(
 			<div className="border-b border-gray-500 mt-1" key={index}>
@@ -50,7 +50,7 @@ export default function CCIndex({ language, langPack }) {
 				<Image
 					src={CC10_banner}
 					layout="intrinsic"
-					alt="CC8 Banner"
+					alt="CC10 Banner"
 					className=""
 				/>
 			</div>
