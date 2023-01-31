@@ -21,10 +21,10 @@
 									"skill_regen": "auto",
 									"tooltip": {
 										"en": [
-											"Glimmering Touch - after charging for 7s does 250% dmg to units within skill's range, $CD10s$"
+											"Glimmering Touch - after charging for $3.5s$ does 250% dmg to units within skill's range, CD20s"
 										],
 										"jp": [
-											"微光の蝕 - 攻撃半径内のユニットに7秒間チャージしたあと範囲攻撃を行う、$CD10秒$"
+											"微光の蝕 - 攻撃半径内のユニットに$3.5秒$間チャージしたあと範囲攻撃を行う、CD20秒"
 										],
 										"cn": []
 									}

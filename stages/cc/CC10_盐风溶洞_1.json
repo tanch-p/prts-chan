@@ -6,7 +6,7 @@
 	},
 	"img": "盐风溶洞",
 	"config": "CC10_盐风溶洞_1",
-	"ccType": "perma",
+	"ccType": "daily",
 	"enemies": [
 		{ "id": "FTT", "count": 1, "stats": "level0" },
 		{ "id": "SM11", "count": 1, "stats": "level0" },

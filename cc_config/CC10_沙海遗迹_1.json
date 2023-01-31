@@ -1,0 +1,206 @@
+[
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Max Squad Size 1",
+					"jp": "環境：少数精鋭I",
+					"cn": "目标：隐秘行动I"
+				},
+				"img": "75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 10 operators in squad",
+					"cn": "最多可编入10名干员进入作战",
+					"jp": "編成可能数が10人に"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_ms",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy Movement Speed 1",
+					"jp": "増幅：機動力I",
+					"cn": ""
+				},
+				"img": "75px-Enemy_movespeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"ms": "%50"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemies movement speed +50%",
+					"jp": "全ての敵の移動速度+50%",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "drone_a",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "ドローン：動力強化II",
+					"en": "Drone ATK Buff 2",
+					"cn": ""
+				},
+				"img": "沙海遗迹/75px-Enemy_drones_1_2",
+				"effects": [
+					{
+						"targets": ["D7", "PS1", "PS3"],
+						"mods": {
+							"atk": "%50",
+							"ms": "%100",
+							"range": "%25",
+							"special": {
+								"scrap_def_down": {
+									"type": "others",
+									"tooltip": {
+										"en": [
+											"Attacks reduce target's DEF by $60% for 8s$",
+											"(does not stack, can be silenced)"
+										],
+										"jp": [
+											"攻撃が相手の防御力を$8秒60％$減少する (重複しない、無効化できる)"
+										],
+										"cn": [
+											"攻击使目标防御力最终降低$60%，持续8s$（不叠加，可沉默）"
+										]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": [
+						"All drone type enemies ATK +50%, MS +100%, Range +25%, Scrap's def down effect increased by 20% and duration by 3s"
+					],
+					"jp": [
+						"「ドローン」系の攻撃力 +50%、移動速度 +100%、攻撃範囲 +25%、破片の防御力低下能力が20%増加、効果時間3秒増加"
+					],
+					"cn": []
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_aspd",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Enemy ASPD 2",
+					"jp": "増幅：ラッシュII",
+					"cn": ""
+				},
+				"img": "75px-Enemy_attackspeed_2",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"aspd": "%60"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy ASPD +60",
+					"jp": "全ての敵の攻撃速度+60",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特殊・重装禁止",
+					"en": "No Defender/Specialists",
+					"cn": ""
+				},
+				"img": "75px-Char_exclude_defenderspecial_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Defenders and Specialists are banned.",
+					"jp": "特殊・重装使用禁止",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Reduced Ally ATK 3",
+					"jp": "制限：火力減衰III",
+					"cn": "环境：高价值目标III"
+				},
+				"img": "75px-Char_atk_3",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -50%",
+					"jp": "全ての味方の攻撃力-50%",
+					"cn": "所有我方单位的攻击力降低50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "制限：体力減衰III",
+					"en": "Reduced Operator HP 3",
+					"cn": "源石环境：侵蚀III"
+				},
+				"img": "75px-Char_hp_3",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -60%",
+					"jp": "全ての味方の最大HP-60%",
+					"cn": "所有我方单位的生命值上限降低60%"
+				}
+			}
+		]
+	}
+]

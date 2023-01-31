@@ -1,0 +1,247 @@
+[
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Enemy ATK 1",
+					"jp": "増幅：火力I",
+					"cn": "源石环境：刺激I"
+				},
+				"img": "75px-Enemy_atk_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%20"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +20%",
+					"jp": "全ての敵の攻撃力+20%",
+					"cn": "所有敌人的攻击力提升20%"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "DP Down 1",
+					"jp": "指令：孤軍奮闘I",
+					"cn": "目标：深度渗透I"
+				},
+				"img": "75px-Global_costrecovery_1",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 25%",
+					"jp": "コストの自然回復速度-25%",
+					"cn": "部署费用的自然回复速度降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -30%",
+					"jp": "全ての味方の攻撃力-30%",
+					"cn": "所有我方单位的攻击力降低30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "制限：体力減衰II",
+					"en": "Reduced Operator HP 2",
+					"cn": "源石环境：侵蚀II"
+				},
+				"img": "75px-Char_hp_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -35%",
+					"jp": "全ての味方の最大HP-35%",
+					"cn": "所有我方单位的生命值上限降低35%"
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Max Squad Size 2",
+					"jp": "環境：少数精鋭II",
+					"cn": "目标：隐秘行动II "
+				},
+				"img": "75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 7 operators in squad",
+					"jp": "編成可能数が7人に",
+					"cn": "最多可编入7名干员进入作战"
+				}
+			}
+		]
+	},
+	{
+		"category": "sea_reaper",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Sea Reaper: Predatory Need 3",
+					"jp": "特化：鉢海捕食III",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dslntc_amod_3",
+				"effects": [
+					{
+						"targets": ["SM9"],
+						"mods": {
+							"atk": "%50",
+							"ms": "%100",
+							"special": {
+								"sea_reaper_awaken": {
+									"type": "others",
+									"value": 0.2,
+									"tooltip": {
+										"en": [
+											"Standby→Does not attack, switches to Combat Ready mode when HP below 99.99%",
+											"Combat Ready→Movement Speed is increased by 500% and loses $2.67% max HP$ every second. Deals 20% of ATK as Nervous Impairment to all allied units in a 2.5 tile radius (ignores camouflage)."
+										],
+										"jp": [
+											"【待機状態】→攻撃しない、HPが99.99%未満になると【臨戦態勢】に移行",
+											"【臨戦態勢】→移動速度+500%、毎秒$最大HPの2.67%$分のダメージを受けて、",
+											"半径2.5マス以内の味方全員に、攻撃力の20%の神経ダメージを毎秒与える（迷彩無視）"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Basin Sea Reaper] HP loss decreased by 33%, ATK +50%, Movespeed +100%",
+					"cn": "",
+					"jp": "＜鉢海のリーパー＞のHP減少が-33%、攻撃力+50%、移動速度+100%"
+				}
+			}
+		]
+	},
+	{
+		"category": "sea_reaper",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Sea Reaper: Survival Need 3",
+					"jp": "特化：鉢海生存III",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dslntc_bmod_3",
+				"effects": [
+					{
+						"targets": ["SM9"],
+						"mods": {
+							"hp": "%70",
+							"special": {
+								"sea_reaper_awaken": {
+									"type": "others",
+									"value": 0.2,
+									"tooltip": {
+										"en": [
+											"Standby→Does not attack, switches to Combat Ready mode when HP below 99.99%",
+											"Combat Ready→Movement Speed is increased by 500% and loses $0.8% max HP$ every second. Deals 20% of ATK as Nervous Impairment to all allied units in a 2.5 tile radius (ignores camouflage)."
+										],
+										"jp": [
+											"【待機状態】→攻撃しない、HPが99.99%未満になると【臨戦態勢】に移行",
+											"【臨戦態勢】→移動速度+500%、毎秒$最大HPの0.8%$分のダメージを受けて、",
+											"半径2.5マス以内の味方全員に、攻撃力の20%の神経ダメージを毎秒与える（迷彩無視）"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Basin Sea Reaper] HP loss decreased by 80%, Max HP +70%",
+					"cn": "",
+					"jp": "＜鉢海のリーパー＞のHP減少が-80%、最大HP+70%"
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Enemy HP 3",
+					"jp": "増幅：体力III",
+					"cn": "源石环境：活性III"
+				},
+				"img": "75px-Enemy_hp_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%115"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +115%",
+					"jp": "全ての敵の最大HP+115%",
+					"cn": "所有敌人的生命值提升115%"
+				}
+			}
+		]
+	}
+]

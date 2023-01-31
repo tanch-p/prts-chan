@@ -1,0 +1,256 @@
+[
+	{
+		"category": "char_res",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced Ally RES 1",
+					"jp": "制限：術耐性I",
+					"cn": ""
+				},
+				"img": "75px-Char_magicresistance_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ RES -12",
+					"jp": "全ての味方の術耐性-12",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_skillrec",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced SP Regen",
+					"jp": "スキル回復速度",
+					"cn": ""
+				},
+				"img": "75px-Global_skillrecovery_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies SP regen -30%",
+					"jp": "全ての味方のスキル回復速度-30%",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "sea_reaper",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Sea Reaper: Predatory Need 2",
+					"jp": "特化：鉢海捕食II",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dslntc_amod_2",
+				"effects": [
+					{
+						"targets": ["SM9"],
+						"mods": {
+							"atk": "%25",
+							"ms": "%50",
+							"special": {
+								"sea_reaper_awaken": {
+									"type": "others",
+									"value": 0.2,
+									"tooltip": {
+										"en": [
+											"Standby→Does not attack, switches to Combat Ready mode when HP below 99.99%",
+											"Combat Ready→Movement Speed is increased by 500% and loses $3% max HP$ every second. Deals 20% of ATK as Nervous Impairment to all allied units in a 2.5 tile radius (ignores camouflage)."
+										],
+										"jp": [
+											"【待機状態】→攻撃しない、HPが99.99%未満になると【臨戦態勢】に移行",
+											"【臨戦態勢】→移動速度+500%、毎秒$最大HPの3%$分のダメージを受けて、",
+											"半径2.5マス以内の味方全員に、攻撃力の20%の神経ダメージを毎秒与える（迷彩無視）"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Basin Sea Reaper] HP loss decreased by 25%, ATK +25%, Movespeed +50%",
+					"cn": "",
+					"jp": "＜鉢海のリーパー＞のHP減少が-25%、攻撃力+25%、移動速度+50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "sea_reaper",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Sea Reaper: Survival Need 2",
+					"jp": "特化：鉢海生存II",
+					"cn": ""
+				},
+				"img": "盐风溶洞/75px-Enemy_dslntc_bmod_2",
+				"effects": [
+					{
+						"targets": ["SM9"],
+						"mods": {
+							"hp": "%40",
+							"special": {
+								"sea_reaper_awaken": {
+									"type": "others",
+									"value": 0.2,
+									"tooltip": {
+										"en": [
+											"Standby→Does not attack, switches to Combat Ready mode when HP below 99.99%",
+											"Combat Ready→Movement Speed is increased by 500% and loses $2% max HP$ every second. Deals 20% of ATK as Nervous Impairment to all allied units in a 2.5 tile radius (ignores camouflage)."
+										],
+										"jp": [
+											"【待機状態】→攻撃しない、HPが99.99%未満になると【臨戦態勢】に移行",
+											"【臨戦態勢】→移動速度+500%、毎秒$最大HPの2%$分のダメージを受けて、",
+											"半径2.5マス以内の味方全員に、攻撃力の20%の神経ダメージを毎秒与える（迷彩無視）"
+										],
+										"cn": []
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Basin Sea Reaper] HP loss decreased by 50%, Max HP +40%",
+					"cn": "",
+					"jp": "＜鉢海のリーパー＞のHP減少が-50%、最大HP+40%"
+				}
+			}
+		]
+	},
+	{
+		"category": "deploy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Deploy Limit 2",
+					"jp": "環境：小規模戦II",
+					"cn": "环境：交战区II"
+				},
+				"img": "75px-Global_pcharnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Deploy Limit reduced to 5",
+					"jp": "同時配置可能数が5人に",
+					"cn": "可同时部署的单位数量减少至5"
+				}
+			}
+		]
+	},
+	{
+		"category": "egg_mod",
+		"options": [
+			{
+				"rank": 3,
+				"latter": true,
+				"name": {
+					"en": "Crawler: High-Perf Separation 3",
+					"jp": "特化：嚢海析出III",
+					"cn": "环境：酒水促销II"
+				},
+				"img": "盐风溶洞/75px-Enemy_dsurch_3",
+				"effects": [
+					{
+						"targets": ["SM11"],
+						"mods": {
+							"special": {
+								"immune": ["stun", "freeze"],
+								"egg_stab": {
+									"type": "atk",
+									"suffix": {
+										"en": "skill/arts",
+										"jp": "スキル・術",
+										"cn": "技能・法术"
+									},
+									"hits": 1,
+									"multiplier": 3,
+									"fixed_inc": 0,
+									"initial": 0,
+									"cost": 0,
+									"skill_regen": "attack",
+									"tooltip": {
+										"en": [
+											"Every $9%$ of max HP lost, deals $300%$ of ATK as Arts splash damage and Nervous Impairment in a $2.8$ tile radius"
+										],
+										"jp": [
+											"HPが$9%$減るごとに、半径$2.8$マス以内の味方全員に攻撃力の$300%$の術・神経ダメージを与える"
+										],
+										"cn": [
+											"每损失$9%$生命值，对半径$2.8$范围内所有我方单位造成攻击力$300%$法术溅射伤害与攻击力100%神经损伤"
+										]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Pocket Sea Crawler skill activation hp threshold decreased by 6%, damage +200%, effect range further increased, becomes immune to stun and freeze",
+					"jp": "「嚢海のクローラー」能力発動のHP値がさらに減少、ダメージ倍率が300％に上昇、効果範囲さらに増加、スタン、凍結無効になる",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_atk",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Enemy ATK 3",
+					"jp": "増幅：火力III",
+					"cn": "源石环境：刺激III"
+				},
+				"img": "75px-Enemy_atk_3",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"atk": "%65"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies ATK +65%",
+					"jp": "全ての敵の攻撃力+65%",
+					"cn": "所有敌人的攻击力提升65%"
+				}
+			}
+		]
+	},
+	{
+		"category": "egg_count",
+		"options": [
+			{
+				"rank": 3,
+				"latter": true,
+				"name": {
+					"en": "Sea Crawler Propagation 3",
+					"jp": "環境：嚢海増殖III",
+					"cn": "环境：酒水促销II"
+				},
+				"img": "盐风溶洞/75px-Level_hidden_dsurch_3",
+				"effects": [],
+				"tooltip": {
+					"en": "Additional six Pocket Sea Crawler appears on map.",
+					"jp": "「嚢海のクローラー」が6体追加出現",
+					"cn": ""
+				}
+			}
+		]
+	}
+]

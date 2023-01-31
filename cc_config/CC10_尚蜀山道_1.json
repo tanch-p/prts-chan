@@ -1,0 +1,172 @@
+[
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "特化：縦深攻撃",
+					"en": "Sniper and Defender 1",
+					"cn": ""
+				},
+				"img": "75px-Char_cost_sniperdefender_1",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Cost of Snipers and Defenders tripled",
+					"cn": "",
+					"jp": "狙撃・重装の配置コストが3倍"
+				}
+			}
+		]
+	},
+	{
+		"category": "trap_b",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Less Boxes 1",
+					"jp": "箱",
+					"cn": ""
+				},
+				"img": "75px-Trap_hidden_bmod_1",
+				"effects": [],
+				"tooltip": {
+					"en": "2 boxes on the lower left are removed",
+					"jp": "左下の箱2個が除外される",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "lifepoint",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "None Escape",
+					"jp": "指令：背水の陣",
+					"cn": "目标：最后防线"
+				},
+				"img": "75px-Global_lifepoint_1",
+				"effects": [],
+				"tooltip": {
+					"en": "No enemies escape (Level HP set to 1)",
+					"jp": "防衛ラインの最大耐久値が1に",
+					"cn": "我方防御点可承受的敌方数量变为1 "
+				}
+			}
+		]
+	},
+	{
+		"category": "sharpedge",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：尚武II",
+					"en": "Sharpedge 2",
+					"cn": ""
+				},
+				"img": "尚蜀山道/75px-Enemy_sfji_2",
+				"effects": [
+					{
+						"targets": ["AN26"],
+						"mods": { "hp": "%70", "atk": "%50", "def": "%30", "res": 30 }
+					}
+				],
+				"tooltip": {
+					"en": "Sharpedge Max HP +70% ATK +50% DEF +30% RES +30",
+					"jp": "「刻印」の最大HP+70%、攻撃力+50%、防御力+30%、術耐性+30",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "DP Down 2",
+					"jp": "指令：孤軍奮闘II",
+					"cn": "目标：深度渗透II"
+				},
+				"img": "75px-Global_costrecovery_2",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 50%",
+					"jp": "コストの自然回復速度-50%",
+					"cn": "部署费用的自然回复速度降低50%"
+				}
+			}
+		]
+	},
+	{
+		"category": "squad",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Max Squad Size 2",
+					"jp": "環境：少数精鋭II",
+					"cn": "目标：隐秘行动II "
+				},
+				"img": "75px-Global_squadnum_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Maximum 7 operators in squad",
+					"jp": "編成可能数が7人に",
+					"cn": "最多可编入7名干员进入作战"
+				}
+			}
+		]
+	},
+	{
+		"category": "blueflower",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：釉彩III",
+					"en": "Blueflower 3",
+					"cn": ""
+				},
+				"img": "尚蜀山道/75px-Enemy_sfpin3",
+				"effects": [
+					{
+						"targets": ["AN21"],
+						"mods": { "atk": "%50", "aspd": "%45" }
+					}
+				],
+				"tooltip": {
+					"en": "Blueflower ATK +50% ASPD+45%",
+					"jp": "「青花」の最攻撃力+50%、攻撃速度+45",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_aspd",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Reduced Ally ASPD 3",
+					"jp": "制限：疲労累積III",
+					"cn": ""
+				},
+				"img": "75px-Char_attackspeed_3",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ASPD -60",
+					"jp": "全ての味方の攻撃速度-60",
+					"cn": ""
+				}
+			}
+		]
+	}
+]

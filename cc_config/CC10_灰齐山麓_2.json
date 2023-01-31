@@ -1,0 +1,219 @@
+[
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "DP Down 1",
+					"jp": "指令：孤軍奮闘I",
+					"cn": "目标：深度渗透I"
+				},
+				"img": "75px-Global_costrecovery_1",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 25%",
+					"jp": "コストの自然回復速度-25%",
+					"cn": "部署费用的自然回复速度降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_res",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Reduced Ally RES 1",
+					"jp": "制限：術耐性I",
+					"cn": ""
+				},
+				"img": "75px-Char_magicresistance_1",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ RES -12",
+					"jp": "全ての味方の術耐性-12",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "enemy_ms",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Increased Enemy Movement Speed 1",
+					"jp": "増幅：機動力I",
+					"cn": ""
+				},
+				"img": "75px-Enemy_movespeed_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"ms": "%40"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemies movement speed +40%",
+					"jp": "全ての敵の移動速度+40%",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "deyi",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特化：忽隠忽現II",
+					"en": "Deyi 2",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_spslme_bmod_2",
+				"effects": [
+					{
+						"targets": ["SF09"],
+						"mods": {
+							"hp": "%110",
+							"atk": "%50",
+							"res": 30
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Smarty] Max HP +110%, ATK +50%, RES +30",
+					"cn": "",
+					"jp": "「オニビ」の最大HP+110%、攻撃力+50%、術耐性+30"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_hp",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "制限：体力減衰II",
+					"en": "Reduced Operator HP 2",
+					"cn": "源石环境：侵蚀II"
+				},
+				"img": "75px-Char_hp_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Ally Max HP reduced -35%",
+					"jp": "全ての味方の最大HP-35%",
+					"cn": "所有我方单位的生命值上限降低35%"
+				}
+			}
+		]
+	},
+	{
+		"category": "envy",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Envy: Overflowing Emotions",
+					"jp": "特化：妬心暴走",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_spmage_2",
+				"effects": [
+					{
+						"targets": ["SF13"],
+						"mods": {
+							"hp": "%90",
+							"atk": "%50",
+							"special": {
+								"envy_beam": {
+									"multiplier": 2,
+									"fixedInc": 0,
+									"tooltip": {
+										"en": [
+											"Uses Charged Atk every $18s$ - after 5s does 200% Arts damage to single target, and inverts tile element target is on"
+										],
+										"jp": [
+											"$18秒$毎に溜め攻撃→5秒後単体に200%術ダメージ、目標所在の床属性を反転させる"
+										],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Envy] Max HP +90%, ATK +50%, charged attack cooldown decreased by 70%",
+					"cn": "",
+					"jp": "「ソネミ」の最大HP+90%、攻撃力+50%、チャージ攻撃の間隔が70%短縮"
+				}
+			}
+		]
+	},
+	{
+		"category": "deyi",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：忽隠忽現III",
+					"en": "Deyi 3",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_spslme_bmod_3",
+				"effects": [
+					{
+						"targets": ["SF09"],
+						"mods": {
+							"hp": "%110",
+							"atk": "%110",
+							"res": 30,
+							"special": {
+								"extra": {
+									"tooltip": {
+										"en": ["$Stealth$"],
+										"jp": ["$ステルス$"],
+										"cn": ""
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "[Smarty] Max HP +110%, ATK +110%, RES +30, gains Stealth",
+					"cn": "",
+					"jp": "「オニビ」の最大HP+110%、攻撃力+110%、術耐性+30、さらにステルスを獲得"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "Multi-faceted Defense Contract",
+					"jp": "制限：多面堅守崩壊",
+					"cn": ""
+				},
+				"img": "灰齐山麓/Char_cost_supporters_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Supporter, Healer and Defender DP Cost tripled, and the redeployment time extended by 100%.",
+					"cn": "",
+					"jp": "医療・重装・補助の配置コストが3倍、再配置時間が+100%"
+				}
+			}
+		]
+	}
+]

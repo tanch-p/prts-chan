@@ -1,0 +1,213 @@
+[
+	{
+		"category": "status_immune",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Stun Silence Immune",
+					"jp": "指令：鋼の心",
+					"cn": "目标：心如钢铁"
+				},
+				"img": "75px-Enemy_immune_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"special": {
+								"immune": ["stun", "silence"]
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": "All enemies gain immunity to stun and silence",
+					"jp": "敵全体がスタン、能力無力化無効になる",
+					"cn": "所以敌人获得免疫晕眩与沉默"
+				}
+			}
+		]
+	},
+    {
+        "category": "char_block",
+        "options": [
+            {
+                "rank": 1,
+                "name": {
+                    "jp": "制限：ブロック数",
+                    "en": "Reduced Blockcount 1",
+                    "cn": "环境：精神散I"
+                },
+                "img": "75px-Char_blockcnt_add",
+                "effects": [],
+                "tooltip": {
+                    "en": "All allies' block count -1",
+                    "jp": "全ての味方のブロック数-1",
+                    "cn": "所有角色阻挡数-1"
+                }
+            }
+        ]
+    },
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"jp": "特殊・重装禁止",
+					"en": "No Defender/Specialists",
+					"cn": ""
+				},
+				"img": "75px-Char_exclude_defenderspecial_2",
+				"effects": [],
+				"tooltip": {
+					"en": "Defenders and Specialists are banned.",
+					"jp": "特殊・重装使用禁止",
+					"cn": ""
+				}
+			}
+		]
+	},
+    {
+        "category": "deploy",
+        "options": [
+            {
+                "rank": 2,
+                "name": {
+                    "en": "Deploy Limit 2",
+                    "jp": "環境：小規模戦II",
+                    "cn": "环境：交战区II"
+                },
+                "img": "75px-Global_pcharnum_2",
+                "effects": [],
+                "tooltip": {
+                    "en": "Deploy Limit reduced to 7",
+                    "jp": "同時配置可能数が7人に",
+                    "cn": "可同时部署的单位数量减少至7"
+                }
+            }
+        ]
+    },
+	{
+		"category": "drone_a",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：機能向上III",
+					"en": "Drone ATK Buff 3",
+					"cn": ""
+				},
+				"img": "沙海遗迹/75px-Enemy_drones_1_3",
+				"effects": [
+					{
+						"targets": ["D7", "PS1", "PS3"],
+						"mods": {
+							"atk": "%70",
+							"ms": "%100",
+							"range": "%50",
+							"special": {
+								"scrap_def_down": {
+									"type": "others",
+									"tooltip": {
+										"en": [
+											"Attacks reduce target's DEF by $70% for 10s$",
+											"(does not stack, can be silenced)"
+										],
+										"jp": [
+											"攻撃が相手の防御力を$10秒70％$減少する (重複しない、無効化できる)"
+										],
+										"cn": [
+											"攻击使目标防御力最终降低$70%，持续10s$（不叠加，可沉默）"
+										]
+									}
+								}
+							}
+						}
+					}
+				],
+				"tooltip": {
+					"en": [
+						"All drone type enemies ATK +70%, MS +100%, Range +50%, Scrap's def down effect increased by 40% and duration by 5s"
+					],
+					"jp": [
+						"すべての敵「ドローン」の攻撃力+70%、移動速度+100%、攻撃範囲+50%、「破片」の防御力減少効果+40%、効果継続時間+5秒"
+					],
+					"cn": []
+				}
+			}
+		]
+	},
+	{ 
+		"category": "more_enemies",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "環境：火力支援III",
+					"en": "Enemies +++",
+					"cn": ""
+				},
+				"img": "75px-Level_hidden_group_3",
+				"effects": [
+					{
+						"targets": ["D7"],
+						"mods": {
+							"count": 7
+						}
+					},
+					{
+						"targets": ["PD1"],
+						"mods": {
+							"count": 5
+						}
+					},
+					{
+						"targets": ["PD5"],
+						"mods": {
+							"count": 4
+						}
+					}
+				],
+				"tooltip": {
+					"en": [
+						"A1 count +7, Tactical Crossbowman count +5, War Phantom count +4"
+					],
+					"jp": [
+						"追加で「アーツバードA1」7体、「戦術射撃兵」5体、「ウォーゴースト」4体が登場"
+					],
+					"cn": []
+				}
+			}
+		]
+	},
+    {
+        "category": "enemy_hp",
+        "options": [
+            {
+                "rank": 3,
+                "name": {
+                    "en": "Enemy HP 3",
+                    "jp": "増幅：体力III",
+                    "cn": "源石环境：活性III"
+                },
+                "img": "75px-Enemy_hp_3",
+                "effects": [
+                    {
+                        "targets": [
+                            "ALL"
+                        ],
+                        "mods": {
+                            "hp": "%100"
+                        }
+                    }
+                ],
+                "tooltip": {
+                    "en": "Enemy Max HP +100%",
+                    "jp": "全ての敵の最大HP+100%",
+                    "cn": "所有敌人的生命值提升100%"
+                }
+            }
+        ]
+    }
+]

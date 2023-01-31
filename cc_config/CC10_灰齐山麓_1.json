@@ -1,0 +1,154 @@
+[
+	{
+		"category": "enemy_hp",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Enemy HP 1",
+					"jp": "増幅：体力I",
+					"cn": "源石环境：活性I"
+				},
+				"img": "75px-Enemy_hp_1",
+				"effects": [
+					{
+						"targets": ["ALL"],
+						"mods": {
+							"hp": "%30"
+						}
+					}
+				],
+				"tooltip": {
+					"en": "Enemy Max HP +30%",
+					"jp": "全ての敵の最大HP+30%",
+					"cn": "所有敌人的生命值提升30%"
+				}
+			}
+		]
+	},
+	{
+		"category": "operator_cost",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"jp": "特化：縦深攻撃",
+					"en": "Sniper and Caster 1",
+					"cn": ""
+				},
+				"img": "75px-Char_cost_attackers_1",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Cost of Snipers and Casters doubled",
+					"cn": "",
+					"jp": "狙撃・術士の配置コストが2倍"
+				}
+			}
+		]
+	},
+	{
+		"category": "firecracker",
+		"options": [
+			{
+				"rank": 1,
+				"name": {
+					"en": "Inverter",
+					"jp": "制限：改良型爆竹",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Global_inverter_1",
+				"effects": [],
+				"tooltip": {
+					"en": "Number of firecrackers decreased to 1",
+					"cn": "",
+					"jp": "使用できる「改良型爆竹」の数が1つに減少"
+				}
+			}
+		]
+	},
+	{
+		"category": "char_aspd",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ASPD 2",
+					"jp": "制限：疲労累積II",
+					"cn": ""
+				},
+				"img": "75px-Char_attackspeed_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ASPD -40",
+					"jp": "全ての味方の攻撃速度-40",
+					"cn": ""
+				}
+			}
+		]
+	},
+	{
+		"category": "char_atk",
+		"options": [
+			{
+				"rank": 2,
+				"name": {
+					"en": "Reduced Ally ATK 2",
+					"jp": "制限：火力減衰II",
+					"cn": "环境：高价值目标II"
+				},
+				"img": "75px-Char_atk_2",
+				"effects": [],
+				"tooltip": {
+					"en": "All allies’ ATK -25%",
+					"jp": "全ての味方の攻撃力-25%",
+					"cn": "所有我方单位的攻击力降低25%"
+				}
+			}
+		]
+	},
+	{
+		"category": "deyi",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"jp": "特化：陰陽晦明III",
+					"en": "Deyi 3",
+					"cn": ""
+				},
+				"img": "灰齐山麓/75px-Enemy_spslme_amod_3",
+				"effects": [
+					{
+						"targets": ["SF09"],
+						"mods": { "hp": "%300", "res": 50 }
+					}
+				],
+				"tooltip": {
+					"en": "[Smarty] Max HP +300%, RES +50, Initial element reversed",
+					"cn": "",
+					"jp": "「オニビ」の最大HP+300%、術耐性+50, 初期明晦属性が反転"
+				}
+			}
+		]
+	},
+	{
+		"category": "cost_regen",
+		"options": [
+			{
+				"rank": 3,
+				"name": {
+					"en": "DP Down 3",
+					"jp": "指令：孤軍奮闘III",
+					"cn": "目标：深度渗透III"
+				},
+				"img": "75px-Global_costrecovery_3",
+				"effects": [],
+				"tooltip": {
+					"en": "DP Regeneration reduced by 75%",
+					"jp": "コストの自然回復速度-75%",
+					"cn": "部署费用的自然回复速度降低75%"
+				}
+			}
+		]
+	}
+]
