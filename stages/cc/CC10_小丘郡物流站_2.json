@@ -1,5 +1,5 @@
 {
-	"name": { "en": "Hillock", "jp": "ヒロック郡物流拠点", "cn": "小丘郡物流站" },
+	"name": { "en": "County Hillock Depot", "jp": "ヒロック郡物流拠点", "cn": "小丘郡物流站" },
 	"img": "小丘郡物流站",
 	"config": "CC10_小丘郡物流站_2",
 	"ccType": "daily",
