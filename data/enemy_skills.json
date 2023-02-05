@@ -1353,7 +1353,26 @@
 	"dublinn_fireball": {
 		"name": "fireball",
 		"type": "atk",
-		"fixed": 500,
+		"base_atk": 500,
+		"suffix": { "en": "🔥", "jp": "🔥", "cn": "🔥" },
+		"tooltip": {
+			"simple": {
+				"en": [
+					"Fireball explodes on contact with melee unit, dealing arts and burn damage to units within range 1.8",
+					"Fireball's ATK decreases over distance travelled"
+				],
+				"jp": [
+					"炎は地上にいる味方に触れると爆発、半径1.8内に術と灼熱ダメージを与える",
+					"時間経過で炎の攻撃力が減少する"
+				],
+				"cn": []
+			}
+		}
+	},
+	"dublinn_fireball2": {
+		"name": "fireball",
+		"type": "atk",
+		"base_atk": 600,
 		"suffix": { "en": "🔥", "jp": "🔥", "cn": "🔥" },
 		"tooltip": {
 			"simple": {
@@ -2108,7 +2127,7 @@
 	},
 	"pompeii_explosion": {
 		"type": "atk",
-		"suffix": { "en": "💥/Arts", "jp": "💥・術", "cn": "💥・法术" },
+		"suffix": { "en": "💥/arts", "jp": "💥・術", "cn": "💥・法术" },
 		"fixed": 1000,
 		"hits": 1,
 		"tooltip": {

@@ -14,7 +14,6 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.3",
@@ -28,7 +27,6 @@
 			"aspd%": "100",
 			"aspd": "5",
 			"range": "0",
-
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.3",
@@ -43,5 +41,5 @@
 	"スタン耐性": "無",
 	"眠り耐性": "無",
 	"凍結耐性": "無",
-	"type": ["not_firewatch_list", "elite"]
+	"type": ["elite"]
 }

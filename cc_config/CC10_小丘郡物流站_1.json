@@ -72,8 +72,8 @@
 			{
 				"rank": 2,
 				"name": {
-					"jp": "特化：火炎放射II",
-					"en": "Flamerazer 2",
+					"jp": "特化：焼滅の焔II",
+					"en": "Incinerator: Path of Blaze 2",
 					"cn": ""
 				},
 				"img": "小丘郡物流站/75px-Enemy_duspfr_amod_2",
@@ -187,7 +187,7 @@
 			{
 				"rank": 3,
 				"name": {
-					"jp": "特化：石像III",
+					"jp": "特化：優良石材III",
 					"en": "Gargoyle 3",
 					"cn": ""
 				},
@@ -221,8 +221,8 @@
 			{
 				"rank": 3,
 				"name": {
-					"jp": "特化：喚起術師III",
-					"en": "Evocator 3",
+					"jp": "特化：燃焼維持III",
+					"en": "Evocator：Stability 3",
 					"cn": ""
 				},
 				"img": "小丘郡物流站/75px-Enemy_dusocr_amod_3",

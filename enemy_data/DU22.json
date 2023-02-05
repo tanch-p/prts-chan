@@ -17,7 +17,7 @@
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.3",
-			"special": ["dublinn_fireball"]
+			"special": ["dublinn_fireball2"]
 		},
 		"远方来客": {
 			"hp": "35000",
@@ -30,7 +30,7 @@
 			"weight": "3",
 			"lifepoint": 1,
 			"ms": "0.3",
-			"special": ["dublinn_fireball"]
+			"special": ["dublinn_fireball2"]
 		}
 	},
 	"status_immune": [],

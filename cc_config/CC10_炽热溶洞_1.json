@@ -16,7 +16,7 @@
 						"mods": {
 							"hp": "%60",
 							"special": {
-								"explosion": {
+								"pompeii_explosion": {
 									"type": "atk",
 									"fixed": 1300,
 									"tooltip": {
@@ -134,7 +134,7 @@
 						"mods": {
 							"hp": "%120",
 							"special": {
-								"explosion": {
+								"pompeii_explosion": {
 									"type": "atk",
 									"fixed": 2000,
 									"tooltip": {
@@ -212,7 +212,7 @@
 					}
 				],
 				"tooltip": {
-					"en": "Pompeii Max HP + 60%, ASPD increase when below 50% HP increased greatly.",
+					"en": "Pompeii Max HP +60%, ASPD increase when below 50% HP increased greatly.",
 					"cn": "",
 					"jp": "「Pompeii」の最大HP+60%、HPが半分以下になった時の攻撃速度がさらに上昇"
 				}
