@@ -39,7 +39,7 @@ export default function Home() {
 				}`}
 			>
 				<div id="main content" className="w-full md:min-w-10">
-					<CCIndex language={language} langPack={langPack} />
+					{/* <CCIndex language={language} langPack={langPack} /> */}
 
 					<div className="relative shadow-2xl max-w-screen-sm md:max-w-3xl">
 						<Link href="/stages/is/ISW-NO_礼炮小队">
@@ -59,8 +59,43 @@ export default function Home() {
 						))}
 					</ul>
 				</div> */}
-				<NewStagesNav language={language} />
-				<div className="justify-self-start mt-20 pl-8 md:pl-0">
+				{/* <NewStagesNav language={language} /> */}
+				<div className="max-w-3xl px-2 mt-4">
+					<p>
+						{language === "jp" ? (
+							<>
+								<p className="font-semibold text-xl">お知らせ</p>
+								<p className="mt-1">
+									ドクターの皆さん、この1年間、このサイトをご利用いただきありがとうございました。新しいサイト
+									<br />
+									<a className="hover:text-sky-400" href="https://tomimi.dev">
+										tomimi.dev
+									</a>
+									<br />
+									に移行することになりましたので、お知らせいたします。
+									今後も今までのように危機契約、統合戦略をサポート致します。
+								</p>
+							</>
+						) : (
+							<>
+								<p className="font-semibold text-xl">Announcement</p>
+								<p className="mt-1">
+									Dear doctors, thank you for using this site for the past year
+									and I would like to inform you that PRTSchan will be moving to
+									a new site with a new name:
+									<br />
+									<a className="hover:text-sky-400" href="https://tomimi.dev">
+										tomimi.dev
+									</a>
+									<br />
+									You can expect the same support for upcoming CC/IS going
+									ahead.
+								</p>
+							</>
+						)}
+					</p>
+				</div>
+				{/* <div className="justify-self-start mt-20 pl-8 md:pl-0">
 					<ul>
 						<span className="font-medium">{TODOtitle[language]}</span>
 						{TODO[language].map((line) => (
@@ -69,7 +104,7 @@ export default function Home() {
 							</li>
 						))}
 					</ul>
-				</div>
+				</div> */}
 			</div>
 		</Layout>
 	);
@@ -102,7 +137,9 @@ const NewStagesNav = ({ language }) => {
 
 	return (
 		<div className="mt-4">
-			<p className="text-center font-semibold">{language === "en" ? "New Stages:" : "追加されたステージ"}</p>
+			<p className="text-center font-semibold">
+				{language === "en" ? "New Stages:" : "追加されたステージ"}
+			</p>
 			<div className="w-[100vw] md:w-max mx-auto select-none shadow-lg mt-4">
 				<div
 					className={`flex flex-col md:grid items-center shadow-lg ${
